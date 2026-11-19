@@ -60,6 +60,7 @@ Validate with `node scripts/validate-course.mjs <courseId>`. It must print `OK`.
 
 - `id`: lowercase slug, the same as the folder name. `short`: at most 6 characters, shown in the header pill.
 - `levels`: `["SL","HL"]`, or `["SL"]` for SL-only courses (ab initio).
+- `unitLabel` (optional): what the guide calls its units, e.g. `"Theme"`, `"Topic"`, `"Unit"` (the default).
 - `units`: the guide's top-level structure, 3–8 units with short ids (e.g. `"1"`, `"S1"`, `"R2"`, `"A"`, `"Theme1"`). The app colours units in order.
 - `papers`: the paper codes used by this course's exam items (keys), mapped to a display label.
 - `mcqExam`: include it ONLY if the course has a multiple-choice paper (`SL`/`HL` are the question counts on the real paper). Otherwise set it to `null`; the app then offers a "Timed quiz" built from lesson MCQs.
