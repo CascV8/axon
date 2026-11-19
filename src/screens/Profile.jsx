@@ -3,6 +3,7 @@ import { actions, useProgress } from '../lib/store.js';
 import { dayKey, levelProgress, liveStreak, termStrength } from '../lib/core.js';
 import { THEMES, visibleTopics, topicById } from '../content/index.js';
 import { ACHIEVEMENTS } from '../lib/achievements.js';
+import { AccountCard } from './Account.jsx';
 
 const GOALS = [
   { xp: 10, label: 'Casual' },
@@ -94,6 +95,8 @@ export function Profile() {
         </div>
       </section>
 
+      <AccountCard />
+
       <div className="tiles tiles-4">
         <div className="tile tile-streak"><span className="tile-label">Streak</span><span className="tile-value">🔥 {streak}</span></div>
         <div className="tile tile-xp"><span className="tile-label">Total XP</span><span className="tile-value">{p.xp}</span></div>
@@ -167,8 +170,9 @@ export function Profile() {
           <input className="input" value={p.profile.name} maxLength={30} placeholder="Your name" onChange={(e) => actions.setProfile({ name: e.target.value })} />
         </label>
 
+        <p><a href="#/courses">Manage your courses ›</a></p>
         <fieldset className="fieldset">
-          <legend>Course level</legend>
+          <legend>Biology level</legend>
           <div className="seg" role="radiogroup">
             {['SL', 'HL'].map((t) => (
               <label key={t} className={`seg-item ${p.profile.track === t ? 'selected' : ''}`}>

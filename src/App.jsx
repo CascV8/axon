@@ -21,6 +21,7 @@ import { Exam } from './screens/Exam.jsx';
 import { Glossary } from './screens/Glossary.jsx';
 import { Profile } from './screens/Profile.jsx';
 import { Onboarding } from './screens/Onboarding.jsx';
+import { AccountPage, CoursesPage, PasswordRecovery } from './screens/Account.jsx';
 
 function useThemeAttr(theme) {
   useEffect(() => {
@@ -87,7 +88,7 @@ export default function App() {
   // Scroll to top on navigation between tabs.
   useEffect(() => { window.scrollTo(0, 0); }, [route.name, route.params[0]]);
 
-  if (!progress.profile.onboarded) return <Onboarding />;
+  if (!progress.profile.onboarded) return <><Onboarding /><PasswordRecovery /></>;
 
   const key = `${route.name}/${route.params.join('/')}`;
 
@@ -121,6 +122,8 @@ export default function App() {
     case 'question': screen = <ExamItem key={route.params[0]} id={route.params[0]} />; tab = 'exams'; break;
     case 'grades': screen = <Grades />; tab = 'exams'; break;
     case 'ia': screen = <IaToolkit />; tab = 'exams'; break;
+    case 'account': screen = <AccountPage />; tab = 'profile'; break;
+    case 'courses': screen = <CoursesPage />; tab = 'learn'; break;
     case 'flashcards': screen = <Flashcards key={route.params[0] ?? 'pick'} scope={route.params[0]} />; tab = 'practice'; break;
     case 'glossary': screen = <Glossary />; break;
     case 'profile': screen = <Profile />; break;
@@ -138,6 +141,7 @@ export default function App() {
         {screen}
       </main>
       <BottomNav active={tab} />
+      <PasswordRecovery />
     </div>
   );
 }

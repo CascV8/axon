@@ -5,6 +5,7 @@ import {
   currentHearts, HEART_REGEN_MS, daysBetween, shuffleNotIdentity, levelProgress,
 } from '../src/lib/core.js';
 import { weightedPercent, gradeFor, diplomaCheck, BOUNDARIES } from '../src/content/ibData.js';
+import { mergeStates } from '../src/lib/merge.js';
 
 test('textMatches is forgiving but not sloppy', () => {
   assert.ok(textMatches('Cohesion', 'cohesion'));
@@ -93,6 +94,47 @@ test('diploma check applies passing conditions', () => {
   assert.ok(!bad.pass);
   assert.ok(bad.problems.some((p) => p.includes('HL')));
   assert.ok(bad.problems.some((p) => p.includes('TOK')));
+});
+
+test('mergeStates keeps the best of both devices', () => {
+  const local = {
+    profile: { onboarded: true, track: 'HL', courses: [{ id: 'biology', level: 'HL' }] },
+    xp: 120, xpByDay: { '2026-01-01': 30, '2026-01-02': 10 },
+    streak: { count: 2, last: '2026-01-02', best: 2 },
+    lessons: { 'A1.1-1': { done: 1, best: 0.8, last: 5 } },
+    terms: { t1: { box: 2, last: 10 } },
+    mistakes: { q1: { at: 3, times: 1 } },
+    exams: [{ at: 1, score: 5, total: 10 }],
+    stats: { questions: 40, correct: 30 },
+    drafts: { a: 'local' },
+  };
+  const remote = {
+    profile: { onboarded: true, track: 'SL', courses: [{ id: 'chemistry', level: 'SL' }] },
+    xp: 200, xpByDay: { '2026-01-01': 50 },
+    streak: { count: 5, last: '2026-01-01', best: 5 },
+    lessons: { 'A1.1-1': { done: 3, best: 0.6, last: 9 }, 'A1.1-2': { done: 1, best: 1, last: 2 } },
+    terms: { t1: { box: 4, last: 20 }, t2: { box: 1, last: 1 } },
+    mistakes: { q2: { at: 4, times: 2 } },
+    exams: [{ at: 1, score: 5, total: 10 }, { at: 2, score: 8, total: 10 }],
+    stats: { questions: 50, correct: 20 },
+    drafts: { a: 'remote', b: 'remote' },
+  };
+  const m = mergeStates(local, remote);
+  assert.equal(m.xp, 200);
+  assert.equal(m.xpByDay['2026-01-01'], 50);
+  assert.equal(m.xpByDay['2026-01-02'], 10);
+  assert.equal(m.streak.last, '2026-01-02');
+  assert.equal(m.streak.best, 5);
+  assert.deepEqual(m.lessons['A1.1-1'], { done: 3, best: 0.8, last: 9 });
+  assert.ok(m.lessons['A1.1-2']);
+  assert.equal(m.terms.t1.box, 4);
+  assert.ok(m.terms.t2 && m.mistakes.q1 && m.mistakes.q2);
+  assert.equal(m.exams.length, 2);
+  assert.deepEqual(m.stats, { questions: 50, correct: 30 });
+  assert.equal(m.drafts.a, 'local');
+  assert.equal(m.profile.track, 'HL');
+  assert.deepEqual(m.profile.courses.map((c) => c.id).sort(), ['biology', 'chemistry']);
+  assert.equal(mergeStates(local, null), local);
 });
 
 test('shuffleNotIdentity never returns the original order', () => {

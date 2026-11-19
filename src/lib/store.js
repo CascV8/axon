@@ -11,7 +11,9 @@ export const DEFAULT_STATE = {
   version: VERSION,
   profile: {
     name: '',
-    track: 'HL',          // 'SL' hides HL-only content
+    track: 'HL',          // Biology level; 'SL' hides HL-only content
+    courses: [],          // [{ id: 'biology', level: 'HL' }, ...]
+    activeCourse: 'biology',
     dailyGoal: 30,        // XP per day
     sound: true,
     relaxed: false,       // unlimited hearts
@@ -39,6 +41,12 @@ function merge(base, saved) {
   const out = { ...structuredClone(base), ...saved };
   out.profile = { ...base.profile, ...(saved.profile ?? {}) };
   out.stats = { ...base.stats, ...(saved.stats ?? {}) };
+  // Migrate early users (before course selection existed): they were studying Biology.
+  if (out.profile.onboarded && !out.profile.courses?.length) {
+    out.profile.courses = [{ id: 'biology', level: out.profile.track || 'HL' }];
+  }
+  const bio = out.profile.courses?.find((c) => c.id === 'biology');
+  if (bio?.level) out.profile.track = bio.level;
   out.version = VERSION;
   return out;
 }
@@ -81,6 +89,12 @@ if (typeof window !== 'undefined') {
   });
 }
 
+/** Notified after every change (used by cloud sync). */
+export function subscribe(fn) {
+  listeners.add(fn);
+  return () => listeners.delete(fn);
+}
+
 export function getState() {
   return state;
 }
@@ -98,7 +112,21 @@ export function useProgress() {
 /* ---------- actions ---------- */
 export const actions = {
   setProfile(patch) {
-    set((s) => ({ ...s, profile: { ...s.profile, ...patch } }));
+    set((s) => {
+      const profile = { ...s.profile, ...patch };
+      // Keep the Biology level and the course list in step.
+      if (patch.track) profile.courses = (profile.courses ?? []).map((c) => (c.id === 'biology' ? { ...c, level: patch.track } : c));
+      if (patch.courses) {
+        const bio = patch.courses.find((c) => c.id === 'biology');
+        if (bio?.level) profile.track = bio.level;
+      }
+      return { ...s, profile };
+    });
+  },
+
+  /** Replace everything (cloud sync / restore). */
+  replace(next) {
+    set(merge(DEFAULT_STATE, next));
   },
 
   addXp(amount) {

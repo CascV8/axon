@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Icon } from './Icon.jsx';
 import { useProgress } from '../lib/store.js';
 import { currentHearts, dayKey, liveStreak, msToNextHeart, MAX_HEARTS } from '../lib/core.js';
+import { SyncBadge } from '../screens/Account.jsx';
 
 export function Header() {
   const p = useProgress();
@@ -22,11 +23,14 @@ export function Header() {
 
   return (
     <header className="header">
-      <a className="brand" href="#/learn" aria-label="Axon home">
-        <span className="brand-mark" aria-hidden="true" />
-        <span className="brand-name">Axon</span>
-        <span className="brand-course">IB Bio {p.profile.track}</span>
-      </a>
+      <div className="brand-wrap">
+        <a className="brand" href="#/learn" aria-label="Axon home">
+          <span className="brand-mark" aria-hidden="true" />
+          <span className="brand-name">Axon</span>
+        </a>
+        <a className="brand-course" href="#/courses" aria-label={`Course: Biology ${p.profile.track}. Change courses`}>🧬 Bio {p.profile.track} ▾</a>
+        <SyncBadge />
+      </div>
       <ul className="stats" aria-label="Your stats">
         <li className={`stat stat--streak ${doneToday ? '' : 'is-dim'}`} aria-label={`${streak} day streak${doneToday ? '' : ', practise today to extend it'}`} title="Day streak">
           <Icon name="flame" /> <span aria-hidden="true">{streak}</span>
