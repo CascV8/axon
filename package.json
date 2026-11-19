@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node scripts/validate-course.mjs --write-ready && vite",
+    "build": "node scripts/validate-course.mjs --write-ready && vite build",
     "preview": "vite preview",
-    "test": "node --test tests/core.test.mjs && node scripts/validate-content.mjs && node scripts/validate-exam.mjs",
+    "test": "node --test tests/core.test.mjs && node scripts/validate-course.mjs",
     "dev:full": "npm run build && wrangler pages dev dist --d1 DB=axon-local --compatibility-date=2024-11-01",
     "test:api": "node tests/api-smoke.mjs"
   },

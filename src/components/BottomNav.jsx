@@ -1,5 +1,5 @@
 import { Icon } from './Icon.jsx';
-import { useProgress } from '../lib/store.js';
+import { useActive } from '../lib/active.js';
 import { dueCount } from '../lib/sessions.js';
 
 const TABS = [
@@ -11,8 +11,8 @@ const TABS = [
 ];
 
 export function BottomNav({ active }) {
-  const p = useProgress();
-  const due = dueCount(p, p.profile.track);
+  const { p, course, level } = useActive();
+  const due = dueCount(p, course, level);
   return (
     <nav className="nav" aria-label="Main">
       {TABS.map((t) => (

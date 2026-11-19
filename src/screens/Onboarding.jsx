@@ -1,7 +1,7 @@
 // First run: account (or guest) → course & level → daily goal.
 import { useEffect, useState } from 'react';
 import { actions, getState } from '../lib/store.js';
-import { TOTALS } from '../content/index.js';
+import { COURSES } from '../content/index.js';
 import { useAccount } from '../lib/sync.js';
 import { AuthForm } from '../components/AuthForm.jsx';
 import { CoursePicker } from '../components/CoursePicker.jsx';
@@ -17,7 +17,7 @@ export function Onboarding() {
   const account = useAccount();
   const [step, setStep] = useState('welcome');
   const [authMode, setAuthMode] = useState('signup');
-  const [courses, setCourses] = useState(() => getState().profile.courses?.length ? getState().profile.courses : [{ id: 'biology', level: 'HL' }]);
+  const [courses, setCourses] = useState(() => getState().profile.courses ?? []);
   const [goal, setGoal] = useState(30);
   const [name, setName] = useState('');
 
@@ -31,20 +31,20 @@ export function Onboarding() {
   }, [step, account.user, account.sync]);
 
   const finish = () => {
-    actions.setProfile({ courses, activeCourse: 'biology', dailyGoal: goal, name: name || getState().profile.name, onboarded: true });
+    actions.setProfile({ courses, activeCourse: courses[0].id, dailyGoal: goal, name: name || getState().profile.name, onboarded: true });
     window.location.hash = '#/learn';
   };
 
   return (
     <div className="onboarding">
-      <div className="onb-card">
+      <div className={`onb-card ${step === 'courses' ? 'wide' : ''}`}>
         <div className="onb-steps" aria-hidden="true">{steps.map((s, i) => <span key={s} className={i <= idx ? 'on' : ''} />)}</div>
 
         {step === 'welcome' && (
           <>
             <div className="onb-logo" aria-hidden="true"><span className="brand-mark big" /></div>
             <h1>Welcome to Axon</h1>
-            <p>Bite-sized, gamified IB Biology: {TOTALS.questions.toLocaleString()} questions across all {TOTALS.topics} syllabus topics, spaced repetition that remembers what you forget, and exam-style practice.</p>
+            <p>Bite-sized, gamified revision for {COURSES.length} IB Diploma courses: lessons for every syllabus topic, spaced repetition that remembers what you forget, exam-style questions and grade tools.</p>
             {!account.ready ? (
               <p className="muted-small" role="status">Loading…</p>
             ) : account.available ? (
@@ -76,11 +76,12 @@ export function Onboarding() {
 
         {step === 'courses' && (
           <>
-            <h1>Choose your course</h1>
-            <p>Pick your level. SL hides Higher Level-only content, and you can change it any time.</p>
-            <CoursePicker keepOne value={courses} onChange={setCourses} />
-            <p className="muted-small">More IB subjects will be added to Axon over time.</p>
-            <button className="btn btn-primary btn-wide" onClick={() => setStep('goal')} disabled={!courses.length}>Continue</button>
+            <h1>Pick your IB courses</h1>
+            <p>Choose every subject you take and its level. SL hides Higher Level-only content. You can change this any time.</p>
+            <CoursePicker value={courses} onChange={setCourses} />
+            <button className="btn btn-primary btn-wide sticky-cta" onClick={() => setStep('goal')} disabled={!courses.length}>
+              {courses.length ? `Continue with ${courses.length} course${courses.length > 1 ? 's' : ''}` : 'Pick at least one course'}
+            </button>
           </>
         )}
 

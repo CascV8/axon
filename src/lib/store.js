@@ -45,8 +45,6 @@ function merge(base, saved) {
   if (out.profile.onboarded && !out.profile.courses?.length) {
     out.profile.courses = [{ id: 'biology', level: out.profile.track || 'HL' }];
   }
-  const bio = out.profile.courses?.find((c) => c.id === 'biology');
-  if (bio?.level) out.profile.track = bio.level;
   out.version = VERSION;
   return out;
 }
@@ -112,16 +110,19 @@ export function useProgress() {
 /* ---------- actions ---------- */
 export const actions = {
   setProfile(patch) {
-    set((s) => {
-      const profile = { ...s.profile, ...patch };
-      // Keep the Biology level and the course list in step.
-      if (patch.track) profile.courses = (profile.courses ?? []).map((c) => (c.id === 'biology' ? { ...c, level: patch.track } : c));
-      if (patch.courses) {
-        const bio = patch.courses.find((c) => c.id === 'biology');
-        if (bio?.level) profile.track = bio.level;
-      }
-      return { ...s, profile };
-    });
+    set((s) => ({ ...s, profile: { ...s.profile, ...patch } }));
+  },
+
+  /** Change SL/HL for one course. */
+  setCourseLevel(courseId, level) {
+    set((s) => ({
+      ...s,
+      profile: { ...s.profile, courses: (s.profile.courses ?? []).map((c) => (c.id === courseId ? { ...c, level } : c)) },
+    }));
+  },
+
+  setActiveCourse(courseId) {
+    set((s) => ({ ...s, profile: { ...s.profile, activeCourse: courseId } }));
   },
 
   /** Replace everything (cloud sync / restore). */
@@ -148,7 +149,7 @@ export const actions = {
       // Only the first attempt moves SRS boxes; retries of a missed question do not inflate mastery.
       if (firstTry) for (const t of question.terms ?? []) terms[t] = srsUpdate(terms[t], correct, now);
       const topicStats = { ...s.topicStats };
-      const tid = question.lessonId?.split('-')[0];
+      const tid = question.topicId ?? question.lessonId?.split('-')[0];
       if (firstTry && tid) {
         const ts = topicStats[tid] ?? { seen: 0, right: 0 };
         topicStats[tid] = { seen: ts.seen + 1, right: ts.right + (correct ? 1 : 0) };

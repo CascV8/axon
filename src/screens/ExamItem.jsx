@@ -1,8 +1,9 @@
 // Structured exam-style question: write answers, reveal the markscheme, self-mark.
 import { useMemo, useState } from 'react';
-import { examItemById, PAPER_LABEL, commandDef, itemMarks, pointHit, numericCorrect, EXAM_ITEMS } from '../content/exam.js';
-import { topicById } from '../content/index.js';
+import { commandDef, itemMarks, pointHit, numericCorrect } from '../lib/marking.js';
+import { visibleItems } from '../content/index.js';
 import { actions, useProgress } from '../lib/store.js';
+import { useActive } from '../lib/active.js';
 import { play } from '../lib/sound.js';
 
 function DataTable({ data }) {
@@ -92,27 +93,27 @@ function Part({ item, part, revealed, ticks, setTicks }) {
 }
 
 export function ExamItem({ id }) {
-  const p = useProgress();
-  const item = examItemById.get(id);
+  const { p, course, meta, level } = useActive();
+  const item = course.examItemById.get(id);
   const [revealed, setRevealed] = useState(false);
   const [ticks, setTicksAll] = useState(() => Object.fromEntries((item?.parts ?? []).map((pt) => [pt.label, pt.markscheme.map(() => false)])));
   const [saved, setSaved] = useState(false);
 
-  if (!item) return <section className="card placeholder"><h1>Question not found</h1><a href="#/bank">Back to the question bank</a></section>;
+  if (!item) return <section className="card placeholder"><h1>Question not found</h1><p>It isn't part of {meta.name}.</p><a href="#/bank">Back to the question bank</a></section>;
 
   const total = itemMarks(item);
   const score = item.parts.reduce((s, pt) => s + Math.min(pt.marks, ticks[pt.label].filter(Boolean).length), 0);
   const prev = p.items[item.id];
-  const idx = EXAM_ITEMS.indexOf(item);
-  const nextItem = EXAM_ITEMS[idx + 1];
+  const list = visibleItems(course, level);
+  const nextItem = list[list.indexOf(item) + 1];
 
   return (
     <div className="exam-item">
       <a className="back-link" href="#/bank">‹ Question bank</a>
       <div className="item-meta">
-        <span className={`topic-code theme-${item.theme}`}>{PAPER_LABEL[item.paper]}</span>
+        <span className={`topic-code ${course.unitById.get(item.unit)?.tone ?? 'tone-0'}`}>{meta.papers[item.paper]}</span>
         {item.level === 'HL' && <span className="badge-hl">HL</span>}
-        {item.topics.map((t) => <a key={t} className="chip chip-mini" href={`#/topic/${t}`}>{t} {topicById.get(t)?.title ?? ''}</a>)}
+        {item.topics.filter((t) => course.topicById.has(t)).map((t) => <a key={t} className="chip chip-mini" href={`#/topic/${t}`}>{course.topicById.get(t).code} {course.topicById.get(t).title}</a>)}
       </div>
       <h1 className="item-title">{item.title}</h1>
       <p className="item-total">Total: {total} marks{prev ? ` · your best ${prev.best}/${total}` : ''}</p>

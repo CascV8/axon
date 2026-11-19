@@ -1,8 +1,8 @@
 import { useDeferredValue, useMemo, useState } from 'react';
-import { THEMES, visibleTerms, topicById } from '../content/index.js';
+import { visibleTerms } from '../content/index.js';
 import { COMMAND_TERMS } from '../content/commandTerms.js';
 import { normalize } from '../lib/core.js';
-import { useProgress } from '../lib/store.js';
+import { useActive } from '../lib/active.js';
 import { Mastery } from '../components/Mastery.jsx';
 
 function Highlight({ text, q }) {
@@ -13,43 +13,48 @@ function Highlight({ text, q }) {
 }
 
 const PAGE = 60;
+// normalize() strips non-Latin letters; keep CJK etc. searchable with a lighter fold.
+const fold = (s) => {
+  const n = normalize(s);
+  return n || String(s ?? '').toLowerCase().trim();
+};
 
 export function Glossary() {
-  const p = useProgress();
+  const { p, course, meta, level } = useActive();
   const [query, setQuery] = useState('');
-  const [theme, setTheme] = useState('all');
+  const [unit, setUnit] = useState('all');
   const [tab, setTab] = useState('keyterms');
   const [limit, setLimit] = useState(PAGE);
   const q = useDeferredValue(query.trim());
 
-  const terms = useMemo(() => visibleTerms(p.profile.track), [p.profile.track]);
+  const terms = useMemo(() => visibleTerms(course, level), [course, level]);
 
   const results = useMemo(() => {
-    const nq = normalize(q);
-    const pool = theme === 'all' ? terms : terms.filter((t) => t.topicId[0] === theme);
+    const nq = fold(q);
+    const pool = unit === 'all' ? terms : terms.filter((t) => course.topicById.get(t.topicId)?.unit === unit);
     if (!nq) return [...pool].sort((a, b) => a.term.localeCompare(b.term));
     const scored = [];
     for (const t of pool) {
-      const nt = normalize(t.term);
+      const nt = fold(t.term);
       let score = -1;
       if (nt === nq) score = 0;
       else if (nt.startsWith(nq)) score = 1;
       else if (nt.includes(nq)) score = 2;
-      else if (normalize(t.definition).includes(nq)) score = 3;
-      else if (t.topicId.toLowerCase() === q.toLowerCase()) score = 4;
+      else if (fold(t.definition).includes(nq)) score = 3;
+      else if (course.topicById.get(t.topicId)?.code.toLowerCase() === q.toLowerCase()) score = 4;
       if (score >= 0) scored.push([score, t]);
     }
     return scored.sort((a, b) => a[0] - b[0] || a[1].term.localeCompare(b[1].term)).map((x) => x[1]);
-  }, [q, theme, terms]);
+  }, [q, unit, terms, course]);
 
   const cmd = useMemo(() => {
-    const nq = normalize(q);
-    return COMMAND_TERMS.filter((c) => !nq || normalize(c.term).includes(nq) || normalize(c.definition).includes(nq));
+    const nq = fold(q);
+    return COMMAND_TERMS.filter((c) => !nq || fold(c.term).includes(nq) || fold(c.definition).includes(nq));
   }, [q]);
 
   return (
     <div className="glossary">
-      <h1 className="page-title">Glossary</h1>
+      <h1 className="page-title">Glossary <small className="page-course">{meta.icon} {meta.name}</small></h1>
       <div className="seg seg-tabs" role="tablist" aria-label="Glossary sections">
         <button role="tab" aria-selected={tab === 'keyterms'} className={`seg-item ${tab === 'keyterms' ? 'selected' : ''}`} onClick={() => setTab('keyterms')}>Keyterms ({terms.length})</button>
         <button role="tab" aria-selected={tab === 'command'} className={`seg-item ${tab === 'command' ? 'selected' : ''}`} onClick={() => setTab('command')}>Command terms</button>
@@ -68,10 +73,10 @@ export function Glossary() {
 
       {tab === 'keyterms' ? (
         <>
-          <div className="chip-row" role="group" aria-label="Filter by theme">
-            {[{ id: 'all', title: 'All' }, ...THEMES].map((th) => (
-              <button key={th.id} className={`chip ${theme === th.id ? 'selected' : ''}`} aria-pressed={theme === th.id} onClick={() => { setTheme(th.id); setLimit(PAGE); }}>
-                {th.id === 'all' ? 'All themes' : `${th.id}: ${th.title}`}
+          <div className="chip-row" role="group" aria-label="Filter by unit">
+            {[{ id: 'all', title: 'All' }, ...course.units].map((u) => (
+              <button key={u.id} className={`chip ${unit === u.id ? 'selected' : ''}`} aria-pressed={unit === u.id} onClick={() => { setUnit(u.id); setLimit(PAGE); }}>
+                {u.id === 'all' ? 'Everything' : `${u.id}: ${u.title}`}
               </button>
             ))}
           </div>
@@ -81,13 +86,13 @@ export function Glossary() {
           ) : (
             <dl className="terms card">
               {results.slice(0, limit).map((k) => {
-                const topic = topicById.get(k.topicId);
+                const topic = course.topicById.get(k.topicId);
                 return (
                   <div key={k.id} className="term-row">
                     <dt>
                       <span className="term-name"><Highlight text={k.term} q={q} /></span>
                       {k.hl && <span className="badge-hl">HL</span>}
-                      <a className={`topic-code small theme-${topic.theme}`} href={`#/topic/${topic.id}`} title={topic.title}>{topic.id}</a>
+                      <a className={`topic-code small ${topic.tone}`} href={`#/topic/${topic.id}`} title={topic.title}>{topic.code}</a>
                       <Mastery s={p.terms[k.id]} />
                     </dt>
                     <dd><Highlight text={k.definition} q={q} /></dd>

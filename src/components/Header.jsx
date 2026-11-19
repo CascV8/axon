@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Icon } from './Icon.jsx';
-import { useProgress } from '../lib/store.js';
 import { currentHearts, dayKey, liveStreak, msToNextHeart, MAX_HEARTS } from '../lib/core.js';
+import { useActive } from '../lib/active.js';
 import { SyncBadge } from '../screens/Account.jsx';
 
 export function Header() {
-  const p = useProgress();
+  const { p, meta, level } = useActive();
   const [, tick] = useState(0);
   // Re-render each minute so heart refills and the streak stay current.
   useEffect(() => {
@@ -20,6 +20,7 @@ export function Header() {
   const relaxed = p.profile.relaxed;
   const nextHeart = Math.ceil(msToNextHeart(p.hearts) / 60000);
   const heartsLabel = relaxed ? 'Unlimited hearts' : `${hearts} of ${MAX_HEARTS} hearts${hearts < MAX_HEARTS ? `, next in ${nextHeart} min` : ''}`;
+  const levelText = meta?.levels.length > 1 ? ` ${level}` : '';
 
   return (
     <header className="header">
@@ -28,7 +29,9 @@ export function Header() {
           <span className="brand-mark" aria-hidden="true" />
           <span className="brand-name">Axon</span>
         </a>
-        <a className="brand-course" href="#/courses" aria-label={`Course: Biology ${p.profile.track}. Change courses`}>🧬 Bio {p.profile.track} ▾</a>
+        <a className="brand-course" href="#/courses" aria-label={`Course: ${meta?.name}${levelText}. Change course`}>
+          {meta?.icon} {meta?.short}{levelText} ▾
+        </a>
         <SyncBadge />
       </div>
       <ul className="stats" aria-label="Your stats">

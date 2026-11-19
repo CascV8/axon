@@ -4,7 +4,8 @@ import { useAccount, signOut, deleteAccount, setNewPassword, cancelRecovery, res
 import { AuthForm } from '../components/AuthForm.jsx';
 import { CoursePicker } from '../components/CoursePicker.jsx';
 import { actions, useProgress } from '../lib/store.js';
-import { courseById } from '../content/courses.js';
+import { courseById } from '../content/index.js';
+import { activeCourseId } from '../lib/active.js';
 
 const SYNC_LABEL = { idle: 'Waiting', syncing: 'Saving…', synced: 'All changes saved', error: 'Not saved yet' };
 
@@ -95,30 +96,38 @@ export function AccountPage() {
 
 export function CoursesPage() {
   const p = useProgress();
-  const courses = p.profile.courses ?? [];
+  const courses = (p.profile.courses ?? []).filter((c) => courseById.has(c.id));
+  const active = activeCourseId(p.profile);
+  const open = (id) => { actions.setActiveCourse(id); window.location.hash = '#/learn'; };
   return (
     <div>
       <a className="back-link" href="#/learn">‹ Learn</a>
       <h1 className="page-title">My courses</h1>
       <section className="card">
-        <h2>Your courses</h2>
+        <h2>Studying</h2>
         <ul className="list">
-          {courses.filter((c) => courseById.has(c.id)).map((c) => {
+          {courses.map((c) => {
             const course = courseById.get(c.id);
+            const isActive = c.id === active;
             return (
               <li key={c.id} className="list-row">
                 <span className="course-icon big" aria-hidden="true">{course.icon}</span>
-                <span className="list-main"><span className="list-title">{course.name} {c.level}</span><span className="list-sub">{course.blurb}</span></span>
-                <a className="btn btn-small btn-primary" href="#/learn">Open</a>
+                <span className="list-main">
+                  <span className="list-title">{course.name}{course.levels.length > 1 ? ` ${c.level}` : ''}</span>
+                  <span className="list-sub">{isActive ? 'Open now' : course.blurb}</span>
+                </span>
+                {isActive
+                  ? <a className="btn btn-small btn-secondary" href="#/learn">Continue</a>
+                  : <button className="btn btn-small btn-primary" onClick={() => open(c.id)}>Switch</button>}
               </li>
             );
           })}
         </ul>
       </section>
       <section className="card">
-        <h2>Change course or level</h2>
+        <h2>Add or remove courses</h2>
+        <p>Pick every IB course you take and its level. Progress is kept per course, and you can switch any time.</p>
         <CoursePicker keepOne value={courses} onChange={(v) => { if (v.length) actions.setProfile({ courses: v }); }} />
-        <p className="muted-small">More IB subjects will be added to Axon over time.</p>
       </section>
     </div>
   );

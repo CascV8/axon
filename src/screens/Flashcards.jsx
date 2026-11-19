@@ -1,49 +1,50 @@
 // Flip-card review of keyterms, scheduled by the same Leitner SRS as Review.
 import { useEffect, useMemo, useState } from 'react';
-import { getState, actions, useProgress } from '../lib/store.js';
-import { visibleTopics, topicById, THEMES } from '../content/index.js';
+import { getState, actions } from '../lib/store.js';
+import { visibleTopics } from '../content/index.js';
+import { useActive } from '../lib/active.js';
 import { shuffle, reviewPriority } from '../lib/core.js';
 import { Mastery } from '../components/Mastery.jsx';
 import { play } from '../lib/sound.js';
 
-function buildDeck(scope, track) {
+function buildDeck(scope, course, level) {
   const s = getState();
   const now = Date.now();
-  const topics = visibleTopics(track);
+  const topics = visibleTopics(course, level);
   if (scope === 'due') {
     const terms = topics.flatMap((t) => t.keyterms).filter((k) => s.terms[k.id] && s.terms[k.id].due <= now);
     return terms.sort((a, b) => reviewPriority(s.terms[a.id], now) - reviewPriority(s.terms[b.id], now)).slice(0, 30);
   }
   const topic = topics.find((t) => t.id === scope);
   if (topic) return shuffle(topic.keyterms);
-  const theme = topics.filter((t) => t.theme === scope);
-  return shuffle(theme.flatMap((t) => t.keyterms)).slice(0, 30);
+  const unitId = scope.startsWith('unit:') ? scope.slice(5) : null;
+  return shuffle(topics.filter((t) => t.unit === unitId).flatMap((t) => t.keyterms)).slice(0, 30);
 }
 
 function Picker() {
-  const p = useProgress();
-  const topics = visibleTopics(p.profile.track);
+  const { p, course, meta, level } = useActive();
+  const topics = visibleTopics(course, level);
   const now = Date.now();
   const due = topics.flatMap((t) => t.keyterms).filter((k) => p.terms[k.id]?.due <= now).length;
   return (
     <div className="flash-picker">
       <a className="back-link" href="#/practice">‹ Practice</a>
-      <h1 className="page-title">Flashcards</h1>
+      <h1 className="page-title">Flashcards <small className="page-course">{meta.icon} {meta.name}</small></h1>
       <p>Flip, recall, and rate yourself honestly. Cards you know come back less often; cards you miss come back soon.</p>
       <a className={`card action-card ${due ? '' : 'is-empty'}`} href={due ? '#/flashcards/due' : undefined}>
         <span className="action-icon" aria-hidden="true">⏰</span>
         <span className="action-main"><span className="action-title">Due cards</span><span className="action-sub">{due ? `${due} ready to review` : 'Nothing due right now'}</span></span>
         {due > 0 && <span className="count-badge">{due}</span>}
       </a>
-      {THEMES.map((th) => (
-        <section key={th.id} className="card">
+      {course.units.filter((u) => topics.some((t) => t.unit === u.id)).map((u) => (
+        <section key={u.id} className="card">
           <div className="row-between">
-            <h2>Theme {th.id}: {th.title}</h2>
-            <a className="btn btn-small btn-secondary" href={`#/flashcards/${th.id}`}>Mix</a>
+            <h2>{u.id}: {u.title}</h2>
+            <a className="btn btn-small btn-secondary" href={`#/flashcards/unit:${u.id}`}>Mix</a>
           </div>
           <ul className="chip-row">
-            {topics.filter((t) => t.theme === th.id).map((t) => (
-              <li key={t.id}><a className="chip chip-link" href={`#/flashcards/${t.id}`}>{t.id} {t.title} <small>({t.keyterms.length})</small></a></li>
+            {topics.filter((t) => t.unit === u.id).map((t) => (
+              <li key={t.id}><a className="chip chip-link" href={`#/flashcards/${t.id}`}>{t.code} {t.title} <small>({t.keyterms.length})</small></a></li>
             ))}
           </ul>
         </section>
@@ -53,8 +54,8 @@ function Picker() {
 }
 
 export function Flashcards({ scope }) {
-  const p = useProgress();
-  const deck = useMemo(() => (scope ? buildDeck(scope, p.profile.track) : []), [scope]); // eslint-disable-line react-hooks/exhaustive-deps
+  const { p, course, level } = useActive();
+  const deck = useMemo(() => (scope ? buildDeck(scope, course, level) : []), [scope]); // eslint-disable-line react-hooks/exhaustive-deps
   const [i, setI] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [reverse, setReverse] = useState(false);
@@ -100,7 +101,7 @@ export function Flashcards({ scope }) {
     );
   }
 
-  const topic = topicById.get(card.topicId);
+  const topic = course.topicById.get(card.topicId);
   const front = reverse ? card.definition : card.term;
   const back = reverse ? card.term : card.definition;
   return (
@@ -116,7 +117,7 @@ export function Flashcards({ scope }) {
       <button className={`flashcard ${flipped ? 'is-flipped' : ''}`} onClick={() => setFlipped(!flipped)} aria-label={flipped ? `Answer: ${back}. Press to flip back.` : `${front}. Press to reveal.`}>
         <span className="flash-inner">
           <span className="flash-face flash-front">
-            <span className={`topic-code small theme-${topic?.theme}`}>{card.topicId}</span>
+            <span className={`topic-code small ${topic?.tone}`}>{topic?.code}</span>
             <span className={reverse ? 'flash-def' : 'flash-term'}>{front}</span>
             <span className="flash-hint">Tap or press space to flip</span>
           </span>

@@ -1,6 +1,6 @@
 // Validates course content against COURSE_SCHEMA.md.
 // Usage: node scripts/validate-course.mjs [courseId ...]   (no args = every course)
-import { readdirSync, readFileSync, existsSync, statSync } from 'node:fs';
+import { readdirSync, readFileSync, existsSync, statSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -9,7 +9,8 @@ const COMMANDS = new Set(['Analyse', 'Annotate', 'Apply', 'Calculate', 'Classify
 
 const isStr = (s) => typeof s === 'string' && s.trim().length > 0;
 const all = readdirSync(ROOT).filter((d) => statSync(join(ROOT, d)).isDirectory()).sort();
-const only = process.argv.slice(2);
+const writeReady = process.argv.includes('--write-ready');
+const only = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const targets = only.length ? only : all;
 
 // Global id registries (across every course, so collisions are caught even when validating one).
@@ -220,8 +221,10 @@ function validateCourse(cid) {
 
 // Validate every course so the cross-course id registry is complete, report only targets.
 let failed = 0;
+const ready = [];
 for (const cid of all) {
   const { errors, stats } = validateCourse(cid);
+  if (!errors.length) ready.push(cid);
   if (!targets.includes(cid)) continue;
   if (errors.length) {
     failed++;
@@ -232,5 +235,11 @@ for (const cid of all) {
 }
 for (const t of targets) if (!all.includes(t)) { failed++; console.error(`✕ ${t}: no such course folder`); }
 if (summary.length) console.log(summary.join('\n'));
+if (writeReady) {
+  // Only courses that fully validate are shown in the app (no half-finished courses).
+  writeFileSync(join(ROOT, '..', 'ready.json'), `${JSON.stringify(ready)}\n`);
+  console.log(`ready.json: ${ready.join(', ') || '(none)'}`);
+  process.exit(0);
+}
 if (failed) process.exit(1);
 console.log('OK');

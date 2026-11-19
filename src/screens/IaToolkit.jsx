@@ -1,42 +1,35 @@
-// Internal assessment helper: self-assessment against the four criteria, checklist, notes with word count.
-import { IA_CRITERIA } from '../content/ibData.js';
-import { actions, useProgress } from '../lib/store.js';
-
-const PITFALLS = [
-  'Research question names the independent and dependent variables, with units/range',
-  'At least 5 levels of the independent variable, with enough repeats for each',
-  'Uncertainties stated for every measuring instrument',
-  'A worked example for each calculation',
-  'Graphs have titles, labelled axes with units, and error bars',
-  'Statistical test chosen and justified (e.g. t-test, chi-squared, correlation)',
-  'Conclusion quotes processed values and refers back to the research question',
-  'Weaknesses are specific to YOUR method, each with a realistic improvement',
-  'Report is under 3,000 words (excluding tables, graphs, references)',
-  'All sources referenced consistently',
-];
+// Internal assessment helper for the active course: criteria self-assessment, checklist, notes.
+import { actions } from '../lib/store.js';
+import { useActive } from '../lib/active.js';
 
 export function IaToolkit() {
-  const p = useProgress();
-  const ia = p.ia ?? {};
-  const marks = ia.marks ?? {};
-  const checks = ia.checks ?? {};
-  const notes = p.drafts['ia:notes'] ?? '';
+  const { p, meta } = useActive();
+  const ia = meta.ia;
+  // Biology stored its IA data at the top level before courses existed.
+  const legacy = meta.id === 'biology' ? { marks: p.ia?.marks, checks: p.ia?.checks } : {};
+  const mine = p.ia?.courses?.[meta.id] ?? legacy;
+  const marks = mine.marks ?? {};
+  const checks = mine.checks ?? {};
+  const save = (patch) => actions.setIa({ courses: { ...(p.ia?.courses ?? {}), [meta.id]: { marks, checks, ...patch } } });
+  const notesKey = `ia:${meta.id}:notes`;
+  const notes = p.drafts[notesKey] ?? (meta.id === 'biology' ? p.drafts['ia:notes'] : '') ?? '';
   const words = notes.trim() ? notes.trim().split(/\s+/).length : 0;
-  const total = IA_CRITERIA.reduce((s, c) => s + (Number(marks[c.id]) || 0), 0);
-  const done = PITFALLS.filter((_, i) => checks[i]).length;
+  const total = ia.criteria.reduce((s, c) => s + (Number(marks[c.id]) || 0), 0);
+  const done = ia.checklist.filter((_, i) => checks[i]).length;
+  const wordCap = Number((ia.limit.match(/([\d,]+)\s*words/i)?.[1] ?? '').replace(/,/g, '')) || null;
 
   return (
     <div className="ia">
       <a className="back-link" href="#/exams">‹ Exam prep</a>
-      <h1 className="page-title">IA toolkit</h1>
-      <p>The scientific investigation is worth 20% of your grade, marked out of 24 across four criteria (6 marks each), with a 3,000-word limit.</p>
+      <h1 className="page-title">IA toolkit <small className="page-course">{meta.icon} {meta.name}: {ia.name}</small></h1>
+      <p>The {ia.name.toLowerCase()} is worth {ia.weight}% of your {meta.name} grade, marked out of {ia.max} across {ia.criteria.length} criteria. Limit: {ia.limit}.</p>
 
       <div className="tiles tiles-2">
-        <div className="tile tile-acc"><span className="tile-label">Self-assessed</span><span className="tile-value">{total}/24</span></div>
-        <div className="tile"><span className="tile-label">Checklist</span><span className="tile-value">{done}/{PITFALLS.length}</span></div>
+        <div className="tile tile-acc"><span className="tile-label">Self-assessed</span><span className="tile-value">{total}/{ia.max}</span></div>
+        <div className="tile"><span className="tile-label">Checklist</span><span className="tile-value">{done}/{ia.checklist.length}</span></div>
       </div>
 
-      {IA_CRITERIA.map((c) => (
+      {ia.criteria.map((c) => (
         <section key={c.id} className="card">
           <div className="row-between">
             <h2>{c.name}</h2>
@@ -45,10 +38,10 @@ export function IaToolkit() {
           <p className="mini-title">What strong work shows</p>
           <ul className="look-list">{c.look.map((l) => <li key={l}>{l}</li>)}</ul>
           <label className="field">
-            <span>Your honest estimate: {marks[c.id] ?? 0}/6</span>
-            <input type="range" min={0} max={6} step={1} value={marks[c.id] ?? 0}
-              onChange={(e) => actions.setIa({ marks: { ...marks, [c.id]: Number(e.target.value) } })}
-              aria-valuetext={`${marks[c.id] ?? 0} out of 6`} className="range" />
+            <span>Your honest estimate: {marks[c.id] ?? 0}/{c.max}</span>
+            <input type="range" min={0} max={c.max} step={1} value={marks[c.id] ?? 0}
+              onChange={(e) => save({ marks: { ...marks, [c.id]: Number(e.target.value) } })}
+              aria-valuetext={`${marks[c.id] ?? 0} out of ${c.max}`} className="range" />
           </label>
         </section>
       ))}
@@ -56,10 +49,10 @@ export function IaToolkit() {
       <section className="card">
         <h2>Before you submit</h2>
         <ul className="check-list">
-          {PITFALLS.map((t, i) => (
+          {ia.checklist.map((t, i) => (
             <li key={i}>
               <label className="switch-row">
-                <input type="checkbox" checked={!!checks[i]} onChange={(e) => actions.setIa({ checks: { ...checks, [i]: e.target.checked } })} />
+                <input type="checkbox" checked={!!checks[i]} onChange={(e) => save({ checks: { ...checks, [i]: e.target.checked } })} />
                 <span>{t}</span>
               </label>
             </li>
@@ -69,14 +62,14 @@ export function IaToolkit() {
 
       <section className="card">
         <div className="row-between">
-          <h2>Notes &amp; draft planning</h2>
-          <span className={`score-pill ${words > 3000 ? 'low' : ''}`}>{words.toLocaleString()} / 3,000 words</span>
+          <h2>Notes &amp; planning</h2>
+          <span className={`score-pill ${wordCap && words > wordCap ? 'low' : ''}`}>{words.toLocaleString()}{wordCap ? ` / ${wordCap.toLocaleString()}` : ''} words</span>
         </div>
         <label className="sr-only" htmlFor="ia-notes">IA notes</label>
         <textarea id="ia-notes" className="textarea" rows={10} value={notes}
-          placeholder="Research question, variables, method plan, results notes… saved in this browser automatically."
-          onChange={(e) => actions.saveDraft('ia:notes', e.target.value)} />
-        <p className="muted-small">Saved on this device only. Use Profile → Download backup to keep a copy.</p>
+          placeholder="Ideas, research question, plan, sources, oral notes… saved automatically."
+          onChange={(e) => actions.saveDraft(notesKey, e.target.value)} />
+        <p className="muted-small">Saved with your progress (and synced if you have an account).</p>
       </section>
       <p className="footnote">Guidance is written by Axon in its own words. Your teacher and the official criteria are the final authority.</p>
     </div>

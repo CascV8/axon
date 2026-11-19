@@ -1,22 +1,20 @@
 import { useMemo, useState } from 'react';
-import { useProgress } from '../lib/store.js';
-import { dueCount, mistakeQuestions } from '../lib/sessions.js';
-import { visibleTopics, THEMES } from '../content/index.js';
+import { useActive } from '../lib/active.js';
+import { dueCount, mistakeQuestions, dailyKey } from '../lib/sessions.js';
+import { visibleTopics } from '../content/index.js';
 import { termStrength, dayKey } from '../lib/core.js';
 
 export function Practice() {
-  const p = useProgress();
-  const track = p.profile.track;
-  const due = dueCount(p, track);
-  const mistakes = mistakeQuestions(p, track, 999).length;
-  const topics = useMemo(() => visibleTopics(track), [track]);
+  const { p, course, meta, level } = useActive();
+  const due = dueCount(p, course, level);
+  const mistakes = mistakeQuestions(p, course, level, 9999).length;
+  const topics = useMemo(() => visibleTopics(course, level), [course, level]);
   const [topicId, setTopicId] = useState(topics[0]?.id ?? '');
+  const daily = p.daily[dailyKey(dayKey(), course.id)];
 
-  // Weakest topics by keyterm mastery among those started.
   const weakest = useMemo(() => topics
     .map((t) => {
-      const seen = t.keyterms.filter((k) => p.terms[k.id]);
-      if (!seen.length) return null;
+      if (!t.keyterms.some((k) => p.terms[k.id])) return null;
       const m = t.keyterms.reduce((s, k) => s + termStrength(p.terms[k.id]), 0) / t.keyterms.length;
       return { t, m };
     })
@@ -26,13 +24,13 @@ export function Practice() {
 
   return (
     <div className="practice">
-      <h1 className="page-title">Practice</h1>
+      <h1 className="page-title">Practice <small className="page-course">{meta.icon} {meta.name}</small></h1>
 
-      <a className={`card action-card action-daily ${p.daily[dayKey()] ? 'is-done' : ''}`} href="#/practice/daily">
+      <a className={`card action-card action-daily ${daily ? 'is-done' : ''}`} href="#/practice/daily">
         <span className="action-icon" aria-hidden="true">☀️</span>
         <span className="action-main">
           <span className="action-title">Daily challenge</span>
-          <span className="action-sub">{p.daily[dayKey()] ? `Done today: ${p.daily[dayKey()].score}/${p.daily[dayKey()].total}. Come back tomorrow!` : 'The same 10 questions for every Axon student today · +20 bonus XP'}</span>
+          <span className="action-sub">{daily ? `Done today: ${daily.score}/${daily.total}. You can replay it, or come back tomorrow for a new one.` : `Today's 10 ${meta.name} questions, the same for every Axon student · +20 bonus XP`}</span>
         </span>
       </a>
 
@@ -45,14 +43,24 @@ export function Practice() {
         {due > 0 && <span className="count-badge">{due}</span>}
       </a>
 
-      <a className={`card action-card action-mistakes ${mistakes ? '' : 'is-empty'}`} href={mistakes ? '#/practice/mistakes' : undefined} aria-disabled={!mistakes}>
-        <span className="action-icon" aria-hidden="true">🎯</span>
-        <span className="action-main">
-          <span className="action-title">Mistakes notebook</span>
-          <span className="action-sub">{mistakes ? `${mistakes} question${mistakes === 1 ? '' : 's'} you got wrong. Get them right to clear them.` : 'Nothing here yet. Questions you miss land here.'}</span>
-        </span>
-        {mistakes > 0 && <span className="count-badge">{mistakes}</span>}
-      </a>
+      {mistakes > 0 ? (
+        <a className="card action-card action-mistakes" href="#/practice/mistakes">
+          <span className="action-icon" aria-hidden="true">🎯</span>
+          <span className="action-main">
+            <span className="action-title">Mistakes notebook</span>
+            <span className="action-sub">{mistakes} question{mistakes === 1 ? '' : 's'} you got wrong. Get them right to clear them.</span>
+          </span>
+          <span className="count-badge">{mistakes}</span>
+        </a>
+      ) : (
+        <div className="card action-card is-empty" aria-label="Mistakes notebook is empty">
+          <span className="action-icon" aria-hidden="true">🎯</span>
+          <span className="action-main">
+            <span className="action-title">Mistakes notebook</span>
+            <span className="action-sub">Empty. Questions you miss in {meta.name} collect here for another go.</span>
+          </span>
+        </div>
+      )}
 
       <a className="card action-card" href="#/flashcards">
         <span className="action-icon" aria-hidden="true">🃏</span>
@@ -76,13 +84,15 @@ export function Practice() {
         <div className="row">
           <label className="sr-only" htmlFor="qf-topic">Topic</label>
           <select id="qf-topic" className="select" value={topicId} onChange={(e) => setTopicId(e.target.value)}>
-            {THEMES.map((th) => (
-              <optgroup key={th.id} label={`Theme ${th.id}: ${th.title}`}>
-                {topics.filter((t) => t.theme === th.id).map((t) => (
-                  <option key={t.id} value={t.id}>{t.id} {t.title}{t.level === 'HL' ? ' (HL)' : ''}</option>
-                ))}
-              </optgroup>
-            ))}
+            {course.units.map((u) => {
+              const ts = topics.filter((t) => t.unit === u.id);
+              if (!ts.length) return null;
+              return (
+                <optgroup key={u.id} label={`${meta.unitLabel || 'Unit'} ${u.id}: ${u.title}`}>
+                  {ts.map((t) => <option key={t.id} value={t.id}>{t.code} {t.title}{t.level === 'HL' ? ' (HL)' : ''}</option>)}
+                </optgroup>
+              );
+            })}
           </select>
           <a className="btn btn-primary" href={`#/practice/topic/${topicId}`}>Go</a>
         </div>
@@ -91,7 +101,7 @@ export function Practice() {
             <h3 className="mini-title">Your weakest topics</h3>
             <ul className="chip-row">
               {weakest.map(({ t, m }) => (
-                <li key={t.id}><a className="chip chip-link" href={`#/practice/topic/${t.id}`}>{t.id} {t.title} · {Math.round(m * 100)}%</a></li>
+                <li key={t.id}><a className="chip chip-link" href={`#/practice/topic/${t.id}`}>{t.code} {t.title} · {Math.round(m * 100)}%</a></li>
               ))}
             </ul>
           </>

@@ -1,39 +1,54 @@
-// Paper 1A-style timed multiple-choice exam: answer freely, submit, then get a breakdown.
+// Timed multiple-choice exam: answer freely, submit, then get a topic breakdown.
+// Uses the course's real MCQ paper format where it has one; otherwise a timed quiz.
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { THEMES, topicById } from '../content/index.js';
 import { buildExam } from '../lib/sessions.js';
 import { actions, useProgress } from '../lib/store.js';
 import { play } from '../lib/sound.js';
-
-const LENGTHS = [10, 20, 30, 40];
-const SECS_PER_Q = 80; // roughly the IB pace for Paper 1A
+import { visibleTopics } from '../content/index.js';
 
 function fmt(s) {
   const m = Math.floor(s / 60);
   return `${m}:${String(s % 60).padStart(2, '0')}`;
 }
 
-function Setup({ onStart }) {
+function examConfig(course, level) {
+  const m = course.meta.mcqExam;
+  const full = m?.[level];
+  const lengths = [...new Set([10, 20, ...(full ? [full] : [30, 40])])].sort((a, b) => a - b);
+  return { label: m?.label ?? 'Timed quiz', full, secs: m?.secondsPerQuestion ?? 75, lengths };
+}
+
+function Setup({ course, level, onStart }) {
   const p = useProgress();
-  const [themes, setThemes] = useState(['A', 'B', 'C', 'D']);
-  const [n, setN] = useState(20);
+  const cfg = examConfig(course, level);
+  const topics = visibleTopics(course, level);
+  const units = course.units.filter((u) => topics.some((t) => t.unit === u.id));
+  const [picked, setPicked] = useState(units.map((u) => u.id));
+  const available = useMemo(
+    () => topics.filter((t) => picked.includes(t.unit)).reduce((n, t) => n + t.lessons.reduce((m, l) => m + l.questions.filter((q) => q.type === 'mcq').length, 0), 0),
+    [topics, picked],
+  );
+  const [n, setN] = useState(cfg.full && cfg.full <= 40 ? Math.min(cfg.full, 20) : 20);
   const [timed, setTimed] = useState(true);
-  const toggle = (id) => setThemes((t) => (t.includes(id) ? t.filter((x) => x !== id) : [...t, id]));
-  const last = p.exams.slice(-5).reverse();
+  const toggle = (id) => setPicked((t) => (t.includes(id) ? t.filter((x) => x !== id) : [...t, id]));
+  const last = p.exams.filter((e) => (e.course ?? 'biology') === course.id).slice(-5).reverse();
+  const count = Math.min(n, available);
 
   return (
     <div className="exam">
-      <a className="back-link" href="#/practice">‹ Practice</a>
-      <h1 className="page-title">Exam simulator</h1>
-      <p>Multiple choice in the style of Paper 1A. No feedback until you submit, just like the real thing.</p>
+      <a className="back-link" href="#/exams">‹ Exam prep</a>
+      <h1 className="page-title">{cfg.label} <small className="page-course">{course.meta.icon} {course.meta.name} {course.meta.levels.length > 1 ? level : ''}</small></h1>
+      <p>{course.meta.mcqExam
+        ? `Multiple choice in the style of the real paper (${cfg.full} questions at ${level}). No feedback until you submit.`
+        : `${course.meta.name} has no multiple-choice paper, so this is a timed quiz of lesson questions to test recall under pressure.`}</p>
       <section className="card">
         <fieldset className="fieldset">
-          <legend>Themes</legend>
+          <legend>{course.meta.unitLabel || 'Units'}</legend>
           <div className="chip-row">
-            {THEMES.map((th) => (
-              <label key={th.id} className={`chip chip-check ${themes.includes(th.id) ? 'selected' : ''}`}>
-                <input type="checkbox" checked={themes.includes(th.id)} onChange={() => toggle(th.id)} />
-                {th.id}: {th.title}
+            {units.map((u) => (
+              <label key={u.id} className={`chip chip-check ${picked.includes(u.id) ? 'selected' : ''}`}>
+                <input type="checkbox" checked={picked.includes(u.id)} onChange={() => toggle(u.id)} />
+                {u.id}: {u.title}
               </label>
             ))}
           </div>
@@ -41,19 +56,20 @@ function Setup({ onStart }) {
         <fieldset className="fieldset">
           <legend>Questions</legend>
           <div className="seg" role="radiogroup">
-            {LENGTHS.map((x) => (
+            {cfg.lengths.map((x) => (
               <label key={x} className={`seg-item ${n === x ? 'selected' : ''}`}>
-                <input type="radio" name="len" checked={n === x} onChange={() => setN(x)} />{x}
+                <input type="radio" name="len" checked={n === x} onChange={() => setN(x)} />{x}{x === cfg.full ? <small>full paper</small> : null}
               </label>
             ))}
           </div>
         </fieldset>
         <label className="switch-row">
           <input type="checkbox" checked={timed} onChange={(e) => setTimed(e.target.checked)} />
-          <span>Timed ({fmt(n * SECS_PER_Q)})</span>
+          <span>Timed ({fmt(count * cfg.secs)})</span>
         </label>
-        <button className="btn btn-primary btn-wide" disabled={!themes.length} onClick={() => onStart({ themes, n, timed })}>
-          Start exam
+        {available < n && picked.length > 0 && <p className="muted-small">Only {available} multiple-choice questions match those {(course.meta.unitLabel || 'unit').toLowerCase()}s, so the exam will have {available}.</p>}
+        <button className="btn btn-primary btn-wide" disabled={!picked.length || !available} onClick={() => onStart({ units: picked, n: count, timed, secs: cfg.secs })}>
+          Start
         </button>
       </section>
       {last.length > 0 && (
@@ -64,7 +80,7 @@ function Setup({ onStart }) {
               <li key={e.at} className="list-row">
                 <span className="list-main">
                   <span className="list-title">{Math.round((e.score / e.total) * 100)}% · {e.score}/{e.total}</span>
-                  <span className="list-sub">Themes {e.themes.join(', ')} · {new Date(e.at).toLocaleDateString()}</span>
+                  <span className="list-sub">{(e.units ?? e.themes ?? []).join(', ')} · {new Date(e.at).toLocaleDateString()}</span>
                 </span>
               </li>
             ))}
@@ -75,16 +91,15 @@ function Setup({ onStart }) {
   );
 }
 
-function Results({ questions, answers, secs, onDone, onRetry }) {
+function Results({ course, questions, answers, secs, onDone, onRetry }) {
   const score = questions.filter((q, i) => answers[i] === q.answer).length;
   const pct = Math.round((score / questions.length) * 100);
   const byTopic = useMemo(() => {
     const m = new Map();
     questions.forEach((q, i) => {
-      const tid = q.lessonId.split('-')[0];
-      const r = m.get(tid) ?? { right: 0, total: 0 };
+      const r = m.get(q.topicId) ?? { right: 0, total: 0 };
       r.total++; if (answers[i] === q.answer) r.right++;
-      m.set(tid, r);
+      m.set(q.topicId, r);
     });
     return [...m.entries()].sort((a, b) => a[1].right / a[1].total - b[1].right / b[1].total);
   }, [questions, answers]);
@@ -101,13 +116,16 @@ function Results({ questions, answers, secs, onDone, onRetry }) {
       <section className="card">
         <h2>By topic</h2>
         <ul className="bars">
-          {byTopic.map(([tid, r]) => (
-            <li key={tid} className="bar-row">
-              <a href={`#/topic/${tid}`} className="bar-label">{tid} {topicById.get(tid)?.title}</a>
-              <span className="bar"><span className={`bar-fill ${r.right / r.total < 0.5 ? 'low' : ''}`} style={{ width: `${(r.right / r.total) * 100}%` }} /></span>
-              <span className="bar-val">{r.right}/{r.total}</span>
-            </li>
-          ))}
+          {byTopic.map(([tid, r]) => {
+            const t = course.topicById.get(tid);
+            return (
+              <li key={tid} className="bar-row">
+                <a href={`#/topic/${tid}`} className="bar-label">{t?.code} {t?.title}</a>
+                <span className="bar"><span className={`bar-fill ${r.right / r.total < 0.5 ? 'low' : ''}`} style={{ width: `${(r.right / r.total) * 100}%` }} /></span>
+                <span className="bar-val">{r.right}/{r.total}</span>
+              </li>
+            );
+          })}
         </ul>
       </section>
       <section className="card">
@@ -129,23 +147,23 @@ function Results({ questions, answers, secs, onDone, onRetry }) {
             );
           })}
         </ol>
+        {score === questions.length && !showAll && <p>Every answer was right. Nothing to review!</p>}
       </section>
       <div className="stack">
         <button className="btn btn-primary btn-wide" onClick={onRetry}>New exam</button>
-        <button className="btn btn-ghost btn-wide" onClick={onDone}>Back to practice</button>
+        <button className="btn btn-ghost btn-wide" onClick={onDone}>Back to exam prep</button>
       </div>
     </div>
   );
 }
 
-function Running({ config, onSubmit, onQuit }) {
-  const p = useProgress();
-  const questions = useMemo(() => buildExam(p.profile.track, config.themes, config.n), [config]); // eslint-disable-line react-hooks/exhaustive-deps
+function Running({ course, level, config, onSubmit, onQuit }) {
+  const questions = useMemo(() => buildExam(course, level, config.units, config.n), [config]); // eslint-disable-line react-hooks/exhaustive-deps
   const [answers, setAnswers] = useState(() => Array(questions.length).fill(null));
   const [i, setI] = useState(0);
   const [elapsed, setElapsed] = useState(0);
   const [confirm, setConfirm] = useState(false);
-  const limit = config.timed ? questions.length * SECS_PER_Q : Infinity;
+  const limit = config.timed ? questions.length * config.secs : Infinity;
   const submitted = useRef(false);
 
   const submit = () => {
@@ -173,19 +191,10 @@ function Running({ config, onSubmit, onQuit }) {
     return () => window.removeEventListener('keydown', onKey);
   }, [i, questions, confirm]);
 
-  if (!questions.length) {
-    return (
-      <div className="session session-center">
-        <h1>No questions available</h1>
-        <p>There are no multiple-choice questions for those themes yet.</p>
-        <button className="btn btn-primary" onClick={onQuit}>Back</button>
-      </div>
-    );
-  }
-
   const q = questions[i];
   const answered = answers.filter((a) => a != null).length;
   const remaining = limit - elapsed;
+  const topic = course.topicById.get(q.topicId);
 
   return (
     <div className="session">
@@ -194,10 +203,10 @@ function Running({ config, onSubmit, onQuit }) {
         <div className="progress" role="progressbar" aria-label="Questions answered" aria-valuemin={0} aria-valuemax={questions.length} aria-valuenow={answered}>
           <div className="progress-fill" style={{ width: `${Math.max(3, (answered / questions.length) * 100)}%` }} />
         </div>
-        <span className={`timer ${remaining < 60 ? 'low' : ''}`} aria-live="off">{config.timed ? fmt(Math.max(0, remaining)) : fmt(elapsed)}</span>
+        <span className={`timer ${remaining < 60 ? 'low' : ''}`}>{config.timed ? fmt(Math.max(0, remaining)) : fmt(elapsed)}</span>
       </div>
       <main className="session-body" id="main">
-        <p className="q-kicker">Question {i + 1} of {questions.length} · {q.lessonId.split('-')[0]}</p>
+        <p className="q-kicker">Question {i + 1} of {questions.length} · {topic?.code}</p>
         <h2 className="q-prompt" id="exam-q">{q.prompt}</h2>
         <div className="choices" role="radiogroup" aria-labelledby="exam-q">
           {q.options.map((opt, k) => (
@@ -244,30 +253,30 @@ function Running({ config, onSubmit, onQuit }) {
   );
 }
 
-export function Exam({ onExit }) {
+export function Exam({ course, level, onExit }) {
   const [stage, setStage] = useState({ name: 'setup' });
 
   if (stage.name === 'running') {
     return (
       <Running
         key={stage.key}
+        course={course}
+        level={level}
         config={stage.config}
         onQuit={() => setStage({ name: 'setup' })}
         onSubmit={(questions, answers, secs) => {
           const score = questions.filter((q, i) => answers[i] === q.answer).length;
           questions.forEach((q, i) => actions.recordAnswer(q, answers[i] === q.answer, { lessonId: q.lessonId }));
-          actions.logExam({ at: Date.now(), score, total: questions.length, themes: stage.config.themes, secs });
+          actions.logExam({ at: Date.now(), course: course.id, score, total: questions.length, units: stage.config.units, secs });
           actions.addXp(Math.max(5, score));
           play('complete');
-          setStage({ name: 'results', questions, answers, secs, config: stage.config });
+          setStage({ name: 'results', questions, answers, secs });
         }}
       />
     );
   }
   if (stage.name === 'results') {
-    return (
-      <Results {...stage} onDone={onExit} onRetry={() => setStage({ name: 'setup' })} />
-    );
+    return <Results course={course} {...stage} onDone={onExit} onRetry={() => setStage({ name: 'setup' })} />;
   }
-  return <Setup onStart={(config) => setStage({ name: 'running', config, key: Date.now() })} />;
+  return <Setup course={course} level={level} onStart={(config) => setStage({ name: 'running', config, key: Date.now() })} />;
 }

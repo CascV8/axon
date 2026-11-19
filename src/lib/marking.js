@@ -1,11 +1,6 @@
-// Structured exam-style items (Paper 1B / Paper 2), see EXAM_SCHEMA.md.
-import { COMMAND_TERMS } from './commandTerms.js';
+// Helpers for self-marking structured exam-style items.
+import { COMMAND_TERMS } from '../content/commandTerms.js';
 
-const modules = import.meta.glob('./exam/*.json', { eager: true, import: 'default' });
-
-export const EXAM_ITEMS = Object.values(modules).flat().sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
-export const examItemById = new Map(EXAM_ITEMS.map((it) => [it.id, it]));
-export const PAPER_LABEL = { '1B': 'Paper 1B · data-based', '2A': 'Paper 2 · Section A', '2B': 'Paper 2 · Section B' };
 export const commandDef = new Map(COMMAND_TERMS.map((c) => [c.term, c.definition]));
 
 export function itemMarks(it) {
@@ -18,9 +13,9 @@ export function keywords(point) {
   return [...new Set(
     point.toLowerCase()
       .replace(/\(.*?\)/g, ' ')
-      .split(/[^a-z0-9₀-₉²³⁻+%.-]+/)
+      .split(/[^\p{L}\p{N}%.+-]+/u)
       .map((w) => w.replace(/^[.-]+|[.-]+$/g, ''))
-      .filter((w) => w.length > 3 && !STOP.has(w)),
+      .filter((w) => (/[㐀-鿿]/.test(w) ? w.length >= 2 : w.length > 3) && !STOP.has(w)),
   )];
 }
 /** Rough check whether a student's answer mentions a marking point (≥ half its key words). */
@@ -33,10 +28,10 @@ export function pointHit(answer, point) {
   return hits / ks.length >= 0.5;
 }
 
-/** Parse a numeric answer: accepts "−50", "-50 %", "50% decrease". */
+/** Parse a numeric answer: accepts "−50", "-50 %", "50% decrease", "1,5". */
 export function parseNumber(str) {
   if (str == null) return NaN;
-  const s = String(str).replace(/−/g, '-').replace(/,/g, '.').replace(/\s+/g, ' ');
+  const s = String(str).replace(/−/g, '-').replace(/(\d),(\d{3})(?!\d)/g, '$1$2').replace(/,/g, '.').replace(/\s+/g, ' ');
   const m = s.match(/-?\d+(\.\d+)?(e-?\d+)?/i);
   if (!m) return NaN;
   let v = parseFloat(m[0]);
@@ -46,6 +41,5 @@ export function parseNumber(str) {
 export function numericCorrect(input, spec) {
   const v = parseNumber(input);
   if (Number.isNaN(v)) return false;
-  // Accept magnitude for percentage changes written as "50 % decrease" vs -50, handled above.
   return Math.abs(v - spec.value) <= spec.tolerance + 1e-9;
 }

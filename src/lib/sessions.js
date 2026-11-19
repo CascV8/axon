@@ -1,17 +1,18 @@
-// Builds question lists for practice modes from content + progress.
+// Builds question lists for practice modes from a course + progress.
 import { shuffle, reviewPriority } from './core.js';
-import { visibleTopics, questionById } from '../content/index.js';
+import { visibleTopics } from '../content/index.js';
 import { COMMAND_TERMS } from '../content/commandTerms.js';
 
 const BANK_TYPES_FOR_REVIEW = new Set(['mcq', 'tf', 'fill']);
 
 /** Keyterm flashcard-style question generated from the glossary. */
 export function termQuestion(term, pool, variant) {
-  const others = shuffle(pool.filter((t) => t.id !== term.id && t.term !== term.term)).slice(0, 3);
+  const others = shuffle(pool.filter((t) => t.id !== term.id && t.term !== term.term && t.definition !== term.definition)).slice(0, 3);
   if (others.length < 2) return null;
   const base = {
     id: `syn-${term.id}-${variant}`,
     synthetic: true,
+    topicId: term.topicId,
     terms: [term.id],
     explanation: `${term.term}: ${term.definition}`,
   };
@@ -23,7 +24,6 @@ export function termQuestion(term, pool, variant) {
     const opts = shuffle([term, ...others]);
     return { ...base, type: 'mcq', prompt: `What is the best definition of ${term.term}?`, options: opts.map((t) => t.definition), answer: opts.indexOf(term) };
   }
-  // fill
   const bank = shuffle([term, ...others]).map((t) => t.term);
   return { ...base, type: 'fill', text: `___ — ${term.definition}`, answer: term.term, bank };
 }
@@ -32,17 +32,16 @@ export function termQuestion(term, pool, variant) {
  * Smart review: due keyterms first, then the weakest seen ones, then new terms from
  * topics already studied. Mixes real bank questions with generated ones.
  */
-export function buildReview(state, track, n = 12, now = Date.now()) {
-  const topics = visibleTopics(track);
+export function buildReview(state, course, level, n = 12, now = Date.now()) {
+  const topics = visibleTopics(course, level);
   const terms = topics.flatMap((t) => t.keyterms);
   const byId = new Map(terms.map((t) => [t.id, t]));
   const seen = terms.filter((t) => state.terms[t.id]);
-  const due = seen.filter((t) => state.terms[t.id].due <= now)
-    .sort((a, b) => reviewPriority(state.terms[a.id], now) - reviewPriority(state.terms[b.id], now));
-  const weak = seen.filter((t) => state.terms[t.id].due > now)
-    .sort((a, b) => reviewPriority(state.terms[a.id], now) - reviewPriority(state.terms[b.id], now));
-  const studiedTopics = new Set(Object.keys(state.lessons).map((id) => id.split('-')[0]));
-  const fresh = shuffle(terms.filter((t) => !state.terms[t.id] && studiedTopics.has(t.topicId)));
+  const prio = (t) => reviewPriority(state.terms[t.id], now);
+  const due = seen.filter((t) => state.terms[t.id].due <= now).sort((a, b) => prio(a) - prio(b));
+  const weak = seen.filter((t) => state.terms[t.id].due > now).sort((a, b) => prio(a) - prio(b));
+  const studied = new Set(topics.filter((t) => t.lessons.some((l) => state.lessons[l.id])).map((t) => t.id));
+  const fresh = shuffle(terms.filter((t) => !state.terms[t.id] && studied.has(t.topicId)));
   const fallback = shuffle(terms.filter((t) => !state.terms[t.id]));
 
   const picked = [];
@@ -53,7 +52,6 @@ export function buildReview(state, track, n = 12, now = Date.now()) {
     }
   }
 
-  // Questions that test each term, from the hand-written bank.
   const bankByTerm = new Map();
   for (const topic of topics) for (const l of topic.lessons) for (const q of l.questions) {
     if (!BANK_TYPES_FOR_REVIEW.has(q.type)) continue;
@@ -77,22 +75,25 @@ export function buildReview(state, track, n = 12, now = Date.now()) {
     } else {
       const q = termQuestion(term, pool, variants[i % 3]);
       if (q) out.push(q);
+      else if (bank.length) { usedQ.add(bank[0].id); out.push(bank[0]); }
     }
   });
   return shuffle(out);
 }
 
-export function dueCount(state, track, now = Date.now()) {
-  return visibleTopics(track).flatMap((t) => t.keyterms).filter((t) => state.terms[t.id]?.due <= now).length;
+export function dueCount(state, course, level, now = Date.now()) {
+  if (!course) return 0;
+  return visibleTopics(course, level).flatMap((t) => t.keyterms).filter((t) => state.terms[t.id]?.due <= now).length;
 }
 
-export function mistakeQuestions(state, track, n = 12) {
-  const visible = new Set(visibleTopics(track).flatMap((t) => t.lessons.flatMap((l) => l.questions.map((q) => q.id))));
+export function mistakeQuestions(state, course, level, n = 12) {
+  if (!course) return [];
+  const visible = new Set(visibleTopics(course, level).flatMap((t) => t.lessons.flatMap((l) => l.questions.map((q) => q.id))));
   return Object.entries(state.mistakes)
-    .filter(([id]) => visible.has(id) && questionById.has(id))
+    .filter(([id]) => visible.has(id))
     .sort((a, b) => b[1].times - a[1].times || b[1].at - a[1].at)
     .slice(0, n)
-    .map(([id]) => questionById.get(id));
+    .map(([id]) => course.questionById.get(id));
 }
 
 export function topicQuestions(topic, n = 10) {
@@ -101,10 +102,7 @@ export function topicQuestions(topic, n = 10) {
 
 export function commandTermQuestions(n = 10) {
   const pool = COMMAND_TERMS.map((c) => ({ id: `cmd-${c.term.toLowerCase().replace(/\s+/g, '-')}`, term: c.term, definition: c.definition, topicId: 'cmd' }));
-  return shuffle(pool).slice(0, n).map((t, i) => {
-    const q = termQuestion(t, pool, ['def', 'term'][i % 2]);
-    return { ...q, terms: [] };
-  });
+  return shuffle(pool).slice(0, n).map((t, i) => ({ ...termQuestion(t, pool, ['def', 'term'][i % 2]), terms: [] }));
 }
 
 /** Deterministic RNG so everyone gets the same daily challenge on a given date. */
@@ -122,15 +120,16 @@ export function seededRandom(seedStr) {
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
 }
-export function dailyQuestions(day, track, n = 10) {
-  const rand = seededRandom(`axon-${day}-${track}`);
-  const pool = visibleTopics(track).flatMap((t) => t.lessons.flatMap((l) => l.questions)).filter((q) => q.type === 'mcq' || q.type === 'tf' || q.type === 'fill');
+export const dailyKey = (day, courseId) => `${day}|${courseId}`;
+export function dailyQuestions(day, course, level, n = 10) {
+  const rand = seededRandom(`axon-${day}-${course.id}-${level}`);
+  const pool = visibleTopics(course, level).flatMap((t) => t.lessons.flatMap((l) => l.questions)).filter((q) => q.type === 'mcq' || q.type === 'tf' || q.type === 'fill');
   return shuffle(pool, rand).slice(0, n);
 }
 
-/** Paper 1A-style exam: MCQs drawn evenly across the chosen themes. */
-export function buildExam(track, themes, n) {
-  const topics = visibleTopics(track).filter((t) => themes.includes(t.theme));
+/** Timed exam: MCQs drawn evenly across the chosen units. */
+export function buildExam(course, level, unitIds, n) {
+  const topics = visibleTopics(course, level).filter((t) => unitIds.includes(t.unit));
   const byTopic = topics.map((t) => shuffle(t.lessons.flatMap((l) => l.questions).filter((q) => q.type === 'mcq')));
   const out = [];
   let round = 0;

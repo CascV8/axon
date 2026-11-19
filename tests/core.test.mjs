@@ -4,7 +4,9 @@ import {
   textMatches, grade, srsUpdate, levelForXp, xpForLevel, bumpStreak, liveStreak,
   currentHearts, HEART_REGEN_MS, daysBetween, shuffleNotIdentity, levelProgress,
 } from '../src/lib/core.js';
-import { weightedPercent, gradeFor, diplomaCheck, BOUNDARIES } from '../src/content/ibData.js';
+import { readFileSync } from 'node:fs';
+import { weightedPercent, gradeFor, diplomaCheck, neededOnRemaining } from '../src/lib/grades.js';
+const BIO = JSON.parse(readFileSync(new URL('../src/content/courses/biology/course.json', import.meta.url), 'utf8'));
 import { mergeStates } from '../src/lib/merge.js';
 
 test('textMatches is forgiving but not sloppy', () => {
@@ -16,6 +18,10 @@ test('textMatches is forgiving but not sloppy', () => {
   assert.ok(!textMatches('adhesion', 'cohesion'));
   assert.ok(!textMatches('', 'cohesion'));
   assert.ok(!textMatches('rna', 'dna'));
+  assert.ok(textMatches('学校', '学校'));
+  assert.ok(!textMatches('学生', '学校'));
+  assert.ok(textMatches('estacion', 'estación'));
+  assert.ok(textMatches('Très', 'très'));
 });
 
 test('grade handles each question type', () => {
@@ -76,10 +82,13 @@ test('hearts regenerate over time and cap at max', () => {
 });
 
 test('grade calculator weights components', () => {
-  assert.equal(Math.round(weightedPercent('HL', { p1a: 40, p1b: 35, p2: 80, ia: 24 })), 100);
-  assert.equal(Math.round(weightedPercent('SL', { p1a: 15, p1b: 12.5, p2: 25, ia: 12 })), 50);
-  assert.equal(weightedPercent('HL', {}), 0);
-  const min = BOUNDARIES.HL[0].min;
+  assert.equal(Math.round(weightedPercent(BIO.assessment.HL, { p1a: 40, p1b: 35, p2: 80, ia: 24 })), 100);
+  assert.equal(Math.round(weightedPercent(BIO.assessment.SL, { p1a: 15, p1b: 12.5, p2: 25, ia: 12 })), 50);
+  assert.equal(weightedPercent(BIO.assessment.HL, {}), 0);
+  // IA full marks (20%), papers blank: need (76 - 20) / 80 = 70% on the papers for a 7.
+  assert.equal(Math.round(neededOnRemaining(BIO.assessment.HL, { ia: 24 }, 76)), 70);
+  assert.equal(neededOnRemaining(BIO.assessment.HL, { p1a: 1, p1b: 1, p2: 1, ia: 1 }, 76), null);
+  const min = BIO.boundaries.HL[0].min;
   assert.equal(gradeFor(76, min), 7);
   assert.equal(gradeFor(75.9, min), 6);
   assert.equal(gradeFor(0, min), 1);

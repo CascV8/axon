@@ -1,8 +1,9 @@
 import { useMemo, useRef, useState } from 'react';
-import { actions, useProgress } from '../lib/store.js';
+import { actions } from '../lib/store.js';
 import { dayKey, levelProgress, liveStreak, termStrength } from '../lib/core.js';
-import { THEMES, visibleTopics, topicById } from '../content/index.js';
+import { visibleTopics, loadedCourses } from '../content/index.js';
 import { ACHIEVEMENTS } from '../lib/achievements.js';
+import { useActive } from '../lib/active.js';
 import { AccountCard } from './Account.jsx';
 
 const GOALS = [
@@ -40,18 +41,19 @@ function Heatmap({ xpByDay, goal }) {
 }
 
 export function Profile() {
-  const p = useProgress();
+  const { p, course, meta, level } = useActive();
   const fileRef = useRef(null);
   const [msg, setMsg] = useState('');
   const [confirmReset, setConfirmReset] = useState(false);
   const lp = levelProgress(p.xp);
   const streak = liveStreak(p.streak, dayKey());
-  const topics = useMemo(() => visibleTopics(p.profile.track), [p.profile.track]);
+  const topics = useMemo(() => visibleTopics(course, level), [course, level]);
+  const courses = loadedCourses();
   const accuracy = p.stats.questions ? Math.round((p.stats.correct / p.stats.questions) * 100) : 0;
   const mastered = Object.values(p.terms).filter((s) => s.box >= 5).length;
 
-  const themeStats = THEMES.map((th) => {
-    const tts = topics.filter((t) => t.theme === th.id);
+  const unitStats = (course?.units ?? []).map((th) => {
+    const tts = topics.filter((t) => t.unit === th.id);
     const lessons = tts.flatMap((t) => t.lessons);
     const terms = tts.flatMap((t) => t.keyterms);
     return {
@@ -90,8 +92,8 @@ export function Profile() {
           <span>{lp.level}</span>
         </div>
         <div className="profile-id">
-          <h1>{p.profile.name || 'IB Biologist'}</h1>
-          <p>{p.profile.track} Biology · {lp.span - lp.into} XP to level {lp.level + 1}</p>
+          <h1>{p.profile.name || 'IB student'}</h1>
+          <p>{meta.icon} {meta.name}{meta.levels.length > 1 ? ` ${level}` : ''} · {lp.span - lp.into} XP to level {lp.level + 1}</p>
         </div>
       </section>
 
@@ -110,33 +112,36 @@ export function Profile() {
         <Heatmap xpByDay={p.xpByDay} goal={p.profile.dailyGoal} />
       </section>
 
-      <section className="card">
-        <h2>Course progress</h2>
-        <ul className="bars">
-          {themeStats.map((t) => (
-            <li key={t.id} className="bar-row">
-              <span className="bar-label">{t.id}: {t.title}</span>
-              <span className="bar"><span className={`bar-fill theme-${t.id}`} style={{ width: `${t.total ? (t.done / t.total) * 100 : 0}%` }} /></span>
-              <span className="bar-val">{t.done}/{t.total}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {course && (
+        <section className="card">
+          <h2>{meta.name} progress</h2>
+          <ul className="bars">
+            {unitStats.filter((t) => t.total).map((t) => (
+              <li key={t.id} className="bar-row">
+                <span className="bar-label">{t.id}: {t.title}</span>
+                <span className="bar"><span className={`bar-fill ${t.tone}`} style={{ width: `${(t.done / t.total) * 100}%` }} /></span>
+                <span className="bar-val">{t.done}/{t.total}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="muted-small"><a href="#/courses">Switch course</a> to see your other subjects.</p>
+        </section>
+      )}
 
       <section className="card" aria-labelledby="acc-title">
         <h2 id="acc-title">Topic accuracy</h2>
-        {Object.keys(p.topicStats).length === 0 ? (
-          <p>Answer some questions and your strongest and weakest topics will show up here.</p>
+        {!course || !Object.keys(p.topicStats).some((tid) => course.topicById.has(tid)) ? (
+          <p>Answer some {meta.name} questions and your strongest and weakest topics will show up here.</p>
         ) : (
           <ul className="bars">
             {Object.entries(p.topicStats)
-              .filter(([tid]) => topicById.has(tid))
+              .filter(([tid]) => course.topicById.has(tid))
               .sort((a, b) => a[1].right / a[1].seen - b[1].right / b[1].seen)
               .map(([tid, r]) => {
                 const pct = r.right / r.seen;
                 return (
                   <li key={tid} className="bar-row">
-                    <a className="bar-label" href={`#/practice/topic/${tid}`}>{tid} {topicById.get(tid).title}</a>
+                    <a className="bar-label" href={`#/practice/topic/${tid}`}>{course.topicById.get(tid).code} {course.topicById.get(tid).title}</a>
                     <span className="bar"><span className={`bar-fill ${pct < 0.6 ? 'low' : ''}`} style={{ width: `${pct * 100}%` }} /></span>
                     <span className="bar-val">{Math.round(pct * 100)}% <small>({r.seen})</small></span>
                   </li>
@@ -148,10 +153,10 @@ export function Profile() {
       </section>
 
       <section className="card" aria-labelledby="badge-title">
-        <h2 id="badge-title">Badges · {ACHIEVEMENTS.filter((a) => a.test(p)).length}/{ACHIEVEMENTS.length}</h2>
+        <h2 id="badge-title">Badges · {ACHIEVEMENTS.filter((a) => a.test(p, courses)).length}/{ACHIEVEMENTS.length}</h2>
         <ul className="badges">
           {ACHIEVEMENTS.map((a) => {
-            const got = a.test(p);
+            const got = a.test(p, courses);
             return (
               <li key={a.id} className={`badge ${got ? 'got' : ''}`} title={a.desc}>
                 <span className="badge-icon" aria-hidden="true">{got ? a.icon : '🔒'}</span>
@@ -170,18 +175,20 @@ export function Profile() {
           <input className="input" value={p.profile.name} maxLength={30} placeholder="Your name" onChange={(e) => actions.setProfile({ name: e.target.value })} />
         </label>
 
-        <p><a href="#/courses">Manage your courses ›</a></p>
-        <fieldset className="fieldset">
-          <legend>Biology level</legend>
-          <div className="seg" role="radiogroup">
-            {['SL', 'HL'].map((t) => (
-              <label key={t} className={`seg-item ${p.profile.track === t ? 'selected' : ''}`}>
-                <input type="radio" name="track" checked={p.profile.track === t} onChange={() => actions.setProfile({ track: t })} />
-                {t === 'SL' ? 'Standard (SL)' : 'Higher (HL)'}
-              </label>
-            ))}
-          </div>
-        </fieldset>
+        <p><a href="#/courses">Manage your courses and levels ›</a></p>
+        {meta.levels.length > 1 && (
+          <fieldset className="fieldset">
+            <legend>{meta.name} level</legend>
+            <div className="seg" role="radiogroup">
+              {meta.levels.map((t) => (
+                <label key={t} className={`seg-item ${level === t ? 'selected' : ''}`}>
+                  <input type="radio" name="track" checked={level === t} onChange={() => actions.setCourseLevel(meta.id, t)} />
+                  {t === 'SL' ? 'Standard (SL)' : 'Higher (HL)'}
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        )}
 
         <fieldset className="fieldset">
           <legend>Daily goal</legend>
