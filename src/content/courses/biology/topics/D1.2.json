@@ -1,0 +1,619 @@
+{
+  "id": "D1.2",
+  "code": "D1.2",
+  "unit": "D",
+  "title": "Protein synthesis",
+  "level": "SL",
+  "summary": "How the base sequence of a gene is transcribed into mRNA and then translated by ribosomes and tRNA into a polypeptide, using the genetic code.",
+  "keyterms": [
+    {
+      "id": "d1.2-transcription",
+      "term": "Transcription",
+      "definition": "Synthesis of RNA using a DNA strand as a template, catalysed by RNA polymerase; the first stage of gene expression.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-rna-polymerase",
+      "term": "RNA polymerase",
+      "definition": "Enzyme that separates the DNA strands and links RNA nucleotides, paired to the template by complementary base pairing, into an RNA strand.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-template-strand",
+      "term": "Template strand",
+      "definition": "The DNA strand that is transcribed; the RNA is complementary to it and has the same base sequence as the coding strand, with U for T.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-mrna",
+      "term": "Messenger RNA (mRNA)",
+      "definition": "RNA transcribed from a gene that carries its base sequence, as a series of codons, to ribosomes for translation.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-translation",
+      "term": "Translation",
+      "definition": "Synthesis of a polypeptide at a ribosome, with the amino acid sequence determined by the sequence of codons in mRNA.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-ribosome",
+      "term": "Ribosome",
+      "definition": "Organelle of rRNA and protein, with small and large subunits, that binds mRNA and tRNA and catalyses peptide bond formation.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-trna",
+      "term": "Transfer RNA (tRNA)",
+      "definition": "RNA molecule that carries a specific amino acid and has an anticodon that pairs with a complementary mRNA codon.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-codon",
+      "term": "Codon",
+      "definition": "Sequence of three mRNA bases that codes for one amino acid or acts as a start or stop signal.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-anticodon",
+      "term": "Anticodon",
+      "definition": "Sequence of three bases on a tRNA molecule that is complementary to, and pairs with, a codon on mRNA.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-genetic-code",
+      "term": "Genetic code",
+      "definition": "The 64 codons and their meanings; it is degenerate (several codons per amino acid) and almost universal across organisms.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-peptide-bond",
+      "term": "Peptide bond",
+      "definition": "Covalent bond formed by condensation between the amino group of one amino acid and the carboxyl group of another.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-sickle-cell",
+      "term": "Sickle cell anaemia",
+      "definition": "Disease caused by a base substitution in the β-globin gene (GAG→GTG) that replaces glutamic acid with valine in haemoglobin.",
+      "hl": false
+    },
+    {
+      "id": "d1.2-promoter",
+      "term": "Promoter",
+      "definition": "Non-coding DNA sequence near the start of a gene where RNA polymerase binds to initiate transcription.",
+      "hl": true
+    },
+    {
+      "id": "d1.2-post-transcriptional-modification",
+      "term": "Post-transcriptional modification",
+      "definition": "Processing of eukaryotic pre-mRNA: introns are removed and exons spliced, and a 5' cap and 3' poly-A tail are added.",
+      "hl": true
+    },
+    {
+      "id": "d1.2-alternative-splicing",
+      "term": "Alternative splicing",
+      "definition": "Joining different combinations of exons from the same pre-mRNA, so one gene can code for several polypeptide variants.",
+      "hl": true
+    },
+    {
+      "id": "d1.2-proteasome",
+      "term": "Proteasome",
+      "definition": "Protein complex that breaks down unwanted or damaged proteins into amino acids, which are recycled for new protein synthesis.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "D1.2-1",
+      "title": "Transcription",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D1.2-1-q01",
+          "type": "mcq",
+          "prompt": "What is transcription?",
+          "options": [
+            "Synthesis of a polypeptide using the sequence of codons in mRNA",
+            "Production of an exact copy of a DNA molecule",
+            "Synthesis of RNA using a DNA strand as a template",
+            "Removal of introns from mRNA"
+          ],
+          "answer": 2,
+          "explanation": "Transcription copies the base sequence of a gene into RNA. Making a polypeptide from mRNA is translation, and copying a whole DNA molecule is replication.",
+          "terms": [
+            "d1.2-transcription"
+          ]
+        },
+        {
+          "id": "D1.2-1-q02",
+          "type": "tf",
+          "statement": "In transcription, an RNA nucleotide containing uracil pairs with adenine on the DNA template strand.",
+          "answer": true,
+          "explanation": "RNA has uracil instead of thymine, so wherever the template has adenine, a uracil nucleotide is added by complementary base pairing (hydrogen bonding).",
+          "terms": [
+            "d1.2-transcription",
+            "d1.2-template-strand"
+          ]
+        },
+        {
+          "id": "D1.2-1-q03",
+          "type": "fill",
+          "text": "The enzyme that separates the DNA strands and links RNA nucleotides during transcription is RNA ___.",
+          "answer": "polymerase",
+          "bank": [
+            "polymerase",
+            "helicase",
+            "ligase",
+            "primase"
+          ],
+          "explanation": "RNA polymerase both unwinds the DNA and joins RNA nucleotides; unlike replication, no separate helicase is needed.",
+          "terms": [
+            "d1.2-rna-polymerase"
+          ]
+        },
+        {
+          "id": "D1.2-1-q04",
+          "type": "order",
+          "prompt": "Put the events of transcription in order.",
+          "items": [
+            "RNA polymerase binds to DNA at the start of a gene",
+            "RNA polymerase separates the two DNA strands by breaking hydrogen bonds",
+            "Free RNA nucleotides pair with complementary bases on the template strand",
+            "RNA polymerase links the nucleotides with covalent bonds",
+            "The RNA separates from the DNA and the double helix re-forms"
+          ],
+          "explanation": "The bases must be exposed before nucleotides can pair with them; RNA polymerase then joins the paired nucleotides. Behind the polymerase the RNA peels away and the DNA strands rejoin.",
+          "terms": [
+            "d1.2-rna-polymerase",
+            "d1.2-transcription"
+          ]
+        },
+        {
+          "id": "D1.2-1-q05",
+          "type": "match",
+          "prompt": "Match each base on the DNA template strand to the base added to the RNA.",
+          "pairs": [
+            {
+              "left": "Adenine (A)",
+              "right": "Uracil (U)"
+            },
+            {
+              "left": "Thymine (T)",
+              "right": "Adenine (A)"
+            },
+            {
+              "left": "Cytosine (C)",
+              "right": "Guanine (G)"
+            },
+            {
+              "left": "Guanine (G)",
+              "right": "Cytosine (C)"
+            }
+          ],
+          "explanation": "Pairing rules are the same as in DNA except that RNA uses uracil to pair with adenine. Thymine never appears in RNA.",
+          "terms": [
+            "d1.2-template-strand",
+            "d1.2-transcription"
+          ]
+        },
+        {
+          "id": "D1.2-1-q06",
+          "type": "mcq",
+          "prompt": "A DNA template strand has the sequence 3'-TACGGA-5'. What is the sequence of the mRNA transcribed from it?",
+          "options": [
+            "5'-ATGCCT-3'",
+            "5'-UACGGA-3'",
+            "5'-AUGCCU-3'",
+            "5'-TACGGA-3'"
+          ],
+          "answer": 2,
+          "explanation": "Each template base is paired with its RNA complement (T→A, A→U, C→G, G→C), giving AUGCCU. ATGCCT is the coding-strand DNA sequence, which contains thymine, not uracil.",
+          "terms": [
+            "d1.2-template-strand",
+            "d1.2-mrna"
+          ]
+        },
+        {
+          "id": "D1.2-1-q07",
+          "type": "tf",
+          "statement": "Transcription alters the base sequence of the DNA template, so a gene can only be transcribed a limited number of times.",
+          "answer": false,
+          "explanation": "The template is only read, not changed: hydrogen bonds re-form and the original sequence is kept. This stability lets a gene be transcribed repeatedly throughout a cell's life.",
+          "terms": [
+            "d1.2-template-strand",
+            "d1.2-transcription"
+          ]
+        },
+        {
+          "id": "D1.2-1-q08",
+          "type": "fill",
+          "text": "Only one of the two DNA strands of a gene, the ___ strand, is used to make the RNA.",
+          "answer": "template",
+          "bank": [
+            "template",
+            "coding",
+            "leading",
+            "lagging"
+          ],
+          "explanation": "RNA is built complementary to the template strand, so its sequence matches the other, coding strand (with U in place of T). Leading and lagging strands are terms from DNA replication.",
+          "terms": [
+            "d1.2-template-strand"
+          ]
+        },
+        {
+          "id": "D1.2-1-q09",
+          "type": "mcq",
+          "prompt": "A pancreatic β-cell and a skin cell from the same person contain the same genes, but only the β-cell makes insulin. What is the best explanation?",
+          "options": [
+            "Skin cells have lost the insulin gene during development",
+            "Skin cells make insulin mRNA but their tRNA cannot translate it",
+            "The insulin gene is mutated in skin cells",
+            "The insulin gene is transcribed in β-cells but not in skin cells"
+          ],
+          "answer": 3,
+          "explanation": "Not all genes are expressed in every cell. Transcription is the first stage of gene expression and a key control point: if a gene is not transcribed, its protein cannot be made.",
+          "terms": [
+            "d1.2-transcription"
+          ]
+        },
+        {
+          "id": "D1.2-1-q10",
+          "type": "mcq",
+          "prompt": "Why is it important that transcription does not change the DNA base sequence in a non-dividing cell such as a neuron?",
+          "options": [
+            "Neurons do not need to make proteins after they have formed",
+            "The same genes must be transcribed accurately throughout the cell's life, which can last decades",
+            "Changed DNA would be passed to daughter cells by mitosis",
+            "RNA polymerase can only read DNA that has never been transcribed before"
+          ],
+          "answer": 1,
+          "explanation": "A neuron cannot renew its DNA by replication and division, so its genes must stay unchanged to be transcribed for its whole life. DNA's stability as a template makes this possible.",
+          "terms": [
+            "d1.2-template-strand"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D1.2-2",
+      "title": "Translation and the genetic code",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D1.2-2-q01",
+          "type": "mcq",
+          "prompt": "Which statement best describes translation?",
+          "options": [
+            "Synthesis of a polypeptide using the sequence of codons in mRNA",
+            "Synthesis of mRNA using a DNA template",
+            "Folding of a polypeptide into its tertiary structure",
+            "Transport of mRNA from the nucleus to the cytoplasm"
+          ],
+          "answer": 0,
+          "explanation": "At the ribosome, each mRNA codon is matched to a tRNA carrying a specific amino acid, so the codon sequence determines the amino acid sequence of the polypeptide.",
+          "terms": [
+            "d1.2-translation"
+          ]
+        },
+        {
+          "id": "D1.2-2-q02",
+          "type": "match",
+          "prompt": "Match each component to its role in translation.",
+          "pairs": [
+            {
+              "left": "mRNA",
+              "right": "Carries the sequence of codons from the gene"
+            },
+            {
+              "left": "tRNA",
+              "right": "Carries a specific amino acid and has an anticodon"
+            },
+            {
+              "left": "Ribosome",
+              "right": "Holds mRNA and tRNA and catalyses peptide bond formation"
+            },
+            {
+              "left": "Codon",
+              "right": "Three mRNA bases specifying one amino acid"
+            }
+          ],
+          "explanation": "mRNA provides the coded message, tRNAs bring the matching amino acids, and the ribosome positions them and links them into a polypeptide.",
+          "terms": [
+            "d1.2-mrna",
+            "d1.2-trna",
+            "d1.2-ribosome",
+            "d1.2-codon"
+          ]
+        },
+        {
+          "id": "D1.2-2-q03",
+          "type": "fill",
+          "text": "The sequence of three bases on tRNA that pairs with an mRNA codon is called an ___.",
+          "answer": "anticodon",
+          "bank": [
+            "anticodon",
+            "codon",
+            "intron",
+            "exon"
+          ],
+          "explanation": "The anticodon is complementary to the codon, so hydrogen bonding between them ensures the correct amino acid is added.",
+          "terms": [
+            "d1.2-anticodon"
+          ]
+        },
+        {
+          "id": "D1.2-2-q04",
+          "type": "tf",
+          "statement": "The genetic code is degenerate, meaning that more than one codon can code for the same amino acid.",
+          "answer": true,
+          "explanation": "There are 64 codons but only 20 amino acids, so most amino acids have two or more codons (e.g. GAA and GAG both code for glutamic acid).",
+          "terms": [
+            "d1.2-genetic-code"
+          ]
+        },
+        {
+          "id": "D1.2-2-q05",
+          "type": "tf",
+          "statement": "Each tRNA molecule can carry any amino acid, depending on which codon it binds to.",
+          "answer": false,
+          "explanation": "Each type of tRNA, identified by its anticodon, has one specific amino acid attached to it. This fixed link between anticodon and amino acid is what makes translation reliable.",
+          "terms": [
+            "d1.2-trna",
+            "d1.2-anticodon"
+          ]
+        },
+        {
+          "id": "D1.2-2-q06",
+          "type": "mcq",
+          "prompt": "Use the genetic code: AUG = Met, UGG = Trp, UUU = Phe, UAC = Tyr, ACC = Thr, AAA = Lys. Which tripeptide is coded for by the mRNA sequence AUG UGG UUU?",
+          "options": [
+            "Tyr–Thr–Lys",
+            "Met–Trp–Phe",
+            "Phe–Trp–Met",
+            "Met–Thr–Phe"
+          ],
+          "answer": 1,
+          "explanation": "The codon table is written for mRNA codons, so read AUG, UGG, UUU directly. Tyr–Thr–Lys comes from wrongly decoding the complementary anticodons (UAC, ACC, AAA).",
+          "terms": [
+            "d1.2-codon",
+            "d1.2-genetic-code"
+          ]
+        },
+        {
+          "id": "D1.2-2-q07",
+          "type": "order",
+          "prompt": "Put the steps of one cycle of polypeptide elongation in order.",
+          "items": [
+            "A tRNA with an anticodon complementary to the next codon binds to the ribosome",
+            "A peptide bond links the growing polypeptide to the amino acid on this tRNA",
+            "The ribosome moves along the mRNA by one codon",
+            "The tRNA that has lost its amino acid is released"
+          ],
+          "explanation": "Each cycle adds one amino acid: a matching tRNA arrives, the chain is joined to its amino acid by a peptide bond, the ribosome shifts one codon, and the empty tRNA leaves to be reloaded.",
+          "terms": [
+            "d1.2-trna",
+            "d1.2-ribosome",
+            "d1.2-peptide-bond"
+          ]
+        },
+        {
+          "id": "D1.2-2-q08",
+          "type": "fill",
+          "text": "Amino acids in the growing polypeptide are linked by ___ bonds.",
+          "answer": "peptide",
+          "bank": [
+            "peptide",
+            "hydrogen",
+            "glycosidic",
+            "phosphodiester"
+          ],
+          "explanation": "The ribosome catalyses a condensation reaction forming a peptide bond. Hydrogen bonds hold codon and anticodon together; glycosidic and phosphodiester bonds are found in carbohydrates and nucleic acids.",
+          "terms": [
+            "d1.2-peptide-bond"
+          ]
+        },
+        {
+          "id": "D1.2-2-q09",
+          "type": "mcq",
+          "prompt": "What is meant by the genetic code being universal?",
+          "options": [
+            "Every cell in an organism contains the same genes",
+            "Each amino acid is coded for by only one codon",
+            "All organisms make the same proteins",
+            "Almost all organisms use the same codons for the same amino acids"
+          ],
+          "answer": 3,
+          "explanation": "With only minor exceptions, a codon means the same amino acid in bacteria, plants and animals. This is why a human gene can be expressed in bacteria to make, for example, human insulin.",
+          "terms": [
+            "d1.2-genetic-code"
+          ]
+        },
+        {
+          "id": "D1.2-2-q10",
+          "type": "mcq",
+          "prompt": "In sickle cell anaemia, one codon in the β-globin mRNA changes from GAG to GUG. What is the effect on the polypeptide?",
+          "options": [
+            "Glutamic acid is replaced by valine at one position",
+            "Translation stops early, producing a short polypeptide",
+            "Every amino acid after the mutation is changed",
+            "No effect, because the genetic code is degenerate"
+          ],
+          "answer": 0,
+          "explanation": "A single base substitution (A→T in DNA) changes one codon, so one amino acid changes from glutamic acid to valine. This makes haemoglobin form fibres at low oxygen, distorting red blood cells into a sickle shape.",
+          "terms": [
+            "d1.2-sickle-cell",
+            "d1.2-codon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D1.2-3",
+      "title": "Initiation, processing and modification",
+      "hl": true,
+      "questions": [
+        {
+          "id": "D1.2-3-q01",
+          "type": "tf",
+          "statement": "RNA polymerase adds nucleotides to the 3' end of the growing RNA, so RNA is synthesised in the 5'→3' direction.",
+          "answer": true,
+          "explanation": "Like DNA polymerase, RNA polymerase can only extend a strand at its 3' end, so transcripts grow 5'→3' while the template is read 3'→5'.",
+          "terms": [
+            "d1.2-rna-polymerase",
+            "d1.2-transcription"
+          ]
+        },
+        {
+          "id": "D1.2-3-q02",
+          "type": "mcq",
+          "prompt": "Where does RNA polymerase bind to initiate transcription?",
+          "options": [
+            "The start codon (AUG)",
+            "The promoter",
+            "The first intron",
+            "A telomere"
+          ],
+          "answer": 1,
+          "explanation": "The promoter is a non-coding DNA sequence near the start of the gene; transcription factors binding there help RNA polymerase attach. AUG is a codon on mRNA used to start translation, not transcription.",
+          "terms": [
+            "d1.2-promoter"
+          ]
+        },
+        {
+          "id": "D1.2-3-q03",
+          "type": "order",
+          "prompt": "Put the events of the initiation of translation in order.",
+          "items": [
+            "The small ribosomal subunit binds to the mRNA",
+            "An initiator tRNA carrying methionine pairs with the start codon AUG",
+            "The large ribosomal subunit binds, with the initiator tRNA in the P site",
+            "A second tRNA enters the A site and the first peptide bond forms"
+          ],
+          "explanation": "Translation begins when mRNA binds the small subunit and the start codon is paired with the initiator tRNA (methionine). The large subunit then completes the ribosome, leaving the A site free for the next tRNA.",
+          "terms": [
+            "d1.2-ribosome",
+            "d1.2-trna",
+            "d1.2-codon"
+          ]
+        },
+        {
+          "id": "D1.2-3-q04",
+          "type": "match",
+          "prompt": "Match each non-coding DNA sequence to its role.",
+          "pairs": [
+            {
+              "left": "Intron",
+              "right": "Transcribed but removed from pre-mRNA before translation"
+            },
+            {
+              "left": "Promoter",
+              "right": "Binding site for RNA polymerase"
+            },
+            {
+              "left": "Telomere",
+              "right": "Repetitive sequence protecting chromosome ends"
+            },
+            {
+              "left": "tRNA gene",
+              "right": "Transcribed into functional RNA but never translated"
+            }
+          ],
+          "explanation": "Much of the genome does not code for polypeptides: some sequences regulate gene expression, some are introns, some protect chromosome ends, and some are genes for tRNA and rRNA.",
+          "terms": [
+            "d1.2-promoter",
+            "d1.2-post-transcriptional-modification"
+          ]
+        },
+        {
+          "id": "D1.2-3-q05",
+          "type": "fill",
+          "text": "The removal of introns and joining of exons in eukaryotic pre-mRNA is called ___.",
+          "answer": "splicing",
+          "bank": [
+            "splicing",
+            "capping",
+            "translation",
+            "elongation"
+          ],
+          "explanation": "Splicing cuts out introns and joins the exons to make mature mRNA. Capping is the addition of the 5' cap, a separate modification.",
+          "terms": [
+            "d1.2-post-transcriptional-modification"
+          ]
+        },
+        {
+          "id": "D1.2-3-q06",
+          "type": "mcq",
+          "prompt": "How can one eukaryotic gene code for more than one version of a polypeptide?",
+          "options": [
+            "Different combinations of introns are translated in different cells",
+            "The ribosome reads the mRNA in different reading frames",
+            "Different combinations of exons are kept in the mature mRNA",
+            "The gene mutates differently in each cell type"
+          ],
+          "answer": 2,
+          "explanation": "In alternative splicing, some exons may be included or skipped, so one pre-mRNA can yield several mature mRNAs and protein variants. Introns are always removed and are not translated.",
+          "terms": [
+            "d1.2-alternative-splicing"
+          ]
+        },
+        {
+          "id": "D1.2-3-q07",
+          "type": "tf",
+          "statement": "In eukaryotes, a 5' cap and a 3' poly-A tail are added to mRNA, which help protect it from breakdown and assist translation.",
+          "answer": true,
+          "explanation": "Both modifications occur after transcription in eukaryotes; they stabilise the mRNA, help it leave the nucleus and help ribosomes bind for translation.",
+          "terms": [
+            "d1.2-post-transcriptional-modification"
+          ]
+        },
+        {
+          "id": "D1.2-3-q08",
+          "type": "mcq",
+          "prompt": "Pre-proinsulin is converted to insulin in two stages. Which description is correct?",
+          "options": [
+            "Introns are removed from pre-proinsulin, then a poly-A tail is added",
+            "The signal peptide is removed to give proinsulin, then the C-peptide is removed, leaving A and B chains joined by disulfide bonds",
+            "Two molecules of proinsulin bond together to form insulin",
+            "Methionine is added to each end of the polypeptide"
+          ],
+          "answer": 1,
+          "explanation": "Many polypeptides must be modified to become functional. The signal peptide is cut off in the rough ER, then the C-peptide is removed, leaving two chains held by disulfide bonds. Introns and poly-A tails belong to mRNA, not polypeptides.",
+          "terms": [
+            "d1.2-translation"
+          ]
+        },
+        {
+          "id": "D1.2-3-q09",
+          "type": "fill",
+          "text": "Unwanted or damaged proteins in the cytoplasm are broken down into amino acids by protein complexes called ___.",
+          "answer": "proteasomes",
+          "accept": [
+            "proteasome"
+          ],
+          "bank": [
+            "proteasomes",
+            "ribosomes",
+            "spliceosomes",
+            "centrosomes"
+          ],
+          "explanation": "Proteasomes break proteins down so their amino acids can be reused. Keeping a functional proteome needs this constant breakdown alongside protein synthesis by ribosomes.",
+          "terms": [
+            "d1.2-proteasome"
+          ]
+        },
+        {
+          "id": "D1.2-3-q10",
+          "type": "tf",
+          "statement": "Because ribosomes move along mRNA in the 5'→3' direction, the start codon lies nearer the 3' end of the mRNA than the stop codon.",
+          "answer": false,
+          "explanation": "Translation starts near the 5' end at AUG and proceeds 5'→3' towards the stop codon, so the start codon is nearer the 5' end.",
+          "terms": [
+            "d1.2-codon",
+            "d1.2-ribosome"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,605 @@
+{
+  "id": "A3.1",
+  "code": "A3.1",
+  "unit": "A",
+  "title": "Diversity of organisms",
+  "level": "SL",
+  "summary": "What a species is and how we name it, why species can be hard to tell apart, and how chromosomes, karyograms and genomes reveal both the unity and the diversity of life.",
+  "keyterms": [
+    {
+      "id": "a3.1-variation",
+      "term": "Variation",
+      "definition": "Differences between organisms, both between and within species; a defining feature of life.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-morphological-species",
+      "term": "Morphological species concept",
+      "definition": "Defining species as groups of organisms with shared observable traits, as used by Linnaeus.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-binomial",
+      "term": "Binomial nomenclature",
+      "definition": "Two-part scientific name: genus (capital initial) then species (lower case), italicised or underlined, e.g. Homo sapiens.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-biological-species",
+      "term": "Biological species concept",
+      "definition": "A species is a group of organisms that can actually or potentially interbreed in nature to produce fertile offspring.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-population",
+      "term": "Population",
+      "definition": "A group of organisms of the same species living in the same area at the same time.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-karyotype",
+      "term": "Karyotype",
+      "definition": "The number and type of chromosomes in the nucleus of an organism's cells.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-karyogram",
+      "term": "Karyogram",
+      "definition": "An image of an organism's chromosomes arranged in homologous pairs by length, centromere position and banding pattern.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-centromere",
+      "term": "Centromere",
+      "definition": "The constricted region of a chromosome; its position is used to identify chromosomes in a karyogram.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-genome",
+      "term": "Genome",
+      "definition": "All the genetic information of an organism, including all of its DNA.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-snp",
+      "term": "Single-nucleotide polymorphism (SNP)",
+      "definition": "A position in a gene or genome where a single base differs between individuals of a species.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-whole-genome-sequencing",
+      "term": "Whole genome sequencing",
+      "definition": "Determining the complete base sequence of an organism's genome; used in research on evolution and in personalised medicine.",
+      "hl": false
+    },
+    {
+      "id": "a3.1-horizontal-gene-transfer",
+      "term": "Horizontal gene transfer",
+      "definition": "Transfer of genes between organisms other than from parent to offspring, e.g. plasmids passed between bacteria.",
+      "hl": true
+    },
+    {
+      "id": "a3.1-dichotomous-key",
+      "term": "Dichotomous key",
+      "definition": "An identification tool consisting of a series of paired choices, each leading to another pair or to a name.",
+      "hl": true
+    },
+    {
+      "id": "a3.1-edna",
+      "term": "Environmental DNA (eDNA)",
+      "definition": "DNA shed by organisms into their environment, e.g. into water or soil, that can be sampled to detect species present.",
+      "hl": true
+    },
+    {
+      "id": "a3.1-dna-barcode",
+      "term": "DNA barcode",
+      "definition": "A short, standardised DNA sequence that differs between species and is used to identify them.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "A3.1-1",
+      "title": "Species and naming",
+      "hl": false,
+      "questions": [
+        {
+          "id": "A3.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which is the correct way to write the binomial name of humans?",
+          "options": [
+            "Homo Sapiens",
+            "homo sapiens",
+            "Homo sapiens",
+            "Sapiens homo"
+          ],
+          "answer": 2,
+          "explanation": "The genus has a capital initial, the species name is all lower case, and the name is italicised (or underlined when handwritten).",
+          "terms": [
+            "a3.1-binomial"
+          ]
+        },
+        {
+          "id": "A3.1-1-q02",
+          "type": "fill",
+          "text": "In a binomial name, the first part is the ___.",
+          "answer": "genus",
+          "bank": [
+            "genus",
+            "species",
+            "family",
+            "kingdom"
+          ],
+          "explanation": "The first name is the genus and the second is the specific name; together they identify the species.",
+          "terms": [
+            "a3.1-binomial"
+          ]
+        },
+        {
+          "id": "A3.1-1-q03",
+          "type": "mcq",
+          "prompt": "According to the biological species concept, what is a species?",
+          "options": [
+            "A group of organisms that look the same",
+            "A group of organisms that can interbreed to produce fertile offspring",
+            "A group of organisms that live in the same habitat",
+            "A group of organisms with identical DNA"
+          ],
+          "answer": 1,
+          "explanation": "Interbreeding to produce fertile offspring is the key criterion. Looking similar is the morphological concept, and members of a species do not have identical DNA.",
+          "terms": [
+            "a3.1-biological-species"
+          ]
+        },
+        {
+          "id": "A3.1-1-q04",
+          "type": "tf",
+          "statement": "A horse and a donkey are the same species because they can mate and produce offspring.",
+          "answer": false,
+          "explanation": "Their offspring, the mule, is sterile. The biological species concept requires fertile offspring, so horses and donkeys are separate species.",
+          "terms": [
+            "a3.1-biological-species"
+          ]
+        },
+        {
+          "id": "A3.1-1-q05",
+          "type": "match",
+          "prompt": "Match each term to its definition.",
+          "pairs": [
+            {
+              "left": "Morphological species concept",
+              "right": "Grouping by shared observable traits"
+            },
+            {
+              "left": "Biological species concept",
+              "right": "Interbreeding to produce fertile offspring"
+            },
+            {
+              "left": "Population",
+              "right": "Same species, same area, same time"
+            }
+          ],
+          "explanation": "Linnaeus classified species by morphology; the biological species concept uses interbreeding; a population is a local group of one species.",
+          "terms": [
+            "a3.1-morphological-species",
+            "a3.1-biological-species",
+            "a3.1-population"
+          ]
+        },
+        {
+          "id": "A3.1-1-q06",
+          "type": "mcq",
+          "prompt": "Why is it sometimes difficult to decide whether two populations are separate species?",
+          "options": [
+            "Because speciation is gradual, so diverging populations pass through stages where they are only partly distinct",
+            "Because all populations can interbreed",
+            "Because species never change over time",
+            "Because organisms in different populations always look identical"
+          ],
+          "answer": 0,
+          "explanation": "When populations stop interbreeding they diverge gradually. Partway through, there is no clear point at which they become separate species.",
+          "terms": [
+            "a3.1-population",
+            "a3.1-biological-species"
+          ]
+        },
+        {
+          "id": "A3.1-1-q07",
+          "type": "tf",
+          "statement": "Variation between organisms is a defining feature of life.",
+          "answer": true,
+          "explanation": "No two organisms are identical; variation exists both between species and between individuals within a species, and it is the raw material for evolution.",
+          "terms": [
+            "a3.1-variation"
+          ]
+        },
+        {
+          "id": "A3.1-1-q08",
+          "type": "fill",
+          "text": "A group of organisms of the same species living in the same area at the same time is a ___.",
+          "answer": "population",
+          "bank": [
+            "population",
+            "community",
+            "ecosystem",
+            "genus"
+          ],
+          "explanation": "A community includes all species in an area; a population includes only one species.",
+          "terms": [
+            "a3.1-population"
+          ]
+        },
+        {
+          "id": "A3.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which is a limitation of the morphological species concept?",
+          "options": [
+            "It requires DNA sequencing",
+            "It can only be used on fossils",
+            "It cannot be applied to plants",
+            "Members of one species can look very different, while different species can look alike"
+          ],
+          "answer": 3,
+          "explanation": "Males and females, or different life stages, may differ greatly, while unrelated species may converge in appearance, so appearance alone can mislead.",
+          "terms": [
+            "a3.1-morphological-species"
+          ]
+        },
+        {
+          "id": "A3.1-1-q10",
+          "type": "order",
+          "prompt": "Order the stages as one species splits into two.",
+          "items": [
+            "One interbreeding population",
+            "Population divided so the groups stop interbreeding",
+            "Groups gradually diverge in their traits",
+            "Groups can no longer interbreed: two species"
+          ],
+          "explanation": "Divergence is gradual after interbreeding stops, which is why it is hard to define exactly when separate species exist.",
+          "terms": [
+            "a3.1-population",
+            "a3.1-biological-species"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3.1-2",
+      "title": "Chromosomes and genomes",
+      "hl": false,
+      "questions": [
+        {
+          "id": "A3.1-2-q01",
+          "type": "mcq",
+          "prompt": "How are chromosomes arranged in a karyogram?",
+          "options": [
+            "Randomly, as they appeared in the cell",
+            "In homologous pairs, by length, centromere position and banding pattern",
+            "By the number of genes they carry, alphabetically",
+            "Sex chromosomes first, then autosomes from smallest to largest"
+          ],
+          "answer": 1,
+          "explanation": "Homologous pairs are identified and ordered by decreasing length, with centromere position and banding pattern used to match them; sex chromosomes are placed last.",
+          "terms": [
+            "a3.1-karyogram",
+            "a3.1-centromere"
+          ]
+        },
+        {
+          "id": "A3.1-2-q02",
+          "type": "tf",
+          "statement": "Humans have 46 chromosomes and chimpanzees have 48.",
+          "answer": true,
+          "explanation": "Diploid chromosome numbers vary between species: humans have 46 (23 pairs) and chimpanzees 48 (24 pairs).",
+          "terms": [
+            "a3.1-karyotype"
+          ]
+        },
+        {
+          "id": "A3.1-2-q03",
+          "type": "mcq",
+          "prompt": "Which evidence supports the hypothesis that human chromosome 2 arose by fusion of two ancestral chromosomes?",
+          "options": [
+            "Chromosome 2 is the smallest human chromosome",
+            "Chromosome 2 has no genes",
+            "Chromosome 2 has telomere sequences near its middle and a second, inactive centromere",
+            "Chromosome 2 is only found in females"
+          ],
+          "answer": 2,
+          "explanation": "Telomere repeats normally only occur at chromosome ends, and a vestigial centromere exists; banding patterns also match two chimpanzee chromosomes.",
+          "terms": [
+            "a3.1-karyotype",
+            "a3.1-centromere"
+          ]
+        },
+        {
+          "id": "A3.1-2-q04",
+          "type": "fill",
+          "text": "All the genetic information of an organism is its ___.",
+          "answer": "genome",
+          "bank": [
+            "genome",
+            "karyotype",
+            "gene pool",
+            "phenotype"
+          ],
+          "explanation": "The genome is the whole of an organism's DNA. The karyotype is the number and type of chromosomes.",
+          "terms": [
+            "a3.1-genome"
+          ]
+        },
+        {
+          "id": "A3.1-2-q05",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Karyotype",
+              "right": "Number and type of chromosomes"
+            },
+            {
+              "left": "Karyogram",
+              "right": "Image of chromosomes arranged in pairs"
+            },
+            {
+              "left": "Genome",
+              "right": "All the genetic information of an organism"
+            },
+            {
+              "left": "SNP",
+              "right": "Single base difference between individuals"
+            }
+          ],
+          "explanation": "The karyotype is a property of the organism; the karyogram is the image used to show it.",
+          "terms": [
+            "a3.1-karyotype",
+            "a3.1-karyogram",
+            "a3.1-genome",
+            "a3.1-snp"
+          ]
+        },
+        {
+          "id": "A3.1-2-q06",
+          "type": "mcq",
+          "prompt": "Members of a species share the same genes but differ in some bases. What does this show?",
+          "options": [
+            "Unity and diversity of genomes within a species",
+            "That the species is in the process of splitting",
+            "That each individual has a different set of genes",
+            "That mutation never occurs within a species"
+          ],
+          "answer": 0,
+          "explanation": "Individuals share most of the genome (unity) but differ at a small number of positions such as SNPs (diversity). Different alleles, not different genes, cause variation.",
+          "terms": [
+            "a3.1-genome",
+            "a3.1-snp"
+          ]
+        },
+        {
+          "id": "A3.1-2-q07",
+          "type": "tf",
+          "statement": "Genome size is directly proportional to the complexity of an organism, so humans have the largest genome.",
+          "answer": false,
+          "explanation": "Eukaryote genome sizes vary enormously and do not track complexity; some plants and amphibians have far larger genomes than humans, much of it non-coding DNA.",
+          "terms": [
+            "a3.1-genome"
+          ]
+        },
+        {
+          "id": "A3.1-2-q08",
+          "type": "fill",
+          "text": "A difference of a single base at one position between individuals is called a single-nucleotide ___.",
+          "answer": "polymorphism",
+          "bank": [
+            "polymorphism",
+            "mutation rate",
+            "barcode",
+            "karyotype"
+          ],
+          "explanation": "SNPs are the most common type of variation between individual genomes within a species.",
+          "terms": [
+            "a3.1-snp"
+          ]
+        },
+        {
+          "id": "A3.1-2-q09",
+          "type": "mcq",
+          "prompt": "Which is a current or potential use of whole genome sequencing?",
+          "options": [
+            "Changing the number of chromosomes in a patient",
+            "Personalised medicine based on an individual's genome",
+            "Producing karyograms without chromosomes",
+            "Determining an organism's age"
+          ],
+          "answer": 1,
+          "explanation": "Sequencing whole genomes helps match treatments to individuals and is also used to investigate evolutionary relationships. Costs have fallen dramatically, so it is now widely used.",
+          "terms": [
+            "a3.1-whole-genome-sequencing"
+          ]
+        },
+        {
+          "id": "A3.1-2-q10",
+          "type": "mcq",
+          "prompt": "In a karyogram, how could you tell the sex of a human?",
+          "options": [
+            "Count the total number of chromosomes",
+            "Look at the longest chromosome pair",
+            "Look at the sex chromosomes: XX is female, XY is male",
+            "Check if chromosome 2 is fused"
+          ],
+          "answer": 2,
+          "explanation": "Both sexes have 46 chromosomes; the sex chromosome pair differs, with females having two X and males an X and a smaller Y.",
+          "terms": [
+            "a3.1-karyogram"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3.1-3",
+      "title": "HL: Species concepts, keys and eDNA",
+      "hl": true,
+      "questions": [
+        {
+          "id": "A3.1-3-q01",
+          "type": "mcq",
+          "prompt": "Why is the biological species concept difficult to apply to bacteria?",
+          "options": [
+            "Bacteria cannot mutate",
+            "Bacteria reproduce asexually and exchange genes by horizontal gene transfer",
+            "Bacteria all have identical genomes",
+            "Bacteria have too many chromosomes"
+          ],
+          "answer": 1,
+          "explanation": "The concept depends on interbreeding. Bacteria reproduce asexually by binary fission, and genes move between even distantly related bacteria, blurring species boundaries.",
+          "terms": [
+            "a3.1-horizontal-gene-transfer",
+            "a3.1-biological-species"
+          ]
+        },
+        {
+          "id": "A3.1-3-q02",
+          "type": "tf",
+          "statement": "Horizontal gene transfer means genes passing from parent to offspring.",
+          "answer": false,
+          "explanation": "That is vertical transfer. Horizontal gene transfer is movement of genes between organisms that are not parent and offspring, e.g. plasmid transfer between bacteria.",
+          "terms": [
+            "a3.1-horizontal-gene-transfer"
+          ]
+        },
+        {
+          "id": "A3.1-3-q03",
+          "type": "fill",
+          "text": "Exchange of plasmids between bacteria is an example of ___ gene transfer.",
+          "answer": "horizontal",
+          "bank": [
+            "horizontal",
+            "vertical",
+            "sexual",
+            "parental"
+          ],
+          "explanation": "Plasmids carrying genes such as antibiotic resistance can pass between bacterial cells, including of different species.",
+          "terms": [
+            "a3.1-horizontal-gene-transfer"
+          ]
+        },
+        {
+          "id": "A3.1-3-q04",
+          "type": "mcq",
+          "prompt": "Why is chromosome number usually a shared trait of all members of a species?",
+          "options": [
+            "Because chromosomes cannot mutate",
+            "Because all species have the same chromosome number",
+            "Because chromosome number is chosen by the environment",
+            "Because individuals with a different chromosome number usually cannot produce fertile offspring with the rest of the species"
+          ],
+          "answer": 3,
+          "explanation": "Chromosomes must pair in meiosis. If numbers differ, pairing fails and offspring are usually infertile, so a change in chromosome number can isolate a population.",
+          "terms": [
+            "a3.1-karyotype",
+            "a3.1-biological-species"
+          ]
+        },
+        {
+          "id": "A3.1-3-q05",
+          "type": "order",
+          "prompt": "Order the steps of using a dichotomous key to identify an organism.",
+          "items": [
+            "Read the first pair of contrasting statements",
+            "Choose the statement that matches the organism",
+            "Follow the instruction to the next numbered pair",
+            "Repeat until the key gives a name"
+          ],
+          "explanation": "Each step offers two choices; following matching choices narrows the possibilities until a single name is reached.",
+          "terms": [
+            "a3.1-dichotomous-key"
+          ]
+        },
+        {
+          "id": "A3.1-3-q06",
+          "type": "mcq",
+          "prompt": "Which feature makes a good choice for a pair of statements in a dichotomous key?",
+          "options": [
+            "A clearly visible feature that does not vary with age, sex or season",
+            "The colour of the organism at a particular time of day",
+            "Whether the organism is rare",
+            "The behaviour of the organism when disturbed"
+          ],
+          "answer": 0,
+          "explanation": "Good keys use stable, easily observed characteristics so that anyone can reliably make the same choice.",
+          "terms": [
+            "a3.1-dichotomous-key"
+          ]
+        },
+        {
+          "id": "A3.1-3-q07",
+          "type": "match",
+          "prompt": "Match each term to its description.",
+          "pairs": [
+            {
+              "left": "Environmental DNA",
+              "right": "DNA shed by organisms into water or soil"
+            },
+            {
+              "left": "DNA barcode",
+              "right": "Short standard sequence that identifies a species"
+            },
+            {
+              "left": "Dichotomous key",
+              "right": "Series of paired choices leading to a name"
+            }
+          ],
+          "explanation": "eDNA samples can be sequenced and matched against barcode databases to identify species present, complementing traditional keys.",
+          "terms": [
+            "a3.1-edna",
+            "a3.1-dna-barcode",
+            "a3.1-dichotomous-key"
+          ]
+        },
+        {
+          "id": "A3.1-3-q08",
+          "type": "tf",
+          "statement": "Environmental DNA can reveal species in a habitat even if no individuals are seen or caught.",
+          "answer": true,
+          "explanation": "Organisms shed cells, skin, mucus and waste. Sequencing DNA from a water or soil sample detects species from these traces, which is useful for rare or hidden species.",
+          "terms": [
+            "a3.1-edna"
+          ]
+        },
+        {
+          "id": "A3.1-3-q09",
+          "type": "mcq",
+          "prompt": "How are species identified from an eDNA sample?",
+          "options": [
+            "By growing the organisms from the DNA",
+            "By making a karyogram from the DNA",
+            "By sequencing barcode regions and comparing them with a database of known species' sequences",
+            "By measuring the total mass of DNA in the sample"
+          ],
+          "answer": 2,
+          "explanation": "Barcode sequences differ between species, so matching sample sequences to a reference database identifies which species contributed DNA.",
+          "terms": [
+            "a3.1-edna",
+            "a3.1-dna-barcode"
+          ]
+        },
+        {
+          "id": "A3.1-3-q10",
+          "type": "fill",
+          "text": "A short, standardised DNA sequence used to identify species is called a DNA ___.",
+          "answer": "barcode",
+          "bank": [
+            "barcode",
+            "probe",
+            "primer",
+            "plasmid"
+          ],
+          "explanation": "Like a product barcode, it is a short sequence that is distinctive for each species.",
+          "terms": [
+            "a3.1-dna-barcode"
+          ]
+        }
+      ]
+    }
+  ]
+}

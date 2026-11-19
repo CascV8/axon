@@ -1,0 +1,611 @@
+{
+  "id": "B1.1",
+  "code": "B1.1",
+  "unit": "B",
+  "title": "Carbohydrates and lipids",
+  "level": "SL",
+  "summary": "How carbon-based monomers are joined by condensation and split by hydrolysis, and how the structures of sugars, polysaccharides and lipids suit them to energy storage, structure and membranes.",
+  "keyterms": [
+    {
+      "id": "b1.1-condensation",
+      "term": "Condensation reaction",
+      "definition": "A reaction that links two molecules, such as monomers, with a covalent bond and releases a molecule of water.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-hydrolysis",
+      "term": "Hydrolysis",
+      "definition": "A reaction that splits a covalent bond between monomers by adding a molecule of water; digestion of polymers into monomers uses hydrolysis.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-monosaccharide",
+      "term": "Monosaccharide",
+      "definition": "A single sugar unit and the monomer of carbohydrates, e.g. glucose (a hexose) or ribose (a pentose).",
+      "hl": false
+    },
+    {
+      "id": "b1.1-alpha-beta-glucose",
+      "term": "Alpha and beta glucose",
+      "definition": "Two ring forms of glucose that differ only in the position of the hydroxyl (–OH) group on carbon 1: below the ring in alpha, above it in beta.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-glycosidic-bond",
+      "term": "Glycosidic bond",
+      "definition": "The covalent bond formed by condensation between two monosaccharides.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-polysaccharide",
+      "term": "Polysaccharide",
+      "definition": "A polymer of many monosaccharides linked by glycosidic bonds, e.g. starch, glycogen and cellulose.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-starch",
+      "term": "Starch",
+      "definition": "Energy-storage polysaccharide of plants made of alpha-glucose: amylose is unbranched and helical; amylopectin is branched.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-glycogen",
+      "term": "Glycogen",
+      "definition": "Highly branched polymer of alpha-glucose used for short-term energy storage in animals, mainly in liver and muscle.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-cellulose",
+      "term": "Cellulose",
+      "definition": "Structural polysaccharide of plant cell walls: straight chains of beta-glucose, alternately inverted, hydrogen-bonded into microfibrils with high tensile strength.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-glycoprotein",
+      "term": "Glycoprotein",
+      "definition": "A protein with carbohydrate chains attached; on the outer surface of membranes they act in cell–cell recognition, e.g. ABO blood group antigens.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-lipid",
+      "term": "Lipid",
+      "definition": "Substances in living organisms that dissolve in non-polar solvents but are only sparingly soluble in aqueous solvents, e.g. fats, oils, waxes and steroids.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-triglyceride",
+      "term": "Triglyceride",
+      "definition": "A lipid formed by condensation of one glycerol with three fatty acids, linked by three ester bonds; used for energy storage and insulation.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-saturation",
+      "term": "Saturated / unsaturated fatty acid",
+      "definition": "Saturated fatty acids have only single C–C bonds; monounsaturated have one C=C double bond; polyunsaturated have two or more.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-cis-trans",
+      "term": "Cis and trans fatty acids",
+      "definition": "In cis unsaturated fatty acids the hydrogens at a double bond are on the same side, causing a kink; in trans they are on opposite sides, giving a straighter chain.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-amphipathic",
+      "term": "Amphipathic",
+      "definition": "Having both hydrophilic and hydrophobic regions, as in phospholipids, which therefore form bilayers in water.",
+      "hl": false
+    },
+    {
+      "id": "b1.1-steroid",
+      "term": "Steroid",
+      "definition": "A lipid with a four-ring structure; non-polar steroid hormones such as oestradiol and testosterone diffuse through the phospholipid bilayer.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "B1.1-1",
+      "title": "Carbon, condensation and sugars",
+      "hl": false,
+      "questions": [
+        {
+          "id": "B1.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which property of carbon atoms best explains the huge diversity of carbon compounds in living things?",
+          "options": [
+            "Carbon forms ionic bonds with most other elements",
+            "Each carbon atom can form four covalent bonds, allowing chains, branches and rings",
+            "Carbon is the most electronegative element in organic molecules",
+            "Carbon can only bond with hydrogen and oxygen, which limits side reactions"
+          ],
+          "answer": 1,
+          "explanation": "Carbon shares electrons in four covalent bonds, including with other carbon atoms, so it can build unbranched chains, branched chains and rings of almost any size. Its bonds are covalent, not ionic, and it bonds with N, S and P as well as H and O.",
+          "terms": []
+        },
+        {
+          "id": "B1.1-1-q02",
+          "type": "tf",
+          "statement": "Linking two glucose molecules by a condensation reaction releases one molecule of water.",
+          "answer": true,
+          "explanation": "In condensation an –OH from one monomer and an –H from the other are removed as H2O, leaving a covalent (glycosidic) bond between them.",
+          "terms": [
+            "b1.1-condensation",
+            "b1.1-glycosidic-bond"
+          ]
+        },
+        {
+          "id": "B1.1-1-q03",
+          "type": "fill",
+          "text": "During digestion, polymers are broken into monomers by ___ reactions, which use up water.",
+          "answer": "hydrolysis",
+          "bank": [
+            "hydrolysis",
+            "condensation",
+            "oxidation",
+            "denaturation"
+          ],
+          "explanation": "Hydrolysis is the reverse of condensation: a water molecule is added across the bond, splitting it. Condensation builds polymers and releases water.",
+          "terms": [
+            "b1.1-hydrolysis"
+          ]
+        },
+        {
+          "id": "B1.1-1-q04",
+          "type": "mcq",
+          "prompt": "Which set of properties makes glucose well suited to being transported in blood and used as an energy source?",
+          "options": [
+            "Insoluble, so it does not affect osmosis, and reactive, so it releases energy quickly",
+            "A large polymer, so it can store a lot of energy in one molecule",
+            "Soluble, chemically stable, and yields energy when oxidized",
+            "Non-polar, so it can diffuse freely through all membranes"
+          ],
+          "answer": 2,
+          "explanation": "Glucose dissolves in plasma so it is easily transported, is stable enough not to react on the way, and releases energy when oxidized in cell respiration. Being polar, it does not cross membranes freely.",
+          "terms": [
+            "b1.1-monosaccharide"
+          ]
+        },
+        {
+          "id": "B1.1-1-q05",
+          "type": "match",
+          "prompt": "Match each carbohydrate to its description.",
+          "pairs": [
+            {
+              "left": "Glucose",
+              "right": "Hexose oxidized in cell respiration"
+            },
+            {
+              "left": "Ribose",
+              "right": "Pentose found in RNA nucleotides"
+            },
+            {
+              "left": "Deoxyribose",
+              "right": "Pentose found in DNA nucleotides"
+            },
+            {
+              "left": "Maltose",
+              "right": "Disaccharide of two glucose units"
+            }
+          ],
+          "explanation": "Hexoses have six carbons and pentoses five. Ribose and deoxyribose are the pentoses of nucleic acids; maltose forms when two alpha-glucose molecules are condensed.",
+          "terms": [
+            "b1.1-monosaccharide"
+          ]
+        },
+        {
+          "id": "B1.1-1-q06",
+          "type": "tf",
+          "statement": "Alpha-glucose and beta-glucose differ in the number of carbon atoms they contain.",
+          "answer": false,
+          "explanation": "Both are C6H12O6 ring forms of glucose. They differ only in whether the –OH on carbon 1 points below (alpha) or above (beta) the ring.",
+          "terms": [
+            "b1.1-alpha-beta-glucose"
+          ]
+        },
+        {
+          "id": "B1.1-1-q07",
+          "type": "fill",
+          "text": "In the standard ring diagram of alpha-glucose, the –OH group on carbon 1 is drawn ___ the ring.",
+          "answer": "below",
+          "bank": [
+            "below",
+            "above",
+            "inside",
+            "absent from"
+          ],
+          "explanation": "Alpha-glucose has the carbon-1 hydroxyl below the ring; beta-glucose has it above. This small difference changes the shape of the polymers formed.",
+          "terms": [
+            "b1.1-alpha-beta-glucose"
+          ]
+        },
+        {
+          "id": "B1.1-1-q08",
+          "type": "order",
+          "prompt": "Put the products of starch digestion in the order they are produced by hydrolysis.",
+          "items": [
+            "Starch (polysaccharide)",
+            "Maltose (disaccharide)",
+            "Glucose (monosaccharide)"
+          ],
+          "explanation": "Starch is hydrolysed first into maltose, and maltose is then hydrolysed into glucose, which is small enough to be absorbed.",
+          "terms": [
+            "b1.1-hydrolysis",
+            "b1.1-starch"
+          ]
+        },
+        {
+          "id": "B1.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which equation represents a hydrolysis reaction?",
+          "options": [
+            "glucose + glucose → maltose + water",
+            "glycerol + 3 fatty acids → triglyceride + 3 water",
+            "amino acid + amino acid → dipeptide + water",
+            "maltose + water → glucose + glucose"
+          ],
+          "answer": 3,
+          "explanation": "Hydrolysis uses water to split a bond, so water is a reactant. The other three equations release water, so they are condensation reactions.",
+          "terms": [
+            "b1.1-hydrolysis",
+            "b1.1-condensation"
+          ]
+        },
+        {
+          "id": "B1.1-1-q10",
+          "type": "mcq",
+          "prompt": "Ten glucose molecules are joined by condensation into one unbranched chain. How many water molecules are released?",
+          "options": [
+            "10",
+            "9",
+            "11",
+            "20"
+          ],
+          "answer": 1,
+          "explanation": "Each new glycosidic bond releases one water molecule, and a chain of 10 units has 9 bonds between them, so 9 waters are released.",
+          "terms": [
+            "b1.1-condensation",
+            "b1.1-glycosidic-bond"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1.1-2",
+      "title": "Polysaccharides and glycoproteins",
+      "hl": false,
+      "questions": [
+        {
+          "id": "B1.1-2-q01",
+          "type": "mcq",
+          "prompt": "Why is starch, rather than glucose, used to store energy in plant cells?",
+          "options": [
+            "Starch is soluble so it can be moved quickly around the plant",
+            "Starch releases more energy per gram than glucose when oxidized",
+            "Starch contains beta-glucose, which enzymes cannot break down",
+            "Starch is insoluble and compact, so it has little osmotic effect, yet glucose can easily be added or removed"
+          ],
+          "answer": 3,
+          "explanation": "Storing many glucose units as an insoluble, compact polymer avoids drawing water into cells by osmosis, while enzymes can still add or remove glucose when needed. Starch is made of alpha-glucose, not beta-glucose.",
+          "terms": [
+            "b1.1-starch",
+            "b1.1-polysaccharide"
+          ]
+        },
+        {
+          "id": "B1.1-2-q02",
+          "type": "tf",
+          "statement": "Glycogen is the main energy-storage polysaccharide in plants.",
+          "answer": false,
+          "explanation": "Plants store starch. Glycogen is the storage polysaccharide of animals (and fungi), found mainly in liver and muscle cells.",
+          "terms": [
+            "b1.1-glycogen",
+            "b1.1-starch"
+          ]
+        },
+        {
+          "id": "B1.1-2-q03",
+          "type": "fill",
+          "text": "The unbranched form of starch, which coils into a helix, is called ___.",
+          "answer": "amylose",
+          "bank": [
+            "amylose",
+            "amylopectin",
+            "glycogen",
+            "cellulose"
+          ],
+          "explanation": "Amylose has only 1,4 glycosidic bonds between alpha-glucose units, so it forms an unbranched helix. Amylopectin and glycogen also have 1,6 bonds that create branches.",
+          "terms": [
+            "b1.1-starch"
+          ]
+        },
+        {
+          "id": "B1.1-2-q04",
+          "type": "mcq",
+          "prompt": "Why does cellulose form straight chains rather than a helix?",
+          "options": [
+            "It is made of beta-glucose, and each successive unit is inverted relative to the last",
+            "It is made of alpha-glucose linked by 1,6 bonds",
+            "It has many branches that hold the chain straight",
+            "Ester bonds between units are more rigid than glycosidic bonds"
+          ],
+          "answer": 0,
+          "explanation": "To link beta-glucose units by 1,4 bonds, every other glucose must be flipped 180°, which keeps the chain straight. Straight chains can then lie side by side and hydrogen bond into microfibrils.",
+          "terms": [
+            "b1.1-cellulose",
+            "b1.1-alpha-beta-glucose"
+          ]
+        },
+        {
+          "id": "B1.1-2-q05",
+          "type": "match",
+          "prompt": "Match each polysaccharide to its structure.",
+          "pairs": [
+            {
+              "left": "Amylose",
+              "right": "Unbranched helical chain of alpha-glucose"
+            },
+            {
+              "left": "Amylopectin",
+              "right": "Branched chain of alpha-glucose in plants"
+            },
+            {
+              "left": "Glycogen",
+              "right": "Highly branched alpha-glucose store in animals"
+            },
+            {
+              "left": "Cellulose",
+              "right": "Straight beta-glucose chains forming microfibrils"
+            }
+          ],
+          "explanation": "The three storage polysaccharides are all alpha-glucose and differ in branching; cellulose is the structural beta-glucose polymer of plant cell walls.",
+          "terms": [
+            "b1.1-starch",
+            "b1.1-glycogen",
+            "b1.1-cellulose"
+          ]
+        },
+        {
+          "id": "B1.1-2-q06",
+          "type": "tf",
+          "statement": "Hydrogen bonds between parallel cellulose chains bundle them into microfibrils with very high tensile strength.",
+          "answer": true,
+          "explanation": "Each hydrogen bond is weak, but the many bonds between straight, parallel chains make microfibrils strong enough to let plant cell walls resist turgor pressure.",
+          "terms": [
+            "b1.1-cellulose"
+          ]
+        },
+        {
+          "id": "B1.1-2-q07",
+          "type": "fill",
+          "text": "Two monosaccharides are joined by condensation to form a ___ bond.",
+          "answer": "glycosidic",
+          "bank": [
+            "glycosidic",
+            "peptide",
+            "ester",
+            "hydrogen"
+          ],
+          "explanation": "Sugars are linked by glycosidic bonds. Peptide bonds link amino acids and ester bonds link fatty acids to glycerol.",
+          "terms": [
+            "b1.1-glycosidic-bond"
+          ]
+        },
+        {
+          "id": "B1.1-2-q08",
+          "type": "mcq",
+          "prompt": "What is the advantage of the branched structure of glycogen?",
+          "options": [
+            "Branches make glycogen soluble so it can travel in blood",
+            "Branches prevent enzymes from digesting it accidentally",
+            "Many chain ends allow glucose to be added or removed rapidly by enzymes",
+            "Branches give it high tensile strength like cellulose"
+          ],
+          "answer": 2,
+          "explanation": "Enzymes add and remove glucose at chain ends, so many branches mean many ends working at once, giving fast mobilization of glucose. Glycogen remains insoluble.",
+          "terms": [
+            "b1.1-glycogen"
+          ]
+        },
+        {
+          "id": "B1.1-2-q09",
+          "type": "mcq",
+          "prompt": "What determines whether a person's red blood cells are type A, B, AB or O?",
+          "options": [
+            "Different phospholipids in the red blood cell membrane",
+            "Different carbohydrate chains on glycoproteins in the membrane, which act as antigens",
+            "Different forms of haemoglobin inside the cell",
+            "Different steroid hormones dissolved in plasma"
+          ],
+          "answer": 1,
+          "explanation": "ABO antigens are glycoproteins whose carbohydrate chains differ slightly. The immune system recognises foreign chains, which is why mismatched transfusions cause agglutination.",
+          "terms": [
+            "b1.1-glycoprotein"
+          ]
+        },
+        {
+          "id": "B1.1-2-q10",
+          "type": "tf",
+          "statement": "The carbohydrate chains of membrane glycoproteins face the cytoplasm.",
+          "answer": false,
+          "explanation": "The carbohydrate portions project from the outer (extracellular) surface, where they can be recognised by other cells in cell–cell recognition.",
+          "terms": [
+            "b1.1-glycoprotein"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1.1-3",
+      "title": "Lipids",
+      "hl": false,
+      "questions": [
+        {
+          "id": "B1.1-3-q01",
+          "type": "mcq",
+          "prompt": "Which statement best defines lipids?",
+          "options": [
+            "Polymers built from fatty acid monomers",
+            "Organic molecules made only of glycerol",
+            "Organic molecules that dissolve readily in water",
+            "Substances that dissolve in non-polar solvents but are only sparingly soluble in aqueous solvents"
+          ],
+          "answer": 3,
+          "explanation": "Lipids are a diverse group (fats, oils, waxes, steroids) defined by solubility, not by a single monomer. Triglycerides are not true polymers and steroids contain no fatty acids at all.",
+          "terms": [
+            "b1.1-lipid"
+          ]
+        },
+        {
+          "id": "B1.1-3-q02",
+          "type": "fill",
+          "text": "In a triglyceride, glycerol is linked to three fatty acids by three ___ bonds.",
+          "answer": "ester",
+          "bank": [
+            "ester",
+            "glycosidic",
+            "peptide",
+            "phosphodiester"
+          ],
+          "explanation": "Each fatty acid's –COOH group condenses with an –OH of glycerol to form an ester bond.",
+          "terms": [
+            "b1.1-triglyceride",
+            "b1.1-condensation"
+          ]
+        },
+        {
+          "id": "B1.1-3-q03",
+          "type": "tf",
+          "statement": "Forming one triglyceride molecule releases three molecules of water.",
+          "answer": true,
+          "explanation": "Three ester bonds are made by condensation, and each condensation releases one water molecule.",
+          "terms": [
+            "b1.1-triglyceride",
+            "b1.1-condensation"
+          ]
+        },
+        {
+          "id": "B1.1-3-q04",
+          "type": "match",
+          "prompt": "Match each type of fatty acid to its feature.",
+          "pairs": [
+            {
+              "left": "Saturated",
+              "right": "No C=C double bonds"
+            },
+            {
+              "left": "Monounsaturated",
+              "right": "Exactly one C=C double bond"
+            },
+            {
+              "left": "Polyunsaturated",
+              "right": "Two or more C=C double bonds"
+            },
+            {
+              "left": "Cis unsaturated",
+              "right": "Hydrogens on same side of double bond, causing a kink"
+            }
+          ],
+          "explanation": "Saturation refers to whether the chain holds the maximum number of hydrogens (no double bonds). Cis double bonds bend the chain; trans double bonds do not.",
+          "terms": [
+            "b1.1-saturation",
+            "b1.1-cis-trans"
+          ]
+        },
+        {
+          "id": "B1.1-3-q05",
+          "type": "mcq",
+          "prompt": "Why are plant oils usually liquid at room temperature while animal fats are solid?",
+          "options": [
+            "Plant oils contain more glycerol per molecule",
+            "Plant oils have more cis-unsaturated fatty acids, whose kinks stop chains packing closely, lowering the melting point",
+            "Plant oils are polymers while animal fats are monomers",
+            "Animal fats contain more double bonds, which hold molecules together"
+          ],
+          "answer": 1,
+          "explanation": "Kinked cis-unsaturated chains cannot pack tightly, so the intermolecular attractions are weaker and the melting point is lower. Straight saturated chains pack closely and are solid at room temperature.",
+          "terms": [
+            "b1.1-saturation",
+            "b1.1-cis-trans"
+          ]
+        },
+        {
+          "id": "B1.1-3-q06",
+          "type": "tf",
+          "statement": "Trans fatty acids have a kink at the double bond, so they pack less tightly than cis fatty acids.",
+          "answer": false,
+          "explanation": "It is the cis configuration that kinks the chain. Trans fatty acids are fairly straight, pack closely and have higher melting points, like saturated fats.",
+          "terms": [
+            "b1.1-cis-trans"
+          ]
+        },
+        {
+          "id": "B1.1-3-q07",
+          "type": "mcq",
+          "prompt": "Why do animals store long-term energy reserves as triglycerides in adipose tissue rather than as glycogen?",
+          "options": [
+            "Triglycerides can be mobilized faster than glycogen",
+            "Triglycerides are soluble and easily transported",
+            "Triglycerides release about twice as much energy per gram and are stored without water, so reserves are lighter",
+            "Triglycerides cannot be hydrolysed, so they are never used up"
+          ],
+          "answer": 2,
+          "explanation": "Per gram, lipids yield roughly double the energy of carbohydrates, and because they are hydrophobic they are stored without associated water, which matters for mobile animals. Glycogen is quicker to mobilize, so it is used for short-term storage.",
+          "terms": [
+            "b1.1-triglyceride",
+            "b1.1-glycogen"
+          ]
+        },
+        {
+          "id": "B1.1-3-q08",
+          "type": "fill",
+          "text": "Thick adipose tissue called ___ provides thermal insulation for whales and seals in cold water.",
+          "answer": "blubber",
+          "bank": [
+            "blubber",
+            "cartilage",
+            "cuticle",
+            "myelin"
+          ],
+          "explanation": "Fat is a poor conductor of heat, so a thick layer of blubber under the skin reduces heat loss, and it also serves as an energy store.",
+          "terms": [
+            "b1.1-triglyceride"
+          ]
+        },
+        {
+          "id": "B1.1-3-q09",
+          "type": "mcq",
+          "prompt": "Why do phospholipids form bilayers in water?",
+          "options": [
+            "They are amphipathic: hydrophilic phosphate heads face water while hydrophobic tails face inward, away from water",
+            "Their fatty acid tails are attracted to water and form the outer surfaces",
+            "They are held together by covalent bonds between neighbouring molecules",
+            "They are entirely hydrophobic and are pushed together by water"
+          ],
+          "answer": 0,
+          "explanation": "Each phospholipid has a hydrophilic head and two hydrophobic tails. In water the heads associate with water on both surfaces and the tails cluster inside, a stable arrangement held by weak interactions, not covalent bonds.",
+          "terms": [
+            "b1.1-amphipathic"
+          ]
+        },
+        {
+          "id": "B1.1-3-q10",
+          "type": "mcq",
+          "prompt": "The steroid hormones oestradiol and testosterone enter target cells by simple diffusion. Why are they able to do this?",
+          "options": [
+            "They are small enough to pass through aquaporins",
+            "They are carried in by glycoproteins on the cell surface",
+            "They are actively pumped in using ATP",
+            "They are non-polar, so they can pass between the hydrophobic tails of the phospholipid bilayer"
+          ],
+          "answer": 3,
+          "explanation": "Steroids are hydrophobic lipids, so they dissolve through the hydrophobic core of the membrane without a transport protein, and then bind receptors inside the cell.",
+          "terms": [
+            "b1.1-steroid",
+            "b1.1-lipid"
+          ]
+        }
+      ]
+    }
+  ]
+}

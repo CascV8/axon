@@ -1,0 +1,625 @@
+{
+  "id": "D2.2",
+  "code": "D2.2",
+  "unit": "D",
+  "title": "Gene expression",
+  "level": "HL",
+  "summary": "How cells control which genes are expressed, through transcription factors, mRNA breakdown and epigenetic tags, and how the environment and inheritance shape these patterns.",
+  "keyterms": [
+    {
+      "id": "d2.2-gene-expression",
+      "term": "Gene expression",
+      "definition": "Process by which information in a gene affects the phenotype, usually by transcription and translation to produce a protein.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-transcription-factor",
+      "term": "Transcription factor",
+      "definition": "Protein that binds to a specific DNA base sequence (e.g. promoter or enhancer) to increase or decrease transcription of a gene.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-promoter",
+      "term": "Promoter",
+      "definition": "DNA sequence immediately before a gene where RNA polymerase and transcription factors bind to initiate transcription.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-enhancer",
+      "term": "Enhancer",
+      "definition": "DNA sequence, often distant from the gene, that increases the rate of transcription when activator proteins bind to it.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-mrna-degradation",
+      "term": "mRNA degradation",
+      "definition": "Breakdown of mRNA by the cell; controlling its rate regulates how much polypeptide is translated from each mRNA.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-lac-operon",
+      "term": "lac operon",
+      "definition": "Genes for lactose metabolism in E. coli, transcribed only when lactose inactivates the repressor that otherwise blocks the operator.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-epigenesis",
+      "term": "Epigenesis",
+      "definition": "Development of patterns of differentiation in the cells of a multicellular organism, as different genes are switched on or off in different cells.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-genome",
+      "term": "Genome",
+      "definition": "The whole of the genetic information of a cell or organism; almost identical in all cells of an individual.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-transcriptome",
+      "term": "Transcriptome",
+      "definition": "All the RNA molecules transcribed in a cell at a particular time; varies between cell types and over time.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-proteome",
+      "term": "Proteome",
+      "definition": "All the proteins produced by a cell or organism at a particular time.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-epigenetic-tag",
+      "term": "Epigenetic tag",
+      "definition": "Chemical modification of DNA or histones, such as methylation, that changes gene expression without changing the base sequence.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-dna-methylation",
+      "term": "DNA methylation",
+      "definition": "Addition of methyl groups to cytosine bases; methylation of a promoter usually silences the gene by blocking transcription.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-histone-modification",
+      "term": "Histone modification",
+      "definition": "Chemical tagging (e.g. methylation) of histones in nucleosomes that alters chromatin packing and so increases or decreases transcription.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-epigenetic-inheritance",
+      "term": "Epigenetic inheritance",
+      "definition": "Passing on of epigenetic tags to daughter cells by mitosis or, for tags not erased in gametes, to offspring.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-genomic-imprinting",
+      "term": "Genomic imprinting",
+      "definition": "Expression of an allele depending on which parent it came from, due to epigenetic tags that are not removed in gametes.",
+      "hl": true
+    },
+    {
+      "id": "d2.2-monozygotic-twins",
+      "term": "Monozygotic twins",
+      "definition": "Twins from one fertilised egg with the same genome; differences between them reveal environmental and epigenetic effects.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "D2.2-1",
+      "title": "Regulating transcription and translation",
+      "hl": true,
+      "questions": [
+        {
+          "id": "D2.2-1-q01",
+          "type": "mcq",
+          "prompt": "How does information in a gene usually affect the phenotype?",
+          "options": [
+            "The gene is transcribed and translated to produce a protein that determines a characteristic",
+            "The DNA of the gene leaves the nucleus and acts as an enzyme",
+            "The gene is copied by replication and the copy forms the characteristic",
+            "The gene's base sequence changes to match the required characteristic"
+          ],
+          "answer": 0,
+          "explanation": "Gene expression converts the base sequence into a protein (e.g. an enzyme or pigment) whose activity produces the phenotype. DNA itself stays in the nucleus and is not changed.",
+          "terms": [
+            "d2.2-gene-expression"
+          ]
+        },
+        {
+          "id": "D2.2-1-q02",
+          "type": "fill",
+          "text": "Proteins that bind to specific DNA base sequences to regulate transcription of a gene are called ___ factors.",
+          "answer": "transcription",
+          "bank": [
+            "transcription",
+            "clotting",
+            "release",
+            "splicing"
+          ],
+          "explanation": "Transcription factors recognise particular sequences such as promoters and enhancers, so each cell's set of transcription factors decides which genes it transcribes.",
+          "terms": [
+            "d2.2-transcription-factor"
+          ]
+        },
+        {
+          "id": "D2.2-1-q03",
+          "type": "tf",
+          "statement": "Enhancers must be located immediately next to the promoter to affect transcription.",
+          "answer": false,
+          "explanation": "Enhancers can be far from the gene; DNA loops so that activator proteins bound at the enhancer interact with the transcription machinery at the promoter.",
+          "terms": [
+            "d2.2-enhancer"
+          ]
+        },
+        {
+          "id": "D2.2-1-q04",
+          "type": "match",
+          "prompt": "Match each sequence or protein to its role in regulating transcription.",
+          "pairs": [
+            {
+              "left": "Promoter",
+              "right": "Where RNA polymerase binds to begin transcription"
+            },
+            {
+              "left": "Enhancer",
+              "right": "Distant sequence raising transcription when activators bind"
+            },
+            {
+              "left": "Silencer",
+              "right": "Sequence lowering transcription when repressors bind"
+            },
+            {
+              "left": "Transcription factor",
+              "right": "Protein binding specific DNA sequences to regulate genes"
+            }
+          ],
+          "explanation": "Regulation of transcription depends on proteins binding to specific base sequences in DNA; whether they increase or decrease transcription depends on the protein and where it binds.",
+          "terms": [
+            "d2.2-promoter",
+            "d2.2-enhancer",
+            "d2.2-transcription-factor"
+          ]
+        },
+        {
+          "id": "D2.2-1-q05",
+          "type": "mcq",
+          "prompt": "A cell transcribes equal amounts of mRNA X and mRNA Y, but mRNA X is broken down much faster. What is the likely effect?",
+          "options": [
+            "More of protein X is made than protein Y",
+            "Equal amounts of both proteins are made",
+            "Less of protein X is made than protein Y",
+            "Protein X is made with a different amino acid sequence"
+          ],
+          "answer": 2,
+          "explanation": "Each mRNA can be translated many times while it lasts, so a short-lived mRNA produces less protein. Controlling mRNA degradation is therefore a way of regulating translation.",
+          "terms": [
+            "d2.2-mrna-degradation"
+          ]
+        },
+        {
+          "id": "D2.2-1-q06",
+          "type": "order",
+          "prompt": "Put the events in order when E. coli is exposed to lactose.",
+          "items": [
+            "Lactose enters the bacterial cell",
+            "Lactose (as allolactose) binds to the repressor, changing its shape",
+            "The repressor detaches from the operator",
+            "RNA polymerase transcribes the genes for lactose metabolism",
+            "Enzymes such as β-galactosidase are produced"
+          ],
+          "explanation": "The lac operon is regulated by the concentration of a biochemical: lactose inactivates the repressor, so the genes are transcribed only when their substrate is present.",
+          "terms": [
+            "d2.2-lac-operon"
+          ]
+        },
+        {
+          "id": "D2.2-1-q07",
+          "type": "tf",
+          "statement": "In E. coli, when lactose is absent the repressor binds to the operator and blocks transcription of the lactose-metabolism genes.",
+          "answer": true,
+          "explanation": "Without lactose, the active repressor sits on the operator and prevents RNA polymerase transcribing the genes, so the cell does not waste energy making unneeded enzymes.",
+          "terms": [
+            "d2.2-lac-operon"
+          ]
+        },
+        {
+          "id": "D2.2-1-q08",
+          "type": "fill",
+          "text": "Faster breakdown of an mRNA ___ the amount of polypeptide translated from it.",
+          "answer": "reduces",
+          "bank": [
+            "reduces",
+            "increases",
+            "does not change"
+          ],
+          "explanation": "The longer an mRNA survives in the cytoplasm, the more times ribosomes can translate it, so faster degradation lowers protein output.",
+          "terms": [
+            "d2.2-mrna-degradation"
+          ]
+        },
+        {
+          "id": "D2.2-1-q09",
+          "type": "mcq",
+          "prompt": "How can a steroid hormone such as oestrogen change gene expression in a target cell?",
+          "options": [
+            "It binds to mRNA and blocks its translation",
+            "It diffuses into the cell and binds a receptor that acts as a transcription factor",
+            "It changes the base sequence of target genes",
+            "It binds to ribosomes and increases translation of all mRNA"
+          ],
+          "answer": 1,
+          "explanation": "Steroid hormones are lipid-soluble, so they pass through the membrane; the hormone–receptor complex binds specific DNA sequences and alters transcription of target genes.",
+          "terms": [
+            "d2.2-transcription-factor",
+            "d2.2-gene-expression"
+          ]
+        },
+        {
+          "id": "D2.2-1-q10",
+          "type": "mcq",
+          "prompt": "Which best explains why different cell types in the same organism produce different proteins?",
+          "options": [
+            "Each cell type has a different genome",
+            "Some cell types lack ribosomes",
+            "Genes are lost from cells as they specialise",
+            "Different cell types contain different transcription factors, so different genes are transcribed"
+          ],
+          "answer": 3,
+          "explanation": "Almost all cells share the same genome. Differences in which regulatory proteins are present (and in epigenetic tags) mean each cell type expresses a different set of genes.",
+          "terms": [
+            "d2.2-transcription-factor",
+            "d2.2-gene-expression"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D2.2-2",
+      "title": "Epigenetics and differentiation",
+      "hl": true,
+      "questions": [
+        {
+          "id": "D2.2-2-q01",
+          "type": "fill",
+          "text": "The whole of the genetic information of a cell or organism is its ___.",
+          "answer": "genome",
+          "bank": [
+            "genome",
+            "transcriptome",
+            "proteome"
+          ],
+          "explanation": "The genome is almost identical in every cell of an individual; the transcriptome and proteome describe what is actually being expressed.",
+          "terms": [
+            "d2.2-genome"
+          ]
+        },
+        {
+          "id": "D2.2-2-q02",
+          "type": "match",
+          "prompt": "Match each term to its definition.",
+          "pairs": [
+            {
+              "left": "Genome",
+              "right": "All the genetic information of a cell"
+            },
+            {
+              "left": "Transcriptome",
+              "right": "All RNA transcribed in a cell at one time"
+            },
+            {
+              "left": "Proteome",
+              "right": "All proteins produced by a cell at one time"
+            }
+          ],
+          "explanation": "The genome is fixed, but the transcriptome and proteome change with cell type, time and conditions because they reflect which genes are expressed.",
+          "terms": [
+            "d2.2-genome",
+            "d2.2-transcriptome",
+            "d2.2-proteome"
+          ]
+        },
+        {
+          "id": "D2.2-2-q03",
+          "type": "tf",
+          "statement": "The genome is the same in almost all cells of an individual, but the transcriptome and proteome differ between cell types.",
+          "answer": true,
+          "explanation": "Differentiated cells keep the full set of genes but express different subsets, so they transcribe different RNAs and make different proteins.",
+          "terms": [
+            "d2.2-genome",
+            "d2.2-transcriptome",
+            "d2.2-proteome"
+          ]
+        },
+        {
+          "id": "D2.2-2-q04",
+          "type": "mcq",
+          "prompt": "What does the term epigenesis refer to?",
+          "options": [
+            "Growth of a miniature, pre-formed organism already present in the gamete",
+            "Development of patterns of differentiation in the cells of a multicellular organism",
+            "A change in the base sequence of DNA during development",
+            "The formation of a zygote at fertilisation"
+          ],
+          "answer": 1,
+          "explanation": "Epigenesis means the organism develops progressively as cells differentiate in patterns, rather than preformation (an already-formed miniature simply growing larger).",
+          "terms": [
+            "d2.2-epigenesis"
+          ]
+        },
+        {
+          "id": "D2.2-2-q05",
+          "type": "mcq",
+          "prompt": "What is the usual effect of methylating cytosine bases in the promoter of a gene?",
+          "options": [
+            "Transcription increases",
+            "The gene's base sequence changes",
+            "The mRNA is translated faster",
+            "Transcription is reduced or silenced"
+          ],
+          "answer": 3,
+          "explanation": "Methyl groups on promoter cytosines block binding of transcription factors and RNA polymerase, switching the gene off without altering its base sequence.",
+          "terms": [
+            "d2.2-dna-methylation",
+            "d2.2-epigenetic-tag"
+          ]
+        },
+        {
+          "id": "D2.2-2-q06",
+          "type": "fill",
+          "text": "In eukaryotes, DNA is wrapped around ___ proteins to form nucleosomes.",
+          "answer": "histone",
+          "accept": [
+            "histones"
+          ],
+          "bank": [
+            "histone",
+            "cyclin",
+            "tubulin",
+            "actin"
+          ],
+          "explanation": "Each nucleosome is DNA wound around a core of histones. Chemical tags on histones change how tightly DNA is packed and so how accessible genes are.",
+          "terms": [
+            "d2.2-histone-modification"
+          ]
+        },
+        {
+          "id": "D2.2-2-q07",
+          "type": "tf",
+          "statement": "Epigenetic tags change the base sequence of DNA.",
+          "answer": false,
+          "explanation": "Epigenetic tags are chemical additions (e.g. methyl groups) to DNA or histones. They change whether genes are expressed, not the sequence of bases.",
+          "terms": [
+            "d2.2-epigenetic-tag"
+          ]
+        },
+        {
+          "id": "D2.2-2-q08",
+          "type": "order",
+          "prompt": "Put these events in order to show how promoter methylation silences a gene.",
+          "items": [
+            "Methyl groups are added to cytosines in the promoter",
+            "Transcription factors and RNA polymerase cannot bind to the promoter",
+            "The gene is not transcribed",
+            "The protein is not produced, affecting the cell's phenotype"
+          ],
+          "explanation": "The tag acts at the first stage of gene expression: no binding, no transcription, no mRNA and so no protein.",
+          "terms": [
+            "d2.2-dna-methylation",
+            "d2.2-promoter"
+          ]
+        },
+        {
+          "id": "D2.2-2-q09",
+          "type": "mcq",
+          "prompt": "Which statement about methylation of histones is correct?",
+          "options": [
+            "It can either increase or decrease transcription, depending on which part of the histone is methylated",
+            "It always increases transcription",
+            "It removes histones from the DNA permanently",
+            "It changes the amino acid sequence of the histone"
+          ],
+          "answer": 0,
+          "explanation": "Histone methylation alters how tightly nucleosomes pack; depending on the site, it can open chromatin (more transcription) or condense it (less).",
+          "terms": [
+            "d2.2-histone-modification",
+            "d2.2-epigenetic-tag"
+          ]
+        },
+        {
+          "id": "D2.2-2-q10",
+          "type": "mcq",
+          "prompt": "A liver cell and a neuron from the same person have the same genome. What best explains their different proteomes?",
+          "options": [
+            "They have different mutations in their genes",
+            "Liver cells have more chromosomes than neurons",
+            "Neurons do not carry out transcription",
+            "They have different patterns of epigenetic tags and transcription factors, so different genes are expressed"
+          ],
+          "answer": 3,
+          "explanation": "During differentiation, cells acquire different epigenetic tags and regulatory proteins, fixing which genes each cell type expresses.",
+          "terms": [
+            "d2.2-epigenetic-tag",
+            "d2.2-proteome",
+            "d2.2-epigenesis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D2.2-3",
+      "title": "Epigenetic inheritance and environment",
+      "hl": true,
+      "questions": [
+        {
+          "id": "D2.2-3-q01",
+          "type": "tf",
+          "statement": "Epigenetic tags can be passed to daughter cells by mitosis, so a differentiated cell's pattern of gene expression is kept in its descendants.",
+          "answer": true,
+          "explanation": "When DNA is replicated, methylation patterns are copied onto the new strands, so daughter cells of, say, a skin cell remain skin cells.",
+          "terms": [
+            "d2.2-epigenetic-inheritance"
+          ]
+        },
+        {
+          "id": "D2.2-3-q02",
+          "type": "mcq",
+          "prompt": "Most epigenetic tags are removed during gamete formation and after fertilisation. What is the main consequence?",
+          "options": [
+            "The zygote has no genes switched on",
+            "The zygote's cells can develop into any cell type",
+            "Offspring have a different genome from their parents",
+            "Mutations in the parents are removed"
+          ],
+          "answer": 1,
+          "explanation": "Erasing most tags resets the genome, so early embryo cells are not locked into the differentiated state of the parent's cells and can form all cell types.",
+          "terms": [
+            "d2.2-epigenetic-inheritance",
+            "d2.2-epigenetic-tag"
+          ]
+        },
+        {
+          "id": "D2.2-3-q03",
+          "type": "mcq",
+          "prompt": "A liger (male lion × female tiger) grows much larger than either parent, but a tigon (male tiger × female lion) does not. What best explains this?",
+          "options": [
+            "Ligers inherit more chromosomes than tigons",
+            "Ligers are fed more than tigons",
+            "Some epigenetic tags on growth genes are not erased, so expression depends on which parent each allele came from",
+            "Tigons carry a mutation that limits growth"
+          ],
+          "answer": 2,
+          "explanation": "Because not all tags are removed from gametes, some genes are imprinted. The direction of the cross changes which imprinted growth alleles are active, giving very different sizes from the same two species.",
+          "terms": [
+            "d2.2-genomic-imprinting",
+            "d2.2-epigenetic-inheritance"
+          ]
+        },
+        {
+          "id": "D2.2-3-q04",
+          "type": "fill",
+          "text": "Expression of an allele depending on whether it was inherited from the mother or the father is called genomic ___.",
+          "answer": "imprinting",
+          "bank": [
+            "imprinting",
+            "linkage",
+            "dominance",
+            "mutation"
+          ],
+          "explanation": "Imprinting results from epigenetic tags that survive the reprogramming of gametes, so one parent's allele is silenced.",
+          "terms": [
+            "d2.2-genomic-imprinting"
+          ]
+        },
+        {
+          "id": "D2.2-3-q05",
+          "type": "match",
+          "prompt": "Match each term to its description.",
+          "pairs": [
+            {
+              "left": "Monozygotic twins",
+              "right": "Share a genome, so differences reflect environment"
+            },
+            {
+              "left": "Genomic imprinting",
+              "right": "Allele expression depends on parent of origin"
+            },
+            {
+              "left": "Epigenetic inheritance",
+              "right": "Tags passed to daughter cells or offspring"
+            },
+            {
+              "left": "DNA methylation",
+              "right": "Methyl groups added to cytosine bases"
+            }
+          ],
+          "explanation": "Twin studies, imprinting and inheritance of tags all show that phenotype depends on how genes are regulated, not only on base sequence.",
+          "terms": [
+            "d2.2-monozygotic-twins",
+            "d2.2-genomic-imprinting",
+            "d2.2-epigenetic-inheritance",
+            "d2.2-dna-methylation"
+          ]
+        },
+        {
+          "id": "D2.2-3-q06",
+          "type": "mcq",
+          "prompt": "Studies show that differences in DNA methylation between monozygotic twins increase as they get older. What does this suggest?",
+          "options": [
+            "Environment and lifestyle alter epigenetic tags over time",
+            "The twins' genomes become more different with age",
+            "Methylation is fixed at birth",
+            "Older twins have more mutations in germ cells"
+          ],
+          "answer": 0,
+          "explanation": "The twins start with the same genome and very similar tags; diverging experiences (diet, smoking, stress) progressively change their epigenetic patterns.",
+          "terms": [
+            "d2.2-monozygotic-twins",
+            "d2.2-dna-methylation"
+          ]
+        },
+        {
+          "id": "D2.2-3-q07",
+          "type": "tf",
+          "statement": "Because monozygotic twins have identical genomes, any differences in their phenotypes must be due to new mutations.",
+          "answer": false,
+          "explanation": "Most differences between monozygotic twins come from environmental effects, often acting through epigenetic changes in gene expression, not from mutations.",
+          "terms": [
+            "d2.2-monozygotic-twins"
+          ]
+        },
+        {
+          "id": "D2.2-3-q08",
+          "type": "mcq",
+          "prompt": "Which is an example of an environmental effect on gene expression?",
+          "options": [
+            "Inheriting the allele for blood group A",
+            "Exposure to air pollution being associated with changed methylation of genes involved in inflammation",
+            "A base substitution caused by a copying error",
+            "Random orientation of bivalents in meiosis"
+          ],
+          "answer": 1,
+          "explanation": "Environmental factors can add or remove epigenetic tags, changing which genes are expressed. The other options involve inherited alleles, mutation or meiosis, not regulation of gene expression.",
+          "terms": [
+            "d2.2-dna-methylation",
+            "d2.2-gene-expression"
+          ]
+        },
+        {
+          "id": "D2.2-3-q09",
+          "type": "fill",
+          "text": "Twin studies use ___ twins because they share the same genome.",
+          "answer": "monozygotic",
+          "accept": [
+            "identical"
+          ],
+          "bank": [
+            "monozygotic",
+            "dizygotic",
+            "fraternal"
+          ],
+          "explanation": "Monozygotic twins develop from one zygote. Dizygotic (fraternal) twins come from two eggs and share only about half their alleles, like ordinary siblings.",
+          "terms": [
+            "d2.2-monozygotic-twins"
+          ]
+        },
+        {
+          "id": "D2.2-3-q10",
+          "type": "order",
+          "prompt": "Put these events in order to show how the environment can change a cell's phenotype epigenetically.",
+          "items": [
+            "An environmental factor such as diet or pollution affects the cell",
+            "The methylation pattern of a gene's promoter changes",
+            "Transcription of the gene changes",
+            "The amount of protein made changes, altering the phenotype",
+            "The new tag pattern is passed to daughter cells by mitosis"
+          ],
+          "explanation": "The environment changes tags rather than base sequence; the change in transcription alters the proteome and phenotype, and copying of tags during replication passes it on to daughter cells.",
+          "terms": [
+            "d2.2-epigenetic-tag",
+            "d2.2-epigenetic-inheritance"
+          ]
+        }
+      ]
+    }
+  ]
+}

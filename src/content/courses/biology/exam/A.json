@@ -1,0 +1,770 @@
+[
+  {
+    "id": "XA-01",
+    "topics": [
+      "A2.2"
+    ],
+    "paper": "1B",
+    "level": "SL",
+    "title": "Yeast cell size in different growth media",
+    "stem": "Yeast cells were grown for 24 hours in three liquid media. Samples were photographed with a light microscope and the image diameter of 50 cells per medium was measured on prints enlarged to a magnification of ×4000.",
+    "data": {
+      "caption": "Mean image diameter of yeast cells at ×4000 (n = 50 per medium)",
+      "columns": [
+        "Medium",
+        "Mean image diameter / mm",
+        "SD / mm"
+      ],
+      "rows": [
+        [
+          "2 % glucose",
+          "22.0",
+          "2.4"
+        ],
+        [
+          "0.5 % glucose",
+          "16.0",
+          "2.1"
+        ],
+        [
+          "2 % ethanol",
+          "14.0",
+          "3.5"
+        ]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the mean actual diameter of yeast cells grown in 2 % glucose. Give your answer in µm.",
+        "marks": 2,
+        "numeric": {
+          "value": 5.5,
+          "tolerance": 0.05,
+          "unit": "µm"
+        },
+        "markscheme": [
+          "conversion: 22.0 mm = 22 000 µm",
+          "22 000 / 4000 = 5.5 µm (unit required)"
+        ],
+        "notes": "Award 1 mark for 0.0055 mm or for a correct method with a unit-conversion error."
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage difference in mean cell diameter between cells grown in 2 % ethanol and cells grown in 2 % glucose, relative to 2 % glucose.",
+        "marks": 2,
+        "numeric": {
+          "value": -36.4,
+          "tolerance": 0.5,
+          "unit": "%"
+        },
+        "markscheme": [
+          "(14.0 − 22.0) / 22.0 × 100",
+          "−36.4 % / 36 % smaller (sign or 'smaller/decrease' required)"
+        ],
+        "notes": "Allow working with actual diameters (3.5 µm and 5.5 µm) as the ratio is the same."
+      },
+      {
+        "label": "c",
+        "command": "Deduce",
+        "prompt": "Using the standard deviations, deduce whether the difference in mean diameter between cells grown in 0.5 % glucose and cells grown in 2 % ethanol is likely to be significant.",
+        "marks": 2,
+        "markscheme": [
+          "ranges of mean ± 1 SD: 0.5 % glucose 13.9–18.1 mm; ethanol 10.5–17.5 mm",
+          "the ranges overlap (considerably)",
+          "so the difference is unlikely to be significant / cannot conclude it is significant (without a statistical test)",
+          "ethanol has the larger SD so cell size is more variable in ethanol"
+        ],
+        "notes": "Do not award a conclusion of 'significant' without reference to the SD values."
+      },
+      {
+        "label": "d",
+        "command": "Suggest",
+        "prompt": "Suggest one reason why yeast cells grown in 2 % glucose were larger than cells in the other media.",
+        "marks": 2,
+        "markscheme": [
+          "glucose is an abundant/readily used energy source / respiratory substrate",
+          "more ATP available for biosynthesis / for synthesis of proteins/membranes/organelles",
+          "cells grow larger before dividing / more cytoplasm produced",
+          "ethanol is a poorer energy source / is toxic at higher concentration / damages membranes",
+          "lower glucose concentration limits growth rate"
+        ],
+        "notes": "Accept any reasoned link between energy supply and growth, OWTTE."
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-02",
+    "topics": [
+      "A3.2"
+    ],
+    "paper": "1B",
+    "level": "HL",
+    "title": "Mitochondrial sequences of cave beetles",
+    "stem": "A 1200 base-pair section of a mitochondrial gene was sequenced from four species of cave beetle (W, X, Y and Z) living in neighbouring cave systems. The number of base differences between each pair of species is shown.",
+    "data": {
+      "caption": "Pairwise base differences in a 1200 bp mitochondrial gene sequence",
+      "columns": [
+        "Species pair",
+        "Number of base differences"
+      ],
+      "rows": [
+        [
+          "W – X",
+          "18"
+        ],
+        [
+          "W – Y",
+          "66"
+        ],
+        [
+          "W – Z",
+          "70"
+        ],
+        [
+          "X – Y",
+          "64"
+        ],
+        [
+          "X – Z",
+          "68"
+        ],
+        [
+          "Y – Z",
+          "24"
+        ]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage sequence difference between species W and Y.",
+        "marks": 1,
+        "numeric": {
+          "value": 5.5,
+          "tolerance": 0.05,
+          "unit": "%"
+        },
+        "markscheme": [
+          "66 / 1200 × 100 = 5.5 %"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Estimate",
+        "prompt": "Assuming this gene diverges at 2.0 % per million years, estimate how long ago species W and X shared a common ancestor.",
+        "marks": 2,
+        "numeric": {
+          "value": 0.75,
+          "tolerance": 0.05,
+          "unit": "million years"
+        },
+        "markscheme": [
+          "percentage difference W – X = 18 / 1200 × 100 = 1.5 %",
+          "1.5 / 2.0 = 0.75 million years / 750 000 years"
+        ],
+        "notes": "ECF for an incorrect percentage correctly divided by 2.0."
+      },
+      {
+        "label": "c",
+        "command": "Deduce",
+        "prompt": "Deduce the relationships between the four species, as they would appear on a cladogram.",
+        "marks": 2,
+        "markscheme": [
+          "W and X form one clade / are most closely related (fewest differences, 18)",
+          "Y and Z form a second clade (24 differences)",
+          "the two clades (W+X and Y+Z) diverged earliest / share a more distant common ancestor (64–70 differences)",
+          "W and X diverged more recently than Y and Z"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Evaluate",
+        "prompt": "Evaluate the use of a molecular clock based on this gene for dating the divergence of these species.",
+        "marks": 3,
+        "markscheme": [
+          "strength: mutations accumulate at a roughly constant rate so differences give an approximate time",
+          "strength: objective / quantitative / independent of morphology (which may show convergent evolution in caves)",
+          "limitation: mutation rate may differ between lineages / genes / over time",
+          "limitation: rate of 2.0 % per million years is an assumption that needs calibration (e.g. with fossils / dated geological events)",
+          "limitation: only one gene / short sequence used / mitochondrial DNA is inherited maternally only",
+          "limitation: multiple mutations at the same site (back mutation) can cause underestimation of older divergences"
+        ],
+        "notes": "At least one strength and one limitation for full marks."
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-03",
+    "topics": [
+      "A4.1"
+    ],
+    "paper": "1B",
+    "level": "SL",
+    "title": "Snail shells and an invasive crab",
+    "stem": "A shore crab that crushes snail shells arrived on a coastline in 2008 and spread along it. Shell thickness of an intertidal snail was measured at three sites in 2005 and again in 2020 (n = 40 snails per site each year).",
+    "data": {
+      "caption": "Mean shell thickness of snails at three sites",
+      "columns": [
+        "Site",
+        "Crabs present",
+        "Mean thickness 2005 / mm",
+        "Mean thickness 2020 / mm",
+        "SD 2020 / mm"
+      ],
+      "rows": [
+        [
+          "1",
+          "never",
+          "0.82",
+          "0.84",
+          "0.09"
+        ],
+        [
+          "2",
+          "since 2008",
+          "0.80",
+          "1.06",
+          "0.11"
+        ],
+        [
+          "3",
+          "since 2014",
+          "0.81",
+          "0.95",
+          "0.10"
+        ]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage increase in mean shell thickness at site 2 between 2005 and 2020.",
+        "marks": 2,
+        "numeric": {
+          "value": 32.5,
+          "tolerance": 0.5,
+          "unit": "%"
+        },
+        "markscheme": [
+          "(1.06 − 0.80) / 0.80 × 100",
+          "32.5 % / 33 %"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the mean rate of change in shell thickness at site 2 between 2005 and 2020, stating the unit.",
+        "marks": 1,
+        "numeric": {
+          "value": 0.0173,
+          "tolerance": 0.001,
+          "unit": "mm per year"
+        },
+        "markscheme": [
+          "0.26 mm / 15 years = 0.017 mm year⁻¹ (unit required)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Compare",
+        "prompt": "Compare the changes in shell thickness at sites 2 and 3.",
+        "marks": 2,
+        "markscheme": [
+          "both sites show an increase in mean thickness",
+          "greater increase at site 2 (0.26 mm) than site 3 (0.14 mm)",
+          "similar starting thickness in 2005 at both sites (0.80 and 0.81 mm)",
+          "site 2 had crabs for longer (12 years vs 6 years)"
+        ],
+        "notes": "Quoted values are needed for a comparison of magnitude."
+      },
+      {
+        "label": "d",
+        "command": "Evaluate",
+        "prompt": "Evaluate the hypothesis that predation by the crab has caused natural selection for thicker shells.",
+        "marks": 3,
+        "markscheme": [
+          "support: no (meaningful) change at site 1 without crabs (0.82 to 0.84 mm)",
+          "support: increase is greater where crabs have been present longer / dose–response with time",
+          "support: thicker shells less likely to be crushed so those snails survive and reproduce more",
+          "limitation: thickening could be phenotypic plasticity (snails grow thicker shells when crabs are detected) rather than genetic change",
+          "limitation: only three sites / no replication of sites / correlation does not prove causation",
+          "limitation: other factors may differ between sites, e.g. water temperature / calcium availability / snail age",
+          "limitation: no SD given for 2005 so significance of change cannot be judged"
+        ],
+        "notes": "At least one supporting and one limiting point for full marks."
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-04",
+    "topics": [
+      "A2.3"
+    ],
+    "paper": "1B",
+    "level": "HL",
+    "title": "One-step growth of a bacteriophage",
+    "stem": "A culture of bacteria was mixed with a bacteriophage so that each infected cell received one phage; unattached phages were then removed. At intervals, samples were plated to count plaque-forming units (PFU). Before lysis, each infected cell produces one plaque. Means of three plates are shown.",
+    "data": {
+      "caption": "Mean count of plaque-forming units after infection (n = 3)",
+      "columns": [
+        "Time after infection / min",
+        "Mean PFU / × 10⁶ cm⁻³",
+        "SD / × 10⁶ cm⁻³"
+      ],
+      "rows": [
+        [
+          "0",
+          "2.0",
+          "0.2"
+        ],
+        [
+          "10",
+          "2.1",
+          "0.2"
+        ],
+        [
+          "20",
+          "2.0",
+          "0.3"
+        ],
+        [
+          "30",
+          "45",
+          "6"
+        ],
+        [
+          "40",
+          "190",
+          "15"
+        ],
+        [
+          "50",
+          "202",
+          "14"
+        ],
+        [
+          "60",
+          "200",
+          "16"
+        ]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Identify",
+        "prompt": "Identify the time interval during which lysis of infected cells began.",
+        "marks": 1,
+        "markscheme": [
+          "between 20 and 30 minutes"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the mean number of phages released per infected cell (burst size).",
+        "marks": 2,
+        "numeric": {
+          "value": 100,
+          "tolerance": 3,
+          "unit": ""
+        },
+        "markscheme": [
+          "plateau value / initial infected cells: 200 / 2.0 (allow 190–202 / 2.0)",
+          "≈ 100 phages per cell"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain the changes in PFU between 0 and 40 minutes with reference to the lytic cycle.",
+        "marks": 3,
+        "markscheme": [
+          "0–20 min no increase as phage DNA/RNA is inside host cells / latent period",
+          "phage genes are transcribed/translated using host ribosomes/enzymes/ATP",
+          "phage nucleic acid is replicated and new capsid proteins are made",
+          "new phage particles are assembled inside the cell",
+          "from 20–30 min host cells lyse / burst releasing many new phages, so PFU rise sharply",
+          "lysis is not simultaneous in all cells so the rise continues to 40 min"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Suggest",
+        "prompt": "Suggest why the PFU count does not increase further after 50 minutes.",
+        "marks": 1,
+        "markscheme": [
+          "all infected cells have lysed / no further infected cells",
+          "released phages could not infect new hosts (uninfected cells removed / too dilute / sampling stopped infection)"
+        ]
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-05",
+    "topics": [
+      "A1.2"
+    ],
+    "paper": "2A",
+    "level": "SL",
+    "title": "Base composition and nucleic acid structure",
+    "stem": "Analysis of double-stranded DNA from a soil bacterium showed that 22 % of the bases were adenine.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage of bases in this DNA that are guanine.",
+        "marks": 1,
+        "numeric": {
+          "value": 28,
+          "tolerance": 0,
+          "unit": "%"
+        },
+        "markscheme": [
+          "A = T = 22 %, so G + C = 56 %, G = 28 %"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Distinguish",
+        "prompt": "Distinguish between the structure of DNA and RNA.",
+        "marks": 3,
+        "markscheme": [
+          "DNA contains deoxyribose whereas RNA contains ribose",
+          "DNA contains thymine whereas RNA contains uracil",
+          "DNA is (usually) double-stranded whereas RNA is (usually) single-stranded",
+          "DNA forms a double helix whereas RNA does not",
+          "DNA molecules are (usually) much longer than RNA molecules"
+        ],
+        "notes": "Each point must state both sides of the difference; a list of DNA features alone scores 0."
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how complementary base pairing allows DNA to be copied accurately.",
+        "marks": 3,
+        "markscheme": [
+          "A pairs only with T and C pairs only with G",
+          "pairing is by hydrogen bonds between bases (2 between A–T, 3 between C–G)",
+          "pairing depends on shape and hydrogen-bonding pattern of the bases / purine pairs with pyrimidine",
+          "each strand acts as a template for a new strand",
+          "so the sequence of the new strand is determined by the template / new molecules are identical to the original",
+          "semi-conservative replication: each new molecule keeps one original strand"
+        ]
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-06",
+    "topics": [
+      "A2.2"
+    ],
+    "paper": "2A",
+    "level": "SL",
+    "title": "Prokaryotic and eukaryotic cells",
+    "stem": "All living organisms are composed of cells, but cell structure differs between prokaryotes and eukaryotes.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "State",
+        "prompt": "State two structures found in all cells.",
+        "marks": 2,
+        "markscheme": [
+          "plasma / cell membrane",
+          "cytoplasm",
+          "ribosomes",
+          "DNA / genetic material"
+        ],
+        "notes": "Reject nucleus or cell wall."
+      },
+      {
+        "label": "b",
+        "command": "Compare and contrast",
+        "prompt": "Compare and contrast the structure of prokaryotic and eukaryotic cells.",
+        "marks": 3,
+        "markscheme": [
+          "similarity: both have plasma membrane / cytoplasm / ribosomes / DNA",
+          "prokaryotes have no nucleus / DNA in nucleoid whereas eukaryotes have a nucleus with a nuclear envelope",
+          "prokaryotes have 70S ribosomes whereas eukaryotes have 80S ribosomes in the cytoplasm",
+          "prokaryotic DNA is circular / naked whereas eukaryotic DNA is linear and associated with histones",
+          "prokaryotes lack membrane-bound organelles / eukaryotes have mitochondria, ER, Golgi etc.",
+          "prokaryotes may have plasmids; eukaryotes rarely do",
+          "prokaryotic cells are (usually) much smaller"
+        ],
+        "notes": "For full marks at least one similarity and one difference are needed."
+      },
+      {
+        "label": "c",
+        "command": "Outline",
+        "prompt": "Outline evidence that mitochondria originated by endosymbiosis.",
+        "marks": 3,
+        "markscheme": [
+          "mitochondria have a double membrane / inner membrane resembling a prokaryote membrane",
+          "they contain their own circular / naked DNA",
+          "they have 70S ribosomes",
+          "they divide by binary fission / are not made by the cell from scratch",
+          "they are similar in size to bacteria",
+          "their DNA / ribosomal RNA sequences are closely related to those of (alpha-proteo)bacteria",
+          "they are sensitive to some antibiotics that affect bacteria"
+        ]
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-07",
+    "topics": [
+      "A4.2",
+      "A3.1"
+    ],
+    "paper": "2A",
+    "level": "SL",
+    "title": "Species and the biodiversity crisis",
+    "stem": "Conservation programmes aim to protect species, but deciding what counts as a species is not always straightforward.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Outline",
+        "prompt": "Outline the biological species concept and one difficulty in applying it.",
+        "marks": 2,
+        "markscheme": [
+          "a species is a group of organisms that can interbreed to produce fertile offspring",
+          "difficulty: cannot be applied to asexually reproducing organisms / bacteria",
+          "difficulty: cannot test interbreeding of extinct/fossil species",
+          "difficulty: some distinct species hybridize and produce fertile offspring",
+          "difficulty: populations that are geographically separated cannot be tested / ring species"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Describe",
+        "prompt": "Describe three causes of the current loss of biodiversity.",
+        "marks": 3,
+        "markscheme": [
+          "habitat destruction / land-use change e.g. deforestation for agriculture",
+          "overexploitation e.g. overfishing / hunting / poaching",
+          "pollution e.g. eutrophication / pesticides / plastics",
+          "invasive alien species that outcompete / prey on native species",
+          "climate change altering habitats faster than species can adapt / migrate",
+          "spread of pathogens / disease"
+        ],
+        "notes": "Each cause needs a brief description or example, not just a single word."
+      },
+      {
+        "label": "c",
+        "command": "Distinguish",
+        "prompt": "Distinguish between in situ and ex situ conservation.",
+        "marks": 2,
+        "markscheme": [
+          "in situ: protecting species in their natural habitat e.g. nature reserves / national parks",
+          "ex situ: protecting species outside their natural habitat e.g. zoos / botanic gardens / seed banks",
+          "in situ conserves the whole ecosystem and interactions; ex situ only the target species",
+          "ex situ allows captive breeding / storage of genetic material for later reintroduction"
+        ]
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-08",
+    "topics": [
+      "A1.1"
+    ],
+    "paper": "2B",
+    "level": "SL",
+    "title": "Water as the medium of life",
+    "stem": "Water has properties that make it essential for living organisms.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Describe",
+        "prompt": "Describe how hydrogen bonds form between water molecules.",
+        "marks": 4,
+        "markscheme": [
+          "oxygen is more electronegative than hydrogen",
+          "so electrons in O–H covalent bonds are shared unequally",
+          "water molecule is polar: oxygen partially negative (δ−), hydrogens partially positive (δ+)",
+          "molecule is bent / V-shaped so charges do not cancel",
+          "hydrogen bond is an attraction between δ+ hydrogen of one molecule and δ− oxygen of another",
+          "hydrogen bonds are weak individually but numerous / constantly forming and breaking",
+          "each water molecule can form up to four hydrogen bonds"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Outline",
+        "prompt": "Outline how cohesion and adhesion of water are important to living organisms.",
+        "marks": 4,
+        "markscheme": [
+          "cohesion: water molecules stick to each other due to hydrogen bonds",
+          "cohesion allows water to be pulled up xylem in continuous columns under tension",
+          "cohesion causes surface tension, supporting small organisms on water surfaces",
+          "adhesion: water molecules are attracted to other polar / charged surfaces",
+          "adhesion to cellulose in xylem walls / capillary action helps water rise",
+          "adhesion allows water to move through cell walls / soil pores by capillary action"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how the physical and solvent properties of water affect organisms that live in water and the transport of substances in organisms.",
+        "marks": 7,
+        "markscheme": [
+          "high specific heat capacity: much energy needed to change temperature",
+          "so aquatic habitats have stable temperatures / buffer organisms against change",
+          "high latent heat of vaporization allows cooling by sweating / transpiration",
+          "thermal conductivity of water is high so aquatic animals lose heat quickly / need insulation e.g. blubber",
+          "water is buoyant / dense so supports organisms and reduces need for skeletal support",
+          "water is more viscous than air so aquatic animals need streamlined bodies to reduce drag",
+          "ice is less dense than liquid water so floats and insulates water below / organisms survive under ice",
+          "water is a solvent for polar / charged (hydrophilic) substances",
+          "so glucose / amino acids / ions dissolve and are transported in blood plasma / phloem / xylem",
+          "non-polar substances (e.g. lipids / cholesterol) are insoluble so must be carried in lipoproteins",
+          "oxygen has low solubility so is carried by haemoglobin",
+          "metabolic reactions occur in solution in cytoplasm"
+        ],
+        "notes": "Award marks for linking a property to its biological consequence; a bare list of properties scores at most 2."
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-09",
+    "topics": [
+      "A2.1"
+    ],
+    "paper": "2B",
+    "level": "HL",
+    "title": "The origin of the first cells",
+    "stem": "Life is thought to have arisen on the early Earth from non-living matter.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Outline",
+        "prompt": "Outline an experiment that tested whether organic molecules could form under conditions thought to exist on the early Earth.",
+        "marks": 4,
+        "markscheme": [
+          "Miller and Urey (1950s)",
+          "mixture of gases simulating early atmosphere: methane, ammonia, hydrogen, water vapour",
+          "no free oxygen / reducing atmosphere",
+          "water boiled to produce vapour / simulated ocean",
+          "electric sparks to simulate lightning / energy source",
+          "condenser cooled gases to simulate rain",
+          "after a week amino acids / organic compounds were found in the water"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Describe",
+        "prompt": "Describe evidence for a last universal common ancestor (LUCA) of all living organisms.",
+        "marks": 4,
+        "markscheme": [
+          "all organisms use the same (near-)universal genetic code",
+          "all use DNA as genetic material / RNA as intermediary",
+          "all use the same 20 amino acids / L-amino acids in proteins",
+          "all use ATP as energy currency / share core metabolic pathways e.g. glycolysis",
+          "some genes are shared by all organisms e.g. ribosomal RNA / ribosomal proteins",
+          "comparison of these genes suggests LUCA lived around 4 billion years ago / near hydrothermal vents",
+          "other early forms of life became extinct, so all present life descends from LUCA"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain the processes that are thought to have been needed for the origin of cells from non-living material.",
+        "marks": 7,
+        "markscheme": [
+          "synthesis of simple organic molecules from inorganic molecules",
+          "energy sources such as lightning / UV radiation / hydrothermal vents",
+          "assembly of organic molecules into polymers (e.g. by condensation on clay / mineral surfaces)",
+          "a molecule capable of self-replication was needed",
+          "RNA could act as both a store of information and a catalyst (ribozyme) / RNA world",
+          "so RNA could replicate itself and catalyse reactions before DNA and proteins",
+          "formation of membranes / compartments to enclose molecules",
+          "fatty acids / phospholipids spontaneously form vesicles / bilayers in water",
+          "membranes allow a different internal chemistry / concentration of reactants",
+          "vesicles could grow and divide when more lipids added",
+          "development of a genetic code linking nucleic acid sequence to protein",
+          "spontaneous generation does not happen now as conditions differ / organic molecules would be consumed by existing life"
+        ],
+        "notes": "Expect candidates to address the four key steps: monomer synthesis, polymerization, self-replication and compartmentalization."
+      }
+    ],
+    "unit": "A"
+  },
+  {
+    "id": "XA-10",
+    "topics": [
+      "A3.1",
+      "A4.1"
+    ],
+    "paper": "2B",
+    "level": "SL",
+    "title": "Karyotypes, species and speciation",
+    "stem": "Variation between species is found both in their chromosomes and in their reproductive behaviour.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Describe",
+        "prompt": "Describe how a karyotype is prepared and how it can be used.",
+        "marks": 4,
+        "markscheme": [
+          "cells (e.g. white blood cells / fetal cells) are cultured / induced to divide",
+          "division arrested at metaphase when chromosomes are most condensed",
+          "chromosomes stained and photographed / imaged",
+          "chromosomes arranged in homologous pairs in order of size / banding / centromere position",
+          "sex chromosomes placed last",
+          "used to determine sex of individual",
+          "used to identify chromosome abnormalities e.g. trisomy 21",
+          "used to compare chromosome number / structure between species"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Outline",
+        "prompt": "Outline why chromosome number is a characteristic feature of a species.",
+        "marks": 4,
+        "markscheme": [
+          "members of a species have the same number of chromosomes",
+          "homologous chromosomes must pair during meiosis",
+          "hybrids between species with different chromosome numbers cannot pair chromosomes properly",
+          "so gametes are not viable / hybrids are infertile",
+          "so chromosome differences act as a barrier to interbreeding",
+          "chromosome number can change by fusion / splitting of chromosomes e.g. human chromosome 2",
+          "diploid number is twice the haploid number / chromosomes are in pairs"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how a population can split into two separate species.",
+        "marks": 7,
+        "markscheme": [
+          "population is divided into two (or more) groups",
+          "reproductive isolation prevents gene flow between groups",
+          "geographical isolation / barrier e.g. mountain / river / sea gives allopatric speciation",
+          "behavioural / temporal isolation can occur without a barrier, giving sympatric speciation",
+          "different mutations arise in each group",
+          "environments differ so different selection pressures act",
+          "natural selection favours different alleles in each population / differential selection",
+          "allele frequencies diverge / gene pools change independently",
+          "genetic drift may also change allele frequencies, especially in small populations",
+          "over many generations the populations become so different that they cannot interbreed",
+          "even if they meet again, they no longer produce fertile offspring and are separate species"
+        ],
+        "notes": "Award at most 5 marks if no reference to natural selection or reproductive isolation."
+      }
+    ],
+    "unit": "A"
+  }
+]

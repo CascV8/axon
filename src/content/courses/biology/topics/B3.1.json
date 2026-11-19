@@ -1,0 +1,644 @@
+{
+  "id": "B3.1",
+  "code": "B3.1",
+  "unit": "B",
+  "title": "Gas exchange",
+  "level": "SL",
+  "summary": "Properties of gas-exchange surfaces, how lungs are adapted and ventilated, how lung volumes are measured, and how leaves exchange gases and lose water by transpiration. HL adds how haemoglobin binds and releases oxygen.",
+  "keyterms": [
+    {
+      "id": "b3.1-exchange-surface",
+      "term": "Gas-exchange surface",
+      "definition": "Surface where gases enter and leave an organism; typically permeable, thin, moist and with a large surface area.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-gradient",
+      "term": "Maintaining concentration gradients",
+      "definition": "Gradients at exchange surfaces are kept steep by dense capillary networks, continuous blood flow and ventilation with air or water.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-surfactant",
+      "term": "Surfactant",
+      "definition": "Secretion of type II pneumocytes that reduces surface tension in alveoli, preventing their walls sticking together and collapsing.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-ventilation",
+      "term": "Ventilation",
+      "definition": "Movement of air into and out of the lungs, caused by muscle contractions that change thoracic volume and therefore pressure.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-intercostals",
+      "term": "Intercostal muscles",
+      "definition": "Muscles between the ribs: external intercostals raise the ribcage in inhalation; internal intercostals lower it in forced exhalation.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-tidal-volume",
+      "term": "Tidal volume",
+      "definition": "Volume of air inhaled or exhaled in a normal breath.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-vital-capacity",
+      "term": "Vital capacity",
+      "definition": "Maximum volume of air that can be exhaled after a maximum inhalation; equals tidal volume plus inspiratory and expiratory reserve volumes.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-reserve-volumes",
+      "term": "Inspiratory and expiratory reserve volumes",
+      "definition": "Extra air that can be forcibly inhaled beyond a normal inhalation (IRV) or forcibly exhaled beyond a normal exhalation (ERV).",
+      "hl": false
+    },
+    {
+      "id": "b3.1-spongy-mesophyll",
+      "term": "Spongy mesophyll",
+      "definition": "Loosely packed leaf tissue with large air spaces and moist cell surfaces where most gas exchange occurs.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-stomata",
+      "term": "Stomata",
+      "definition": "Pores, mainly in the lower epidermis of leaves, opened and closed by pairs of guard cells to control gas exchange and water loss.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-transpiration",
+      "term": "Transpiration",
+      "definition": "Loss of water vapour from leaves and stems, an unavoidable consequence of gas exchange through stomata.",
+      "hl": false
+    },
+    {
+      "id": "b3.1-stomatal-density",
+      "term": "Stomatal density",
+      "definition": "Number of stomata per unit area of leaf surface, e.g. per mm².",
+      "hl": false
+    },
+    {
+      "id": "b3.1-cooperative-binding",
+      "term": "Cooperative binding",
+      "definition": "Binding of one O2 to haemoglobin changes its conformation, increasing the affinity of the remaining haem groups for O2.",
+      "hl": true
+    },
+    {
+      "id": "b3.1-bohr-shift",
+      "term": "Bohr shift",
+      "definition": "Reduction in haemoglobin's affinity for O2 at higher CO2 concentration, shifting the dissociation curve right so more O2 is released in respiring tissues.",
+      "hl": true
+    },
+    {
+      "id": "b3.1-foetal-haemoglobin",
+      "term": "Foetal haemoglobin",
+      "definition": "Form of haemoglobin with higher O2 affinity than adult haemoglobin, so it can take O2 from maternal blood in the placenta.",
+      "hl": true
+    },
+    {
+      "id": "b3.1-dissociation-curve",
+      "term": "Oxygen dissociation curve",
+      "definition": "Graph of percentage saturation of haemoglobin against partial pressure of oxygen; sigmoid for haemoglobin.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "B3.1-1",
+      "title": "Gas-exchange surfaces and lungs",
+      "hl": false,
+      "questions": [
+        {
+          "id": "B3.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which of these is NOT a typical property of a gas-exchange surface?",
+          "options": [
+            "A large surface area",
+            "A moist surface",
+            "Permeability to oxygen and carbon dioxide",
+            "A thick layer of cells to protect it from damage"
+          ],
+          "answer": 3,
+          "explanation": "Gas-exchange surfaces must be thin so that the diffusion distance is short; thickness would slow diffusion.",
+          "terms": [
+            "b3.1-exchange-surface"
+          ]
+        },
+        {
+          "id": "B3.1-1-q02",
+          "type": "tf",
+          "statement": "Gas-exchange surfaces are moist because gases dissolve in water before diffusing across the surface.",
+          "answer": true,
+          "explanation": "O2 and CO2 dissolve in the film of moisture lining the surface and then diffuse through the cells.",
+          "terms": [
+            "b3.1-exchange-surface"
+          ]
+        },
+        {
+          "id": "B3.1-1-q03",
+          "type": "fill",
+          "text": "In mammals, continuous blood flow and ___ of the lungs maintain steep concentration gradients of O2 and CO2 at the alveoli.",
+          "answer": "ventilation",
+          "bank": [
+            "ventilation",
+            "transpiration",
+            "translocation",
+            "osmosis"
+          ],
+          "explanation": "Ventilation keeps alveolar air high in O2 and low in CO2, while blood flow carries O2 away and brings CO2, so diffusion continues.",
+          "terms": [
+            "b3.1-ventilation",
+            "b3.1-gradient"
+          ]
+        },
+        {
+          "id": "B3.1-1-q04",
+          "type": "match",
+          "prompt": "Match each lung feature to how it helps gas exchange.",
+          "pairs": [
+            {
+              "left": "Surfactant",
+              "right": "Stops alveolar walls sticking together"
+            },
+            {
+              "left": "Branched bronchioles",
+              "right": "Carry air to millions of alveoli"
+            },
+            {
+              "left": "Extensive capillary beds",
+              "right": "Large blood supply keeps gradients steep"
+            },
+            {
+              "left": "Millions of alveoli",
+              "right": "Huge total surface area"
+            }
+          ],
+          "explanation": "Together these features give a very large, thin, moist and well-supplied exchange surface.",
+          "terms": [
+            "b3.1-surfactant",
+            "b3.1-gradient",
+            "b3.1-exchange-surface"
+          ]
+        },
+        {
+          "id": "B3.1-1-q05",
+          "type": "mcq",
+          "prompt": "How do fish maintain a concentration gradient for oxygen at their gills?",
+          "options": [
+            "They absorb oxygen by active transport",
+            "Water is ventilated over the gills and blood flows continuously through them",
+            "They gulp air at the surface",
+            "Their gills are covered by a waxy cuticle"
+          ],
+          "answer": 1,
+          "explanation": "Ventilation with water brings fresh oxygenated water while blood flow removes absorbed oxygen, so a gradient is maintained. Gas exchange is by diffusion, not active transport.",
+          "terms": [
+            "b3.1-gradient"
+          ]
+        },
+        {
+          "id": "B3.1-1-q06",
+          "type": "tf",
+          "statement": "Gas exchange is only a vital function in animals, because plants make their own oxygen.",
+          "answer": false,
+          "explanation": "All organisms exchange gases. Plants take in CO2 for photosynthesis and O2 for respiration (e.g. in roots and at night) and release O2 and CO2.",
+          "terms": [
+            "b3.1-exchange-surface"
+          ]
+        },
+        {
+          "id": "B3.1-1-q07",
+          "type": "order",
+          "prompt": "Put the airways in the order air passes through them during inhalation.",
+          "items": [
+            "Trachea",
+            "Bronchus",
+            "Bronchiole",
+            "Alveolus"
+          ],
+          "explanation": "The trachea divides into two bronchi, which branch repeatedly into bronchioles ending in clusters of alveoli where gas exchange occurs.",
+          "terms": []
+        },
+        {
+          "id": "B3.1-1-q08",
+          "type": "mcq",
+          "prompt": "Why is it important that alveoli are surrounded by dense networks of capillaries?",
+          "options": [
+            "Capillaries pump air into the alveoli",
+            "Capillaries secrete surfactant",
+            "Blood flowing through them continuously removes O2 and supplies CO2, keeping gradients steep",
+            "Capillaries actively transport CO2 into the alveoli"
+          ],
+          "answer": 2,
+          "explanation": "Constantly replacing the blood at the surface maintains low O2 and high CO2 in the blood relative to the alveolar air, so diffusion can continue.",
+          "terms": [
+            "b3.1-gradient"
+          ]
+        },
+        {
+          "id": "B3.1-1-q09",
+          "type": "fill",
+          "text": "Single-celled organisms can exchange gases across their plasma membrane because they have a high ___ ratio.",
+          "answer": "surface area to volume",
+          "accept": [
+            "SA:V",
+            "surface area:volume",
+            "surface area-to-volume"
+          ],
+          "bank": [
+            "surface area to volume",
+            "volume to surface area",
+            "metabolic",
+            "ventilation"
+          ],
+          "explanation": "Small organisms have plenty of surface for their volume, so diffusion meets their needs; large animals need specialized surfaces such as lungs or gills.",
+          "terms": [
+            "b3.1-exchange-surface"
+          ]
+        },
+        {
+          "id": "B3.1-1-q10",
+          "type": "mcq",
+          "prompt": "Which layers does oxygen cross as it diffuses from an alveolus into the blood?",
+          "options": [
+            "The alveolar wall (type I pneumocyte) and the capillary wall",
+            "The bronchiole wall and the artery wall",
+            "The pleural membrane and the vein wall",
+            "Cartilage rings and smooth muscle"
+          ],
+          "answer": 0,
+          "explanation": "The alveolus and capillary walls are each one thin cell thick, giving a total diffusion distance of well under a micrometre.",
+          "terms": [
+            "b3.1-exchange-surface"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B3.1-2",
+      "title": "Ventilation, lung volumes and leaves",
+      "hl": false,
+      "questions": [
+        {
+          "id": "B3.1-2-q01",
+          "type": "mcq",
+          "prompt": "What happens during inhalation?",
+          "options": [
+            "The diaphragm relaxes and domes upward, increasing lung pressure",
+            "The internal intercostals contract, pulling the ribs down",
+            "The diaphragm contracts and flattens and the external intercostals raise the ribs, so lung volume increases and pressure falls",
+            "Air is sucked in, which then pushes the ribs outward"
+          ],
+          "answer": 2,
+          "explanation": "Muscle contraction enlarges the thorax first; the resulting drop in pressure below atmospheric pressure causes air to flow in. Air does not move the ribs.",
+          "terms": [
+            "b3.1-ventilation",
+            "b3.1-intercostals"
+          ]
+        },
+        {
+          "id": "B3.1-2-q02",
+          "type": "tf",
+          "statement": "During forced exhalation, the internal intercostal muscles and abdominal muscles contract.",
+          "answer": true,
+          "explanation": "Internal intercostals pull the ribs down and in, and abdominal muscles push the diaphragm up, reducing thoracic volume and raising pressure.",
+          "terms": [
+            "b3.1-intercostals",
+            "b3.1-ventilation"
+          ]
+        },
+        {
+          "id": "B3.1-2-q03",
+          "type": "order",
+          "prompt": "Put the events of inhalation in order.",
+          "items": [
+            "Diaphragm and external intercostal muscles contract",
+            "Volume of the thorax increases",
+            "Pressure inside the lungs falls below atmospheric pressure",
+            "Air flows into the lungs"
+          ],
+          "explanation": "Volume and pressure are inversely related, so increasing thoracic volume lowers pressure and air moves in down the pressure gradient.",
+          "terms": [
+            "b3.1-ventilation",
+            "b3.1-intercostals"
+          ]
+        },
+        {
+          "id": "B3.1-2-q04",
+          "type": "match",
+          "prompt": "Match each lung volume to its definition.",
+          "pairs": [
+            {
+              "left": "Tidal volume",
+              "right": "Air moved in one normal breath"
+            },
+            {
+              "left": "Vital capacity",
+              "right": "Maximum air exhaled after maximum inhalation"
+            },
+            {
+              "left": "Inspiratory reserve volume",
+              "right": "Extra air forcibly inhaled beyond a normal breath"
+            },
+            {
+              "left": "Expiratory reserve volume",
+              "right": "Extra air forcibly exhaled after a normal exhalation"
+            }
+          ],
+          "explanation": "These are measured with a spirometer; vital capacity is the sum of tidal volume and both reserve volumes.",
+          "terms": [
+            "b3.1-tidal-volume",
+            "b3.1-vital-capacity",
+            "b3.1-reserve-volumes"
+          ]
+        },
+        {
+          "id": "B3.1-2-q05",
+          "type": "mcq",
+          "prompt": "A person has a tidal volume of 0.5 L, an inspiratory reserve volume of 3.0 L and an expiratory reserve volume of 1.2 L. What is their vital capacity?",
+          "options": [
+            "4.7 L",
+            "3.5 L",
+            "4.2 L",
+            "1.7 L"
+          ],
+          "answer": 0,
+          "explanation": "Vital capacity = tidal volume + IRV + ERV = 0.5 + 3.0 + 1.2 = 4.7 L.",
+          "terms": [
+            "b3.1-vital-capacity",
+            "b3.1-tidal-volume",
+            "b3.1-reserve-volumes"
+          ]
+        },
+        {
+          "id": "B3.1-2-q06",
+          "type": "fill",
+          "text": "Most gas exchange in a leaf occurs across the moist cell surfaces of the ___ mesophyll, which has large air spaces.",
+          "answer": "spongy",
+          "bank": [
+            "spongy",
+            "palisade",
+            "vascular",
+            "epidermal"
+          ],
+          "explanation": "Air spaces in the spongy mesophyll connect to the stomata and give a large, moist internal surface for CO2 uptake and O2 release.",
+          "terms": [
+            "b3.1-spongy-mesophyll"
+          ]
+        },
+        {
+          "id": "B3.1-2-q07",
+          "type": "tf",
+          "statement": "The waxy cuticle on a leaf is an adaptation to increase gas exchange.",
+          "answer": false,
+          "explanation": "The cuticle is waterproof and reduces water loss; gases enter and leave mainly through stomata.",
+          "terms": [
+            "b3.1-stomata"
+          ]
+        },
+        {
+          "id": "B3.1-2-q08",
+          "type": "order",
+          "prompt": "Put the tissues of a typical dicot leaf in order from the upper surface to the lower surface.",
+          "items": [
+            "Waxy cuticle",
+            "Upper epidermis",
+            "Palisade mesophyll",
+            "Spongy mesophyll",
+            "Lower epidermis with stomata"
+          ],
+          "explanation": "Palisade cells near the top receive most light for photosynthesis; spongy mesophyll with air spaces lies below, next to the stomata in the lower epidermis.",
+          "terms": [
+            "b3.1-spongy-mesophyll",
+            "b3.1-stomata"
+          ]
+        },
+        {
+          "id": "B3.1-2-q09",
+          "type": "mcq",
+          "prompt": "Which change would decrease the rate of transpiration from a leaf?",
+          "options": [
+            "An increase in temperature",
+            "An increase in light intensity",
+            "Opening of more stomata",
+            "An increase in air humidity"
+          ],
+          "answer": 3,
+          "explanation": "Humid air reduces the concentration gradient of water vapour between the air spaces and the atmosphere, so less water vapour diffuses out. Higher temperature increases evaporation.",
+          "terms": [
+            "b3.1-transpiration"
+          ]
+        },
+        {
+          "id": "B3.1-2-q10",
+          "type": "fill",
+          "text": "Stomata are opened and closed by pairs of ___ cells.",
+          "answer": "guard",
+          "bank": [
+            "guard",
+            "companion",
+            "palisade",
+            "root hair"
+          ],
+          "explanation": "Guard cells change shape to open stomata for CO2 uptake or close them to reduce water loss.",
+          "terms": [
+            "b3.1-stomata"
+          ]
+        },
+        {
+          "id": "B3.1-2-q11",
+          "type": "mcq",
+          "prompt": "A student counts 24 stomata in a field of view of area 0.12 mm². What is the stomatal density?",
+          "options": [
+            "2.9 per mm²",
+            "200 per mm²",
+            "24 per mm²",
+            "288 per mm²"
+          ],
+          "answer": 1,
+          "explanation": "Density = number ÷ area = 24 ÷ 0.12 mm² = 200 stomata per mm². Counts from several fields of view should be averaged.",
+          "terms": [
+            "b3.1-stomatal-density"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B3.1-3",
+      "title": "Haemoglobin and oxygen transport",
+      "hl": true,
+      "questions": [
+        {
+          "id": "B3.1-3-q01",
+          "type": "mcq",
+          "prompt": "What is meant by cooperative binding of oxygen to haemoglobin?",
+          "options": [
+            "Haemoglobin and myoglobin share oxygen",
+            "Binding of one O2 changes haemoglobin's conformation, increasing the affinity of the other haem groups",
+            "Oxygen binds only when carbon dioxide is also bound",
+            "All four O2 molecules must bind at exactly the same time"
+          ],
+          "answer": 1,
+          "explanation": "Each O2 that binds makes it easier for the next to bind, and loss of one makes the others easier to release. This produces the sigmoid dissociation curve.",
+          "terms": [
+            "b3.1-cooperative-binding"
+          ]
+        },
+        {
+          "id": "B3.1-3-q02",
+          "type": "fill",
+          "text": "The rightward shift of the oxygen dissociation curve at high CO2 concentration is called the ___ shift.",
+          "answer": "Bohr",
+          "accept": [
+            "bohr"
+          ],
+          "bank": [
+            "Bohr",
+            "chloride",
+            "Hill",
+            "Calvin"
+          ],
+          "explanation": "The Bohr shift lowers haemoglobin's affinity for O2 where CO2 is high, which is exactly where respiring cells need O2.",
+          "terms": [
+            "b3.1-bohr-shift"
+          ]
+        },
+        {
+          "id": "B3.1-3-q03",
+          "type": "tf",
+          "statement": "Foetal haemoglobin has a lower affinity for oxygen than adult haemoglobin.",
+          "answer": false,
+          "explanation": "Foetal haemoglobin has a higher affinity, so its dissociation curve lies to the left of the adult curve.",
+          "terms": [
+            "b3.1-foetal-haemoglobin"
+          ]
+        },
+        {
+          "id": "B3.1-3-q04",
+          "type": "mcq",
+          "prompt": "Why is it important that foetal haemoglobin has a higher affinity for O2 than adult haemoglobin?",
+          "options": [
+            "So the foetus can breathe air in the uterus",
+            "So that foetal blood can give oxygen to the mother",
+            "So that foetal blood carries more CO2",
+            "So that foetal haemoglobin can take O2 from maternal haemoglobin in the placenta"
+          ],
+          "answer": 3,
+          "explanation": "At the partial pressures in the placenta, maternal haemoglobin releases O2 while foetal haemoglobin, with its higher affinity, picks it up.",
+          "terms": [
+            "b3.1-foetal-haemoglobin"
+          ]
+        },
+        {
+          "id": "B3.1-3-q05",
+          "type": "match",
+          "prompt": "Match each feature of oxygen dissociation curves to its meaning.",
+          "pairs": [
+            {
+              "left": "Sigmoid shape",
+              "right": "Result of cooperative binding"
+            },
+            {
+              "left": "Curve shifted right",
+              "right": "Lower affinity, O2 released more readily"
+            },
+            {
+              "left": "Foetal curve left of adult curve",
+              "right": "Foetal haemoglobin has higher affinity"
+            },
+            {
+              "left": "Steep middle section",
+              "right": "Small fall in pO2 releases much O2"
+            }
+          ],
+          "explanation": "The position of a curve shows affinity: further left means higher affinity; the shape reflects cooperative binding.",
+          "terms": [
+            "b3.1-dissociation-curve",
+            "b3.1-cooperative-binding",
+            "b3.1-bohr-shift",
+            "b3.1-foetal-haemoglobin"
+          ]
+        },
+        {
+          "id": "B3.1-3-q06",
+          "type": "tf",
+          "statement": "CO2 can bind to haemoglobin at allosteric sites, reducing its affinity for oxygen.",
+          "answer": true,
+          "explanation": "CO2 binds at sites other than the haem groups, changing haemoglobin's conformation so O2 is released more easily.",
+          "terms": [
+            "b3.1-bohr-shift"
+          ]
+        },
+        {
+          "id": "B3.1-3-q07",
+          "type": "order",
+          "prompt": "Put the events of the Bohr shift in an exercising muscle in order.",
+          "items": [
+            "Rate of cell respiration in the muscle increases",
+            "CO2 concentration in the tissue rises",
+            "CO2 binds to haemoglobin and pH falls",
+            "Haemoglobin's affinity for O2 decreases",
+            "More O2 is released to the muscle cells"
+          ],
+          "explanation": "Active tissues produce more CO2, which lowers haemoglobin's affinity, so O2 delivery automatically increases where it is most needed.",
+          "terms": [
+            "b3.1-bohr-shift"
+          ]
+        },
+        {
+          "id": "B3.1-3-q08",
+          "type": "mcq",
+          "prompt": "What are the axes of an oxygen dissociation curve?",
+          "options": [
+            "Partial pressure of O2 (x) and percentage saturation of haemoglobin (y)",
+            "Time (x) and volume of O2 absorbed (y)",
+            "pH (x) and partial pressure of CO2 (y)",
+            "Percentage saturation (x) and heart rate (y)"
+          ],
+          "answer": 0,
+          "explanation": "The curve shows how saturated haemoglobin is with O2 at each partial pressure of oxygen, which represents its affinity.",
+          "terms": [
+            "b3.1-dissociation-curve"
+          ]
+        },
+        {
+          "id": "B3.1-3-q09",
+          "type": "mcq",
+          "prompt": "Why does the sigmoid shape of the curve make haemoglobin effective at transporting oxygen?",
+          "options": [
+            "It means haemoglobin never releases all of its O2",
+            "It allows haemoglobin to bind CO2 and O2 at the same haem group",
+            "Haemoglobin becomes almost fully saturated in the lungs, yet releases a lot of O2 for a small fall in pO2 in the tissues",
+            "It means affinity stays constant at all partial pressures"
+          ],
+          "answer": 2,
+          "explanation": "The flat top ensures near-full loading in the lungs; the steep middle means the lower pO2 of tissues causes a large unloading.",
+          "terms": [
+            "b3.1-dissociation-curve",
+            "b3.1-cooperative-binding"
+          ]
+        },
+        {
+          "id": "B3.1-3-q10",
+          "type": "fill",
+          "text": "Each haemoglobin molecule can carry up to ___ oxygen molecules, one per haem group.",
+          "answer": "four",
+          "accept": [
+            "4"
+          ],
+          "bank": [
+            "four",
+            "two",
+            "one",
+            "eight"
+          ],
+          "explanation": "Haemoglobin has four polypeptide chains, each with one haem group that can bind one O2 molecule.",
+          "terms": [
+            "b3.1-cooperative-binding"
+          ]
+        }
+      ]
+    }
+  ]
+}

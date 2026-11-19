@@ -1,0 +1,595 @@
+{
+  "id": "A2.2",
+  "code": "A2.2",
+  "unit": "A",
+  "title": "Cell structure",
+  "level": "SL",
+  "summary": "How microscopes reveal cells, the structures shared by all cells, and how prokaryotic, plant, animal and fungal cells differ, including atypical cells and how eukaryotic cells first arose.",
+  "keyterms": [
+    {
+      "id": "a2.2-magnification",
+      "term": "Magnification",
+      "definition": "How many times larger an image is than the actual object: magnification = image size ÷ actual size.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-resolution",
+      "term": "Resolution",
+      "definition": "The ability to distinguish two close points as separate; electron microscopes have much higher resolution than light microscopes.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-freeze-fracture",
+      "term": "Freeze fracture",
+      "definition": "Electron microscopy technique in which a frozen specimen is cracked along planes such as the middle of membranes, revealing internal surfaces.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-cryo-em",
+      "term": "Cryogenic electron microscopy",
+      "definition": "Electron microscopy of rapidly frozen samples, allowing the 3D structure of proteins and other molecules to be determined without fixing or staining.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-immunofluorescence",
+      "term": "Immunofluorescence",
+      "definition": "Light microscopy technique using antibodies linked to fluorescent dyes to show where specific molecules are located in cells.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-prokaryote",
+      "term": "Prokaryote",
+      "definition": "Cell with no nucleus or membrane-bound organelles; has a cell wall, plasma membrane, cytoplasm, naked DNA in a loop and 70S ribosomes.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-eukaryote",
+      "term": "Eukaryote",
+      "definition": "Cell with a nucleus enclosed by a double membrane and compartmentalised by membrane-bound organelles; has 80S ribosomes and a cytoskeleton.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-ribosome-size",
+      "term": "70S and 80S ribosomes",
+      "definition": "Prokaryotes (and mitochondria and chloroplasts) have smaller 70S ribosomes; the cytoplasm of eukaryotes has larger 80S ribosomes.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-compartmentalization",
+      "term": "Compartmentalization",
+      "definition": "Division of a eukaryotic cell into membrane-bound compartments so that different conditions and processes are kept separate.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-cytoskeleton",
+      "term": "Cytoskeleton",
+      "definition": "Network of microtubules and microfilaments in eukaryotic cells that supports the cell and enables movement of the cell and its contents.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-atypical-cell",
+      "term": "Atypical cell structure",
+      "definition": "Eukaryotic cells departing from one nucleus per cell, e.g. no nucleus in red blood cells and sieve tubes; many nuclei in aseptate hyphae and skeletal muscle fibres.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-life-processes",
+      "term": "Functions of life",
+      "definition": "Homeostasis, metabolism, nutrition, movement, excretion, growth, response to stimuli and reproduction; all carried out by a unicellular organism.",
+      "hl": false
+    },
+    {
+      "id": "a2.2-endosymbiosis",
+      "term": "Endosymbiosis",
+      "definition": "Origin of mitochondria from engulfed aerobic proteobacteria and of chloroplasts from engulfed cyanobacteria that survived and became organelles.",
+      "hl": true
+    },
+    {
+      "id": "a2.2-differentiation",
+      "term": "Cell differentiation",
+      "definition": "Development of specialised cell types by expressing different genes, although all cells have the same genome.",
+      "hl": true
+    },
+    {
+      "id": "a2.2-multicellularity",
+      "term": "Multicellularity",
+      "definition": "Organisation of an organism as many cooperating cells; evolved repeatedly and allows larger size and cell specialisation.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "A2.2-1",
+      "title": "Cells and microscopy",
+      "hl": false,
+      "questions": [
+        {
+          "id": "A2.2-1-q01",
+          "type": "mcq",
+          "prompt": "A mitochondrion is 2 µm long. In an electron micrograph its image is 40 mm long. What is the magnification?",
+          "options": [
+            "× 20",
+            "× 200",
+            "× 2 000",
+            "× 20 000"
+          ],
+          "answer": 3,
+          "explanation": "Convert to the same units: 40 mm = 40 000 µm. Magnification = image size ÷ actual size = 40 000 ÷ 2 = × 20 000.",
+          "terms": [
+            "a2.2-magnification"
+          ]
+        },
+        {
+          "id": "A2.2-1-q02",
+          "type": "tf",
+          "statement": "Electron microscopes have higher resolution than light microscopes because electrons have a much shorter wavelength than light.",
+          "answer": true,
+          "explanation": "Resolution is limited by wavelength. The short wavelength of electron beams allows details such as ribosomes and membranes to be distinguished.",
+          "terms": [
+            "a2.2-resolution"
+          ]
+        },
+        {
+          "id": "A2.2-1-q03",
+          "type": "fill",
+          "text": "Actual size = image size ÷ ___.",
+          "answer": "magnification",
+          "bank": [
+            "magnification",
+            "resolution",
+            "scale bar",
+            "wavelength"
+          ],
+          "explanation": "Rearranging magnification = image size ÷ actual size gives actual size = image size ÷ magnification.",
+          "terms": [
+            "a2.2-magnification"
+          ]
+        },
+        {
+          "id": "A2.2-1-q04",
+          "type": "match",
+          "prompt": "Match each microscopy technique to what it is used for.",
+          "pairs": [
+            {
+              "left": "Freeze fracture",
+              "right": "Splitting membranes to reveal internal surfaces"
+            },
+            {
+              "left": "Cryogenic electron microscopy",
+              "right": "Determining 3D structure of proteins"
+            },
+            {
+              "left": "Immunofluorescence",
+              "right": "Locating specific proteins with labelled antibodies"
+            },
+            {
+              "left": "Fluorescent stains",
+              "right": "Making particular structures glow in light microscopy"
+            }
+          ],
+          "explanation": "These developments extended microscopy: freeze fracture revealed membrane proteins, cryo-EM resolves molecular structures, and fluorescence shows where molecules are.",
+          "terms": [
+            "a2.2-freeze-fracture",
+            "a2.2-cryo-em",
+            "a2.2-immunofluorescence"
+          ]
+        },
+        {
+          "id": "A2.2-1-q05",
+          "type": "mcq",
+          "prompt": "Which structures are common to all cells?",
+          "options": [
+            "Nucleus, cytoplasm and cell wall",
+            "DNA, cytoplasm and plasma membrane",
+            "Mitochondria, ribosomes and plasma membrane",
+            "Cell wall, chloroplasts and DNA"
+          ],
+          "answer": 1,
+          "explanation": "All cells have DNA as genetic material, cytoplasm (mostly water) and a plasma membrane made of lipids. Prokaryotes lack a nucleus and mitochondria, and animal cells lack walls.",
+          "terms": []
+        },
+        {
+          "id": "A2.2-1-q06",
+          "type": "tf",
+          "statement": "Electron microscopes can be used to view living cells in colour.",
+          "answer": false,
+          "explanation": "Specimens must be in a vacuum and are usually fixed or frozen, so they are not living, and images are black and white (colour is added artificially).",
+          "terms": [
+            "a2.2-resolution"
+          ]
+        },
+        {
+          "id": "A2.2-1-q07",
+          "type": "mcq",
+          "prompt": "What is the main advantage of immunofluorescence over ordinary staining in light microscopy?",
+          "options": [
+            "It gives higher resolution than an electron microscope",
+            "It works without a microscope",
+            "It shows the location of one specific protein in the cell",
+            "It allows magnification of over × 1 000 000"
+          ],
+          "answer": 2,
+          "explanation": "Antibodies bind only to their specific target molecule, so the fluorescent tag reveals exactly where that protein is. Resolution is still limited by light.",
+          "terms": [
+            "a2.2-immunofluorescence"
+          ]
+        },
+        {
+          "id": "A2.2-1-q08",
+          "type": "order",
+          "prompt": "Order these from smallest to largest.",
+          "items": [
+            "Thickness of a plasma membrane",
+            "Ribosome",
+            "Prokaryotic cell",
+            "Eukaryotic cell"
+          ],
+          "explanation": "A membrane is about 10 nm thick, a ribosome about 20–30 nm across, a prokaryotic cell about 1–5 µm and a typical eukaryotic cell about 10–100 µm.",
+          "terms": [
+            "a2.2-prokaryote",
+            "a2.2-eukaryote"
+          ]
+        },
+        {
+          "id": "A2.2-1-q09",
+          "type": "fill",
+          "text": "The ability to distinguish two close objects as separate is called ___.",
+          "answer": "resolution",
+          "bank": [
+            "resolution",
+            "magnification",
+            "contrast",
+            "focus"
+          ],
+          "explanation": "Magnifying beyond the resolution limit only enlarges blur; resolution determines how much detail can be seen.",
+          "terms": [
+            "a2.2-resolution"
+          ]
+        },
+        {
+          "id": "A2.2-1-q10",
+          "type": "mcq",
+          "prompt": "Why are cells described as the basic structural unit of all living organisms?",
+          "options": [
+            "Because all organisms are composed of one or more cells",
+            "Because all cells contain a nucleus",
+            "Because cells are the smallest structures that contain proteins",
+            "Because all cells are the same size"
+          ],
+          "answer": 0,
+          "explanation": "All living things are made of cells, the smallest units that can carry out all functions of life. Cells vary in size and many lack a nucleus.",
+          "terms": []
+        }
+      ]
+    },
+    {
+      "id": "A2.2-2",
+      "title": "Prokaryotes and eukaryotes",
+      "hl": false,
+      "questions": [
+        {
+          "id": "A2.2-2-q01",
+          "type": "mcq",
+          "prompt": "Which structure is found in a prokaryotic cell such as Bacillus?",
+          "options": [
+            "Nucleus with a double membrane",
+            "Mitochondria",
+            "80S ribosomes",
+            "Naked DNA in a loop"
+          ],
+          "answer": 3,
+          "explanation": "Prokaryotes have DNA not associated with histones, in a loop in the cytoplasm (nucleoid), and 70S ribosomes. They lack a nucleus and membrane-bound organelles.",
+          "terms": [
+            "a2.2-prokaryote",
+            "a2.2-ribosome-size"
+          ]
+        },
+        {
+          "id": "A2.2-2-q02",
+          "type": "tf",
+          "statement": "Eukaryotic cells have 80S ribosomes in their cytoplasm, while prokaryotes have 70S ribosomes.",
+          "answer": true,
+          "explanation": "70S ribosomes are smaller. The 70S ribosomes also found inside mitochondria and chloroplasts are evidence for endosymbiosis.",
+          "terms": [
+            "a2.2-ribosome-size"
+          ]
+        },
+        {
+          "id": "A2.2-2-q03",
+          "type": "match",
+          "prompt": "Match each cell type to the main component of its cell wall.",
+          "pairs": [
+            {
+              "left": "Plant cell",
+              "right": "Cellulose"
+            },
+            {
+              "left": "Fungal cell",
+              "right": "Chitin"
+            },
+            {
+              "left": "Animal cell",
+              "right": "No cell wall"
+            }
+          ],
+          "explanation": "Plant walls are mainly cellulose and fungal walls mainly chitin; animal cells have no wall, only a plasma membrane.",
+          "terms": [
+            "a2.2-eukaryote"
+          ]
+        },
+        {
+          "id": "A2.2-2-q04",
+          "type": "mcq",
+          "prompt": "What is the main advantage of compartmentalization in eukaryotic cells?",
+          "options": [
+            "It lets enzymes and substrates for a process be concentrated, and keeps incompatible processes separate",
+            "It makes the cell smaller",
+            "It removes the need for a plasma membrane",
+            "It allows DNA to be stored without proteins"
+          ],
+          "answer": 0,
+          "explanation": "Membrane-bound organelles create separate environments, e.g. lysosomes keep digestive enzymes away from the cytoplasm, and enzymes can be concentrated where they are needed.",
+          "terms": [
+            "a2.2-compartmentalization"
+          ]
+        },
+        {
+          "id": "A2.2-2-q05",
+          "type": "fill",
+          "text": "Mammalian red blood cells and phloem sieve tube elements are atypical because they have no ___.",
+          "answer": "nucleus",
+          "bank": [
+            "nucleus",
+            "cell wall",
+            "plasma membrane",
+            "cytoplasm"
+          ],
+          "explanation": "Red blood cells lose their nucleus to make more room for haemoglobin; sieve tube elements lose theirs to allow sap flow, relying on companion cells.",
+          "terms": [
+            "a2.2-atypical-cell"
+          ]
+        },
+        {
+          "id": "A2.2-2-q06",
+          "type": "mcq",
+          "prompt": "Which is an example of a multinucleate eukaryotic structure?",
+          "options": [
+            "Phloem sieve tube element",
+            "Skeletal muscle fibre",
+            "Mammalian red blood cell",
+            "Bacillus cell"
+          ],
+          "answer": 1,
+          "explanation": "Skeletal muscle fibres form by fusion of many cells and contain many nuclei; aseptate fungal hyphae are also multinucleate.",
+          "terms": [
+            "a2.2-atypical-cell"
+          ]
+        },
+        {
+          "id": "A2.2-2-q07",
+          "type": "tf",
+          "statement": "Large permanent vacuoles and chloroplasts are found in typical animal cells.",
+          "answer": false,
+          "explanation": "Plant cells typically have chloroplasts and a large permanent vacuole. Animal cells have no chloroplasts and only small, temporary vacuoles, but have centrioles.",
+          "terms": [
+            "a2.2-eukaryote"
+          ]
+        },
+        {
+          "id": "A2.2-2-q08",
+          "type": "mcq",
+          "prompt": "A unicellular organism such as Paramecium must carry out all functions of life. Which list is correct?",
+          "options": [
+            "Photosynthesis, respiration, mitosis, meiosis",
+            "Homeostasis, metabolism, nutrition, movement, excretion, growth, response to stimuli, reproduction",
+            "Nutrition, digestion, circulation, ventilation",
+            "Growth, transcription, translation, replication"
+          ],
+          "answer": 1,
+          "explanation": "These eight functions of life are what one cell must perform when it is the whole organism. Not all organisms photosynthesise or undergo meiosis.",
+          "terms": [
+            "a2.2-life-processes"
+          ]
+        },
+        {
+          "id": "A2.2-2-q09",
+          "type": "fill",
+          "text": "Microtubules and microfilaments together form the ___ of eukaryotic cells.",
+          "answer": "cytoskeleton",
+          "bank": [
+            "cytoskeleton",
+            "cell wall",
+            "nucleoid",
+            "endomembrane"
+          ],
+          "explanation": "The cytoskeleton maintains cell shape and enables movement of the cell and of organelles and chromosomes within it. Prokaryotes lack a eukaryote-type cytoskeleton.",
+          "terms": [
+            "a2.2-cytoskeleton"
+          ]
+        },
+        {
+          "id": "A2.2-2-q10",
+          "type": "mcq",
+          "prompt": "In an electron micrograph, which structure would identify a cell as eukaryotic?",
+          "options": [
+            "Ribosomes",
+            "A plasma membrane",
+            "A cell wall",
+            "A nucleus with a double membrane containing pores"
+          ],
+          "answer": 3,
+          "explanation": "A nuclear envelope (double membrane with nuclear pores) is only found in eukaryotes. Ribosomes, membranes and walls also occur in prokaryotes.",
+          "terms": [
+            "a2.2-eukaryote"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2.2-3",
+      "title": "HL: Endosymbiosis, differentiation and multicellularity",
+      "hl": true,
+      "questions": [
+        {
+          "id": "A2.2-3-q01",
+          "type": "mcq",
+          "prompt": "According to endosymbiotic theory, mitochondria evolved from which organisms?",
+          "options": [
+            "Cyanobacteria",
+            "Aerobic proteobacteria",
+            "Viruses",
+            "Archaea that photosynthesised"
+          ],
+          "answer": 1,
+          "explanation": "Mitochondria arose from engulfed aerobic proteobacteria; chloroplasts from engulfed photosynthetic cyanobacteria.",
+          "terms": [
+            "a2.2-endosymbiosis"
+          ]
+        },
+        {
+          "id": "A2.2-3-q02",
+          "type": "match",
+          "prompt": "Match each feature of mitochondria and chloroplasts to why it supports endosymbiosis.",
+          "pairs": [
+            {
+              "left": "Double membrane",
+              "right": "Inner membrane from bacterium, outer from engulfing"
+            },
+            {
+              "left": "70S ribosomes",
+              "right": "Same size as prokaryotic ribosomes"
+            },
+            {
+              "left": "Naked circular DNA",
+              "right": "Like the DNA loop of prokaryotes"
+            },
+            {
+              "left": "Binary fission",
+              "right": "Divide independently, like bacteria"
+            }
+          ],
+          "explanation": "These shared features with prokaryotes are evidence that these organelles were once free-living bacteria.",
+          "terms": [
+            "a2.2-endosymbiosis"
+          ]
+        },
+        {
+          "id": "A2.2-3-q03",
+          "type": "tf",
+          "statement": "Mitochondria and chloroplasts can only be produced by division of existing mitochondria or chloroplasts.",
+          "answer": true,
+          "explanation": "These organelles divide by a process like binary fission and cannot be made from scratch by the cell, which is consistent with them being descended from bacteria.",
+          "terms": [
+            "a2.2-endosymbiosis"
+          ]
+        },
+        {
+          "id": "A2.2-3-q04",
+          "type": "fill",
+          "text": "Chloroplasts are thought to have evolved from engulfed ___.",
+          "answer": "cyanobacteria",
+          "bank": [
+            "cyanobacteria",
+            "proteobacteria",
+            "archaea",
+            "fungi"
+          ],
+          "explanation": "Photosynthetic cyanobacteria taken up by a eukaryotic cell that already had mitochondria became chloroplasts.",
+          "terms": [
+            "a2.2-endosymbiosis"
+          ]
+        },
+        {
+          "id": "A2.2-3-q05",
+          "type": "order",
+          "prompt": "Order the events in the endosymbiotic origin of plant cells.",
+          "items": [
+            "An ancestral cell engulfs an aerobic proteobacterium",
+            "The bacterium survives and becomes a mitochondrion",
+            "A cell with mitochondria engulfs a cyanobacterium",
+            "The cyanobacterium becomes a chloroplast"
+          ],
+          "explanation": "All eukaryotes have (or had) mitochondria, but only some have chloroplasts, so the mitochondrion endosymbiosis came first.",
+          "terms": [
+            "a2.2-endosymbiosis"
+          ]
+        },
+        {
+          "id": "A2.2-3-q06",
+          "type": "mcq",
+          "prompt": "Cells in a multicellular organism have the same genome but different structures. How does cell differentiation occur?",
+          "options": [
+            "Cells lose the genes they do not need",
+            "Different cells receive different chromosomes during mitosis",
+            "Different genes are expressed in different cell types",
+            "Each cell type mutates its DNA differently"
+          ],
+          "answer": 2,
+          "explanation": "Differentiation results from changes in gene expression triggered by signals during development; the genome itself is not altered.",
+          "terms": [
+            "a2.2-differentiation"
+          ]
+        },
+        {
+          "id": "A2.2-3-q07",
+          "type": "tf",
+          "statement": "Multicellularity evolved only once, in the common ancestor of animals.",
+          "answer": false,
+          "explanation": "Multicellularity evolved independently many times, for example in animals, plants, fungi, and red and brown algae.",
+          "terms": [
+            "a2.2-multicellularity"
+          ]
+        },
+        {
+          "id": "A2.2-3-q08",
+          "type": "mcq",
+          "prompt": "Which is an advantage of multicellularity?",
+          "options": [
+            "Larger body size and specialisation of cells for different functions",
+            "Cells no longer need to divide",
+            "Each cell can carry out every function of life alone",
+            "It eliminates the need for gene expression"
+          ],
+          "answer": 0,
+          "explanation": "Multicellular organisms can grow larger and divide labour among differentiated cells and tissues, increasing efficiency.",
+          "terms": [
+            "a2.2-multicellularity",
+            "a2.2-differentiation"
+          ]
+        },
+        {
+          "id": "A2.2-3-q09",
+          "type": "fill",
+          "text": "The development of specialised cells by changes in gene expression is called cell ___.",
+          "answer": "differentiation",
+          "bank": [
+            "differentiation",
+            "division",
+            "endosymbiosis",
+            "fission"
+          ],
+          "explanation": "Differentiation produces specialised tissues; division only produces more cells.",
+          "terms": [
+            "a2.2-differentiation"
+          ]
+        },
+        {
+          "id": "A2.2-3-q10",
+          "type": "mcq",
+          "prompt": "Which evidence most directly suggests mitochondrial DNA came from bacteria?",
+          "options": [
+            "Mitochondria contain enzymes for respiration",
+            "Mitochondria are found in all eukaryotic cells",
+            "Mitochondria are surrounded by cytoplasm",
+            "Mitochondrial DNA is naked and circular, resembling bacterial DNA rather than nuclear DNA"
+          ],
+          "answer": 3,
+          "explanation": "Nuclear DNA is linear and associated with histones; mitochondrial DNA is small, circular and naked like a bacterial chromosome.",
+          "terms": [
+            "a2.2-endosymbiosis"
+          ]
+        }
+      ]
+    }
+  ]
+}

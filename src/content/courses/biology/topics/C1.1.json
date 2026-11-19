@@ -1,0 +1,624 @@
+{
+  "id": "C1.1",
+  "code": "C1.1",
+  "unit": "C",
+  "title": "Enzymes and metabolism",
+  "level": "SL",
+  "summary": "How enzymes act as biological catalysts that control the web of chemical reactions in cells, what affects their activity, and (HL) how metabolic pathways are regulated by inhibition.",
+  "keyterms": [
+    {
+      "id": "c1.1-catalyst",
+      "term": "Catalyst",
+      "definition": "A substance that increases the rate of a chemical reaction without being changed or used up by the reaction.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-metabolism",
+      "term": "Metabolism",
+      "definition": "The complex network of interdependent and interacting chemical reactions occurring in living systems, almost all catalysed by enzymes.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-anabolism",
+      "term": "Anabolism",
+      "definition": "Reactions that build larger molecules from smaller ones, e.g. condensation reactions forming macromolecules such as glycogen or proteins; require energy.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-catabolism",
+      "term": "Catabolism",
+      "definition": "Reactions that break down larger molecules into smaller ones, e.g. hydrolysis of macromolecules in digestion; often release energy.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-active-site",
+      "term": "Active site",
+      "definition": "The region of a globular enzyme, formed by a small number of amino acids, to which the substrate binds and where catalysis occurs.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-induced-fit",
+      "term": "Induced fit",
+      "definition": "Binding of the substrate causes changes in shape of both the substrate and the active site, stressing bonds in the substrate and aiding catalysis.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-specificity",
+      "term": "Enzyme–substrate specificity",
+      "definition": "Each enzyme catalyses one reaction or a group of similar reactions because only substrates with a matching shape and chemical properties fit its active site.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-denaturation",
+      "term": "Denaturation",
+      "definition": "A structural change in a protein, caused by high temperature or extreme pH, that alters the active site so the enzyme can no longer bind substrate; usually permanent.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-activation-energy",
+      "term": "Activation energy",
+      "definition": "The energy needed to break bonds in the substrate to start a reaction; enzymes lower it, increasing reaction rate.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-optimum",
+      "term": "Optimum",
+      "definition": "The temperature or pH at which an enzyme's rate of reaction is highest.",
+      "hl": false
+    },
+    {
+      "id": "c1.1-competitive-inhibition",
+      "term": "Competitive inhibition",
+      "definition": "Inhibition by a molecule that resembles the substrate and binds reversibly to the active site, so it competes with the substrate; overcome by raising substrate concentration.",
+      "hl": true
+    },
+    {
+      "id": "c1.1-non-competitive-inhibition",
+      "term": "Non-competitive inhibition",
+      "definition": "Inhibition by a molecule binding to an allosteric site, changing the active site shape; raising substrate concentration cannot restore the maximum rate.",
+      "hl": true
+    },
+    {
+      "id": "c1.1-allosteric-site",
+      "term": "Allosteric site",
+      "definition": "A binding site on an enzyme separate from the active site; binding there changes the enzyme's shape and activity.",
+      "hl": true
+    },
+    {
+      "id": "c1.1-feedback-inhibition",
+      "term": "End-product (feedback) inhibition",
+      "definition": "Regulation of a metabolic pathway in which the end product inhibits an enzyme early in the pathway, usually by binding to its allosteric site.",
+      "hl": true
+    },
+    {
+      "id": "c1.1-mechanism-based-inhibition",
+      "term": "Mechanism-based inhibition",
+      "definition": "Irreversible inhibition in which an inhibitor binds covalently to the active site, chemically changing it, e.g. penicillin binding to transpeptidase.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "C1.1-1",
+      "title": "Enzymes as catalysts",
+      "hl": false,
+      "questions": [
+        {
+          "id": "C1.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which statement best describes an enzyme?",
+          "options": [
+            "A lipid that supplies energy to a reaction",
+            "A globular protein that acts as a biological catalyst",
+            "A substrate that is converted into product",
+            "A hormone that is used up as it speeds up a reaction"
+          ],
+          "answer": 1,
+          "explanation": "Enzymes are globular proteins that speed up reactions without being used up, so a single enzyme molecule can be used again and again. They do not supply energy; they lower the activation energy.",
+          "terms": [
+            "c1.1-catalyst",
+            "c1.1-active-site"
+          ]
+        },
+        {
+          "id": "C1.1-1-q02",
+          "type": "mcq",
+          "prompt": "Which of these is a catabolic reaction?",
+          "options": [
+            "Formation of glycogen from glucose",
+            "Synthesis of a polypeptide at a ribosome",
+            "Hydrolysis of macromolecules into monomers during digestion",
+            "Joining nucleotides to make DNA"
+          ],
+          "answer": 2,
+          "explanation": "Catabolism breaks large molecules into smaller ones, as in the hydrolysis of macromolecules during digestion. Glycogen formation, protein synthesis and DNA synthesis are anabolic condensation reactions.",
+          "terms": [
+            "c1.1-catabolism",
+            "c1.1-anabolism"
+          ]
+        },
+        {
+          "id": "C1.1-1-q03",
+          "type": "tf",
+          "statement": "The active site of an enzyme is made up of only a relatively small number of the enzyme's amino acids.",
+          "answer": true,
+          "explanation": "Most of the enzyme's amino acids hold the 3D shape in place; only a few form the active site, which binds the substrate and catalyses the reaction.",
+          "terms": [
+            "c1.1-active-site"
+          ]
+        },
+        {
+          "id": "C1.1-1-q04",
+          "type": "fill",
+          "text": "When a substrate binds, both the substrate and the active site change shape. This model is called ___.",
+          "answer": "induced fit",
+          "accept": [
+            "the induced fit model",
+            "induced-fit"
+          ],
+          "bank": [
+            "induced fit",
+            "lock and key",
+            "denaturation",
+            "allosteric inhibition"
+          ],
+          "explanation": "In the induced-fit model, binding changes the shape of both the active site and the substrate, which stresses bonds in the substrate and makes the reaction easier.",
+          "terms": [
+            "c1.1-induced-fit"
+          ]
+        },
+        {
+          "id": "C1.1-1-q05",
+          "type": "tf",
+          "statement": "Enzymes speed up reactions by supplying extra energy to the substrate molecules.",
+          "answer": false,
+          "explanation": "Enzymes do not add energy. They lower the activation energy needed for the reaction, so more substrate molecules can react at a given temperature.",
+          "terms": [
+            "c1.1-activation-energy",
+            "c1.1-catalyst"
+          ]
+        },
+        {
+          "id": "C1.1-1-q06",
+          "type": "mcq",
+          "prompt": "How does an enzyme affect the energy changes in an exothermic reaction?",
+          "options": [
+            "It increases the activation energy and the energy released",
+            "It decreases the energy released by the reaction",
+            "It increases the energy of the products",
+            "It lowers the activation energy but does not change the overall energy released"
+          ],
+          "answer": 3,
+          "explanation": "An enzyme provides a pathway with a lower activation energy, but the energy levels of substrate and product are unchanged, so the net energy released stays the same.",
+          "terms": [
+            "c1.1-activation-energy"
+          ]
+        },
+        {
+          "id": "C1.1-1-q07",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Metabolism",
+              "right": "All the enzyme-catalysed reactions in a cell or organism"
+            },
+            {
+              "left": "Anabolism",
+              "right": "Building macromolecules from monomers by condensation"
+            },
+            {
+              "left": "Catabolism",
+              "right": "Breaking macromolecules into monomers by hydrolysis"
+            },
+            {
+              "left": "Catalyst",
+              "right": "Speeds up a reaction without being used up"
+            }
+          ],
+          "explanation": "Metabolism is the whole network of reactions; it is split into anabolic (building, e.g. protein synthesis) and catabolic (breaking down, e.g. digestion) reactions, which enzymes catalyse.",
+          "terms": [
+            "c1.1-metabolism",
+            "c1.1-anabolism",
+            "c1.1-catabolism",
+            "c1.1-catalyst"
+          ]
+        },
+        {
+          "id": "C1.1-1-q08",
+          "type": "order",
+          "prompt": "Put the events of an enzyme-catalysed reaction in order.",
+          "items": [
+            "Substrate and active site collide due to molecular motion",
+            "Substrate binds to the active site",
+            "Active site and substrate change shape (induced fit)",
+            "Substrate is converted into products",
+            "Products are released and the active site is free again"
+          ],
+          "explanation": "Catalysis depends on a successful collision, then binding and induced fit, which stresses substrate bonds so they are converted to products; the unchanged enzyme then releases the products and can be reused.",
+          "terms": [
+            "c1.1-induced-fit",
+            "c1.1-active-site"
+          ]
+        },
+        {
+          "id": "C1.1-1-q09",
+          "type": "fill",
+          "text": "Substrate–active site collisions happen because of random molecular ___, mostly of the smaller substrate molecules.",
+          "answer": "motion",
+          "accept": [
+            "movement"
+          ],
+          "bank": [
+            "motion",
+            "attraction",
+            "pumping",
+            "polarity"
+          ],
+          "explanation": "Substrate and enzyme molecules in solution move randomly; the substrate usually moves more because it is smaller. Only collisions with the right orientation lead to binding.",
+          "terms": [
+            "c1.1-active-site"
+          ]
+        },
+        {
+          "id": "C1.1-1-q10",
+          "type": "mcq",
+          "prompt": "Why is enzyme specificity essential for controlling metabolism?",
+          "options": [
+            "Each reaction needs its own enzyme, so a cell controls which reactions happen by which enzymes it makes",
+            "Specific enzymes can catalyse every reaction in the cell at once",
+            "Specificity allows enzymes to work at any temperature",
+            "Specific enzymes are not affected by substrate concentration"
+          ],
+          "answer": 0,
+          "explanation": "Because enzymes are specific, a cell can control its metabolism by controlling which enzymes it synthesises (gene expression) and how active they are.",
+          "terms": [
+            "c1.1-specificity",
+            "c1.1-metabolism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C1.1-2",
+      "title": "Factors affecting enzyme activity",
+      "hl": false,
+      "questions": [
+        {
+          "id": "C1.1-2-q01",
+          "type": "mcq",
+          "prompt": "Why does the rate of an enzyme-catalysed reaction increase as temperature rises towards the optimum?",
+          "options": [
+            "The active site becomes larger",
+            "More enzyme molecules are synthesised",
+            "Molecules have more kinetic energy, so substrate–active site collisions are more frequent",
+            "The activation energy of the reaction increases"
+          ],
+          "answer": 2,
+          "explanation": "Higher temperature increases kinetic energy, so molecules move faster and collide with active sites more often and with more energy, increasing the rate.",
+          "terms": [
+            "c1.1-optimum"
+          ]
+        },
+        {
+          "id": "C1.1-2-q02",
+          "type": "mcq",
+          "prompt": "Explain why the rate drops sharply above the optimum temperature.",
+          "options": [
+            "Substrate molecules move too fast to bind",
+            "Bonds holding the enzyme's structure break, changing the active site so substrate no longer fits",
+            "The enzyme is used up by the reaction",
+            "Products accumulate and block the active site"
+          ],
+          "answer": 1,
+          "explanation": "High temperatures break the bonds (e.g. hydrogen bonds) that maintain the tertiary structure, so the active site changes shape; this is denaturation.",
+          "terms": [
+            "c1.1-denaturation",
+            "c1.1-active-site"
+          ]
+        },
+        {
+          "id": "C1.1-2-q03",
+          "type": "tf",
+          "statement": "Denaturation of an enzyme by high temperature is usually permanent.",
+          "answer": true,
+          "explanation": "Once the bonds holding the tertiary structure have broken, the enzyme does not usually regain its shape when cooled, so the activity is permanently lost.",
+          "terms": [
+            "c1.1-denaturation"
+          ]
+        },
+        {
+          "id": "C1.1-2-q04",
+          "type": "tf",
+          "statement": "Once substrate concentration is high, doubling it again will double the rate of reaction.",
+          "answer": false,
+          "explanation": "At high substrate concentration most active sites are occupied at any moment, so the rate levels off (plateaus); extra substrate has little effect.",
+          "terms": [
+            "c1.1-active-site"
+          ]
+        },
+        {
+          "id": "C1.1-2-q05",
+          "type": "fill",
+          "text": "The pH at which an enzyme works fastest is called its ___ pH.",
+          "answer": "optimum",
+          "accept": [
+            "optimal"
+          ],
+          "bank": [
+            "optimum",
+            "neutral",
+            "critical",
+            "minimum"
+          ],
+          "explanation": "Each enzyme has an optimum pH; on either side of it the charges on amino acids in the active site change, reducing binding, and extreme pH causes denaturation.",
+          "terms": [
+            "c1.1-optimum"
+          ]
+        },
+        {
+          "id": "C1.1-2-q06",
+          "type": "fill",
+          "text": "A permanent change to the structure of an enzyme so that its active site no longer binds substrate is called ___.",
+          "answer": "denaturation",
+          "bank": [
+            "denaturation",
+            "inhibition",
+            "hydrolysis",
+            "condensation"
+          ],
+          "explanation": "Denaturation is a structural change caused by heat or extreme pH; the specific shape of the active site is lost, so specificity and activity are lost too.",
+          "terms": [
+            "c1.1-denaturation",
+            "c1.1-specificity"
+          ]
+        },
+        {
+          "id": "C1.1-2-q07",
+          "type": "match",
+          "prompt": "Match each factor to the shape of its rate graph.",
+          "pairs": [
+            {
+              "left": "Temperature",
+              "right": "Gradual rise to optimum, then a steep fall"
+            },
+            {
+              "left": "pH",
+              "right": "Peak at optimum, falling on both sides"
+            },
+            {
+              "left": "Substrate concentration",
+              "right": "Rises steeply, then levels off to a plateau"
+            }
+          ],
+          "explanation": "Temperature curves are asymmetric because denaturation is rapid above the optimum; pH curves peak at the optimum; substrate curves plateau as active sites become saturated.",
+          "terms": [
+            "c1.1-optimum",
+            "c1.1-denaturation"
+          ]
+        },
+        {
+          "id": "C1.1-2-q08",
+          "type": "mcq",
+          "prompt": "In an experiment with catalase, 24 cm³ of oxygen was collected in 2 minutes. What was the mean rate of reaction?",
+          "options": [
+            "12 cm³ min⁻¹",
+            "48 cm³ min⁻¹",
+            "0.083 cm³ min⁻¹",
+            "24 cm³ min⁻¹"
+          ],
+          "answer": 0,
+          "explanation": "Rate = amount of product formed ÷ time taken = 24 cm³ ÷ 2 min = 12 cm³ min⁻¹.",
+          "terms": [
+            "c1.1-catalyst"
+          ]
+        },
+        {
+          "id": "C1.1-2-q09",
+          "type": "mcq",
+          "prompt": "A student investigates the effect of pH on catalase activity. Which should be a controlled variable?",
+          "options": [
+            "pH of the buffer",
+            "Volume of oxygen produced",
+            "Time taken to collect the gas",
+            "Temperature of the reaction mixture"
+          ],
+          "answer": 3,
+          "explanation": "pH is the independent variable and oxygen produced per unit time is the dependent variable. Temperature also affects enzyme activity, so it must be kept constant.",
+          "terms": [
+            "c1.1-optimum"
+          ]
+        },
+        {
+          "id": "C1.1-2-q10",
+          "type": "mcq",
+          "prompt": "Which method measures the rate of an enzyme-catalysed reaction?",
+          "options": [
+            "Recording the final mass of enzyme left",
+            "Measuring the amount of product formed, or substrate used, per unit time",
+            "Measuring the activation energy with a thermometer",
+            "Counting the enzyme molecules at the end"
+          ],
+          "answer": 1,
+          "explanation": "Rate is change in amount of substrate or product per unit time, e.g. oxygen released by catalase or the disappearance of starch, tested with iodine, when amylase acts.",
+          "terms": [
+            "c1.1-catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C1.1-3",
+      "title": "Metabolic pathways and inhibition",
+      "hl": true,
+      "questions": [
+        {
+          "id": "C1.1-3-q01",
+          "type": "mcq",
+          "prompt": "Which is an example of an extracellular enzyme-catalysed reaction?",
+          "options": [
+            "Glycolysis in the cytoplasm",
+            "The Krebs cycle in the mitochondrial matrix",
+            "Digestion of chitin by chitinase secreted by fungi",
+            "DNA replication in the nucleus"
+          ],
+          "answer": 2,
+          "explanation": "Fungi secrete chitinase, which acts outside the cell to break down chitin. Glycolysis and the Krebs cycle are intracellular reactions.",
+          "terms": [
+            "c1.1-catabolism"
+          ]
+        },
+        {
+          "id": "C1.1-3-q02",
+          "type": "tf",
+          "statement": "Glycolysis is an example of a cyclical metabolic pathway.",
+          "answer": false,
+          "explanation": "Glycolysis is linear (glucose → pyruvate). The Krebs cycle and the Calvin cycle are cyclical, because the starting compound is regenerated.",
+          "terms": [
+            "c1.1-metabolism"
+          ]
+        },
+        {
+          "id": "C1.1-3-q03",
+          "type": "mcq",
+          "prompt": "Statins lower blood cholesterol by inhibiting an enzyme in the liver. Which feature shows that this is competitive inhibition?",
+          "options": [
+            "The inhibitor binds permanently to an allosteric site",
+            "The inhibitor binds reversibly to the active site, so the inhibition is reduced at high substrate concentration",
+            "The inhibitor denatures the enzyme",
+            "The inhibitor is the end product of the pathway"
+          ],
+          "answer": 1,
+          "explanation": "A competitive inhibitor resembles the substrate and binds reversibly to the active site; at high substrate concentration the substrate out-competes it, so the maximum rate can still be reached.",
+          "terms": [
+            "c1.1-competitive-inhibition"
+          ]
+        },
+        {
+          "id": "C1.1-3-q04",
+          "type": "tf",
+          "statement": "In non-competitive inhibition, increasing the substrate concentration cannot restore the maximum rate of reaction.",
+          "answer": true,
+          "explanation": "The inhibitor binds to an allosteric site, not the active site, and changes the active site's shape. More substrate cannot displace it, so the maximum rate stays lower.",
+          "terms": [
+            "c1.1-non-competitive-inhibition",
+            "c1.1-allosteric-site"
+          ]
+        },
+        {
+          "id": "C1.1-3-q05",
+          "type": "fill",
+          "text": "In the pathway that makes isoleucine from threonine, isoleucine inhibits the first enzyme, threonine ___.",
+          "answer": "deaminase",
+          "accept": [
+            "dehydratase"
+          ],
+          "bank": [
+            "deaminase",
+            "kinase",
+            "synthase",
+            "reductase"
+          ],
+          "explanation": "Isoleucine binds to an allosteric site on threonine deaminase (also called threonine dehydratase), slowing the whole pathway when isoleucine is plentiful. This is end-product inhibition.",
+          "terms": [
+            "c1.1-feedback-inhibition",
+            "c1.1-allosteric-site"
+          ]
+        },
+        {
+          "id": "C1.1-3-q06",
+          "type": "match",
+          "prompt": "Match each inhibitor to its type of inhibition.",
+          "pairs": [
+            {
+              "left": "Statins",
+              "right": "Competitive inhibition at the active site"
+            },
+            {
+              "left": "Penicillin",
+              "right": "Mechanism-based, irreversible inhibition of transpeptidase"
+            },
+            {
+              "left": "Isoleucine",
+              "right": "End-product inhibition at an allosteric site"
+            }
+          ],
+          "explanation": "Statins compete reversibly for the active site; penicillin binds covalently to transpeptidase; isoleucine regulates its own synthesis by allosteric feedback inhibition.",
+          "terms": [
+            "c1.1-competitive-inhibition",
+            "c1.1-mechanism-based-inhibition",
+            "c1.1-feedback-inhibition"
+          ]
+        },
+        {
+          "id": "C1.1-3-q07",
+          "type": "mcq",
+          "prompt": "How does penicillin kill bacteria?",
+          "options": [
+            "It competes reversibly with the substrate of ribosomes",
+            "It binds to an allosteric site on DNA polymerase",
+            "It denatures all bacterial proteins",
+            "It binds irreversibly to the active site of transpeptidase, preventing cross-links in the cell wall"
+          ],
+          "answer": 3,
+          "explanation": "Penicillin is a mechanism-based inhibitor: it forms a covalent bond in the active site of transpeptidase, so peptidoglycan cross-links are not made and the weakened cell wall bursts.",
+          "terms": [
+            "c1.1-mechanism-based-inhibition"
+          ]
+        },
+        {
+          "id": "C1.1-3-q08",
+          "type": "order",
+          "prompt": "Put the steps of end-product inhibition in order.",
+          "items": [
+            "End product accumulates in the cell",
+            "End product binds to the allosteric site of the first enzyme",
+            "Active site changes shape and binds substrate less readily",
+            "Pathway slows and less end product is made",
+            "End product concentration falls and the inhibitor detaches"
+          ],
+          "explanation": "Feedback inhibition is negative feedback: excess end product switches the pathway off, and as it is used up the inhibition is released, so supply matches demand.",
+          "terms": [
+            "c1.1-feedback-inhibition",
+            "c1.1-allosteric-site"
+          ]
+        },
+        {
+          "id": "C1.1-3-q09",
+          "type": "mcq",
+          "prompt": "Why does metabolism generate heat?",
+          "options": [
+            "Energy transfers in metabolic reactions are not 100% efficient, so some energy is released as heat",
+            "Enzymes are heated when they are denatured",
+            "Catabolic reactions absorb heat from the surroundings",
+            "Heat is needed to raise activation energy"
+          ],
+          "answer": 0,
+          "explanation": "Metabolic reactions are not fully efficient, so some energy is lost as heat. Mammals and birds use this heat to keep their body temperature constant.",
+          "terms": [
+            "c1.1-metabolism"
+          ]
+        },
+        {
+          "id": "C1.1-3-q10",
+          "type": "fill",
+          "text": "The Krebs cycle and the Calvin cycle are examples of ___ metabolic pathways.",
+          "answer": "cyclical",
+          "accept": [
+            "cyclic"
+          ],
+          "bank": [
+            "cyclical",
+            "linear",
+            "extracellular",
+            "irreversible"
+          ],
+          "explanation": "In a cyclical pathway the starting compound is regenerated (oxaloacetate in the Krebs cycle, RuBP in the Calvin cycle); linear pathways, like glycolysis, are not.",
+          "terms": [
+            "c1.1-metabolism"
+          ]
+        }
+      ]
+    }
+  ]
+}

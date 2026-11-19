@@ -1,0 +1,627 @@
+{
+  "id": "D3.1",
+  "code": "D3.1",
+  "unit": "D",
+  "title": "Reproduction",
+  "level": "SL",
+  "summary": "How organisms reproduce sexually and asexually: human reproductive systems and the menstrual cycle, fertilization and IVF, and sexual reproduction in flowering plants.",
+  "keyterms": [
+    {
+      "id": "d3.1-asexual-reproduction",
+      "term": "Asexual reproduction",
+      "definition": "Production of offspring from one parent by mitosis; offspring are genetically identical to the parent and each other.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-sexual-reproduction",
+      "term": "Sexual reproduction",
+      "definition": "Production of offspring by fusion of haploid gametes from two parents, generating genetically varied offspring.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-fsh",
+      "term": "FSH",
+      "definition": "Follicle-stimulating hormone from the anterior pituitary; stimulates follicle development and oestradiol secretion by the follicle wall.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-lh",
+      "term": "LH",
+      "definition": "Luteinizing hormone from the anterior pituitary; a surge triggers ovulation and development of the corpus luteum.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-oestradiol",
+      "term": "Oestradiol",
+      "definition": "Ovarian steroid hormone that stimulates thickening of the endometrium; high levels stimulate the LH surge by positive feedback.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-progesterone",
+      "term": "Progesterone",
+      "definition": "Hormone secreted by the corpus luteum (later the placenta) that maintains the endometrium and inhibits FSH and LH secretion.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-fertilization",
+      "term": "Fertilization",
+      "definition": "Fusion of a male and a female gamete to produce a diploid zygote.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-ivf",
+      "term": "In vitro fertilization (IVF)",
+      "definition": "Fertilization of eggs by sperm outside the body, after hormone treatment to induce superovulation, followed by transfer of embryos to the uterus.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-pollination",
+      "term": "Pollination",
+      "definition": "Transfer of pollen from an anther to a stigma.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-cross-pollination",
+      "term": "Cross-pollination",
+      "definition": "Transfer of pollen from the anther of one plant to the stigma of a different plant of the same species.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-self-incompatibility",
+      "term": "Self-incompatibility",
+      "definition": "Genetic mechanism preventing a plant's own pollen from fertilizing its ovules, avoiding inbreeding and maintaining genetic variation.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-germination",
+      "term": "Germination",
+      "definition": "Start of growth of a seed's embryo into a seedling; requires water, oxygen and a suitable temperature.",
+      "hl": false
+    },
+    {
+      "id": "d3.1-gnrh",
+      "term": "GnRH",
+      "definition": "Gonadotropin-releasing hormone from the hypothalamus; stimulates the anterior pituitary to secrete FSH and LH, initiating puberty.",
+      "hl": true
+    },
+    {
+      "id": "d3.1-cortical-reaction",
+      "term": "Cortical reaction",
+      "definition": "Exocytosis of cortical granules from the egg after a sperm enters, hardening the zona pellucida to prevent polyspermy.",
+      "hl": true
+    },
+    {
+      "id": "d3.1-blastocyst",
+      "term": "Blastocyst",
+      "definition": "Hollow ball of cells formed from the zygote by repeated mitosis; implants in the endometrium about 7 days after fertilization.",
+      "hl": true
+    },
+    {
+      "id": "d3.1-hcg",
+      "term": "hCG",
+      "definition": "Human chorionic gonadotropin, secreted by the early embryo; maintains the corpus luteum and is detected by pregnancy tests.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "D3.1-1",
+      "title": "Sexual reproduction and the menstrual cycle",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D3.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which statement correctly distinguishes asexual from sexual reproduction?",
+          "options": [
+            "Asexual reproduction involves meiosis; sexual reproduction involves only mitosis",
+            "Asexual reproduction produces genetically identical offspring; sexual reproduction produces genetically varied offspring",
+            "Asexual reproduction requires gametes from one parent; sexual reproduction requires gametes from two",
+            "Asexual reproduction only occurs in prokaryotes"
+          ],
+          "answer": 1,
+          "explanation": "Asexual reproduction uses mitosis, so offspring are clones of one parent. Sexual reproduction combines gametes from two parents, producing variation. Many eukaryotes (e.g. strawberry runners, aphids) reproduce asexually.",
+          "terms": [
+            "d3.1-asexual-reproduction",
+            "d3.1-sexual-reproduction"
+          ]
+        },
+        {
+          "id": "D3.1-1-q02",
+          "type": "tf",
+          "statement": "Meiosis and fertilization both generate genetic variation in a sexual life cycle.",
+          "answer": true,
+          "explanation": "Meiosis produces genetically different haploid gametes (crossing over and independent assortment), and random fusion of gametes from two parents creates new allele combinations. Meiosis also halves the chromosome number so fertilization restores diploidy.",
+          "terms": [
+            "d3.1-sexual-reproduction",
+            "d3.1-fertilization"
+          ]
+        },
+        {
+          "id": "D3.1-1-q03",
+          "type": "mcq",
+          "prompt": "Which describes the difference between male and female gametes?",
+          "options": [
+            "Female gametes are small, numerous and motile",
+            "Male gametes are large and contain food reserves",
+            "Male gametes are small, numerous and motile; female gametes are larger, fewer and contain food reserves",
+            "Both sexes produce gametes of similar size but in different numbers"
+          ],
+          "answer": 2,
+          "explanation": "By definition the male sex produces many small, motile gametes (sperm) and the female sex produces fewer, large, non-motile gametes (eggs) with cytoplasm and food reserves for the early embryo.",
+          "terms": [
+            "d3.1-sexual-reproduction"
+          ]
+        },
+        {
+          "id": "D3.1-1-q04",
+          "type": "match",
+          "prompt": "Match each structure of the human reproductive systems to its function.",
+          "pairs": [
+            {
+              "left": "Testis",
+              "right": "Produces sperm and secretes testosterone"
+            },
+            {
+              "left": "Ovary",
+              "right": "Produces eggs and secretes oestradiol and progesterone"
+            },
+            {
+              "left": "Oviduct",
+              "right": "Site of fertilization; carries egg to uterus"
+            },
+            {
+              "left": "Endometrium",
+              "right": "Uterus lining where an embryo implants"
+            },
+            {
+              "left": "Sperm duct",
+              "right": "Carries sperm from epididymis to urethra"
+            }
+          ],
+          "explanation": "Gonads (testes and ovaries) produce gametes and sex hormones. Fertilization normally occurs in the oviduct, and the embryo implants in the endometrium.",
+          "terms": [
+            "d3.1-sexual-reproduction"
+          ]
+        },
+        {
+          "id": "D3.1-1-q05",
+          "type": "fill",
+          "text": "In the menstrual cycle, ___ from the anterior pituitary stimulates development of follicles in the ovary.",
+          "answer": "FSH",
+          "accept": [
+            "follicle-stimulating hormone",
+            "follicle stimulating hormone"
+          ],
+          "bank": [
+            "FSH",
+            "LH",
+            "progesterone",
+            "oestradiol"
+          ],
+          "explanation": "FSH (follicle-stimulating hormone) stimulates follicle growth and the follicle wall's secretion of oestradiol. LH acts later to trigger ovulation.",
+          "terms": [
+            "d3.1-fsh"
+          ]
+        },
+        {
+          "id": "D3.1-1-q06",
+          "type": "order",
+          "prompt": "Put these events of the menstrual cycle in order, starting at the beginning of the cycle.",
+          "items": [
+            "FSH rises and stimulates a follicle to develop",
+            "The developing follicle secretes increasing oestradiol",
+            "High oestradiol causes a surge in LH",
+            "LH surge triggers ovulation",
+            "Corpus luteum secretes progesterone",
+            "Corpus luteum degenerates, progesterone falls and menstruation begins"
+          ],
+          "explanation": "FSH starts follicle growth; the follicle's oestradiol rises until it triggers the LH surge (positive feedback), causing ovulation. The corpus luteum then secretes progesterone; if no pregnancy, it degenerates and the endometrium breaks down.",
+          "terms": [
+            "d3.1-fsh",
+            "d3.1-lh",
+            "d3.1-oestradiol",
+            "d3.1-progesterone"
+          ]
+        },
+        {
+          "id": "D3.1-1-q07",
+          "type": "tf",
+          "statement": "Progesterone from the corpus luteum inhibits FSH and LH secretion by negative feedback.",
+          "answer": true,
+          "explanation": "High progesterone (with oestradiol) after ovulation inhibits pituitary FSH and LH secretion, preventing new follicle development while the endometrium is maintained.",
+          "terms": [
+            "d3.1-progesterone",
+            "d3.1-fsh",
+            "d3.1-lh"
+          ]
+        },
+        {
+          "id": "D3.1-1-q08",
+          "type": "mcq",
+          "prompt": "What is the effect of high oestradiol concentration just before ovulation?",
+          "options": [
+            "It stimulates a surge of LH and FSH by positive feedback",
+            "It inhibits LH secretion by negative feedback",
+            "It causes the corpus luteum to degenerate",
+            "It causes the endometrium to break down"
+          ],
+          "answer": 0,
+          "explanation": "Rising oestradiol from the maturing follicle switches from inhibiting to stimulating the pituitary, causing the mid-cycle LH (and FSH) surge — one of the few examples of positive feedback in the body.",
+          "terms": [
+            "d3.1-oestradiol",
+            "d3.1-lh"
+          ]
+        },
+        {
+          "id": "D3.1-1-q09",
+          "type": "fill",
+          "text": "After ovulation, the remains of the follicle develop into the ___, which secretes progesterone.",
+          "answer": "corpus luteum",
+          "bank": [
+            "corpus luteum",
+            "endometrium",
+            "zona pellucida",
+            "oviduct"
+          ],
+          "explanation": "LH stimulates the empty follicle to become the corpus luteum, the source of progesterone that maintains the thickened endometrium.",
+          "terms": [
+            "d3.1-lh",
+            "d3.1-progesterone"
+          ]
+        },
+        {
+          "id": "D3.1-1-q10",
+          "type": "mcq",
+          "prompt": "Why does menstruation occur at the end of a cycle without pregnancy?",
+          "options": [
+            "FSH concentration rises sharply",
+            "LH stimulates the endometrium to shed",
+            "Oestradiol stimulates breakdown of the uterine lining",
+            "The corpus luteum degenerates, so progesterone falls and the endometrium is no longer maintained"
+          ],
+          "answer": 3,
+          "explanation": "Progesterone maintains the endometrium. When the corpus luteum degenerates, progesterone drops, the lining breaks down, and the fall also removes inhibition of FSH so a new cycle starts.",
+          "terms": [
+            "d3.1-progesterone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D3.1-2",
+      "title": "Fertilization, IVF and flowering plants",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D3.1-2-q01",
+          "type": "mcq",
+          "prompt": "Which sequence describes fertilization in humans?",
+          "options": [
+            "Sperm and egg nuclei fuse into one nucleus, which then divides by meiosis",
+            "Sperm and egg membranes fuse, the sperm nucleus enters, both nuclear membranes break down and the chromosomes join in one mitotic division",
+            "The whole sperm cell, including its tail, fuses with the egg nucleus",
+            "The sperm nucleus replaces the egg nucleus"
+          ],
+          "answer": 1,
+          "explanation": "In humans the sperm and egg nuclei do not fuse into a single nucleus. Their nuclear membranes break down and all the condensed chromosomes take part in a joint mitosis, producing two diploid nuclei.",
+          "terms": [
+            "d3.1-fertilization"
+          ]
+        },
+        {
+          "id": "D3.1-2-q02",
+          "type": "tf",
+          "statement": "In IVF, the woman's normal secretion of FSH and LH is first suppressed by drugs.",
+          "answer": true,
+          "explanation": "Down-regulation stops the natural cycle so the timing of egg production can be controlled. High doses of FSH are then injected to induce superovulation.",
+          "terms": [
+            "d3.1-ivf",
+            "d3.1-fsh"
+          ]
+        },
+        {
+          "id": "D3.1-2-q03",
+          "type": "order",
+          "prompt": "Put the stages of IVF treatment in order.",
+          "items": [
+            "Drugs suppress the woman's natural FSH and LH secretion",
+            "Injections of FSH induce superovulation",
+            "Hormone injection (hCG) matures the eggs",
+            "Eggs are collected from the follicles",
+            "Eggs are mixed with sperm in a dish",
+            "Embryos are transferred to the uterus"
+          ],
+          "explanation": "IVF suppresses the natural cycle, stimulates many follicles with FSH, completes egg maturation with an hCG injection, then collects the eggs, fertilizes them in vitro and transfers embryos to the uterus.",
+          "terms": [
+            "d3.1-ivf"
+          ]
+        },
+        {
+          "id": "D3.1-2-q04",
+          "type": "fill",
+          "text": "Using high doses of FSH to make many follicles develop at once is called ___.",
+          "answer": "superovulation",
+          "bank": [
+            "superovulation",
+            "down-regulation",
+            "implantation",
+            "ovulation"
+          ],
+          "explanation": "Superovulation gives many eggs from one cycle, increasing the chance of obtaining viable embryos.",
+          "terms": [
+            "d3.1-ivf",
+            "d3.1-fsh"
+          ]
+        },
+        {
+          "id": "D3.1-2-q05",
+          "type": "match",
+          "prompt": "Match each part of an insect-pollinated flower to its role.",
+          "pairs": [
+            {
+              "left": "Anther",
+              "right": "Produces pollen grains"
+            },
+            {
+              "left": "Stigma",
+              "right": "Sticky surface that receives pollen"
+            },
+            {
+              "left": "Ovary",
+              "right": "Contains ovules; develops into the fruit"
+            },
+            {
+              "left": "Nectary",
+              "right": "Secretes sugary nectar to reward insects"
+            },
+            {
+              "left": "Petal",
+              "right": "Coloured structure that attracts pollinators"
+            }
+          ],
+          "explanation": "The anther (on a filament) forms the stamen; stigma, style and ovary form the carpel. Petals and nectaries attract and reward pollinating insects.",
+          "terms": [
+            "d3.1-pollination"
+          ]
+        },
+        {
+          "id": "D3.1-2-q06",
+          "type": "mcq",
+          "prompt": "Which event is pollination?",
+          "options": [
+            "Fusion of a male gamete with an egg cell in the ovule",
+            "Growth of a pollen tube down the style",
+            "Transfer of pollen from an anther to a stigma",
+            "Dispersal of seeds away from the parent plant"
+          ],
+          "answer": 2,
+          "explanation": "Pollination is only the transfer of pollen to a stigma. Fertilization happens later, after a pollen tube delivers the male gamete to the ovule; seed dispersal follows fertilization.",
+          "terms": [
+            "d3.1-pollination",
+            "d3.1-fertilization"
+          ]
+        },
+        {
+          "id": "D3.1-2-q07",
+          "type": "tf",
+          "statement": "Having anthers and stigmas that mature at different times promotes cross-pollination.",
+          "answer": true,
+          "explanation": "If pollen is released when the same flower's stigma is not receptive, self-pollination is reduced. Separate male and female flowers or plants have a similar effect.",
+          "terms": [
+            "d3.1-cross-pollination"
+          ]
+        },
+        {
+          "id": "D3.1-2-q08",
+          "type": "mcq",
+          "prompt": "Why is self-incompatibility an advantage to a plant species?",
+          "options": [
+            "It prevents inbreeding, so genetic diversity and vigour are maintained",
+            "It allows a plant to fertilize its own ovules more quickly",
+            "It increases the number of seeds produced by self-pollination",
+            "It ensures all offspring are genetically identical"
+          ],
+          "answer": 0,
+          "explanation": "Self-pollination leads to inbreeding, which reduces genetic variation and increases homozygosity for harmful recessive alleles. Self-incompatibility stops pollen with a matching S-allele from fertilizing the ovule.",
+          "terms": [
+            "d3.1-self-incompatibility"
+          ]
+        },
+        {
+          "id": "D3.1-2-q09",
+          "type": "fill",
+          "text": "After fertilization, the ovule develops into a ___.",
+          "answer": "seed",
+          "bank": [
+            "seed",
+            "fruit",
+            "pollen grain",
+            "stigma"
+          ],
+          "explanation": "The ovule (containing the embryo) becomes the seed; the ovary around it becomes the fruit.",
+          "terms": [
+            "d3.1-fertilization"
+          ]
+        },
+        {
+          "id": "D3.1-2-q10",
+          "type": "mcq",
+          "prompt": "Which set of conditions is generally required for seed germination?",
+          "options": [
+            "Light, carbon dioxide and soil",
+            "Water, oxygen and a suitable temperature",
+            "Light, water and fertilizer",
+            "Carbon dioxide, oxygen and darkness"
+          ],
+          "answer": 1,
+          "explanation": "Water rehydrates the seed and activates enzymes, oxygen allows aerobic respiration to release energy, and temperature must suit enzyme activity. Most seeds do not need light because they use stored food.",
+          "terms": [
+            "d3.1-germination"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D3.1-3",
+      "title": "Puberty, gametogenesis and pregnancy",
+      "hl": true,
+      "questions": [
+        {
+          "id": "D3.1-3-q01",
+          "type": "mcq",
+          "prompt": "What initiates the changes of puberty?",
+          "options": [
+            "The ovaries and testes start secreting FSH",
+            "The anterior pituitary secretes GnRH, which acts on the gonads",
+            "Increased GnRH from the hypothalamus stimulates FSH and LH secretion, which stimulates sex steroid production",
+            "Testosterone from the hypothalamus stimulates the pituitary"
+          ],
+          "answer": 2,
+          "explanation": "At puberty the hypothalamus increases GnRH secretion. GnRH stimulates the anterior pituitary to release FSH and LH, which stimulate the gonads to produce gametes and the steroid hormones testosterone or oestradiol.",
+          "terms": [
+            "d3.1-gnrh"
+          ]
+        },
+        {
+          "id": "D3.1-3-q02",
+          "type": "order",
+          "prompt": "Put the stages of spermatogenesis in order.",
+          "items": [
+            "Mitosis of spermatogonia",
+            "Cell growth into primary spermatocytes",
+            "Meiosis I forms secondary spermatocytes",
+            "Meiosis II forms spermatids",
+            "Differentiation into spermatozoa"
+          ],
+          "explanation": "Both spermatogenesis and oogenesis involve mitosis, cell growth, two divisions of meiosis and differentiation.",
+          "terms": []
+        },
+        {
+          "id": "D3.1-3-q03",
+          "type": "tf",
+          "statement": "In oogenesis, each meiosis produces four functional eggs.",
+          "answer": false,
+          "explanation": "Cytoplasm divides unequally in oogenesis, so each meiosis gives one large egg and small polar bodies that degenerate. Spermatogenesis produces four sperm per meiosis.",
+          "terms": []
+        },
+        {
+          "id": "D3.1-3-q04",
+          "type": "fill",
+          "text": "Enzymes released from the sperm's ___ digest a path through the zona pellucida.",
+          "answer": "acrosome",
+          "bank": [
+            "acrosome",
+            "cortical granules",
+            "mitochondria",
+            "nucleus"
+          ],
+          "explanation": "The acrosome reaction releases hydrolytic enzymes from the acrosome at the tip of the sperm head, allowing it to reach and fuse with the egg membrane.",
+          "terms": [
+            "d3.1-fertilization"
+          ]
+        },
+        {
+          "id": "D3.1-3-q05",
+          "type": "mcq",
+          "prompt": "How is polyspermy prevented after one sperm has fused with the egg?",
+          "options": [
+            "The acrosome of the first sperm releases enzymes that destroy other sperm",
+            "Cortical granules release their contents by exocytosis, hardening the zona pellucida",
+            "The egg undergoes mitosis immediately, expelling other sperm",
+            "Progesterone stops further sperm entering"
+          ],
+          "answer": 1,
+          "explanation": "The cortical reaction makes the zona pellucida impenetrable, so only one sperm nucleus enters. Polyspermy would give an abnormal chromosome number.",
+          "terms": [
+            "d3.1-cortical-reaction"
+          ]
+        },
+        {
+          "id": "D3.1-3-q06",
+          "type": "mcq",
+          "prompt": "What does a pregnancy test detect?",
+          "options": [
+            "Progesterone secreted by the corpus luteum",
+            "LH secreted by the pituitary",
+            "Oestradiol secreted by the placenta",
+            "hCG secreted by the embryo, detected with monoclonal antibodies"
+          ],
+          "answer": 3,
+          "explanation": "Soon after implantation, the embryo secretes hCG, which appears in urine. Test strips carry monoclonal antibodies that bind hCG specifically.",
+          "terms": [
+            "d3.1-hcg"
+          ]
+        },
+        {
+          "id": "D3.1-3-q07",
+          "type": "tf",
+          "statement": "hCG keeps the corpus luteum secreting progesterone in early pregnancy.",
+          "answer": true,
+          "explanation": "hCG prevents degeneration of the corpus luteum, so progesterone stays high and the endometrium is not shed. Later the placenta takes over progesterone secretion.",
+          "terms": [
+            "d3.1-hcg",
+            "d3.1-progesterone"
+          ]
+        },
+        {
+          "id": "D3.1-3-q08",
+          "type": "match",
+          "prompt": "Match each stage of early pregnancy to its description.",
+          "pairs": [
+            {
+              "left": "Blastocyst",
+              "right": "Hollow ball of cells formed by mitosis"
+            },
+            {
+              "left": "Implantation",
+              "right": "Embryo embeds in the endometrium"
+            },
+            {
+              "left": "Placenta",
+              "right": "Exchanges materials between maternal and foetal blood"
+            },
+            {
+              "left": "Childbirth",
+              "right": "Uterine contractions stimulated by oxytocin"
+            }
+          ],
+          "explanation": "The zygote divides to form a blastocyst, which implants about a week after fertilization. The placenta then supports foetal development until birth.",
+          "terms": [
+            "d3.1-blastocyst"
+          ]
+        },
+        {
+          "id": "D3.1-3-q09",
+          "type": "fill",
+          "text": "During childbirth, uterine contractions stimulate more ___ secretion, an example of positive feedback.",
+          "answer": "oxytocin",
+          "bank": [
+            "oxytocin",
+            "progesterone",
+            "hCG",
+            "FSH"
+          ],
+          "explanation": "Stretching of the cervix triggers oxytocin release from the posterior pituitary; oxytocin causes stronger contractions, which cause more oxytocin release, until the baby is born. Falling progesterone removes inhibition of contractions.",
+          "terms": [
+            "d3.1-progesterone"
+          ]
+        },
+        {
+          "id": "D3.1-3-q10",
+          "type": "mcq",
+          "prompt": "Early observational studies suggested HRT reduced coronary heart disease, but randomized trials found a slight increase. What best explains this?",
+          "options": [
+            "Women taking HRT tended to have higher socio-economic status, a confounding factor that lowered heart disease risk",
+            "The randomized trials used too few participants",
+            "HRT changes its effect depending on the year of the study",
+            "Observational studies always overestimate risks"
+          ],
+          "answer": 0,
+          "explanation": "A correlation does not show causation. HRT users differed from non-users in other ways (e.g. wealth, diet, exercise); randomized controlled trials remove such confounding and revealed the real effect.",
+          "terms": []
+        }
+      ]
+    }
+  ]
+}

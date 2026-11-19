@@ -1,0 +1,611 @@
+{
+  "id": "B3.3",
+  "code": "B3.3",
+  "unit": "B",
+  "title": "Muscle and motility",
+  "level": "HL",
+  "summary": "How sarcomeres contract by the sliding of actin and myosin, how muscles, skeletons and synovial joints work together to produce movement, and why and how animals move, including swimming adaptations of marine mammals.",
+  "keyterms": [
+    {
+      "id": "b3.3-sessile-motile",
+      "term": "Sessile and motile",
+      "definition": "Sessile organisms stay fixed in one place (though parts may move); motile organisms can move from place to place.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-sarcomere",
+      "term": "Sarcomere",
+      "definition": "Repeating contractile unit of a myofibril, bounded by Z lines, containing overlapping actin and myosin filaments.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-actin",
+      "term": "Actin",
+      "definition": "Protein forming thin filaments anchored to Z lines, with binding sites for myosin heads.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-myosin",
+      "term": "Myosin",
+      "definition": "Protein forming thick filaments with heads that bind actin and pull it towards the centre of the sarcomere.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-cross-bridge",
+      "term": "Cross-bridge",
+      "definition": "Link formed when a myosin head binds actin; ATP binding breaks it and ATP hydrolysis re-cocks the head for the next power stroke.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-titin",
+      "term": "Titin",
+      "definition": "Huge elastic protein in sarcomeres that acts as a spring, helping sarcomeres return to resting length and preventing overstretching.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-antagonistic",
+      "term": "Antagonistic muscles",
+      "definition": "Pair of muscles with opposite actions; because muscles can only pull, one contracts to stretch the other, e.g. internal and external intercostals.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-motor-unit",
+      "term": "Motor unit",
+      "definition": "One motor neuron plus all the muscle fibres it stimulates through neuromuscular junctions; they contract together.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-skeleton",
+      "term": "Exoskeleton and endoskeleton",
+      "definition": "Hard external (arthropods) or internal (vertebrates) skeleton providing anchorage for muscles and acting as levers.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-synovial-joint",
+      "term": "Synovial joint",
+      "definition": "Freely movable joint, e.g. the hip, with cartilage-covered bone ends, synovial fluid, a joint capsule and ligaments.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-tendon-ligament",
+      "term": "Tendon and ligament",
+      "definition": "Tendons attach muscle to bone; ligaments attach bone to bone and stabilize joints.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-range-of-motion",
+      "term": "Range of motion",
+      "definition": "The extent of movement possible at a joint, measured as an angle, e.g. with a goniometer or from images.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-locomotion",
+      "term": "Locomotion",
+      "definition": "Movement of a whole organism from place to place, e.g. for foraging, escaping danger, finding a mate or migration.",
+      "hl": true
+    },
+    {
+      "id": "b3.3-marine-mammal",
+      "term": "Swimming adaptations of marine mammals",
+      "definition": "Streamlined body, forelimbs modified as flippers, tail flukes for propulsion and a blowhole for breathing at the surface.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "B3.3-1",
+      "title": "Muscle contraction",
+      "hl": true,
+      "questions": [
+        {
+          "id": "B3.3-1-q01",
+          "type": "mcq",
+          "prompt": "According to the sliding filament model, what happens when a sarcomere contracts?",
+          "options": [
+            "Actin and myosin filaments both shorten",
+            "Actin filaments slide over myosin towards the centre of the sarcomere, bringing the Z lines closer",
+            "Myosin filaments lengthen and push the Z lines apart",
+            "Z lines dissolve so that filaments can overlap"
+          ],
+          "answer": 1,
+          "explanation": "Myosin heads pull actin filaments inward, increasing overlap. The filaments themselves stay the same length; the sarcomere shortens.",
+          "terms": [
+            "b3.3-sarcomere",
+            "b3.3-actin",
+            "b3.3-myosin"
+          ]
+        },
+        {
+          "id": "B3.3-1-q02",
+          "type": "tf",
+          "statement": "During muscle contraction the actin and myosin filaments themselves become shorter.",
+          "answer": false,
+          "explanation": "Filament length is unchanged; only their overlap increases. This is why it is called the sliding filament model.",
+          "terms": [
+            "b3.3-actin",
+            "b3.3-myosin"
+          ]
+        },
+        {
+          "id": "B3.3-1-q03",
+          "type": "fill",
+          "text": "The repeating contractile unit of a myofibril, between two Z lines, is called a ___.",
+          "answer": "sarcomere",
+          "bank": [
+            "sarcomere",
+            "motor unit",
+            "myofibril",
+            "tendon"
+          ],
+          "explanation": "Thousands of sarcomeres in series all shorten at once, so the whole myofibril and muscle fibre shorten.",
+          "terms": [
+            "b3.3-sarcomere"
+          ]
+        },
+        {
+          "id": "B3.3-1-q04",
+          "type": "order",
+          "prompt": "Put the steps of one cross-bridge cycle in order.",
+          "items": [
+            "Myosin head binds to actin, forming a cross-bridge",
+            "Power stroke: the head swivels, pulling actin towards the centre of the sarcomere",
+            "ATP binds to the myosin head, breaking the cross-bridge",
+            "ATP is hydrolysed and the energy re-cocks the myosin head"
+          ],
+          "explanation": "The cycle repeats many times per contraction, each power stroke moving the actin a small distance. Binding sites on actin must first be exposed, which requires calcium ions.",
+          "terms": [
+            "b3.3-cross-bridge"
+          ]
+        },
+        {
+          "id": "B3.3-1-q05",
+          "type": "match",
+          "prompt": "Match each component of a sarcomere to its role.",
+          "pairs": [
+            {
+              "left": "Actin",
+              "right": "Thin filament with myosin-binding sites"
+            },
+            {
+              "left": "Myosin",
+              "right": "Thick filament whose heads form cross-bridges"
+            },
+            {
+              "left": "Z line",
+              "right": "Boundary of the sarcomere anchoring actin"
+            },
+            {
+              "left": "Titin",
+              "right": "Elastic protein acting as a spring"
+            }
+          ],
+          "explanation": "Myosin pulls actin, which is anchored to Z lines, so the Z lines move together; titin links myosin to the Z lines and provides elastic recoil.",
+          "terms": [
+            "b3.3-actin",
+            "b3.3-myosin",
+            "b3.3-sarcomere",
+            "b3.3-titin"
+          ]
+        },
+        {
+          "id": "B3.3-1-q06",
+          "type": "mcq",
+          "prompt": "What is the role of ATP in muscle contraction?",
+          "options": [
+            "ATP forms the link between myosin and actin",
+            "ATP is only needed for titin to recoil",
+            "ATP makes actin filaments longer",
+            "ATP binding detaches myosin from actin, and its hydrolysis re-cocks the myosin head"
+          ],
+          "answer": 3,
+          "explanation": "Without ATP, myosin cannot detach from actin, so cross-bridges cannot cycle. The energy released by hydrolysing ATP is stored in the cocked head and used in the power stroke.",
+          "terms": [
+            "b3.3-cross-bridge"
+          ]
+        },
+        {
+          "id": "B3.3-1-q07",
+          "type": "tf",
+          "statement": "Titin is an elastic protein that helps a sarcomere return to its resting length and prevents it being overstretched.",
+          "answer": true,
+          "explanation": "Titin behaves like a molecular spring, storing potential energy when deformed and releasing it, which aids relaxation and limits stretching.",
+          "terms": [
+            "b3.3-titin"
+          ]
+        },
+        {
+          "id": "B3.3-1-q08",
+          "type": "mcq",
+          "prompt": "Why are skeletal muscles arranged in antagonistic pairs?",
+          "options": [
+            "Muscles can only actively contract (pull), so a second muscle is needed to lengthen the first",
+            "So that both muscles can contract at once for more force",
+            "Because each muscle can push as well as pull",
+            "To allow muscles to contract without ATP"
+          ],
+          "answer": 0,
+          "explanation": "A contracted muscle cannot extend itself; the antagonist contracts to stretch it back, aided by titin's elastic recoil.",
+          "terms": [
+            "b3.3-antagonistic",
+            "b3.3-titin"
+          ]
+        },
+        {
+          "id": "B3.3-1-q09",
+          "type": "fill",
+          "text": "One motor neuron together with all the muscle fibres it stimulates is called a ___ unit.",
+          "answer": "motor",
+          "bank": [
+            "motor",
+            "sensory",
+            "contractile",
+            "reflex"
+          ],
+          "explanation": "The neuron's branches end at neuromuscular junctions on each of its fibres, so all the fibres in the unit contract together.",
+          "terms": [
+            "b3.3-motor-unit"
+          ]
+        },
+        {
+          "id": "B3.3-1-q10",
+          "type": "mcq",
+          "prompt": "How can a muscle vary the force it produces?",
+          "options": [
+            "By making each sarcomere contract partially",
+            "By changing the length of its actin filaments",
+            "By activating different numbers of motor units",
+            "By changing which neurotransmitter is released"
+          ],
+          "answer": 2,
+          "explanation": "Each motor unit contracts fully when stimulated, so force is graded by recruiting more or fewer motor units.",
+          "terms": [
+            "b3.3-motor-unit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B3.3-2",
+      "title": "Skeletons and joints",
+      "hl": true,
+      "questions": [
+        {
+          "id": "B3.3-2-q01",
+          "type": "mcq",
+          "prompt": "Which animals have an exoskeleton?",
+          "options": [
+            "Humans",
+            "Insects and other arthropods",
+            "Bony fish",
+            "Birds"
+          ],
+          "answer": 1,
+          "explanation": "Arthropods have a hard external skeleton with muscles attached to its inner surface. Vertebrates such as fish, birds and humans have endoskeletons.",
+          "terms": [
+            "b3.3-skeleton"
+          ]
+        },
+        {
+          "id": "B3.3-2-q02",
+          "type": "tf",
+          "statement": "In arthropods, muscles attach to the inner surface of the exoskeleton.",
+          "answer": true,
+          "explanation": "The exoskeleton provides anchorage from the inside, and its jointed sections act as levers moved by those muscles.",
+          "terms": [
+            "b3.3-skeleton"
+          ]
+        },
+        {
+          "id": "B3.3-2-q03",
+          "type": "match",
+          "prompt": "Match each part of the hip joint to its function.",
+          "pairs": [
+            {
+              "left": "Cartilage",
+              "right": "Reduces friction and absorbs shock"
+            },
+            {
+              "left": "Synovial fluid",
+              "right": "Lubricates the joint"
+            },
+            {
+              "left": "Ligaments",
+              "right": "Connect bone to bone"
+            },
+            {
+              "left": "Tendons",
+              "right": "Connect muscle to bone"
+            },
+            {
+              "left": "Joint capsule",
+              "right": "Encloses the joint and holds the fluid"
+            }
+          ],
+          "explanation": "Together these structures allow smooth, stable movement of the femur head in the pelvis socket.",
+          "terms": [
+            "b3.3-synovial-joint",
+            "b3.3-tendon-ligament"
+          ]
+        },
+        {
+          "id": "B3.3-2-q04",
+          "type": "fill",
+          "text": "The hip is a ___ joint, allowing movement in several planes.",
+          "answer": "ball-and-socket",
+          "accept": [
+            "ball and socket"
+          ],
+          "bank": [
+            "ball-and-socket",
+            "hinge",
+            "pivot",
+            "fixed"
+          ],
+          "explanation": "The rounded head of the femur fits into the cup-shaped socket of the pelvis, allowing flexion, extension, abduction, adduction and rotation.",
+          "terms": [
+            "b3.3-synovial-joint"
+          ]
+        },
+        {
+          "id": "B3.3-2-q05",
+          "type": "mcq",
+          "prompt": "Which instrument can be used to measure the range of motion of a joint?",
+          "options": [
+            "Spirometer",
+            "Potometer",
+            "Sphygmomanometer",
+            "Goniometer"
+          ],
+          "answer": 3,
+          "explanation": "A goniometer measures the angle through which a joint moves. Range of motion can also be measured from photos or video using angle-measuring software.",
+          "terms": [
+            "b3.3-range-of-motion"
+          ]
+        },
+        {
+          "id": "B3.3-2-q06",
+          "type": "tf",
+          "statement": "Ligaments attach muscles to bones.",
+          "answer": false,
+          "explanation": "Tendons attach muscle to bone; ligaments attach bone to bone, stabilizing the joint.",
+          "terms": [
+            "b3.3-tendon-ligament"
+          ]
+        },
+        {
+          "id": "B3.3-2-q07",
+          "type": "mcq",
+          "prompt": "How do bones act as levers?",
+          "options": [
+            "Bones contract to move the body",
+            "Bones store energy and release it like a spring",
+            "Muscles pull on bones via tendons, and the bone pivots at a joint, which acts as the fulcrum",
+            "The joint pulls on the muscle to move the bone"
+          ],
+          "answer": 2,
+          "explanation": "Muscles provide the effort, the joint is the pivot, and the bone transmits the force to move a load. Bones themselves do not contract.",
+          "terms": [
+            "b3.3-skeleton",
+            "b3.3-tendon-ligament"
+          ]
+        },
+        {
+          "id": "B3.3-2-q08",
+          "type": "order",
+          "prompt": "Put the events in order to produce movement at a joint.",
+          "items": [
+            "A motor neuron stimulates the muscle fibres",
+            "Sarcomeres shorten and the muscle contracts",
+            "The tendon pulls on the bone",
+            "The bone moves about the joint"
+          ],
+          "explanation": "Nerve stimulation triggers contraction; force is transmitted through the tendon to the bone, which pivots at the joint.",
+          "terms": [
+            "b3.3-motor-unit",
+            "b3.3-tendon-ligament"
+          ]
+        },
+        {
+          "id": "B3.3-2-q09",
+          "type": "fill",
+          "text": "Inhalation is assisted by contraction of the ___ intercostal muscles, which raise the ribcage.",
+          "answer": "external",
+          "bank": [
+            "external",
+            "internal",
+            "abdominal",
+            "cardiac"
+          ],
+          "explanation": "External intercostals lift the ribs up and out; the antagonistic internal intercostals pull them down and in during forced exhalation.",
+          "terms": [
+            "b3.3-antagonistic"
+          ]
+        },
+        {
+          "id": "B3.3-2-q10",
+          "type": "mcq",
+          "prompt": "Why are the internal and external intercostal muscles described as antagonistic?",
+          "options": [
+            "Their fibres run in different directions, so each moves the ribs the opposite way and stretches the other when it contracts",
+            "They both contract at the same time to hold the ribs still",
+            "One is skeletal muscle and the other is smooth muscle",
+            "One attaches to bones and the other to the lungs"
+          ],
+          "answer": 0,
+          "explanation": "Because the fibres are oriented differently, contraction of one set lifts the ribs and stretches the other, and vice versa, an example of antagonism in internal body movement.",
+          "terms": [
+            "b3.3-antagonistic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B3.3-3",
+      "title": "Locomotion and swimming",
+      "hl": true,
+      "questions": [
+        {
+          "id": "B3.3-3-q01",
+          "type": "mcq",
+          "prompt": "Which list gives reasons why animals carry out locomotion?",
+          "options": [
+            "Photosynthesis, transpiration and growth",
+            "Foraging for food, escaping danger, searching for a mate and migration",
+            "Gas exchange, digestion and excretion",
+            "Cell division, differentiation and repair"
+          ],
+          "answer": 1,
+          "explanation": "Moving from place to place lets animals find resources and mates, avoid predators and migrate to better conditions.",
+          "terms": [
+            "b3.3-locomotion"
+          ]
+        },
+        {
+          "id": "B3.3-3-q02",
+          "type": "tf",
+          "statement": "Sessile organisms such as corals and most plants show no movement at all.",
+          "answer": false,
+          "explanation": "Sessile organisms do not move from place to place, but parts of them move, e.g. coral polyps extend tentacles and plants open and close stomata. Movement is a universal feature of life.",
+          "terms": [
+            "b3.3-sessile-motile"
+          ]
+        },
+        {
+          "id": "B3.3-3-q03",
+          "type": "fill",
+          "text": "Organisms that stay fixed in one place, such as barnacles, are described as ___.",
+          "answer": "sessile",
+          "bank": [
+            "sessile",
+            "motile",
+            "migratory",
+            "terrestrial"
+          ],
+          "explanation": "Sessile organisms are attached in one place; motile organisms can move their whole body from place to place.",
+          "terms": [
+            "b3.3-sessile-motile"
+          ]
+        },
+        {
+          "id": "B3.3-3-q04",
+          "type": "match",
+          "prompt": "Match each adaptation of marine mammals to its benefit.",
+          "pairs": [
+            {
+              "left": "Streamlined body",
+              "right": "Reduces drag while swimming"
+            },
+            {
+              "left": "Flippers",
+              "right": "Forelimbs modified for steering"
+            },
+            {
+              "left": "Tail flukes",
+              "right": "Propulsion by up-and-down movement"
+            },
+            {
+              "left": "Blowhole",
+              "right": "Breathing at the surface with minimal exposure"
+            }
+          ],
+          "explanation": "Mammals that returned to the sea evolved body forms that reduce resistance and let them breathe air efficiently while swimming.",
+          "terms": [
+            "b3.3-marine-mammal"
+          ]
+        },
+        {
+          "id": "B3.3-3-q05",
+          "type": "mcq",
+          "prompt": "What is the advantage of a whale's blowhole being on top of its head?",
+          "options": [
+            "It allows the whale to breathe under water",
+            "It is used to filter food",
+            "It allows sound to be produced for echolocation only",
+            "The whale can breathe when only the top of its head breaks the surface, saving time and energy"
+          ],
+          "answer": 3,
+          "explanation": "Marine mammals breathe air, so they must surface. A dorsal blowhole lets them breathe without lifting the head or interrupting swimming.",
+          "terms": [
+            "b3.3-marine-mammal"
+          ]
+        },
+        {
+          "id": "B3.3-3-q06",
+          "type": "tf",
+          "statement": "Whales and dolphins move their tail flukes up and down, whereas most fish move their tails from side to side.",
+          "answer": true,
+          "explanation": "Marine mammals evolved from land mammals whose spines flex vertically, so their swimming uses vertical tail strokes.",
+          "terms": [
+            "b3.3-marine-mammal"
+          ]
+        },
+        {
+          "id": "B3.3-3-q07",
+          "type": "mcq",
+          "prompt": "Arctic terns fly between the Arctic and Antarctic each year. This is an example of locomotion for:",
+          "options": [
+            "Migration",
+            "Escaping a predator",
+            "Searching for a mate only",
+            "Thermoregulation by shivering"
+          ],
+          "answer": 0,
+          "explanation": "Migration is seasonal long-distance movement to areas where conditions or food supply are better.",
+          "terms": [
+            "b3.3-locomotion"
+          ]
+        },
+        {
+          "id": "B3.3-3-q08",
+          "type": "order",
+          "prompt": "Order these levels of muscle structure from largest to smallest.",
+          "items": [
+            "Whole muscle",
+            "Muscle fibre",
+            "Myofibril",
+            "Sarcomere",
+            "Actin and myosin filaments"
+          ],
+          "explanation": "A muscle contains many multinucleate fibres; each fibre contains myofibrils made of sarcomeres, which contain the overlapping filaments.",
+          "terms": [
+            "b3.3-sarcomere",
+            "b3.3-actin",
+            "b3.3-myosin"
+          ]
+        },
+        {
+          "id": "B3.3-3-q09",
+          "type": "mcq",
+          "prompt": "Why is streamlining important for marine mammals?",
+          "options": [
+            "It increases buoyancy so they float",
+            "It reduces water resistance, so less energy is needed to swim",
+            "It increases surface area for heat loss",
+            "It allows gas exchange through the skin"
+          ],
+          "answer": 1,
+          "explanation": "Water is much denser than air, so drag is high; a smooth, tapering body reduces drag and the energy cost of swimming.",
+          "terms": [
+            "b3.3-marine-mammal"
+          ]
+        },
+        {
+          "id": "B3.3-3-q10",
+          "type": "fill",
+          "text": "The forelimbs of marine mammals such as seals and dolphins are modified into ___.",
+          "answer": "flippers",
+          "bank": [
+            "flippers",
+            "flukes",
+            "blowholes",
+            "gills"
+          ],
+          "explanation": "Flippers contain the same bones as other mammal forelimbs but are flattened for steering and, in seals, propulsion.",
+          "terms": [
+            "b3.3-marine-mammal"
+          ]
+        }
+      ]
+    }
+  ]
+}

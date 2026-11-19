@@ -1,0 +1,606 @@
+{
+  "id": "D4.2",
+  "code": "D4.2",
+  "unit": "D",
+  "title": "Stability and change",
+  "level": "SL",
+  "summary": "What keeps ecosystems stable, how human activities such as deforestation, agriculture and pollution threaten them, how rewilding restores them, and how communities change through succession.",
+  "keyterms": [
+    {
+      "id": "d4.2-ecosystem-stability",
+      "term": "Ecosystem stability",
+      "definition": "Ability of an ecosystem to persist over time and resist or recover from disturbance with its structure and functioning intact.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-tipping-point",
+      "term": "Tipping point",
+      "definition": "A critical threshold beyond which a small change causes an ecosystem to shift abruptly and often irreversibly to a different state.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-mesocosm",
+      "term": "Mesocosm",
+      "definition": "A small experimental ecosystem, set up indoors or outdoors, used to investigate the effect of variables on ecosystem stability.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-keystone-species",
+      "term": "Keystone species",
+      "definition": "A species with a disproportionately large effect on ecosystem structure and stability relative to its abundance.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-sustainability",
+      "term": "Sustainable harvesting",
+      "definition": "Harvesting a natural resource at a rate no greater than its rate of replacement, so it can continue indefinitely.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-leaching",
+      "term": "Leaching",
+      "definition": "Loss of soluble nutrients such as nitrates and phosphates from soil as water drains through it.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-eutrophication",
+      "term": "Eutrophication",
+      "definition": "Nutrient enrichment of water causing algal blooms, increased decomposition, high biochemical oxygen demand and deoxygenation.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-biomagnification",
+      "term": "Biomagnification",
+      "definition": "Increase in concentration of a persistent pollutant at each successive trophic level of a food chain.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-microplastic",
+      "term": "Microplastic",
+      "definition": "Plastic particle smaller than 5 mm, ingested by marine organisms and passed along food chains.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-rewilding",
+      "term": "Rewilding",
+      "definition": "Restoring natural processes by reintroducing apex predators and keystone species, reconnecting habitats and minimizing human management.",
+      "hl": false
+    },
+    {
+      "id": "d4.2-succession",
+      "term": "Ecological succession",
+      "definition": "Series of changes in community composition over time, as organisms modify the abiotic environment and make it suitable for other species.",
+      "hl": true
+    },
+    {
+      "id": "d4.2-primary-succession",
+      "term": "Primary succession",
+      "definition": "Succession starting on newly formed land with no soil, such as bare rock after volcanic activity or glacial retreat.",
+      "hl": true
+    },
+    {
+      "id": "d4.2-cyclical-succession",
+      "term": "Cyclical succession",
+      "definition": "Repeating cycle of community changes in which no single stable climax is reached.",
+      "hl": true
+    },
+    {
+      "id": "d4.2-climax-community",
+      "term": "Climax community",
+      "definition": "Stable community at the end of succession, whose type is determined mainly by climate.",
+      "hl": true
+    },
+    {
+      "id": "d4.2-arrested-succession",
+      "term": "Arrested succession",
+      "definition": "Succession prevented from reaching the climax by a factor such as grazing, mowing or burning.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "D4.2-1",
+      "title": "Ecosystem stability and keystone species",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D4.2-1-q01",
+          "type": "mcq",
+          "prompt": "Which is NOT one of the requirements for ecosystem stability?",
+          "options": [
+            "A supply of energy",
+            "Recycling of nutrients",
+            "Genetic diversity",
+            "A constant number of individuals of every species"
+          ],
+          "answer": 3,
+          "explanation": "Stable ecosystems need energy input, nutrient recycling, genetic diversity and climatic variables within tolerance limits. Population sizes naturally fluctuate in stable ecosystems.",
+          "terms": [
+            "d4.2-ecosystem-stability"
+          ]
+        },
+        {
+          "id": "D4.2-1-q02",
+          "type": "tf",
+          "statement": "Ecosystems such as tropical rainforests and deserts can persist for very long periods, showing stability.",
+          "answer": true,
+          "explanation": "Evidence such as fossil and pollen records shows some ecosystems have persisted for millions of years, which is why stability is considered a property of natural ecosystems.",
+          "terms": [
+            "d4.2-ecosystem-stability"
+          ]
+        },
+        {
+          "id": "D4.2-1-q03",
+          "type": "mcq",
+          "prompt": "Why is extensive deforestation of the Amazon thought to risk a tipping point?",
+          "options": [
+            "Fewer trees means less transpiration and rainfall, so the remaining forest could dry out and change to savanna",
+            "Removing trees increases rainfall and causes flooding",
+            "Deforestation increases soil fertility",
+            "Fewer trees cause the temperature to fall"
+          ],
+          "answer": 0,
+          "explanation": "Much Amazon rainfall is recycled by transpiration. Beyond a threshold of forest loss, reduced rainfall and longer dry seasons could cause large areas to shift irreversibly to savanna-like vegetation.",
+          "terms": [
+            "d4.2-tipping-point"
+          ]
+        },
+        {
+          "id": "D4.2-1-q04",
+          "type": "fill",
+          "text": "A sealed container with plants, consumers, decomposers and light, used to model an ecosystem, is a ___.",
+          "answer": "mesocosm",
+          "bank": [
+            "mesocosm",
+            "quadrat",
+            "transect",
+            "biome"
+          ],
+          "explanation": "Mesocosms let one variable (e.g. light, number of species) be changed while others are controlled, to test effects on stability.",
+          "terms": [
+            "d4.2-mesocosm"
+          ]
+        },
+        {
+          "id": "D4.2-1-q05",
+          "type": "match",
+          "prompt": "Match each requirement for ecosystem stability to its explanation.",
+          "pairs": [
+            {
+              "left": "Energy supply",
+              "right": "Sunlight drives photosynthesis by producers"
+            },
+            {
+              "left": "Nutrient recycling",
+              "right": "Decomposers return elements for reuse"
+            },
+            {
+              "left": "Genetic diversity",
+              "right": "Allows populations to adapt to change"
+            },
+            {
+              "left": "Climatic variables",
+              "right": "Must remain within species' tolerance limits"
+            }
+          ],
+          "explanation": "Energy flows through ecosystems but nutrients must be recycled; diversity and suitable climate allow persistence.",
+          "terms": [
+            "d4.2-ecosystem-stability"
+          ]
+        },
+        {
+          "id": "D4.2-1-q06",
+          "type": "mcq",
+          "prompt": "Which best describes a keystone species?",
+          "options": [
+            "The most abundant species in an ecosystem",
+            "A species with an effect on ecosystem structure much greater than its abundance suggests",
+            "Any producer in a food chain",
+            "A species found only in one location"
+          ],
+          "answer": 1,
+          "explanation": "Removing a keystone species, such as sea otters that control sea urchins and protect kelp forests, causes large changes in the community.",
+          "terms": [
+            "d4.2-keystone-species"
+          ]
+        },
+        {
+          "id": "D4.2-1-q07",
+          "type": "tf",
+          "statement": "Reintroducing wolves to Yellowstone National Park is an example of rewilding.",
+          "answer": true,
+          "explanation": "Wolves (an apex predator) reduced elk browsing, allowing willow and aspen to regenerate, which benefited beavers and other species — a trophic cascade.",
+          "terms": [
+            "d4.2-rewilding",
+            "d4.2-keystone-species"
+          ]
+        },
+        {
+          "id": "D4.2-1-q08",
+          "type": "order",
+          "prompt": "Order the trophic cascade after wolves were reintroduced to Yellowstone.",
+          "items": [
+            "Wolves are reintroduced",
+            "Elk numbers fall and elk avoid open valleys",
+            "Browsing on willow and aspen decreases",
+            "Riverside trees regenerate",
+            "Beaver populations and other species increase"
+          ],
+          "explanation": "The effects of an apex predator pass down the food chain, illustrating its keystone role in ecosystem stability.",
+          "terms": [
+            "d4.2-keystone-species",
+            "d4.2-rewilding"
+          ]
+        },
+        {
+          "id": "D4.2-1-q09",
+          "type": "fill",
+          "text": "Rewilding includes reintroducing apex predators, re-establishing habitat ___ and minimizing human management.",
+          "answer": "connectivity",
+          "bank": [
+            "connectivity",
+            "fragmentation",
+            "monoculture",
+            "eutrophication"
+          ],
+          "explanation": "Connecting habitat fragments with corridors allows species to move, mix gene pools and recolonize areas.",
+          "terms": [
+            "d4.2-rewilding"
+          ]
+        },
+        {
+          "id": "D4.2-1-q10",
+          "type": "mcq",
+          "prompt": "What does assessing the sustainability of fish harvesting require?",
+          "options": [
+            "Counting only the fish that are landed",
+            "Estimating stock size and replacement rate, and keeping the catch below the replacement rate",
+            "Harvesting the largest fish only",
+            "Keeping catches equal every year regardless of stock"
+          ],
+          "answer": 1,
+          "explanation": "Harvesting is sustainable only if the stock can replace what is removed. This needs estimates of population size and reproduction rates.",
+          "terms": [
+            "d4.2-sustainability"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D4.2-2",
+      "title": "Agriculture and pollution",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D4.2-2-q01",
+          "type": "order",
+          "prompt": "Order the stages of eutrophication.",
+          "items": [
+            "Fertilizer nitrates and phosphates leach into water",
+            "Algae and other producers grow rapidly (algal bloom)",
+            "Light is blocked and plants and algae die",
+            "Saprotrophic bacteria decompose the dead matter",
+            "Biochemical oxygen demand rises and oxygen concentration falls",
+            "Fish and other aerobic organisms die"
+          ],
+          "explanation": "The deoxygenation is caused mainly by aerobic decomposers respiring as they break down the large mass of dead organic matter.",
+          "terms": [
+            "d4.2-eutrophication",
+            "d4.2-leaching"
+          ]
+        },
+        {
+          "id": "D4.2-2-q02",
+          "type": "tf",
+          "statement": "In eutrophication, fish die mainly because algae consume the oxygen.",
+          "answer": false,
+          "explanation": "Algae produce oxygen by photosynthesis while alive. The oxygen is used up by saprotrophic bacteria decomposing dead algae and plants (high BOD).",
+          "terms": [
+            "d4.2-eutrophication"
+          ]
+        },
+        {
+          "id": "D4.2-2-q03",
+          "type": "mcq",
+          "prompt": "Why does DDT reach high concentrations in birds of prey?",
+          "options": [
+            "Birds of prey absorb DDT directly from the air",
+            "DDT is broken down quickly in lower trophic levels",
+            "DDT is persistent and stored in fat; each predator eats many prey and accumulates it",
+            "Birds of prey are more sensitive to DDT"
+          ],
+          "answer": 2,
+          "explanation": "Persistent, fat-soluble pollutants are not excreted or metabolized. Concentration increases at each trophic level (biomagnification), causing eggshell thinning in raptors.",
+          "terms": [
+            "d4.2-biomagnification"
+          ]
+        },
+        {
+          "id": "D4.2-2-q04",
+          "type": "fill",
+          "text": "Mercury reaches high concentrations in large predatory fish such as tuna due to ___.",
+          "answer": "biomagnification",
+          "bank": [
+            "biomagnification",
+            "eutrophication",
+            "leaching",
+            "succession"
+          ],
+          "explanation": "Methylmercury persists in tissues, so its concentration increases up the food chain, making top predators the most contaminated.",
+          "terms": [
+            "d4.2-biomagnification"
+          ]
+        },
+        {
+          "id": "D4.2-2-q05",
+          "type": "match",
+          "prompt": "Match each type of ocean plastic pollution to its effect.",
+          "pairs": [
+            {
+              "left": "Macroplastic",
+              "right": "Entanglement of turtles and seals"
+            },
+            {
+              "left": "Plastic bags",
+              "right": "Mistaken for jellyfish and swallowed by turtles"
+            },
+            {
+              "left": "Microplastic",
+              "right": "Ingested by filter feeders, entering food chains"
+            },
+            {
+              "left": "Absorbed toxins",
+              "right": "Persistent pollutants concentrated on plastic surfaces"
+            }
+          ],
+          "explanation": "Large plastic causes entanglement and blockage of the gut; microplastics enter food chains and can carry toxins.",
+          "terms": [
+            "d4.2-microplastic"
+          ]
+        },
+        {
+          "id": "D4.2-2-q06",
+          "type": "mcq",
+          "prompt": "Which factor reduces the sustainability of agriculture?",
+          "options": [
+            "Soil erosion and leaching of nutrients",
+            "Crop rotation",
+            "Use of cover crops",
+            "Reduced tillage"
+          ],
+          "answer": 0,
+          "explanation": "Erosion removes fertile topsoil and leaching removes nutrients, so yields fall unless more fertilizer is used. The other options help conserve soil.",
+          "terms": [
+            "d4.2-leaching",
+            "d4.2-sustainability"
+          ]
+        },
+        {
+          "id": "D4.2-2-q07",
+          "type": "tf",
+          "statement": "The carbon footprint of agriculture includes emissions from fuel, fertilizer manufacture and transport of produce.",
+          "answer": true,
+          "explanation": "These greenhouse gas emissions are a factor in the sustainability of agriculture, along with soil erosion, leaching and pollutants such as pesticides.",
+          "terms": [
+            "d4.2-sustainability"
+          ]
+        },
+        {
+          "id": "D4.2-2-q08",
+          "type": "fill",
+          "text": "Microplastics are defined as plastic particles smaller than ___.",
+          "answer": "5 mm",
+          "bank": [
+            "5 mm",
+            "5 µm",
+            "5 cm",
+            "50 cm"
+          ],
+          "explanation": "Microplastics come from breakdown of larger plastic and from products such as synthetic fibres; their small size lets plankton and filter feeders ingest them.",
+          "terms": [
+            "d4.2-microplastic"
+          ]
+        },
+        {
+          "id": "D4.2-2-q09",
+          "type": "mcq",
+          "prompt": "Which is the correct distinction between bioaccumulation and biomagnification?",
+          "options": [
+            "They mean the same thing",
+            "Bioaccumulation is across a food chain; biomagnification is within one organism",
+            "Bioaccumulation is build-up within one organism over time; biomagnification is increasing concentration at higher trophic levels",
+            "Both only apply to plastics"
+          ],
+          "answer": 2,
+          "explanation": "An organism accumulates a pollutant over its lifetime; predators eating many contaminated prey then reach even higher concentrations.",
+          "terms": [
+            "d4.2-biomagnification"
+          ]
+        },
+        {
+          "id": "D4.2-2-q10",
+          "type": "mcq",
+          "prompt": "Why does nutrient leaching increase when fertilizer is applied just before heavy rain?",
+          "options": [
+            "Rain converts nitrates to nitrogen gas",
+            "Soluble nitrates are washed through the soil before crops can absorb them",
+            "Rain makes fertilizer insoluble",
+            "Heavy rain increases root uptake"
+          ],
+          "answer": 1,
+          "explanation": "Nitrates are very soluble and are not held by soil particles, so they drain into groundwater and rivers, contributing to eutrophication.",
+          "terms": [
+            "d4.2-leaching",
+            "d4.2-eutrophication"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D4.2-3",
+      "title": "Ecological succession",
+      "hl": true,
+      "questions": [
+        {
+          "id": "D4.2-3-q01",
+          "type": "mcq",
+          "prompt": "What is the main cause of ecological succession?",
+          "options": [
+            "Random arrival of species with no environmental change",
+            "Organisms modify the abiotic environment, making it suitable for other species",
+            "Climate change only",
+            "Evolution of new species at each stage"
+          ],
+          "answer": 1,
+          "explanation": "For example, pioneer species weather rock and add organic matter, building soil that allows larger plants to establish and outcompete them.",
+          "terms": [
+            "d4.2-succession"
+          ]
+        },
+        {
+          "id": "D4.2-3-q02",
+          "type": "order",
+          "prompt": "Order the stages of primary succession on bare rock.",
+          "items": [
+            "Bare rock",
+            "Pioneer lichens and mosses",
+            "Grasses and small herbaceous plants",
+            "Shrubs",
+            "Trees forming a climax forest"
+          ],
+          "explanation": "Each stage deepens and enriches the soil, allowing larger plants that shade out and outcompete earlier species.",
+          "terms": [
+            "d4.2-primary-succession"
+          ]
+        },
+        {
+          "id": "D4.2-3-q03",
+          "type": "match",
+          "prompt": "Match each variable to how it changes during primary succession.",
+          "pairs": [
+            {
+              "left": "Soil depth and fertility",
+              "right": "Increase as organic matter accumulates"
+            },
+            {
+              "left": "Species diversity",
+              "right": "Increases as more niches become available"
+            },
+            {
+              "left": "Size of plants",
+              "right": "Increases from mosses to trees"
+            },
+            {
+              "left": "Food web complexity",
+              "right": "Increases with more trophic interactions"
+            }
+          ],
+          "explanation": "Primary production, plant size, diversity, food web complexity and soil all generally increase during primary succession.",
+          "terms": [
+            "d4.2-primary-succession"
+          ]
+        },
+        {
+          "id": "D4.2-3-q04",
+          "type": "tf",
+          "statement": "Primary succession begins on land that already has soil, such as a field after a fire.",
+          "answer": false,
+          "explanation": "That is secondary succession. Primary succession starts on newly formed land with no soil, e.g. lava flows or rock exposed by a retreating glacier.",
+          "terms": [
+            "d4.2-primary-succession"
+          ]
+        },
+        {
+          "id": "D4.2-3-q05",
+          "type": "fill",
+          "text": "The type of climax community in an area is determined mainly by ___.",
+          "answer": "climate",
+          "bank": [
+            "climate",
+            "soil colour",
+            "pioneer species",
+            "grazing"
+          ],
+          "explanation": "Temperature and rainfall determine whether succession ends in, for example, tropical rainforest, temperate forest or grassland.",
+          "terms": [
+            "d4.2-climax-community"
+          ]
+        },
+        {
+          "id": "D4.2-3-q06",
+          "type": "mcq",
+          "prompt": "Grazing by sheep keeps an area as grassland, preventing development of forest. What is this called?",
+          "options": [
+            "Primary succession",
+            "Cyclical succession",
+            "Climax community",
+            "Arrested succession"
+          ],
+          "answer": 3,
+          "explanation": "Grazing destroys tree seedlings, so the community is held at an earlier stage (a plagioclimax). Mowing and burning have similar effects.",
+          "terms": [
+            "d4.2-arrested-succession"
+          ]
+        },
+        {
+          "id": "D4.2-3-q07",
+          "type": "tf",
+          "statement": "In cyclical succession, a community passes through a repeating sequence of stages rather than reaching a stable climax.",
+          "answer": true,
+          "explanation": "In heather (Calluna) heathland, for example, plants grow, mature, degenerate and die, opening gaps where the cycle restarts.",
+          "terms": [
+            "d4.2-cyclical-succession"
+          ]
+        },
+        {
+          "id": "D4.2-3-q08",
+          "type": "mcq",
+          "prompt": "Why are lichens effective pioneer species on bare rock?",
+          "options": [
+            "They need deep soil",
+            "They can survive harsh conditions and help weather rock into soil",
+            "They are large and shade out competitors",
+            "They require high nutrient levels"
+          ],
+          "answer": 1,
+          "explanation": "Lichens tolerate drought and extremes, secrete acids that weather rock, and add organic matter when they die, starting soil formation.",
+          "terms": [
+            "d4.2-primary-succession"
+          ]
+        },
+        {
+          "id": "D4.2-3-q09",
+          "type": "fill",
+          "text": "During succession, gross primary production generally ___.",
+          "answer": "increases",
+          "bank": [
+            "increases",
+            "decreases",
+            "stays constant",
+            "falls to zero"
+          ],
+          "explanation": "Larger plants with more leaf area capture more light energy, so primary production rises as succession proceeds.",
+          "terms": [
+            "d4.2-succession"
+          ]
+        },
+        {
+          "id": "D4.2-3-q10",
+          "type": "mcq",
+          "prompt": "Which statement about climax communities is correct?",
+          "options": [
+            "They change rapidly each year",
+            "They are always forests",
+            "They are relatively stable, with little further change in species composition",
+            "They have the lowest biodiversity of any stage"
+          ],
+          "answer": 2,
+          "explanation": "A climax community is in equilibrium with its environment. It need not be a forest: in arid climates it may be grassland or desert scrub.",
+          "terms": [
+            "d4.2-climax-community"
+          ]
+        }
+      ]
+    }
+  ]
+}

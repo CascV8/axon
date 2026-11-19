@@ -1,0 +1,429 @@
+{
+  "id": "A3.2",
+  "code": "A3.2",
+  "unit": "A",
+  "title": "Classification and cladistics",
+  "level": "HL",
+  "summary": "Why biologists classify organisms, how cladograms built from DNA and protein sequences reveal evolutionary relationships, and how this has reshaped classification into three domains.",
+  "keyterms": [
+    {
+      "id": "a3.2-classification",
+      "term": "Classification",
+      "definition": "Arranging organisms into groups; needed to organise the huge diversity of life and help scientists communicate and make predictions.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-taxon",
+      "term": "Taxon",
+      "definition": "A group of organisms at any level of classification, e.g. a species, genus or family.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-hierarchy",
+      "term": "Taxonomic hierarchy",
+      "definition": "The traditional ranks: kingdom, phylum, class, order, family, genus, species, with each taxon nested in the next.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-natural-classification",
+      "term": "Natural classification",
+      "definition": "Classification in which each group contains all descendants of a common ancestor, so it reflects evolutionary relationships and allows predictions.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-clade",
+      "term": "Clade",
+      "definition": "A group of organisms consisting of a common ancestor and all of its descendants, sharing characteristics inherited from that ancestor.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-cladogram",
+      "term": "Cladogram",
+      "definition": "A branching diagram showing the most probable sequence of divergence of clades.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-node",
+      "term": "Node",
+      "definition": "A branch point on a cladogram, representing a hypothetical common ancestor where two clades diverged.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-root",
+      "term": "Root",
+      "definition": "The base of a cladogram, representing the common ancestor of all the organisms shown.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-molecular-clock",
+      "term": "Molecular clock",
+      "definition": "Using the number of sequence differences between species to estimate the time since they diverged from a common ancestor.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-parsimony",
+      "term": "Parsimony",
+      "definition": "The principle of choosing the cladogram that requires the fewest evolutionary changes (e.g. sequence changes) to explain the data.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-domain",
+      "term": "Domain",
+      "definition": "The highest taxonomic rank; all organisms are classified into Archaea, Bacteria or Eukarya.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-rrna",
+      "term": "Ribosomal RNA evidence",
+      "definition": "Comparison of rRNA base sequences by Woese and colleagues, which revealed that prokaryotes form two very distinct groups, Archaea and Bacteria.",
+      "hl": true
+    },
+    {
+      "id": "a3.2-figwort",
+      "term": "Figwort family reclassification",
+      "definition": "Cladistic analysis showed the figwort family (Scrophulariaceae) was not a clade, so many genera were moved to other families.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "A3.2-1",
+      "title": "Classification and clades",
+      "hl": true,
+      "questions": [
+        {
+          "id": "A3.2-1-q01",
+          "type": "order",
+          "prompt": "Order the traditional taxonomic ranks from broadest to narrowest.",
+          "items": [
+            "Kingdom",
+            "Phylum",
+            "Class",
+            "Order",
+            "Family",
+            "Genus"
+          ],
+          "explanation": "Each kingdom contains phyla, each phylum classes, and so on down to genus and then species.",
+          "terms": [
+            "a3.2-hierarchy"
+          ]
+        },
+        {
+          "id": "A3.2-1-q02",
+          "type": "mcq",
+          "prompt": "Why is it difficult to classify organisms into the traditional hierarchy of taxa?",
+          "options": [
+            "Because there are too few species",
+            "Because organisms do not vary",
+            "Because species evolve and branch continuously, so ranks like 'order' or 'family' have no fixed meaning in nature",
+            "Because DNA cannot be compared between species"
+          ],
+          "answer": 2,
+          "explanation": "Evolution produces a continuous branching tree, not distinct levels. Deciding whether a group is a family or an order is arbitrary, and different groups do not match rank for rank.",
+          "terms": [
+            "a3.2-hierarchy"
+          ]
+        },
+        {
+          "id": "A3.2-1-q03",
+          "type": "tf",
+          "statement": "A clade includes a common ancestor and all of its descendants.",
+          "answer": true,
+          "explanation": "A clade must include every descendant of the ancestor. Leaving any out (e.g. 'reptiles' without birds) does not form a clade.",
+          "terms": [
+            "a3.2-clade"
+          ]
+        },
+        {
+          "id": "A3.2-1-q04",
+          "type": "mcq",
+          "prompt": "What is the main advantage of a classification that corresponds to evolutionary relationships?",
+          "options": [
+            "It is easier to memorise",
+            "It allows predictions: a feature found in one member is likely to occur in others of the group",
+            "It groups organisms by habitat",
+            "It needs no evidence from DNA"
+          ],
+          "answer": 1,
+          "explanation": "Members of a natural group share ancestry, so characteristics (e.g. a useful chemical in a plant) are likely to be found in related species too.",
+          "terms": [
+            "a3.2-natural-classification"
+          ]
+        },
+        {
+          "id": "A3.2-1-q05",
+          "type": "fill",
+          "text": "A group consisting of a common ancestor and all its descendants is a ___.",
+          "answer": "clade",
+          "bank": [
+            "clade",
+            "taxon",
+            "genus",
+            "domain"
+          ],
+          "explanation": "Clades are defined by common ancestry. A taxon is any named group, which may or may not be a clade.",
+          "terms": [
+            "a3.2-clade",
+            "a3.2-taxon"
+          ]
+        },
+        {
+          "id": "A3.2-1-q06",
+          "type": "match",
+          "prompt": "Match each domain to a feature or example.",
+          "pairs": [
+            {
+              "left": "Bacteria",
+              "right": "Prokaryotes such as Bacillus and cyanobacteria"
+            },
+            {
+              "left": "Archaea",
+              "right": "Prokaryotes often from extreme habitats, e.g. methanogens"
+            },
+            {
+              "left": "Eukarya",
+              "right": "Organisms with nucleus: animals, plants, fungi, protists"
+            }
+          ],
+          "explanation": "rRNA evidence showed that prokaryotes form two domains as different from each other as from eukaryotes.",
+          "terms": [
+            "a3.2-domain"
+          ]
+        },
+        {
+          "id": "A3.2-1-q07",
+          "type": "mcq",
+          "prompt": "What evidence led to the classification of all organisms into three domains?",
+          "options": [
+            "Base sequences of ribosomal RNA",
+            "Shape of cells under a light microscope",
+            "Presence or absence of a cell wall",
+            "Mode of nutrition"
+          ],
+          "answer": 0,
+          "explanation": "Carl Woese compared rRNA sequences and found prokaryotes split into two deeply divergent groups, Bacteria and Archaea, alongside Eukarya.",
+          "terms": [
+            "a3.2-rrna",
+            "a3.2-domain"
+          ]
+        },
+        {
+          "id": "A3.2-1-q08",
+          "type": "tf",
+          "statement": "Archaea are more closely related to Bacteria than to Eukarya because both are prokaryotes.",
+          "answer": false,
+          "explanation": "Despite both being prokaryotic, rRNA and other molecular evidence show Archaea share a more recent common ancestor with Eukarya than with Bacteria.",
+          "terms": [
+            "a3.2-domain",
+            "a3.2-rrna"
+          ]
+        },
+        {
+          "id": "A3.2-1-q09",
+          "type": "fill",
+          "text": "The highest rank of classification, above kingdom, is the ___.",
+          "answer": "domain",
+          "bank": [
+            "domain",
+            "phylum",
+            "clade",
+            "class"
+          ],
+          "explanation": "There are three domains: Archaea, Bacteria and Eukarya.",
+          "terms": [
+            "a3.2-domain"
+          ]
+        },
+        {
+          "id": "A3.2-1-q10",
+          "type": "mcq",
+          "prompt": "Why do biologists need to classify organisms?",
+          "options": [
+            "To reduce the number of species on Earth",
+            "To prove that species never change",
+            "To give each species a common name",
+            "To organise the vast diversity of life so it can be studied, identified and discussed"
+          ],
+          "answer": 3,
+          "explanation": "With millions of species, an agreed classification system lets biologists find information, identify organisms and communicate internationally.",
+          "terms": [
+            "a3.2-classification"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3.2-2",
+      "title": "Cladograms and molecular evidence",
+      "hl": true,
+      "questions": [
+        {
+          "id": "A3.2-2-q01",
+          "type": "mcq",
+          "prompt": "What does a node on a cladogram represent?",
+          "options": [
+            "A living species",
+            "A hypothetical common ancestor where lineages diverged",
+            "An extinction event",
+            "The age of a fossil"
+          ],
+          "answer": 1,
+          "explanation": "Each node is a branching point representing the common ancestor of all the clades branching from it. Living species are at the terminal branch tips.",
+          "terms": [
+            "a3.2-node",
+            "a3.2-cladogram"
+          ]
+        },
+        {
+          "id": "A3.2-2-q02",
+          "type": "tf",
+          "statement": "The more differences there are between the base sequences of a gene in two species, the more recently they shared a common ancestor.",
+          "answer": false,
+          "explanation": "The opposite: differences accumulate gradually over time, so more differences indicate a longer time since divergence.",
+          "terms": [
+            "a3.2-molecular-clock"
+          ]
+        },
+        {
+          "id": "A3.2-2-q03",
+          "type": "fill",
+          "text": "Choosing the cladogram that requires the fewest evolutionary changes uses the principle of ___.",
+          "answer": "parsimony",
+          "bank": [
+            "parsimony",
+            "homology",
+            "convergence",
+            "divergence"
+          ],
+          "explanation": "Parsimony assumes the simplest explanation, with the fewest sequence changes, is the most probable.",
+          "terms": [
+            "a3.2-parsimony"
+          ]
+        },
+        {
+          "id": "A3.2-2-q04",
+          "type": "mcq",
+          "prompt": "Why are base sequences of genes or amino acid sequences of proteins useful for constructing cladograms?",
+          "options": [
+            "Sequence differences accumulate gradually, so the number of differences reflects how closely species are related",
+            "Sequences never change, so all species share them",
+            "Morphology is always more reliable than sequences",
+            "Only proteins can be compared between species"
+          ],
+          "answer": 0,
+          "explanation": "Sequence data are objective and numerous, and they avoid being misled by convergent evolution of similar-looking structures.",
+          "terms": [
+            "a3.2-cladogram",
+            "a3.2-molecular-clock"
+          ]
+        },
+        {
+          "id": "A3.2-2-q05",
+          "type": "match",
+          "prompt": "Match each part of a cladogram to what it represents.",
+          "pairs": [
+            {
+              "left": "Root",
+              "right": "Common ancestor of all organisms shown"
+            },
+            {
+              "left": "Node",
+              "right": "Divergence point of two lineages"
+            },
+            {
+              "left": "Terminal branch",
+              "right": "A species or group at the tip"
+            },
+            {
+              "left": "Clade",
+              "right": "Ancestor plus all its descendants"
+            }
+          ],
+          "explanation": "A cladogram is read from the root outwards: nodes are splits and any node with everything beyond it forms a clade.",
+          "terms": [
+            "a3.2-root",
+            "a3.2-node",
+            "a3.2-clade"
+          ]
+        },
+        {
+          "id": "A3.2-2-q06",
+          "type": "mcq",
+          "prompt": "Species A and B differ by 4 bases in a gene; A and C differ by 18; B and C differ by 17. Which conclusion is best supported?",
+          "options": [
+            "A and C are the most closely related",
+            "B and C share the most recent common ancestor",
+            "All three species diverged at the same time",
+            "A and B share a more recent common ancestor than either does with C"
+          ],
+          "answer": 3,
+          "explanation": "The fewest differences (4) are between A and B, so they diverged most recently; C branched off earlier.",
+          "terms": [
+            "a3.2-cladogram",
+            "a3.2-molecular-clock"
+          ]
+        },
+        {
+          "id": "A3.2-2-q07",
+          "type": "tf",
+          "statement": "Cladograms are hypotheses that may be revised when new evidence is found.",
+          "answer": true,
+          "explanation": "Cladograms show the most probable sequence of divergence based on current data; additional sequences can lead to different branching patterns.",
+          "terms": [
+            "a3.2-cladogram"
+          ]
+        },
+        {
+          "id": "A3.2-2-q08",
+          "type": "mcq",
+          "prompt": "What did cladistic analysis reveal about the figwort family (Scrophulariaceae)?",
+          "options": [
+            "It was a clade, confirming the traditional classification",
+            "It contained only one genus",
+            "It was not a true clade, so many genera were reclassified into other families",
+            "It belonged to the domain Archaea"
+          ],
+          "answer": 2,
+          "explanation": "DNA-based cladistics showed the traditional figwort family grouped unrelated plants by similar morphology, so the family was split and many genera were moved.",
+          "terms": [
+            "a3.2-figwort",
+            "a3.2-natural-classification"
+          ]
+        },
+        {
+          "id": "A3.2-2-q09",
+          "type": "fill",
+          "text": "Estimating when clades diverged from the number of sequence differences uses the molecular ___.",
+          "answer": "clock",
+          "bank": [
+            "clock",
+            "key",
+            "barcode",
+            "ladder"
+          ],
+          "explanation": "Assuming differences accumulate at a roughly constant rate, they can be converted to a time since divergence, calibrated with fossils.",
+          "terms": [
+            "a3.2-molecular-clock"
+          ]
+        },
+        {
+          "id": "A3.2-2-q10",
+          "type": "order",
+          "prompt": "Order the steps for constructing a cladogram from sequence data.",
+          "items": [
+            "Choose a gene or protein found in all the species",
+            "Obtain and align the sequences",
+            "Count the differences between each pair of species",
+            "Group the most similar species together first",
+            "Draw the branching pattern requiring the fewest changes"
+          ],
+          "explanation": "Aligned sequences are compared, species with fewest differences are joined at the most recent nodes, and parsimony selects the best tree.",
+          "terms": [
+            "a3.2-cladogram",
+            "a3.2-parsimony"
+          ]
+        }
+      ]
+    }
+  ]
+}

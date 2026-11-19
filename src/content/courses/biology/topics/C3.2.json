@@ -1,0 +1,621 @@
+{
+  "id": "C3.2",
+  "code": "C3.2",
+  "unit": "C",
+  "title": "Defence against disease",
+  "level": "SL",
+  "summary": "How the body keeps pathogens out and destroys those that get in, how antibodies and memory cells give immunity, and how antibiotics, vaccines and herd immunity control infectious disease.",
+  "keyterms": [
+    {
+      "id": "c3.2-pathogen",
+      "term": "Pathogen",
+      "definition": "An organism or virus that causes infectious disease, e.g. viruses, bacteria, fungi and protists.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-primary-defence",
+      "term": "Primary defence",
+      "definition": "Physical and chemical barriers, the skin and mucous membranes, that prevent pathogens from entering the body.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-blood-clotting",
+      "term": "Blood clotting",
+      "definition": "Sealing of cuts: platelets release clotting factors, triggering a cascade that converts fibrinogen to insoluble fibrin, which forms a mesh trapping blood cells.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-innate-immunity",
+      "term": "Innate immune system",
+      "definition": "Non-specific defences, present from birth and unchanged during life, that respond to broad categories of pathogen, e.g. phagocytes.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-adaptive-immunity",
+      "term": "Adaptive immune system",
+      "definition": "Specific defences, developed through life, in which lymphocytes produce antibodies against particular antigens and memory cells are retained.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-phagocyte",
+      "term": "Phagocyte",
+      "definition": "A white blood cell that moves by amoeboid movement to sites of infection, engulfs pathogens by endocytosis and digests them with lysosome enzymes.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-lymphocyte",
+      "term": "Lymphocyte",
+      "definition": "A white blood cell of the adaptive immune system; B-lymphocytes and helper T-lymphocytes cooperate to produce specific antibodies.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-antigen",
+      "term": "Antigen",
+      "definition": "A recognition molecule, often a glycoprotein on a cell surface, that triggers production of a specific antibody.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-antibody",
+      "term": "Antibody",
+      "definition": "A protein secreted by plasma cells that binds specifically to one antigen, helping to destroy or neutralise the pathogen.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-plasma-cell",
+      "term": "Plasma cell",
+      "definition": "An antibody-secreting cell formed when an activated B-lymphocyte divides to produce a clone.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-memory-cell",
+      "term": "Memory cell",
+      "definition": "A long-lived lymphocyte retained after infection that allows a faster, stronger antibody response if the same antigen is met again, giving immunity.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-hiv",
+      "term": "HIV",
+      "definition": "Human immunodeficiency virus: transmitted in body fluids, it infects helper T-lymphocytes, reducing antibody production and eventually causing AIDS.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-antibiotic",
+      "term": "Antibiotic",
+      "definition": "A chemical that blocks processes occurring in bacteria but not in eukaryotic cells, so it kills or inhibits bacteria without harming human cells; ineffective against viruses.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-zoonosis",
+      "term": "Zoonosis",
+      "definition": "An infectious disease that can transfer to humans from other animal species, e.g. tuberculosis, rabies and Japanese encephalitis.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-vaccine",
+      "term": "Vaccine",
+      "definition": "A preparation containing antigens, or DNA or mRNA coding for antigens, that stimulates memory cell production without causing the disease.",
+      "hl": false
+    },
+    {
+      "id": "c3.2-herd-immunity",
+      "term": "Herd immunity",
+      "definition": "Protection of a population when a high proportion is immune, so transmission chains are broken and epidemics are prevented.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "C3.2-1",
+      "title": "Barriers and innate immunity",
+      "hl": false,
+      "questions": [
+        {
+          "id": "C3.2-1-q01",
+          "type": "mcq",
+          "prompt": "Which list contains only types of pathogen?",
+          "options": [
+            "Bacteria, platelets, fungi",
+            "Viruses, antibodies, protists",
+            "Viruses, bacteria, fungi, protists",
+            "Phagocytes, bacteria, viruses"
+          ],
+          "answer": 2,
+          "explanation": "Pathogens are organisms or viruses that cause infectious disease. Platelets, antibodies and phagocytes are part of the body's defences.",
+          "terms": [
+            "c3.2-pathogen"
+          ]
+        },
+        {
+          "id": "C3.2-1-q02",
+          "type": "tf",
+          "statement": "The skin and mucous membranes form the primary defence against pathogens.",
+          "answer": true,
+          "explanation": "These barriers stop most pathogens from entering in the first place: the skin's tough outer layer is a physical barrier, and mucus traps pathogens.",
+          "terms": [
+            "c3.2-primary-defence"
+          ]
+        },
+        {
+          "id": "C3.2-1-q03",
+          "type": "order",
+          "prompt": "Put the steps of blood clotting in order.",
+          "items": [
+            "A blood vessel is damaged",
+            "Platelets release clotting factors",
+            "A cascade of reactions converts prothrombin to thrombin",
+            "Thrombin converts soluble fibrinogen to insoluble fibrin",
+            "A mesh of fibrin traps blood cells, forming a clot"
+          ],
+          "explanation": "The cascade amplifies the response so a clot forms quickly, sealing the cut against both blood loss and pathogen entry.",
+          "terms": [
+            "c3.2-blood-clotting"
+          ]
+        },
+        {
+          "id": "C3.2-1-q04",
+          "type": "fill",
+          "text": "Thrombin converts the soluble plasma protein fibrinogen into insoluble ___.",
+          "answer": "fibrin",
+          "bank": [
+            "fibrin",
+            "prothrombin",
+            "platelets",
+            "antibodies"
+          ],
+          "explanation": "Fibrin forms long insoluble fibres that create a mesh, trapping red blood cells and platelets to form the clot.",
+          "terms": [
+            "c3.2-blood-clotting"
+          ]
+        },
+        {
+          "id": "C3.2-1-q05",
+          "type": "mcq",
+          "prompt": "Distinguish the innate and adaptive immune systems.",
+          "options": [
+            "Innate is specific to each pathogen; adaptive is non-specific",
+            "Both are specific and produce memory cells",
+            "Innate develops during life; adaptive is present from birth",
+            "Innate is non-specific and unchanging; adaptive is specific and develops memory"
+          ],
+          "answer": 3,
+          "explanation": "Innate responses (e.g. phagocytes) attack broad categories of pathogen in the same way each time; adaptive responses (lymphocytes, antibodies) target specific antigens and improve with exposure.",
+          "terms": [
+            "c3.2-innate-immunity",
+            "c3.2-adaptive-immunity"
+          ]
+        },
+        {
+          "id": "C3.2-1-q06",
+          "type": "tf",
+          "statement": "Phagocytes take in pathogens by exocytosis.",
+          "answer": false,
+          "explanation": "Phagocytes engulf pathogens by endocytosis, enclosing them in a vesicle; exocytosis is the release of materials from a cell.",
+          "terms": [
+            "c3.2-phagocyte"
+          ]
+        },
+        {
+          "id": "C3.2-1-q07",
+          "type": "order",
+          "prompt": "Put the steps of infection control by a phagocyte in order.",
+          "items": [
+            "Phagocyte moves to the infection site by amoeboid movement",
+            "Phagocyte recognises the pathogen",
+            "Pathogen is engulfed by endocytosis into a vesicle",
+            "Lysosomes fuse with the vesicle",
+            "Lysosome enzymes digest the pathogen"
+          ],
+          "explanation": "Phagocytes squeeze out of capillaries to reach infected tissues, then engulf and digest pathogens; this is part of the innate system.",
+          "terms": [
+            "c3.2-phagocyte",
+            "c3.2-innate-immunity"
+          ]
+        },
+        {
+          "id": "C3.2-1-q08",
+          "type": "match",
+          "prompt": "Match each defence to how it works.",
+          "pairs": [
+            {
+              "left": "Skin",
+              "right": "Tough outer layer that pathogens cannot easily penetrate"
+            },
+            {
+              "left": "Mucous membranes",
+              "right": "Sticky secretion traps pathogens"
+            },
+            {
+              "left": "Platelets",
+              "right": "Release clotting factors at a cut"
+            },
+            {
+              "left": "Phagocytes",
+              "right": "Engulf and digest pathogens"
+            }
+          ],
+          "explanation": "Skin and mucous membranes are the primary defence, clotting seals breaches, and phagocytes deal non-specifically with pathogens that get in.",
+          "terms": [
+            "c3.2-primary-defence",
+            "c3.2-blood-clotting",
+            "c3.2-phagocyte"
+          ]
+        },
+        {
+          "id": "C3.2-1-q09",
+          "type": "fill",
+          "text": "Mucous membranes in the airways secrete ___, which traps pathogens.",
+          "answer": "mucus",
+          "bank": [
+            "mucus",
+            "fibrin",
+            "antibodies",
+            "thrombin"
+          ],
+          "explanation": "Mucus is sticky and contains antimicrobial enzymes; it lines soft entry points such as the airways that are not protected by skin.",
+          "terms": [
+            "c3.2-primary-defence"
+          ]
+        },
+        {
+          "id": "C3.2-1-q10",
+          "type": "mcq",
+          "prompt": "How does blood clotting contribute to defence against disease?",
+          "options": [
+            "It seals cuts in the skin, preventing entry of pathogens",
+            "It produces antibodies against pathogens",
+            "It digests bacteria with enzymes",
+            "It gives long-term immunity"
+          ],
+          "answer": 0,
+          "explanation": "A cut breaches the primary defence; the clot quickly seals it, preventing both blood loss and pathogen entry.",
+          "terms": [
+            "c3.2-blood-clotting",
+            "c3.2-primary-defence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3.2-2",
+      "title": "Antibodies, immunity and HIV",
+      "hl": false,
+      "questions": [
+        {
+          "id": "C3.2-2-q01",
+          "type": "mcq",
+          "prompt": "What is an antigen?",
+          "options": [
+            "A protein secreted by plasma cells",
+            "A recognition molecule that triggers antibody production",
+            "A white blood cell that engulfs pathogens",
+            "An enzyme that kills bacteria"
+          ],
+          "answer": 1,
+          "explanation": "Antigens, usually glycoproteins or other molecules on cell or virus surfaces, are recognised as foreign and trigger production of specific antibodies.",
+          "terms": [
+            "c3.2-antigen",
+            "c3.2-antibody"
+          ]
+        },
+        {
+          "id": "C3.2-2-q02",
+          "type": "mcq",
+          "prompt": "A person has blood group A. Which antigens are on their red blood cells and which antibodies are in their plasma?",
+          "options": [
+            "B antigens; anti-A antibodies",
+            "A and B antigens; no antibodies",
+            "A antigens; anti-B antibodies",
+            "No antigens; anti-A and anti-B antibodies"
+          ],
+          "answer": 2,
+          "explanation": "Group A red cells carry A antigens; the plasma has anti-B antibodies. Transfused group B blood would be recognised as foreign and agglutinated.",
+          "terms": [
+            "c3.2-antigen",
+            "c3.2-antibody"
+          ]
+        },
+        {
+          "id": "C3.2-2-q03",
+          "type": "order",
+          "prompt": "Put the steps of antibody production in order.",
+          "items": [
+            "A pathogen's antigen binds to a specific B-lymphocyte",
+            "A helper T-lymphocyte with the same specificity binds the antigen",
+            "The helper T-lymphocyte activates the B-lymphocyte",
+            "The activated B-lymphocyte divides by mitosis to form a clone",
+            "Clone cells become plasma cells that secrete antibodies, and memory cells"
+          ],
+          "explanation": "Only B-lymphocytes that are specific to the antigen and activated by a helper T-lymphocyte multiply, so large numbers of the right antibody are produced.",
+          "terms": [
+            "c3.2-lymphocyte",
+            "c3.2-plasma-cell",
+            "c3.2-memory-cell"
+          ]
+        },
+        {
+          "id": "C3.2-2-q04",
+          "type": "tf",
+          "statement": "Each B-lymphocyte can produce many different types of antibody.",
+          "answer": false,
+          "explanation": "Each B-lymphocyte produces just one type of antibody; that is why a specific B-lymphocyte must be selected and cloned for each antigen.",
+          "terms": [
+            "c3.2-lymphocyte",
+            "c3.2-antibody"
+          ]
+        },
+        {
+          "id": "C3.2-2-q05",
+          "type": "fill",
+          "text": "Antibody-secreting cells formed by division of activated B-lymphocytes are called ___ cells.",
+          "answer": "plasma",
+          "bank": [
+            "plasma",
+            "memory",
+            "helper T",
+            "phagocytic"
+          ],
+          "explanation": "Plasma cells have extensive rough ER to secrete large quantities of a single antibody. Memory cells are long-lived but do not secrete antibodies until reactivated.",
+          "terms": [
+            "c3.2-plasma-cell"
+          ]
+        },
+        {
+          "id": "C3.2-2-q06",
+          "type": "mcq",
+          "prompt": "Why is a second infection by the same pathogen usually much milder?",
+          "options": [
+            "Memory cells retained from the first infection allow a faster, larger antibody response",
+            "Antibodies from the first infection remain in the blood for life",
+            "The pathogen cannot infect the same person twice",
+            "Phagocytes become specific to that pathogen"
+          ],
+          "answer": 0,
+          "explanation": "Immunity is due to memory cells: they rapidly divide to produce plasma cells, so the pathogen is destroyed before symptoms develop. Antibodies themselves do not persist for life.",
+          "terms": [
+            "c3.2-memory-cell"
+          ]
+        },
+        {
+          "id": "C3.2-2-q07",
+          "type": "tf",
+          "statement": "HIV is transmitted in body fluids, such as blood, semen and vaginal fluids, but not by casual contact.",
+          "answer": true,
+          "explanation": "HIV is transmitted through sexual intercourse, shared needles, blood transfusion and from mother to baby, but not by touching, sneezing or sharing cups.",
+          "terms": [
+            "c3.2-hiv"
+          ]
+        },
+        {
+          "id": "C3.2-2-q08",
+          "type": "mcq",
+          "prompt": "Why does infection with HIV lead to AIDS?",
+          "options": [
+            "HIV destroys red blood cells, causing anaemia",
+            "HIV makes bacteria resistant to antibiotics",
+            "HIV infects phagocytes only, so clotting fails",
+            "HIV destroys helper T-lymphocytes, so fewer antibodies are produced and opportunistic infections take hold"
+          ],
+          "answer": 3,
+          "explanation": "As helper T-lymphocytes are lost, B-lymphocytes are not activated, antibody production falls, and infections that are normally controlled cause disease.",
+          "terms": [
+            "c3.2-hiv",
+            "c3.2-lymphocyte"
+          ]
+        },
+        {
+          "id": "C3.2-2-q09",
+          "type": "match",
+          "prompt": "Match each component of adaptive immunity to its role.",
+          "pairs": [
+            {
+              "left": "Helper T-lymphocyte",
+              "right": "Activates specific B-lymphocytes"
+            },
+            {
+              "left": "Plasma cell",
+              "right": "Secretes large amounts of one antibody"
+            },
+            {
+              "left": "Memory cell",
+              "right": "Long-lived cell giving a faster response on reinfection"
+            },
+            {
+              "left": "Antigen",
+              "right": "Molecule that triggers antibody production"
+            }
+          ],
+          "explanation": "Lymphocytes cooperate: helper T-cells activate B-cells, which clone into plasma cells and memory cells specific to the antigen.",
+          "terms": [
+            "c3.2-lymphocyte",
+            "c3.2-plasma-cell",
+            "c3.2-memory-cell",
+            "c3.2-antigen"
+          ]
+        },
+        {
+          "id": "C3.2-2-q10",
+          "type": "fill",
+          "text": "AIDS stands for acquired immunodeficiency ___.",
+          "answer": "syndrome",
+          "bank": [
+            "syndrome",
+            "system",
+            "strain",
+            "sickness"
+          ],
+          "explanation": "AIDS is a syndrome, a collection of diseases, that develops when HIV has destroyed so many helper T-lymphocytes that the immune system fails.",
+          "terms": [
+            "c3.2-hiv"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3.2-3",
+      "title": "Antibiotics, zoonoses and vaccines",
+      "hl": false,
+      "questions": [
+        {
+          "id": "C3.2-3-q01",
+          "type": "mcq",
+          "prompt": "Why are antibiotics ineffective against viruses?",
+          "options": [
+            "Viruses are too large to absorb antibiotics",
+            "Viruses lack their own metabolism and use host cell processes, which antibiotics do not target",
+            "Viruses have thicker cell walls than bacteria",
+            "Viruses break down antibiotics with enzymes"
+          ],
+          "answer": 1,
+          "explanation": "Antibiotics block processes specific to bacteria, such as cell wall synthesis. Viruses have no cell wall or metabolism of their own, so there is nothing for antibiotics to block.",
+          "terms": [
+            "c3.2-antibiotic"
+          ]
+        },
+        {
+          "id": "C3.2-3-q02",
+          "type": "tf",
+          "statement": "Antibiotics can be used in humans because they block processes that occur in bacteria but not in eukaryotic cells.",
+          "answer": true,
+          "explanation": "Targets such as the bacterial cell wall or 70S ribosomes are absent or different in human cells, so bacteria are affected and human cells are not.",
+          "terms": [
+            "c3.2-antibiotic"
+          ]
+        },
+        {
+          "id": "C3.2-3-q03",
+          "type": "order",
+          "prompt": "Put the steps in the evolution of antibiotic resistance in order.",
+          "items": [
+            "A few bacteria have a resistance gene due to random mutation",
+            "The antibiotic kills susceptible bacteria",
+            "Resistant bacteria survive and reproduce",
+            "The resistance gene is passed on to offspring",
+            "The proportion of resistant bacteria in the population increases"
+          ],
+          "explanation": "This is natural selection: the antibiotic does not cause the mutation, it selects bacteria that already have it. Multiresistant strains arise this way.",
+          "terms": [
+            "c3.2-antibiotic"
+          ]
+        },
+        {
+          "id": "C3.2-3-q04",
+          "type": "mcq",
+          "prompt": "Which practice increases the spread of antibiotic resistance?",
+          "options": [
+            "Completing the full course of antibiotics",
+            "Developing new antibiotics",
+            "Prescribing antibiotics for viral infections such as colds",
+            "Washing hands in hospitals"
+          ],
+          "answer": 2,
+          "explanation": "Unnecessary antibiotic use, including for viral infections and in livestock feed, increases selection pressure for resistant bacteria without any benefit.",
+          "terms": [
+            "c3.2-antibiotic"
+          ]
+        },
+        {
+          "id": "C3.2-3-q05",
+          "type": "fill",
+          "text": "An infectious disease that can transfer to humans from other animal species is called a ___.",
+          "answer": "zoonosis",
+          "accept": [
+            "zoonotic disease"
+          ],
+          "bank": [
+            "zoonosis",
+            "pandemic",
+            "vaccine",
+            "antigen"
+          ],
+          "explanation": "Zoonoses include tuberculosis, rabies and Japanese encephalitis. Most new infectious diseases in humans are zoonoses.",
+          "terms": [
+            "c3.2-zoonosis"
+          ]
+        },
+        {
+          "id": "C3.2-3-q06",
+          "type": "match",
+          "prompt": "Match each zoonosis to how it reaches humans.",
+          "pairs": [
+            {
+              "left": "Rabies",
+              "right": "Bite from an infected mammal such as a dog"
+            },
+            {
+              "left": "Bovine tuberculosis",
+              "right": "Infected cattle, e.g. unpasteurised milk"
+            },
+            {
+              "left": "Japanese encephalitis",
+              "right": "Mosquito bite carrying virus from pigs or birds"
+            }
+          ],
+          "explanation": "Each pathogen normally infects another species and crosses to humans by a particular route, which shows how these diseases can be controlled.",
+          "terms": [
+            "c3.2-zoonosis"
+          ]
+        },
+        {
+          "id": "C3.2-3-q07",
+          "type": "mcq",
+          "prompt": "What do vaccines contain?",
+          "options": [
+            "Antigens, or DNA or mRNA with sequences coding for antigens",
+            "Antibodies taken from another person",
+            "Antibiotics that kill the pathogen",
+            "Memory cells from a recovered patient"
+          ],
+          "answer": 0,
+          "explanation": "Vaccines provide antigens (or the code to make them) so the body makes plasma cells and memory cells without suffering the disease.",
+          "terms": [
+            "c3.2-vaccine",
+            "c3.2-antigen"
+          ]
+        },
+        {
+          "id": "C3.2-3-q08",
+          "type": "tf",
+          "statement": "mRNA vaccines contain the whole live pathogen.",
+          "answer": false,
+          "explanation": "mRNA vaccines contain only mRNA coding for an antigen; body cells translate it to make the antigen, which triggers an immune response.",
+          "terms": [
+            "c3.2-vaccine"
+          ]
+        },
+        {
+          "id": "C3.2-3-q09",
+          "type": "mcq",
+          "prompt": "How does herd immunity protect people who are not vaccinated?",
+          "options": [
+            "Vaccinated people pass antibodies to unvaccinated people",
+            "The pathogen mutates and becomes harmless",
+            "Unvaccinated people develop memory cells by contact",
+            "When most people are immune, transmission chains are broken, so the pathogen rarely reaches susceptible people"
+          ],
+          "answer": 3,
+          "explanation": "If a high enough proportion of the population is immune, each infected person passes the pathogen on to fewer than one other person, so epidemics cannot spread.",
+          "terms": [
+            "c3.2-herd-immunity",
+            "c3.2-vaccine"
+          ]
+        },
+        {
+          "id": "C3.2-3-q10",
+          "type": "mcq",
+          "prompt": "In one region during the COVID-19 pandemic, there were 2000 confirmed cases and 50 deaths. What is the case fatality rate?",
+          "options": [
+            "0.025%",
+            "25%",
+            "2.5%",
+            "40%"
+          ],
+          "answer": 2,
+          "explanation": "Case fatality rate = deaths ÷ confirmed cases × 100 = 50 ÷ 2000 × 100 = 2.5%. Undetected cases mean the true fatality rate per infection is usually lower.",
+          "terms": [
+            "c3.2-pathogen"
+          ]
+        }
+      ]
+    }
+  ]
+}

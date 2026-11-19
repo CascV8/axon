@@ -1,0 +1,605 @@
+{
+  "id": "A4.2",
+  "code": "A4.2",
+  "unit": "A",
+  "title": "Conservation of biodiversity",
+  "level": "SL",
+  "summary": "The forms biodiversity takes, the evidence that human activity is driving a biodiversity crisis, and the range of approaches used to conserve species and ecosystems.",
+  "keyterms": [
+    {
+      "id": "a4.2-biodiversity",
+      "term": "Biodiversity",
+      "definition": "The variety of life in all its forms, including ecosystem diversity, species diversity and genetic diversity.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-ecosystem-diversity",
+      "term": "Ecosystem diversity",
+      "definition": "The variety of different ecosystems or habitats in an area.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-species-diversity",
+      "term": "Species diversity",
+      "definition": "The variety of species in an area, taking into account both the number of species and their relative abundance.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-genetic-diversity",
+      "term": "Genetic diversity",
+      "definition": "The variety of alleles and genes within a species or population.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-mass-extinction",
+      "term": "Mass extinction",
+      "definition": "A geologically short period in which a large proportion of species become extinct; five have occurred in Earth's history.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-anthropogenic-extinction",
+      "term": "Anthropogenic extinction",
+      "definition": "Extinction caused by human activities, such as overhunting or habitat destruction, e.g. the moa and the Caribbean monk seal.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-ecosystem-loss",
+      "term": "Ecosystem loss",
+      "definition": "Destruction or conversion of a whole ecosystem, e.g. clearing of mixed dipterocarp forest in Southeast Asia for plantations.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-overexploitation",
+      "term": "Overexploitation",
+      "definition": "Harvesting of a species by hunting, fishing or collecting faster than it can reproduce to replace losses.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-invasive-species",
+      "term": "Invasive alien species",
+      "definition": "A species introduced by humans to an area outside its natural range that spreads and harms native species or ecosystems.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-in-situ",
+      "term": "In situ conservation",
+      "definition": "Conservation of species in their natural habitat, e.g. by establishing and managing nature reserves.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-ex-situ",
+      "term": "Ex situ conservation",
+      "definition": "Conservation of species outside their natural habitat, e.g. in zoos, botanic gardens or seed banks.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-rewilding",
+      "term": "Rewilding",
+      "definition": "Restoring natural ecosystem processes, e.g. by reintroducing species such as apex predators and reducing human management.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-edge",
+      "term": "EDGE species",
+      "definition": "Evolutionarily Distinct and Globally Endangered: species with few close relatives that are at high risk of extinction, prioritised for conservation.",
+      "hl": false
+    },
+    {
+      "id": "a4.2-citizen-science",
+      "term": "Citizen science",
+      "definition": "Collection of scientific data by members of the public, e.g. species surveys that provide evidence of changes in biodiversity.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "A4.2-1",
+      "title": "Biodiversity and the crisis",
+      "hl": false,
+      "questions": [
+        {
+          "id": "A4.2-1-q01",
+          "type": "match",
+          "prompt": "Match each form of biodiversity to its description.",
+          "pairs": [
+            {
+              "left": "Ecosystem diversity",
+              "right": "Variety of habitats in an area"
+            },
+            {
+              "left": "Species diversity",
+              "right": "Variety of species and their abundance"
+            },
+            {
+              "left": "Genetic diversity",
+              "right": "Variety of alleles within a species"
+            }
+          ],
+          "explanation": "Biodiversity exists at three levels; conservation must protect all of them.",
+          "terms": [
+            "a4.2-ecosystem-diversity",
+            "a4.2-species-diversity",
+            "a4.2-genetic-diversity"
+          ]
+        },
+        {
+          "id": "A4.2-1-q02",
+          "type": "tf",
+          "statement": "Genetic diversity within a species is part of biodiversity.",
+          "answer": true,
+          "explanation": "Biodiversity includes genetic diversity. Populations with high genetic diversity are better able to adapt to changes such as new diseases.",
+          "terms": [
+            "a4.2-genetic-diversity",
+            "a4.2-biodiversity"
+          ]
+        },
+        {
+          "id": "A4.2-1-q03",
+          "type": "mcq",
+          "prompt": "How many mass extinctions are recognised in Earth's history before the present?",
+          "options": [
+            "One",
+            "Three",
+            "Five",
+            "Ten"
+          ],
+          "answer": 2,
+          "explanation": "Five mass extinctions are recognised in the fossil record. Many scientists consider human activity to be causing a sixth.",
+          "terms": [
+            "a4.2-mass-extinction"
+          ]
+        },
+        {
+          "id": "A4.2-1-q04",
+          "type": "fill",
+          "text": "Extinction caused by human activities is described as ___ extinction.",
+          "answer": "anthropogenic",
+          "bank": [
+            "anthropogenic",
+            "natural",
+            "background",
+            "mass"
+          ],
+          "explanation": "Anthropogenic means caused by humans. Current extinction rates are far above the natural background rate.",
+          "terms": [
+            "a4.2-anthropogenic-extinction"
+          ]
+        },
+        {
+          "id": "A4.2-1-q05",
+          "type": "mcq",
+          "prompt": "Which is valid evidence for a biodiversity crisis?",
+          "options": [
+            "One person reports seeing fewer birds in a garden",
+            "Repeated, large-scale surveys by scientists and citizen scientists showing declines in population sizes and ranges of many species",
+            "Some species have been newly described",
+            "Fossils show that extinctions occurred in the past"
+          ],
+          "answer": 1,
+          "explanation": "Reliable evidence comes from systematic, repeated surveys over large areas, including citizen science, and assessments by expert bodies, showing widespread declines.",
+          "terms": [
+            "a4.2-citizen-science",
+            "a4.2-biodiversity"
+          ]
+        },
+        {
+          "id": "A4.2-1-q06",
+          "type": "tf",
+          "statement": "Citizen science cannot contribute useful data on biodiversity because it is collected by non-specialists.",
+          "answer": false,
+          "explanation": "Large numbers of volunteers can survey wide areas over many years. With clear protocols and verification, citizen science provides valuable evidence of change.",
+          "terms": [
+            "a4.2-citizen-science"
+          ]
+        },
+        {
+          "id": "A4.2-1-q07",
+          "type": "mcq",
+          "prompt": "Which statement about the current number of species compared with the past is correct?",
+          "options": [
+            "The number of species on Earth has never been higher than now and is still increasing rapidly",
+            "The number of species has been constant throughout Earth's history",
+            "Biodiversity was low before humans and humans have increased it",
+            "Overall biodiversity has increased over geological time, but human activity is now causing extinction rates far above background rates"
+          ],
+          "answer": 3,
+          "explanation": "Despite setbacks from mass extinctions, life diversified over time. Today extinctions are occurring much faster than the background rate, leading to concern about a sixth mass extinction.",
+          "terms": [
+            "a4.2-mass-extinction",
+            "a4.2-anthropogenic-extinction"
+          ]
+        },
+        {
+          "id": "A4.2-1-q08",
+          "type": "fill",
+          "text": "The variety of life including ecosystems, species and genes is called ___.",
+          "answer": "biodiversity",
+          "bank": [
+            "biodiversity",
+            "evolution",
+            "abundance",
+            "productivity"
+          ],
+          "explanation": "Biodiversity is short for biological diversity and covers all three levels.",
+          "terms": [
+            "a4.2-biodiversity"
+          ]
+        },
+        {
+          "id": "A4.2-1-q09",
+          "type": "mcq",
+          "prompt": "Why is species diversity not simply the number of species in an area?",
+          "options": [
+            "It also considers the relative abundance of each species",
+            "It only counts endangered species",
+            "It counts the number of individuals of the commonest species",
+            "It ignores rare species"
+          ],
+          "answer": 0,
+          "explanation": "Two areas with the same number of species can differ in diversity if one is dominated by a single species, so evenness (relative abundance) matters too.",
+          "terms": [
+            "a4.2-species-diversity"
+          ]
+        },
+        {
+          "id": "A4.2-1-q10",
+          "type": "order",
+          "prompt": "Order the levels of biodiversity from the broadest to the narrowest.",
+          "items": [
+            "Ecosystem diversity",
+            "Species diversity",
+            "Genetic diversity"
+          ],
+          "explanation": "Ecosystems contain many species, and each species contains genetic variation among its individuals.",
+          "terms": [
+            "a4.2-ecosystem-diversity",
+            "a4.2-species-diversity",
+            "a4.2-genetic-diversity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4.2-2",
+      "title": "Causes of extinction and ecosystem loss",
+      "hl": false,
+      "questions": [
+        {
+          "id": "A4.2-2-q01",
+          "type": "mcq",
+          "prompt": "What was the main cause of the extinction of the moa in New Zealand?",
+          "options": [
+            "Climate change at the end of the last ice age",
+            "An introduced disease from Europe",
+            "Competition with introduced mammals",
+            "Overhunting by humans after they settled New Zealand"
+          ],
+          "answer": 3,
+          "explanation": "Moa were large flightless birds that had evolved without mammalian predators. They were hunted to extinction within a few centuries of human settlement.",
+          "terms": [
+            "a4.2-anthropogenic-extinction",
+            "a4.2-overexploitation"
+          ]
+        },
+        {
+          "id": "A4.2-2-q02",
+          "type": "tf",
+          "statement": "The Caribbean monk seal became extinct mainly because of hunting by humans.",
+          "answer": true,
+          "explanation": "It was hunted for its oil and skin and affected by overfishing of its prey; it has not been seen since the 1950s and was declared extinct in 2008.",
+          "terms": [
+            "a4.2-anthropogenic-extinction",
+            "a4.2-overexploitation"
+          ]
+        },
+        {
+          "id": "A4.2-2-q03",
+          "type": "mcq",
+          "prompt": "Which is the main cause of loss of mixed dipterocarp forest in Southeast Asia?",
+          "options": [
+            "Logging and conversion of land to plantations such as oil palm",
+            "Volcanic eruptions",
+            "Invasion by grazing deer",
+            "Natural fires caused by lightning"
+          ],
+          "answer": 0,
+          "explanation": "These tropical forests (e.g. in Borneo) have been cleared for timber and to grow crops such as oil palm, destroying the whole ecosystem.",
+          "terms": [
+            "a4.2-ecosystem-loss"
+          ]
+        },
+        {
+          "id": "A4.2-2-q04",
+          "type": "fill",
+          "text": "Hunting or fishing a species faster than it can reproduce is called ___.",
+          "answer": "overexploitation",
+          "bank": [
+            "overexploitation",
+            "eutrophication",
+            "rewilding",
+            "conservation"
+          ],
+          "explanation": "Overexploitation reduces populations below the level that can be sustained, and can lead to extinction.",
+          "terms": [
+            "a4.2-overexploitation"
+          ]
+        },
+        {
+          "id": "A4.2-2-q05",
+          "type": "match",
+          "prompt": "Match each cause of the biodiversity crisis to an example.",
+          "pairs": [
+            {
+              "left": "Overexploitation",
+              "right": "Overfishing of cod"
+            },
+            {
+              "left": "Land conversion",
+              "right": "Forest cleared for oil palm plantations"
+            },
+            {
+              "left": "Invasive alien species",
+              "right": "Introduced rats eating eggs of island birds"
+            },
+            {
+              "left": "Pollution",
+              "right": "Pesticides and plastics harming wildlife"
+            }
+          ],
+          "explanation": "These causes, along with climate change, urbanization and human population growth, drive the current biodiversity crisis.",
+          "terms": [
+            "a4.2-overexploitation",
+            "a4.2-ecosystem-loss",
+            "a4.2-invasive-species"
+          ]
+        },
+        {
+          "id": "A4.2-2-q06",
+          "type": "tf",
+          "statement": "An invasive alien species is any species that is native to an area but has increased in number.",
+          "answer": false,
+          "explanation": "Invasive alien species are introduced by humans from outside their natural range and spread to harm native species, e.g. by predation or competition.",
+          "terms": [
+            "a4.2-invasive-species"
+          ]
+        },
+        {
+          "id": "A4.2-2-q07",
+          "type": "mcq",
+          "prompt": "Why were island species such as the moa especially vulnerable to extinction after humans arrived?",
+          "options": [
+            "They reproduced very quickly",
+            "They had evolved without mammalian predators, so had few defences and often reproduced slowly",
+            "They lived in very large populations across many continents",
+            "They were able to fly away from danger"
+          ],
+          "answer": 1,
+          "explanation": "Isolated island species are often flightless, unafraid of predators and slow-breeding, with small ranges, so hunting or introduced predators quickly wipe them out.",
+          "terms": [
+            "a4.2-anthropogenic-extinction"
+          ]
+        },
+        {
+          "id": "A4.2-2-q08",
+          "type": "fill",
+          "text": "Species introduced outside their natural range that harm native species are called ___ alien species.",
+          "answer": "invasive",
+          "bank": [
+            "invasive",
+            "endemic",
+            "keystone",
+            "native"
+          ],
+          "explanation": "Globalisation of trade and travel has spread many invasive species and diseases worldwide.",
+          "terms": [
+            "a4.2-invasive-species"
+          ]
+        },
+        {
+          "id": "A4.2-2-q09",
+          "type": "mcq",
+          "prompt": "Which underlying factor increases most other causes of biodiversity loss?",
+          "options": [
+            "Growth of the human population and its demand for resources",
+            "Increasing numbers of nature reserves",
+            "Seed banking",
+            "Natural selection"
+          ],
+          "answer": 0,
+          "explanation": "A larger human population needs more land, food, water and energy, driving habitat loss, overexploitation, pollution and climate change.",
+          "terms": [
+            "a4.2-biodiversity"
+          ]
+        },
+        {
+          "id": "A4.2-2-q10",
+          "type": "order",
+          "prompt": "Order the chain of events in loss of a rainforest ecosystem.",
+          "items": [
+            "Demand for timber and palm oil increases",
+            "Forest is logged and cleared",
+            "Land is converted to plantations",
+            "Habitat for forest species is lost",
+            "Forest-dependent species decline or become extinct"
+          ],
+          "explanation": "Ecosystem loss removes the habitat many species depend on, so whole communities are lost together.",
+          "terms": [
+            "a4.2-ecosystem-loss"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4.2-3",
+      "title": "Conservation approaches",
+      "hl": false,
+      "questions": [
+        {
+          "id": "A4.2-3-q01",
+          "type": "mcq",
+          "prompt": "Which is an example of in situ conservation?",
+          "options": [
+            "Storing seeds in a seed bank",
+            "Breeding pandas in a zoo",
+            "Growing rare plants in a botanic garden",
+            "Setting up and managing a nature reserve in the species' natural habitat"
+          ],
+          "answer": 3,
+          "explanation": "In situ means 'in place': species are protected in their natural habitat. Zoos, botanic gardens and seed banks are ex situ.",
+          "terms": [
+            "a4.2-in-situ",
+            "a4.2-ex-situ"
+          ]
+        },
+        {
+          "id": "A4.2-3-q02",
+          "type": "fill",
+          "text": "Conserving species outside their natural habitat, for example in a zoo, is ___ conservation.",
+          "answer": "ex situ",
+          "accept": [
+            "ex-situ"
+          ],
+          "bank": [
+            "ex situ",
+            "in situ",
+            "rewilding",
+            "habitat"
+          ],
+          "explanation": "Ex situ conservation protects species from threats in the wild and can support captive breeding and reintroduction.",
+          "terms": [
+            "a4.2-ex-situ"
+          ]
+        },
+        {
+          "id": "A4.2-3-q03",
+          "type": "tf",
+          "statement": "Rewilding can involve reintroducing apex predators so that natural ecosystem processes are restored.",
+          "answer": true,
+          "explanation": "Rewilding aims to restore self-sustaining ecosystems, e.g. reintroducing wolves to control herbivore numbers, with minimal ongoing human management.",
+          "terms": [
+            "a4.2-rewilding"
+          ]
+        },
+        {
+          "id": "A4.2-3-q04",
+          "type": "match",
+          "prompt": "Match each conservation approach to an example.",
+          "pairs": [
+            {
+              "left": "In situ",
+              "right": "Protecting a rainforest as a national park"
+            },
+            {
+              "left": "Ex situ",
+              "right": "Storing seeds of crop wild relatives in a seed bank"
+            },
+            {
+              "left": "Rewilding",
+              "right": "Reintroducing beavers to restore wetlands"
+            }
+          ],
+          "explanation": "Several approaches are needed because no single method works for every species or ecosystem.",
+          "terms": [
+            "a4.2-in-situ",
+            "a4.2-ex-situ",
+            "a4.2-rewilding"
+          ]
+        },
+        {
+          "id": "A4.2-3-q05",
+          "type": "mcq",
+          "prompt": "Why is protecting habitats (in situ) generally preferred to ex situ conservation where possible?",
+          "options": [
+            "It requires no management",
+            "It conserves the species together with its ecosystem and interactions, and maintains natural behaviour and evolution",
+            "It guarantees the species will never go extinct",
+            "It allows unlimited hunting"
+          ],
+          "answer": 1,
+          "explanation": "In situ conservation protects whole communities. Ex situ is useful when wild populations are critically threatened, but captive populations may lose natural behaviours and genetic diversity.",
+          "terms": [
+            "a4.2-in-situ",
+            "a4.2-ex-situ"
+          ]
+        },
+        {
+          "id": "A4.2-3-q06",
+          "type": "mcq",
+          "prompt": "What does the EDGE of Existence approach prioritise?",
+          "options": [
+            "Species that are evolutionarily distinct, with few close relatives, and also globally endangered",
+            "Species that are most popular with the public",
+            "Species with the largest population sizes",
+            "Species that are economically valuable"
+          ],
+          "answer": 0,
+          "explanation": "Losing an evolutionarily distinct species loses a unique branch of the tree of life, so these species are prioritised when they are also highly threatened.",
+          "terms": [
+            "a4.2-edge"
+          ]
+        },
+        {
+          "id": "A4.2-3-q07",
+          "type": "tf",
+          "statement": "Conservation resources are unlimited, so there is no need to select which species to prioritise.",
+          "answer": false,
+          "explanation": "Funding and effort are limited, so approaches such as EDGE help decide which species to focus on.",
+          "terms": [
+            "a4.2-edge"
+          ]
+        },
+        {
+          "id": "A4.2-3-q08",
+          "type": "fill",
+          "text": "Restoring natural processes by reintroducing species and reducing human management is called ___.",
+          "answer": "rewilding",
+          "bank": [
+            "rewilding",
+            "reforestation",
+            "domestication",
+            "urbanization"
+          ],
+          "explanation": "Rewilding focuses on restoring ecosystem processes rather than managing individual species.",
+          "terms": [
+            "a4.2-rewilding"
+          ]
+        },
+        {
+          "id": "A4.2-3-q09",
+          "type": "mcq",
+          "prompt": "Why are several different approaches needed to conserve biodiversity?",
+          "options": [
+            "Because each approach works for every species",
+            "Because only zoos are effective",
+            "Because threats and species' needs differ, and approaches complement each other",
+            "Because in situ conservation is illegal in many countries"
+          ],
+          "answer": 2,
+          "explanation": "Some species need habitat protection, others captive breeding or seed banking, and degraded ecosystems may need rewilding; combining methods gives the best outcome.",
+          "terms": [
+            "a4.2-in-situ",
+            "a4.2-ex-situ",
+            "a4.2-rewilding"
+          ]
+        },
+        {
+          "id": "A4.2-3-q10",
+          "type": "mcq",
+          "prompt": "What is a key advantage of a seed bank for plant conservation?",
+          "options": [
+            "Seeds stored there continue to evolve with their environment",
+            "It replaces the need to protect habitats",
+            "Seeds are released into the wild every year",
+            "Large numbers of seeds of many species can be stored for long periods in a small space at low temperature"
+          ],
+          "answer": 3,
+          "explanation": "Dried, cold-stored seeds stay viable for decades, preserving genetic diversity as insurance against extinction in the wild. However, stored seeds do not evolve.",
+          "terms": [
+            "a4.2-ex-situ",
+            "a4.2-genetic-diversity"
+          ]
+        }
+      ]
+    }
+  ]
+}

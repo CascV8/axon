@@ -1,0 +1,613 @@
+{
+  "id": "D2.3",
+  "code": "D2.3",
+  "unit": "D",
+  "title": "Water potential",
+  "level": "SL",
+  "summary": "How water dissolves substances and moves into and out of cells by osmosis, what happens to cells with and without walls in different solutions, and how water potential predicts water movement.",
+  "keyterms": [
+    {
+      "id": "d2.3-solvation",
+      "term": "Solvation",
+      "definition": "Dissolving of a substance as polar water molecules surround its ions or polar molecules, attracted by their partial charges.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-hydrophilic",
+      "term": "Hydrophilic",
+      "definition": "Describes polar or charged substances that are attracted to water and dissolve readily in it; non-polar substances are hydrophobic.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-osmosis",
+      "term": "Osmosis",
+      "definition": "Net movement of water across a partially permeable membrane from a region of lower solute concentration to higher solute concentration.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-osmolarity",
+      "term": "Osmolarity",
+      "definition": "Total concentration of osmotically active solute particles in a solution, e.g. in osmol dm⁻³.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-hypotonic",
+      "term": "Hypotonic",
+      "definition": "Having a lower osmolarity than another solution or the cell contents, so water enters the cell by osmosis.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-hypertonic",
+      "term": "Hypertonic",
+      "definition": "Having a higher osmolarity than another solution or the cell contents, so water leaves the cell by osmosis.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-isotonic",
+      "term": "Isotonic",
+      "definition": "Having the same osmolarity as another solution or the cell contents, so there is no net movement of water.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-turgor-pressure",
+      "term": "Turgor pressure",
+      "definition": "Pressure of the cell contents pushing outwards against the cell wall when a walled cell takes in water; makes cells turgid.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-plasmolysis",
+      "term": "Plasmolysis",
+      "definition": "Shrinking of the cytoplasm and pulling of the plasma membrane away from the cell wall when a plant cell loses water in a hypertonic solution.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-contractile-vacuole",
+      "term": "Contractile vacuole",
+      "definition": "Organelle in freshwater unicellular organisms such as Paramecium that collects water entering by osmosis and expels it, using energy.",
+      "hl": false
+    },
+    {
+      "id": "d2.3-water-potential",
+      "term": "Water potential (ψw)",
+      "definition": "Potential energy of water per unit volume, in kPa; pure water at atmospheric pressure is 0, and water moves from higher to lower ψw.",
+      "hl": true
+    },
+    {
+      "id": "d2.3-solute-potential",
+      "term": "Solute potential (ψs)",
+      "definition": "Component of water potential due to dissolved solutes; it is zero for pure water and becomes more negative as solute concentration rises.",
+      "hl": true
+    },
+    {
+      "id": "d2.3-pressure-potential",
+      "term": "Pressure potential (ψp)",
+      "definition": "Component of water potential due to pressure; positive in turgid cells, zero in plasmolysed cells, negative under tension in xylem.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "D2.3-1",
+      "title": "Solvation and osmosis",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D2.3-1-q01",
+          "type": "mcq",
+          "prompt": "Why does sodium chloride dissolve in water?",
+          "options": [
+            "Water molecules form covalent bonds with the sodium and chloride ions",
+            "The ions fit into gaps between water molecules without interacting with them",
+            "Polar water molecules surround each ion, attracted by opposite partial charges",
+            "Hydrophobic interactions pull the ions apart"
+          ],
+          "answer": 2,
+          "explanation": "The δ− oxygen of water is attracted to Na⁺ and the δ+ hydrogens to Cl⁻, so each ion becomes surrounded by water molecules (solvation). No covalent bonds form.",
+          "terms": [
+            "d2.3-solvation",
+            "d2.3-hydrophilic"
+          ]
+        },
+        {
+          "id": "D2.3-1-q02",
+          "type": "fill",
+          "text": "Substances that dissolve readily in water because they are polar or charged are described as ___.",
+          "answer": "hydrophilic",
+          "bank": [
+            "hydrophilic",
+            "hydrophobic",
+            "amphipathic",
+            "non-polar"
+          ],
+          "explanation": "Hydrophilic means 'water-loving': such substances can form attractions or hydrogen bonds with water. Non-polar, hydrophobic substances such as lipids do not dissolve.",
+          "terms": [
+            "d2.3-hydrophilic"
+          ]
+        },
+        {
+          "id": "D2.3-1-q03",
+          "type": "tf",
+          "statement": "Osmosis is the net movement of water from a region of higher solute concentration to a region of lower solute concentration.",
+          "answer": false,
+          "explanation": "Water moves the other way: from the less concentrated solution (lower solute concentration) to the more concentrated one, across a partially permeable membrane.",
+          "terms": [
+            "d2.3-osmosis"
+          ]
+        },
+        {
+          "id": "D2.3-1-q04",
+          "type": "match",
+          "prompt": "Match each term to its meaning, relative to the cell contents.",
+          "pairs": [
+            {
+              "left": "Hypotonic solution",
+              "right": "Lower solute concentration than the cell"
+            },
+            {
+              "left": "Hypertonic solution",
+              "right": "Higher solute concentration than the cell"
+            },
+            {
+              "left": "Isotonic solution",
+              "right": "Same solute concentration as the cell"
+            },
+            {
+              "left": "Osmolarity",
+              "right": "Total concentration of solute particles"
+            }
+          ],
+          "explanation": "These terms always compare two solutions; water moves by osmosis from the hypotonic towards the hypertonic one, and there is no net movement between isotonic solutions.",
+          "terms": [
+            "d2.3-hypotonic",
+            "d2.3-hypertonic",
+            "d2.3-isotonic",
+            "d2.3-osmolarity"
+          ]
+        },
+        {
+          "id": "D2.3-1-q05",
+          "type": "mcq",
+          "prompt": "Dialysis (Visking) tubing containing sucrose solution is placed in pure water. What happens to the mass of the tubing?",
+          "options": [
+            "It increases, because water enters by osmosis",
+            "It decreases, because sucrose diffuses out",
+            "It decreases, because water leaves by osmosis",
+            "It stays the same, because the membrane is partially permeable"
+          ],
+          "answer": 0,
+          "explanation": "Sucrose is too large to cross the membrane, but water can, so water moves into the more concentrated solution inside the tubing and its mass rises.",
+          "terms": [
+            "d2.3-osmosis"
+          ]
+        },
+        {
+          "id": "D2.3-1-q06",
+          "type": "fill",
+          "text": "The total concentration of osmotically active solute particles in a solution is its ___.",
+          "answer": "osmolarity",
+          "bank": [
+            "osmolarity",
+            "viscosity",
+            "polarity",
+            "density"
+          ],
+          "explanation": "Osmolarity counts all solute particles, so 1 mol of NaCl (which splits into two ions) has about twice the osmotic effect of 1 mol of glucose.",
+          "terms": [
+            "d2.3-osmolarity"
+          ]
+        },
+        {
+          "id": "D2.3-1-q07",
+          "type": "order",
+          "prompt": "Put the steps of an experiment to estimate the osmolarity of potato tissue in order.",
+          "items": [
+            "Cut equal-sized potato cylinders and record their initial mass",
+            "Place cylinders in a range of sucrose concentrations",
+            "Leave for a fixed time at constant temperature",
+            "Blot dry and record the final mass",
+            "Plot percentage change in mass against concentration"
+          ],
+          "explanation": "Controlling size, time and temperature makes the results comparable; the graph's intercept with zero mass change then gives the tissue's osmolarity.",
+          "terms": [
+            "d2.3-osmosis",
+            "d2.3-osmolarity"
+          ]
+        },
+        {
+          "id": "D2.3-1-q08",
+          "type": "mcq",
+          "prompt": "In a potato experiment, the graph crosses zero percentage mass change at 0.3 mol dm⁻³ sucrose. What does this indicate?",
+          "options": [
+            "The potato cells are dead at this concentration",
+            "Sucrose enters the potato cells at this concentration",
+            "Water moves into the tissue fastest at this concentration",
+            "The tissue is isotonic with 0.3 mol dm⁻³ sucrose, so there is no net osmosis"
+          ],
+          "answer": 3,
+          "explanation": "No mass change means water is entering and leaving at equal rates, so the cells' solute concentration matches the solution. Below this the tissue gains mass; above it, it loses mass.",
+          "terms": [
+            "d2.3-isotonic",
+            "d2.3-osmolarity"
+          ]
+        },
+        {
+          "id": "D2.3-1-q09",
+          "type": "tf",
+          "statement": "Percentage change in mass, rather than absolute change, is used so that samples with different starting masses can be compared.",
+          "answer": true,
+          "explanation": "A large sample gains more mass than a small one in the same solution; converting to a percentage removes this effect of starting size.",
+          "terms": [
+            "d2.3-osmosis"
+          ]
+        },
+        {
+          "id": "D2.3-1-q10",
+          "type": "mcq",
+          "prompt": "Which of these substances is hydrophobic?",
+          "options": [
+            "Glucose",
+            "Triglyceride (fat)",
+            "Sodium chloride",
+            "Amino acids such as glycine"
+          ],
+          "answer": 1,
+          "explanation": "Triglycerides are made of non-polar hydrocarbon chains, so they cannot form attractions with water and do not dissolve. Glucose, ions and amino acids are polar or charged, so are hydrophilic.",
+          "terms": [
+            "d2.3-hydrophilic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D2.3-2",
+      "title": "Osmosis in cells",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D2.3-2-q01",
+          "type": "mcq",
+          "prompt": "What happens to a red blood cell placed in a hypotonic solution?",
+          "options": [
+            "It shrinks as water leaves by osmosis",
+            "It stays the same because the membrane is impermeable to water",
+            "It swells as water enters by osmosis and may burst",
+            "It becomes turgid like a plant cell"
+          ],
+          "answer": 2,
+          "explanation": "Water enters because the cell contents are more concentrated. With no cell wall to resist expansion, the membrane can rupture (lysis).",
+          "terms": [
+            "d2.3-hypotonic",
+            "d2.3-osmosis"
+          ]
+        },
+        {
+          "id": "D2.3-2-q02",
+          "type": "mcq",
+          "prompt": "A plant cell is placed in a concentrated sucrose solution. What happens?",
+          "options": [
+            "Water leaves the vacuole and cytoplasm, and the plasma membrane pulls away from the cell wall",
+            "The cell bursts",
+            "The cell wall shrinks along with the vacuole",
+            "Sucrose enters the cell and the cell becomes turgid"
+          ],
+          "answer": 0,
+          "explanation": "In a hypertonic solution water leaves by osmosis, the protoplast shrinks and the membrane separates from the rigid wall: plasmolysis. The wall itself barely changes.",
+          "terms": [
+            "d2.3-plasmolysis",
+            "d2.3-hypertonic"
+          ]
+        },
+        {
+          "id": "D2.3-2-q03",
+          "type": "tf",
+          "statement": "A plant cell placed in pure water will burst because water keeps entering by osmosis.",
+          "answer": false,
+          "explanation": "The strong cell wall resists expansion, so turgor pressure builds up until it prevents further net water entry. The cell becomes turgid, not burst.",
+          "terms": [
+            "d2.3-turgor-pressure"
+          ]
+        },
+        {
+          "id": "D2.3-2-q04",
+          "type": "fill",
+          "text": "The pressure of the cell contents pushing against the cell wall of a plant cell is called ___ pressure.",
+          "answer": "turgor",
+          "bank": [
+            "turgor",
+            "atmospheric",
+            "partial",
+            "blood"
+          ],
+          "explanation": "Turgor pressure develops as water enters a walled cell; it keeps non-woody plant tissues firm and supports leaves and stems.",
+          "terms": [
+            "d2.3-turgor-pressure"
+          ]
+        },
+        {
+          "id": "D2.3-2-q05",
+          "type": "match",
+          "prompt": "Match each cell and solution to the result.",
+          "pairs": [
+            {
+              "left": "Red blood cell in pure water",
+              "right": "Swells and may burst"
+            },
+            {
+              "left": "Red blood cell in concentrated salt solution",
+              "right": "Shrinks and becomes crenated"
+            },
+            {
+              "left": "Plant cell in pure water",
+              "right": "Becomes turgid"
+            },
+            {
+              "left": "Plant cell in concentrated sucrose",
+              "right": "Becomes plasmolysed"
+            }
+          ],
+          "explanation": "Without a wall, animal cells can burst or shrivel. A plant cell's wall prevents bursting, so it becomes turgid in water and plasmolysed in a hypertonic solution.",
+          "terms": [
+            "d2.3-hypotonic",
+            "d2.3-hypertonic",
+            "d2.3-plasmolysis",
+            "d2.3-turgor-pressure"
+          ]
+        },
+        {
+          "id": "D2.3-2-q06",
+          "type": "mcq",
+          "prompt": "Why do freshwater unicellular organisms such as Paramecium need contractile vacuoles?",
+          "options": [
+            "To store food absorbed from the water",
+            "To pump salts into the cell",
+            "To remove carbon dioxide produced in respiration",
+            "To expel water that continually enters by osmosis, preventing bursting"
+          ],
+          "answer": 3,
+          "explanation": "Fresh water is hypotonic to the cytoplasm and there is no cell wall, so water keeps entering. The contractile vacuole collects it and expels it, which requires energy.",
+          "terms": [
+            "d2.3-contractile-vacuole",
+            "d2.3-hypotonic"
+          ]
+        },
+        {
+          "id": "D2.3-2-q07",
+          "type": "tf",
+          "statement": "Normal saline used in intravenous drips is isotonic with blood plasma, so blood cells neither gain nor lose water.",
+          "answer": true,
+          "explanation": "Normal saline (about 0.9% NaCl) has the same osmolarity as plasma, so fluid can be given without causing red blood cells to swell, burst or shrink.",
+          "terms": [
+            "d2.3-isotonic"
+          ]
+        },
+        {
+          "id": "D2.3-2-q08",
+          "type": "fill",
+          "text": "Donor organs for transplantation are kept in an ___ solution to prevent their cells gaining or losing water.",
+          "answer": "isotonic",
+          "bank": [
+            "isotonic",
+            "hypotonic",
+            "hypertonic"
+          ],
+          "explanation": "An isotonic solution prevents net osmosis, so the organ's cells neither swell and burst nor shrink and become damaged before transplantation.",
+          "terms": [
+            "d2.3-isotonic"
+          ]
+        },
+        {
+          "id": "D2.3-2-q09",
+          "type": "order",
+          "prompt": "Put the events in order when a turgid plant cell is placed in a hypertonic solution.",
+          "items": [
+            "Water leaves the vacuole and cytoplasm by osmosis",
+            "Turgor pressure falls and the cell becomes flaccid",
+            "The protoplast continues to shrink",
+            "The plasma membrane pulls away from the cell wall"
+          ],
+          "explanation": "Loss of water first removes turgor (flaccid), and continued loss shrinks the protoplast until the membrane separates from the wall: plasmolysis.",
+          "terms": [
+            "d2.3-plasmolysis",
+            "d2.3-turgor-pressure"
+          ]
+        },
+        {
+          "id": "D2.3-2-q10",
+          "type": "mcq",
+          "prompt": "Why must the solute concentration of blood plasma be kept within narrow limits?",
+          "options": [
+            "Body cells lack walls, so they would swell and burst or shrink if plasma were not isotonic",
+            "Plasma solutes are needed to make cells turgid",
+            "Red blood cells use contractile vacuoles that work only in isotonic conditions",
+            "Osmosis can only occur in isotonic solutions"
+          ],
+          "answer": 0,
+          "explanation": "Animal cells cannot resist volume changes, so tissue fluid and plasma must stay roughly isotonic with cells to prevent damaging net water movement.",
+          "terms": [
+            "d2.3-isotonic",
+            "d2.3-osmosis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D2.3-3",
+      "title": "Water potential",
+      "hl": true,
+      "questions": [
+        {
+          "id": "D2.3-3-q01",
+          "type": "mcq",
+          "prompt": "What is the water potential of pure water at atmospheric pressure (and 20 °C)?",
+          "options": [
+            "101.3 kPa",
+            "−100 kPa",
+            "0 kPa",
+            "100 kPa"
+          ],
+          "answer": 2,
+          "explanation": "Pure water at atmospheric pressure is the reference point, defined as 0 kPa. Adding solutes lowers this, so solutions have negative water potentials.",
+          "terms": [
+            "d2.3-water-potential"
+          ]
+        },
+        {
+          "id": "D2.3-3-q02",
+          "type": "tf",
+          "statement": "Water moves from a region of lower (more negative) water potential to a region of higher water potential.",
+          "answer": false,
+          "explanation": "Water always moves from higher to lower water potential, down a potential energy gradient, e.g. from 0 kPa towards −500 kPa.",
+          "terms": [
+            "d2.3-water-potential"
+          ]
+        },
+        {
+          "id": "D2.3-3-q03",
+          "type": "fill",
+          "text": "In cells with walls, water potential is the sum of solute potential and ___ potential.",
+          "answer": "pressure",
+          "bank": [
+            "pressure",
+            "membrane",
+            "electrical",
+            "chemical"
+          ],
+          "explanation": "ψw = ψs + ψp. Solute potential lowers water potential, while positive pressure potential from the wall raises it.",
+          "terms": [
+            "d2.3-water-potential",
+            "d2.3-solute-potential",
+            "d2.3-pressure-potential"
+          ]
+        },
+        {
+          "id": "D2.3-3-q04",
+          "type": "mcq",
+          "prompt": "A plant cell has a solute potential of −700 kPa and a pressure potential of +300 kPa. What is its water potential?",
+          "options": [
+            "−1000 kPa",
+            "+400 kPa",
+            "−400 kPa",
+            "−300 kPa"
+          ],
+          "answer": 2,
+          "explanation": "ψw = ψs + ψp = −700 + 300 = −400 kPa. A common mistake is subtracting the pressure potential instead of adding it.",
+          "terms": [
+            "d2.3-water-potential",
+            "d2.3-solute-potential",
+            "d2.3-pressure-potential"
+          ]
+        },
+        {
+          "id": "D2.3-3-q05",
+          "type": "mcq",
+          "prompt": "Adjacent cells A (ψw = −300 kPa) and B (ψw = −500 kPa) are connected. In which direction does water move?",
+          "options": [
+            "From B to A",
+            "From A to B",
+            "No net movement, because both values are negative",
+            "In both directions equally"
+          ],
+          "answer": 1,
+          "explanation": "−300 kPa is higher (less negative) than −500 kPa, so net water movement is from A to B, down the water potential gradient.",
+          "terms": [
+            "d2.3-water-potential"
+          ]
+        },
+        {
+          "id": "D2.3-3-q06",
+          "type": "match",
+          "prompt": "Match each situation to its value.",
+          "pairs": [
+            {
+              "left": "Solute potential of any solution",
+              "right": "Zero or negative"
+            },
+            {
+              "left": "Pressure potential of a turgid cell",
+              "right": "Positive"
+            },
+            {
+              "left": "Pressure potential of xylem sap under tension",
+              "right": "Negative"
+            },
+            {
+              "left": "Water potential of pure water at atmospheric pressure",
+              "right": "Zero"
+            }
+          ],
+          "explanation": "Solutes can only lower water potential. Pressure potential is positive when contents push on a wall, but negative when water is pulled under tension, as in xylem.",
+          "terms": [
+            "d2.3-solute-potential",
+            "d2.3-pressure-potential",
+            "d2.3-water-potential"
+          ]
+        },
+        {
+          "id": "D2.3-3-q07",
+          "type": "tf",
+          "statement": "Adding solutes to water lowers its water potential, making it more negative.",
+          "answer": true,
+          "explanation": "Solute particles attract water molecules and reduce their freedom to move, lowering their potential energy, so solute potential and water potential fall below zero.",
+          "terms": [
+            "d2.3-solute-potential",
+            "d2.3-water-potential"
+          ]
+        },
+        {
+          "id": "D2.3-3-q08",
+          "type": "order",
+          "prompt": "Put the events in order when a flaccid plant cell is placed in pure water.",
+          "items": [
+            "Water potential outside (0 kPa) is higher than inside the cell",
+            "Water enters the cell by osmosis",
+            "The protoplast presses on the wall, so pressure potential rises",
+            "Cell water potential rises to 0 kPa and net water movement stops"
+          ],
+          "explanation": "Rising pressure potential raises the cell's water potential until it equals that of the surrounding water; with no gradient there is no net osmosis, and the cell is fully turgid.",
+          "terms": [
+            "d2.3-water-potential",
+            "d2.3-pressure-potential"
+          ]
+        },
+        {
+          "id": "D2.3-3-q09",
+          "type": "fill",
+          "text": "In a plasmolysed plant cell, the pressure potential is approximately ___.",
+          "answer": "zero",
+          "accept": [
+            "0",
+            "0 kPa"
+          ],
+          "bank": [
+            "zero",
+            "strongly positive",
+            "strongly negative"
+          ],
+          "explanation": "When the membrane has pulled away from the wall, the wall exerts no pressure on the protoplast, so ψp ≈ 0 and ψw ≈ ψs.",
+          "terms": [
+            "d2.3-pressure-potential",
+            "d2.3-plasmolysis"
+          ]
+        },
+        {
+          "id": "D2.3-3-q10",
+          "type": "mcq",
+          "prompt": "A plant cell with ψw = −400 kPa is placed in a solution with ψw = −800 kPa. What happens?",
+          "options": [
+            "Water enters the cell and pressure potential rises",
+            "Nothing, because the cell wall prevents water loss",
+            "Solutes leave the cell until the water potentials are equal",
+            "Water leaves the cell, pressure potential falls and the cell may plasmolyse"
+          ],
+          "answer": 3,
+          "explanation": "The solution has the lower water potential, so water moves out of the cell. Turgor is lost first and, if water loss continues, the protoplast pulls away from the wall.",
+          "terms": [
+            "d2.3-water-potential",
+            "d2.3-pressure-potential",
+            "d2.3-plasmolysis"
+          ]
+        }
+      ]
+    }
+  ]
+}
