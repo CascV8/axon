@@ -20,6 +20,10 @@ Free, gamified revision for IB Biology (syllabus first assessed in 2025). No acc
 - Grade calculator (weighted Paper 1, Paper 2 and IA → 1–7), a target finder, a diploma points calculator with pass conditions, grade boundaries from May 2024 to May 2026, and statistical bulletin figures
 - IA toolkit: self-assessment against the four criteria, a pre-submission checklist, and notes with a 3,000-word counter
 
+**Accounts**
+- Optional free account: email + password, cloud sync of all progress across devices, email confirmation and password reset (via Resend), log out, delete account
+- Guests can use everything; their progress comes with them when they sign up
+
 **Everything else**
 - Glossary with search, theme filter and mastery dots, plus the IB command terms
 - Profile: activity heatmap, per-topic accuracy, 20 badges, settings, and a JSON backup you can download and restore
@@ -29,12 +33,19 @@ Free, gamified revision for IB Biology (syllabus first assessed in 2025). No acc
 
 ```sh
 npm install
-npm run dev
-npm test                          # unit tests
-node scripts/validate-content.mjs # lesson content
-node scripts/validate-exam.mjs    # exam-style items
-npm run build                     # → dist/
+npm run dev        # front end only (accounts show as unavailable)
+npm run dev:full   # front end + API + local D1 via wrangler pages dev (http://localhost:8788)
+npm test           # unit tests + content validators
+npm run test:api -- http://localhost:8788   # end-to-end API check (creates and deletes a test account)
+npm run build      # → dist/
 ```
+
+## Backend (Cloudflare)
+
+- `functions/api/[[route]].js`: accounts and progress API (Pages Functions); helpers in `server/`
+- D1 database `axon` bound as `DB`; tables are created automatically, and `migrations/0001_init.sql` documents them
+- Pages variables: `APP_URL`, `EMAIL_FROM`; secret: `RESEND_API_KEY` (Pages → Settings → Variables and Secrets). Without the secret, email features stay hidden.
+- Passwords: PBKDF2-SHA256 (100k iterations, per-user salt). Sessions: random 256-bit tokens, stored hashed, HttpOnly + Secure + SameSite=Lax cookies. Writes from other origins are rejected, and logins and emails are rate-limited.
 
 Content lives in `src/content/topics/*.json` ([CONTENT_SCHEMA.md](CONTENT_SCHEMA.md)) and `src/content/exam/*.json` ([EXAM_SCHEMA.md](EXAM_SCHEMA.md)).
 

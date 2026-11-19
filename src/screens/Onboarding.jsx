@@ -1,9 +1,7 @@
-// First run: account (or guest) → courses → daily goal.
-import { useState } from 'react';
+// First run: account (or guest) → course & level → daily goal.
+import { useEffect, useState } from 'react';
 import { actions, getState } from '../lib/store.js';
 import { TOTALS } from '../content/index.js';
-import { courseById } from '../content/courses.js';
-import { accountsEnabled } from '../config.js';
 import { useAccount } from '../lib/sync.js';
 import { AuthForm } from '../components/AuthForm.jsx';
 import { CoursePicker } from '../components/CoursePicker.jsx';
@@ -14,50 +12,47 @@ const GOALS = [
   { xp: 50, label: 'Serious', sub: '~15 min a day' },
   { xp: 80, label: 'Intense', sub: '~25 min a day' },
 ];
-const STEPS = ['welcome', 'account', 'courses', 'goal'];
 
 export function Onboarding() {
   const account = useAccount();
   const [step, setStep] = useState('welcome');
   const [authMode, setAuthMode] = useState('signup');
-  const [courses, setCourses] = useState(() => getState().profile.courses ?? []);
+  const [courses, setCourses] = useState(() => getState().profile.courses?.length ? getState().profile.courses : [{ id: 'biology', level: 'HL' }]);
   const [goal, setGoal] = useState(30);
   const [name, setName] = useState('');
-  const [courseError, setCourseError] = useState('');
 
-  const visibleSteps = accountsEnabled ? STEPS : STEPS.filter((s) => s !== 'account');
-  const idx = visibleSteps.indexOf(step);
-  const back = () => setStep(visibleSteps[Math.max(0, idx - 1)]);
+  const steps = account.available ? ['welcome', 'account', 'courses', 'goal'] : ['welcome', 'courses', 'goal'];
+  const idx = Math.max(0, steps.indexOf(step));
+  const back = () => setStep(steps[Math.max(0, idx - 1)]);
+
+  // Signed in from the account step → move on automatically.
+  useEffect(() => {
+    if (step === 'account' && account.user && account.sync !== 'syncing') setStep('courses');
+  }, [step, account.user, account.sync]);
 
   const finish = () => {
     actions.setProfile({ courses, activeCourse: 'biology', dailyGoal: goal, name: name || getState().profile.name, onboarded: true });
     window.location.hash = '#/learn';
   };
 
-  const nextFromCourses = () => {
-    if (!courses.some((c) => courseById.get(c.id)?.available)) {
-      setCourseError('Axon has Biology ready today. Add it to start learning; we\'ll save your other courses for when they launch.');
-      return;
-    }
-    setStep('goal');
-  };
-
   return (
     <div className="onboarding">
-      <div className={`onb-card ${step === 'courses' ? 'wide' : ''}`}>
-        <div className="onb-steps" aria-hidden="true">{visibleSteps.map((s, i) => <span key={s} className={i <= idx ? 'on' : ''} />)}</div>
+      <div className="onb-card">
+        <div className="onb-steps" aria-hidden="true">{steps.map((s, i) => <span key={s} className={i <= idx ? 'on' : ''} />)}</div>
 
         {step === 'welcome' && (
           <>
             <div className="onb-logo" aria-hidden="true"><span className="brand-mark big" /></div>
             <h1>Welcome to Axon</h1>
-            <p>Bite-sized, gamified IB revision. Biology is live now, with {TOTALS.questions.toLocaleString()} questions across all {TOTALS.topics} syllabus topics, and more subjects are on the way.</p>
-            {accountsEnabled ? (
+            <p>Bite-sized, gamified IB Biology: {TOTALS.questions.toLocaleString()} questions across all {TOTALS.topics} syllabus topics, spaced repetition that remembers what you forget, and exam-style practice.</p>
+            {!account.ready ? (
+              <p className="muted-small" role="status">Loading…</p>
+            ) : account.available ? (
               <div className="stack">
                 <button className="btn btn-primary btn-wide" onClick={() => { setAuthMode('signup'); setStep('account'); }}>Create a free account</button>
                 <button className="btn btn-secondary btn-wide" onClick={() => { setAuthMode('login'); setStep('account'); }}>I already have an account</button>
                 <button className="link-btn" onClick={() => setStep('courses')}>Continue without an account</button>
-                <p className="muted-small">With an account your streak and progress are saved to the cloud and follow you to any device.</p>
+                <p className="muted-small">With an account your streak and progress are saved and follow you to any device.</p>
               </div>
             ) : (
               <button className="btn btn-primary btn-wide" onClick={() => setStep('courses')}>Get started</button>
@@ -69,26 +64,23 @@ export function Onboarding() {
           <>
             <h1>{authMode === 'signup' ? 'Create your account' : 'Welcome back'}</h1>
             {account.user ? (
-              <>
-                <p className="notice">Signed in as <strong>{account.user.email}</strong>. {account.sync === 'syncing' ? 'Loading your progress…' : ''}</p>
-                <button className="btn btn-primary btn-wide" onClick={() => setStep('courses')}>Continue</button>
-              </>
+              <p className="notice" role="status">Signed in as <strong>{account.user.email}</strong>. Loading your progress…</p>
             ) : (
-              <AuthForm key={authMode} initialMode={authMode} onDone={(r) => { if (r?.name) setName(r.name); if (!r?.pending) setStep('courses'); }} />
+              <>
+                <AuthForm key={authMode} initialMode={authMode} onDone={(r) => { if (r?.name) setName(r.name); }} />
+                <button className="link-btn" onClick={() => setStep('courses')}>Skip for now</button>
+              </>
             )}
-            {!account.user && <button className="link-btn" onClick={() => setStep('courses')}>Skip for now</button>}
           </>
         )}
 
         {step === 'courses' && (
           <>
-            <h1>Pick your IB courses</h1>
-            <p>Choose your subjects and level. Biology is ready today; the rest unlock as they launch.</p>
-            <CoursePicker value={courses} onChange={(v) => { setCourses(v); setCourseError(''); }} />
-            {courseError && <p className="form-error" role="alert">{courseError}</p>}
-            <button className="btn btn-primary btn-wide sticky-cta" onClick={nextFromCourses} disabled={!courses.length}>
-              Continue{courses.length ? ` with ${courses.length} course${courses.length > 1 ? 's' : ''}` : ''}
-            </button>
+            <h1>Choose your course</h1>
+            <p>Pick your level. SL hides Higher Level-only content, and you can change it any time.</p>
+            <CoursePicker keepOne value={courses} onChange={setCourses} />
+            <p className="muted-small">More IB subjects will be added to Axon over time.</p>
+            <button className="btn btn-primary btn-wide" onClick={() => setStep('goal')} disabled={!courses.length}>Continue</button>
           </>
         )}
 
@@ -108,7 +100,7 @@ export function Onboarding() {
           </>
         )}
 
-        {idx > 0 && <button className="link-btn" onClick={back}>Back</button>}
+        {idx > 0 && !(step === 'courses' && account.user) && <button className="link-btn" onClick={back}>Back</button>}
       </div>
     </div>
   );

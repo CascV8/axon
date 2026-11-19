@@ -752,3 +752,9 @@ a.brand-course:hover { background: var(--brand-soft); color: var(--brand); }
 .seg-mini { margin: 0 12px 10px; padding: 3px; }
 .seg-mini .seg-item { min-height: 32px; font-size: .85rem; }
 .sticky-cta { position: sticky; bottom: 12px; z-index: 2; }
+.toast {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(var(--nav-h) + 20px + env(safe-area-inset-bottom)); z-index: 60;
+  display: flex; align-items: center; gap: 8px; max-width: calc(100% - 32px); padding: 10px 8px 10px 16px;
+  background: var(--text); color: var(--surface); border-radius: 14px; font-weight: 800; box-shadow: 0 10px 30px rgba(0, 0, 0, .25); animation: slideUp .2s;
+}
+.toast .icon-btn { color: var(--surface); }

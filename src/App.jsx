@@ -21,7 +21,7 @@ import { Exam } from './screens/Exam.jsx';
 import { Glossary } from './screens/Glossary.jsx';
 import { Profile } from './screens/Profile.jsx';
 import { Onboarding } from './screens/Onboarding.jsx';
-import { AccountPage, CoursesPage, PasswordRecovery } from './screens/Account.jsx';
+import { AccountPage, CoursesPage, PasswordRecovery, AccountNotice } from './screens/Account.jsx';
 
 function useThemeAttr(theme) {
   useEffect(() => {
@@ -88,7 +88,7 @@ export default function App() {
   // Scroll to top on navigation between tabs.
   useEffect(() => { window.scrollTo(0, 0); }, [route.name, route.params[0]]);
 
-  if (!progress.profile.onboarded) return <><Onboarding /><PasswordRecovery /></>;
+  if (!progress.profile.onboarded) return <><Onboarding /><PasswordRecovery /><AccountNotice /></>;
 
   const key = `${route.name}/${route.params.join('/')}`;
 
@@ -142,6 +142,7 @@ export default function App() {
       </main>
       <BottomNav active={tab} />
       <PasswordRecovery />
+      <AccountNotice />
     </div>
   );
 }

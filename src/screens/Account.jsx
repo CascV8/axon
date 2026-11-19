@@ -1,32 +1,49 @@
-// Account & sync (#/account) and course management (#/courses).
-import { useState } from 'react';
-import { useAccount, signOut, deleteCloudData, setNewPassword } from '../lib/sync.js';
-import { accountsEnabled } from '../config.js';
+// Account & sync (#/account), course management (#/courses), password reset, notices.
+import { useEffect, useState } from 'react';
+import { useAccount, signOut, deleteAccount, setNewPassword, cancelRecovery, resendVerification, clearNotice } from '../lib/sync.js';
 import { AuthForm } from '../components/AuthForm.jsx';
 import { CoursePicker } from '../components/CoursePicker.jsx';
 import { actions, useProgress } from '../lib/store.js';
 import { courseById } from '../content/courses.js';
 
-const SYNC_LABEL = { idle: 'Waiting', syncing: 'Syncing…', synced: 'All changes saved', error: 'Sync problem', disabled: 'Off' };
+const SYNC_LABEL = { idle: 'Waiting', syncing: 'Saving…', synced: 'All changes saved', error: 'Not saved yet' };
 
 export function SyncBadge() {
   const a = useAccount();
-  if (!accountsEnabled) return null;
+  if (!a.available) return null;
   if (!a.user) return <a className="sync-badge guest" href="#/account">Guest · save progress</a>;
-  return <span className={`sync-badge ${a.sync}`} title={a.error || ''}>{a.sync === 'synced' ? '☁️ Saved' : a.sync === 'syncing' ? '☁️ Saving…' : a.sync === 'error' ? '⚠️ Not synced' : '☁️'}</span>;
+  const label = a.sync === 'synced' ? '☁️ Saved' : a.sync === 'syncing' ? '☁️ Saving…' : a.sync === 'error' ? '⚠️ Not synced' : '☁️';
+  return <a className={`sync-badge ${a.sync}`} href="#/account" title={a.error || SYNC_LABEL[a.sync]}>{label}</a>;
+}
+
+function VerifyBanner() {
+  const a = useAccount();
+  const [state, setState] = useState('');
+  if (!a.user || a.user.emailVerified || !a.emailEnabled) return null;
+  return (
+    <div className="notice">
+      Confirm your email ({a.user.email}) so you can always recover your account.{' '}
+      {state === 'sent' ? <strong>Link sent. Check your inbox and spam folder.</strong> : (
+        <button className="link-btn" onClick={async () => {
+          try { await resendVerification(); setState('sent'); } catch (e) { setState(e.message); }
+        }}>Resend link</button>
+      )}
+      {state && state !== 'sent' && <span className="danger-text"> {state}</span>}
+    </div>
+  );
 }
 
 export function AccountCard() {
   const a = useAccount();
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [msg, setMsg] = useState('');
-  if (!accountsEnabled) {
-    return (
+  if (!a.ready || !a.available) {
+    return a.ready ? (
       <section className="card">
         <h2>Account</h2>
-        <p>Cloud accounts aren't switched on for this copy of Axon yet, so progress is saved in this browser. Use “Download backup” below to move it between devices.</p>
+        <p>Accounts aren't reachable right now, so progress is saved in this browser. Use “Download backup” below to keep a copy.</p>
       </section>
-    );
+    ) : null;
   }
   if (!a.user) {
     return (
@@ -42,21 +59,25 @@ export function AccountCard() {
       <h2>Account</h2>
       <p className="account-line"><strong>{a.user.email}</strong></p>
       <p className="muted-small">
-        Sync: {SYNC_LABEL[a.sync] ?? a.sync}
+        Cloud sync: {SYNC_LABEL[a.sync] ?? a.sync}
         {a.lastSynced ? ` · last saved ${new Date(a.lastSynced).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}` : ''}
       </p>
       {a.error && <p className="form-error" role="alert">{a.error}</p>}
+      <VerifyBanner />
       <div className="row wrap">
         <button className="btn btn-secondary" onClick={() => signOut()}>Log out</button>
       </div>
-      {msg && <p className="notice" role="status">{msg}</p>}
+      {msg && <p className="form-error" role="alert">{msg}</p>}
       {confirmDelete ? (
-        <div className="row wrap">
-          <button className="btn btn-danger" onClick={async () => { try { await deleteCloudData(); } catch (e) { setMsg(e.message); } }}>Yes, delete my cloud data</button>
-          <button className="btn btn-ghost" onClick={() => setConfirmDelete(false)}>Cancel</button>
+        <div className="stack" style={{ marginTop: 12 }}>
+          <p>This permanently deletes your account and the progress saved in the cloud. It can't be undone.</p>
+          <div className="row wrap">
+            <button className="btn btn-danger" onClick={async () => { try { await deleteAccount(); } catch (e) { setMsg(e.message); } }}>Delete my account</button>
+            <button className="btn btn-ghost" onClick={() => setConfirmDelete(false)}>Cancel</button>
+          </div>
         </div>
       ) : (
-        <button className="link-btn danger-text" onClick={() => setConfirmDelete(true)}>Delete my cloud data…</button>
+        <button className="link-btn danger-text" onClick={() => setConfirmDelete(true)}>Delete account…</button>
       )}
     </section>
   );
@@ -75,32 +96,29 @@ export function AccountPage() {
 export function CoursesPage() {
   const p = useProgress();
   const courses = p.profile.courses ?? [];
-  const live = courses.filter((c) => courseById.get(c.id)?.available);
   return (
     <div>
       <a className="back-link" href="#/learn">‹ Learn</a>
       <h1 className="page-title">My courses</h1>
-      {live.length > 0 && (
-        <section className="card">
-          <h2>Studying now</h2>
-          <ul className="list">
-            {live.map((c) => {
-              const course = courseById.get(c.id);
-              return (
-                <li key={c.id} className="list-row">
-                  <span className="course-icon big" aria-hidden="true">{course.icon}</span>
-                  <span className="list-main"><span className="list-title">{course.name} {c.level}</span><span className="list-sub">Full course available</span></span>
-                  <a className="btn btn-small btn-primary" href="#/learn">Open</a>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-      )}
       <section className="card">
-        <h2>Edit courses</h2>
-        <p>Add or remove subjects and switch SL/HL. Courses marked “coming soon” are saved to your profile and will appear when they launch.</p>
-        <CoursePicker value={courses} onChange={(v) => actions.setProfile({ courses: v })} />
+        <h2>Your courses</h2>
+        <ul className="list">
+          {courses.filter((c) => courseById.has(c.id)).map((c) => {
+            const course = courseById.get(c.id);
+            return (
+              <li key={c.id} className="list-row">
+                <span className="course-icon big" aria-hidden="true">{course.icon}</span>
+                <span className="list-main"><span className="list-title">{course.name} {c.level}</span><span className="list-sub">{course.blurb}</span></span>
+                <a className="btn btn-small btn-primary" href="#/learn">Open</a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+      <section className="card">
+        <h2>Change course or level</h2>
+        <CoursePicker keepOne value={courses} onChange={(v) => { if (v.length) actions.setProfile({ courses: v }); }} />
+        <p className="muted-small">More IB subjects will be added to Axon over time.</p>
       </section>
     </div>
   );
@@ -110,27 +128,44 @@ export function PasswordRecovery() {
   const a = useAccount();
   const [pw, setPw] = useState('');
   const [err, setErr] = useState('');
-  const [done, setDone] = useState(false);
-  if (!a.recovery) return null;
+  const [busy, setBusy] = useState(false);
+  if (!a.recoveryToken) return null;
   return (
     <div className="modal-backdrop" role="presentation">
       <form className="modal" role="dialog" aria-modal="true" aria-labelledby="pw-title"
         onSubmit={async (e) => {
           e.preventDefault();
           if (pw.length < 8) { setErr('Use at least 8 characters.'); return; }
-          try { await setNewPassword(pw); setDone(true); } catch (x) { setErr(x.message); }
+          setBusy(true);
+          try { await setNewPassword(pw); } catch (x) { setErr(x.message); } finally { setBusy(false); }
         }}>
         <h2 id="pw-title">Choose a new password</h2>
-        {done ? <p className="notice">Password updated. You're signed in.</p> : (
-          <>
-            <label className="field"><span>New password</span>
-              <input className="input" type="password" autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} autoFocus />
-            </label>
-            {err && <p className="form-error" role="alert">{err}</p>}
-            <button className="btn btn-primary btn-wide" type="submit">Save password</button>
-          </>
-        )}
+        <label className="field"><span>New password</span>
+          <input className="input" type="password" autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} autoFocus />
+        </label>
+        {err && <p className="form-error" role="alert">{err}</p>}
+        <div className="stack">
+          <button className="btn btn-primary btn-wide" type="submit" disabled={busy}>{busy ? 'Saving…' : 'Save password'}</button>
+          <button className="btn btn-ghost btn-wide" type="button" onClick={cancelRecovery}>Cancel</button>
+        </div>
       </form>
+    </div>
+  );
+}
+
+/** Short-lived banner for account events (email confirmed, password changed…). */
+export function AccountNotice() {
+  const a = useAccount();
+  useEffect(() => {
+    if (!a.notice) return undefined;
+    const t = setTimeout(clearNotice, 6000);
+    return () => clearTimeout(t);
+  }, [a.notice]);
+  if (!a.notice) return null;
+  return (
+    <div className="toast" role="status">
+      {a.notice}
+      <button className="icon-btn" onClick={clearNotice} aria-label="Dismiss">✕</button>
     </div>
   );
 }
