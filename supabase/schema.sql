@@ -9,6 +9,11 @@ create table if not exists public.axon_progress (
 
 alter table public.axon_progress enable row level security;
 
+-- Explicit API access (works whether or not "automatically expose new tables" is on):
+-- only signed-in users can reach the table, and RLS below limits them to their own row.
+revoke all on public.axon_progress from anon;
+grant select, insert, update, delete on public.axon_progress to authenticated;
+
 drop policy if exists "axon: read own progress"   on public.axon_progress;
 drop policy if exists "axon: insert own progress" on public.axon_progress;
 drop policy if exists "axon: update own progress" on public.axon_progress;
