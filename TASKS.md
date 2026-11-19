@@ -15,10 +15,11 @@
 - [x] Glossary, profile, badges, topic accuracy analytics
 - [x] PWA (offline, installable)
 - [x] Deploy to Cloudflare Pages from a public GitHub repo
+- [x] Accounts: Cloudflare D1 + Pages Functions (signup/login, sync, reset, delete), Resend email
 
 ## Next ideas
 - [ ] Expert review pass of content against the official subject guide (flagged items in content notes)
 - [ ] More exam-style items (target 20 per theme)
 - [ ] Difficulty tags + "revision ladder" mode
 - [ ] Diagram-based questions (labelled cell / heart / nephron SVGs)
-- [ ] Optional cloud sync (needs a backend)
+- [ ] More IB subjects (add a course to src/content/courses.js only when its lessons exist)
