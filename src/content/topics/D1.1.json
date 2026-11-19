@@ -1,0 +1,369 @@
+{
+  "id": "D1.1",
+  "theme": "D",
+  "title": "DNA replication",
+  "level": "SL",
+  "summary": "How cells make exact copies of DNA using helicase, DNA polymerase and complementary base pairing, and how PCR and gel electrophoresis copy and separate DNA in the lab.",
+  "keyterms": [
+    { "id": "d1.1-replication", "term": "DNA replication", "definition": "Production of exact copies of DNA with identical base sequences; required for reproduction and for growth and tissue replacement in multicellular organisms.", "hl": false },
+    { "id": "d1.1-semi-conservative", "term": "Semi-conservative replication", "definition": "Replication in which each new DNA molecule consists of one strand from the original molecule and one newly synthesised strand.", "hl": false },
+    { "id": "d1.1-complementary-base-pairing", "term": "Complementary base pairing", "definition": "Hydrogen bonding of adenine with thymine and cytosine with guanine, so each template strand determines the base sequence of the new strand.", "hl": false },
+    { "id": "d1.1-helicase", "term": "Helicase", "definition": "Enzyme that unwinds the double helix and separates the two strands by breaking hydrogen bonds between complementary bases.", "hl": false },
+    { "id": "d1.1-dna-polymerase", "term": "DNA polymerase", "definition": "Enzyme that assembles a new DNA strand from free nucleotides, using an existing strand as a template and following complementary base pairing.", "hl": false },
+    { "id": "d1.1-pcr", "term": "Polymerase chain reaction (PCR)", "definition": "Technique that amplifies a specific DNA sequence using repeated cycles of temperature change, primers and Taq polymerase.", "hl": false },
+    { "id": "d1.1-primer", "term": "Primer", "definition": "Short single-stranded nucleic acid sequence that binds to a template by base pairing and gives DNA polymerase a starting point for synthesis.", "hl": false },
+    { "id": "d1.1-taq-polymerase", "term": "Taq polymerase", "definition": "Heat-stable DNA polymerase from the bacterium Thermus aquaticus, used in PCR because it is not denatured at about 95 °C.", "hl": false },
+    { "id": "d1.1-gel-electrophoresis", "term": "Gel electrophoresis", "definition": "Separation of DNA fragments by length in an electric field; negatively charged DNA moves through gel towards the positive electrode, shorter fragments moving further.", "hl": false },
+    { "id": "d1.1-dna-profiling", "term": "DNA profiling", "definition": "Comparing the pattern of DNA fragments from highly variable regions of individuals' genomes, used in forensic investigations and paternity testing.", "hl": false },
+    { "id": "d1.1-directionality", "term": "5'→3' directionality", "definition": "DNA polymerases can only add nucleotides to the 3' end of a growing strand, so new strands are always built in the 5'→3' direction.", "hl": true },
+    { "id": "d1.1-okazaki-fragments", "term": "Okazaki fragments", "definition": "Short DNA sections made discontinuously on the lagging strand, which is synthesised away from the replication fork; the leading strand is made continuously.", "hl": true },
+    { "id": "d1.1-dna-primase", "term": "DNA primase", "definition": "Enzyme that synthesises short RNA primers on the template, providing a 3' end for DNA polymerase III to extend.", "hl": true },
+    { "id": "d1.1-dna-polymerase-iii", "term": "DNA polymerase III", "definition": "Main replicating enzyme: adds nucleotides 5'→3' to primers and proofreads, removing mismatched nucleotides from the 3' end and replacing them.", "hl": true },
+    { "id": "d1.1-dna-polymerase-i", "term": "DNA polymerase I", "definition": "Enzyme that removes RNA primers and replaces them with DNA nucleotides.", "hl": true },
+    { "id": "d1.1-dna-ligase", "term": "DNA ligase", "definition": "Enzyme that seals gaps between adjacent DNA sections, such as Okazaki fragments, by forming sugar–phosphate (phosphodiester) bonds.", "hl": true }
+  ],
+  "lessons": [
+    {
+      "id": "D1.1-1",
+      "title": "Semi-conservative replication",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D1.1-1-q01", "type": "mcq",
+          "prompt": "Why is DNA replication described as semi-conservative?",
+          "options": [
+            "Half of the DNA molecules produced are entirely new and half are entirely original",
+            "Each new DNA molecule contains one original strand and one newly synthesised strand",
+            "Each strand of a new molecule is made of alternating old and new sections",
+            "Only half of the genome is copied in each round of replication"
+          ],
+          "answer": 1,
+          "explanation": "Each original strand acts as a template and stays paired with the new strand built on it, so every daughter molecule conserves one parental strand. A model producing one fully old and one fully new molecule would be conservative replication.",
+          "terms": ["d1.1-semi-conservative"]
+        },
+        {
+          "id": "D1.1-1-q02", "type": "tf",
+          "statement": "Helicase separates the two DNA strands by breaking covalent bonds in the sugar–phosphate backbone.",
+          "answer": false,
+          "explanation": "Helicase breaks the hydrogen bonds between complementary bases, unwinding the helix. The covalent sugar–phosphate backbone of each strand stays intact so it can act as a template.",
+          "terms": ["d1.1-helicase"]
+        },
+        {
+          "id": "D1.1-1-q03", "type": "fill",
+          "text": "During replication, adenine on the template strand pairs with a free nucleotide containing ___.",
+          "answer": "thymine",
+          "bank": ["thymine", "uracil", "guanine", "cytosine"],
+          "explanation": "In DNA, adenine pairs with thymine (two hydrogen bonds) and cytosine with guanine. Uracil replaces thymine only in RNA.",
+          "terms": ["d1.1-complementary-base-pairing"]
+        },
+        {
+          "id": "D1.1-1-q04", "type": "match",
+          "prompt": "Match each component to its role in DNA replication.",
+          "pairs": [
+            { "left": "Helicase", "right": "Unwinds the helix and breaks hydrogen bonds between bases" },
+            { "left": "DNA polymerase", "right": "Links free nucleotides to form the new strand" },
+            { "left": "Template strand", "right": "Existing strand whose base sequence is copied" },
+            { "left": "Complementary base pairing", "right": "Determines which nucleotide is placed opposite each base" }
+          ],
+          "explanation": "Helicase exposes the bases, complementary base pairing selects the correct free nucleotide for each template base, and DNA polymerase joins those nucleotides into a continuous new strand.",
+          "terms": ["d1.1-helicase", "d1.1-dna-polymerase", "d1.1-complementary-base-pairing"]
+        },
+        {
+          "id": "D1.1-1-q05", "type": "order",
+          "prompt": "Put the events of DNA replication in order.",
+          "items": [
+            "Helicase unwinds the double helix and separates the strands",
+            "Free nucleotides pair with exposed bases on each template strand",
+            "DNA polymerase links the nucleotides to form a new strand",
+            "Two DNA molecules form, each with one original strand"
+          ],
+          "explanation": "The strands must first be separated to expose bases; nucleotides then pair with the template and are joined by DNA polymerase, giving two identical semi-conservative molecules.",
+          "terms": ["d1.1-helicase", "d1.1-dna-polymerase", "d1.1-semi-conservative"]
+        },
+        {
+          "id": "D1.1-1-q06", "type": "mcq",
+          "prompt": "Which process does NOT directly require DNA replication?",
+          "options": [
+            "Growth of a multicellular organism",
+            "Replacement of worn-out skin cells",
+            "Asexual reproduction of a single-celled organism",
+            "Transcription of a gene to make mRNA"
+          ],
+          "answer": 3,
+          "explanation": "Growth, tissue replacement and reproduction all need new cells, and every new cell needs a full copy of the DNA. Transcription copies only a gene into RNA and does not duplicate the DNA.",
+          "terms": ["d1.1-replication"]
+        },
+        {
+          "id": "D1.1-1-q07", "type": "tf",
+          "statement": "The two DNA molecules produced by replication normally have identical base sequences to each other and to the original molecule.",
+          "answer": true,
+          "explanation": "Because each new strand is built by complementary base pairing against a template, both daughter molecules carry the original sequence. Rare copying errors are the exception and are a source of mutation.",
+          "terms": ["d1.1-replication", "d1.1-complementary-base-pairing"]
+        },
+        {
+          "id": "D1.1-1-q08", "type": "fill",
+          "text": "The enzyme that assembles a new DNA strand from free nucleotides is DNA ___.",
+          "answer": "polymerase",
+          "bank": ["polymerase", "helicase", "ligase", "primase"],
+          "explanation": "DNA polymerase adds nucleotides one at a time, matched by complementary base pairing to the template. Helicase only separates strands; it does not build DNA.",
+          "terms": ["d1.1-dna-polymerase"]
+        },
+        {
+          "id": "D1.1-1-q09", "type": "mcq",
+          "prompt": "Meselson and Stahl grew E. coli in heavy nitrogen (15N), then transferred them to light nitrogen (14N) for one generation. After centrifugation, what was observed?",
+          "options": [
+            "One heavy band and one light band",
+            "Only a heavy band",
+            "A single band of intermediate density",
+            "Only a light band"
+          ],
+          "answer": 2,
+          "explanation": "After one round of semi-conservative replication every molecule has one 15N strand and one 14N strand, giving a single intermediate band. Conservative replication would have given separate heavy and light bands.",
+          "terms": ["d1.1-semi-conservative"]
+        },
+        {
+          "id": "D1.1-1-q10", "type": "mcq",
+          "prompt": "A section of template strand has the bases A-T-G-C. Which bases will occupy the matching positions in the new strand?",
+          "options": [
+            "A-T-G-C",
+            "U-A-C-G",
+            "G-C-A-T",
+            "T-A-C-G"
+          ],
+          "answer": 3,
+          "explanation": "Each base pairs with its complement: A with T, T with A, G with C and C with G. Uracil would only appear if RNA were being made.",
+          "terms": ["d1.1-complementary-base-pairing"]
+        }
+      ]
+    },
+    {
+      "id": "D1.1-2",
+      "title": "PCR and gel electrophoresis",
+      "hl": false,
+      "questions": [
+        {
+          "id": "D1.1-2-q01", "type": "mcq",
+          "prompt": "What is the purpose of the polymerase chain reaction (PCR)?",
+          "options": [
+            "To produce many copies of a specific DNA sequence from a small sample",
+            "To separate DNA fragments according to their length",
+            "To cut DNA at specific base sequences",
+            "To translate a DNA sequence into a polypeptide"
+          ],
+          "answer": 0,
+          "explanation": "PCR amplifies a chosen DNA sequence, roughly doubling it each cycle, so tiny samples (a swab, a drop of blood) give enough DNA to analyse. Separating fragments by length is the job of gel electrophoresis.",
+          "terms": ["d1.1-pcr"]
+        },
+        {
+          "id": "D1.1-2-q02", "type": "order",
+          "prompt": "Put the steps of one PCR cycle in order.",
+          "items": [
+            "Denaturation: heating to about 95 °C separates the DNA strands",
+            "Annealing: cooling to about 55 °C lets primers bind to the strands",
+            "Extension: at about 72 °C Taq polymerase builds new strands from the primers"
+          ],
+          "explanation": "High temperature breaks hydrogen bonds between strands; cooling allows primers to base-pair with their target; Taq polymerase then extends the primers at its optimum temperature. The cycle is repeated many times.",
+          "terms": ["d1.1-pcr", "d1.1-primer", "d1.1-taq-polymerase"]
+        },
+        {
+          "id": "D1.1-2-q03", "type": "fill",
+          "text": "Taq polymerase is used in PCR because it is ___ and is not denatured at 95 °C.",
+          "answer": "heat-stable",
+          "accept": ["thermostable", "heat stable"],
+          "bank": ["heat-stable", "heat-sensitive", "membrane-bound", "fast-acting"],
+          "explanation": "Taq polymerase comes from Thermus aquaticus, a bacterium of hot springs, so it keeps its active site shape during the 95 °C denaturation step and works through many cycles.",
+          "terms": ["d1.1-taq-polymerase"]
+        },
+        {
+          "id": "D1.1-2-q04", "type": "tf",
+          "statement": "In gel electrophoresis, DNA fragments move towards the negative electrode.",
+          "answer": false,
+          "explanation": "The phosphate groups give DNA a negative charge, so fragments are attracted to the positive electrode. They are loaded into wells at the negative end of the gel.",
+          "terms": ["d1.1-gel-electrophoresis"]
+        },
+        {
+          "id": "D1.1-2-q05", "type": "mcq",
+          "prompt": "In gel electrophoresis, which DNA fragments travel furthest through the gel?",
+          "options": [
+            "The longest fragments, because they carry the most negative charge",
+            "The fragments with the most guanine and cytosine",
+            "The shortest fragments, because they move most easily through the gel",
+            "All fragments travel the same distance because charge per base is constant"
+          ],
+          "answer": 2,
+          "explanation": "Charge is proportional to length, so separation depends on how easily fragments pass through the gel's pores; short fragments move fastest and furthest. This is why bands separate by length.",
+          "terms": ["d1.1-gel-electrophoresis"]
+        },
+        {
+          "id": "D1.1-2-q06", "type": "match",
+          "prompt": "Match each term or application to its description.",
+          "pairs": [
+            { "left": "COVID-19 test", "right": "PCR amplifies viral genetic material from a swab" },
+            { "left": "Paternity test", "right": "Child's bands each match the mother or father" },
+            { "left": "Forensic investigation", "right": "Crime-scene DNA profile compared with suspects' profiles" },
+            { "left": "Primers", "right": "Select which DNA sequence is amplified" }
+          ],
+          "explanation": "PCR detects tiny amounts of viral genetic material; DNA profiles from gel electrophoresis are compared in paternity and forensic cases. Primers bind only to their target, so they decide what is copied.",
+          "terms": ["d1.1-pcr", "d1.1-dna-profiling", "d1.1-primer"]
+        },
+        {
+          "id": "D1.1-2-q07", "type": "tf",
+          "statement": "Primers are needed in PCR because DNA polymerase cannot start a new strand from nothing; it can only extend an existing strand.",
+          "answer": true,
+          "explanation": "DNA polymerase needs a 3' end to add nucleotides to. Primers base-pair at each end of the target sequence, providing that start point and defining the region amplified.",
+          "terms": ["d1.1-primer"]
+        },
+        {
+          "id": "D1.1-2-q08", "type": "fill",
+          "text": "The PCR step at about 95 °C, in which the two DNA strands separate, is called ___.",
+          "answer": "denaturation",
+          "bank": ["denaturation", "annealing", "extension", "ligation"],
+          "explanation": "Heating breaks the hydrogen bonds between complementary bases, denaturing double-stranded DNA into single strands. Annealing (primer binding) and extension follow.",
+          "terms": ["d1.1-pcr"]
+        },
+        {
+          "id": "D1.1-2-q09", "type": "mcq",
+          "prompt": "Why does a positive PCR test for COVID-19 indicate infection?",
+          "options": [
+            "PCR detects antibodies that the body made against the virus",
+            "Primers specific to SARS-CoV-2 sequences bind, so viral genetic material is amplified to detectable levels",
+            "PCR causes the virus to replicate in the sample so it can be seen",
+            "Taq polymerase only works when viral proteins are present"
+          ],
+          "answer": 1,
+          "explanation": "The virus's RNA genome is first copied into DNA, then primers matching viral sequences allow only viral DNA to be amplified. Amplification occurs only if viral genetic material was in the sample.",
+          "terms": ["d1.1-pcr", "d1.1-primer"]
+        },
+        {
+          "id": "D1.1-2-q10", "type": "mcq",
+          "prompt": "In a paternity test, which observation would exclude a man as the biological father?",
+          "options": [
+            "The man has bands that are not found in the child",
+            "The child shares only about half of its bands with the man",
+            "The child has a band that is present in neither the mother nor the man",
+            "The mother and the man share some bands"
+          ],
+          "answer": 2,
+          "explanation": "A child inherits one allele at each locus from each parent, so every band must come from the mother or the father. A band found in neither means the man cannot be the father; sharing half the bands is expected.",
+          "terms": ["d1.1-dna-profiling", "d1.1-gel-electrophoresis"]
+        }
+      ]
+    },
+    {
+      "id": "D1.1-3",
+      "title": "Leading and lagging strands",
+      "hl": true,
+      "questions": [
+        {
+          "id": "D1.1-3-q01", "type": "mcq",
+          "prompt": "In which direction does DNA polymerase III synthesise new DNA?",
+          "options": [
+            "3'→5', adding nucleotides to the 5' end",
+            "5'→3', adding nucleotides to the 5' end",
+            "Either direction, depending on the template strand",
+            "5'→3', adding nucleotides to the 3' end"
+          ],
+          "answer": 3,
+          "explanation": "DNA polymerases can only attach a new nucleotide to the free 3' (–OH) end of a strand, so synthesis always proceeds 5'→3'. This one rule explains why the two strands are copied differently.",
+          "terms": ["d1.1-directionality", "d1.1-dna-polymerase-iii"]
+        },
+        {
+          "id": "D1.1-3-q02", "type": "order",
+          "prompt": "Put the events in the synthesis of the lagging strand in order.",
+          "items": [
+            "Helicase unwinds DNA at the replication fork",
+            "DNA primase makes a short RNA primer",
+            "DNA polymerase III extends the primer, forming an Okazaki fragment",
+            "DNA polymerase I replaces the RNA primer with DNA",
+            "DNA ligase joins adjacent fragments"
+          ],
+          "explanation": "Each Okazaki fragment needs its own primer, which DNA polymerase III extends. The RNA primer is later swapped for DNA by DNA polymerase I, and ligase seals the remaining gap in the backbone.",
+          "terms": ["d1.1-dna-primase", "d1.1-dna-polymerase-iii", "d1.1-dna-polymerase-i", "d1.1-dna-ligase", "d1.1-okazaki-fragments"]
+        },
+        {
+          "id": "D1.1-3-q03", "type": "match",
+          "prompt": "Match each enzyme to its function in replication.",
+          "pairs": [
+            { "left": "DNA primase", "right": "Synthesises short RNA primers" },
+            { "left": "DNA polymerase III", "right": "Extends primers 5'→3' and proofreads" },
+            { "left": "DNA polymerase I", "right": "Replaces RNA primers with DNA" },
+            { "left": "DNA ligase", "right": "Seals gaps between Okazaki fragments" },
+            { "left": "Helicase", "right": "Unwinds the helix at the replication fork" }
+          ],
+          "explanation": "Primase starts each new section, polymerase III does most of the building and proofreading, polymerase I tidies up primers and ligase joins the sugar–phosphate backbone.",
+          "terms": ["d1.1-dna-primase", "d1.1-dna-polymerase-iii", "d1.1-dna-polymerase-i", "d1.1-dna-ligase"]
+        },
+        {
+          "id": "D1.1-3-q04", "type": "tf",
+          "statement": "The leading strand is synthesised continuously because DNA polymerase III moves in the same direction as the replication fork.",
+          "answer": true,
+          "explanation": "On the leading-strand template, 5'→3' synthesis follows the fork as it opens, so one primer allows continuous synthesis. On the other template synthesis must run away from the fork, giving Okazaki fragments.",
+          "terms": ["d1.1-okazaki-fragments", "d1.1-directionality"]
+        },
+        {
+          "id": "D1.1-3-q05", "type": "fill",
+          "text": "Short sections of DNA made discontinuously on the lagging strand are called ___ fragments.",
+          "answer": "Okazaki",
+          "bank": ["Okazaki", "Meselson", "restriction", "Taq"],
+          "explanation": "Okazaki fragments form because the lagging strand is built in short 5'→3' pieces away from the fork, each started from its own RNA primer.",
+          "terms": ["d1.1-okazaki-fragments"]
+        },
+        {
+          "id": "D1.1-3-q06", "type": "mcq",
+          "prompt": "Why is the lagging strand synthesised discontinuously?",
+          "options": [
+            "DNA ligase can only join short pieces of DNA",
+            "The template strands are antiparallel and DNA polymerase only works 5'→3', so on one template it must work away from the fork",
+            "Helicase unwinds the lagging-strand template more slowly",
+            "The lagging strand is copied by RNA polymerase instead of DNA polymerase"
+          ],
+          "answer": 1,
+          "explanation": "The two template strands run in opposite directions. Because new DNA can only grow at its 3' end, synthesis on one template runs away from the fork and has to restart repeatedly as more template is exposed.",
+          "terms": ["d1.1-directionality", "d1.1-okazaki-fragments"]
+        },
+        {
+          "id": "D1.1-3-q07", "type": "tf",
+          "statement": "DNA polymerase III proofreads by removing a mismatched nucleotide from the 3' end of the new strand and replacing it with the correct one.",
+          "answer": true,
+          "explanation": "If a nucleotide is not complementary to the template, DNA polymerase III moves back (3'→5' exonuclease activity), removes it and inserts the correct nucleotide, greatly reducing the error rate.",
+          "terms": ["d1.1-dna-polymerase-iii"]
+        },
+        {
+          "id": "D1.1-3-q08", "type": "fill",
+          "text": "The enzyme that removes RNA primers and replaces them with DNA nucleotides is DNA polymerase ___.",
+          "answer": "I",
+          "accept": ["1", "one"],
+          "bank": ["I", "II", "III"],
+          "explanation": "DNA polymerase I replaces RNA primers with DNA. DNA polymerase III extends primers and proofreads; it does not remove primers.",
+          "terms": ["d1.1-dna-polymerase-i"]
+        },
+        {
+          "id": "D1.1-3-q09", "type": "mcq",
+          "prompt": "What is the main benefit of proofreading by DNA polymerase III?",
+          "options": [
+            "It reduces the number of mutations by correcting base-pairing errors during replication",
+            "It allows the lagging strand to be made continuously",
+            "It removes RNA primers from Okazaki fragments",
+            "It speeds up replication by skipping difficult sequences"
+          ],
+          "answer": 0,
+          "explanation": "Proofreading checks each newly added nucleotide and replaces mismatches, so replication is extremely accurate and few mutations are passed to daughter cells. Primer removal is done by DNA polymerase I.",
+          "terms": ["d1.1-dna-polymerase-iii"]
+        },
+        {
+          "id": "D1.1-3-q10", "type": "mcq",
+          "prompt": "Why does the lagging strand need many RNA primers, while the leading strand needs only one at its start?",
+          "options": [
+            "RNA primers on the lagging strand are broken down faster",
+            "The lagging strand is longer than the leading strand",
+            "Primase cannot bind to the leading-strand template",
+            "Each Okazaki fragment is started separately and needs its own primer"
+          ],
+          "answer": 3,
+          "explanation": "DNA polymerase III cannot start a strand without a 3' end. Continuous leading-strand synthesis needs only an initial primer, but every Okazaki fragment begins afresh, so each needs a new primer.",
+          "terms": ["d1.1-dna-primase", "d1.1-okazaki-fragments"]
+        }
+      ]
+    }
+  ]
+}

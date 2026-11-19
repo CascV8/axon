@@ -1,0 +1,14 @@
+{
+  "name": "Axon: IB Biology revision",
+  "short_name": "Axon",
+  "description": "Bite-sized, gamified revision for IB Biology: lessons, spaced repetition, exam-style questions and grade tools.",
+  "start_url": "./#/learn",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f4ff",
+  "theme_color": "#6d4cff",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

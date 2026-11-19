@@ -1,0 +1,619 @@
+[
+  {
+    "id": "XC-01",
+    "theme": "C",
+    "topics": ["C4.1"],
+    "paper": "1B",
+    "level": "SL",
+    "title": "Mark–recapture of hedgerow snails",
+    "stem": "Ecologists estimated the population size of a land snail in three hedgerows using capture–mark–release–recapture. On day 1 snails were collected for 30 minutes, marked with a dot of non-toxic paint on the shell and released at the point of capture. Two days later a second 30-minute sample was collected from the same hedgerow.",
+    "data": {
+      "caption": "Numbers of snails captured, marked and recaptured in three hedgerows",
+      "columns": ["Hedgerow", "Marked and released on day 1", "Captured on day 3", "Marked snails in day 3 sample"],
+      "rows": [
+        ["A", "64", "75", "12"],
+        ["B", "48", "60", "16"],
+        ["C", "90", "82", "6"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the estimated population size of snails in hedgerow A, using the Lincoln index.",
+        "marks": 2,
+        "numeric": { "value": 400, "tolerance": 0, "unit": "snails" },
+        "markscheme": [
+          "(64 × 75) / 12 / 4800 / 12 shown",
+          "400 (snails)"
+        ],
+        "notes": "Award 1 mark if the numbers are substituted correctly but the arithmetic is wrong."
+      },
+      {
+        "label": "b",
+        "command": "Deduce",
+        "prompt": "Deduce, with a reason, which hedgerow gives the least reliable population estimate.",
+        "marks": 2,
+        "markscheme": [
+          "hedgerow C",
+          "smallest number of recaptured/marked snails in second sample (only 6)",
+          "a change of one or two recaptures would change the estimate greatly / estimate very sensitive to chance",
+          "(so) large uncertainty in estimate of about 1230 snails"
+        ],
+        "notes": "Mark for hedgerow C only awarded with a valid reason."
+      },
+      {
+        "label": "c",
+        "command": "State",
+        "prompt": "State two assumptions that must be true for the Lincoln index to give an accurate estimate.",
+        "marks": 2,
+        "markscheme": [
+          "marked snails mix randomly/fully with the unmarked population before resampling",
+          "no births/deaths/immigration/emigration between samples / closed population",
+          "marks are not lost/rubbed off between samples",
+          "marking does not affect survival/behaviour/chance of recapture (e.g. predators do not notice paint)",
+          "all individuals have an equal chance of being captured"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Explain how the population estimate would be affected if some of the paint marks wore off between day 1 and day 3.",
+        "marks": 2,
+        "markscheme": [
+          "fewer marked snails are recognised/counted in the second sample",
+          "denominator (recaptures) smaller so population size is overestimated",
+          "Allow: some marked snails counted as unmarked"
+        ],
+        "notes": "Reject 'underestimated'."
+      }
+    ]
+  },
+  {
+    "id": "XC-02",
+    "theme": "C",
+    "topics": ["C4.2"],
+    "paper": "1B",
+    "level": "SL",
+    "title": "Energy flow in a reed-bed wetland",
+    "stem": "The energy available at each trophic level of a freshwater reed-bed food chain was estimated over one year. Values for producers are net primary production.",
+    "data": {
+      "caption": "Energy available at each trophic level of a reed-bed ecosystem",
+      "columns": ["Trophic level", "Example organisms", "Energy / kJ m⁻² y⁻¹"],
+      "rows": [
+        ["Producers", "reeds, algae", "24 500"],
+        ["Primary consumers", "snails, mayfly larvae", "2 150"],
+        ["Secondary consumers", "small fish, dragonfly larvae", "196"],
+        ["Tertiary consumers", "heron", "14"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the efficiency of energy transfer from producers to primary consumers.",
+        "marks": 2,
+        "numeric": { "value": 8.78, "tolerance": 0.05, "unit": "%" },
+        "markscheme": [
+          "2150 / 24 500 × 100",
+          "8.78 % / 8.8 %"
+        ],
+        "notes": "Answer must be expressed as a percentage; 0.088 alone scores 1 mark."
+      },
+      {
+        "label": "b",
+        "command": "Explain",
+        "prompt": "Explain why only a small proportion of the energy in primary consumers is available to secondary consumers.",
+        "marks": 3,
+        "markscheme": [
+          "energy released in cell respiration is lost as heat (from the ecosystem)",
+          "not all of the primary consumers are eaten (some die and go to decomposers)",
+          "not all parts eaten are digested/absorbed / energy lost in faeces/egestion",
+          "energy lost in excretion/urea",
+          "energy used for movement/maintenance (ultimately lost as heat)",
+          "heat cannot be converted back to chemical energy / energy cannot be recycled"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage of the producers' energy that reaches the tertiary consumers.",
+        "marks": 1,
+        "numeric": { "value": 0.0571, "tolerance": 0.002, "unit": "%" },
+        "markscheme": [
+          "14 / 24 500 × 100 = 0.057 % / 0.0571 %"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Suggest",
+        "prompt": "Suggest, using the data, why this food chain does not have a fifth trophic level.",
+        "marks": 2,
+        "markscheme": [
+          "only 14 kJ m⁻² y⁻¹ available at tertiary level",
+          "with about 7–10 % transfer a fifth level would receive only about 1 kJ m⁻² y⁻¹",
+          "too little energy to support a viable population (of large predators) / OWTTE",
+          "large home range/area would be needed to obtain enough energy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XC-03",
+    "theme": "C",
+    "topics": ["C1.1"],
+    "paper": "1B",
+    "level": "HL",
+    "title": "A candidate inhibitor of a bacterial enzyme",
+    "stem": "A pharmaceutical team tested compound X as a possible inhibitor of a bacterial enzyme. Initial reaction rates were measured at five substrate concentrations with and without 0.5 mmol dm⁻³ compound X at 30 °C and pH 7.0 (n = 5 for each mean).",
+    "data": {
+      "caption": "Initial rate of reaction with and without compound X",
+      "columns": ["Substrate / mmol dm⁻³", "Rate without X / µmol min⁻¹", "SD", "Rate with X / µmol min⁻¹", "SD"],
+      "rows": [
+        ["1", "12.0", "1.1", "5.1", "0.8"],
+        ["2", "21.4", "1.6", "9.3", "1.2"],
+        ["5", "36.0", "2.2", "19.0", "1.9"],
+        ["10", "44.2", "2.8", "30.5", "2.6"],
+        ["20", "48.1", "3.1", "44.6", "3.4"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage decrease in the rate of reaction caused by compound X at a substrate concentration of 5 mmol dm⁻³.",
+        "marks": 2,
+        "numeric": { "value": 47.2, "tolerance": 0.2, "unit": "%" },
+        "markscheme": [
+          "(36.0 − 19.0) / 36.0 × 100",
+          "47.2 % (decrease)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Analyse",
+        "prompt": "Analyse the standard deviations to determine whether compound X has a significant effect at 20 mmol dm⁻³.",
+        "marks": 2,
+        "markscheme": [
+          "ranges overlap: 45.0–51.2 and 41.2–48.0 µmol min⁻¹ / means differ by less than the SDs",
+          "difference (3.5 µmol min⁻¹) probably not significant at 20 mmol dm⁻³",
+          "in contrast, at 1–5 mmol dm⁻³ the SD ranges do not overlap / effect clear at low substrate concentration",
+          "a statistical test (e.g. t-test) would be needed to confirm"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Deduce",
+        "prompt": "Deduce, with a reason, whether compound X is a competitive or a non-competitive inhibitor.",
+        "marks": 2,
+        "markscheme": [
+          "competitive",
+          "inhibition is overcome/reduced at high substrate concentration",
+          "rate with X approaches the same maximum rate (Vmax) as without X"
+        ],
+        "notes": "No mark for 'competitive' without a reason based on the data."
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Explain how a competitive inhibitor reduces the rate of an enzyme-catalysed reaction.",
+        "marks": 3,
+        "markscheme": [
+          "inhibitor has a similar shape/chemical structure to the substrate",
+          "binds (reversibly) to the active site",
+          "prevents substrate binding / fewer enzyme–substrate complexes formed",
+          "inhibitor and substrate compete for active sites",
+          "increasing substrate concentration increases chance of substrate rather than inhibitor colliding with active site"
+        ],
+        "notes": "Reject 'binds to an allosteric site'."
+      }
+    ]
+  },
+  {
+    "id": "XC-04",
+    "theme": "C",
+    "topics": ["C3.2"],
+    "paper": "1B",
+    "level": "SL",
+    "title": "Antibody response to a two-dose vaccine",
+    "stem": "Volunteers (n = 24) received a new vaccine against a respiratory virus on day 0 and a second dose on day 28. The concentration of virus-specific antibody in their blood plasma was measured.",
+    "data": {
+      "caption": "Mean plasma antibody concentration after vaccination",
+      "columns": ["Day", "Mean antibody concentration / arbitrary units", "SD / arbitrary units"],
+      "rows": [
+        ["0", "2", "1"],
+        ["7", "18", "7"],
+        ["14", "64", "21"],
+        ["28", "40", "15"],
+        ["35", "520", "140"],
+        ["42", "610", "160"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Describe",
+        "prompt": "Describe the changes in mean antibody concentration between day 0 and day 28.",
+        "marks": 2,
+        "markscheme": [
+          "increases from 2 to a peak of 64 arbitrary units",
+          "peak at (about) day 14",
+          "then falls to 40 arbitrary units by day 28",
+          "slow initial increase / little change in first 7 days"
+        ],
+        "notes": "At least one quoted value with units for full marks."
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage increase in mean antibody concentration between day 28 and day 35.",
+        "marks": 2,
+        "numeric": { "value": 1200, "tolerance": 1, "unit": "%" },
+        "markscheme": [
+          "(520 − 40) / 40 × 100",
+          "1200 %"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain the difference between the response to the first dose and the response to the second dose.",
+        "marks": 3,
+        "markscheme": [
+          "second response faster and larger / higher concentration reached sooner",
+          "first dose: antigen activates specific B cells (with help from helper T cells) / clonal selection",
+          "memory cells are produced after the first dose",
+          "memory cells persist and recognise the antigen at the second dose",
+          "memory cells divide rapidly to form many plasma cells",
+          "plasma cells secrete large amounts of antibody"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Suggest",
+        "prompt": "Suggest one reason for the large standard deviations on days 35 and 42.",
+        "marks": 1,
+        "markscheme": [
+          "individual variation in immune response (age/health/genotype)",
+          "some volunteers may have had previous exposure to the virus",
+          "differences in timing of sampling / Allow: SD increases as the mean increases"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XC-05",
+    "theme": "C",
+    "topics": ["C1.3"],
+    "paper": "2A",
+    "level": "SL",
+    "title": "Limiting factors in a tomato glasshouse",
+    "stem": "A grower measured the rate of photosynthesis of tomato plants in a glasshouse at increasing light intensities, at two carbon dioxide concentrations. At 400 ppm CO₂ the rate rose and then levelled off at 18 µmol CO₂ m⁻² s⁻¹; at 1000 ppm CO₂ it levelled off at 29 µmol CO₂ m⁻² s⁻¹.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Outline",
+        "prompt": "Outline what is meant by a limiting factor in photosynthesis.",
+        "marks": 2,
+        "markscheme": [
+          "the factor that is furthest from its optimum / in shortest supply",
+          "it determines the rate of photosynthesis",
+          "increasing it increases the rate (until another factor becomes limiting)",
+          "Allow named examples: light intensity, CO₂ concentration, temperature"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Explain",
+        "prompt": "Explain why the rate of photosynthesis at 400 ppm CO₂ levels off at high light intensity.",
+        "marks": 2,
+        "markscheme": [
+          "light is no longer the limiting factor",
+          "CO₂ concentration (or temperature) is now limiting",
+          "the rate of carbon fixation (by Rubisco) cannot increase further",
+          "evidence: rate increases further at 1000 ppm CO₂"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Suggest",
+        "prompt": "Suggest two reasons why the grower might not raise the CO₂ concentration above 1000 ppm.",
+        "marks": 2,
+        "markscheme": [
+          "another factor (light/temperature) would become limiting so little extra yield",
+          "cost of CO₂ / heating outweighs the value of extra yield",
+          "high CO₂ may be unsafe for workers",
+          "stomata may close at very high CO₂ / OWTTE"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XC-06",
+    "theme": "C",
+    "topics": ["C2.2"],
+    "paper": "2A",
+    "level": "SL",
+    "title": "Nerve impulses and synapses",
+    "stem": "Motor neurons transmit impulses from the spinal cord to skeletal muscles.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "State",
+        "prompt": "State the approximate resting potential of a neuron.",
+        "marks": 1,
+        "markscheme": [
+          "−70 mV (Allow −60 to −80 mV; sign and unit required)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Explain",
+        "prompt": "Explain how the resting potential is established and maintained.",
+        "marks": 3,
+        "markscheme": [
+          "sodium–potassium pump uses ATP / active transport",
+          "pumps 3 Na⁺ out and 2 K⁺ in",
+          "membrane more permeable to K⁺ / K⁺ leaks out faster than Na⁺ leaks in",
+          "inside is negative relative to outside",
+          "negatively charged proteins/organic ions inside the axon"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Outline",
+        "prompt": "Outline how myelination increases the speed of transmission along an axon.",
+        "marks": 2,
+        "markscheme": [
+          "myelin insulates the axon / prevents ion movement across membrane",
+          "depolarisation only at nodes of Ranvier",
+          "impulse jumps from node to node / saltatory conduction",
+          "fewer depolarisations needed over a given distance"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Predict",
+        "prompt": "A pesticide inhibits acetylcholinesterase. Predict, with a reason, the effect on a muscle supplied by a motor neuron.",
+        "marks": 2,
+        "markscheme": [
+          "acetylcholine is not broken down / remains in the synaptic cleft",
+          "continues to bind receptors on the postsynaptic membrane / repeated depolarisation",
+          "muscle stays contracted / spasms / paralysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XC-07",
+    "theme": "C",
+    "topics": ["C2.1"],
+    "paper": "2A",
+    "level": "HL",
+    "title": "Receptors for hormones",
+    "stem": "Hormones act on target cells by binding to specific receptors. Oestradiol is a steroid hormone; adrenaline (epinephrine) is an amine hormone.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Distinguish",
+        "prompt": "Distinguish between the receptors used by oestradiol and by adrenaline.",
+        "marks": 2,
+        "markscheme": [
+          "oestradiol receptor intracellular (cytoplasm/nucleus) whereas adrenaline receptor in plasma membrane / transmembrane",
+          "oestradiol is hydrophobic/passes through membrane whereas adrenaline is hydrophilic/cannot cross membrane",
+          "oestradiol–receptor complex acts as a transcription factor/alters gene expression whereas adrenaline acts via a second messenger"
+        ],
+        "notes": "Each point must give both sides of the distinction."
+      },
+      {
+        "label": "b",
+        "command": "Outline",
+        "prompt": "Outline how binding of adrenaline to a G protein-coupled receptor leads to a response in a liver cell.",
+        "marks": 3,
+        "markscheme": [
+          "adrenaline binds to receptor on the outer surface, changing receptor conformation",
+          "G protein activated / GDP replaced by GTP",
+          "(α subunit) activates adenylyl cyclase",
+          "cyclic AMP (second messenger) produced",
+          "cAMP activates protein kinase / phosphorylation cascade / amplification",
+          "glycogen broken down to glucose / glycogenolysis"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Suggest",
+        "prompt": "Suggest why the same signalling molecule can cause different responses in different cell types.",
+        "marks": 2,
+        "markscheme": [
+          "different cells have different receptor types for the same ligand",
+          "different signal transduction pathways/second messengers in different cells",
+          "different target proteins/enzymes/genes present depending on cell differentiation",
+          "Allow: example such as adrenaline causes vasoconstriction in some vessels but glycogen breakdown in liver"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XC-08",
+    "theme": "C",
+    "topics": ["C1.2"],
+    "paper": "2B",
+    "level": "HL",
+    "title": "Cell respiration and ATP",
+    "stem": "Cell respiration releases energy from organic molecules to produce ATP.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Compare and contrast",
+        "prompt": "Compare and contrast anaerobic respiration in humans and in yeast.",
+        "marks": 4,
+        "markscheme": [
+          "both: glycolysis in the cytoplasm",
+          "both: small yield of ATP / 2 ATP per glucose",
+          "both: no oxygen required",
+          "both: NAD regenerated so glycolysis can continue",
+          "humans produce lactate whereas yeast produce ethanol",
+          "yeast produce CO₂ whereas humans do not",
+          "lactate can be converted back (in liver) whereas ethanol is not reused by yeast / OWTTE"
+        ],
+        "notes": "At least one similarity and one difference for full marks."
+      },
+      {
+        "label": "b",
+        "command": "Describe",
+        "prompt": "Describe how a simple respirometer can be used to measure the rate of aerobic respiration of germinating seeds.",
+        "marks": 4,
+        "markscheme": [
+          "seeds in a sealed tube with an alkali (KOH/soda lime) to absorb CO₂",
+          "O₂ uptake reduces gas volume/pressure",
+          "coloured liquid moves along capillary tube towards the seeds",
+          "distance moved measured over a fixed time",
+          "volume = πr² × distance / rate as volume per unit time per gram",
+          "control tube with glass beads/dead seeds of equal volume",
+          "constant temperature / water bath"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how ATP is produced in mitochondria during aerobic respiration.",
+        "marks": 7,
+        "markscheme": [
+          "pyruvate enters mitochondrion / link reaction in matrix",
+          "pyruvate decarboxylated and oxidised to an acetyl group / forms acetyl CoA, producing CO₂ and NADH",
+          "Krebs cycle: acetyl group combined with a 4C compound to form a 6C compound",
+          "decarboxylation and oxidation reactions release CO₂ and reduce NAD/FAD",
+          "one ATP formed per turn by substrate-level phosphorylation",
+          "NADH/FADH₂ donate electrons to the electron transport chain on the inner membrane/cristae",
+          "energy from electron flow used to pump protons into the intermembrane space",
+          "proton gradient formed across inner membrane",
+          "protons diffuse back through ATP synthase / chemiosmosis",
+          "ATP synthase phosphorylates ADP to ATP / oxidative phosphorylation",
+          "oxygen is the final electron acceptor, forming water with protons"
+        ],
+        "notes": "Reject glycolysis details as they do not occur in mitochondria."
+      }
+    ]
+  },
+  {
+    "id": "XC-09",
+    "theme": "C",
+    "topics": ["C4.1", "C4.2"],
+    "paper": "2B",
+    "level": "SL",
+    "title": "Populations, interactions and carbon",
+    "stem": "Ecologists study how populations change and how matter cycles in ecosystems.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Outline",
+        "prompt": "Outline how random quadrat sampling is used to estimate the population size of a plant species in a meadow.",
+        "marks": 4,
+        "markscheme": [
+          "meadow mapped as a grid / measuring tapes as axes",
+          "random coordinates generated (random number table/generator)",
+          "quadrat of known area placed at each coordinate",
+          "number of individuals of the species counted in each quadrat",
+          "large number of quadrats / repeat to reduce error",
+          "mean per quadrat calculated",
+          "population = mean density × total area of meadow"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Describe",
+        "prompt": "Describe the processes by which carbon moves between organisms and the atmosphere.",
+        "marks": 4,
+        "markscheme": [
+          "photosynthesis removes CO₂ from the atmosphere / producers fix carbon",
+          "carbon passed to consumers by feeding",
+          "cell respiration (by producers, consumers, decomposers) releases CO₂",
+          "decomposers/saprotrophs digest dead organic matter, releasing CO₂",
+          "combustion of biomass/fossil fuels releases CO₂",
+          "methanogenesis by archaea releases methane which is oxidised to CO₂",
+          "incomplete decomposition leads to peat/fossil fuel formation (carbon sink)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how interactions between species can regulate population sizes in a community.",
+        "marks": 7,
+        "markscheme": [
+          "carrying capacity / populations limited by density-dependent factors",
+          "interspecific competition for a shared limited resource (food/light/space)",
+          "competition reduces growth/survival/reproduction of the weaker competitor",
+          "competitive exclusion may eliminate a species from an area",
+          "predation: more prey supports more predators",
+          "predators reduce prey numbers, then predator numbers fall (cycles)",
+          "predator–prey oscillations lag each other",
+          "herbivory limits plant populations / plants defended by toxins/spines",
+          "parasitism/pathogens spread faster at high density, reducing population",
+          "mutualism increases population of both species (e.g. mycorrhizae, pollination)",
+          "named example of any interaction with an effect on population size"
+        ],
+        "notes": "Award marks for mechanisms, not for lists of interaction types."
+      }
+    ]
+  },
+  {
+    "id": "XC-10",
+    "theme": "C",
+    "topics": ["C3.1", "C3.2"],
+    "paper": "2B",
+    "level": "SL",
+    "title": "Defence and coordination in the body",
+    "stem": "The human body is protected against pathogens and coordinates its systems to respond to changing demands.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Describe",
+        "prompt": "Describe the role of blood clotting in defence against disease.",
+        "marks": 4,
+        "markscheme": [
+          "damage to blood vessel / skin exposes collagen",
+          "platelets activated / release clotting factors",
+          "cascade of reactions / thrombin produced",
+          "thrombin converts soluble fibrinogen to insoluble fibrin",
+          "fibrin forms a mesh trapping blood cells",
+          "clot seals wound, preventing entry of pathogens",
+          "also prevents blood loss"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Outline",
+        "prompt": "Outline how B lymphocytes produce specific antibodies after infection.",
+        "marks": 4,
+        "markscheme": [
+          "antigen presented by phagocyte/macrophage to helper T cell",
+          "B cell with complementary antibody/receptor binds the antigen",
+          "helper T cell activates this specific B cell",
+          "activated B cell divides by mitosis / clonal expansion",
+          "clone differentiates into plasma cells",
+          "plasma cells secrete specific antibodies",
+          "memory cells also formed"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how the nervous system integrates changes in ventilation rate and heart rate during vigorous exercise.",
+        "marks": 7,
+        "markscheme": [
+          "increased cell respiration in muscles raises blood CO₂ concentration",
+          "CO₂ lowers blood pH",
+          "chemoreceptors in carotid arteries/aorta/medulla detect the fall in pH",
+          "impulses sent to the respiratory centre in the medulla (brainstem)",
+          "more frequent impulses to diaphragm and intercostal muscles",
+          "ventilation rate and depth increase, removing CO₂ and supplying O₂",
+          "cardiovascular centre in medulla also receives signals (chemoreceptors/baroreceptors)",
+          "sympathetic nerve impulses to the sinoatrial node increase heart rate",
+          "adrenaline secreted by adrenal glands also increases heart rate / endocrine input",
+          "more blood/oxygen delivered to muscles",
+          "parasympathetic (vagus) impulses slow heart rate after exercise / negative feedback"
+        ]
+      }
+    ]
+  }
+]

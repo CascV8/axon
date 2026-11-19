@@ -1,0 +1,635 @@
+[
+  {
+    "id": "XB-01",
+    "theme": "B",
+    "topics": ["B2.3"],
+    "paper": "1B",
+    "level": "SL",
+    "title": "Diffusion into agar cubes",
+    "stem": "Cubes of agar containing an alkaline pink indicator were placed in dilute acid. The time taken for each cube to become completely colourless (acid reaching the centre) was recorded for five cubes of each size.",
+    "data": {
+      "caption": "Mean time for agar cubes to become colourless (n = 5)",
+      "columns": ["Cube side length / mm", "Mean time / min", "SD / min"],
+      "rows": [
+        ["5", "4.0", "0.4"],
+        ["10", "14.5", "1.2"],
+        ["20", "52.0", "3.8"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the surface area to volume ratio of the 10 mm cube.",
+        "marks": 1,
+        "numeric": { "value": 0.6, "tolerance": 0.01, "unit": "mm⁻¹" },
+        "markscheme": ["600 mm² / 1000 mm³ = 0.6 (mm⁻¹) / 0.6 : 1"]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the mean rate at which acid penetrated the 20 mm cube, in mm min⁻¹.",
+        "marks": 2,
+        "numeric": { "value": 0.192, "tolerance": 0.005, "unit": "mm min⁻¹" },
+        "markscheme": [
+          "distance to centre = 10 mm (half the side length)",
+          "10 / 52.0 = 0.19 mm min⁻¹"
+        ],
+        "notes": "Award 1 mark for 20 / 52.0 = 0.38 mm min⁻¹ (full side length used)."
+      },
+      {
+        "label": "c",
+        "command": "Describe",
+        "prompt": "Describe the relationship between cube size and the time taken to become colourless.",
+        "marks": 2,
+        "markscheme": [
+          "time increases as cube size increases",
+          "increase is more than proportional / non-linear: doubling side from 10 to 20 mm increases time 3.6 times",
+          "quoted data e.g. 4.0 min for 5 mm vs 52.0 min for 20 mm",
+          "SDs are small relative to differences so the trend is reliable"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Explain how these results help to account for the limit on the size of cells.",
+        "marks": 3,
+        "markscheme": [
+          "as size increases, surface area to volume ratio decreases",
+          "larger cubes take disproportionately longer for substances to reach the centre by diffusion",
+          "rate of exchange depends on surface area while demand depends on volume",
+          "in a large cell, oxygen / nutrients could not diffuse to the centre fast enough to meet metabolic needs",
+          "waste products / heat could not be removed fast enough",
+          "so cells divide / remain small / become flattened or elongated to keep a large SA:V"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XB-02",
+    "theme": "B",
+    "topics": ["B3.1"],
+    "paper": "1B",
+    "level": "SL",
+    "title": "Ventilation in trained and untrained students",
+    "stem": "Tidal volume and ventilation rate were measured with a spirometer in endurance-trained and untrained students, at rest and during 5 minutes of cycling at the same power output (n = 12 per group).",
+    "data": {
+      "caption": "Mean tidal volume and ventilation rate",
+      "columns": ["Group", "Condition", "Mean tidal volume / dm³", "SD tidal volume / dm³", "Mean ventilation rate / breaths min⁻¹"],
+      "rows": [
+        ["untrained", "rest", "0.50", "0.08", "14"],
+        ["trained", "rest", "0.62", "0.10", "11"],
+        ["untrained", "exercise", "2.10", "0.30", "38"],
+        ["trained", "exercise", "2.60", "0.35", "32"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the mean volume of air ventilated per minute by untrained students during exercise.",
+        "marks": 1,
+        "numeric": { "value": 79.8, "tolerance": 0.1, "unit": "dm³ min⁻¹" },
+        "markscheme": ["2.10 × 38 = 79.8 dm³ min⁻¹"]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage increase in volume ventilated per minute by trained students from rest to exercise.",
+        "marks": 2,
+        "numeric": { "value": 1120, "tolerance": 5, "unit": "%" },
+        "markscheme": [
+          "rest 0.62 × 11 = 6.82 dm³ min⁻¹ and exercise 2.60 × 32 = 83.2 dm³ min⁻¹",
+          "(83.2 − 6.82) / 6.82 × 100 = 1120 % (allow 1119.9 %)"
+        ],
+        "notes": "A common error is to give 1220 % (ratio × 100) instead of the percentage increase."
+      },
+      {
+        "label": "c",
+        "command": "Compare",
+        "prompt": "Compare the breathing of trained and untrained students during exercise.",
+        "marks": 2,
+        "markscheme": [
+          "both groups increase tidal volume and ventilation rate compared with rest",
+          "trained students have a larger tidal volume (2.60 vs 2.10 dm³)",
+          "trained students have a lower ventilation rate (32 vs 38 breaths min⁻¹)",
+          "trained students ventilate a larger volume per minute (83.2 vs 79.8 dm³ min⁻¹)"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Deduce",
+        "prompt": "Using the standard deviations, deduce whether the difference in tidal volume between the two groups during exercise is likely to be significant.",
+        "marks": 2,
+        "markscheme": [
+          "untrained 1.80–2.40 dm³ and trained 2.25–2.95 dm³ (mean ± 1 SD)",
+          "the ranges overlap",
+          "so the difference may not be significant / a statistical test (e.g. t-test) is needed"
+        ]
+      },
+      {
+        "label": "e",
+        "command": "Suggest",
+        "prompt": "Suggest two variables that should be controlled in this investigation.",
+        "marks": 2,
+        "markscheme": [
+          "age of students",
+          "sex / body mass / height of students",
+          "time since last meal / caffeine intake",
+          "duration and intensity / power output of exercise (same cycle settings)",
+          "room temperature / altitude",
+          "time of day / prior warm-up / rest period before measurement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XB-03",
+    "theme": "B",
+    "topics": ["B3.3"],
+    "paper": "1B",
+    "level": "HL",
+    "title": "Sarcomere length and muscle tension",
+    "stem": "Single fibres from a frog leg muscle were stretched to different sarcomere lengths and then stimulated. The maximum tension produced is expressed as a percentage of the highest tension recorded (n = 6 fibres).",
+    "data": {
+      "caption": "Mean tension at different sarcomere lengths",
+      "columns": ["Sarcomere length / µm", "Mean tension / % of maximum", "SD / %"],
+      "rows": [
+        ["1.6", "60", "7"],
+        ["2.0", "95", "4"],
+        ["2.2", "100", "3"],
+        ["2.6", "78", "6"],
+        ["3.0", "45", "6"],
+        ["3.6", "5", "2"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "In an electron micrograph a sarcomere of length 2.2 µm measures 33 mm. Calculate the magnification of the micrograph.",
+        "marks": 2,
+        "numeric": { "value": 15000, "tolerance": 100, "unit": "×" },
+        "markscheme": [
+          "33 mm = 33 000 µm",
+          "33 000 / 2.2 = ×15 000"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Describe",
+        "prompt": "Describe the relationship between sarcomere length and tension.",
+        "marks": 2,
+        "markscheme": [
+          "tension increases from 1.6 to 2.2 µm",
+          "maximum tension (100 %) at 2.2 µm / between 2.0 and 2.2 µm",
+          "tension decreases at lengths above 2.2 µm",
+          "tension is almost zero at 3.6 µm (5 %)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain, using the sliding filament model, why tension falls as sarcomere length increases above 2.2 µm.",
+        "marks": 3,
+        "markscheme": [
+          "tension depends on the number of cross-bridges formed between myosin heads and actin",
+          "as the sarcomere is stretched, overlap between actin and myosin filaments decreases",
+          "fewer myosin heads can bind to actin / fewer cross-bridges",
+          "less force is generated by power strokes / less sliding of actin towards the M line",
+          "at 3.6 µm there is (almost) no overlap so (almost) no tension"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Suggest",
+        "prompt": "Suggest why tension is lower at a sarcomere length of 1.6 µm than at 2.2 µm.",
+        "marks": 2,
+        "markscheme": [
+          "actin filaments from opposite ends overlap each other / collide in the middle",
+          "interfering with cross-bridge formation",
+          "myosin filaments are pushed against the Z lines / cannot shorten further",
+          "titin / elastic structures resist further compression"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XB-04",
+    "theme": "B",
+    "topics": ["B4.1"],
+    "paper": "1B",
+    "level": "SL",
+    "title": "Plant zonation in a salt marsh",
+    "stem": "A transect was run from the seaward edge of a salt marsh inland. At each distance, soil salinity was measured and percentage cover of two plant species, P and Q, was estimated in 10 quadrats.",
+    "data": {
+      "caption": "Soil salinity and mean percentage cover along the transect (n = 10 quadrats)",
+      "columns": ["Distance from sea / m", "Soil salinity / ppt", "Mean cover P / %", "SD P / %", "Mean cover Q / %", "SD Q / %"],
+      "rows": [
+        ["0", "32", "64", "12", "0", "0"],
+        ["20", "24", "48", "15", "6", "4"],
+        ["40", "15", "16", "9", "35", "11"],
+        ["60", "8", "2", "2", "58", "14"],
+        ["80", "3", "0", "0", "71", "10"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage change in mean cover of species P between 0 m and 40 m.",
+        "marks": 2,
+        "numeric": { "value": -75, "tolerance": 0.5, "unit": "%" },
+        "markscheme": [
+          "(16 − 64) / 64 × 100",
+          "−75 % / 75 % decrease (sign or 'decrease' required)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Describe",
+        "prompt": "Describe the distribution of species Q along the transect.",
+        "marks": 2,
+        "markscheme": [
+          "absent at the seaward edge (0 m)",
+          "cover increases with distance from the sea",
+          "highest cover at 80 m (71 %)",
+          "largest increase between 20 and 40 m (6 % to 35 %)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Evaluate",
+        "prompt": "Evaluate the hypothesis that soil salinity determines the distribution of species P and Q.",
+        "marks": 3,
+        "markscheme": [
+          "support: P cover is positively correlated with salinity / highest where salinity is 32 ppt",
+          "support: Q cover is negatively correlated with salinity / absent at highest salinity",
+          "support: Q's tolerance range appears not to include salinities above about 24–32 ppt",
+          "limitation: correlation does not prove causation",
+          "limitation: other factors vary with distance e.g. flooding frequency / waterlogging / soil oxygen",
+          "limitation: competition between P and Q may limit P inland (realized vs fundamental range)",
+          "limitation: only one transect / one marsh sampled"
+        ],
+        "notes": "At least one supporting and one limiting point for full marks."
+      },
+      {
+        "label": "d",
+        "command": "Suggest",
+        "prompt": "Suggest one improvement to the method that would make the conclusion more reliable.",
+        "marks": 1,
+        "markscheme": [
+          "use several transects / sample several marshes",
+          "grow P and Q in a controlled experiment at different salinities",
+          "measure other abiotic factors e.g. flooding / soil oxygen",
+          "repeat at different times of year"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XB-05",
+    "theme": "B",
+    "topics": ["B1.1"],
+    "paper": "2A",
+    "level": "SL",
+    "title": "Carbohydrates and lipids as energy stores",
+    "stem": "Plants and animals store energy in carbohydrates and lipids.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Outline",
+        "prompt": "Outline how two glucose molecules are linked to form maltose.",
+        "marks": 2,
+        "markscheme": [
+          "condensation reaction",
+          "water is removed / released",
+          "glycosidic bond formed",
+          "between carbon 1 of one glucose and carbon 4 of the other / 1,4 bond",
+          "both are α-glucose"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Compare and contrast",
+        "prompt": "Compare and contrast the structure of starch (amylopectin), glycogen and cellulose.",
+        "marks": 3,
+        "markscheme": [
+          "all are polysaccharides / polymers of glucose linked by glycosidic bonds",
+          "amylopectin and glycogen are made of α-glucose; cellulose of β-glucose",
+          "amylopectin and glycogen are branched (1,6 bonds); cellulose is unbranched",
+          "glycogen is more highly branched than amylopectin",
+          "cellulose: alternate glucose units inverted / straight chains held in microfibrils by hydrogen bonds",
+          "amylopectin / glycogen are compact / coiled"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain why animals use triglycerides rather than glycogen for long-term energy storage.",
+        "marks": 2,
+        "markscheme": [
+          "triglycerides release about twice as much energy per gram",
+          "triglycerides are hydrophobic so are stored without water / glycogen is stored with water, adding mass",
+          "so lipid stores are lighter for the same energy, important for mobile animals",
+          "adipose tissue also gives thermal insulation / protection",
+          "glycogen is better for rapid release, so is used for short-term storage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XB-06",
+    "theme": "B",
+    "topics": ["B1.2"],
+    "paper": "2A",
+    "level": "HL",
+    "title": "Protein structure",
+    "stem": "Proteins are polymers of amino acids whose function depends on their three-dimensional shape.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the number of different tripeptides that could be made from the 20 amino acids coded for in the genetic code.",
+        "marks": 1,
+        "numeric": { "value": 8000, "tolerance": 0, "unit": "" },
+        "markscheme": ["20³ = 8000"]
+      },
+      {
+        "label": "b",
+        "command": "Explain",
+        "prompt": "Explain how interactions between R groups determine the tertiary structure of a protein.",
+        "marks": 3,
+        "markscheme": [
+          "tertiary structure is the folding of the polypeptide into a specific 3-D shape",
+          "hydrophobic R groups cluster in the interior away from water",
+          "hydrophilic / polar R groups are on the surface in contact with water",
+          "ionic bonds form between positively and negatively charged R groups",
+          "hydrogen bonds form between polar R groups",
+          "disulfide bonds (covalent) form between cysteine R groups",
+          "the sequence of amino acids (primary structure) determines where these interactions occur"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Distinguish",
+        "prompt": "Distinguish between fibrous and globular proteins.",
+        "marks": 2,
+        "markscheme": [
+          "fibrous are long and narrow / elongated; globular are rounded / spherical",
+          "fibrous are (usually) insoluble in water; globular are (usually) soluble",
+          "fibrous have structural roles e.g. collagen; globular have metabolic roles e.g. enzymes / insulin",
+          "fibrous often have repetitive amino acid sequences; globular have irregular sequences"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Explain why many proteins lose their function at high temperatures.",
+        "marks": 2,
+        "markscheme": [
+          "increased molecular vibration / kinetic energy breaks hydrogen bonds / ionic bonds",
+          "the protein denatures / the 3-D shape changes",
+          "e.g. active site no longer complementary to substrate",
+          "denaturation is usually irreversible",
+          "hydrophobic groups exposed so protein may become insoluble"
+        ],
+        "notes": "Reject 'the protein is killed'."
+      }
+    ]
+  },
+  {
+    "id": "XB-07",
+    "theme": "B",
+    "topics": ["B2.1", "B2.2"],
+    "paper": "2A",
+    "level": "SL",
+    "title": "Membranes and compartments",
+    "stem": "Membranes surround cells and separate compartments within eukaryotic cells.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Explain",
+        "prompt": "Explain why phospholipids form a bilayer in water.",
+        "marks": 2,
+        "markscheme": [
+          "phospholipids are amphipathic",
+          "hydrophilic phosphate heads face the water on both sides",
+          "hydrophobic hydrocarbon tails face inwards away from water",
+          "this arrangement is the most stable / lowest energy state"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Distinguish",
+        "prompt": "Distinguish between simple diffusion and facilitated diffusion across membranes.",
+        "marks": 2,
+        "markscheme": [
+          "simple diffusion is directly through the phospholipid bilayer; facilitated diffusion is through channel / carrier proteins",
+          "simple diffusion for small / non-polar molecules e.g. O₂; facilitated for ions / polar molecules e.g. glucose",
+          "facilitated diffusion can be saturated / has a maximum rate; simple diffusion does not",
+          "facilitated diffusion is specific / can be gated"
+        ],
+        "notes": "Reject 'facilitated diffusion uses ATP'; both are passive."
+      },
+      {
+        "label": "c",
+        "command": "Outline",
+        "prompt": "Outline an advantage of separating transcription from translation by the nuclear envelope.",
+        "marks": 2,
+        "markscheme": [
+          "transcription occurs in the nucleus and translation in the cytoplasm",
+          "pre-mRNA can be modified / spliced before translation",
+          "introns removed so only mature mRNA is translated",
+          "prevents incorrect proteins being made / allows extra control of gene expression",
+          "mRNA leaves through nuclear pores"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XB-08",
+    "theme": "B",
+    "topics": ["B3.2"],
+    "paper": "2B",
+    "level": "SL",
+    "title": "Transport in plants and animals",
+    "stem": "Multicellular organisms need transport systems to move substances over long distances.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Compare and contrast",
+        "prompt": "Compare and contrast the structure of arteries and veins.",
+        "marks": 4,
+        "markscheme": [
+          "both have three layers / tunica externa, media and intima",
+          "both are lined with endothelium",
+          "arteries have thicker walls than veins (relative to lumen)",
+          "arteries have more smooth muscle and elastic fibres",
+          "veins have a wider lumen",
+          "veins have valves; arteries do not (except at base of aorta/pulmonary artery)",
+          "arteries are round in section; veins often flattened"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Outline",
+        "prompt": "Outline how water moves up the xylem of a tall plant.",
+        "marks": 4,
+        "markscheme": [
+          "transpiration: water evaporates from cell walls of spongy mesophyll and diffuses out through stomata",
+          "this creates tension / negative pressure in xylem",
+          "water is pulled up (from roots to leaves) by the tension",
+          "cohesion between water molecules due to hydrogen bonds keeps the column continuous",
+          "adhesion of water to the xylem walls / cellulose",
+          "xylem vessels are dead / hollow / lack end walls so offer little resistance",
+          "lignified walls prevent collapse under tension",
+          "passive process / no energy needed from the plant"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how the structure of capillaries is related to their function, including the formation and return of tissue fluid.",
+        "marks": 7,
+        "markscheme": [
+          "capillary walls are one cell thick / endothelium only, so short diffusion distance",
+          "narrow lumen so red blood cells pass close to the wall / slow blood flow",
+          "extensive branching gives a large surface area for exchange",
+          "fenestrations / gaps between cells allow passage of fluid",
+          "at the arterial end, hydrostatic (blood) pressure is high",
+          "plasma is forced out to form tissue fluid",
+          "tissue fluid contains oxygen / glucose / ions but not large proteins / red blood cells",
+          "exchange of substances between tissue fluid and cells by diffusion",
+          "at the venous end, hydrostatic pressure is lower",
+          "water returns to the capillary by osmosis (plasma proteins lower water potential)",
+          "excess tissue fluid drains into lymph vessels and returns to the blood"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "XB-09",
+    "theme": "B",
+    "topics": ["B2.2"],
+    "paper": "2B",
+    "level": "HL",
+    "title": "Organelles and the secretory pathway",
+    "stem": "Eukaryotic cells contain organelles whose structures are adapted to their functions.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Describe",
+        "prompt": "Describe how the structure of a mitochondrion is adapted for aerobic respiration.",
+        "marks": 4,
+        "markscheme": [
+          "double membrane / outer membrane separates mitochondrion from cytoplasm",
+          "small intermembrane space so proton gradient builds quickly",
+          "inner membrane folded into cristae to increase surface area",
+          "inner membrane contains electron transport chain proteins and ATP synthase",
+          "matrix contains enzymes of the link reaction and Krebs cycle",
+          "matrix contains 70S ribosomes / DNA to make some of its own proteins"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Outline",
+        "prompt": "Outline the structure and function of the nuclear envelope.",
+        "marks": 4,
+        "markscheme": [
+          "double membrane",
+          "outer membrane continuous with the rough ER",
+          "contains nuclear pores",
+          "pores allow mRNA / ribosome subunits to leave the nucleus",
+          "pores allow proteins e.g. histones / polymerases / nucleotides to enter",
+          "separates transcription in nucleus from translation in cytoplasm",
+          "envelope breaks down into vesicles during mitosis / meiosis"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how a protein that is secreted from a cell is synthesized, processed and released.",
+        "marks": 7,
+        "markscheme": [
+          "gene transcribed to mRNA in the nucleus; mRNA exits through nuclear pores",
+          "translation begins on a free ribosome",
+          "signal sequence at the start of the polypeptide directs ribosome to the rough ER",
+          "polypeptide enters the lumen of the rough ER as it is synthesized",
+          "protein folds / is modified (e.g. glycosylation) in the ER",
+          "protein transported to the Golgi apparatus in vesicles budding from the ER",
+          "vesicles fuse with the cis face of the Golgi",
+          "protein further modified / sorted / packaged in the Golgi",
+          "secretory vesicles bud from the trans face of the Golgi",
+          "vesicles move to plasma membrane (along cytoskeleton)",
+          "vesicle fuses with the plasma membrane / exocytosis releases protein",
+          "ATP required for vesicle movement / exocytosis"
+        ],
+        "notes": "Award marks for the correct sequence of organelles; reject 'the Golgi makes the protein'."
+      }
+    ]
+  },
+  {
+    "id": "XB-10",
+    "theme": "B",
+    "topics": ["B4.1", "B4.2"],
+    "paper": "2B",
+    "level": "SL",
+    "title": "Adaptation, habitat and nutrition",
+    "stem": "Organisms are adapted to the habitats in which they live and to the ways in which they obtain food.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Outline",
+        "prompt": "Outline the modes of nutrition shown by organisms.",
+        "marks": 4,
+        "markscheme": [
+          "autotrophs make their own carbon compounds from inorganic carbon (CO₂)",
+          "photoautotrophs use light energy / chemoautotrophs use energy from oxidation of inorganic chemicals",
+          "heterotrophs obtain carbon compounds from other organisms",
+          "holozoic nutrition: food ingested then digested internally",
+          "saprotrophs secrete digestive enzymes onto dead organic matter and absorb products",
+          "mixotrophs can use both autotrophic and heterotrophic nutrition e.g. Euglena",
+          "named example of any mode"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Describe",
+        "prompt": "Describe adaptations of herbivores for feeding on plants and adaptations of plants that resist herbivory.",
+        "marks": 4,
+        "markscheme": [
+          "herbivore: grinding teeth / molars with ridges to break down cell walls",
+          "herbivore: mouthparts adapted for piercing / sucking e.g. aphids",
+          "herbivore: microbes in gut digest cellulose / long gut",
+          "herbivore: detoxification of plant toxins",
+          "plant: physical defences e.g. thorns / spines / hairs / tough leaves",
+          "plant: chemical defences e.g. toxins / alkaloids / tannins",
+          "plant: silica in leaves wears down teeth"
+        ],
+        "notes": "For full marks both herbivore and plant adaptations must be described."
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how abiotic factors and adaptations determine where a plant species can grow, using a named habitat as an example.",
+        "marks": 7,
+        "markscheme": [
+          "each species has a range of tolerance for each abiotic factor",
+          "abiotic factors include temperature / water / light / salinity / soil pH / nutrients",
+          "species is found only where all factors are within its tolerance limits",
+          "named habitat e.g. sand dune / mangrove swamp / desert",
+          "sand dune: deep / extensive roots to reach water",
+          "sand dune: rolled leaves / sunken stomata / thick cuticle reduce water loss",
+          "mangrove: salt excreted from leaves / excluded at roots",
+          "mangrove: pneumatophores / aerial roots obtain oxygen in waterlogged mud",
+          "adaptations are inherited and result from natural selection",
+          "biotic factors e.g. competition may restrict species further",
+          "distribution can be investigated using transects / quadrats",
+          "climate (temperature and rainfall) determines biome / dominant vegetation"
+        ],
+        "notes": "Award at most 4 marks if no named habitat with specific adaptations is given."
+      }
+    ]
+  }
+]
