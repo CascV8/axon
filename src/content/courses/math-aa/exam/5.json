@@ -1,0 +1,45 @@
+[
+  {
+    "id": "math-aa-X-5-01",
+    "unit": "5",
+    "topics": ["math-aa-5.1", "math-aa-5.7", "math-aa-5.5"],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Analysing a cubic",
+    "stem": "Let f(x) = x³ − 6x² + 9x.",
+    "parts": [
+      { "label": "a", "command": "Find", "prompt": "Find f′(x).", "marks": 1,
+        "markscheme": ["f′(x) = 3x² − 12x + 9"] },
+      { "label": "b", "command": "Find", "prompt": "Find the coordinates of the stationary points of the graph of f and determine their nature.", "marks": 5,
+        "markscheme": ["setting f′(x) = 0", "3(x − 1)(x − 3) = 0 ⇒ x = 1, x = 3", "(1, 4) and (3, 0)", "f″(x) = 6x − 12 (or sign of f′ either side)", "f″(1) = −6 < 0 so (1, 4) is a local maximum; f″(3) = 6 > 0 so (3, 0) is a local minimum"] },
+      { "label": "c", "command": "Find", "prompt": "Find the coordinates of the point of inflection.", "marks": 2,
+        "markscheme": ["f″(x) = 0 ⇒ x = 2 (and f″ changes sign there)", "(2, 2)"] },
+      { "label": "d", "command": "Find", "prompt": "Find the area of the region enclosed by the graph of f and the x-axis for 0 ≤ x ≤ 3.", "marks": 3,
+        "numeric": { "value": 6.75, "tolerance": 0, "unit": "" },
+        "markscheme": ["∫₀³ (x³ − 6x² + 9x) dx", "[x⁴/4 − 2x³ + 9x²/2]₀³ = 81/4 − 54 + 81/2", "27/4"],
+        "notes": "f(x) = x(x − 3)² ≥ 0 on [0, 3], so the integral equals the area." }
+    ]
+  },
+  {
+    "id": "math-aa-X-5-02",
+    "unit": "5",
+    "topics": ["math-aa-5.12"],
+    "paper": "P3",
+    "level": "HL",
+    "title": "Three ways to solve one differential equation",
+    "stem": "This question compares an exact solution, a series approximation and a numerical method for the differential equation dy/dx = 1 + y², with y = 0 when x = 0.",
+    "parts": [
+      { "label": "a", "command": "Solve", "prompt": "By separating variables, solve the differential equation, giving y in terms of x.", "marks": 3,
+        "markscheme": ["∫ 1/(1 + y²) dy = ∫ 1 dx", "arctan y = x + c, and c = 0 from y(0) = 0", "y = tan x"] },
+      { "label": "b", "command": "Show that", "prompt": "Show that d²y/dx² = 2y dy/dx and find an expression for d³y/dx³ in terms of y, dy/dx and d²y/dx².", "marks": 4,
+        "markscheme": ["differentiating 1 + y² implicitly", "d²y/dx² = 2y dy/dx", "product rule applied to 2y dy/dx", "d³y/dx³ = 2(dy/dx)² + 2y d²y/dx²"] },
+      { "label": "c", "command": "Hence", "prompt": "Hence find the Maclaurin series for y up to and including the term in x³.", "marks": 3,
+        "markscheme": ["at x = 0: y = 0, y′ = 1", "y″ = 0, y‴ = 2", "y ≈ x + x³/3"] },
+      { "label": "d", "command": "Calculate", "prompt": "Use Euler's method with step length 0.1 to estimate y when x = 0.2.", "marks": 3,
+        "numeric": { "value": 0.201, "tolerance": 0.0005, "unit": "" },
+        "markscheme": ["y₁ = 0 + 0.1(1 + 0²) = 0.1", "y₂ = 0.1 + 0.1(1 + 0.1²)", "y(0.2) ≈ 0.201"] },
+      { "label": "e", "command": "Compare", "prompt": "Compare the estimates from parts (c) and (d) with the exact value of y at x = 0.2.", "marks": 2,
+        "markscheme": ["exact tan 0.2 = 0.20271…; series gives 0.20267, Euler gives 0.201", "the series is much closer (error ≈ 0.00004 vs ≈ 0.0017); Euler underestimates because the gradient increases across each step"] }
+    ]
+  }
+]

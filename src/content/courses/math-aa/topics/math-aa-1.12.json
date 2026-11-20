@@ -1,0 +1,587 @@
+{
+  "id": "math-aa-1.12",
+  "code": "AHL 1.12–1.14",
+  "unit": "1",
+  "title": "Complex numbers",
+  "level": "HL",
+  "summary": "Work with complex numbers in Cartesian, modulus–argument and Euler form, use De Moivre’s theorem, and find roots of complex numbers and polynomials.",
+  "keyterms": [
+    {
+      "id": "math-aa-1.12-imaginary-unit",
+      "term": "Imaginary unit",
+      "definition": "i, the number with i² = −1.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-cartesian-form",
+      "term": "Cartesian form",
+      "definition": "z = a + bi, where a = Re(z) and b = Im(z) are real.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-conjugate",
+      "term": "Complex conjugate",
+      "definition": "z* = a − bi for z = a + bi; zz* = a² + b² is real.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-modulus",
+      "term": "Modulus",
+      "definition": "|z| = √(a² + b²), the distance of z from the origin on an Argand diagram.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-argument",
+      "term": "Argument",
+      "definition": "arg z, the angle from the positive real axis to z; the principal value lies in −π < θ ≤ π.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-polar-form",
+      "term": "Modulus–argument form",
+      "definition": "z = r(cos θ + i sin θ) = r cis θ, with r = |z| and θ = arg z.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-euler-form",
+      "term": "Euler form",
+      "definition": "z = re^(iθ), equivalent to r cis θ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-argand-diagram",
+      "term": "Argand diagram",
+      "definition": "A plane with real part on the horizontal axis and imaginary part on the vertical axis.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-de-moivre",
+      "term": "De Moivre's theorem",
+      "definition": "(r cis θ)ⁿ = rⁿ cis(nθ).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-nth-roots",
+      "term": "nth roots",
+      "definition": "The n solutions of zⁿ = w; they share modulus |w|^(1/n) and are spaced 2π/n apart in argument.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.12-conjugate-root",
+      "term": "Conjugate root theorem",
+      "definition": "Non-real roots of a polynomial with real coefficients occur in conjugate pairs a ± bi.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-1.12-1",
+      "title": "Cartesian form",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-1.12-1-q01",
+          "type": "mcq",
+          "prompt": "Simplify i⁷.",
+          "options": [
+            "−i",
+            "i",
+            "1",
+            "−1"
+          ],
+          "answer": 0,
+          "explanation": "i⁴ = 1, so i⁷ = i³ = i² × i = −i.",
+          "terms": [
+            "math-aa-1.12-imaginary-unit"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q02",
+          "type": "mcq",
+          "prompt": "Expand (2 + 3i)(1 − i).",
+          "options": [
+            "−1 + i",
+            "2 − 3i",
+            "5 − i",
+            "5 + i"
+          ],
+          "answer": 3,
+          "explanation": "2 − 2i + 3i − 3i² = 2 + i + 3 = 5 + i, using i² = −1.",
+          "terms": [
+            "math-aa-1.12-cartesian-form",
+            "math-aa-1.12-imaginary-unit"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q03",
+          "type": "fill",
+          "text": "The complex conjugate of 4 − 7i is ___.",
+          "answer": "4 + 7i",
+          "bank": [
+            "−4 − 7i",
+            "4 + 7i",
+            "7 − 4i",
+            "−4 + 7i"
+          ],
+          "explanation": "Change the sign of the imaginary part only.",
+          "terms": [
+            "math-aa-1.12-conjugate"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q04",
+          "type": "mcq",
+          "prompt": "Write (3 + i)/(1 − i) in the form a + bi.",
+          "options": [
+            "2 + 4i",
+            "1 + 2i",
+            "1 − 2i",
+            "3 − i"
+          ],
+          "answer": 1,
+          "explanation": "Multiply top and bottom by 1 + i: (3 + i)(1 + i) = 2 + 4i and (1 − i)(1 + i) = 2.",
+          "terms": [
+            "math-aa-1.12-conjugate",
+            "math-aa-1.12-cartesian-form"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q05",
+          "type": "tf",
+          "statement": "zz* is always real and non-negative.",
+          "answer": true,
+          "explanation": "(a + bi)(a − bi) = a² + b² = |z|².",
+          "terms": [
+            "math-aa-1.12-conjugate",
+            "math-aa-1.12-modulus"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q06",
+          "type": "mcq",
+          "prompt": "Find |−5 + 12i|.",
+          "options": [
+            "169",
+            "7",
+            "17",
+            "13"
+          ],
+          "answer": 3,
+          "explanation": "√(25 + 144) = √169 = 13.",
+          "terms": [
+            "math-aa-1.12-modulus"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q07",
+          "type": "fill",
+          "text": "The roots of z² + 4z + 13 = 0 are −2 ± ___.",
+          "answer": "3i",
+          "bank": [
+            "3",
+            "9i",
+            "6i",
+            "3i"
+          ],
+          "explanation": "Discriminant 16 − 52 = −36, √(−36) = 6i, and 6i/2 = 3i.",
+          "terms": [
+            "math-aa-1.12-conjugate-root",
+            "math-aa-1.12-imaginary-unit"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q08",
+          "type": "tf",
+          "statement": "If a polynomial with real coefficients has root 2 − i, then 2 + i is also a root.",
+          "answer": true,
+          "explanation": "The conjugate root theorem: real coefficients force non-real roots to come in conjugate pairs.",
+          "terms": [
+            "math-aa-1.12-conjugate-root"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q09",
+          "type": "match",
+          "prompt": "Match each complex number to its point on an Argand diagram.",
+          "pairs": [
+            {
+              "left": "3 + 4i",
+              "right": "(3, 4)"
+            },
+            {
+              "left": "−2i",
+              "right": "(0, −2)"
+            },
+            {
+              "left": "−1",
+              "right": "(−1, 0)"
+            },
+            {
+              "left": "−1 − i",
+              "right": "(−1, −1)"
+            }
+          ],
+          "explanation": "Real part horizontally, imaginary part vertically.",
+          "terms": [
+            "math-aa-1.12-argand-diagram"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to divide one complex number by another.",
+          "items": [
+            "Write the quotient as a fraction",
+            "Multiply top and bottom by the conjugate of the denominator",
+            "Expand using i² = −1",
+            "Separate into real and imaginary parts"
+          ],
+          "explanation": "The conjugate makes the denominator real.",
+          "terms": [
+            "math-aa-1.12-conjugate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-1.12-2",
+      "title": "Modulus–argument and Euler form",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-1.12-2-q01",
+          "type": "mcq",
+          "prompt": "Find arg(1 + i√3).",
+          "options": [
+            "−π/3",
+            "π/3",
+            "π/6",
+            "2π/3"
+          ],
+          "answer": 1,
+          "explanation": "First quadrant, tan θ = √3, so θ = π/3.",
+          "terms": [
+            "math-aa-1.12-argument"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q02",
+          "type": "mcq",
+          "prompt": "Write −2 in modulus–argument form.",
+          "options": [
+            "2 cis(−π/2)",
+            "2 cis(π/2)",
+            "2 cis π",
+            "2 cis 0"
+          ],
+          "answer": 2,
+          "explanation": "Modulus 2; −2 lies on the negative real axis, so the argument is π.",
+          "terms": [
+            "math-aa-1.12-polar-form"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q03",
+          "type": "fill",
+          "text": "In Euler form, 3 cis(π/4) = 3e^(i × ___).",
+          "answer": "π/4",
+          "bank": [
+            "π/2",
+            "3π/4",
+            "π",
+            "π/4"
+          ],
+          "explanation": "r cis θ = re^(iθ), so the argument goes in the exponent unchanged.",
+          "terms": [
+            "math-aa-1.12-euler-form"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q04",
+          "type": "tf",
+          "statement": "When multiplying complex numbers in polar form, the moduli multiply and the arguments add.",
+          "answer": true,
+          "explanation": "r₁ cis θ₁ × r₂ cis θ₂ = r₁r₂ cis(θ₁ + θ₂).",
+          "terms": [
+            "math-aa-1.12-polar-form"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q05",
+          "type": "mcq",
+          "prompt": "Simplify 2 cis(π/3) × 4 cis(π/6).",
+          "options": [
+            "8 cis(π/18)",
+            "8i",
+            "6i",
+            "8"
+          ],
+          "answer": 1,
+          "explanation": "8 cis(π/3 + π/6) = 8 cis(π/2) = 8i.",
+          "terms": [
+            "math-aa-1.12-polar-form"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q06",
+          "type": "mcq",
+          "prompt": "Find the principal argument of −1 − i.",
+          "options": [
+            "3π/4",
+            "π/4",
+            "−π/4",
+            "−3π/4"
+          ],
+          "answer": 3,
+          "explanation": "Third quadrant; reference angle π/4, so θ = −π + π/4 = −3π/4.",
+          "terms": [
+            "math-aa-1.12-argument"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q07",
+          "type": "fill",
+          "text": "e^(iπ) + 1 = ___",
+          "answer": "0",
+          "accept": [
+            "zero"
+          ],
+          "bank": [
+            "2",
+            "1",
+            "−1",
+            "0"
+          ],
+          "explanation": "e^(iπ) = cos π + i sin π = −1.",
+          "terms": [
+            "math-aa-1.12-euler-form"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q08",
+          "type": "tf",
+          "statement": "The principal argument of −3i is π/2.",
+          "answer": false,
+          "explanation": "−3i lies on the negative imaginary axis, so its argument is −π/2.",
+          "terms": [
+            "math-aa-1.12-argument"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q09",
+          "type": "match",
+          "prompt": "Match each expression to an equivalent.",
+          "pairs": [
+            {
+              "left": "cis θ",
+              "right": "cos θ + i sin θ"
+            },
+            {
+              "left": "|z₁z₂|",
+              "right": "|z₁||z₂|"
+            },
+            {
+              "left": "arg(z₁/z₂)",
+              "right": "arg z₁ − arg z₂"
+            },
+            {
+              "left": "(r cis θ)*",
+              "right": "r cis(−θ)"
+            }
+          ],
+          "explanation": "These rules make multiplication and division quick in polar form.",
+          "terms": [
+            "math-aa-1.12-polar-form",
+            "math-aa-1.12-modulus",
+            "math-aa-1.12-argument"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to write −√3 + i in modulus–argument form.",
+          "items": [
+            "Note the point is in the second quadrant",
+            "Find the modulus √(3 + 1) = 2",
+            "Find the reference angle arctan(1/√3) = π/6",
+            "Argument θ = π − π/6 = 5π/6",
+            "Write z = 2 cis(5π/6)"
+          ],
+          "explanation": "Always sketch the quadrant first so the argument is correct.",
+          "terms": [
+            "math-aa-1.12-modulus",
+            "math-aa-1.12-argument",
+            "math-aa-1.12-polar-form"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-1.12-3",
+      "title": "De Moivre's theorem and roots",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-1.12-3-q01",
+          "type": "mcq",
+          "prompt": "Simplify (cis(π/6))⁶.",
+          "options": [
+            "1",
+            "−1",
+            "−i",
+            "i"
+          ],
+          "answer": 1,
+          "explanation": "De Moivre: cis(6 × π/6) = cis π = −1.",
+          "terms": [
+            "math-aa-1.12-de-moivre"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q02",
+          "type": "mcq",
+          "prompt": "Evaluate (1 + i)⁴.",
+          "options": [
+            "4i",
+            "−4i",
+            "−4",
+            "4"
+          ],
+          "answer": 2,
+          "explanation": "1 + i = √2 cis(π/4), so (1 + i)⁴ = 4 cis π = −4.",
+          "terms": [
+            "math-aa-1.12-de-moivre"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q03",
+          "type": "fill",
+          "text": "The nth roots of a complex number are equally spaced, with arguments differing by ___.",
+          "answer": "2π/n",
+          "bank": [
+            "π/(2n)",
+            "π/n",
+            "2π",
+            "2π/n"
+          ],
+          "explanation": "They lie on a circle and divide the full turn 2π into n equal parts.",
+          "terms": [
+            "math-aa-1.12-nth-roots"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q04",
+          "type": "tf",
+          "statement": "For n ≥ 2, the sum of the n nth roots of unity is 0.",
+          "answer": true,
+          "explanation": "They are the vertices of a regular n-gon centred at the origin, so they balance out (a geometric series with ratio cis(2π/n)).",
+          "terms": [
+            "math-aa-1.12-nth-roots"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q05",
+          "type": "mcq",
+          "prompt": "Find the cube roots of 8.",
+          "options": [
+            "2, −1 + i√3, −1 − i√3",
+            "2, −2, 2i",
+            "2, 1 + i√3, 1 − i√3",
+            "2 only"
+          ],
+          "answer": 0,
+          "explanation": "2 cis 0, 2 cis(2π/3), 2 cis(4π/3); the last two are −1 ± i√3.",
+          "terms": [
+            "math-aa-1.12-nth-roots"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q06",
+          "type": "mcq",
+          "prompt": "Which statement is De Moivre’s theorem?",
+          "options": [
+            "(r cis θ)ⁿ = r cis(nθ)",
+            "(r cis θ)ⁿ = rⁿ cis(θ + n)",
+            "(r cis θ)ⁿ = rⁿ cis(nθ)",
+            "(r cis θ)ⁿ = nr cis(θⁿ)"
+          ],
+          "answer": 2,
+          "explanation": "Raise the modulus to the power n and multiply the argument by n.",
+          "terms": [
+            "math-aa-1.12-de-moivre"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q07",
+          "type": "fill",
+          "text": "z⁴ = 16 has ___ distinct complex solutions.",
+          "answer": "4",
+          "bank": [
+            "16",
+            "1",
+            "2",
+            "4"
+          ],
+          "explanation": "A degree-n polynomial has n complex roots: ±2 and ±2i.",
+          "terms": [
+            "math-aa-1.12-nth-roots"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q08",
+          "type": "tf",
+          "statement": "cos 2θ = cos²θ − sin²θ follows from the real part of (cos θ + i sin θ)² = cos 2θ + i sin 2θ.",
+          "answer": true,
+          "explanation": "Expanding the left side gives cos²θ − sin²θ + 2i sin θ cos θ; equate real parts.",
+          "terms": [
+            "math-aa-1.12-de-moivre"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q09",
+          "type": "match",
+          "prompt": "Match each equation to its solutions.",
+          "pairs": [
+            {
+              "left": "z² = 1",
+              "right": "±1"
+            },
+            {
+              "left": "z⁴ = 1",
+              "right": "±1, ±i"
+            },
+            {
+              "left": "z³ = 1",
+              "right": "1, cis(±2π/3)"
+            },
+            {
+              "left": "z² = −1",
+              "right": "±i"
+            }
+          ],
+          "explanation": "Roots of unity lie on the unit circle, spaced 2π/n apart.",
+          "terms": [
+            "math-aa-1.12-nth-roots"
+          ]
+        },
+        {
+          "id": "math-aa-1.12-3-q10",
+          "type": "order",
+          "prompt": "Order the steps to solve z³ = 8i.",
+          "items": [
+            "Write 8i = 8 cis(π/2)",
+            "Each root has modulus ∛8 = 2",
+            "The first argument is (π/2)/3 = π/6",
+            "Add 2π/3 repeatedly: π/6, 5π/6, 3π/2",
+            "Roots: 2 cis(π/6), 2 cis(5π/6), 2 cis(3π/2)"
+          ],
+          "explanation": "Divide the argument by n, then step round the circle by 2π/n.",
+          "terms": [
+            "math-aa-1.12-nth-roots",
+            "math-aa-1.12-polar-form"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "id": "math-aa-1.4",
+  "code": "SL 1.4, 1.5, 1.7",
+  "unit": "1",
+  "title": "Exponents, logarithms and finance",
+  "level": "SL",
+  "summary": "Use the laws of exponents and logarithms, solve exponential equations, and apply compound interest and depreciation.",
+  "keyterms": [
+    {
+      "id": "math-aa-1.4-exponent",
+      "term": "Exponent",
+      "definition": "The power n in aⁿ; laws include aᵐ × aⁿ = aᵐ⁺ⁿ, (aᵐ)ⁿ = aᵐⁿ and a⁻ⁿ = 1/aⁿ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-logarithm",
+      "term": "Logarithm",
+      "definition": "logₐ b is the power to which a must be raised to give b: aˣ = b ⇔ x = logₐ b (a > 0, a ≠ 1, b > 0).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-natural-log",
+      "term": "Natural logarithm",
+      "definition": "ln x, the logarithm to base e; ln x and eˣ are inverse functions.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-euler-number",
+      "term": "Euler's number",
+      "definition": "The irrational constant e ≈ 2.718, the base of natural exponential growth.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-log-laws",
+      "term": "Laws of logarithms",
+      "definition": "log(xy) = log x + log y, log(x/y) = log x − log y and log xᵐ = m log x, for any valid base.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-change-of-base",
+      "term": "Change of base",
+      "definition": "logₐ x = log_b x / log_b a; used to evaluate any logarithm with ln or log₁₀.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-exponential-equation",
+      "term": "Exponential equation",
+      "definition": "An equation with the unknown in a power, solved by matching bases or taking logarithms of both sides.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-compound-interest",
+      "term": "Compound interest",
+      "definition": "Interest added to the balance each period so later interest is earned on it: FV = PV(1 + r/(100k))ᵏⁿ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-depreciation",
+      "term": "Depreciation",
+      "definition": "A fall in the value of an asset over time, often a fixed percentage per year: V = V₀(1 − r/100)ⁿ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.4-present-value",
+      "term": "Present value",
+      "definition": "PV, the amount invested or borrowed at the start of a financial calculation.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-1.4-1",
+      "title": "Laws of exponents and logarithms",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-1.4-1-q01",
+          "type": "mcq",
+          "prompt": "Evaluate log₂ 32.",
+          "options": [
+            "5",
+            "6",
+            "4",
+            "16"
+          ],
+          "answer": 0,
+          "explanation": "2⁵ = 32, so log₂ 32 = 5. A logarithm is an exponent.",
+          "terms": [
+            "math-aa-1.4-logarithm"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q02",
+          "type": "fill",
+          "text": "log₁₀ 0.001 = ___",
+          "answer": "−3",
+          "accept": [
+            "-3"
+          ],
+          "bank": [
+            "1/3",
+            "3",
+            "−3",
+            "−2"
+          ],
+          "explanation": "0.001 = 10⁻³, so the logarithm is −3.",
+          "terms": [
+            "math-aa-1.4-logarithm"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q03",
+          "type": "mcq",
+          "prompt": "Simplify (2x³)² × x⁻⁴.",
+          "options": [
+            "2x²",
+            "4x¹⁰",
+            "4x²",
+            "4x"
+          ],
+          "answer": 2,
+          "explanation": "(2x³)² = 4x⁶, and x⁶ × x⁻⁴ = x². Square the coefficient too.",
+          "terms": [
+            "math-aa-1.4-exponent"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q04",
+          "type": "tf",
+          "statement": "ln e⁵ = 5",
+          "answer": true,
+          "explanation": "ln and eˣ are inverse functions, so ln eᵏ = k.",
+          "terms": [
+            "math-aa-1.4-natural-log",
+            "math-aa-1.4-euler-number"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q05",
+          "type": "mcq",
+          "prompt": "Simplify log₃ 18 − log₃ 2.",
+          "options": [
+            "9",
+            "3",
+            "2",
+            "log₃ 16"
+          ],
+          "answer": 2,
+          "explanation": "log₃ 18 − log₃ 2 = log₃ (18/2) = log₃ 9 = 2.",
+          "terms": [
+            "math-aa-1.4-log-laws"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q06",
+          "type": "mcq",
+          "prompt": "Evaluate 8^(2/3).",
+          "options": [
+            "12",
+            "4",
+            "16/3",
+            "2"
+          ],
+          "answer": 1,
+          "explanation": "Take the cube root first: ∛8 = 2, then square: 2² = 4.",
+          "terms": [
+            "math-aa-1.4-exponent"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q07",
+          "type": "match",
+          "prompt": "Match each expression to an equivalent form.",
+          "pairs": [
+            {
+              "left": "logₐ(xy)",
+              "right": "logₐ x + logₐ y"
+            },
+            {
+              "left": "logₐ(x/y)",
+              "right": "logₐ x − logₐ y"
+            },
+            {
+              "left": "logₐ(xᵐ)",
+              "right": "m logₐ x"
+            },
+            {
+              "left": "logₐ x",
+              "right": "ln x / ln a"
+            }
+          ],
+          "explanation": "The three laws plus change of base let you combine, split and evaluate logarithms.",
+          "terms": [
+            "math-aa-1.4-log-laws",
+            "math-aa-1.4-change-of-base"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q08",
+          "type": "fill",
+          "text": "If eˣ = 7, then x = ___.",
+          "answer": "ln 7",
+          "bank": [
+            "log 7",
+            "e⁷",
+            "7/e",
+            "ln 7"
+          ],
+          "explanation": "Take natural logs of both sides: x = ln 7 ≈ 1.95.",
+          "terms": [
+            "math-aa-1.4-natural-log",
+            "math-aa-1.4-exponential-equation"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q09",
+          "type": "tf",
+          "statement": "log(a + b) = log a + log b for all positive a and b.",
+          "answer": false,
+          "explanation": "The product law is log(ab) = log a + log b; there is no law that splits the log of a sum.",
+          "terms": [
+            "math-aa-1.4-log-laws"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-1-q10",
+          "type": "order",
+          "prompt": "Put the steps in order to solve 3^(x + 1) = 20.",
+          "items": [
+            "Take logs: (x + 1) ln 3 = ln 20",
+            "Divide: x + 1 = ln 20 / ln 3",
+            "Subtract 1: x = ln 20 / ln 3 − 1",
+            "Evaluate: x ≈ 1.73"
+          ],
+          "explanation": "Taking logarithms brings the exponent down; ln 20 / ln 3 ≈ 2.727, so x ≈ 1.73.",
+          "terms": [
+            "math-aa-1.4-exponential-equation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-1.4-2",
+      "title": "Exponential equations and finance",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-1.4-2-q01",
+          "type": "mcq",
+          "prompt": "Solve 2^(2x) − 5 × 2ˣ + 4 = 0.",
+          "options": [
+            "x = 0 or x = 2",
+            "x = 2 only",
+            "x = 0 or x = 4",
+            "x = 1 or x = 4"
+          ],
+          "answer": 0,
+          "explanation": "Let y = 2ˣ: y² − 5y + 4 = 0 gives y = 1 or 4, so 2ˣ = 1 (x = 0) or 2ˣ = 4 (x = 2). 1 and 4 are the values of y, not x.",
+          "terms": [
+            "math-aa-1.4-exponential-equation"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q02",
+          "type": "mcq",
+          "prompt": "$2000 is invested at 4% per year compounded annually. Find its value after 5 years.",
+          "options": [
+            "$2080.00",
+            "$2400.00",
+            "$2433.31",
+            "$2340.00"
+          ],
+          "answer": 2,
+          "explanation": "FV = 2000 × 1.04⁵ ≈ 2433.31. $2400 is simple interest, which ignores interest on interest.",
+          "terms": [
+            "math-aa-1.4-compound-interest",
+            "math-aa-1.4-present-value"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q03",
+          "type": "fill",
+          "text": "A car worth $30 000 depreciates by 15% per year. After 2 years it is worth $___.",
+          "answer": "21675",
+          "accept": [
+            "21 675",
+            "21,675"
+          ],
+          "bank": [
+            "21000",
+            "25500",
+            "21675",
+            "23400"
+          ],
+          "explanation": "V = 30 000 × 0.85² = 21 675. Subtracting 15% of the original value twice (21 000) treats it as linear.",
+          "terms": [
+            "math-aa-1.4-depreciation"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q04",
+          "type": "tf",
+          "statement": "Monthly compounding at a nominal annual rate of 6% gives a slightly higher return than annual compounding at 6%.",
+          "answer": true,
+          "explanation": "With monthly compounding interest earns interest within the year: 1.005¹² ≈ 1.0617 > 1.06.",
+          "terms": [
+            "math-aa-1.4-compound-interest"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q05",
+          "type": "mcq",
+          "prompt": "Which expression gives the value of $1000 invested for 3 years at a nominal 6% per year, compounded monthly?",
+          "options": [
+            "1000(1.005)³",
+            "1000(1.5)³⁶",
+            "1000(1.005)³⁶",
+            "1000(1.06)³⁶"
+          ],
+          "answer": 2,
+          "explanation": "The rate per period is 6/12 = 0.5% and there are 12 × 3 = 36 periods.",
+          "terms": [
+            "math-aa-1.4-compound-interest"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q06",
+          "type": "mcq",
+          "prompt": "Solve log₂ x + log₂(x − 2) = 3.",
+          "options": [
+            "x = 4 or x = −2",
+            "x = 5",
+            "x = 4 only",
+            "x = −2 only"
+          ],
+          "answer": 2,
+          "explanation": "log₂[x(x − 2)] = 3 gives x² − 2x − 8 = 0, so x = 4 or −2. Reject −2 because log₂(−2) is undefined.",
+          "terms": [
+            "math-aa-1.4-log-laws",
+            "math-aa-1.4-logarithm"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q07",
+          "type": "fill",
+          "text": "ln 12 can be written as ln 3 + ___.",
+          "answer": "2 ln 2",
+          "accept": [
+            "ln 4"
+          ],
+          "bank": [
+            "4 ln 3",
+            "2 ln 2",
+            "ln 2",
+            "ln 6"
+          ],
+          "explanation": "12 = 3 × 4, so ln 12 = ln 3 + ln 4 = ln 3 + 2 ln 2.",
+          "terms": [
+            "math-aa-1.4-log-laws"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q08",
+          "type": "tf",
+          "statement": "log₅ 7 = ln 7 / ln 5",
+          "answer": true,
+          "explanation": "This is the change-of-base formula, which lets you evaluate any logarithm with the ln key.",
+          "terms": [
+            "math-aa-1.4-change-of-base"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q09",
+          "type": "match",
+          "prompt": "Match each finance term to its meaning.",
+          "pairs": [
+            {
+              "left": "Present value (PV)",
+              "right": "Amount invested or borrowed at the start"
+            },
+            {
+              "left": "Future value (FV)",
+              "right": "Value at the end of the time period"
+            },
+            {
+              "left": "Depreciation",
+              "right": "Fall in value of an asset over time"
+            },
+            {
+              "left": "Rate per period",
+              "right": "Nominal annual rate divided by periods per year"
+            }
+          ],
+          "explanation": "These are the inputs of the compound interest formula and the GDC finance solver.",
+          "terms": [
+            "math-aa-1.4-present-value",
+            "math-aa-1.4-depreciation",
+            "math-aa-1.4-compound-interest"
+          ]
+        },
+        {
+          "id": "math-aa-1.4-2-q10",
+          "type": "order",
+          "prompt": "Put the steps in order to find how long an investment takes to double at 5% per year (compounded annually).",
+          "items": [
+            "Write 1.05ⁿ = 2",
+            "Take logs: n ln 1.05 = ln 2",
+            "Solve: n = ln 2 / ln 1.05 ≈ 14.2",
+            "Interpret: 15 complete years are needed"
+          ],
+          "explanation": "The principal cancels, so only the growth factor matters. Interest is added at year ends, so round up to 15.",
+          "terms": [
+            "math-aa-1.4-exponential-equation",
+            "math-aa-1.4-compound-interest"
+          ]
+        }
+      ]
+    }
+  ]
+}

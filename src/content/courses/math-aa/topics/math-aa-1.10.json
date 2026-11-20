@@ -1,0 +1,404 @@
+{
+  "id": "math-aa-1.10",
+  "code": "AHL 1.10–1.11",
+  "unit": "1",
+  "title": "Counting, extended binomial and partial fractions",
+  "level": "HL",
+  "summary": "Count arrangements and selections with permutations and combinations, expand (1 + x)ⁿ for fractional and negative n, and split rational expressions into partial fractions.",
+  "keyterms": [
+    {
+      "id": "math-aa-1.10-product-principle",
+      "term": "Product principle",
+      "definition": "If one choice can be made in m ways and a second in n ways, together they can be made in m × n ways.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.10-permutation",
+      "term": "Permutation",
+      "definition": "An arrangement of objects where order matters; ⁿPᵣ = n! / (n − r)!.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.10-combination",
+      "term": "Combination",
+      "definition": "A selection of objects where order does not matter; ⁿCᵣ = n! / (r!(n − r)!).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.10-repeated-objects",
+      "term": "Arrangements with repeats",
+      "definition": "n objects with groups of identical items can be arranged in n! / (p! q! …) ways.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.10-extended-binomial",
+      "term": "Extended binomial theorem",
+      "definition": "(1 + x)ⁿ = 1 + nx + n(n − 1)x²/2! + … for any rational n; infinite unless n ∈ ℕ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.10-validity",
+      "term": "Interval of validity",
+      "definition": "The values of x for which an infinite binomial series converges: |x| < 1 for (1 + x)ⁿ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.10-partial-fractions",
+      "term": "Partial fractions",
+      "definition": "Writing a rational expression as a sum of simpler fractions with linear denominators, e.g. A/(x − a) + B/(x − b).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.10-proper-fraction",
+      "term": "Proper rational expression",
+      "definition": "A rational expression whose numerator has lower degree than its denominator.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-1.10-1",
+      "title": "Permutations and combinations",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-1.10-1-q01",
+          "type": "mcq",
+          "prompt": "In how many ways can the letters of MATHS be arranged?",
+          "options": [
+            "120",
+            "25",
+            "60",
+            "3125"
+          ],
+          "answer": 0,
+          "explanation": "Five different letters: 5! = 120.",
+          "terms": [
+            "math-aa-1.10-permutation"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q02",
+          "type": "mcq",
+          "prompt": "How many committees of 3 can be chosen from 8 people?",
+          "options": [
+            "336",
+            "24",
+            "512",
+            "56"
+          ],
+          "answer": 3,
+          "explanation": "Order does not matter: ⁸C₃ = 56. 336 = ⁸P₃ counts ordered selections.",
+          "terms": [
+            "math-aa-1.10-combination"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q03",
+          "type": "fill",
+          "text": "⁶P₂ = ___",
+          "answer": "30",
+          "bank": [
+            "12",
+            "36",
+            "30",
+            "15"
+          ],
+          "explanation": "⁶P₂ = 6 × 5 = 30: six choices for first place, then five for second.",
+          "terms": [
+            "math-aa-1.10-permutation"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q04",
+          "type": "tf",
+          "statement": "Order matters in a combination.",
+          "answer": false,
+          "explanation": "Combinations are selections; permutations are arrangements where order matters.",
+          "terms": [
+            "math-aa-1.10-combination",
+            "math-aa-1.10-permutation"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q05",
+          "type": "mcq",
+          "prompt": "How many distinct arrangements of the letters of LEVEL are there?",
+          "options": [
+            "120",
+            "60",
+            "30",
+            "20"
+          ],
+          "answer": 2,
+          "explanation": "Five letters with two Ls and two Es: 5! / (2! × 2!) = 30.",
+          "terms": [
+            "math-aa-1.10-repeated-objects"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q06",
+          "type": "mcq",
+          "prompt": "Five people sit in a row. In how many arrangements are two particular people next to each other?",
+          "options": [
+            "24",
+            "72",
+            "120",
+            "48"
+          ],
+          "answer": 3,
+          "explanation": "Treat the pair as one block: 4! arrangements, times 2 for the order inside the block = 48.",
+          "terms": [
+            "math-aa-1.10-product-principle",
+            "math-aa-1.10-permutation"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q07",
+          "type": "fill",
+          "text": "A 4-digit PIN using digits 0–9 with repetition allowed has ___ possibilities.",
+          "answer": "10000",
+          "accept": [
+            "10 000",
+            "10,000"
+          ],
+          "bank": [
+            "40",
+            "10000",
+            "1000",
+            "5040"
+          ],
+          "explanation": "Product principle: 10 × 10 × 10 × 10 = 10⁴. 5040 would forbid repeated digits.",
+          "terms": [
+            "math-aa-1.10-product-principle"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q08",
+          "type": "tf",
+          "statement": "ⁿPᵣ = ⁿCᵣ × r!",
+          "answer": true,
+          "explanation": "Each selection of r objects can be ordered in r! ways.",
+          "terms": [
+            "math-aa-1.10-permutation",
+            "math-aa-1.10-combination"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q09",
+          "type": "match",
+          "prompt": "Match each situation to its count.",
+          "pairs": [
+            {
+              "left": "Arrange 6 different books on a shelf",
+              "right": "6!"
+            },
+            {
+              "left": "Choose 2 of 6 books to lend",
+              "right": "⁶C₂"
+            },
+            {
+              "left": "Award gold and silver among 6 runners",
+              "right": "⁶P₂"
+            },
+            {
+              "left": "Set each of 6 switches on or off",
+              "right": "2⁶"
+            }
+          ],
+          "explanation": "Ask: are we arranging or selecting, and is repetition allowed?",
+          "terms": [
+            "math-aa-1.10-permutation",
+            "math-aa-1.10-combination",
+            "math-aa-1.10-product-principle"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-1-q10",
+          "type": "order",
+          "prompt": "Order these by value, smallest first.",
+          "items": [
+            "⁶C₂",
+            "⁶P₂",
+            "2⁶",
+            "6!"
+          ],
+          "explanation": "⁶C₂ = 15, ⁶P₂ = 30, 2⁶ = 64, 6! = 720.",
+          "terms": [
+            "math-aa-1.10-combination",
+            "math-aa-1.10-permutation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-1.10-2",
+      "title": "Extended binomial theorem and partial fractions",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-1.10-2-q01",
+          "type": "mcq",
+          "prompt": "The expansion of (1 + x)⁻¹ begins…",
+          "options": [
+            "1 + x − x² + x³ − …",
+            "1 − x + x² − x³ + …",
+            "1 − x − x² − x³ − …",
+            "1 + x + x² + x³ + …"
+          ],
+          "answer": 1,
+          "explanation": "With n = −1 the coefficients are 1, −1, (−1)(−2)/2! = 1, …, so signs alternate.",
+          "terms": [
+            "math-aa-1.10-extended-binomial"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q02",
+          "type": "mcq",
+          "prompt": "For which x is the expansion of (1 − 2x)^½ valid?",
+          "options": [
+            "all real x",
+            "|x| < ½",
+            "|x| < 2",
+            "|x| < 1"
+          ],
+          "answer": 1,
+          "explanation": "The series in (1 + u)ⁿ needs |u| < 1; here u = −2x, so |2x| < 1.",
+          "terms": [
+            "math-aa-1.10-validity"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q03",
+          "type": "fill",
+          "text": "For small x, (1 + x)^½ ≈ 1 + ½x ___ (up to the x² term).",
+          "answer": "− ⅛x²",
+          "bank": [
+            "− ⅛x²",
+            "+ ⅛x²",
+            "− ¼x²",
+            "+ ¼x²"
+          ],
+          "explanation": "The x² coefficient is (½)(−½)/2! = −⅛.",
+          "terms": [
+            "math-aa-1.10-extended-binomial"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q04",
+          "type": "tf",
+          "statement": "The expansion of (1 + x)ⁿ for a negative or fractional n is an infinite series.",
+          "answer": true,
+          "explanation": "The coefficients never reach zero, so the series does not terminate.",
+          "terms": [
+            "math-aa-1.10-extended-binomial"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q05",
+          "type": "mcq",
+          "prompt": "For which x is the binomial expansion of (2 + x)⁻¹ valid?",
+          "options": [
+            "|x| < 1",
+            "x > −2",
+            "|x| < 2",
+            "|x| < ½"
+          ],
+          "answer": 2,
+          "explanation": "Write (2 + x)⁻¹ = ½(1 + x/2)⁻¹, which needs |x/2| < 1.",
+          "terms": [
+            "math-aa-1.10-validity"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q06",
+          "type": "mcq",
+          "prompt": "Express 5 / ((x − 1)(x + 4)) in partial fractions.",
+          "options": [
+            "−1/(x − 1) + 1/(x + 4)",
+            "1/(x − 1) − 1/(x + 4)",
+            "1/(x − 1) + 1/(x + 4)",
+            "5/(x − 1) − 5/(x + 4)"
+          ],
+          "answer": 1,
+          "explanation": "5 = A(x + 4) + B(x − 1). x = 1 gives A = 1; x = −4 gives B = −1.",
+          "terms": [
+            "math-aa-1.10-partial-fractions"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q07",
+          "type": "fill",
+          "text": "(3x + 1) / ((x − 1)(x + 1)) = 2/(x − 1) + ___/(x + 1)",
+          "answer": "1",
+          "bank": [
+            "−1",
+            "2",
+            "1",
+            "3"
+          ],
+          "explanation": "3x + 1 = 2(x + 1) + B(x − 1). Putting x = −1: −2 = −2B, so B = 1.",
+          "terms": [
+            "math-aa-1.10-partial-fractions"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q08",
+          "type": "tf",
+          "statement": "Before splitting into partial fractions, the degree of the numerator should be less than the degree of the denominator.",
+          "answer": true,
+          "explanation": "If not, divide first so you have a polynomial plus a proper rational expression.",
+          "terms": [
+            "math-aa-1.10-proper-fraction",
+            "math-aa-1.10-partial-fractions"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q09",
+          "type": "match",
+          "prompt": "Match each binomial power to a fact about its expansion.",
+          "pairs": [
+            {
+              "left": "n ∈ ℤ⁺",
+              "right": "Finite expansion, valid for all x"
+            },
+            {
+              "left": "(1 + x)⁻¹",
+              "right": "1 − x + x² − …, for |x| < 1"
+            },
+            {
+              "left": "(1 + x)^½",
+              "right": "1 + ½x − ⅛x² + …"
+            },
+            {
+              "left": "(1 + ax)ⁿ, n ∉ ℕ",
+              "right": "Valid only for |ax| < 1"
+            }
+          ],
+          "explanation": "Only natural-number powers give finite expansions valid for every x.",
+          "terms": [
+            "math-aa-1.10-extended-binomial",
+            "math-aa-1.10-validity"
+          ]
+        },
+        {
+          "id": "math-aa-1.10-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for partial fractions in order.",
+          "items": [
+            "Check that the fraction is proper",
+            "Factorise the denominator",
+            "Write A/(first factor) + B/(second factor)",
+            "Multiply through and substitute convenient x-values",
+            "State the result with A and B found"
+          ],
+          "explanation": "Substituting the roots of each factor makes one unknown vanish at a time.",
+          "terms": [
+            "math-aa-1.10-partial-fractions",
+            "math-aa-1.10-proper-fraction"
+          ]
+        }
+      ]
+    }
+  ]
+}

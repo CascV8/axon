@@ -1,0 +1,409 @@
+{
+  "id": "math-aa-2.12",
+  "code": "AHL 2.12–2.16",
+  "unit": "2",
+  "title": "Polynomials and further functions",
+  "level": "HL",
+  "summary": "Factor and remainder theorems, sums and products of roots, odd, even and self-inverse functions, rational functions with oblique asymptotes, modulus graphs and inequalities.",
+  "keyterms": [
+    {
+      "id": "math-aa-2.12-factor-theorem",
+      "term": "Factor theorem",
+      "definition": "(x − a) is a factor of P(x) if and only if P(a) = 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-remainder-theorem",
+      "term": "Remainder theorem",
+      "definition": "When P(x) is divided by (x − a), the remainder is P(a).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-sum-product-roots",
+      "term": "Sum and product of roots",
+      "definition": "For aₙxⁿ + aₙ₋₁xⁿ⁻¹ + … + a₀ = 0: sum = −aₙ₋₁/aₙ, product = (−1)ⁿa₀/aₙ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-odd-function",
+      "term": "Odd function",
+      "definition": "f(−x) = −f(x) for all x; graph has rotational symmetry of order 2 about the origin.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-even-function",
+      "term": "Even function",
+      "definition": "f(−x) = f(x) for all x; graph is symmetric in the y-axis.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-self-inverse",
+      "term": "Self-inverse function",
+      "definition": "A function with f(f(x)) = x, so f⁻¹ = f; its graph is symmetric in y = x.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-oblique-asymptote",
+      "term": "Oblique asymptote",
+      "definition": "A slanted line y = mx + c approached by a rational function whose numerator degree is one more than the denominator’s.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-modulus-function",
+      "term": "Modulus function",
+      "definition": "|x| = x for x ≥ 0 and −x for x < 0; the distance of x from 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-reciprocal-graph",
+      "term": "Graph of 1/f(x)",
+      "definition": "Zeros of f become vertical asymptotes; maxima and minima swap; f = ±1 points are invariant.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.12-inequality",
+      "term": "Polynomial inequality",
+      "definition": "An inequality such as P(x) > 0, solved by finding roots and testing signs between them.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-2.12-1",
+      "title": "Polynomial theorems",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-2.12-1-q01",
+          "type": "mcq",
+          "prompt": "Find the remainder when x³ − 2x + 5 is divided by (x − 2).",
+          "options": [
+            "5",
+            "9",
+            "13",
+            "1"
+          ],
+          "answer": 1,
+          "explanation": "Remainder theorem: P(2) = 8 − 4 + 5 = 9.",
+          "terms": [
+            "math-aa-2.12-remainder-theorem"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q02",
+          "type": "mcq",
+          "prompt": "(x + 1) is a factor of x³ + kx² − 4. Find k.",
+          "options": [
+            "−5",
+            "5",
+            "4",
+            "3"
+          ],
+          "answer": 1,
+          "explanation": "P(−1) = −1 + k − 4 = 0, so k = 5.",
+          "terms": [
+            "math-aa-2.12-factor-theorem"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q03",
+          "type": "fill",
+          "text": "For 2x³ − 5x² + 4x − 7 = 0, the sum of the roots is ___.",
+          "answer": "5/2",
+          "bank": [
+            "−5/2",
+            "5/2",
+            "7/2",
+            "−7/2"
+          ],
+          "explanation": "Sum = −aₙ₋₁/aₙ = −(−5)/2. 7/2 is the product of the roots.",
+          "terms": [
+            "math-aa-2.12-sum-product-roots"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q04",
+          "type": "tf",
+          "statement": "For a cubic ax³ + bx² + cx + d = 0, the product of the roots is −d/a.",
+          "answer": true,
+          "explanation": "Product = (−1)ⁿa₀/aₙ with n = 3.",
+          "terms": [
+            "math-aa-2.12-sum-product-roots"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q05",
+          "type": "mcq",
+          "prompt": "A polynomial of degree 4 with real coefficients can have how many real roots (counted with multiplicity)?",
+          "options": [
+            "0, 2 or 4",
+            "1 or 3",
+            "at most 2",
+            "exactly 4"
+          ],
+          "answer": 0,
+          "explanation": "Non-real roots come in conjugate pairs, so the number of real roots has the same parity as 4.",
+          "terms": [
+            "math-aa-2.12-sum-product-roots"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q06",
+          "type": "mcq",
+          "prompt": "Which statement is the factor theorem?",
+          "options": [
+            "(x − a) is a factor of P(x) ⇔ P(−a) = 0",
+            "(x − a) is a factor of P(x) ⇔ P(a) = 0",
+            "(x − a) is a factor of P(x) ⇔ P(a) = a",
+            "(x − a) is a factor of P(x) ⇔ P(0) = a"
+          ],
+          "answer": 1,
+          "explanation": "It is the special case of the remainder theorem with remainder 0.",
+          "terms": [
+            "math-aa-2.12-factor-theorem"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q07",
+          "type": "fill",
+          "text": "x³ − 6x² + 11x − 6 = (x − 1)(x − 2)(x − ___)",
+          "answer": "3",
+          "bank": [
+            "6",
+            "3",
+            "4",
+            "−3"
+          ],
+          "explanation": "The roots multiply to 6 and add to 6: 1 × 2 × 3 = 6 and 1 + 2 + 3 = 6.",
+          "terms": [
+            "math-aa-2.12-sum-product-roots",
+            "math-aa-2.12-factor-theorem"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q08",
+          "type": "tf",
+          "statement": "A polynomial of degree n has at most n real roots.",
+          "answer": true,
+          "explanation": "It has exactly n complex roots counted with multiplicity, so at most n real ones.",
+          "terms": [
+            "math-aa-2.12-factor-theorem"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q09",
+          "type": "match",
+          "prompt": "For P(x) = x² − 7x + 10, match each quantity to its value.",
+          "pairs": [
+            {
+              "left": "Sum of the roots",
+              "right": "7"
+            },
+            {
+              "left": "Product of the roots",
+              "right": "10"
+            },
+            {
+              "left": "Remainder on dividing by (x − 1)",
+              "right": "4"
+            },
+            {
+              "left": "The roots",
+              "right": "2 and 5"
+            }
+          ],
+          "explanation": "P(1) = 1 − 7 + 10 = 4; the roots 2 and 5 confirm sum 7 and product 10.",
+          "terms": [
+            "math-aa-2.12-sum-product-roots",
+            "math-aa-2.12-remainder-theorem"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to solve x³ − 3x² − 4x + 12 = 0.",
+          "items": [
+            "Try x = 2: 8 − 12 − 8 + 12 = 0",
+            "So (x − 2) is a factor",
+            "Divide: (x − 2)(x² − x − 6)",
+            "Factorise: (x − 2)(x − 3)(x + 2)",
+            "Roots: x = 2, 3, −2"
+          ],
+          "explanation": "Find one root by trial, then reduce to a quadratic.",
+          "terms": [
+            "math-aa-2.12-factor-theorem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-2.12-2",
+      "title": "Further functions and inequalities",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-2.12-2-q01",
+          "type": "mcq",
+          "prompt": "Which function is odd?",
+          "options": [
+            "f(x) = x² + 1",
+            "f(x) = x³ − x",
+            "f(x) = x³ + 1",
+            "f(x) = cos x"
+          ],
+          "answer": 1,
+          "explanation": "f(−x) = −x³ + x = −f(x). The constant in x³ + 1 breaks the symmetry.",
+          "terms": [
+            "math-aa-2.12-odd-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q02",
+          "type": "tf",
+          "statement": "An even function satisfies f(−x) = f(x) and its graph is symmetric in the y-axis.",
+          "answer": true,
+          "explanation": "Examples: x², cos x, |x|.",
+          "terms": [
+            "math-aa-2.12-even-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q03",
+          "type": "mcq",
+          "prompt": "Solve |2x − 1| < 5.",
+          "options": [
+            "x < −2 or x > 3",
+            "−3 < x < 2",
+            "x < 3",
+            "−2 < x < 3"
+          ],
+          "answer": 3,
+          "explanation": "−5 < 2x − 1 < 5 gives −4 < 2x < 6.",
+          "terms": [
+            "math-aa-2.12-modulus-function",
+            "math-aa-2.12-inequality"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q04",
+          "type": "fill",
+          "text": "A function with f(f(x)) = x for all x in its domain is called ___.",
+          "answer": "self-inverse",
+          "bank": [
+            "odd",
+            "even",
+            "self-inverse",
+            "periodic"
+          ],
+          "explanation": "Applying it twice returns the input, so f⁻¹ = f.",
+          "terms": [
+            "math-aa-2.12-self-inverse"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q05",
+          "type": "mcq",
+          "prompt": "Find the oblique asymptote of y = (x² + 3x + 1)/(x + 1).",
+          "options": [
+            "y = x + 1",
+            "y = x + 2",
+            "y = x + 3",
+            "y = x"
+          ],
+          "answer": 1,
+          "explanation": "x² + 3x + 1 = (x + 1)(x + 2) − 1, and −1/(x + 1) → 0 as x → ±∞.",
+          "terms": [
+            "math-aa-2.12-oblique-asymptote"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q06",
+          "type": "mcq",
+          "prompt": "Where f(x) = 0, the graph of y = 1/f(x) has…",
+          "options": [
+            "a vertical asymptote",
+            "a horizontal asymptote",
+            "a maximum",
+            "a root"
+          ],
+          "answer": 0,
+          "explanation": "Dividing by values close to 0 gives very large magnitudes.",
+          "terms": [
+            "math-aa-2.12-reciprocal-graph"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q07",
+          "type": "fill",
+          "text": "Solving x² < 2x + 3 gives −1 < x < ___.",
+          "answer": "3",
+          "bank": [
+            "3",
+            "1",
+            "2",
+            "−3"
+          ],
+          "explanation": "x² − 2x − 3 = (x − 3)(x + 1) < 0 between the roots.",
+          "terms": [
+            "math-aa-2.12-inequality"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q08",
+          "type": "tf",
+          "statement": "The graph of y = f(|x|) is symmetric in the y-axis.",
+          "answer": true,
+          "explanation": "f(|−x|) = f(|x|), so it is an even function.",
+          "terms": [
+            "math-aa-2.12-modulus-function",
+            "math-aa-2.12-even-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q09",
+          "type": "match",
+          "prompt": "Match each graph to how it is formed from y = f(x).",
+          "pairs": [
+            {
+              "left": "y = |f(x)|",
+              "right": "Parts below the x-axis reflected upwards"
+            },
+            {
+              "left": "y = f(|x|)",
+              "right": "Right-hand half reflected onto the left"
+            },
+            {
+              "left": "y = 1/f(x)",
+              "right": "Zeros of f become vertical asymptotes"
+            },
+            {
+              "left": "y = [f(x)]²",
+              "right": "Never negative; zeros become touching points"
+            }
+          ],
+          "explanation": "Sketching these from a given graph is a common HL skill.",
+          "terms": [
+            "math-aa-2.12-modulus-function",
+            "math-aa-2.12-reciprocal-graph"
+          ]
+        },
+        {
+          "id": "math-aa-2.12-2-q10",
+          "type": "mcq",
+          "prompt": "Which function is self-inverse?",
+          "options": [
+            "f(x) = x²",
+            "f(x) = 5 − x",
+            "f(x) = 5x",
+            "f(x) = x + 5"
+          ],
+          "answer": 1,
+          "explanation": "f(f(x)) = 5 − (5 − x) = x.",
+          "terms": [
+            "math-aa-2.12-self-inverse"
+          ]
+        }
+      ]
+    }
+  ]
+}

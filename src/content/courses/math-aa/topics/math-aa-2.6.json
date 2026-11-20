@@ -1,0 +1,413 @@
+{
+  "id": "math-aa-2.6",
+  "code": "SL 2.6–2.10",
+  "unit": "2",
+  "title": "Quadratic, rational, exponential and logarithmic functions",
+  "level": "SL",
+  "summary": "Quadratics in all three forms and the discriminant, rational functions and their asymptotes, exponential and logarithmic graphs, and solving equations graphically and analytically.",
+  "keyterms": [
+    {
+      "id": "math-aa-2.6-vertex",
+      "term": "Vertex",
+      "definition": "The turning point of a parabola; for y = a(x − h)² + k it is (h, k).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-axis-of-symmetry",
+      "term": "Axis of symmetry",
+      "definition": "The vertical line x = −b/(2a) through the vertex of y = ax² + bx + c.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-discriminant",
+      "term": "Discriminant",
+      "definition": "Δ = b² − 4ac: Δ > 0 two real roots, Δ = 0 one repeated root, Δ < 0 no real roots.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-roots",
+      "term": "Roots (zeros)",
+      "definition": "Solutions of f(x) = 0; the x-intercepts of y = f(x).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-completing-square",
+      "term": "Completing the square",
+      "definition": "Rewriting ax² + bx + c as a(x − h)² + k to reveal the vertex.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-vertical-asymptote",
+      "term": "Vertical asymptote",
+      "definition": "A line x = a that the graph approaches as y → ±∞, e.g. where a denominator is zero.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-horizontal-asymptote",
+      "term": "Horizontal asymptote",
+      "definition": "A line y = b approached as x → ±∞; for (ax + b)/(cx + d) it is y = a/c.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-exponential-function",
+      "term": "Exponential function",
+      "definition": "f(x) = aˣ or eˣ: always positive, with horizontal asymptote y = 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-log-function",
+      "term": "Logarithmic function",
+      "definition": "f(x) = logₐ x, the inverse of aˣ: domain x > 0 and vertical asymptote x = 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.6-reciprocal-function",
+      "term": "Reciprocal function",
+      "definition": "f(x) = 1/x, with asymptotes x = 0 and y = 0; it is its own inverse.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-2.6-1",
+      "title": "Quadratic functions",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-2.6-1-q01",
+          "type": "mcq",
+          "prompt": "Find the vertex of y = (x − 2)² + 7.",
+          "options": [
+            "(7, 2)",
+            "(2, 7)",
+            "(−2, 7)",
+            "(2, −7)"
+          ],
+          "answer": 1,
+          "explanation": "For a(x − h)² + k the vertex is (h, k).",
+          "terms": [
+            "math-aa-2.6-vertex"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q02",
+          "type": "mcq",
+          "prompt": "Find the axis of symmetry of y = 2x² − 8x + 1.",
+          "options": [
+            "x = 4",
+            "x = 2",
+            "x = 8",
+            "x = −2"
+          ],
+          "answer": 1,
+          "explanation": "x = −b/(2a) = 8/4 = 2.",
+          "terms": [
+            "math-aa-2.6-axis-of-symmetry"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q03",
+          "type": "fill",
+          "text": "The discriminant of x² + 6x + 9 is ___.",
+          "answer": "0",
+          "bank": [
+            "−36",
+            "72",
+            "9",
+            "0"
+          ],
+          "explanation": "6² − 4 × 1 × 9 = 0, so there is one repeated root: (x + 3)² = 0.",
+          "terms": [
+            "math-aa-2.6-discriminant"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q04",
+          "type": "tf",
+          "statement": "If Δ < 0, the graph of the quadratic does not meet the x-axis.",
+          "answer": true,
+          "explanation": "There are no real roots, so the parabola lies entirely above or below the x-axis.",
+          "terms": [
+            "math-aa-2.6-discriminant",
+            "math-aa-2.6-roots"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q05",
+          "type": "mcq",
+          "prompt": "Solve x² − x − 12 = 0.",
+          "options": [
+            "x = 6 or x = −2",
+            "x = −4 or x = 3",
+            "x = 4 or x = −3",
+            "x = 12 or x = −1"
+          ],
+          "answer": 2,
+          "explanation": "(x − 4)(x + 3) = 0. Check: the roots multiply to −12 and add to 1.",
+          "terms": [
+            "math-aa-2.6-roots"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q06",
+          "type": "mcq",
+          "prompt": "For which k does x² + kx + 4 = 0 have two equal roots?",
+          "options": [
+            "k = ±4",
+            "k = ±2",
+            "k = 16",
+            "k = 4 only"
+          ],
+          "answer": 0,
+          "explanation": "Δ = k² − 16 = 0, so k = 4 or k = −4.",
+          "terms": [
+            "math-aa-2.6-discriminant"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q07",
+          "type": "fill",
+          "text": "By completing the square, x² + 10x + 3 = (x + 5)² ___.",
+          "answer": "− 22",
+          "accept": [
+            "-22",
+            "−22"
+          ],
+          "bank": [
+            "+ 22",
+            "− 25",
+            "+ 3",
+            "− 22"
+          ],
+          "explanation": "(x + 5)² = x² + 10x + 25, so subtract 22 to get + 3.",
+          "terms": [
+            "math-aa-2.6-completing-square"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q08",
+          "type": "tf",
+          "statement": "y = −3(x − 1)(x + 5) has x-intercepts 1 and −5 and opens downwards.",
+          "answer": true,
+          "explanation": "Read the roots from the factors; a = −3 < 0 means the parabola opens downwards.",
+          "terms": [
+            "math-aa-2.6-roots"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q09",
+          "type": "match",
+          "prompt": "Match each form to what it shows.",
+          "pairs": [
+            {
+              "left": "y = a(x − h)² + k",
+              "right": "Vertex form"
+            },
+            {
+              "left": "y = a(x − p)(x − q)",
+              "right": "Factorised form, x-intercepts p and q"
+            },
+            {
+              "left": "y = ax² + bx + c",
+              "right": "Standard form, y-intercept c"
+            },
+            {
+              "left": "b² − 4ac",
+              "right": "Discriminant"
+            }
+          ],
+          "explanation": "Choose the form that gives the feature you need.",
+          "terms": [
+            "math-aa-2.6-vertex",
+            "math-aa-2.6-roots",
+            "math-aa-2.6-discriminant"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to solve 2x² + 3x − 2 = 0 with the quadratic formula.",
+          "items": [
+            "Identify a = 2, b = 3, c = −2",
+            "Compute Δ = 9 + 16 = 25",
+            "x = (−3 ± 5)/4",
+            "x = ½ or x = −2"
+          ],
+          "explanation": "A perfect-square discriminant means the quadratic also factorises: (2x − 1)(x + 2).",
+          "terms": [
+            "math-aa-2.6-discriminant",
+            "math-aa-2.6-roots"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-2.6-2",
+      "title": "Rational, exponential and logarithmic functions",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-2.6-2-q01",
+          "type": "mcq",
+          "prompt": "Find the vertical asymptote of y = (2x + 1)/(x − 3).",
+          "options": [
+            "x = −3",
+            "x = 2",
+            "x = 3",
+            "x = −½"
+          ],
+          "answer": 2,
+          "explanation": "The denominator is zero at x = 3 and the numerator is not.",
+          "terms": [
+            "math-aa-2.6-vertical-asymptote"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q02",
+          "type": "mcq",
+          "prompt": "Find the horizontal asymptote of y = (2x + 1)/(x − 3).",
+          "options": [
+            "y = 3",
+            "y = −⅓",
+            "y = 0",
+            "y = 2"
+          ],
+          "answer": 3,
+          "explanation": "For large |x| the function behaves like 2x/x = 2.",
+          "terms": [
+            "math-aa-2.6-horizontal-asymptote"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q03",
+          "type": "fill",
+          "text": "The graph of y = eˣ has horizontal asymptote y = ___.",
+          "answer": "0",
+          "bank": [
+            "−1",
+            "0",
+            "e",
+            "1"
+          ],
+          "explanation": "eˣ → 0 as x → −∞ but never reaches it.",
+          "terms": [
+            "math-aa-2.6-exponential-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q04",
+          "type": "tf",
+          "statement": "The domain of y = ln x is x > 0.",
+          "answer": true,
+          "explanation": "You can only take the logarithm of a positive number.",
+          "terms": [
+            "math-aa-2.6-log-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q05",
+          "type": "mcq",
+          "prompt": "Find the inverse of f(x) = e^(x − 2).",
+          "options": [
+            "f⁻¹(x) = ln x + 2",
+            "f⁻¹(x) = ln(x + 2)",
+            "f⁻¹(x) = ln(x − 2)",
+            "f⁻¹(x) = e^(x + 2)"
+          ],
+          "answer": 0,
+          "explanation": "x = e^(y − 2) gives y − 2 = ln x, so y = ln x + 2.",
+          "terms": [
+            "math-aa-2.6-exponential-function",
+            "math-aa-2.6-log-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q06",
+          "type": "mcq",
+          "prompt": "Find the y-intercept of y = 3 × 2ˣ − 1.",
+          "options": [
+            "5",
+            "3",
+            "−1",
+            "2"
+          ],
+          "answer": 3,
+          "explanation": "At x = 0, 2⁰ = 1, so y = 3 − 1 = 2.",
+          "terms": [
+            "math-aa-2.6-exponential-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q07",
+          "type": "fill",
+          "text": "The reciprocal function y = 1/x is its own ___.",
+          "answer": "inverse",
+          "bank": [
+            "inverse",
+            "asymptote",
+            "square",
+            "derivative"
+          ],
+          "explanation": "Swapping x and y in y = 1/x gives x = 1/y, i.e. y = 1/x again; the graph is symmetric in y = x.",
+          "terms": [
+            "math-aa-2.6-reciprocal-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q08",
+          "type": "tf",
+          "statement": "The equation eˣ = −2 has exactly one real solution.",
+          "answer": false,
+          "explanation": "eˣ > 0 for every real x, so there is no real solution.",
+          "terms": [
+            "math-aa-2.6-exponential-function"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q09",
+          "type": "match",
+          "prompt": "Match each graph to its key features.",
+          "pairs": [
+            {
+              "left": "y = eˣ",
+              "right": "Through (0, 1), asymptote y = 0"
+            },
+            {
+              "left": "y = ln x",
+              "right": "Through (1, 0), asymptote x = 0"
+            },
+            {
+              "left": "y = 1/x",
+              "right": "Asymptotes x = 0 and y = 0"
+            },
+            {
+              "left": "y = (x + 1)/(x − 2)",
+              "right": "Asymptotes x = 2 and y = 1"
+            }
+          ],
+          "explanation": "eˣ and ln x are reflections of each other in y = x.",
+          "terms": [
+            "math-aa-2.6-exponential-function",
+            "math-aa-2.6-log-function",
+            "math-aa-2.6-vertical-asymptote"
+          ]
+        },
+        {
+          "id": "math-aa-2.6-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to solve x³ = 2x + 1 with a GDC.",
+          "items": [
+            "Rearrange to x³ − 2x − 1 = 0",
+            "Graph y = x³ − 2x − 1",
+            "Find each x-intercept with the zero tool",
+            "Give each answer to 3 s.f., within any stated domain"
+          ],
+          "explanation": "Writing f(x) = 0 first means you read off x-intercepts. (Here x = −1 is exact; the others are (1 ± √5)/2.)",
+          "terms": [
+            "math-aa-2.6-roots"
+          ]
+        }
+      ]
+    }
+  ]
+}

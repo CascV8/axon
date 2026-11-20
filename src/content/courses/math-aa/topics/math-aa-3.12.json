@@ -1,0 +1,410 @@
+{
+  "id": "math-aa-3.12",
+  "code": "AHL 3.12–3.18",
+  "unit": "3",
+  "title": "Vectors, lines and planes",
+  "level": "HL",
+  "summary": "Vector algebra, scalar and vector products, vector equations of lines and planes, and the angles and intersections between them.",
+  "keyterms": [
+    {
+      "id": "math-aa-3.12-magnitude",
+      "term": "Magnitude",
+      "definition": "The length of a vector: |v| = √(v₁² + v₂² + v₃²).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-unit-vector",
+      "term": "Unit vector",
+      "definition": "A vector of magnitude 1; v/|v| points in the direction of v.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-position-vector",
+      "term": "Position vector",
+      "definition": "The vector from the origin O to a point.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-scalar-product",
+      "term": "Scalar product",
+      "definition": "v · w = v₁w₁ + v₂w₂ + v₃w₃ = |v||w| cos θ; zero for perpendicular vectors.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-vector-product",
+      "term": "Vector product",
+      "definition": "v × w, a vector perpendicular to both v and w with magnitude |v||w| sin θ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-vector-line",
+      "term": "Vector equation of a line",
+      "definition": "r = a + λb, where a is a point on the line and b a direction vector.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-skew",
+      "term": "Skew lines",
+      "definition": "Lines in 3D that are neither parallel nor intersecting.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-normal",
+      "term": "Normal vector",
+      "definition": "A vector perpendicular to a plane.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-plane-equation",
+      "term": "Equation of a plane",
+      "definition": "r · n = a · n, or ax + by + cz = d where (a, b, c) is a normal.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.12-parallelogram-area",
+      "term": "Area from vector product",
+      "definition": "|v × w| is the area of the parallelogram with sides v and w; half of it gives a triangle.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-3.12-1",
+      "title": "Vectors, scalar product and lines",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-3.12-1-q01",
+          "type": "mcq",
+          "prompt": "Find |(2, −3, 6)|.",
+          "options": [
+            "7",
+            "5",
+            "11",
+            "49"
+          ],
+          "answer": 0,
+          "explanation": "√(4 + 9 + 36) = √49 = 7.",
+          "terms": [
+            "math-aa-3.12-magnitude"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q02",
+          "type": "mcq",
+          "prompt": "Find (1, 2, 3) · (4, −1, 2).",
+          "options": [
+            "6",
+            "(4, −2, 6)",
+            "10",
+            "8"
+          ],
+          "answer": 3,
+          "explanation": "4 − 2 + 6 = 8. A scalar product is a number, not a vector.",
+          "terms": [
+            "math-aa-3.12-scalar-product"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q03",
+          "type": "fill",
+          "text": "Two non-zero vectors are perpendicular exactly when their scalar product is ___.",
+          "answer": "0",
+          "bank": [
+            "0",
+            "−1",
+            "positive",
+            "1"
+          ],
+          "explanation": "cos 90° = 0.",
+          "terms": [
+            "math-aa-3.12-scalar-product"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q04",
+          "type": "tf",
+          "statement": "The line r = (1, 0, 2) + λ(3, −1, 4) passes through (4, −1, 6).",
+          "answer": true,
+          "explanation": "λ = 1 gives (1 + 3, 0 − 1, 2 + 4) = (4, −1, 6).",
+          "terms": [
+            "math-aa-3.12-vector-line"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q05",
+          "type": "mcq",
+          "prompt": "Find the angle between (1, 0, 0) and (1, 1, 0).",
+          "options": [
+            "30°",
+            "45°",
+            "90°",
+            "60°"
+          ],
+          "answer": 1,
+          "explanation": "cos θ = 1/(1 × √2), so θ = 45°.",
+          "terms": [
+            "math-aa-3.12-scalar-product"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q06",
+          "type": "mcq",
+          "prompt": "Find the unit vector in the direction of (3, 0, 4).",
+          "options": [
+            "(0.3, 0, 0.4)",
+            "(3/7, 0, 4/7)",
+            "(1, 0, 1)",
+            "(0.6, 0, 0.8)"
+          ],
+          "answer": 3,
+          "explanation": "The magnitude is 5; divide each component by 5.",
+          "terms": [
+            "math-aa-3.12-unit-vector",
+            "math-aa-3.12-magnitude"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q07",
+          "type": "fill",
+          "text": "Two lines in 3D that are not parallel and do not intersect are called ___.",
+          "answer": "skew",
+          "bank": [
+            "coincident",
+            "perpendicular",
+            "skew",
+            "parallel"
+          ],
+          "explanation": "Skew lines are impossible in 2D but common in 3D.",
+          "terms": [
+            "math-aa-3.12-skew"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q08",
+          "type": "tf",
+          "statement": "v · w = |v||w| cos θ, where θ is the angle between v and w.",
+          "answer": true,
+          "explanation": "This is how the scalar product gives angles.",
+          "terms": [
+            "math-aa-3.12-scalar-product"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q09",
+          "type": "match",
+          "prompt": "Match each expression to what it is.",
+          "pairs": [
+            {
+              "left": "v · w",
+              "right": "A scalar"
+            },
+            {
+              "left": "v × w",
+              "right": "A vector perpendicular to v and w"
+            },
+            {
+              "left": "|v × w|",
+              "right": "Area of the parallelogram on v and w"
+            },
+            {
+              "left": "v/|v|",
+              "right": "Unit vector in the direction of v"
+            }
+          ],
+          "explanation": "Keep track of whether each result is a number or a vector.",
+          "terms": [
+            "math-aa-3.12-scalar-product",
+            "math-aa-3.12-vector-product",
+            "math-aa-3.12-unit-vector"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to decide whether two non-parallel lines intersect.",
+          "items": [
+            "Equate the x, y and z components of the two lines",
+            "Solve two of the equations for λ and μ",
+            "Substitute λ and μ into the third equation",
+            "If it holds the lines intersect; otherwise they are skew"
+          ],
+          "explanation": "Three equations, two unknowns: the third equation is the test.",
+          "terms": [
+            "math-aa-3.12-vector-line",
+            "math-aa-3.12-skew"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-3.12-2",
+      "title": "Vector product and planes",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-3.12-2-q01",
+          "type": "mcq",
+          "prompt": "Find i × j, where i = (1, 0, 0) and j = (0, 1, 0).",
+          "options": [
+            "(0, 0, 1)",
+            "(0, 0, −1)",
+            "0",
+            "(1, 1, 0)"
+          ],
+          "answer": 0,
+          "explanation": "i × j = k, following the right-hand rule.",
+          "terms": [
+            "math-aa-3.12-vector-product"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q02",
+          "type": "mcq",
+          "prompt": "Find (1, 2, 0) × (0, 1, 3).",
+          "options": [
+            "(0, 2, 0)",
+            "(6, −3, 1)",
+            "(−6, 3, −1)",
+            "(6, 3, 1)"
+          ],
+          "answer": 1,
+          "explanation": "(2 × 3 − 0 × 1, 0 × 0 − 1 × 3, 1 × 1 − 2 × 0) = (6, −3, 1). Check: it is perpendicular to both vectors.",
+          "terms": [
+            "math-aa-3.12-vector-product"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q03",
+          "type": "fill",
+          "text": "The plane 2x − y + 3z = 7 has normal vector (2, −1, ___).",
+          "answer": "3",
+          "bank": [
+            "7",
+            "3",
+            "−3",
+            "1"
+          ],
+          "explanation": "The coefficients of x, y and z form a normal.",
+          "terms": [
+            "math-aa-3.12-normal",
+            "math-aa-3.12-plane-equation"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q04",
+          "type": "tf",
+          "statement": "v × w = w × v",
+          "answer": false,
+          "explanation": "The vector product is anti-commutative: v × w = −(w × v).",
+          "terms": [
+            "math-aa-3.12-vector-product"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q05",
+          "type": "mcq",
+          "prompt": "Which point lies on the plane 2x − y + 3z = 7?",
+          "options": [
+            "(1, 1, 2)",
+            "(1, 2, 1)",
+            "(0, 0, 2)",
+            "(2, 1, 1)"
+          ],
+          "answer": 0,
+          "explanation": "2 − 1 + 6 = 7. The others give 3, 6 and 6.",
+          "terms": [
+            "math-aa-3.12-plane-equation"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q06",
+          "type": "mcq",
+          "prompt": "The angle between a line with direction d and a plane with normal n is…",
+          "options": [
+            "always 90°",
+            "180° minus the angle between d and n",
+            "90° minus the angle between d and n",
+            "the angle between d and n"
+          ],
+          "answer": 2,
+          "explanation": "The normal is perpendicular to the plane, so subtract from 90° (or use sin instead of cos).",
+          "terms": [
+            "math-aa-3.12-normal"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q07",
+          "type": "fill",
+          "text": "The area of a triangle with two sides given by vectors v and w is ½|v ___ w|.",
+          "answer": "×",
+          "bank": [
+            "·",
+            "−",
+            "+",
+            "×"
+          ],
+          "explanation": "The magnitude of the vector product is the parallelogram area.",
+          "terms": [
+            "math-aa-3.12-parallelogram-area"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q08",
+          "type": "tf",
+          "statement": "A plane can be written r = a + λb + μc, where b and c are non-parallel vectors in the plane.",
+          "answer": true,
+          "explanation": "This is the vector (parametric) form of a plane.",
+          "terms": [
+            "math-aa-3.12-plane-equation"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q09",
+          "type": "match",
+          "prompt": "Match each equation to its type.",
+          "pairs": [
+            {
+              "left": "r · n = a · n",
+              "right": "Scalar product form of a plane"
+            },
+            {
+              "left": "ax + by + cz = d",
+              "right": "Cartesian form of a plane"
+            },
+            {
+              "left": "r = a + λb",
+              "right": "Vector equation of a line"
+            },
+            {
+              "left": "(x − x₀)/l = (y − y₀)/m = (z − z₀)/n",
+              "right": "Cartesian equations of a line"
+            }
+          ],
+          "explanation": "You should be able to convert between these forms.",
+          "terms": [
+            "math-aa-3.12-plane-equation",
+            "math-aa-3.12-vector-line"
+          ]
+        },
+        {
+          "id": "math-aa-3.12-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to find the Cartesian equation of the plane through A, B and C.",
+          "items": [
+            "Find the vectors AB and AC",
+            "Compute n = AB × AC",
+            "Use r · n = a · n",
+            "Expand to the form ax + by + cz = d"
+          ],
+          "explanation": "The vector product of two directions in the plane gives the normal.",
+          "terms": [
+            "math-aa-3.12-normal",
+            "math-aa-3.12-vector-product",
+            "math-aa-3.12-plane-equation"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "math-aa-X-2-01",
+    "unit": "2",
+    "topics": ["math-aa-2.1", "math-aa-2.6"],
+    "paper": "P1",
+    "level": "SL",
+    "title": "A rational function and its inverse",
+    "stem": "Let f(x) = (2x + 3)/(x − 1), for x ≠ 1, and g(x) = x + 1, for x ∈ ℝ.",
+    "parts": [
+      { "label": "a", "command": "Write", "prompt": "Write down the equations of the vertical and horizontal asymptotes of the graph of f.", "marks": 2,
+        "markscheme": ["x = 1", "y = 2"] },
+      { "label": "b", "command": "Find", "prompt": "Find the coordinates of the points where the graph of f meets the axes.", "marks": 2,
+        "markscheme": ["x-intercept (−3/2, 0) / (−1.5, 0)", "y-intercept (0, −3)"] },
+      { "label": "c", "command": "Find", "prompt": "Find f⁻¹(x), stating its domain.", "marks": 3,
+        "markscheme": ["interchanging x and y: x = (2y + 3)/(y − 1) (may be done at any stage)", "xy − x = 2y + 3 ⇒ y(x − 2) = x + 3", "f⁻¹(x) = (x + 3)/(x − 2), x ≠ 2"] },
+      { "label": "d", "command": "Solve", "prompt": "Solve (f ∘ g)(x) = 5.", "marks": 3,
+        "numeric": { "value": 1.6667, "tolerance": 0.005, "unit": "" },
+        "markscheme": ["(f ∘ g)(x) = f(x + 1) = (2x + 5)/x", "2x + 5 = 5x", "x = 5/3"],
+        "notes": "This is Paper 1: an exact answer 5/3 is expected." }
+    ]
+  }
+]

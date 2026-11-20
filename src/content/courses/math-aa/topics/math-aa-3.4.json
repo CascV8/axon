@@ -1,0 +1,585 @@
+{
+  "id": "math-aa-3.4",
+  "code": "SL 3.4–3.8, AHL 3.9–3.11",
+  "unit": "3",
+  "title": "Circular functions and trigonometry",
+  "level": "SL",
+  "summary": "Radians, arcs and sectors, the unit circle and exact values, identities, trigonometric graphs and equations; HL adds reciprocal and inverse trig functions and compound angles.",
+  "keyterms": [
+    {
+      "id": "math-aa-3.4-radian",
+      "term": "Radian",
+      "definition": "The angle subtended at the centre by an arc equal in length to the radius; π rad = 180°.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-arc-length",
+      "term": "Arc length",
+      "definition": "l = rθ, with θ in radians.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-sector-area",
+      "term": "Sector area",
+      "definition": "A = ½r²θ, with θ in radians.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-unit-circle",
+      "term": "Unit circle",
+      "definition": "Circle of radius 1 centred at the origin; the point at angle θ is (cos θ, sin θ).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-pythagorean-identity",
+      "term": "Pythagorean identity",
+      "definition": "sin²θ + cos²θ = 1 for all θ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-double-angle",
+      "term": "Double angle identities",
+      "definition": "sin 2θ = 2 sin θ cos θ; cos 2θ = cos²θ − sin²θ = 2cos²θ − 1 = 1 − 2sin²θ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-amplitude",
+      "term": "Amplitude",
+      "definition": "For y = a sin(b(x − c)) + d, the amplitude is |a|: half the distance from maximum to minimum.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-period",
+      "term": "Period",
+      "definition": "The length of one cycle; for y = a sin(bx) + d it is 2π/|b|.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-principal-axis",
+      "term": "Principal axis",
+      "definition": "The horizontal line y = d about which a sinusoidal graph oscillates.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.4-reciprocal-trig",
+      "term": "Reciprocal trig functions",
+      "definition": "sec θ = 1/cos θ, cosec θ = 1/sin θ, cot θ = 1/tan θ.",
+      "hl": true
+    },
+    {
+      "id": "math-aa-3.4-inverse-trig",
+      "term": "Inverse trig functions",
+      "definition": "arcsin, arccos and arctan, defined on restricted domains with ranges [−π/2, π/2], [0, π] and (−π/2, π/2).",
+      "hl": true
+    },
+    {
+      "id": "math-aa-3.4-compound-angle",
+      "term": "Compound angle identities",
+      "definition": "sin(A ± B) = sin A cos B ± cos A sin B; cos(A ± B) = cos A cos B ∓ sin A sin B.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-3.4-1",
+      "title": "Radians, the unit circle and identities",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-3.4-1-q01",
+          "type": "mcq",
+          "prompt": "Convert 150° to radians.",
+          "options": [
+            "5π/3",
+            "3π/4",
+            "2π/3",
+            "5π/6"
+          ],
+          "answer": 3,
+          "explanation": "150 × π/180 = 5π/6.",
+          "terms": [
+            "math-aa-3.4-radian"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q02",
+          "type": "mcq",
+          "prompt": "Find the arc length when r = 6 and θ = 2π/3.",
+          "options": [
+            "12π",
+            "2π",
+            "4π",
+            "9"
+          ],
+          "answer": 2,
+          "explanation": "l = rθ = 6 × 2π/3 = 4π.",
+          "terms": [
+            "math-aa-3.4-arc-length"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q03",
+          "type": "fill",
+          "text": "The area of a sector with r = 4 and θ = 0.5 rad is ___.",
+          "answer": "4",
+          "bank": [
+            "16",
+            "2",
+            "4",
+            "8"
+          ],
+          "explanation": "A = ½ × 16 × 0.5 = 4.",
+          "terms": [
+            "math-aa-3.4-sector-area"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q04",
+          "type": "tf",
+          "statement": "sin²θ + cos²θ = 1 for every θ.",
+          "answer": true,
+          "explanation": "It is Pythagoras on the unit circle: x² + y² = 1 with x = cos θ, y = sin θ.",
+          "terms": [
+            "math-aa-3.4-pythagorean-identity",
+            "math-aa-3.4-unit-circle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q05",
+          "type": "mcq",
+          "prompt": "Find the exact value of cos(2π/3).",
+          "options": [
+            "½",
+            "−½",
+            "−√3/2",
+            "√3/2"
+          ],
+          "answer": 1,
+          "explanation": "2π/3 is in the second quadrant where cosine is negative; the reference angle is π/3.",
+          "terms": [
+            "math-aa-3.4-unit-circle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q06",
+          "type": "mcq",
+          "prompt": "θ is obtuse and sin θ = 3/5. Find cos θ.",
+          "options": [
+            "−3/5",
+            "−4/5",
+            "4/5",
+            "−3/4"
+          ],
+          "answer": 1,
+          "explanation": "cos²θ = 1 − 9/25 = 16/25, and cosine is negative for obtuse angles.",
+          "terms": [
+            "math-aa-3.4-pythagorean-identity"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q07",
+          "type": "fill",
+          "text": "sin 2θ = 2 sin θ ___",
+          "answer": "cos θ",
+          "bank": [
+            "cos θ",
+            "cos 2θ",
+            "tan θ",
+            "sin θ"
+          ],
+          "explanation": "This is the double angle identity for sine.",
+          "terms": [
+            "math-aa-3.4-double-angle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q08",
+          "type": "tf",
+          "statement": "tan(π/4) = 1",
+          "answer": true,
+          "explanation": "At π/4, sin and cos are both √2/2.",
+          "terms": [
+            "math-aa-3.4-unit-circle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q09",
+          "type": "match",
+          "prompt": "Match each expression to its exact value.",
+          "pairs": [
+            {
+              "left": "sin(π/6)",
+              "right": "½"
+            },
+            {
+              "left": "cos(π/6)",
+              "right": "√3/2"
+            },
+            {
+              "left": "tan(π/3)",
+              "right": "√3"
+            },
+            {
+              "left": "cos(π/2)",
+              "right": "0"
+            }
+          ],
+          "explanation": "Paper 1 has no calculator, so these must be known.",
+          "terms": [
+            "math-aa-3.4-unit-circle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-1-q10",
+          "type": "order",
+          "prompt": "Order from smallest to largest.",
+          "items": [
+            "cos π",
+            "cos(2π/3)",
+            "cos(π/2)",
+            "cos(π/3)",
+            "cos 0"
+          ],
+          "explanation": "The values are −1, −½, 0, ½, 1: cosine decreases from 0 to π.",
+          "terms": [
+            "math-aa-3.4-unit-circle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-3.4-2",
+      "title": "Trigonometric graphs and equations",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-3.4-2-q01",
+          "type": "mcq",
+          "prompt": "Find the period of y = 3 sin(2x) + 1.",
+          "options": [
+            "2π",
+            "π",
+            "4π",
+            "π/2"
+          ],
+          "answer": 1,
+          "explanation": "Period = 2π/2 = π.",
+          "terms": [
+            "math-aa-3.4-period"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q02",
+          "type": "mcq",
+          "prompt": "Find the amplitude of y = −4 cos x + 2.",
+          "options": [
+            "6",
+            "2",
+            "−4",
+            "4"
+          ],
+          "answer": 3,
+          "explanation": "Amplitude is |a| = 4; the minus sign reflects the graph.",
+          "terms": [
+            "math-aa-3.4-amplitude"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q03",
+          "type": "fill",
+          "text": "The principal axis of y = 2 sin(x − π/3) + 5 is y = ___.",
+          "answer": "5",
+          "bank": [
+            "5",
+            "7",
+            "π/3",
+            "2"
+          ],
+          "explanation": "The vertical shift d gives the principal axis.",
+          "terms": [
+            "math-aa-3.4-principal-axis"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q04",
+          "type": "tf",
+          "statement": "y = sin(x + π/2) has the same graph as y = cos x.",
+          "answer": true,
+          "explanation": "Translating the sine curve π/2 to the left gives the cosine curve.",
+          "terms": [
+            "math-aa-3.4-period"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q05",
+          "type": "mcq",
+          "prompt": "Solve sin x = ½ for 0 ≤ x ≤ 2π.",
+          "options": [
+            "x = π/6 or 7π/6",
+            "x = π/6 or 5π/6",
+            "x = π/3 or 2π/3",
+            "x = π/6 only"
+          ],
+          "answer": 1,
+          "explanation": "Sine is positive in quadrants 1 and 2: π/6 and π − π/6.",
+          "terms": [
+            "math-aa-3.4-unit-circle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q06",
+          "type": "mcq",
+          "prompt": "Solve 2cos²x − cos x − 1 = 0 for 0 ≤ x < 2π.",
+          "options": [
+            "x = π, π/3, 5π/3",
+            "x = 2π/3, 4π/3 only",
+            "x = 0, π/3, 5π/3",
+            "x = 0, 2π/3, 4π/3"
+          ],
+          "answer": 3,
+          "explanation": "(2cos x + 1)(cos x − 1) = 0, so cos x = 1 (x = 0) or cos x = −½ (x = 2π/3, 4π/3).",
+          "terms": [
+            "math-aa-3.4-unit-circle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q07",
+          "type": "fill",
+          "text": "The maximum value of y = 3 sin x − 2 is ___.",
+          "answer": "1",
+          "bank": [
+            "1",
+            "5",
+            "−2",
+            "3"
+          ],
+          "explanation": "sin x ≤ 1, so the maximum is 3 − 2 = 1.",
+          "terms": [
+            "math-aa-3.4-amplitude",
+            "math-aa-3.4-principal-axis"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q08",
+          "type": "tf",
+          "statement": "tan x = 1 has exactly one solution for 0 ≤ x < 2π.",
+          "answer": false,
+          "explanation": "tan has period π, so x = π/4 and 5π/4.",
+          "terms": [
+            "math-aa-3.4-period"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q09",
+          "type": "match",
+          "prompt": "Match each function to its properties.",
+          "pairs": [
+            {
+              "left": "y = sin x",
+              "right": "Period 2π, range [−1, 1]"
+            },
+            {
+              "left": "y = tan x",
+              "right": "Period π, asymptotes at x = π/2 + kπ"
+            },
+            {
+              "left": "y = 2 cos x",
+              "right": "Period 2π, range [−2, 2]"
+            },
+            {
+              "left": "y = sin 3x",
+              "right": "Period 2π/3"
+            }
+          ],
+          "explanation": "Amplitude affects the range; the coefficient of x affects the period.",
+          "terms": [
+            "math-aa-3.4-period",
+            "math-aa-3.4-amplitude"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to solve sin 2x = √3/2 for 0 ≤ x ≤ π.",
+          "items": [
+            "Let u = 2x, so 0 ≤ u ≤ 2π",
+            "Solve sin u = √3/2: u = π/3 or 2π/3",
+            "Divide by 2: x = π/6 or π/3",
+            "Check both lie in 0 ≤ x ≤ π"
+          ],
+          "explanation": "Adjusting the interval for u first makes sure no solutions are missed.",
+          "terms": [
+            "math-aa-3.4-unit-circle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-3.4-3",
+      "title": "Reciprocal, inverse and compound angle trigonometry",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-3.4-3-q01",
+          "type": "mcq",
+          "prompt": "Which identity is correct?",
+          "options": [
+            "1 + tan²θ = sec²θ",
+            "1 + sec²θ = tan²θ",
+            "tan²θ − 1 = sec²θ",
+            "1 + cot²θ = sec²θ"
+          ],
+          "answer": 0,
+          "explanation": "Divide sin²θ + cos²θ = 1 by cos²θ. Dividing by sin²θ gives 1 + cot²θ = cosec²θ.",
+          "terms": [
+            "math-aa-3.4-reciprocal-trig",
+            "math-aa-3.4-pythagorean-identity"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q02",
+          "type": "mcq",
+          "prompt": "Find the exact value of sin 75°.",
+          "options": [
+            "(√6 + √2)/4",
+            "(√6 − √2)/4",
+            "(√2 + 1)/2",
+            "√3/2"
+          ],
+          "answer": 0,
+          "explanation": "sin(45° + 30°) = (√2/2)(√3/2) + (√2/2)(½).",
+          "terms": [
+            "math-aa-3.4-compound-angle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q03",
+          "type": "fill",
+          "text": "arcsin(½) = ___",
+          "answer": "π/6",
+          "bank": [
+            "π/3",
+            "π/6",
+            "5π/6",
+            "30"
+          ],
+          "explanation": "The range of arcsin is [−π/2, π/2], so only π/6 qualifies.",
+          "terms": [
+            "math-aa-3.4-inverse-trig"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q04",
+          "type": "tf",
+          "statement": "The range of y = arccos x is 0 ≤ y ≤ π.",
+          "answer": true,
+          "explanation": "Cosine is one-to-one on [0, π], so that is the range of its inverse.",
+          "terms": [
+            "math-aa-3.4-inverse-trig"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q05",
+          "type": "mcq",
+          "prompt": "Which is the identity for tan(A + B)?",
+          "options": [
+            "(tan A + tan B)/(1 − tan A tan B)",
+            "(tan A − tan B)/(1 − tan A tan B)",
+            "(tan A + tan B)/(1 + tan A tan B)",
+            "tan A + tan B"
+          ],
+          "answer": 0,
+          "explanation": "It follows from dividing sin(A + B) by cos(A + B).",
+          "terms": [
+            "math-aa-3.4-compound-angle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q06",
+          "type": "mcq",
+          "prompt": "Find cosec(π/6).",
+          "options": [
+            "√3",
+            "2",
+            "2/√3",
+            "½"
+          ],
+          "answer": 1,
+          "explanation": "cosec = 1/sin and sin(π/6) = ½.",
+          "terms": [
+            "math-aa-3.4-reciprocal-trig"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q07",
+          "type": "fill",
+          "text": "cos(A − B) = cos A cos B ___ sin A sin B",
+          "answer": "+",
+          "bank": [
+            "+",
+            "−",
+            "×"
+          ],
+          "explanation": "The sign flips for cosine: minus inside gives plus outside.",
+          "terms": [
+            "math-aa-3.4-compound-angle"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q08",
+          "type": "tf",
+          "statement": "The domain of y = arctan x is all real x.",
+          "answer": true,
+          "explanation": "tan takes every real value on (−π/2, π/2), so arctan accepts every real input.",
+          "terms": [
+            "math-aa-3.4-inverse-trig"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q09",
+          "type": "match",
+          "prompt": "Match each function to its definition.",
+          "pairs": [
+            {
+              "left": "sec θ",
+              "right": "1/cos θ"
+            },
+            {
+              "left": "cosec θ",
+              "right": "1/sin θ"
+            },
+            {
+              "left": "cot θ",
+              "right": "cos θ / sin θ"
+            },
+            {
+              "left": "arctan x",
+              "right": "Angle in (−π/2, π/2) whose tangent is x"
+            }
+          ],
+          "explanation": "The reciprocal functions are not the same as the inverse functions.",
+          "terms": [
+            "math-aa-3.4-reciprocal-trig",
+            "math-aa-3.4-inverse-trig"
+          ]
+        },
+        {
+          "id": "math-aa-3.4-3-q10",
+          "type": "mcq",
+          "prompt": "A and B are acute with tan A = ½ and tan B = ⅓. Find A + B.",
+          "options": [
+            "π/4",
+            "π/2",
+            "π/6",
+            "π/3"
+          ],
+          "answer": 0,
+          "explanation": "tan(A + B) = (5/6)/(1 − 1/6) = 1, and A + B is acute.",
+          "terms": [
+            "math-aa-3.4-compound-angle"
+          ]
+        }
+      ]
+    }
+  ]
+}

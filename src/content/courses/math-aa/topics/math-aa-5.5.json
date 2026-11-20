@@ -1,0 +1,409 @@
+{
+  "id": "math-aa-5.5",
+  "code": "SL 5.5, 5.10, 5.11",
+  "unit": "5",
+  "title": "Integration",
+  "level": "SL",
+  "summary": "Antiderivatives of standard functions, integration by inspection and substitution, definite integrals, areas and volumes of revolution.",
+  "keyterms": [
+    {
+      "id": "math-aa-5.5-antiderivative",
+      "term": "Antiderivative",
+      "definition": "A function F with F′(x) = f(x).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-constant-of-integration",
+      "term": "Constant of integration",
+      "definition": "+ C in an indefinite integral, since constants differentiate to 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-indefinite-integral",
+      "term": "Indefinite integral",
+      "definition": "∫ f(x) dx = F(x) + C, the family of all antiderivatives.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-definite-integral",
+      "term": "Definite integral",
+      "definition": "∫ₐᵇ f(x) dx = F(b) − F(a).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-area-under-curve",
+      "term": "Area under a curve",
+      "definition": "Area between y = f(x) and the x-axis: ∫ₐᵇ |y| dx.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-area-between-curves",
+      "term": "Area between curves",
+      "definition": "∫ₐᵇ |f(x) − g(x)| dx between intersection points.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-inspection",
+      "term": "Integration by inspection",
+      "definition": "Recognising a reverse chain rule, e.g. ∫ f′(x)[f(x)]ⁿ dx.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-substitution",
+      "term": "Integration by substitution",
+      "definition": "Replacing an inner function with u and dx with du/u′(x) to simplify the integral.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-volume-of-revolution",
+      "term": "Volume of revolution",
+      "definition": "Rotating y = f(x) about the x-axis: V = ∫ₐᵇ πy² dx.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.5-fundamental-theorem",
+      "term": "Fundamental theorem of calculus",
+      "definition": "Integration and differentiation are inverse processes, so ∫ₐᵇ f(x) dx = F(b) − F(a).",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-5.5-1",
+      "title": "Indefinite integrals",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-5.5-1-q01",
+          "type": "mcq",
+          "prompt": "Find ∫ (6x² + 4) dx.",
+          "options": [
+            "2x³ + 4x + C",
+            "2x³ + C",
+            "6x³ + 4x + C",
+            "12x + C"
+          ],
+          "answer": 0,
+          "explanation": "Raise each power by one and divide by the new power.",
+          "terms": [
+            "math-aa-5.5-indefinite-integral",
+            "math-aa-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q02",
+          "type": "mcq",
+          "prompt": "Find ∫ 1/x dx.",
+          "options": [
+            "x⁰/0 + C",
+            "eˣ + C",
+            "ln|x| + C",
+            "−1/x² + C"
+          ],
+          "answer": 2,
+          "explanation": "The power rule fails for n = −1; the antiderivative is ln|x|.",
+          "terms": [
+            "math-aa-5.5-indefinite-integral"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q03",
+          "type": "fill",
+          "text": "∫ eˣ dx = ___ + C",
+          "answer": "eˣ",
+          "bank": [
+            "eˣ",
+            "ln x",
+            "xeˣ",
+            "eˣ⁺¹"
+          ],
+          "explanation": "eˣ is its own derivative and antiderivative.",
+          "terms": [
+            "math-aa-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q04",
+          "type": "tf",
+          "statement": "Every indefinite integral needs a constant of integration.",
+          "answer": true,
+          "explanation": "Different constants give different antiderivatives with the same derivative.",
+          "terms": [
+            "math-aa-5.5-constant-of-integration"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q05",
+          "type": "mcq",
+          "prompt": "Find ∫ cos(2x) dx.",
+          "options": [
+            "−½ sin 2x + C",
+            "sin 2x + C",
+            "½ sin 2x + C",
+            "2 sin 2x + C"
+          ],
+          "answer": 2,
+          "explanation": "Differentiating sin 2x gives 2 cos 2x, so divide by 2.",
+          "terms": [
+            "math-aa-5.5-inspection"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q06",
+          "type": "mcq",
+          "prompt": "f′(x) = 2x + 1 and f(1) = 5. Find f(x).",
+          "options": [
+            "f(x) = 2x² + x + 2",
+            "f(x) = x² + x + 3",
+            "f(x) = x² + x + 5",
+            "f(x) = x² + x"
+          ],
+          "answer": 1,
+          "explanation": "f(x) = x² + x + C and 1 + 1 + C = 5, so C = 3.",
+          "terms": [
+            "math-aa-5.5-constant-of-integration"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q07",
+          "type": "fill",
+          "text": "∫ x⁻² dx = ___ + C",
+          "answer": "−x⁻¹",
+          "accept": [
+            "−1/x",
+            "-1/x"
+          ],
+          "bank": [
+            "x⁻¹",
+            "−2x⁻³",
+            "−x⁻¹",
+            "−x⁻³/3"
+          ],
+          "explanation": "x⁻¹/(−1) = −1/x.",
+          "terms": [
+            "math-aa-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q08",
+          "type": "tf",
+          "statement": "∫ (3x + 2)⁴ dx = (3x + 2)⁵/15 + C",
+          "answer": true,
+          "explanation": "Divide by the new power 5 and by the inner derivative 3.",
+          "terms": [
+            "math-aa-5.5-inspection"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q09",
+          "type": "match",
+          "prompt": "Match each integral to its result.",
+          "pairs": [
+            {
+              "left": "∫ xⁿ dx (n ≠ −1)",
+              "right": "xⁿ⁺¹/(n + 1) + C"
+            },
+            {
+              "left": "∫ sin x dx",
+              "right": "−cos x + C"
+            },
+            {
+              "left": "∫ 1/x dx",
+              "right": "ln|x| + C"
+            },
+            {
+              "left": "∫ e^(kx) dx",
+              "right": "e^(kx)/k + C"
+            }
+          ],
+          "explanation": "Check each by differentiating your answer.",
+          "terms": [
+            "math-aa-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to find ∫ 2x(x² + 1)³ dx by substitution.",
+          "items": [
+            "Let u = x² + 1",
+            "Then du = 2x dx",
+            "Integrate: ∫ u³ du = u⁴/4 + C",
+            "Substitute back: (x² + 1)⁴/4 + C"
+          ],
+          "explanation": "The 2x is exactly the derivative of the inner function.",
+          "terms": [
+            "math-aa-5.5-substitution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-5.5-2",
+      "title": "Definite integrals, areas and volumes",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-5.5-2-q01",
+          "type": "mcq",
+          "prompt": "Evaluate ∫₀² 3x² dx.",
+          "options": [
+            "6",
+            "12",
+            "24",
+            "8"
+          ],
+          "answer": 3,
+          "explanation": "[x³]₀² = 8 − 0.",
+          "terms": [
+            "math-aa-5.5-definite-integral"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q02",
+          "type": "mcq",
+          "prompt": "Find the area between y = x² and the x-axis from x = 0 to x = 3.",
+          "options": [
+            "27",
+            "9",
+            "3",
+            "6"
+          ],
+          "answer": 1,
+          "explanation": "[x³/3]₀³ = 27/3 = 9.",
+          "terms": [
+            "math-aa-5.5-area-under-curve"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q03",
+          "type": "fill",
+          "text": "∫ₐᵇ f(x) dx = F(b) − ___",
+          "answer": "F(a)",
+          "bank": [
+            "F(0)",
+            "F(a)",
+            "F(b)",
+            "f(a)"
+          ],
+          "explanation": "Upper limit minus lower limit.",
+          "terms": [
+            "math-aa-5.5-fundamental-theorem",
+            "math-aa-5.5-definite-integral"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q04",
+          "type": "tf",
+          "statement": "The definite integral of a function that is negative throughout [a, b] (with a < b) is negative.",
+          "answer": true,
+          "explanation": "The area is the absolute value of that integral.",
+          "terms": [
+            "math-aa-5.5-definite-integral",
+            "math-aa-5.5-area-under-curve"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q05",
+          "type": "mcq",
+          "prompt": "Find the area enclosed between y = x and y = x².",
+          "options": [
+            "1/2",
+            "5/6",
+            "1/3",
+            "1/6"
+          ],
+          "answer": 3,
+          "explanation": "They meet at x = 0 and 1; ∫₀¹ (x − x²) dx = ½ − ⅓.",
+          "terms": [
+            "math-aa-5.5-area-between-curves"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q06",
+          "type": "mcq",
+          "prompt": "Evaluate ∫₁ᵉ 1/x dx.",
+          "options": [
+            "1",
+            "e",
+            "0",
+            "e − 1"
+          ],
+          "answer": 0,
+          "explanation": "ln e − ln 1 = 1 − 0.",
+          "terms": [
+            "math-aa-5.5-definite-integral"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q07",
+          "type": "fill",
+          "text": "Rotating y = f(x) through 2π about the x-axis from a to b gives V = ∫ₐᵇ π___ dx.",
+          "answer": "y²",
+          "bank": [
+            "x²",
+            "y",
+            "y²",
+            "2y"
+          ],
+          "explanation": "Each slice is a disc of radius y and area πy².",
+          "terms": [
+            "math-aa-5.5-volume-of-revolution"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q08",
+          "type": "tf",
+          "statement": "∫₀¹ f(x) dx + ∫₁³ f(x) dx = ∫₀³ f(x) dx",
+          "answer": true,
+          "explanation": "Integrals over adjacent intervals add.",
+          "terms": [
+            "math-aa-5.5-definite-integral"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q09",
+          "type": "match",
+          "prompt": "Match each integral to its value.",
+          "pairs": [
+            {
+              "left": "∫₀^π sin x dx",
+              "right": "2"
+            },
+            {
+              "left": "∫₀¹ eˣ dx",
+              "right": "e − 1"
+            },
+            {
+              "left": "∫₋₁¹ x³ dx",
+              "right": "0"
+            },
+            {
+              "left": "∫₀⁴ √x dx",
+              "right": "16/3"
+            }
+          ],
+          "explanation": "An odd function integrated over a symmetric interval gives 0.",
+          "terms": [
+            "math-aa-5.5-definite-integral"
+          ]
+        },
+        {
+          "id": "math-aa-5.5-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to find the area between a curve and the x-axis when the curve crosses the axis.",
+          "items": [
+            "Find where the curve crosses the x-axis",
+            "Split the interval at those roots",
+            "Integrate over each part separately",
+            "Add the absolute values of the parts"
+          ],
+          "explanation": "Integrating straight across lets positive and negative parts cancel.",
+          "terms": [
+            "math-aa-5.5-area-under-curve"
+          ]
+        }
+      ]
+    }
+  ]
+}

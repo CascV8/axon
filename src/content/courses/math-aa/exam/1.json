@@ -1,0 +1,46 @@
+[
+  {
+    "id": "math-aa-X-1-01",
+    "unit": "1",
+    "topics": ["math-aa-1.1"],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Arithmetic and geometric sequences",
+    "stem": "An arithmetic sequence has second term u₂ = 7 and fifth term u₅ = 16. A geometric sequence has first term v₁ = u₁ and common ratio r, where 0 < r < 1.",
+    "parts": [
+      { "label": "a", "command": "Find", "prompt": "Find the common difference d and the first term u₁.", "marks": 3,
+        "markscheme": ["u₅ − u₂ = 3d / u₁ + 4d − (u₁ + d) = 9", "d = 3", "u₁ = 4"] },
+      { "label": "b", "command": "Find", "prompt": "Find the sum of the first 20 terms of the arithmetic sequence.", "marks": 2,
+        "numeric": { "value": 650, "tolerance": 0, "unit": "" },
+        "markscheme": ["S₂₀ = 20/2 (2 × 4 + 19 × 3) / 10(4 + 61)", "S₂₀ = 650"] },
+      { "label": "c", "command": "Find", "prompt": "The sum to infinity of the geometric sequence is 16. Find r.", "marks": 2,
+        "numeric": { "value": 0.75, "tolerance": 0, "unit": "" },
+        "markscheme": ["4 / (1 − r) = 16", "r = 3/4 / 0.75"] },
+      { "label": "d", "command": "Find", "prompt": "Find the smallest value of n for which uₙ > 100.", "marks": 2,
+        "numeric": { "value": 34, "tolerance": 0, "unit": "" },
+        "markscheme": ["4 + 3(n − 1) > 100 / 3n + 1 > 100", "n = 34 (u₃₃ = 100 is not greater than 100)"],
+        "notes": "Answers of n = 33 show the common error of treating > as ≥; award M1 A0." }
+    ]
+  },
+  {
+    "id": "math-aa-X-1-02",
+    "unit": "1",
+    "topics": ["math-aa-1.12"],
+    "paper": "P1",
+    "level": "HL",
+    "title": "Powers and roots of a complex number",
+    "stem": "Let z = 1 + i√3.",
+    "parts": [
+      { "label": "a", "command": "Write", "prompt": "Write z in the form r cis θ, where r > 0 and −π < θ ≤ π.", "marks": 2,
+        "markscheme": ["r = 2", "θ = π/3, so z = 2 cis(π/3)"] },
+      { "label": "b", "command": "Hence", "prompt": "Hence find z⁶.", "marks": 2,
+        "numeric": { "value": 64, "tolerance": 0, "unit": "" },
+        "markscheme": ["De Moivre: z⁶ = 2⁶ cis(6 × π/3) / 64 cis 2π", "z⁶ = 64"] },
+      { "label": "c", "command": "Solve", "prompt": "Solve w³ = z, giving your answers in the form r cis θ, where r > 0 and −π < θ ≤ π.", "marks": 4,
+        "markscheme": ["modulus ∛2 / 2^(1/3)", "one argument π/9", "adding/subtracting 2π/3 to get further roots", "w = ∛2 cis(π/9), ∛2 cis(7π/9), ∛2 cis(−5π/9)"],
+        "notes": "Award the final A1 only if all three arguments lie in −π < θ ≤ π." },
+      { "label": "d", "command": "Show that", "prompt": "Show that the sum of the three solutions in part (c) is zero.", "marks": 2,
+        "markscheme": ["the solutions are the roots of w³ + 0w² + 0w − z = 0 / they form an equilateral triangle centred at the origin", "sum of roots = −(coefficient of w²)/1 = 0 / vectors from the centre cancel by symmetry"] }
+    ]
+  }
+]

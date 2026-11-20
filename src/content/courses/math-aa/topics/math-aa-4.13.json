@@ -1,0 +1,411 @@
+{
+  "id": "math-aa-4.13",
+  "code": "AHL 4.13–4.14",
+  "unit": "4",
+  "title": "Bayes' theorem and continuous random variables",
+  "level": "HL",
+  "summary": "Update probabilities with Bayes’ theorem, and work with probability density functions: probabilities, mean, variance, mode and median.",
+  "keyterms": [
+    {
+      "id": "math-aa-4.13-bayes",
+      "term": "Bayes' theorem",
+      "definition": "P(A | B) = P(B | A)P(A) / P(B), with P(B) found from all the cases that lead to B.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-prior",
+      "term": "Prior probability",
+      "definition": "The probability of an event before new evidence is taken into account.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-posterior",
+      "term": "Posterior probability",
+      "definition": "The probability of an event updated after the evidence, e.g. P(A | B).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-total-probability",
+      "term": "Law of total probability",
+      "definition": "P(B) = P(B | A)P(A) + P(B | A′)P(A′), extended to any partition.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-continuous-rv",
+      "term": "Continuous random variable",
+      "definition": "A random variable that can take any value in an interval; P(X = a) = 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-pdf",
+      "term": "Probability density function",
+      "definition": "f(x) ≥ 0 with total area 1; P(a < X < b) = ∫ₐᵇ f(x) dx.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-crv-mean",
+      "term": "Mean of a continuous random variable",
+      "definition": "E(X) = ∫ x f(x) dx over the domain.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-crv-variance",
+      "term": "Variance of a continuous random variable",
+      "definition": "Var(X) = E(X²) − [E(X)]², with E(X²) = ∫ x² f(x) dx.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-crv-median",
+      "term": "Median of a continuous random variable",
+      "definition": "The value m with ∫ f(x) dx = 0.5 from the lower limit to m.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.13-linear-transformation",
+      "term": "Linear transformation",
+      "definition": "E(aX + b) = aE(X) + b and Var(aX + b) = a²Var(X).",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-4.13-1",
+      "title": "Bayes' theorem",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-4.13-1-q01",
+          "type": "mcq",
+          "prompt": "1% of people have a condition. A test detects it 95% of the time and gives a false positive 5% of the time. Find P(condition | positive).",
+          "options": [
+            "0.0095",
+            "0.95",
+            "0.161",
+            "0.5"
+          ],
+          "answer": 2,
+          "explanation": "0.0095 / (0.0095 + 0.0495) = 0.0095 / 0.059 ≈ 0.161. A rare condition means most positives are false.",
+          "terms": [
+            "math-aa-4.13-bayes",
+            "math-aa-4.13-total-probability"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q02",
+          "type": "tf",
+          "statement": "P(A | B) and P(B | A) are always equal.",
+          "answer": false,
+          "explanation": "They are linked by Bayes’ theorem and are equal only when P(A) = P(B).",
+          "terms": [
+            "math-aa-4.13-bayes"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q03",
+          "type": "fill",
+          "text": "Bayes’ theorem: P(A | B) = P(B | A)P(A) / ___.",
+          "answer": "P(B)",
+          "bank": [
+            "P(B)",
+            "P(A ∩ B)",
+            "P(B | A)",
+            "P(A)"
+          ],
+          "explanation": "Divide by the total probability of the evidence B.",
+          "terms": [
+            "math-aa-4.13-bayes"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q04",
+          "type": "mcq",
+          "prompt": "Machines A, B and C make 50%, 30% and 20% of items, with defect rates 2%, 3% and 5%. Find P(defective).",
+          "options": [
+            "0.10",
+            "0.033",
+            "0.029",
+            "0.031"
+          ],
+          "answer": 2,
+          "explanation": "0.5(0.02) + 0.3(0.03) + 0.2(0.05) = 0.010 + 0.009 + 0.010 = 0.029.",
+          "terms": [
+            "math-aa-4.13-total-probability"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q05",
+          "type": "mcq",
+          "prompt": "With the same data, an item is defective. Find P(it came from A).",
+          "options": [
+            "0.02",
+            "0.345",
+            "0.5",
+            "0.01"
+          ],
+          "answer": 1,
+          "explanation": "0.010 / 0.029 ≈ 0.345.",
+          "terms": [
+            "math-aa-4.13-bayes",
+            "math-aa-4.13-posterior"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q06",
+          "type": "tf",
+          "statement": "In Bayes’ theorem, P(A) is called the prior probability.",
+          "answer": true,
+          "explanation": "The evidence B updates it to the posterior P(A | B).",
+          "terms": [
+            "math-aa-4.13-prior"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q07",
+          "type": "fill",
+          "text": "P(B) = P(B | A)P(A) + P(B | A′) × ___",
+          "answer": "P(A′)",
+          "bank": [
+            "P(B)",
+            "P(B′)",
+            "P(A′)",
+            "P(A)"
+          ],
+          "explanation": "This is the law of total probability over A and A′.",
+          "terms": [
+            "math-aa-4.13-total-probability"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q08",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Prior",
+              "right": "Probability before the new evidence"
+            },
+            {
+              "left": "Posterior",
+              "right": "Probability updated after the evidence"
+            },
+            {
+              "left": "P(B | A)",
+              "right": "Probability of the evidence given A"
+            },
+            {
+              "left": "P(B)",
+              "right": "Total probability of the evidence"
+            }
+          ],
+          "explanation": "Bayes’ theorem turns the prior into the posterior.",
+          "terms": [
+            "math-aa-4.13-prior",
+            "math-aa-4.13-posterior",
+            "math-aa-4.13-total-probability"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q09",
+          "type": "mcq",
+          "prompt": "P(A) = 0.6, P(B | A) = 0.5 and P(B | A′) = 0.25. Find P(A | B).",
+          "options": [
+            "0.3",
+            "0.5",
+            "0.6",
+            "0.75"
+          ],
+          "answer": 3,
+          "explanation": "P(B) = 0.3 + 0.1 = 0.4, so P(A | B) = 0.3/0.4.",
+          "terms": [
+            "math-aa-4.13-bayes"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-1-q10",
+          "type": "order",
+          "prompt": "Order the steps for a Bayes’ theorem calculation.",
+          "items": [
+            "Identify the partition (A and A′) and the prior probabilities",
+            "Find P(B | A) and P(B | A′)",
+            "Compute P(B) by the law of total probability",
+            "Divide P(B | A)P(A) by P(B)"
+          ],
+          "explanation": "A tree diagram organises the same calculation.",
+          "terms": [
+            "math-aa-4.13-bayes",
+            "math-aa-4.13-total-probability",
+            "math-aa-4.13-prior"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-4.13-2",
+      "title": "Continuous random variables",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-4.13-2-q01",
+          "type": "mcq",
+          "prompt": "f(x) = kx for 0 ≤ x ≤ 2 (and 0 otherwise) is a pdf. Find k.",
+          "options": [
+            "¼",
+            "½",
+            "1",
+            "2"
+          ],
+          "answer": 1,
+          "explanation": "∫₀² kx dx = 2k = 1.",
+          "terms": [
+            "math-aa-4.13-pdf"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q02",
+          "type": "mcq",
+          "prompt": "For f(x) = x/2 on 0 ≤ x ≤ 2, find E(X).",
+          "options": [
+            "1",
+            "2",
+            "4/3",
+            "2/3"
+          ],
+          "answer": 2,
+          "explanation": "∫₀² x²/2 dx = 8/6 = 4/3.",
+          "terms": [
+            "math-aa-4.13-crv-mean"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q03",
+          "type": "fill",
+          "text": "For a continuous random variable, P(X = a) = ___.",
+          "answer": "0",
+          "bank": [
+            "f(a)",
+            "1",
+            "0",
+            "0.5"
+          ],
+          "explanation": "The area under a single point is zero, so P(X ≤ a) = P(X < a).",
+          "terms": [
+            "math-aa-4.13-continuous-rv"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q04",
+          "type": "tf",
+          "statement": "The median m of a continuous random variable satisfies ∫ f(x) dx = 0.5 from the lower limit of the domain to m.",
+          "answer": true,
+          "explanation": "Half of the probability lies on each side of m.",
+          "terms": [
+            "math-aa-4.13-crv-median"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q05",
+          "type": "mcq",
+          "prompt": "For f(x) = x/2 on 0 ≤ x ≤ 2, find the median.",
+          "options": [
+            "2",
+            "√2",
+            "4/3",
+            "1"
+          ],
+          "answer": 1,
+          "explanation": "∫₀ᵐ x/2 dx = m²/4 = ½, so m = √2 ≈ 1.41.",
+          "terms": [
+            "math-aa-4.13-crv-median"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q06",
+          "type": "mcq",
+          "prompt": "E(X) = 5. Find E(3X − 2).",
+          "options": [
+            "17",
+            "15",
+            "13",
+            "3"
+          ],
+          "answer": 2,
+          "explanation": "E(aX + b) = aE(X) + b = 15 − 2.",
+          "terms": [
+            "math-aa-4.13-linear-transformation"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q07",
+          "type": "fill",
+          "text": "Var(aX + b) = ___ Var(X)",
+          "answer": "a²",
+          "bank": [
+            "a²",
+            "b",
+            "a",
+            "a² + b"
+          ],
+          "explanation": "Adding b shifts without changing spread; scaling by a multiplies the variance by a².",
+          "terms": [
+            "math-aa-4.13-linear-transformation"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q08",
+          "type": "tf",
+          "statement": "The mode of a continuous random variable is the x-value at which f(x) is greatest.",
+          "answer": true,
+          "explanation": "Find it by differentiation or by checking the endpoints.",
+          "terms": [
+            "math-aa-4.13-pdf"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q09",
+          "type": "match",
+          "prompt": "Match each quantity to how it is calculated.",
+          "pairs": [
+            {
+              "left": "Total area under f",
+              "right": "Equals 1"
+            },
+            {
+              "left": "E(X)",
+              "right": "∫ x f(x) dx"
+            },
+            {
+              "left": "Var(X)",
+              "right": "E(X²) − [E(X)]²"
+            },
+            {
+              "left": "P(a < X < b)",
+              "right": "∫ₐᵇ f(x) dx"
+            }
+          ],
+          "explanation": "Every calculation is an integral of the pdf.",
+          "terms": [
+            "math-aa-4.13-pdf",
+            "math-aa-4.13-crv-mean",
+            "math-aa-4.13-crv-variance"
+          ]
+        },
+        {
+          "id": "math-aa-4.13-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to find Var(X) for f(x) = x/2 on 0 ≤ x ≤ 2.",
+          "items": [
+            "Find E(X) = 4/3",
+            "Find E(X²) = ∫₀² x³/2 dx = 2",
+            "Var(X) = 2 − (4/3)²",
+            "Var(X) = 2/9"
+          ],
+          "explanation": "2 − 16/9 = 2/9.",
+          "terms": [
+            "math-aa-4.13-crv-variance",
+            "math-aa-4.13-crv-mean"
+          ]
+        }
+      ]
+    }
+  ]
+}

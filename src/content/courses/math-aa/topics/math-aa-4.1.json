@@ -1,0 +1,414 @@
+{
+  "id": "math-aa-4.1",
+  "code": "SL 4.1–4.4, 4.10",
+  "unit": "4",
+  "title": "Statistics and regression",
+  "level": "SL",
+  "summary": "Sampling, measures of centre and spread, outliers and box plots, Pearson’s correlation coefficient and least-squares regression lines.",
+  "keyterms": [
+    {
+      "id": "math-aa-4.1-population",
+      "term": "Population",
+      "definition": "The whole group of interest from which a sample is taken.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-random-sample",
+      "term": "Simple random sample",
+      "definition": "A sample in which every member of the population has an equal chance of selection.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-discrete-continuous",
+      "term": "Discrete and continuous data",
+      "definition": "Discrete data take separate countable values; continuous data can take any value in a range.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-mean",
+      "term": "Mean",
+      "definition": "The sum of the values divided by the number of values, x̄ = ∑x / n.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-median",
+      "term": "Median",
+      "definition": "The middle value of ordered data (the mean of the two middle values when n is even).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-iqr",
+      "term": "Interquartile range",
+      "definition": "IQR = Q₃ − Q₁, the spread of the middle 50% of the data.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-outlier",
+      "term": "Outlier",
+      "definition": "A value more than 1.5 × IQR below Q₁ or above Q₃.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-standard-deviation",
+      "term": "Standard deviation",
+      "definition": "A measure of spread around the mean; the square root of the variance.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-pearson",
+      "term": "Pearson's r",
+      "definition": "Correlation coefficient measuring the strength and direction of linear correlation, −1 ≤ r ≤ 1.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-regression-line",
+      "term": "Regression line",
+      "definition": "The least-squares line of y on x, used to predict y from x; it passes through (x̄, ȳ).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.1-extrapolation",
+      "term": "Extrapolation",
+      "definition": "Predicting outside the range of the data; unreliable compared with interpolation.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-4.1-1",
+      "title": "Sampling and summary statistics",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-4.1-1-q01",
+          "type": "mcq",
+          "prompt": "Find the mean of 3, 7, 8, 10, 12.",
+          "options": [
+            "8",
+            "7",
+            "10",
+            "7.5"
+          ],
+          "answer": 0,
+          "explanation": "40 ÷ 5 = 8.",
+          "terms": [
+            "math-aa-4.1-mean"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q02",
+          "type": "mcq",
+          "prompt": "Find the median of 2, 5, 9, 11, 14, 20.",
+          "options": [
+            "11",
+            "9",
+            "10.2",
+            "10"
+          ],
+          "answer": 3,
+          "explanation": "Six values: the median is the mean of the 3rd and 4th, (9 + 11)/2.",
+          "terms": [
+            "math-aa-4.1-median"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q03",
+          "type": "fill",
+          "text": "An outlier is a value more than 1.5 × IQR above Q₃ or below ___.",
+          "answer": "Q₁",
+          "bank": [
+            "Q₃",
+            "the mean",
+            "Q₁",
+            "the median"
+          ],
+          "explanation": "The fences are Q₁ − 1.5 × IQR and Q₃ + 1.5 × IQR.",
+          "terms": [
+            "math-aa-4.1-outlier",
+            "math-aa-4.1-iqr"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q04",
+          "type": "tf",
+          "statement": "Adding 5 to every data value increases the standard deviation by 5.",
+          "answer": false,
+          "explanation": "Adding a constant shifts every value equally, so the spread is unchanged; only the mean increases by 5.",
+          "terms": [
+            "math-aa-4.1-standard-deviation"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q05",
+          "type": "mcq",
+          "prompt": "A data set has Q₁ = 12 and Q₃ = 20. Which value would be an outlier?",
+          "options": [
+            "8",
+            "25",
+            "30",
+            "35"
+          ],
+          "answer": 3,
+          "explanation": "IQR = 8, so the fences are 0 and 32. Only 35 lies outside.",
+          "terms": [
+            "math-aa-4.1-outlier",
+            "math-aa-4.1-iqr"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q06",
+          "type": "mcq",
+          "prompt": "Every value in a data set is multiplied by 3. What happens?",
+          "options": [
+            "The mean is multiplied by 3; the SD by 9",
+            "The mean is multiplied by 3; the SD is unchanged",
+            "The mean and the standard deviation are both multiplied by 3",
+            "Both are unchanged"
+          ],
+          "answer": 2,
+          "explanation": "Scaling stretches the spread too. The variance is multiplied by 9.",
+          "terms": [
+            "math-aa-4.1-mean",
+            "math-aa-4.1-standard-deviation"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q07",
+          "type": "fill",
+          "text": "A sample in which every member of the population has an equal chance of being chosen is a simple ___ sample.",
+          "answer": "random",
+          "bank": [
+            "convenience",
+            "stratified",
+            "random",
+            "quota"
+          ],
+          "explanation": "Random sampling reduces bias.",
+          "terms": [
+            "math-aa-4.1-random-sample",
+            "math-aa-4.1-population"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q08",
+          "type": "tf",
+          "statement": "The number of siblings a student has is discrete data.",
+          "answer": true,
+          "explanation": "It can only take whole-number values.",
+          "terms": [
+            "math-aa-4.1-discrete-continuous"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q09",
+          "type": "match",
+          "prompt": "Match each sampling method to its description.",
+          "pairs": [
+            {
+              "left": "Simple random",
+              "right": "Every member equally likely to be chosen"
+            },
+            {
+              "left": "Systematic",
+              "right": "Every kth member from an ordered list"
+            },
+            {
+              "left": "Stratified",
+              "right": "Subgroups sampled in proportion to their size"
+            },
+            {
+              "left": "Convenience",
+              "right": "Whoever is easiest to reach"
+            }
+          ],
+          "explanation": "Convenience sampling is quick but likely to be biased.",
+          "terms": [
+            "math-aa-4.1-random-sample"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to draw a box plot.",
+          "items": [
+            "Put the data in order",
+            "Find the minimum, Q₁, median, Q₃ and maximum",
+            "Check for outliers using 1.5 × IQR",
+            "Draw the box from Q₁ to Q₃ and add whiskers"
+          ],
+          "explanation": "Outliers are plotted separately; whiskers go to the most extreme non-outliers.",
+          "terms": [
+            "math-aa-4.1-iqr",
+            "math-aa-4.1-outlier"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-4.1-2",
+      "title": "Correlation and regression",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-4.1-2-q01",
+          "type": "mcq",
+          "prompt": "r = −0.92 indicates…",
+          "options": [
+            "strong negative linear correlation",
+            "strong positive linear correlation",
+            "weak negative linear correlation",
+            "no correlation"
+          ],
+          "answer": 0,
+          "explanation": "|r| close to 1 means strong; the sign gives the direction.",
+          "terms": [
+            "math-aa-4.1-pearson"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q02",
+          "type": "mcq",
+          "prompt": "The regression line of y on x is y = 2.5x + 4. Predict y when x = 6.",
+          "options": [
+            "10.5",
+            "15",
+            "34",
+            "19"
+          ],
+          "answer": 3,
+          "explanation": "2.5 × 6 + 4 = 19.",
+          "terms": [
+            "math-aa-4.1-regression-line"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q03",
+          "type": "fill",
+          "text": "To predict x from a given y, use the regression line of x on ___.",
+          "answer": "y",
+          "bank": [
+            "y",
+            "r",
+            "the mean",
+            "x"
+          ],
+          "explanation": "The y-on-x line is not simply rearranged to predict x.",
+          "terms": [
+            "math-aa-4.1-regression-line"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q04",
+          "type": "tf",
+          "statement": "A strong correlation proves that one variable causes the other.",
+          "answer": false,
+          "explanation": "Correlation is not causation; a third variable may explain both.",
+          "terms": [
+            "math-aa-4.1-pearson"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q05",
+          "type": "mcq",
+          "prompt": "Using a regression line far outside the range of the data is called…",
+          "options": [
+            "regression",
+            "interpolation",
+            "extrapolation",
+            "correlation"
+          ],
+          "answer": 2,
+          "explanation": "The linear relationship may not continue beyond the data.",
+          "terms": [
+            "math-aa-4.1-extrapolation"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q06",
+          "type": "mcq",
+          "prompt": "The regression line is y = 3x − 2 and x̄ = 5. Find ȳ.",
+          "options": [
+            "3",
+            "15",
+            "17",
+            "13"
+          ],
+          "answer": 3,
+          "explanation": "The regression line passes through (x̄, ȳ): 3 × 5 − 2 = 13.",
+          "terms": [
+            "math-aa-4.1-regression-line",
+            "math-aa-4.1-mean"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q07",
+          "type": "fill",
+          "text": "Pearson’s r always lies between −1 and ___.",
+          "answer": "1",
+          "bank": [
+            "1",
+            "100",
+            "∞",
+            "0"
+          ],
+          "explanation": "r = ±1 means all points lie exactly on a straight line.",
+          "terms": [
+            "math-aa-4.1-pearson"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q08",
+          "type": "tf",
+          "statement": "The y-on-x regression line minimises the sum of the squared vertical distances from the points to the line.",
+          "answer": true,
+          "explanation": "That is what “least squares” means.",
+          "terms": [
+            "math-aa-4.1-regression-line"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q09",
+          "type": "match",
+          "prompt": "Match each value of r to its description.",
+          "pairs": [
+            {
+              "left": "r = 0.95",
+              "right": "Strong positive linear correlation"
+            },
+            {
+              "left": "r = −0.4",
+              "right": "Weak negative linear correlation"
+            },
+            {
+              "left": "r = 0.02",
+              "right": "Little or no linear correlation"
+            },
+            {
+              "left": "r = −0.98",
+              "right": "Strong negative linear correlation"
+            }
+          ],
+          "explanation": "Describe both strength and direction.",
+          "terms": [
+            "math-aa-4.1-pearson"
+          ]
+        },
+        {
+          "id": "math-aa-4.1-2-q10",
+          "type": "order",
+          "prompt": "Order these correlation coefficients from weakest to strongest.",
+          "items": [
+            "0.05",
+            "−0.30",
+            "0.62",
+            "−0.91"
+          ],
+          "explanation": "Strength depends on |r|, not on the sign.",
+          "terms": [
+            "math-aa-4.1-pearson"
+          ]
+        }
+      ]
+    }
+  ]
+}

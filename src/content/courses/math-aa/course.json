@@ -1,0 +1,156 @@
+{
+  "id": "math-aa",
+  "name": "Maths: Analysis & Approaches",
+  "short": "AA",
+  "group": "Group 5: Mathematics",
+  "icon": "∫",
+  "blurb": "Algebra, functions, trigonometry, vectors, probability and calculus, SL and HL",
+  "syllabus": "Subject guide first assessed May 2021",
+  "levels": ["SL", "HL"],
+  "units": [
+    { "id": "1", "title": "Number and algebra", "blurb": "Sequences, exponents and logarithms, proof, the binomial theorem and, at HL, complex numbers." },
+    { "id": "2", "title": "Functions", "blurb": "Graphs, composite and inverse functions, quadratics, rational, exponential and logarithmic functions, transformations." },
+    { "id": "3", "title": "Geometry and trigonometry", "blurb": "3D solids, triangle trigonometry, radians, trig identities and graphs and, at HL, vectors, lines and planes." },
+    { "id": "4", "title": "Statistics and probability", "blurb": "Data summaries, regression, probability, binomial and normal distributions and, at HL, continuous random variables." },
+    { "id": "5", "title": "Calculus", "blurb": "Limits, differentiation, integration and kinematics and, at HL, further techniques, differential equations and series." }
+  ],
+  "papers": {
+    "P1": "Paper 1 · no calculator",
+    "P2": "Paper 2 · calculator",
+    "P3": "Paper 3 · HL problem solving"
+  },
+  "mcqExam": null,
+  "assessment": {
+    "SL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "No calculator; Section A short response, Section B extended response", "max": 80, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Graphic display calculator required; Section A short response, Section B extended response", "max": 80, "group": "p2" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Mathematical exploration", "max": 20, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 40, "time": "1 h 30 min" },
+        "p2": { "name": "Paper 2", "weight": 40, "time": "1 h 30 min" },
+        "ia": { "name": "IA", "weight": 20, "time": "Written over the course" }
+      }
+    },
+    "HL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "No calculator; Section A short response, Section B extended response", "max": 110, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Graphic display calculator required; Section A short response, Section B extended response", "max": 110, "group": "p2" },
+        { "id": "p3", "name": "Paper 3", "detail": "Two compulsory extended problem-solving questions, calculator required", "max": 55, "group": "p3" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Mathematical exploration", "max": 20, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 30, "time": "2 h" },
+        "p2": { "name": "Paper 2", "weight": 30, "time": "2 h" },
+        "p3": { "name": "Paper 3", "weight": 20, "time": "1 h" },
+        "ia": { "name": "IA", "weight": 20, "time": "Written over the course" }
+      }
+    }
+  },
+  "boundaries": {
+    "SL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 8, 17, 28, 43, 59, 75] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 9, 20, 31, 45, 60, 74] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 9, 19, 30, 44, 59, 73] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 7, 15, 25, 38, 52, 65] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 7, 15, 25, 39, 52, 66] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 10, 21, 33, 48, 62, 77] }
+    ],
+    "HL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 10, 20, 29, 43, 57, 72] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 12, 23, 35, 48, 61, 73] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 11, 22, 33, 46, 60, 72] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 12, 24, 34, 48, 60, 73] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 11, 23, 32, 45, 59, 71] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 13, 26, 38, 51, 64, 76] }
+    ]
+  },
+  "ia": {
+    "name": "Mathematical exploration",
+    "max": 20,
+    "weight": 20,
+    "limit": "12–20 pages (double-spaced, 12-point)",
+    "criteria": [
+      {
+        "id": "a",
+        "name": "Presentation",
+        "max": 4,
+        "look": [
+          "A clear aim near the start and a short rationale for the topic",
+          "A logical structure that a classmate could follow from introduction to conclusion",
+          "Concise writing with nothing irrelevant or repeated",
+          "Graphs, tables and diagrams placed where they are discussed"
+        ]
+      },
+      {
+        "id": "b",
+        "name": "Mathematical communication",
+        "max": 4,
+        "look": [
+          "Correct notation and terminology throughout, with no calculator syntax such as x^2 or *",
+          "Variables and key terms defined before they are used",
+          "Formulae, graphs, tables and diagrams chosen to suit the mathematics",
+          "Graphs with labelled axes and scales; equations numbered when referred to again"
+        ]
+      },
+      {
+        "id": "c",
+        "name": "Personal engagement",
+        "max": 3,
+        "look": [
+          "Your own question, data, model or approach drives the work",
+          "Independent or creative thinking rather than a reproduced textbook derivation",
+          "Your own follow-up questions, conjectures and tests of them"
+        ]
+      },
+      {
+        "id": "d",
+        "name": "Reflection",
+        "max": 3,
+        "look": [
+          "Reflection throughout, not only in a final paragraph",
+          "Discussion of what each result means, its limitations and its implications",
+          "Critical comments on assumptions, accuracy and possible extensions"
+        ]
+      },
+      {
+        "id": "e",
+        "name": "Use of mathematics",
+        "max": 6,
+        "look": [
+          "Mathematics relevant to the aim and at least at the level of your course",
+          "Correct algebra, calculus and calculations, with technology output interpreted",
+          "Explaining why methods work shows thorough understanding",
+          "HL: rigour and sophistication, e.g. justified generalisations or proofs"
+        ]
+      }
+    ],
+    "checklist": [
+      "The aim is stated in the introduction and revisited in the conclusion",
+      "Length is within 12–20 pages and nothing essential is hidden in an appendix",
+      "Every variable is defined before use",
+      "No calculator notation: write x², eˣ and ×, not x^2, e^x and *",
+      "Each graph has a title, labelled axes and scales",
+      "Key algebra and calculus steps are shown and explained, not only stated",
+      "Technology output (regressions, numerical solutions) is explained in words",
+      "Assumptions and limitations are discussed where they arise",
+      "General results are justified or proved where possible (essential at HL)",
+      "All sources, data and images are referenced consistently",
+      "A classmate could follow the argument without your help"
+    ]
+  },
+  "examTips": [
+    "Paper 1 has no calculator: practise exact values (sin π/6, ln e, surds) and leave answers exact unless told otherwise.",
+    "On Paper 2, give answers to 3 significant figures (angles in degrees to 1 d.p.) and keep full accuracy in intermediate steps.",
+    "\"Show that\" means every step must be visible; you cannot work backwards from the given answer, but you may use it in later parts.",
+    "Write down the equation or integral you solve on the GDC, not just the result; method marks are lost with a bare wrong answer.",
+    "Check the mode and the domain: radians in calculus, and reject solutions outside the given interval or that make a logarithm undefined."
+  ],
+  "sources": [
+    { "label": "IB Mathematics: analysis and approaches (subject page and brief)", "url": "https://www.ibo.org/programmes/diploma-programme/curriculum/mathematics/" },
+    { "label": "Grade boundary collation, AA SL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/mathematics-aa-sl" },
+    { "label": "Grade boundary collation, AA HL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/mathematics-aa-hl" },
+    { "label": "IB DP passing criteria", "url": "https://www.ibo.org/about-the-ib/what-it-means-to-be-an-ib-student/recognizing-student-achievement/about-assessment/dp-passing-criteria/" }
+  ]
+}

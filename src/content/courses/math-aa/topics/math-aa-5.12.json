@@ -1,0 +1,556 @@
+{
+  "id": "math-aa-5.12",
+  "code": "AHL 5.12–5.19",
+  "unit": "5",
+  "title": "Further calculus",
+  "level": "HL",
+  "summary": "Continuity, differentiability and limits, implicit differentiation and related rates, further integration techniques, differential equations and Maclaurin series.",
+  "keyterms": [
+    {
+      "id": "math-aa-5.12-continuity",
+      "term": "Continuity",
+      "definition": "f is continuous at a if lim (x→a) f(x) exists and equals f(a).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-differentiability",
+      "term": "Differentiability",
+      "definition": "f is differentiable at a if the limit defining f′(a) exists; this requires continuity.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-lhopital",
+      "term": "L'Hôpital's rule",
+      "definition": "For limits of the form 0/0 or ∞/∞, lim f/g = lim f′/g′ (if this limit exists).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-implicit",
+      "term": "Implicit differentiation",
+      "definition": "Differentiating both sides of an equation in x and y, treating y as a function of x.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-related-rates",
+      "term": "Related rates",
+      "definition": "Linking rates of change through the chain rule, e.g. dV/dt = (dV/dr)(dr/dt).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-by-parts",
+      "term": "Integration by parts",
+      "definition": "∫ u (dv/dx) dx = uv − ∫ v (du/dx) dx.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-separable",
+      "term": "Separable differential equation",
+      "definition": "dy/dx = f(x)g(y), solved by ∫ 1/g(y) dy = ∫ f(x) dx.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-integrating-factor",
+      "term": "Integrating factor",
+      "definition": "For dy/dx + P(x)y = Q(x), multiply by e^(∫P(x) dx).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-euler-method",
+      "term": "Euler's method",
+      "definition": "Numerical solution: yₙ₊₁ = yₙ + h f(xₙ, yₙ), xₙ₊₁ = xₙ + h.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.12-maclaurin",
+      "term": "Maclaurin series",
+      "definition": "f(x) = f(0) + xf′(0) + x²f″(0)/2! + …, a power series expansion about x = 0.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-5.12-1",
+      "title": "Limits and further differentiation",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-5.12-1-q01",
+          "type": "mcq",
+          "prompt": "Evaluate lim (x→0) (1 − cos x)/x².",
+          "options": [
+            "1",
+            "∞",
+            "0",
+            "½"
+          ],
+          "answer": 3,
+          "explanation": "0/0, so apply L'Hôpital twice: sin x/(2x), then cos x/2 → ½.",
+          "terms": [
+            "math-aa-5.12-lhopital"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-1-q02",
+          "type": "mcq",
+          "prompt": "Find d/dx (arctan x).",
+          "options": [
+            "−1/(1 + x²)",
+            "1/√(1 − x²)",
+            "1/(1 + x²)",
+            "sec²x"
+          ],
+          "answer": 2,
+          "explanation": "This standard result is in the formula booklet; 1/√(1 − x²) is for arcsin x.",
+          "terms": []
+        },
+        {
+          "id": "math-aa-5.12-1-q03",
+          "type": "fill",
+          "text": "Differentiating x² + y² = 25 implicitly gives dy/dx = ___.",
+          "answer": "−x/y",
+          "bank": [
+            "2x",
+            "x/y",
+            "−x/y",
+            "−y/x"
+          ],
+          "explanation": "2x + 2y dy/dx = 0.",
+          "terms": [
+            "math-aa-5.12-implicit"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-1-q04",
+          "type": "tf",
+          "statement": "A function that is differentiable at a point must be continuous there.",
+          "answer": true,
+          "explanation": "The converse is false: |x| is continuous but not differentiable at 0.",
+          "terms": [
+            "math-aa-5.12-differentiability",
+            "math-aa-5.12-continuity"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-1-q05",
+          "type": "mcq",
+          "prompt": "A sphere’s radius increases at 2 cm s⁻¹. Find dV/dt when r = 3 cm.",
+          "options": [
+            "24π cm³ s⁻¹",
+            "36π cm³ s⁻¹",
+            "216π cm³ s⁻¹",
+            "72π cm³ s⁻¹"
+          ],
+          "answer": 3,
+          "explanation": "dV/dt = 4πr² × dr/dt = 4π(9)(2).",
+          "terms": [
+            "math-aa-5.12-related-rates"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-1-q06",
+          "type": "fill",
+          "text": "|x| is continuous at x = 0 but not ___ there.",
+          "answer": "differentiable",
+          "bank": [
+            "defined",
+            "integrable",
+            "differentiable",
+            "continuous"
+          ],
+          "explanation": "The left and right gradients (−1 and 1) are different.",
+          "terms": [
+            "math-aa-5.12-differentiability"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-1-q07",
+          "type": "tf",
+          "statement": "L'Hôpital's rule applies to limits of the form 0/0 or ∞/∞.",
+          "answer": true,
+          "explanation": "Check the form first; using it elsewhere gives wrong answers.",
+          "terms": [
+            "math-aa-5.12-lhopital"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-1-q08",
+          "type": "mcq",
+          "prompt": "Evaluate lim (x→0) sin x / x.",
+          "options": [
+            "it does not exist",
+            "∞",
+            "1",
+            "0"
+          ],
+          "answer": 2,
+          "explanation": "A 0/0 form; L'Hôpital gives cos 0 / 1 = 1.",
+          "terms": [
+            "math-aa-5.12-lhopital"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-1-q09",
+          "type": "match",
+          "prompt": "Match each function to its derivative.",
+          "pairs": [
+            {
+              "left": "tan x",
+              "right": "sec²x"
+            },
+            {
+              "left": "arcsin x",
+              "right": "1/√(1 − x²)"
+            },
+            {
+              "left": "aˣ",
+              "right": "aˣ ln a"
+            },
+            {
+              "left": "sec x",
+              "right": "sec x tan x"
+            }
+          ],
+          "explanation": "All of these are in the HL formula booklet.",
+          "terms": []
+        },
+        {
+          "id": "math-aa-5.12-1-q10",
+          "type": "order",
+          "prompt": "Order the steps of a related-rates problem.",
+          "items": [
+            "Write an equation linking the variables",
+            "Differentiate both sides with respect to t",
+            "Substitute the known values and rates",
+            "Solve for the unknown rate"
+          ],
+          "explanation": "Substitute values only after differentiating.",
+          "terms": [
+            "math-aa-5.12-related-rates"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-5.12-2",
+      "title": "Further integration",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-5.12-2-q01",
+          "type": "mcq",
+          "prompt": "Find ∫ xeˣ dx.",
+          "options": [
+            "xeˣ + C",
+            "½x²eˣ + C",
+            "(x + 1)eˣ + C",
+            "(x − 1)eˣ + C"
+          ],
+          "answer": 3,
+          "explanation": "By parts with u = x: xeˣ − ∫ eˣ dx.",
+          "terms": [
+            "math-aa-5.12-by-parts"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-2-q02",
+          "type": "mcq",
+          "prompt": "Find ∫ 1/√(1 − x²) dx.",
+          "options": [
+            "arctan x + C",
+            "ln|1 − x²| + C",
+            "arcsin x + C",
+            "√(1 − x²) + C"
+          ],
+          "answer": 2,
+          "explanation": "It is the reverse of d/dx arcsin x.",
+          "terms": []
+        },
+        {
+          "id": "math-aa-5.12-2-q03",
+          "type": "fill",
+          "text": "Integration by parts: ∫ u dv = uv − ___",
+          "answer": "∫ v du",
+          "bank": [
+            "v du",
+            "∫ v du",
+            "∫ u du",
+            "∫ uv dx"
+          ],
+          "explanation": "It comes from integrating the product rule.",
+          "terms": [
+            "math-aa-5.12-by-parts"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-2-q04",
+          "type": "tf",
+          "statement": "∫ ln x dx = x ln x − x + C",
+          "answer": true,
+          "explanation": "By parts with u = ln x and dv = dx.",
+          "terms": [
+            "math-aa-5.12-by-parts"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-2-q05",
+          "type": "mcq",
+          "prompt": "Find ∫ 1/(x² + 9) dx.",
+          "options": [
+            "(1/3) arctan(x/3) + C",
+            "arctan(x/3) + C",
+            "3 arctan(x/3) + C",
+            "(1/9) arctan x + C"
+          ],
+          "answer": 0,
+          "explanation": "∫ 1/(x² + a²) dx = (1/a) arctan(x/a) + C with a = 3.",
+          "terms": []
+        },
+        {
+          "id": "math-aa-5.12-2-q06",
+          "type": "mcq",
+          "prompt": "A curve x = g(y) is rotated through 2π about the y-axis from y = a to y = b. The volume is…",
+          "options": [
+            "∫ₐᵇ 2πx dy",
+            "∫ₐᵇ πy² dx",
+            "∫ₐᵇ πx² dy",
+            "∫ₐᵇ πx dy"
+          ],
+          "answer": 2,
+          "explanation": "The discs now have radius x and thickness dy.",
+          "terms": []
+        },
+        {
+          "id": "math-aa-5.12-2-q07",
+          "type": "fill",
+          "text": "∫ 1/((x − 1)(x + 1)) dx = ½ ln|x − 1| − ½ ln|x + 1| + C uses ___ fractions.",
+          "answer": "partial",
+          "bank": [
+            "continued",
+            "proper",
+            "partial",
+            "improper"
+          ],
+          "explanation": "Split into ½/(x − 1) − ½/(x + 1) first.",
+          "terms": []
+        },
+        {
+          "id": "math-aa-5.12-2-q08",
+          "type": "tf",
+          "statement": "With integration by parts, choose u as the factor that becomes simpler when differentiated.",
+          "answer": true,
+          "explanation": "For x cos x take u = x; for ln x take u = ln x.",
+          "terms": [
+            "math-aa-5.12-by-parts"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-2-q09",
+          "type": "match",
+          "prompt": "Match each integral to a suitable method.",
+          "pairs": [
+            {
+              "left": "∫ x sin x dx",
+              "right": "Integration by parts"
+            },
+            {
+              "left": "∫ 2x/(x² + 1) dx",
+              "right": "Substitution, giving ln(x² + 1)"
+            },
+            {
+              "left": "∫ 1/(x² − 1) dx",
+              "right": "Partial fractions"
+            },
+            {
+              "left": "∫ 1/(1 + x²) dx",
+              "right": "Standard result: arctan x"
+            }
+          ],
+          "explanation": "Look for structure first: a product, an inner derivative, or a factorisable denominator.",
+          "terms": [
+            "math-aa-5.12-by-parts"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to find ∫ x cos x dx.",
+          "items": [
+            "Let u = x and dv/dx = cos x",
+            "Then du/dx = 1 and v = sin x",
+            "Apply uv − ∫ v du: x sin x − ∫ sin x dx",
+            "Result: x sin x + cos x + C"
+          ],
+          "explanation": "Check: differentiating gives sin x + x cos x − sin x = x cos x.",
+          "terms": [
+            "math-aa-5.12-by-parts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-5.12-3",
+      "title": "Differential equations and Maclaurin series",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-5.12-3-q01",
+          "type": "mcq",
+          "prompt": "Solve dy/dx = ky.",
+          "options": [
+            "y = Ax^k",
+            "y = e^(kx) + C",
+            "y = kx + C",
+            "y = Ae^(kx)"
+          ],
+          "answer": 3,
+          "explanation": "Separate: ∫ dy/y = ∫ k dx gives ln|y| = kx + c.",
+          "terms": [
+            "math-aa-5.12-separable"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-3-q02",
+          "type": "mcq",
+          "prompt": "dy/dx = x + y, y(0) = 1. One step of Euler's method with h = 0.1 gives y₁ =",
+          "options": [
+            "1.2",
+            "1.1",
+            "1.0",
+            "1.01"
+          ],
+          "answer": 1,
+          "explanation": "y₁ = 1 + 0.1 × (0 + 1) = 1.1.",
+          "terms": [
+            "math-aa-5.12-euler-method"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-3-q03",
+          "type": "fill",
+          "text": "For dy/dx + P(x)y = Q(x), the integrating factor is ___.",
+          "answer": "e^(∫P(x) dx)",
+          "bank": [
+            "P(x)eˣ",
+            "e^(∫Q(x) dx)",
+            "e^(∫P(x) dx)",
+            "∫P(x) dx"
+          ],
+          "explanation": "Multiplying by it turns the left side into the derivative of a product.",
+          "terms": [
+            "math-aa-5.12-integrating-factor"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-3-q04",
+          "type": "tf",
+          "statement": "The Maclaurin series of eˣ is 1 + x + x²/2! + x³/3! + ….",
+          "answer": true,
+          "explanation": "Every derivative of eˣ equals 1 at x = 0.",
+          "terms": [
+            "math-aa-5.12-maclaurin"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-3-q05",
+          "type": "mcq",
+          "prompt": "Which is the Maclaurin series of sin x?",
+          "options": [
+            "1 + x + x²/2! + …",
+            "1 − x²/2! + x⁴/4! − …",
+            "x + x³/3! + x⁵/5! + …",
+            "x − x³/3! + x⁵/5! − …"
+          ],
+          "answer": 3,
+          "explanation": "sin x is odd, so only odd powers appear, with alternating signs. The first option is cos x.",
+          "terms": [
+            "math-aa-5.12-maclaurin"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-3-q06",
+          "type": "mcq",
+          "prompt": "Which is the Maclaurin series of ln(1 + x)?",
+          "options": [
+            "1 + x + x²/2 + …",
+            "x + x²/2 + x³/3 + …",
+            "x − x²/2 + x³/3 − …",
+            "1 − x + x² − …"
+          ],
+          "answer": 2,
+          "explanation": "Integrate 1/(1 + x) = 1 − x + x² − … term by term.",
+          "terms": [
+            "math-aa-5.12-maclaurin"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-3-q07",
+          "type": "fill",
+          "text": "Substituting x² into the series for eˣ gives e^(x²) = 1 + x² + ___ + …",
+          "answer": "x⁴/2",
+          "bank": [
+            "x⁴",
+            "x⁴/2",
+            "2x⁴",
+            "x³/6"
+          ],
+          "explanation": "(x²)²/2! = x⁴/2.",
+          "terms": [
+            "math-aa-5.12-maclaurin"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-3-q08",
+          "type": "tf",
+          "statement": "dy/dx = y/x + 1 is a homogeneous equation that can be solved with the substitution y = vx.",
+          "answer": true,
+          "explanation": "The right side depends only on y/x.",
+          "terms": []
+        },
+        {
+          "id": "math-aa-5.12-3-q09",
+          "type": "match",
+          "prompt": "Match each differential equation type to its method.",
+          "pairs": [
+            {
+              "left": "dy/dx = f(x)g(y)",
+              "right": "Separate the variables"
+            },
+            {
+              "left": "dy/dx + P(x)y = Q(x)",
+              "right": "Use an integrating factor"
+            },
+            {
+              "left": "dy/dx = f(y/x)",
+              "right": "Substitute y = vx"
+            },
+            {
+              "left": "No analytic method",
+              "right": "Use Euler's method"
+            }
+          ],
+          "explanation": "Identify the form before choosing a method.",
+          "terms": [
+            "math-aa-5.12-separable",
+            "math-aa-5.12-integrating-factor",
+            "math-aa-5.12-euler-method"
+          ]
+        },
+        {
+          "id": "math-aa-5.12-3-q10",
+          "type": "order",
+          "prompt": "Order the steps to solve a separable differential equation.",
+          "items": [
+            "Rearrange to (1/g(y)) dy = f(x) dx",
+            "Integrate both sides",
+            "Add one constant of integration",
+            "Use the initial condition to find the constant"
+          ],
+          "explanation": "One constant is enough: constants from both sides combine.",
+          "terms": [
+            "math-aa-5.12-separable"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "id": "math-aa-2.1",
+  "code": "SL 2.1–2.5, 2.11",
+  "unit": "2",
+  "title": "Functions, graphs and transformations",
+  "level": "SL",
+  "summary": "Equations of lines, domain and range, composite and inverse functions, and how translations, stretches and reflections change a graph.",
+  "keyterms": [
+    {
+      "id": "math-aa-2.1-gradient",
+      "term": "Gradient",
+      "definition": "Steepness of a line: m = (y₂ − y₁)/(x₂ − x₁); parallel lines have equal gradients.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-perpendicular",
+      "term": "Perpendicular gradients",
+      "definition": "Lines are perpendicular when m₁ × m₂ = −1, so each gradient is the negative reciprocal of the other.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-domain",
+      "term": "Domain",
+      "definition": "The set of input values for which a function is defined.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-range",
+      "term": "Range",
+      "definition": "The set of output values a function takes over its domain.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-composite",
+      "term": "Composite function",
+      "definition": "(f ∘ g)(x) = f(g(x)): apply g first, then f.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-inverse",
+      "term": "Inverse function",
+      "definition": "f⁻¹ reverses f, so f(f⁻¹(x)) = x; its graph is the reflection of f in y = x.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-one-to-one",
+      "term": "One-to-one function",
+      "definition": "A function where each output comes from exactly one input; only these have inverses.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-translation",
+      "term": "Translation",
+      "definition": "A shift of a graph: y = f(x − h) + k moves it h right and k up.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-stretch",
+      "term": "Stretch",
+      "definition": "y = pf(x) stretches vertically by factor p; y = f(qx) stretches horizontally by factor 1/q.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-2.1-reflection",
+      "term": "Reflection",
+      "definition": "y = −f(x) reflects in the x-axis; y = f(−x) reflects in the y-axis.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-2.1-1",
+      "title": "Lines, composite and inverse functions",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-2.1-1-q01",
+          "type": "mcq",
+          "prompt": "Find the gradient of the line through (1, 2) and (4, 11).",
+          "options": [
+            "1/3",
+            "−3",
+            "9",
+            "3"
+          ],
+          "answer": 3,
+          "explanation": "m = (11 − 2)/(4 − 1) = 9/3 = 3.",
+          "terms": [
+            "math-aa-2.1-gradient"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q02",
+          "type": "mcq",
+          "prompt": "What is the gradient of a line perpendicular to y = 2x − 5?",
+          "options": [
+            "−½",
+            "2",
+            "½",
+            "−2"
+          ],
+          "answer": 0,
+          "explanation": "Take the negative reciprocal of 2.",
+          "terms": [
+            "math-aa-2.1-perpendicular"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q03",
+          "type": "fill",
+          "text": "The domain of f(x) = √(x − 3) is x ___ 3.",
+          "answer": "≥",
+          "bank": [
+            ">",
+            "≥",
+            "<",
+            "≤"
+          ],
+          "explanation": "The expression under the square root must be non-negative, and x = 3 gives √0 = 0.",
+          "terms": [
+            "math-aa-2.1-domain"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q04",
+          "type": "tf",
+          "statement": "For f(x) = x², x ∈ ℝ, the range is f(x) ≥ 0.",
+          "answer": true,
+          "explanation": "A square is never negative and every non-negative value is reached.",
+          "terms": [
+            "math-aa-2.1-range"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q05",
+          "type": "mcq",
+          "prompt": "f(x) = 2x + 1 and g(x) = x². Find (f ∘ g)(3).",
+          "options": [
+            "10",
+            "7",
+            "49",
+            "19"
+          ],
+          "answer": 3,
+          "explanation": "g(3) = 9 first, then f(9) = 19. 49 is (g ∘ f)(3): the order matters.",
+          "terms": [
+            "math-aa-2.1-composite"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q06",
+          "type": "mcq",
+          "prompt": "Find f⁻¹(x) for f(x) = (x − 4)/3.",
+          "options": [
+            "f⁻¹(x) = (x + 4)/3",
+            "f⁻¹(x) = 3x + 4",
+            "f⁻¹(x) = 3x − 4",
+            "f⁻¹(x) = 3/(x − 4)"
+          ],
+          "answer": 1,
+          "explanation": "Swap x and y: x = (y − 4)/3, so y = 3x + 4. Undo the operations in reverse order.",
+          "terms": [
+            "math-aa-2.1-inverse"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q07",
+          "type": "fill",
+          "text": "The graph of y = f⁻¹(x) is the reflection of y = f(x) in the line y = ___.",
+          "answer": "x",
+          "bank": [
+            "x",
+            "0",
+            "1",
+            "−x"
+          ],
+          "explanation": "Swapping x and y reflects every point (a, b) to (b, a).",
+          "terms": [
+            "math-aa-2.1-inverse"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q08",
+          "type": "tf",
+          "statement": "f(x) = x², x ∈ ℝ, has an inverse function.",
+          "answer": false,
+          "explanation": "It is not one-to-one (f(2) = f(−2)). Restricting the domain to x ≥ 0 gives the inverse √x.",
+          "terms": [
+            "math-aa-2.1-one-to-one",
+            "math-aa-2.1-inverse"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q09",
+          "type": "match",
+          "prompt": "Match each line to its description.",
+          "pairs": [
+            {
+              "left": "y = 3x + 2",
+              "right": "Gradient 3, y-intercept 2"
+            },
+            {
+              "left": "2x + y = 6",
+              "right": "Gradient −2, y-intercept 6"
+            },
+            {
+              "left": "x = 4",
+              "right": "Vertical line, gradient undefined"
+            },
+            {
+              "left": "y = 4",
+              "right": "Horizontal line, gradient 0"
+            }
+          ],
+          "explanation": "Rearrange to y = mx + c to read off the gradient and intercept.",
+          "terms": [
+            "math-aa-2.1-gradient"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to find the inverse of f(x) = 2x + 5.",
+          "items": [
+            "Write y = 2x + 5",
+            "Swap x and y: x = 2y + 5",
+            "Rearrange: y = (x − 5)/2",
+            "Write f⁻¹(x) = (x − 5)/2"
+          ],
+          "explanation": "Swap, then make y the subject.",
+          "terms": [
+            "math-aa-2.1-inverse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-2.1-2",
+      "title": "Transformations of graphs",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-2.1-2-q01",
+          "type": "mcq",
+          "prompt": "y = f(x − 2) + 3 is the graph of y = f(x) translated by…",
+          "options": [
+            "2 right and 3 down",
+            "2 right and 3 up",
+            "3 right and 2 up",
+            "2 left and 3 up"
+          ],
+          "answer": 1,
+          "explanation": "Inside the bracket the shift is opposite to the sign: x − 2 moves right.",
+          "terms": [
+            "math-aa-2.1-translation"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q02",
+          "type": "mcq",
+          "prompt": "y = 3f(x) is…",
+          "options": [
+            "a horizontal stretch, scale factor 3",
+            "a vertical stretch, scale factor ⅓",
+            "a vertical stretch, scale factor 3",
+            "a horizontal stretch, scale factor ⅓"
+          ],
+          "answer": 2,
+          "explanation": "Multiplying the output by 3 triples every y-coordinate.",
+          "terms": [
+            "math-aa-2.1-stretch"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q03",
+          "type": "fill",
+          "text": "y = f(2x) is a horizontal stretch with scale factor ___.",
+          "answer": "½",
+          "accept": [
+            "1/2",
+            "0.5"
+          ],
+          "bank": [
+            "2",
+            "½",
+            "−2",
+            "4"
+          ],
+          "explanation": "Each x-coordinate is halved, because the same output is reached at half the input.",
+          "terms": [
+            "math-aa-2.1-stretch"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q04",
+          "type": "tf",
+          "statement": "y = −f(x) is the reflection of y = f(x) in the x-axis.",
+          "answer": true,
+          "explanation": "Every y-coordinate changes sign.",
+          "terms": [
+            "math-aa-2.1-reflection"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q05",
+          "type": "mcq",
+          "prompt": "The point (4, −1) lies on y = f(x). Which point lies on y = f(−x)?",
+          "options": [
+            "(1, −4)",
+            "(−4, −1)",
+            "(4, 1)",
+            "(−4, 1)"
+          ],
+          "answer": 1,
+          "explanation": "Reflecting in the y-axis changes the sign of x only.",
+          "terms": [
+            "math-aa-2.1-reflection"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q06",
+          "type": "mcq",
+          "prompt": "y = x² is transformed to y = (x + 1)² − 5. Where is the vertex?",
+          "options": [
+            "(5, −1)",
+            "(−1, 5)",
+            "(−1, −5)",
+            "(1, −5)"
+          ],
+          "answer": 2,
+          "explanation": "Translate (0, 0) one unit left and five units down.",
+          "terms": [
+            "math-aa-2.1-translation"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q07",
+          "type": "fill",
+          "text": "Stretch y = x² vertically by factor 2, then translate it 3 units up: y = 2x² + ___.",
+          "answer": "3",
+          "bank": [
+            "5",
+            "6",
+            "1.5",
+            "3"
+          ],
+          "explanation": "The stretch gives 2x²; the translation then adds 3. Doing them in the other order gives 2x² + 6.",
+          "terms": [
+            "math-aa-2.1-stretch",
+            "math-aa-2.1-translation"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q08",
+          "type": "tf",
+          "statement": "y = f(x) + 4 and y = f(x + 4) are the same transformation.",
+          "answer": false,
+          "explanation": "f(x) + 4 moves the graph up 4; f(x + 4) moves it left 4.",
+          "terms": [
+            "math-aa-2.1-translation"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q09",
+          "type": "match",
+          "prompt": "Match each transformation to its effect.",
+          "pairs": [
+            {
+              "left": "f(x) + a",
+              "right": "Translate up by a"
+            },
+            {
+              "left": "f(x − a)",
+              "right": "Translate right by a"
+            },
+            {
+              "left": "f(−x)",
+              "right": "Reflect in the y-axis"
+            },
+            {
+              "left": "pf(x)",
+              "right": "Vertical stretch, scale factor p"
+            }
+          ],
+          "explanation": "Changes outside f act on y as expected; changes inside act on x in reverse.",
+          "terms": [
+            "math-aa-2.1-translation",
+            "math-aa-2.1-reflection",
+            "math-aa-2.1-stretch"
+          ]
+        },
+        {
+          "id": "math-aa-2.1-2-q10",
+          "type": "order",
+          "prompt": "Track the point (1, 1) on y = x² as it is mapped to y = 2(x − 3)² + 1.",
+          "items": [
+            "Start at (1, 1) on y = x²",
+            "Translate right 3: (4, 1)",
+            "Stretch vertically ×2: (4, 2)",
+            "Translate up 1: (4, 3)"
+          ],
+          "explanation": "Check: 2(4 − 3)² + 1 = 3, so (4, 3) is on the final curve.",
+          "terms": [
+            "math-aa-2.1-translation",
+            "math-aa-2.1-stretch"
+          ]
+        }
+      ]
+    }
+  ]
+}

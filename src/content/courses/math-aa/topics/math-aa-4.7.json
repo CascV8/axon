@@ -1,0 +1,410 @@
+{
+  "id": "math-aa-4.7",
+  "code": "SL 4.7–4.9, 4.12",
+  "unit": "4",
+  "title": "Binomial and normal distributions",
+  "level": "SL",
+  "summary": "Discrete random variables and expected value, the binomial distribution, and the normal distribution including standardisation and inverse normal calculations.",
+  "keyterms": [
+    {
+      "id": "math-aa-4.7-random-variable",
+      "term": "Discrete random variable",
+      "definition": "A variable X whose values come from a random process; its probabilities sum to 1.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-expectation",
+      "term": "Expected value",
+      "definition": "E(X) = ∑ x P(X = x), the long-run mean of X.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-fair-game",
+      "term": "Fair game",
+      "definition": "A game in which the expected gain of each player is 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-binomial",
+      "term": "Binomial distribution",
+      "definition": "X ~ B(n, p): number of successes in n independent trials, each with success probability p.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-binomial-mean-variance",
+      "term": "Binomial mean and variance",
+      "definition": "E(X) = np and Var(X) = np(1 − p).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-normal",
+      "term": "Normal distribution",
+      "definition": "X ~ N(μ, σ²): a symmetric bell-shaped continuous distribution with mean μ and standard deviation σ.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-z-score",
+      "term": "Standardised value",
+      "definition": "z = (x − μ)/σ, the number of standard deviations x lies from the mean.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-standard-normal",
+      "term": "Standard normal distribution",
+      "definition": "Z ~ N(0, 1).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-inverse-normal",
+      "term": "Inverse normal",
+      "definition": "Finding the value x (or z) for which P(X < x) equals a given probability.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.7-empirical-rule",
+      "term": "68–95–99.7 rule",
+      "definition": "About 68%, 95% and 99.7% of normal data lie within 1, 2 and 3 SDs of the mean.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-4.7-1",
+      "title": "Discrete random variables and the binomial distribution",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-4.7-1-q01",
+          "type": "mcq",
+          "prompt": "X takes values 1, 2, 3 with probabilities 0.2, k and 0.5. Find k.",
+          "options": [
+            "0.3",
+            "0.5",
+            "0.7",
+            "0.2"
+          ],
+          "answer": 0,
+          "explanation": "Probabilities sum to 1: 0.2 + k + 0.5 = 1.",
+          "terms": [
+            "math-aa-4.7-random-variable"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q02",
+          "type": "mcq",
+          "prompt": "For the same X (probabilities 0.2, 0.3, 0.5), find E(X).",
+          "options": [
+            "2",
+            "2.5",
+            "1",
+            "2.3"
+          ],
+          "answer": 3,
+          "explanation": "1(0.2) + 2(0.3) + 3(0.5) = 0.2 + 0.6 + 1.5 = 2.3.",
+          "terms": [
+            "math-aa-4.7-expectation"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q03",
+          "type": "fill",
+          "text": "A game is fair if the expected gain is ___.",
+          "answer": "0",
+          "bank": [
+            "0",
+            "0.5",
+            "negative",
+            "1"
+          ],
+          "explanation": "On average neither player wins or loses.",
+          "terms": [
+            "math-aa-4.7-fair-game"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q04",
+          "type": "tf",
+          "statement": "If X ~ B(n, p), then E(X) = np.",
+          "answer": true,
+          "explanation": "n trials, each succeeding with probability p.",
+          "terms": [
+            "math-aa-4.7-binomial-mean-variance"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q05",
+          "type": "mcq",
+          "prompt": "X ~ B(10, 0.3). Find Var(X).",
+          "options": [
+            "2.1",
+            "3",
+            "0.21",
+            "7"
+          ],
+          "answer": 0,
+          "explanation": "np(1 − p) = 10 × 0.3 × 0.7 = 2.1. 3 is the mean.",
+          "terms": [
+            "math-aa-4.7-binomial-mean-variance"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q06",
+          "type": "mcq",
+          "prompt": "X ~ B(4, 0.5). Find P(X = 2).",
+          "options": [
+            "0.5",
+            "0.25",
+            "0.0625",
+            "0.375"
+          ],
+          "answer": 3,
+          "explanation": "⁴C₂ × 0.5⁴ = 6/16.",
+          "terms": [
+            "math-aa-4.7-binomial"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q07",
+          "type": "fill",
+          "text": "A binomial model needs a fixed number of independent trials, each with the same probability of ___.",
+          "answer": "success",
+          "bank": [
+            "success",
+            "n",
+            "failure only",
+            "replacement"
+          ],
+          "explanation": "Check all conditions before using B(n, p).",
+          "terms": [
+            "math-aa-4.7-binomial"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q08",
+          "type": "tf",
+          "statement": "The number of heads in 20 tosses of a fair coin can be modelled by B(20, 0.5).",
+          "answer": true,
+          "explanation": "Fixed n = 20, independent tosses, constant p = 0.5.",
+          "terms": [
+            "math-aa-4.7-binomial"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q09",
+          "type": "match",
+          "prompt": "Match each expression to its meaning.",
+          "pairs": [
+            {
+              "left": "B(n, p)",
+              "right": "n independent trials, success probability p"
+            },
+            {
+              "left": "np",
+              "right": "Mean of a binomial distribution"
+            },
+            {
+              "left": "np(1 − p)",
+              "right": "Variance of a binomial distribution"
+            },
+            {
+              "left": "∑ P(X = x) = 1",
+              "right": "True for any discrete distribution"
+            }
+          ],
+          "explanation": "The SD of a binomial is √(np(1 − p)).",
+          "terms": [
+            "math-aa-4.7-binomial",
+            "math-aa-4.7-binomial-mean-variance",
+            "math-aa-4.7-random-variable"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to find P(X ≥ 2) for X ~ B(5, 0.2).",
+          "items": [
+            "Identify n = 5 and p = 0.2",
+            "Use the complement: P(X ≥ 2) = 1 − P(X ≤ 1)",
+            "P(X ≤ 1) = 0.8⁵ + 5(0.2)(0.8⁴) ≈ 0.737",
+            "So P(X ≥ 2) ≈ 0.263"
+          ],
+          "explanation": "The complement avoids adding four separate probabilities.",
+          "terms": [
+            "math-aa-4.7-binomial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-4.7-2",
+      "title": "The normal distribution",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-4.7-2-q01",
+          "type": "mcq",
+          "prompt": "X ~ N(50, 4²). Find the z-score of x = 58.",
+          "options": [
+            "2",
+            "8",
+            "0.5",
+            "4"
+          ],
+          "answer": 0,
+          "explanation": "z = (58 − 50)/4 = 2.",
+          "terms": [
+            "math-aa-4.7-z-score"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q02",
+          "type": "mcq",
+          "prompt": "For any normal distribution, P(X < μ) is…",
+          "options": [
+            "0.95",
+            "0.68",
+            "0.5",
+            "it depends on σ"
+          ],
+          "answer": 2,
+          "explanation": "The curve is symmetric about the mean.",
+          "terms": [
+            "math-aa-4.7-normal"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q03",
+          "type": "fill",
+          "text": "About ___% of a normal distribution lies within one standard deviation of the mean.",
+          "answer": "68",
+          "bank": [
+            "95",
+            "68",
+            "50",
+            "99.7"
+          ],
+          "explanation": "Within 2 SDs it is about 95%, within 3 SDs about 99.7%.",
+          "terms": [
+            "math-aa-4.7-empirical-rule"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q04",
+          "type": "tf",
+          "statement": "In N(μ, σ²), the second parameter σ² is the variance.",
+          "answer": true,
+          "explanation": "Take care to use σ, not σ², when entering it on a GDC.",
+          "terms": [
+            "math-aa-4.7-normal"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q05",
+          "type": "mcq",
+          "prompt": "X ~ N(100, 15²). Estimate P(X > 130).",
+          "options": [
+            "0.977",
+            "0.05",
+            "0.0456",
+            "0.0228"
+          ],
+          "answer": 3,
+          "explanation": "130 is 2 SDs above the mean; P(Z > 2) ≈ 0.0228.",
+          "terms": [
+            "math-aa-4.7-z-score",
+            "math-aa-4.7-normal"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q06",
+          "type": "mcq",
+          "prompt": "X ~ N(20, σ²) and P(X < 26) = 0.9. Find σ.",
+          "options": [
+            "7.69",
+            "6.00",
+            "4.68",
+            "3.62"
+          ],
+          "answer": 2,
+          "explanation": "Inverse normal gives z ≈ 1.2816, so 6/σ = 1.2816 and σ ≈ 4.68.",
+          "terms": [
+            "math-aa-4.7-inverse-normal",
+            "math-aa-4.7-z-score"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q07",
+          "type": "fill",
+          "text": "The standardised variable is Z = (X − μ) / ___.",
+          "answer": "σ",
+          "bank": [
+            "n",
+            "σ",
+            "σ²",
+            "μ"
+          ],
+          "explanation": "Dividing by the standard deviation gives Z ~ N(0, 1).",
+          "terms": [
+            "math-aa-4.7-standard-normal",
+            "math-aa-4.7-z-score"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q08",
+          "type": "tf",
+          "statement": "A normal distribution is symmetric about its mean.",
+          "answer": true,
+          "explanation": "So the mean, median and mode are equal.",
+          "terms": [
+            "math-aa-4.7-normal"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q09",
+          "type": "match",
+          "prompt": "Match each term to its description.",
+          "pairs": [
+            {
+              "left": "Mean = median = mode",
+              "right": "Property of a normal curve"
+            },
+            {
+              "left": "Z ~ N(0, 1)",
+              "right": "Standard normal distribution"
+            },
+            {
+              "left": "Inverse normal",
+              "right": "Finds x for a given probability"
+            },
+            {
+              "left": "Normal cdf",
+              "right": "Finds a probability for a range of x"
+            }
+          ],
+          "explanation": "Probability in → value out means inverse normal.",
+          "terms": [
+            "math-aa-4.7-normal",
+            "math-aa-4.7-standard-normal",
+            "math-aa-4.7-inverse-normal"
+          ]
+        },
+        {
+          "id": "math-aa-4.7-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to find μ when σ is known and P(X < 40) = 0.2.",
+          "items": [
+            "Write P(Z < (40 − μ)/σ) = 0.2",
+            "Inverse normal: z ≈ −0.842",
+            "Set (40 − μ)/σ = −0.842",
+            "Solve for μ using the known σ"
+          ],
+          "explanation": "Standardise so you can use the standard normal distribution when μ is unknown.",
+          "terms": [
+            "math-aa-4.7-inverse-normal",
+            "math-aa-4.7-z-score"
+          ]
+        }
+      ]
+    }
+  ]
+}

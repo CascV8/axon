@@ -1,0 +1,412 @@
+{
+  "id": "math-aa-4.5",
+  "code": "SL 4.5, 4.6, 4.11",
+  "unit": "4",
+  "title": "Probability",
+  "level": "SL",
+  "summary": "Sample spaces, Venn and tree diagrams, combined, mutually exclusive and independent events, and conditional probability.",
+  "keyterms": [
+    {
+      "id": "math-aa-4.5-sample-space",
+      "term": "Sample space",
+      "definition": "The set of all possible outcomes of an experiment, U.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-complement",
+      "term": "Complementary event",
+      "definition": "A′, the event that A does not happen; P(A′) = 1 − P(A).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-combined-events",
+      "term": "Combined events",
+      "definition": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-mutually-exclusive",
+      "term": "Mutually exclusive",
+      "definition": "Events that cannot happen together: P(A ∩ B) = 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-independent",
+      "term": "Independent events",
+      "definition": "One does not affect the other: P(A ∩ B) = P(A)P(B), equivalently P(A | B) = P(A).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-conditional",
+      "term": "Conditional probability",
+      "definition": "P(A | B) = P(A ∩ B) / P(B), the probability of A given that B has happened.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-tree-diagram",
+      "term": "Tree diagram",
+      "definition": "A diagram of successive events; multiply along branches, add between paths.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-venn-diagram",
+      "term": "Venn diagram",
+      "definition": "Overlapping regions inside U that show events and their intersections.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-expected-number",
+      "term": "Expected number of occurrences",
+      "definition": "np: the long-run number of times an event of probability p occurs in n trials.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-4.5-without-replacement",
+      "term": "Without replacement",
+      "definition": "Items are not returned, so probabilities change for later selections.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-4.5-1",
+      "title": "Events, Venn diagrams and combined probability",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-4.5-1-q01",
+          "type": "mcq",
+          "prompt": "Two fair dice are rolled. Find P(sum = 7).",
+          "options": [
+            "7/36",
+            "1/6",
+            "1/12",
+            "1/36"
+          ],
+          "answer": 1,
+          "explanation": "6 of the 36 equally likely outcomes give 7.",
+          "terms": [
+            "math-aa-4.5-sample-space"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q02",
+          "type": "mcq",
+          "prompt": "P(A) = 0.3, P(B) = 0.5 and P(A ∩ B) = 0.1. Find P(A ∪ B).",
+          "options": [
+            "0.6",
+            "0.15",
+            "0.8",
+            "0.7"
+          ],
+          "answer": 3,
+          "explanation": "0.3 + 0.5 − 0.1 = 0.7. Subtract the overlap so it is not counted twice.",
+          "terms": [
+            "math-aa-4.5-combined-events"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q03",
+          "type": "fill",
+          "text": "P(A′) = 1 − ___",
+          "answer": "P(A)",
+          "bank": [
+            "P(A ∩ B)",
+            "0",
+            "P(A)",
+            "P(B)"
+          ],
+          "explanation": "Either A happens or it does not.",
+          "terms": [
+            "math-aa-4.5-complement"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q04",
+          "type": "tf",
+          "statement": "If A and B are mutually exclusive, then P(A ∩ B) = 0.",
+          "answer": true,
+          "explanation": "They cannot occur together.",
+          "terms": [
+            "math-aa-4.5-mutually-exclusive"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q05",
+          "type": "mcq",
+          "prompt": "The probability of winning a game is 0.15. How many wins are expected in 40 games?",
+          "options": [
+            "15",
+            "4",
+            "6",
+            "0.6"
+          ],
+          "answer": 2,
+          "explanation": "Expected number = np = 40 × 0.15 = 6.",
+          "terms": [
+            "math-aa-4.5-expected-number"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q06",
+          "type": "mcq",
+          "prompt": "A and B are independent, P(A) = 0.4 and P(B) = 0.25. Find P(A ∩ B).",
+          "options": [
+            "0.65",
+            "0.15",
+            "0",
+            "0.1"
+          ],
+          "answer": 3,
+          "explanation": "For independent events multiply: 0.4 × 0.25.",
+          "terms": [
+            "math-aa-4.5-independent"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q07",
+          "type": "fill",
+          "text": "Of 30 students, 18 like tea, 15 like coffee and 7 like both. The number who like neither is ___.",
+          "answer": "4",
+          "bank": [
+            "7",
+            "11",
+            "3",
+            "4"
+          ],
+          "explanation": "18 + 15 − 7 = 26 like at least one, so 30 − 26 = 4.",
+          "terms": [
+            "math-aa-4.5-venn-diagram",
+            "math-aa-4.5-combined-events"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q08",
+          "type": "tf",
+          "statement": "Mutually exclusive events with non-zero probabilities are independent.",
+          "answer": false,
+          "explanation": "If one happens the other cannot, so they strongly affect each other: P(A ∩ B) = 0 ≠ P(A)P(B).",
+          "terms": [
+            "math-aa-4.5-mutually-exclusive",
+            "math-aa-4.5-independent"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q09",
+          "type": "match",
+          "prompt": "Match each expression to its formula.",
+          "pairs": [
+            {
+              "left": "P(A ∪ B)",
+              "right": "P(A) + P(B) − P(A ∩ B)"
+            },
+            {
+              "left": "P(A | B)",
+              "right": "P(A ∩ B) / P(B)"
+            },
+            {
+              "left": "Independent A, B",
+              "right": "P(A ∩ B) = P(A)P(B)"
+            },
+            {
+              "left": "Mutually exclusive A, B",
+              "right": "P(A ∩ B) = 0"
+            }
+          ],
+          "explanation": "These are in the formula booklet; know when each applies.",
+          "terms": [
+            "math-aa-4.5-combined-events",
+            "math-aa-4.5-conditional",
+            "math-aa-4.5-independent",
+            "math-aa-4.5-mutually-exclusive"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-1-q10",
+          "type": "order",
+          "prompt": "For one roll of a fair six-sided die, order these from least to most likely.",
+          "items": [
+            "Rolling a 7",
+            "Rolling a 6",
+            "Rolling an even number",
+            "Rolling less than 7"
+          ],
+          "explanation": "The probabilities are 0, 1/6, 1/2 and 1.",
+          "terms": [
+            "math-aa-4.5-sample-space"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-4.5-2",
+      "title": "Conditional probability and tree diagrams",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-4.5-2-q01",
+          "type": "mcq",
+          "prompt": "P(A ∩ B) = 0.12 and P(B) = 0.4. Find P(A | B).",
+          "options": [
+            "0.048",
+            "0.3",
+            "0.52",
+            "0.12"
+          ],
+          "answer": 1,
+          "explanation": "0.12 / 0.4 = 0.3.",
+          "terms": [
+            "math-aa-4.5-conditional"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q02",
+          "type": "mcq",
+          "prompt": "A bag holds 5 red and 3 blue counters. Two are taken without replacement. Find P(both red).",
+          "options": [
+            "5/16",
+            "15/56",
+            "25/64",
+            "5/14"
+          ],
+          "answer": 3,
+          "explanation": "5/8 × 4/7 = 20/56 = 5/14. 25/64 assumes replacement.",
+          "terms": [
+            "math-aa-4.5-without-replacement",
+            "math-aa-4.5-tree-diagram"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q03",
+          "type": "fill",
+          "text": "Drawing without replacement makes the second probability ___ on the first outcome.",
+          "answer": "dependent",
+          "bank": [
+            "dependent",
+            "fixed",
+            "exclusive",
+            "independent"
+          ],
+          "explanation": "The contents of the bag change after the first draw.",
+          "terms": [
+            "math-aa-4.5-without-replacement"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q04",
+          "type": "tf",
+          "statement": "On a tree diagram, probabilities along a path are multiplied.",
+          "answer": true,
+          "explanation": "Then add the probabilities of separate paths.",
+          "terms": [
+            "math-aa-4.5-tree-diagram"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q05",
+          "type": "mcq",
+          "prompt": "P(rain) = 0.3, P(late | rain) = 0.4 and P(late | no rain) = 0.1. Find P(late).",
+          "options": [
+            "0.25",
+            "0.5",
+            "0.19",
+            "0.12"
+          ],
+          "answer": 2,
+          "explanation": "0.3 × 0.4 + 0.7 × 0.1 = 0.12 + 0.07 = 0.19.",
+          "terms": [
+            "math-aa-4.5-tree-diagram",
+            "math-aa-4.5-conditional"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q06",
+          "type": "mcq",
+          "prompt": "With the same data (P(late) = 0.19), find P(rain | late).",
+          "options": [
+            "0.4",
+            "0.3",
+            "0.12",
+            "12/19"
+          ],
+          "answer": 3,
+          "explanation": "P(rain ∩ late) / P(late) = 0.12 / 0.19 = 12/19 ≈ 0.632.",
+          "terms": [
+            "math-aa-4.5-conditional"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q07",
+          "type": "fill",
+          "text": "Two cards are drawn from a standard 52-card deck without replacement. P(both aces) = 4/52 × ___.",
+          "answer": "3/51",
+          "bank": [
+            "3/52",
+            "3/51",
+            "4/51",
+            "4/52"
+          ],
+          "explanation": "After one ace is drawn, 3 aces remain among 51 cards.",
+          "terms": [
+            "math-aa-4.5-without-replacement"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q08",
+          "type": "tf",
+          "statement": "If P(A | B) = P(A), then A and B are independent.",
+          "answer": true,
+          "explanation": "Knowing B happened does not change the probability of A.",
+          "terms": [
+            "math-aa-4.5-independent",
+            "math-aa-4.5-conditional"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q09",
+          "type": "match",
+          "prompt": "Match each idea to the correct statement.",
+          "pairs": [
+            {
+              "left": "With replacement",
+              "right": "Probabilities stay the same each draw"
+            },
+            {
+              "left": "Without replacement",
+              "right": "Probabilities change after each draw"
+            },
+            {
+              "left": "Branches from one node",
+              "right": "Their probabilities sum to 1"
+            },
+            {
+              "left": "Path along a tree",
+              "right": "Multiply the probabilities"
+            }
+          ],
+          "explanation": "Check that each set of branches sums to 1.",
+          "terms": [
+            "math-aa-4.5-tree-diagram",
+            "math-aa-4.5-without-replacement"
+          ]
+        },
+        {
+          "id": "math-aa-4.5-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to find P(A | B) from a tree diagram where A is on the first branch.",
+          "items": [
+            "Draw the tree for both stages",
+            "Multiply along each path",
+            "Add the paths that end in B to get P(B)",
+            "Divide P(A ∩ B) by P(B)"
+          ],
+          "explanation": "This reverses the order of conditioning in the tree.",
+          "terms": [
+            "math-aa-4.5-tree-diagram",
+            "math-aa-4.5-conditional"
+          ]
+        }
+      ]
+    }
+  ]
+}

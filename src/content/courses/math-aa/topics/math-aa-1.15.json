@@ -1,0 +1,412 @@
+{
+  "id": "math-aa-1.15",
+  "code": "AHL 1.15–1.16",
+  "unit": "1",
+  "title": "Proof and systems of linear equations",
+  "level": "HL",
+  "summary": "Prove results by induction and by contradiction, disprove them by counterexample, and solve systems of up to three linear equations.",
+  "keyterms": [
+    {
+      "id": "math-aa-1.15-induction",
+      "term": "Proof by induction",
+      "definition": "Proving P(n) for all n ≥ n₀ by showing P(n₀) is true and that P(k) true implies P(k + 1) true.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-base-case",
+      "term": "Base case",
+      "definition": "The first value (usually n = 1) for which a statement is checked in an induction proof.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-inductive-step",
+      "term": "Inductive step",
+      "definition": "Showing that if the statement is true for n = k, then it is true for n = k + 1.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-contradiction",
+      "term": "Proof by contradiction",
+      "definition": "Assume the statement is false and deduce something impossible, so the statement must be true.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-counterexample",
+      "term": "Counterexample",
+      "definition": "A single example for which a general statement fails, which disproves it.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-linear-system",
+      "term": "System of linear equations",
+      "definition": "Several linear equations in the same unknowns, to be satisfied simultaneously.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-unique-solution",
+      "term": "Unique solution",
+      "definition": "Exactly one set of values satisfies every equation; three planes meet at a single point.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-infinite-solutions",
+      "term": "Infinitely many solutions",
+      "definition": "The equations are dependent; the solution set is a line or plane written with a parameter.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-inconsistent",
+      "term": "Inconsistent system",
+      "definition": "A system with no solution, revealed by a row such as 0 = k with k ≠ 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-1.15-parameter",
+      "term": "Parameter",
+      "definition": "A free variable such as λ used to describe infinitely many solutions.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-1.15-1",
+      "title": "Induction, contradiction and counterexample",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-1.15-1-q01",
+          "type": "order",
+          "prompt": "Put the parts of a proof by induction in order.",
+          "items": [
+            "Show the statement is true for n = 1",
+            "Assume it is true for n = k",
+            "Use the assumption to show it is true for n = k + 1",
+            "Conclude it is true for all n ∈ ℤ⁺"
+          ],
+          "explanation": "All four parts, including the final conclusion sentence, earn marks.",
+          "terms": [
+            "math-aa-1.15-induction",
+            "math-aa-1.15-base-case",
+            "math-aa-1.15-inductive-step"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q02",
+          "type": "mcq",
+          "prompt": "To disprove “n² + n + 41 is prime for every positive integer n”, you need…",
+          "options": [
+            "one counterexample, such as n = 40",
+            "a proof by induction",
+            "a proof by contradiction",
+            "to check every n up to 100"
+          ],
+          "answer": 0,
+          "explanation": "n = 40 gives 1681 = 41², which is not prime. One failure disproves a universal claim.",
+          "terms": [
+            "math-aa-1.15-counterexample"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q03",
+          "type": "tf",
+          "statement": "A proof by contradiction starts by assuming the statement is false.",
+          "answer": true,
+          "explanation": "You then derive an impossibility, so the assumption must be wrong.",
+          "terms": [
+            "math-aa-1.15-contradiction"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q04",
+          "type": "fill",
+          "text": "The irrationality of √2 is classically proved by ___.",
+          "answer": "contradiction",
+          "bank": [
+            "contradiction",
+            "counterexample",
+            "direct substitution",
+            "induction"
+          ],
+          "explanation": "Assume √2 = p/q in lowest terms; then p and q are both even, a contradiction.",
+          "terms": [
+            "math-aa-1.15-contradiction"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q05",
+          "type": "mcq",
+          "prompt": "Proving ∑ᵣ₌₁ⁿ r = n(n + 1)/2 by induction: adding (k + 1) to k(k + 1)/2 gives…",
+          "options": [
+            "(k + 1)²/2",
+            "k(k + 2)/2",
+            "(k + 2)(k + 3)/2",
+            "(k + 1)(k + 2)/2"
+          ],
+          "answer": 3,
+          "explanation": "k(k + 1)/2 + (k + 1) = (k + 1)(k + 2)/2, which is the formula with n = k + 1.",
+          "terms": [
+            "math-aa-1.15-inductive-step"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q06",
+          "type": "mcq",
+          "prompt": "Which is a counterexample to “if a² > b² then a > b”?",
+          "options": [
+            "a = 3, b = 1",
+            "a = 2, b = −1",
+            "a = −3, b = 1",
+            "a = 5, b = 4"
+          ],
+          "answer": 2,
+          "explanation": "9 > 1 but −3 < 1, so the implication fails. The other pairs satisfy it.",
+          "terms": [
+            "math-aa-1.15-counterexample"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q07",
+          "type": "tf",
+          "statement": "A single counterexample is enough to disprove a general statement.",
+          "answer": true,
+          "explanation": "A universal claim must hold in every case, so one failure is enough.",
+          "terms": [
+            "math-aa-1.15-counterexample"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q08",
+          "type": "fill",
+          "text": "To prove 6ⁿ − 1 is divisible by 5 for all n ∈ ℤ⁺, the base case gives 6¹ − 1 = ___.",
+          "answer": "5",
+          "bank": [
+            "0",
+            "1",
+            "5",
+            "6"
+          ],
+          "explanation": "5 is divisible by 5, so the statement holds for n = 1.",
+          "terms": [
+            "math-aa-1.15-base-case"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q09",
+          "type": "match",
+          "prompt": "Match each method to its description.",
+          "pairs": [
+            {
+              "left": "Proof by induction",
+              "right": "Base case, then n = k implies n = k + 1"
+            },
+            {
+              "left": "Proof by contradiction",
+              "right": "Assume the opposite and reach an impossibility"
+            },
+            {
+              "left": "Counterexample",
+              "right": "Show one case where the claim fails"
+            },
+            {
+              "left": "Direct proof",
+              "right": "Work from known facts straight to the result"
+            }
+          ],
+          "explanation": "Choose the method to suit the claim: induction for statements about all positive integers.",
+          "terms": [
+            "math-aa-1.15-induction",
+            "math-aa-1.15-contradiction",
+            "math-aa-1.15-counterexample"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-1-q10",
+          "type": "mcq",
+          "prompt": "In the inductive step for 6ⁿ − 1 being divisible by 5, 6ᵏ⁺¹ − 1 can be rewritten as…",
+          "options": [
+            "6(6ᵏ − 1) − 5",
+            "5(6ᵏ − 1) + 6",
+            "6ᵏ − 1 + 6",
+            "6(6ᵏ − 1) + 5"
+          ],
+          "answer": 3,
+          "explanation": "6 × 6ᵏ − 1 = 6(6ᵏ − 1) + 6 − 1. Both terms are multiples of 5 by the assumption.",
+          "terms": [
+            "math-aa-1.15-inductive-step"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-1.15-2",
+      "title": "Systems of linear equations",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-aa-1.15-2-q01",
+          "type": "mcq",
+          "prompt": "Solve x + y + z = 6, y + z = 5, z = 3.",
+          "options": [
+            "x = 3, y = 2, z = 1",
+            "x = 1, y = 3, z = 2",
+            "x = 1, y = 2, z = 3",
+            "x = 2, y = 1, z = 3"
+          ],
+          "answer": 2,
+          "explanation": "Back-substitute: z = 3, then y = 2, then x = 6 − 5 = 1.",
+          "terms": [
+            "math-aa-1.15-linear-system",
+            "math-aa-1.15-unique-solution"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q02",
+          "type": "tf",
+          "statement": "Three linear equations in three unknowns always have exactly one solution.",
+          "answer": false,
+          "explanation": "They may have one, none or infinitely many solutions.",
+          "terms": [
+            "math-aa-1.15-linear-system"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q03",
+          "type": "fill",
+          "text": "If elimination produces the row 0x + 0y + 0z = 4, the system is ___.",
+          "answer": "inconsistent",
+          "bank": [
+            "dependent",
+            "inconsistent",
+            "unique",
+            "consistent"
+          ],
+          "explanation": "0 = 4 is impossible, so there is no solution.",
+          "terms": [
+            "math-aa-1.15-inconsistent"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q04",
+          "type": "mcq",
+          "prompt": "Elimination on three equations leaves a row 0 = 0 and two independent equations. The system has…",
+          "options": [
+            "infinitely many solutions, written with one parameter",
+            "exactly two solutions",
+            "no solution",
+            "a unique solution"
+          ],
+          "answer": 0,
+          "explanation": "Only two independent equations constrain three unknowns, leaving one free variable.",
+          "terms": [
+            "math-aa-1.15-infinite-solutions",
+            "math-aa-1.15-parameter"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q05",
+          "type": "mcq",
+          "prompt": "Solve 2x + y = 7 and x − y = 2.",
+          "options": [
+            "x = 3, y = 1",
+            "x = 2, y = 3",
+            "x = 1, y = 3",
+            "x = 3, y = −1"
+          ],
+          "answer": 0,
+          "explanation": "Adding gives 3x = 9, so x = 3 and y = 1.",
+          "terms": [
+            "math-aa-1.15-linear-system"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q06",
+          "type": "fill",
+          "text": "Three planes meeting at a single point correspond to a ___ solution.",
+          "answer": "unique",
+          "bank": [
+            "infinite",
+            "parametric",
+            "empty",
+            "unique"
+          ],
+          "explanation": "The point of intersection is the only (x, y, z) satisfying all three equations.",
+          "terms": [
+            "math-aa-1.15-unique-solution"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q07",
+          "type": "tf",
+          "statement": "If a system has infinitely many solutions, they can be written in terms of a parameter such as λ.",
+          "answer": true,
+          "explanation": "For example x = 1 + λ, y = 2 − λ, z = λ.",
+          "terms": [
+            "math-aa-1.15-parameter",
+            "math-aa-1.15-infinite-solutions"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q08",
+          "type": "match",
+          "prompt": "Match each arrangement of three planes to the solution set.",
+          "pairs": [
+            {
+              "left": "Meet at one point",
+              "right": "Unique solution"
+            },
+            {
+              "left": "Share a common line",
+              "right": "Infinitely many solutions"
+            },
+            {
+              "left": "Two parallel, distinct planes",
+              "right": "No solution"
+            },
+            {
+              "left": "Form a triangular prism",
+              "right": "No solution, with no two planes parallel"
+            }
+          ],
+          "explanation": "Algebraic outcomes correspond to geometric configurations.",
+          "terms": [
+            "math-aa-1.15-unique-solution",
+            "math-aa-1.15-infinite-solutions",
+            "math-aa-1.15-inconsistent"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q09",
+          "type": "mcq",
+          "prompt": "For which k does x + 2y = 3, 2x + 4y = k have infinitely many solutions?",
+          "options": [
+            "k = 0",
+            "k = 6",
+            "k = 3",
+            "any k ≠ 6"
+          ],
+          "answer": 1,
+          "explanation": "The second equation must be exactly double the first. For k ≠ 6 the lines are parallel and there is no solution.",
+          "terms": [
+            "math-aa-1.15-infinite-solutions",
+            "math-aa-1.15-inconsistent"
+          ]
+        },
+        {
+          "id": "math-aa-1.15-2-q10",
+          "type": "order",
+          "prompt": "Order the steps of solving a 3 × 3 system by elimination.",
+          "items": [
+            "Line up the equations (or write the augmented matrix)",
+            "Eliminate x from the second and third equations",
+            "Eliminate y from the third equation",
+            "Solve for z, then back-substitute for y and x"
+          ],
+          "explanation": "Reducing to triangular form makes back-substitution straightforward.",
+          "terms": [
+            "math-aa-1.15-linear-system"
+          ]
+        }
+      ]
+    }
+  ]
+}

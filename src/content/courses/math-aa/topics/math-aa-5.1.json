@@ -1,0 +1,412 @@
+{
+  "id": "math-aa-5.1",
+  "code": "SL 5.1–5.4, 5.6",
+  "unit": "5",
+  "title": "Introduction to differentiation",
+  "level": "SL",
+  "summary": "The derivative as a limit and a gradient, derivatives of standard functions, the chain, product and quotient rules, and equations of tangents and normals.",
+  "keyterms": [
+    {
+      "id": "math-aa-5.1-limit",
+      "term": "Limit",
+      "definition": "The value a function approaches as its input approaches a given value.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-derivative",
+      "term": "Derivative",
+      "definition": "f′(x) = lim (h→0) [f(x + h) − f(x)]/h, the gradient of the curve at x.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-power-rule",
+      "term": "Power rule",
+      "definition": "d/dx(xⁿ) = nxⁿ⁻¹ for any real n.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-tangent",
+      "term": "Tangent",
+      "definition": "A straight line touching the curve at a point with the same gradient as the curve there.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-normal-line",
+      "term": "Normal",
+      "definition": "The line through a point on a curve perpendicular to the tangent; gradient −1/f′(a).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-increasing",
+      "term": "Increasing and decreasing",
+      "definition": "f is increasing where f′(x) > 0 and decreasing where f′(x) < 0.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-chain-rule",
+      "term": "Chain rule",
+      "definition": "dy/dx = (dy/du)(du/dx), for composite functions y = f(g(x)).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-product-rule",
+      "term": "Product rule",
+      "definition": "d/dx(uv) = u dv/dx + v du/dx.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-quotient-rule",
+      "term": "Quotient rule",
+      "definition": "d/dx(u/v) = (v du/dx − u dv/dx)/v².",
+      "hl": false
+    },
+    {
+      "id": "math-aa-5.1-standard-derivatives",
+      "term": "Standard derivatives",
+      "definition": "d/dx: sin x → cos x, cos x → −sin x, eˣ → eˣ, ln x → 1/x.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-5.1-1",
+      "title": "Gradients, tangents and normals",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-5.1-1-q01",
+          "type": "mcq",
+          "prompt": "Differentiate 4x³ − 2x + 7.",
+          "options": [
+            "12x² − 2x",
+            "4x² − 2",
+            "12x³ − 2 + 7",
+            "12x² − 2"
+          ],
+          "answer": 3,
+          "explanation": "Apply the power rule to each term; the constant differentiates to 0.",
+          "terms": [
+            "math-aa-5.1-power-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q02",
+          "type": "mcq",
+          "prompt": "Find the gradient of y = x² + 3x at x = 2.",
+          "options": [
+            "4",
+            "10",
+            "7",
+            "6"
+          ],
+          "answer": 2,
+          "explanation": "dy/dx = 2x + 3 = 7 at x = 2. 10 is the y-value.",
+          "terms": [
+            "math-aa-5.1-derivative"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q03",
+          "type": "fill",
+          "text": "d/dx (1/x²) = ___",
+          "answer": "−2x⁻³",
+          "accept": [
+            "−2/x³",
+            "-2x^-3"
+          ],
+          "bank": [
+            "−x⁻³",
+            "−2x⁻¹",
+            "−2x⁻³",
+            "2x⁻³"
+          ],
+          "explanation": "Write 1/x² = x⁻², then bring down the power and subtract one.",
+          "terms": [
+            "math-aa-5.1-power-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q04",
+          "type": "tf",
+          "statement": "f′(x) is the limit of [f(x + h) − f(x)]/h as h → 0.",
+          "answer": true,
+          "explanation": "It is the gradient of chords as they shrink towards a tangent.",
+          "terms": [
+            "math-aa-5.1-derivative",
+            "math-aa-5.1-limit"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q05",
+          "type": "mcq",
+          "prompt": "Find the equation of the tangent to y = x² at (3, 9).",
+          "options": [
+            "y = 6x + 9",
+            "y = −x/6 + 9.5",
+            "y = 3x",
+            "y = 6x − 9"
+          ],
+          "answer": 3,
+          "explanation": "Gradient 2(3) = 6; y − 9 = 6(x − 3). The last option is the normal.",
+          "terms": [
+            "math-aa-5.1-tangent"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q06",
+          "type": "mcq",
+          "prompt": "The tangent at a point has gradient 4. What is the gradient of the normal?",
+          "options": [
+            "−¼",
+            "4",
+            "¼",
+            "−4"
+          ],
+          "answer": 0,
+          "explanation": "The normal is perpendicular: −1/4.",
+          "terms": [
+            "math-aa-5.1-normal-line"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q07",
+          "type": "fill",
+          "text": "f is increasing where f′(x) ___ 0.",
+          "answer": ">",
+          "bank": [
+            "≤",
+            ">",
+            "<",
+            "="
+          ],
+          "explanation": "A positive gradient means the function rises as x increases.",
+          "terms": [
+            "math-aa-5.1-increasing"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q08",
+          "type": "tf",
+          "statement": "d/dx (√x) = 1/(2√x)",
+          "answer": true,
+          "explanation": "√x = x^½, so the derivative is ½x^(−½).",
+          "terms": [
+            "math-aa-5.1-power-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q09",
+          "type": "match",
+          "prompt": "Match each function to its derivative.",
+          "pairs": [
+            {
+              "left": "x⁵",
+              "right": "5x⁴"
+            },
+            {
+              "left": "eˣ",
+              "right": "eˣ"
+            },
+            {
+              "left": "ln x",
+              "right": "1/x"
+            },
+            {
+              "left": "sin x",
+              "right": "cos x"
+            }
+          ],
+          "explanation": "These standard results appear in the formula booklet.",
+          "terms": [
+            "math-aa-5.1-standard-derivatives",
+            "math-aa-5.1-power-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to find the equation of a tangent at x = a.",
+          "items": [
+            "Differentiate to find f′(x)",
+            "Substitute x = a to get the gradient m",
+            "Find the y-coordinate f(a)",
+            "Use y − f(a) = m(x − a)"
+          ],
+          "explanation": "For the normal, use −1/m in the last step.",
+          "terms": [
+            "math-aa-5.1-tangent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-5.1-2",
+      "title": "Chain, product and quotient rules",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-5.1-2-q01",
+          "type": "mcq",
+          "prompt": "Differentiate (3x + 1)⁵.",
+          "options": [
+            "15(3x + 1)⁵",
+            "15(3x + 1)⁴",
+            "5(3x + 1)⁴",
+            "3(3x + 1)⁴"
+          ],
+          "answer": 1,
+          "explanation": "Chain rule: 5(3x + 1)⁴ × 3.",
+          "terms": [
+            "math-aa-5.1-chain-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q02",
+          "type": "mcq",
+          "prompt": "Differentiate x²eˣ.",
+          "options": [
+            "x²eˣ",
+            "2x + eˣ",
+            "eˣ(x² + 2x)",
+            "2xeˣ"
+          ],
+          "answer": 2,
+          "explanation": "Product rule: x²eˣ + 2xeˣ.",
+          "terms": [
+            "math-aa-5.1-product-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q03",
+          "type": "fill",
+          "text": "d/dx (e^(2x)) = ___",
+          "answer": "2e^(2x)",
+          "bank": [
+            "2xe^(2x)",
+            "e^(2x)",
+            "e^(2x)/2",
+            "2e^(2x)"
+          ],
+          "explanation": "Chain rule with inner function 2x, whose derivative is 2.",
+          "terms": [
+            "math-aa-5.1-chain-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q04",
+          "type": "tf",
+          "statement": "d/dx (sin 3x) = 3 cos 3x",
+          "answer": true,
+          "explanation": "Differentiate the outer sine, then multiply by the derivative of 3x.",
+          "terms": [
+            "math-aa-5.1-chain-rule",
+            "math-aa-5.1-standard-derivatives"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q05",
+          "type": "mcq",
+          "prompt": "Differentiate x/(x + 1).",
+          "options": [
+            "−1/(x + 1)²",
+            "(2x + 1)/(x + 1)²",
+            "1/(x + 1)²",
+            "1/(x + 1)"
+          ],
+          "answer": 2,
+          "explanation": "[(x + 1)(1) − x(1)]/(x + 1)² = 1/(x + 1)².",
+          "terms": [
+            "math-aa-5.1-quotient-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q06",
+          "type": "mcq",
+          "prompt": "Differentiate ln(x² + 1).",
+          "options": [
+            "1/(2x)",
+            "2x ln(x² + 1)",
+            "2x/(x² + 1)",
+            "1/(x² + 1)"
+          ],
+          "answer": 2,
+          "explanation": "d/dx ln u = u′/u.",
+          "terms": [
+            "math-aa-5.1-chain-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q07",
+          "type": "fill",
+          "text": "d/dx (cos x) = ___",
+          "answer": "−sin x",
+          "bank": [
+            "−cos x",
+            "tan x",
+            "sin x",
+            "−sin x"
+          ],
+          "explanation": "Remember the minus sign for cosine.",
+          "terms": [
+            "math-aa-5.1-standard-derivatives"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q08",
+          "type": "tf",
+          "statement": "The derivative of a product is the product of the derivatives.",
+          "answer": false,
+          "explanation": "Use the product rule: u′v + uv′.",
+          "terms": [
+            "math-aa-5.1-product-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q09",
+          "type": "match",
+          "prompt": "Match each function to the main rule needed.",
+          "pairs": [
+            {
+              "left": "(2x − 1)⁴",
+              "right": "Chain rule"
+            },
+            {
+              "left": "x sin x",
+              "right": "Product rule"
+            },
+            {
+              "left": "sin x / x",
+              "right": "Quotient rule"
+            },
+            {
+              "left": "x⁴ − 3x",
+              "right": "Power rule term by term"
+            }
+          ],
+          "explanation": "Identify the structure before you differentiate.",
+          "terms": [
+            "math-aa-5.1-chain-rule",
+            "math-aa-5.1-product-rule",
+            "math-aa-5.1-quotient-rule",
+            "math-aa-5.1-power-rule"
+          ]
+        },
+        {
+          "id": "math-aa-5.1-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to differentiate y = sin(x²).",
+          "items": [
+            "Identify inner u = x² and outer y = sin u",
+            "Differentiate the outer: dy/du = cos u",
+            "Differentiate the inner: du/dx = 2x",
+            "Multiply: dy/dx = 2x cos(x²)"
+          ],
+          "explanation": "The chain rule multiplies the two derivatives.",
+          "terms": [
+            "math-aa-5.1-chain-rule"
+          ]
+        }
+      ]
+    }
+  ]
+}

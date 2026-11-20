@@ -1,0 +1,413 @@
+{
+  "id": "math-aa-3.1",
+  "code": "SL 3.1–3.3",
+  "unit": "3",
+  "title": "Geometry and triangle trigonometry",
+  "level": "SL",
+  "summary": "Distances, midpoints, volumes and surface areas of 3D solids, and solving triangles with right-angled trigonometry, the sine rule and the cosine rule.",
+  "keyterms": [
+    {
+      "id": "math-aa-3.1-distance",
+      "term": "Distance between points",
+      "definition": "d = √((x₁ − x₂)² + (y₁ − y₂)² + (z₁ − z₂)²) in three dimensions.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-midpoint",
+      "term": "Midpoint",
+      "definition": "The point halfway between two points: average each coordinate.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-volume",
+      "term": "Volume of solids",
+      "definition": "Sphere (4/3)πr³; cone (1/3)πr²h; pyramid (1/3) × base area × height.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-surface-area",
+      "term": "Surface area",
+      "definition": "Total area of the faces of a solid; sphere 4πr², cone curved surface πrl.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-right-trig",
+      "term": "Right-angled trigonometry",
+      "definition": "sin θ = opp/hyp, cos θ = adj/hyp, tan θ = opp/adj (SOH CAH TOA).",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-sine-rule",
+      "term": "Sine rule",
+      "definition": "a/sin A = b/sin B = c/sin C; used with two angles and a side, or an angle opposite a known side.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-cosine-rule",
+      "term": "Cosine rule",
+      "definition": "c² = a² + b² − 2ab cos C; used with three sides or two sides and the included angle.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-ambiguous-case",
+      "term": "Ambiguous case",
+      "definition": "With two sides and a non-included angle, the sine rule may give two possible triangles.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-triangle-area",
+      "term": "Area of a triangle",
+      "definition": "Area = ½ab sin C, using two sides and the angle between them.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-elevation",
+      "term": "Angle of elevation",
+      "definition": "The angle measured upwards from the horizontal to a line of sight.",
+      "hl": false
+    },
+    {
+      "id": "math-aa-3.1-line-plane-angle",
+      "term": "Angle between a line and a plane",
+      "definition": "The angle between the line and its projection (shadow) on the plane.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-aa-3.1-1",
+      "title": "3D geometry",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-3.1-1-q01",
+          "type": "mcq",
+          "prompt": "Find the distance between (1, 2, 3) and (4, 6, 3).",
+          "options": [
+            "7",
+            "√7",
+            "25",
+            "5"
+          ],
+          "answer": 3,
+          "explanation": "√(3² + 4² + 0²) = √25 = 5.",
+          "terms": [
+            "math-aa-3.1-distance"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q02",
+          "type": "mcq",
+          "prompt": "Find the midpoint of (−2, 4, 1) and (6, 0, 5).",
+          "options": [
+            "(8, −4, 4)",
+            "(4, 2, 3)",
+            "(2, 2, 3)",
+            "(2, 2, 6)"
+          ],
+          "answer": 2,
+          "explanation": "Average each coordinate: (4/2, 4/2, 6/2).",
+          "terms": [
+            "math-aa-3.1-midpoint"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q03",
+          "type": "fill",
+          "text": "The volume of a sphere of radius 3 cm is ___π cm³.",
+          "answer": "36",
+          "bank": [
+            "36",
+            "108",
+            "12",
+            "27"
+          ],
+          "explanation": "(4/3)π × 27 = 36π.",
+          "terms": [
+            "math-aa-3.1-volume"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q04",
+          "type": "tf",
+          "statement": "A cone has one third of the volume of a cylinder with the same base and height.",
+          "answer": true,
+          "explanation": "V_cone = (1/3)πr²h, V_cylinder = πr²h.",
+          "terms": [
+            "math-aa-3.1-volume"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q05",
+          "type": "mcq",
+          "prompt": "Find the surface area of a sphere of radius 2.",
+          "options": [
+            "32π/3",
+            "4π",
+            "8π",
+            "16π"
+          ],
+          "answer": 3,
+          "explanation": "4πr² = 4π × 4 = 16π. 32π/3 is the volume.",
+          "terms": [
+            "math-aa-3.1-surface-area"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q06",
+          "type": "mcq",
+          "prompt": "Find the length of the space diagonal of a 3 × 4 × 12 cuboid.",
+          "options": [
+            "19",
+            "13",
+            "5",
+            "15"
+          ],
+          "answer": 1,
+          "explanation": "√(3² + 4² + 12²) = √169 = 13.",
+          "terms": [
+            "math-aa-3.1-distance"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q07",
+          "type": "fill",
+          "text": "The volume of a cone with r = 3 and h = 4 is ___π.",
+          "answer": "12",
+          "bank": [
+            "48",
+            "12",
+            "36",
+            "15"
+          ],
+          "explanation": "(1/3)π × 9 × 4 = 12π.",
+          "terms": [
+            "math-aa-3.1-volume"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q08",
+          "type": "tf",
+          "statement": "The angle between a line and a plane is measured between the line and its projection onto the plane.",
+          "answer": true,
+          "explanation": "Drop a perpendicular from a point on the line to the plane to form a right-angled triangle.",
+          "terms": [
+            "math-aa-3.1-line-plane-angle"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q09",
+          "type": "match",
+          "prompt": "Match each solid to its volume formula.",
+          "pairs": [
+            {
+              "left": "Sphere",
+              "right": "V = (4/3)πr³"
+            },
+            {
+              "left": "Cone",
+              "right": "V = (1/3)πr²h"
+            },
+            {
+              "left": "Pyramid",
+              "right": "V = (1/3) × base area × height"
+            },
+            {
+              "left": "Cylinder",
+              "right": "V = πr²h"
+            }
+          ],
+          "explanation": "Pointed solids have a factor of ⅓ compared with prisms of the same base and height.",
+          "terms": [
+            "math-aa-3.1-volume"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to find the angle between a space diagonal of a cube of side 2 and its base.",
+          "items": [
+            "Base diagonal: √(2² + 2²) = 2√2",
+            "Identify the right triangle with legs 2√2 and 2",
+            "Use tan θ = 2 / (2√2)",
+            "θ = arctan(1/√2) ≈ 35.3°"
+          ],
+          "explanation": "The base diagonal is the projection of the space diagonal onto the base.",
+          "terms": [
+            "math-aa-3.1-line-plane-angle",
+            "math-aa-3.1-right-trig"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-aa-3.1-2",
+      "title": "Sine rule, cosine rule and area",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-aa-3.1-2-q01",
+          "type": "mcq",
+          "prompt": "In a right-angled triangle, the side opposite angle θ is 5 and the hypotenuse is 10. Find θ.",
+          "options": [
+            "30°",
+            "26.6°",
+            "60°",
+            "45°"
+          ],
+          "answer": 0,
+          "explanation": "sin θ = 5/10 = ½, so θ = 30°.",
+          "terms": [
+            "math-aa-3.1-right-trig"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q02",
+          "type": "mcq",
+          "prompt": "In triangle ABC, a = 8, A = 30° and B = 45°. Find b.",
+          "options": [
+            "16.0",
+            "6.53",
+            "11.3",
+            "5.66"
+          ],
+          "answer": 2,
+          "explanation": "b = 8 sin 45° / sin 30° = 8 × 0.7071 / 0.5 ≈ 11.3.",
+          "terms": [
+            "math-aa-3.1-sine-rule"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q03",
+          "type": "fill",
+          "text": "The cosine rule: c² = a² + b² − ___.",
+          "answer": "2ab cos C",
+          "bank": [
+            "2bc cos A",
+            "ab cos C",
+            "2ab sin C",
+            "2ab cos C"
+          ],
+          "explanation": "With C = 90°, cos C = 0 and it reduces to Pythagoras.",
+          "terms": [
+            "math-aa-3.1-cosine-rule"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q04",
+          "type": "tf",
+          "statement": "Given two sides and a non-included acute angle, there may be two possible triangles.",
+          "answer": true,
+          "explanation": "sin B = k has an acute and an obtuse solution; check whether both fit with the given angle.",
+          "terms": [
+            "math-aa-3.1-ambiguous-case"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q05",
+          "type": "mcq",
+          "prompt": "Find the area of a triangle with sides 6 and 10 and an included angle of 30°.",
+          "options": [
+            "60",
+            "30",
+            "15",
+            "26.0"
+          ],
+          "answer": 2,
+          "explanation": "½ × 6 × 10 × sin 30° = 30 × ½ = 15.",
+          "terms": [
+            "math-aa-3.1-triangle-area"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q06",
+          "type": "mcq",
+          "prompt": "A triangle has sides 5, 7 and 8. Find the angle opposite the side of length 7.",
+          "options": [
+            "45°",
+            "60°",
+            "90°",
+            "30°"
+          ],
+          "answer": 1,
+          "explanation": "cos θ = (5² + 8² − 7²)/(2 × 5 × 8) = 40/80 = ½.",
+          "terms": [
+            "math-aa-3.1-cosine-rule"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q07",
+          "type": "fill",
+          "text": "An angle of elevation is measured upwards from the ___.",
+          "answer": "horizontal",
+          "bank": [
+            "line of sight",
+            "vertical",
+            "north line",
+            "horizontal"
+          ],
+          "explanation": "Elevation and depression are both measured from the horizontal.",
+          "terms": [
+            "math-aa-3.1-elevation"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q08",
+          "type": "tf",
+          "statement": "The sine rule can be used when you know three sides and no angles.",
+          "answer": false,
+          "explanation": "Each sine-rule ratio needs a side and its opposite angle; with three sides use the cosine rule.",
+          "terms": [
+            "math-aa-3.1-sine-rule",
+            "math-aa-3.1-cosine-rule"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q09",
+          "type": "match",
+          "prompt": "Match the given information to the best method.",
+          "pairs": [
+            {
+              "left": "Three sides",
+              "right": "Cosine rule for an angle"
+            },
+            {
+              "left": "Two sides and the included angle",
+              "right": "Cosine rule for the third side"
+            },
+            {
+              "left": "Two angles and a side",
+              "right": "Sine rule"
+            },
+            {
+              "left": "A right-angled triangle",
+              "right": "SOH CAH TOA"
+            }
+          ],
+          "explanation": "Choosing the right rule first saves time and errors.",
+          "terms": [
+            "math-aa-3.1-sine-rule",
+            "math-aa-3.1-cosine-rule",
+            "math-aa-3.1-right-trig"
+          ]
+        },
+        {
+          "id": "math-aa-3.1-2-q10",
+          "type": "order",
+          "prompt": "Order the steps for a = 6, b = 8, A = 40°, finding B.",
+          "items": [
+            "sin B = 8 sin 40° / 6",
+            "sin B ≈ 0.857",
+            "B ≈ 59.0° or B ≈ 121.0°",
+            "Both give angle sums under 180°, so there are two triangles"
+          ],
+          "explanation": "40° + 121.0° = 161.0° < 180°, so the obtuse solution is also valid.",
+          "terms": [
+            "math-aa-3.1-ambiguous-case",
+            "math-aa-3.1-sine-rule"
+          ]
+        }
+      ]
+    }
+  ]
+}

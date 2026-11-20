@@ -1,0 +1,28 @@
+[
+  {
+    "id": "math-aa-X-4-01",
+    "unit": "4",
+    "topics": ["math-aa-4.7"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Masses of apples",
+    "stem": "The masses of apples from an orchard are normally distributed with mean 150 g and standard deviation 12 g. Apples heavier than 165 g are graded \"large\".",
+    "parts": [
+      { "label": "a", "command": "Find", "prompt": "Find the probability that a randomly chosen apple is large.", "marks": 2,
+        "numeric": { "value": 0.106, "tolerance": 0.001, "unit": "" },
+        "markscheme": ["P(X > 165) with X ~ N(150, 12²) / z = 1.25", "0.106 (0.105649…)"] },
+      { "label": "b", "command": "Find", "prompt": "Apples lighter than 130 g are rejected. Find the percentage of apples rejected.", "marks": 2,
+        "numeric": { "value": 4.78, "tolerance": 0.01, "unit": "%" },
+        "markscheme": ["P(X < 130) = 0.0478", "4.78 %"] },
+      { "label": "c", "command": "Find", "prompt": "90% of apples have a mass greater than m grams. Find m.", "marks": 2,
+        "numeric": { "value": 134.6, "tolerance": 0.1, "unit": "g" },
+        "markscheme": ["P(X < m) = 0.1 / z = −1.2816", "m = 135 g (134.62…)"] },
+      { "label": "d", "command": "Find", "prompt": "A box contains 20 apples chosen at random. Find the probability that at least 3 of them are large.", "marks": 3,
+        "numeric": { "value": 0.355, "tolerance": 0.001, "unit": "" },
+        "markscheme": ["Y ~ B(20, 0.10565)", "P(Y ≥ 3) = 1 − P(Y ≤ 2)", "0.355"],
+        "notes": "Use the unrounded probability from (a); 0.106 gives 0.356, which is also accepted." },
+      { "label": "e", "command": "State", "prompt": "State one assumption needed for the model in part (d).", "marks": 1,
+        "markscheme": ["the masses of apples in the box are independent / apples are chosen at random from a large population so p is constant"] }
+    ]
+  }
+]
