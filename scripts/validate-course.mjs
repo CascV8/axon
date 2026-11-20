@@ -71,6 +71,7 @@ function validateCourse(cid) {
       return s + (g.weight || 0);
     }, 0);
     if (Math.abs(w - 100) > 0.01) err(`assessment.${l} group weights sum to ${w}, not 100`);
+    if (!a.groups.ia) err(`assessment.${l}.groups must include the internal assessment as group "ia"`);
 
     const b = c.boundaries?.[l];
     if (!Array.isArray(b) || !b.length) err(`boundaries.${l} required`);

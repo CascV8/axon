@@ -3,8 +3,10 @@ import { actions } from '../lib/store.js';
 import { useActive } from '../lib/active.js';
 
 export function IaToolkit() {
-  const { p, meta } = useActive();
+  const { p, meta, level } = useActive();
   const ia = meta.ia;
+  // The IA's share of the grade can differ between SL and HL, so read it from the assessment table.
+  const weight = meta.assessment[level]?.groups?.ia?.weight ?? ia.weight;
   // Biology stored its IA data at the top level before courses existed.
   const legacy = meta.id === 'biology' ? { marks: p.ia?.marks, checks: p.ia?.checks } : {};
   const mine = p.ia?.courses?.[meta.id] ?? legacy;
@@ -22,7 +24,7 @@ export function IaToolkit() {
     <div className="ia">
       <a className="back-link" href="#/exams">‹ Exam prep</a>
       <h1 className="page-title">IA toolkit <small className="page-course">{meta.icon} {meta.name}: {ia.name}</small></h1>
-      <p>The {ia.name.toLowerCase()} is worth {ia.weight}% of your {meta.name} grade, marked out of {ia.max} across {ia.criteria.length} criteria. Limit: {ia.limit}.</p>
+      <p>The {ia.name.toLowerCase()} is worth {weight}% of your {meta.name}{meta.levels.length > 1 ? ` ${level}` : ''} grade, marked out of {ia.max} across {ia.criteria.length} criteria. Limit: {ia.limit}.</p>
 
       <div className="tiles tiles-2">
         <div className="tile tile-acc"><span className="tile-label">Self-assessed</span><span className="tile-value">{total}/{ia.max}</span></div>
