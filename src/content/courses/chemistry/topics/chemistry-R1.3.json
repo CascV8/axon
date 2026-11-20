@@ -1,0 +1,422 @@
+{
+  "id": "chemistry-R1.3",
+  "code": "R1.3–R1.4",
+  "unit": "R1",
+  "title": "Energy from fuels; entropy and spontaneity",
+  "level": "SL",
+  "summary": "Combustion of fuels releases energy but also pollutants and CO₂. Compare fossil fuels, biofuels and fuel cells; at HL, use entropy and Gibbs energy to predict whether reactions are spontaneous.",
+  "keyterms": [
+    {
+      "id": "chemistry-r1.3-combustion",
+      "term": "Complete combustion",
+      "definition": "Burning in excess oxygen; hydrocarbons form CO₂ and H₂O only.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.3-incomplete",
+      "term": "Incomplete combustion",
+      "definition": "Burning in limited oxygen, producing CO and/or carbon (soot) as well as water.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.3-fossil-fuel",
+      "term": "Fossil fuel",
+      "definition": "Coal, crude oil or natural gas formed over millions of years from ancient organisms; non-renewable.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.3-biofuel",
+      "term": "Biofuel",
+      "definition": "A fuel produced from recently living biomass, e.g. bioethanol from fermentation of sugars.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.3-specific-energy",
+      "term": "Specific energy",
+      "definition": "Energy released per unit mass of fuel (kJ kg⁻¹); energy density is per unit volume.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.3-fuel-cell",
+      "term": "Fuel cell",
+      "definition": "An electrochemical cell that converts the chemical energy of a continuously supplied fuel and oxidant directly into electrical energy.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.3-greenhouse",
+      "term": "Greenhouse gas",
+      "definition": "A gas such as CO₂, CH₄ or H₂O that absorbs infrared radiation emitted by Earth, warming the atmosphere.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.3-carbon-neutral",
+      "term": "Carbon neutral",
+      "definition": "Describes a fuel whose combustion releases no more CO₂ than was absorbed in producing it (ideal for biofuels).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.3-entropy",
+      "term": "Entropy (S)",
+      "definition": "A measure of the dispersal of energy and matter (disorder) in a system; units J K⁻¹ mol⁻¹.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r1.3-gibbs",
+      "term": "Gibbs energy change (ΔG)",
+      "definition": "ΔG = ΔH − TΔS; a reaction is spontaneous when ΔG is negative.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r1.3-spontaneous",
+      "term": "Spontaneous reaction",
+      "definition": "A reaction that can occur without continuous external energy input once started; ΔG < 0. It may still be slow.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r1.3-delta-g-k",
+      "term": "ΔG and equilibrium",
+      "definition": "ΔG⦵ = −RT ln K: negative ΔG⦵ means K > 1, so products are favoured at equilibrium.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-R1.3-1",
+      "title": "Fuels and combustion",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R1.3-1-q01",
+          "type": "mcq",
+          "prompt": "What are the products of the complete combustion of propane?",
+          "options": [
+            "CO₂ and H₂O",
+            "CO₂ and H₂",
+            "CO and H₂O",
+            "C and H₂O"
+          ],
+          "answer": 0,
+          "explanation": "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O.",
+          "terms": [
+            "chemistry-r1.3-combustion"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q02",
+          "type": "fill",
+          "text": "Balanced: C₂H₅OH + ___O₂ → 2CO₂ + 3H₂O.",
+          "answer": "3",
+          "accept": [
+            "three"
+          ],
+          "bank": [
+            "3",
+            "2",
+            "7/2",
+            "6"
+          ],
+          "explanation": "O on the right = 4 + 3 = 7; ethanol supplies 1, so O₂ provides 6 atoms → 3 O₂.",
+          "terms": [
+            "chemistry-r1.3-combustion"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q03",
+          "type": "tf",
+          "statement": "Carbon monoxide from incomplete combustion is toxic because it binds to haemoglobin.",
+          "answer": true,
+          "explanation": "CO binds strongly to haemoglobin, reducing oxygen transport in the blood.",
+          "terms": [
+            "chemistry-r1.3-incomplete"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q04",
+          "type": "mcq",
+          "prompt": "Which fuel has the highest specific energy?",
+          "options": [
+            "Ethanol",
+            "Hydrogen",
+            "Wood",
+            "Coal"
+          ],
+          "answer": 1,
+          "explanation": "Hydrogen releases about 141 MJ kg⁻¹, far more per mass than the others, though its energy density as a gas is low.",
+          "terms": [
+            "chemistry-r1.3-specific-energy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q05",
+          "type": "match",
+          "prompt": "Match each fuel to a key issue.",
+          "pairs": [
+            {
+              "left": "Coal",
+              "right": "Highest CO₂ and SO₂ per unit energy"
+            },
+            {
+              "left": "Natural gas",
+              "right": "Methane leaks are a potent greenhouse gas"
+            },
+            {
+              "left": "Bioethanol",
+              "right": "Competes with food crops for land"
+            },
+            {
+              "left": "Hydrogen",
+              "right": "Low energy density; hard to store"
+            }
+          ],
+          "explanation": "Choosing fuels involves trade-offs between energy, cost and environment.",
+          "terms": [
+            "chemistry-r1.3-fossil-fuel",
+            "chemistry-r1.3-biofuel"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q06",
+          "type": "tf",
+          "statement": "Biofuels are exactly carbon neutral in practice.",
+          "answer": false,
+          "explanation": "Farming, processing and transport usually involve fossil-fuel use, so net emissions are above zero.",
+          "terms": [
+            "chemistry-r1.3-carbon-neutral",
+            "chemistry-r1.3-biofuel"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q07",
+          "type": "mcq",
+          "prompt": "Which gas is NOT a greenhouse gas?",
+          "options": [
+            "CO₂",
+            "CH₄",
+            "N₂",
+            "H₂O"
+          ],
+          "answer": 2,
+          "explanation": "N₂ is non-polar and symmetric with no IR-active vibration; it does not absorb IR.",
+          "terms": [
+            "chemistry-r1.3-greenhouse"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q08",
+          "type": "fill",
+          "text": "Bioethanol is made by ___ of sugars by yeast.",
+          "answer": "fermentation",
+          "bank": [
+            "fermentation",
+            "cracking",
+            "distillation",
+            "combustion"
+          ],
+          "explanation": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (anaerobic, yeast enzymes).",
+          "terms": [
+            "chemistry-r1.3-biofuel"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q09",
+          "type": "order",
+          "prompt": "Order the stages by which CO₂ from fossil fuels causes warming.",
+          "items": [
+            "Fuel burns, releasing CO₂",
+            "CO₂ concentration in the atmosphere rises",
+            "Earth emits infrared radiation",
+            "CO₂ absorbs and re-emits some IR",
+            "Lower atmosphere warms"
+          ],
+          "explanation": "Greenhouse gases absorb outgoing IR, not incoming visible light.",
+          "terms": [
+            "chemistry-r1.3-greenhouse"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-1-q10",
+          "type": "mcq",
+          "prompt": "In a hydrogen–oxygen fuel cell, what is the only product?",
+          "options": [
+            "Hydrogen peroxide",
+            "Ozone",
+            "CO₂",
+            "Water"
+          ],
+          "answer": 3,
+          "explanation": "Overall reaction: 2H₂ + O₂ → 2H₂O, producing electricity directly.",
+          "terms": [
+            "chemistry-r1.3-fuel-cell"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R1.3-2",
+      "title": "Entropy and Gibbs energy (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-R1.3-2-q01",
+          "type": "mcq",
+          "prompt": "Which change has the largest increase in entropy?",
+          "options": [
+            "H₂O(l) → H₂O(s)",
+            "H₂O(l) → H₂O(g)",
+            "N₂(g) + 3H₂(g) → 2NH₃(g)",
+            "NaCl(aq) → NaCl(s)"
+          ],
+          "answer": 1,
+          "explanation": "Gases have much higher entropy than liquids; liquid → gas greatly increases dispersal.",
+          "terms": [
+            "chemistry-r1.3-entropy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q02",
+          "type": "tf",
+          "statement": "A reaction with ΔH < 0 and ΔS > 0 is spontaneous at all temperatures.",
+          "answer": true,
+          "explanation": "ΔG = ΔH − TΔS is negative for every T when ΔH is negative and ΔS positive.",
+          "terms": [
+            "chemistry-r1.3-gibbs",
+            "chemistry-r1.3-spontaneous"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q03",
+          "type": "fill",
+          "text": "ΔG = ΔH − ___ΔS.",
+          "answer": "T",
+          "bank": [
+            "T",
+            "R",
+            "K",
+            "n"
+          ],
+          "explanation": "T is the absolute temperature in K; watch units (ΔS in J, ΔH in kJ).",
+          "terms": [
+            "chemistry-r1.3-gibbs"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q04",
+          "type": "mcq",
+          "prompt": "ΔH = +180 kJ mol⁻¹ and ΔS = +0.200 kJ K⁻¹ mol⁻¹. Above what temperature is the reaction spontaneous?",
+          "options": [
+            "300 K",
+            "600 K",
+            "900 K",
+            "1800 K"
+          ],
+          "answer": 2,
+          "explanation": "ΔG = 0 when T = ΔH/ΔS = 180/0.200 = 900 K; above this TΔS exceeds ΔH.",
+          "terms": [
+            "chemistry-r1.3-gibbs"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q05",
+          "type": "match",
+          "prompt": "Match the signs to spontaneity.",
+          "pairs": [
+            {
+              "left": "ΔH −, ΔS +",
+              "right": "Spontaneous at all T"
+            },
+            {
+              "left": "ΔH +, ΔS −",
+              "right": "Never spontaneous"
+            },
+            {
+              "left": "ΔH −, ΔS −",
+              "right": "Spontaneous at low T"
+            },
+            {
+              "left": "ΔH +, ΔS +",
+              "right": "Spontaneous at high T"
+            }
+          ],
+          "explanation": "The TΔS term grows in importance as temperature rises.",
+          "terms": [
+            "chemistry-r1.3-gibbs",
+            "chemistry-r1.3-spontaneous"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q06",
+          "type": "tf",
+          "statement": "A spontaneous reaction always happens quickly.",
+          "answer": false,
+          "explanation": "ΔG says nothing about rate; diamond → graphite is spontaneous but extremely slow (high Ea).",
+          "terms": [
+            "chemistry-r1.3-spontaneous"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q07",
+          "type": "mcq",
+          "prompt": "If ΔG⦵ for a reaction is large and negative, the equilibrium constant K is…",
+          "options": [
+            "zero",
+            "much less than 1",
+            "equal to 1",
+            "much greater than 1"
+          ],
+          "answer": 3,
+          "explanation": "ΔG⦵ = −RT ln K: negative ΔG⦵ means ln K > 0, so K > 1.",
+          "terms": [
+            "chemistry-r1.3-delta-g-k"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q08",
+          "type": "fill",
+          "text": "ΔS⦵ for a reaction = ΣS⦵(products) − ΣS⦵(___).",
+          "answer": "reactants",
+          "bank": [
+            "reactants",
+            "products",
+            "elements",
+            "bonds"
+          ],
+          "explanation": "Unlike ΔHf, standard entropies of elements are not zero.",
+          "terms": [
+            "chemistry-r1.3-entropy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q09",
+          "type": "order",
+          "prompt": "Order by standard entropy, lowest first.",
+          "items": [
+            "C(diamond)",
+            "H₂O(l)",
+            "H₂O(g)",
+            "C₃H₈(g)"
+          ],
+          "explanation": "Solids < liquids < gases; more complex gas molecules have higher entropy.",
+          "terms": [
+            "chemistry-r1.3-entropy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.3-2-q10",
+          "type": "mcq",
+          "prompt": "For N₂(g) + 3H₂(g) → 2NH₃(g), the sign of ΔS is…",
+          "options": [
+            "positive, more gas moles",
+            "negative, fewer gas moles",
+            "zero",
+            "cannot be predicted"
+          ],
+          "answer": 1,
+          "explanation": "4 mol gas → 2 mol gas: fewer ways to disperse energy, so ΔS < 0.",
+          "terms": [
+            "chemistry-r1.3-entropy"
+          ]
+        }
+      ]
+    }
+  ]
+}

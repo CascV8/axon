@@ -1,0 +1,127 @@
+[
+  {
+    "id": "chemistry-X-R3-01",
+    "unit": "R3",
+    "topics": ["chemistry-R3.1", "chemistry-R2.1"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Ethanoic acid content of vinegar",
+    "stem": "A 25.00 cm³ sample of vinegar was diluted to 250.0 cm³ with distilled water in a volumetric flask. A 25.00 cm³ portion of the diluted vinegar was titrated with 0.100 mol dm⁻³ sodium hydroxide solution. The mean of the concordant titres was 21.60 cm³. Assume ethanoic acid, CH₃COOH (M = 60.06 g mol⁻¹), is the only acid present.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Write",
+        "prompt": "Write the balanced equation, including state symbols, for the reaction of ethanoic acid with sodium hydroxide.",
+        "marks": 1,
+        "markscheme": [
+          "CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the concentration, in mol dm⁻³, of ethanoic acid in the diluted vinegar.",
+        "marks": 2,
+        "numeric": { "value": 0.0864, "tolerance": 0.0005, "unit": "mol dm⁻³" },
+        "markscheme": [
+          "n(NaOH) = 0.100 × 0.02160 = 2.16 × 10⁻³ mol = n(CH₃COOH)",
+          "c = 2.16 × 10⁻³ / 0.02500 = 0.0864 mol dm⁻³"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the concentration of ethanoic acid in the original vinegar in g dm⁻³.",
+        "marks": 2,
+        "numeric": { "value": 51.9, "tolerance": 0.3, "unit": "g dm⁻³" },
+        "markscheme": [
+          "original concentration = 0.0864 × 10 = 0.864 mol dm⁻³",
+          "0.864 × 60.06 = 51.9 g dm⁻³"
+        ],
+        "notes": "Apply ECF from (b)."
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "A 0.0864 mol dm⁻³ solution of hydrochloric acid has a pH of 1.06. Explain why the diluted vinegar has a higher pH, even though it has the same concentration of acid.",
+        "marks": 2,
+        "markscheme": [
+          "ethanoic acid is a weak acid / only partially dissociates / CH₃COOH ⇌ CH₃COO⁻ + H⁺",
+          "HCl dissociates completely, so [H⁺] in vinegar is lower and its pH is higher"
+        ]
+      },
+      {
+        "label": "e",
+        "command": "State",
+        "prompt": "State why the same volume of sodium hydroxide would be needed to neutralize 25.00 cm³ of 0.0864 mol dm⁻³ hydrochloric acid.",
+        "marks": 1,
+        "markscheme": [
+          "both acids are monoprotic and contain the same amount (mol) of acid / as NaOH removes H⁺ the weak acid continues to dissociate until all reacts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chemistry-X-R3-02",
+    "unit": "R3",
+    "topics": ["chemistry-R3.2"],
+    "paper": "P2",
+    "level": "HL",
+    "title": "A nickel–silver voltaic cell",
+    "stem": "A voltaic cell is built from a nickel electrode in 1.00 mol dm⁻³ Ni²⁺(aq) and a silver electrode in 1.00 mol dm⁻³ Ag⁺(aq), at 298 K. The half-cells are joined by a salt bridge containing potassium nitrate.\nE⦵(Ni²⁺/Ni) = −0.26 V   E⦵(Ag⁺/Ag) = +0.80 V   F = 96 500 C mol⁻¹",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Identify",
+        "prompt": "Identify the anode and state the direction of electron flow in the external circuit.",
+        "marks": 2,
+        "markscheme": [
+          "nickel is the anode / negative electrode",
+          "electrons flow from Ni to Ag through the wire"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Write",
+        "prompt": "Write the equation for the overall cell reaction.",
+        "marks": 1,
+        "markscheme": [
+          "Ni(s) + 2Ag⁺(aq) → Ni²⁺(aq) + 2Ag(s)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the standard cell potential, E⦵cell.",
+        "marks": 1,
+        "numeric": { "value": 1.06, "tolerance": 0.005, "unit": "V" },
+        "markscheme": [
+          "E⦵cell = 0.80 − (−0.26) = +1.06 V"
+        ],
+        "notes": "Reject multiplying the Ag⁺/Ag potential by 2."
+      },
+      {
+        "label": "d",
+        "command": "Calculate",
+        "prompt": "Calculate the standard Gibbs energy change, ΔG⦵, for the cell reaction in kJ.",
+        "marks": 2,
+        "numeric": { "value": -205, "tolerance": 1, "unit": "kJ" },
+        "markscheme": [
+          "n = 2 electrons transferred",
+          "ΔG⦵ = −nFE⦵ = −2 × 96 500 × 1.06 = −204 580 J = −205 kJ"
+        ],
+        "notes": "Apply ECF from (c)."
+      },
+      {
+        "label": "e",
+        "command": "Explain",
+        "prompt": "Explain the role of the salt bridge and state the direction in which nitrate ions move through it.",
+        "marks": 2,
+        "markscheme": [
+          "allows ions to move between half-cells to balance charge / completes the circuit without mixing the solutions",
+          "NO₃⁻ ions move towards the nickel half-cell (anode), where positive Ni²⁺ ions are being produced"
+        ]
+      }
+    ]
+  }
+]

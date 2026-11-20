@@ -1,0 +1,433 @@
+{
+  "id": "chemistry-S1.1",
+  "code": "S1.1",
+  "unit": "S1",
+  "title": "Introduction to the particulate nature of matter",
+  "level": "SL",
+  "summary": "Everything is made of particles. Learn to tell elements, compounds and mixtures apart, choose a separation technique, and explain states of matter and changes of state with the kinetic molecular model.",
+  "keyterms": [
+    {
+      "id": "chemistry-s1.1-element",
+      "term": "Element",
+      "definition": "A substance made of only one type of atom, which cannot be broken down into simpler substances by chemical means.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-compound",
+      "term": "Compound",
+      "definition": "A substance of two or more elements chemically combined in a fixed ratio, with properties different from its elements.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-mixture",
+      "term": "Mixture",
+      "definition": "Two or more substances physically combined in no fixed ratio; each keeps its own properties and they can be separated physically.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-homogeneous",
+      "term": "Homogeneous mixture",
+      "definition": "A mixture with uniform composition and a single phase throughout, such as a solution or air.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-heterogeneous",
+      "term": "Heterogeneous mixture",
+      "definition": "A mixture whose composition is not uniform, with visibly different phases, such as sand in water.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-filtration",
+      "term": "Filtration",
+      "definition": "Separating an insoluble solid from a liquid by passing the mixture through filter paper; the solid stays as the residue.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-distillation",
+      "term": "Distillation",
+      "definition": "Separating liquids by boiling point: the more volatile component evaporates, then condenses and is collected.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-chromatography",
+      "term": "Chromatography",
+      "definition": "Separating components by their different distribution between a stationary phase and a mobile phase.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-crystallization",
+      "term": "Crystallization",
+      "definition": "Obtaining a solid solute by evaporating some solvent and cooling the saturated solution so crystals form.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-kmt",
+      "term": "Kinetic molecular theory",
+      "definition": "Model in which matter consists of particles in constant random motion; their average kinetic energy is proportional to absolute temperature.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-kelvin",
+      "term": "Kelvin (absolute) temperature",
+      "definition": "Temperature scale starting at absolute zero; T/K = t/°C + 273.15. It is proportional to average particle kinetic energy.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-sublimation",
+      "term": "Sublimation",
+      "definition": "Direct change of state from solid to gas without passing through the liquid state; the reverse is deposition.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.1-state-change",
+      "term": "Change of state",
+      "definition": "A physical change between solid, liquid and gas in which intermolecular forces are overcome or formed at constant temperature.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S1.1-1",
+      "title": "Elements, compounds, mixtures and separation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which of these is a compound?",
+          "options": [
+            "Sodium chloride",
+            "Oxygen gas",
+            "Air",
+            "Brass"
+          ],
+          "answer": 0,
+          "explanation": "Sodium chloride contains Na and Cl chemically combined in a fixed 1:1 ratio. Air and brass are mixtures; oxygen is an element.",
+          "terms": [
+            "chemistry-s1.1-compound",
+            "chemistry-s1.1-mixture"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q02",
+          "type": "tf",
+          "statement": "The components of a mixture can be separated by physical methods.",
+          "answer": true,
+          "explanation": "Components of a mixture are not chemically bonded, so filtration, distillation or chromatography can separate them.",
+          "terms": [
+            "chemistry-s1.1-mixture"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q03",
+          "type": "mcq",
+          "prompt": "Which technique best separates ethanol (b.p. 78 °C) from water?",
+          "options": [
+            "Crystallization",
+            "Filtration",
+            "Fractional distillation",
+            "Paper chromatography"
+          ],
+          "answer": 2,
+          "explanation": "Both are miscible liquids with different boiling points, so fractional distillation separates them: ethanol vaporizes first.",
+          "terms": [
+            "chemistry-s1.1-distillation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q04",
+          "type": "fill",
+          "text": "Insoluble sand is removed from salt water by ___.",
+          "answer": "filtration",
+          "bank": [
+            "filtration",
+            "distillation",
+            "chromatography",
+            "sublimation"
+          ],
+          "explanation": "Filtration retains the insoluble solid as residue while the solution passes through as filtrate.",
+          "terms": [
+            "chemistry-s1.1-filtration"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q05",
+          "type": "mcq",
+          "prompt": "Salt water is best described as a…",
+          "options": [
+            "homogeneous mixture",
+            "compound",
+            "element",
+            "heterogeneous mixture"
+          ],
+          "answer": 0,
+          "explanation": "Dissolved salt is spread uniformly through one phase, so a solution is a homogeneous mixture.",
+          "terms": [
+            "chemistry-s1.1-homogeneous",
+            "chemistry-s1.1-mixture"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q06",
+          "type": "match",
+          "prompt": "Match each mixture to the best separation technique.",
+          "pairs": [
+            {
+              "left": "Dyes in a food colouring",
+              "right": "Chromatography"
+            },
+            {
+              "left": "Copper(II) sulfate from its solution",
+              "right": "Crystallization"
+            },
+            {
+              "left": "Chalk powder in water",
+              "right": "Filtration"
+            },
+            {
+              "left": "Pure water from seawater",
+              "right": "Simple distillation"
+            }
+          ],
+          "explanation": "Choose the technique from the property that differs: solubility, boiling point or affinity for the phases.",
+          "terms": [
+            "chemistry-s1.1-chromatography",
+            "chemistry-s1.1-crystallization",
+            "chemistry-s1.1-filtration",
+            "chemistry-s1.1-distillation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q07",
+          "type": "tf",
+          "statement": "A compound has the same properties as the elements it is made from.",
+          "answer": false,
+          "explanation": "Chemical combination produces a new substance: sodium (reactive metal) and chlorine (toxic gas) form harmless table salt.",
+          "terms": [
+            "chemistry-s1.1-compound"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q08",
+          "type": "fill",
+          "text": "In paper chromatography the solvent is the ___ phase.",
+          "answer": "mobile",
+          "bank": [
+            "mobile",
+            "stationary",
+            "solid",
+            "gas"
+          ],
+          "explanation": "The solvent moves up the paper (mobile phase); the water held in the paper fibres is the stationary phase.",
+          "terms": [
+            "chemistry-s1.1-chromatography"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q09",
+          "type": "order",
+          "prompt": "Put the steps for obtaining pure salt crystals from rock salt in order.",
+          "items": [
+            "Crush the rock salt",
+            "Dissolve in warm water and stir",
+            "Filter to remove insoluble rock",
+            "Evaporate some water from the filtrate",
+            "Leave to cool and crystallize"
+          ],
+          "explanation": "Dissolving separates soluble salt from insoluble material; crystallizing the filtrate recovers the salt.",
+          "terms": [
+            "chemistry-s1.1-filtration",
+            "chemistry-s1.1-crystallization"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-1-q10",
+          "type": "mcq",
+          "prompt": "Which is a heterogeneous mixture?",
+          "options": [
+            "Air",
+            "Brass",
+            "Vinegar",
+            "Oil and water"
+          ],
+          "answer": 3,
+          "explanation": "Oil and water form two separate layers (two phases), so the composition is not uniform.",
+          "terms": [
+            "chemistry-s1.1-heterogeneous"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S1.1-2",
+      "title": "States of matter and the kinetic model",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.1-2-q01",
+          "type": "mcq",
+          "prompt": "What does absolute temperature measure?",
+          "options": [
+            "The total energy of the particles",
+            "The average kinetic energy of the particles",
+            "The potential energy between particles",
+            "The speed of the fastest particle"
+          ],
+          "answer": 1,
+          "explanation": "Kelvin temperature is proportional to the average kinetic energy of the particles.",
+          "terms": [
+            "chemistry-s1.1-kelvin",
+            "chemistry-s1.1-kmt"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q02",
+          "type": "fill",
+          "text": "25 °C expressed in kelvin is ___ K.",
+          "answer": "298",
+          "accept": [
+            "298.15"
+          ],
+          "bank": [
+            "298",
+            "248",
+            "273",
+            "323"
+          ],
+          "explanation": "T/K = t/°C + 273 (273.15), so 25 + 273 = 298 K.",
+          "terms": [
+            "chemistry-s1.1-kelvin"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q03",
+          "type": "tf",
+          "statement": "During melting of a pure solid the temperature stays constant.",
+          "answer": true,
+          "explanation": "Energy supplied is used to overcome intermolecular forces (increase potential energy), not to raise the average kinetic energy.",
+          "terms": [
+            "chemistry-s1.1-state-change"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q04",
+          "type": "mcq",
+          "prompt": "Solid iodine turning directly into a purple vapour is called…",
+          "options": [
+            "evaporation",
+            "condensation",
+            "sublimation",
+            "deposition"
+          ],
+          "answer": 2,
+          "explanation": "Solid → gas without a liquid stage is sublimation; gas → solid is deposition.",
+          "terms": [
+            "chemistry-s1.1-sublimation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q05",
+          "type": "match",
+          "prompt": "Match each change of state to its name.",
+          "pairs": [
+            {
+              "left": "Liquid → solid",
+              "right": "Freezing"
+            },
+            {
+              "left": "Gas → liquid",
+              "right": "Condensation"
+            },
+            {
+              "left": "Gas → solid",
+              "right": "Deposition"
+            },
+            {
+              "left": "Liquid → gas",
+              "right": "Vaporization"
+            }
+          ],
+          "explanation": "Melting, vaporization and sublimation absorb energy; freezing, condensation and deposition release it.",
+          "terms": [
+            "chemistry-s1.1-state-change",
+            "chemistry-s1.1-sublimation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q06",
+          "type": "tf",
+          "statement": "Gas particles at the same temperature all move at the same speed.",
+          "answer": false,
+          "explanation": "Particles have a range (distribution) of speeds; temperature relates to the average kinetic energy.",
+          "terms": [
+            "chemistry-s1.1-kmt"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q07",
+          "type": "mcq",
+          "prompt": "Why is a gas much easier to compress than a liquid?",
+          "options": [
+            "Gas particles have no mass",
+            "Gas particles do not move",
+            "Gas particles are smaller",
+            "Gas particles are far apart with large spaces between them"
+          ],
+          "answer": 3,
+          "explanation": "In a gas, particles are widely spaced, so the volume can be reduced by pushing them closer.",
+          "terms": [
+            "chemistry-s1.1-kmt"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q08",
+          "type": "fill",
+          "text": "Condensation is an ___ process because intermolecular forces form.",
+          "answer": "exothermic",
+          "bank": [
+            "exothermic",
+            "endothermic",
+            "isothermal"
+          ],
+          "explanation": "Forming attractions between particles releases energy to the surroundings.",
+          "terms": [
+            "chemistry-s1.1-state-change"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q09",
+          "type": "order",
+          "prompt": "A solid is heated steadily from below its melting point until it boils. Order the stages.",
+          "items": [
+            "Temperature of solid rises",
+            "Solid melts at constant temperature",
+            "Temperature of liquid rises",
+            "Liquid boils at constant temperature",
+            "Temperature of gas rises"
+          ],
+          "explanation": "A heating curve has sloping regions (kinetic energy rising) and flat plateaus (changes of state).",
+          "terms": [
+            "chemistry-s1.1-state-change",
+            "chemistry-s1.1-kmt"
+          ]
+        },
+        {
+          "id": "chemistry-S1.1-2-q10",
+          "type": "mcq",
+          "prompt": "Which state has particles in fixed positions that vibrate?",
+          "options": [
+            "Solid",
+            "Liquid",
+            "Gas",
+            "All three"
+          ],
+          "answer": 0,
+          "explanation": "In a solid, strong attractions hold particles in fixed positions; they can only vibrate.",
+          "terms": [
+            "chemistry-s1.1-kmt"
+          ]
+        }
+      ]
+    }
+  ]
+}

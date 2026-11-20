@@ -1,0 +1,592 @@
+{
+  "id": "chemistry-R1.1",
+  "code": "R1.1–R1.2",
+  "unit": "R1",
+  "title": "Enthalpy changes and energy cycles",
+  "level": "SL",
+  "summary": "Reactions transfer energy to or from the surroundings. Measure enthalpy changes by calorimetry, use bond enthalpies and Hess's law; at HL, use formation and combustion data and Born–Haber cycles.",
+  "keyterms": [
+    {
+      "id": "chemistry-r1.1-exothermic",
+      "term": "Exothermic reaction",
+      "definition": "A reaction that releases heat to the surroundings; ΔH is negative and the surroundings warm up.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-endothermic",
+      "term": "Endothermic reaction",
+      "definition": "A reaction that absorbs heat from the surroundings; ΔH is positive and the surroundings cool.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-enthalpy-change",
+      "term": "Enthalpy change (ΔH)",
+      "definition": "The heat transferred at constant pressure, in kJ mol⁻¹; ΔH = H(products) − H(reactants).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-standard-conditions",
+      "term": "Standard conditions",
+      "definition": "Pressure 100 kPa, solution concentrations 1 mol dm⁻³, usually quoted at 298 K; shown by the ⦵ symbol.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-calorimetry",
+      "term": "Calorimetry",
+      "definition": "Measuring temperature change to find heat transferred: Q = mcΔT, then ΔH = −Q/n.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-shc",
+      "term": "Specific heat capacity",
+      "definition": "Energy needed to raise 1 g of a substance by 1 K; for water 4.18 J g⁻¹ K⁻¹.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-bond-enthalpy",
+      "term": "Average bond enthalpy",
+      "definition": "Energy needed to break one mole of a given bond in gaseous molecules, averaged over many compounds.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-hess",
+      "term": "Hess's law",
+      "definition": "The total enthalpy change of a reaction is independent of the route taken, provided start and end states are the same.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-energy-profile",
+      "term": "Energy profile",
+      "definition": "Diagram of potential energy along the reaction pathway showing reactants, products, activation energy and ΔH.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r1.1-enthalpy-formation",
+      "term": "Standard enthalpy of formation",
+      "definition": "Enthalpy change when one mole of a compound forms from its elements in their standard states; zero for elements.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r1.1-enthalpy-combustion",
+      "term": "Standard enthalpy of combustion",
+      "definition": "Enthalpy change when one mole of a substance burns completely in oxygen under standard conditions.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r1.1-born-haber",
+      "term": "Born–Haber cycle",
+      "definition": "An energy cycle applying Hess's law to the formation of an ionic compound, used to find lattice enthalpy.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-R1.1-1",
+      "title": "Measuring enthalpy changes",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R1.1-1-q01",
+          "type": "mcq",
+          "prompt": "In an exothermic reaction…",
+          "options": [
+            "ΔH is negative and the surroundings warm",
+            "ΔH is zero",
+            "products have more enthalpy than reactants",
+            "ΔH is positive and the surroundings cool"
+          ],
+          "answer": 0,
+          "explanation": "Energy is released to the surroundings, so products are lower in enthalpy.",
+          "terms": [
+            "chemistry-r1.1-exothermic",
+            "chemistry-r1.1-enthalpy-change"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q02",
+          "type": "tf",
+          "statement": "Dissolving ammonium nitrate in water makes the water colder, so the process is endothermic.",
+          "answer": true,
+          "explanation": "Heat is absorbed from the water (surroundings), lowering its temperature; ΔH > 0.",
+          "terms": [
+            "chemistry-r1.1-endothermic"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q03",
+          "type": "fill",
+          "text": "Heating 50.0 g of water by 10.0 K requires ___ J (c = 4.18 J g⁻¹ K⁻¹).",
+          "answer": "2090",
+          "accept": [
+            "2.09 × 10³",
+            "2.09 kJ"
+          ],
+          "bank": [
+            "2090",
+            "209",
+            "20 900",
+            "418"
+          ],
+          "explanation": "Q = mcΔT = 50.0 × 4.18 × 10.0 = 2090 J.",
+          "terms": [
+            "chemistry-r1.1-calorimetry",
+            "chemistry-r1.1-shc"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q04",
+          "type": "mcq",
+          "prompt": "0.0500 mol of acid is neutralized and releases 2.85 kJ. What is ΔH?",
+          "options": [
+            "−143 kJ mol⁻¹",
+            "−57.0 kJ mol⁻¹",
+            "+57.0 kJ mol⁻¹",
+            "−0.143 kJ mol⁻¹"
+          ],
+          "answer": 1,
+          "explanation": "ΔH = −Q/n = −2.85 / 0.0500 = −57.0 kJ mol⁻¹ (negative because heat is released).",
+          "terms": [
+            "chemistry-r1.1-calorimetry",
+            "chemistry-r1.1-enthalpy-change"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q05",
+          "type": "match",
+          "prompt": "Match each feature of an energy profile.",
+          "pairs": [
+            {
+              "left": "Activation energy",
+              "right": "Reactants up to the transition state"
+            },
+            {
+              "left": "ΔH",
+              "right": "Difference between reactants and products"
+            },
+            {
+              "left": "Transition state",
+              "right": "Highest point on the pathway"
+            }
+          ],
+          "explanation": "Ea is always positive; ΔH can be negative or positive.",
+          "terms": [
+            "chemistry-r1.1-energy-profile"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q06",
+          "type": "tf",
+          "statement": "The experimental ΔH from a simple coffee-cup calorimeter is usually less exothermic than the literature value.",
+          "answer": true,
+          "explanation": "Heat loss to the surroundings means the measured temperature rise is too small.",
+          "terms": [
+            "chemistry-r1.1-calorimetry"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q07",
+          "type": "mcq",
+          "prompt": "Which is the main source of systematic error in a simple calorimetry experiment?",
+          "options": [
+            "Stirring",
+            "Reading the balance",
+            "Heat loss to the surroundings",
+            "Using distilled water"
+          ],
+          "answer": 2,
+          "explanation": "Heat lost to air and the container makes ΔT too small; insulation and extrapolating a cooling curve help.",
+          "terms": [
+            "chemistry-r1.1-calorimetry"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q08",
+          "type": "fill",
+          "text": "Standard conditions use a pressure of ___ kPa.",
+          "answer": "100",
+          "bank": [
+            "100",
+            "101.3",
+            "1",
+            "273"
+          ],
+          "explanation": "The IB uses 100 kPa as standard pressure.",
+          "terms": [
+            "chemistry-r1.1-standard-conditions"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q09",
+          "type": "order",
+          "prompt": "Order the steps of a solution calorimetry experiment.",
+          "items": [
+            "Measure a known volume of solution into an insulated cup",
+            "Record the initial temperature for a few minutes",
+            "Add the second reactant and stir",
+            "Record the temperature until it peaks and starts to fall",
+            "Extrapolate the cooling line to find ΔT"
+          ],
+          "explanation": "Extrapolation corrects for heat lost while the reaction proceeds.",
+          "terms": [
+            "chemistry-r1.1-calorimetry"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-1-q10",
+          "type": "mcq",
+          "prompt": "In Q = mcΔT for a solution reaction, m is usually taken as…",
+          "options": [
+            "the molar mass",
+            "the number of moles",
+            "the mass of the solid reactant",
+            "the mass of the solution (≈ volume of water in cm³ × 1 g cm⁻³)"
+          ],
+          "answer": 3,
+          "explanation": "The water absorbs or supplies the heat; its density is taken as 1.00 g cm⁻³.",
+          "terms": [
+            "chemistry-r1.1-calorimetry",
+            "chemistry-r1.1-shc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R1.1-2",
+      "title": "Bond enthalpies and Hess's law",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R1.1-2-q01",
+          "type": "mcq",
+          "prompt": "Breaking bonds is…",
+          "options": [
+            "always exothermic",
+            "always endothermic",
+            "sometimes exothermic",
+            "neither"
+          ],
+          "answer": 1,
+          "explanation": "Energy must be supplied to separate bonded atoms; forming bonds releases energy.",
+          "terms": [
+            "chemistry-r1.1-bond-enthalpy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q02",
+          "type": "fill",
+          "text": "ΔH = Σ(bonds ___) − Σ(bonds formed).",
+          "answer": "broken",
+          "bank": [
+            "broken",
+            "formed",
+            "polar",
+            "single"
+          ],
+          "explanation": "Bond breaking is endothermic (positive); bond forming is exothermic (subtracted).",
+          "terms": [
+            "chemistry-r1.1-bond-enthalpy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q03",
+          "type": "mcq",
+          "prompt": "H₂ + Cl₂ → 2HCl. Bond enthalpies: H–H 436, Cl–Cl 242, H–Cl 431 kJ mol⁻¹. ΔH is…",
+          "options": [
+            "+184 kJ mol⁻¹",
+            "−247 kJ mol⁻¹",
+            "+247 kJ mol⁻¹",
+            "−184 kJ mol⁻¹"
+          ],
+          "answer": 3,
+          "explanation": "Broken: 436 + 242 = 678. Formed: 2 × 431 = 862. ΔH = 678 − 862 = −184 kJ mol⁻¹.",
+          "terms": [
+            "chemistry-r1.1-bond-enthalpy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q04",
+          "type": "tf",
+          "statement": "Values calculated from average bond enthalpies are approximate.",
+          "answer": true,
+          "explanation": "Bond enthalpies are averages across many compounds and apply to gases only.",
+          "terms": [
+            "chemistry-r1.1-bond-enthalpy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q05",
+          "type": "mcq",
+          "prompt": "By Hess's law, if A → B has ΔH = −100 kJ and B → C has ΔH = +40 kJ, then A → C has ΔH =",
+          "options": [
+            "−140 kJ",
+            "−60 kJ",
+            "+60 kJ",
+            "+140 kJ"
+          ],
+          "answer": 1,
+          "explanation": "Add the steps: −100 + 40 = −60 kJ.",
+          "terms": [
+            "chemistry-r1.1-hess"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q06",
+          "type": "fill",
+          "text": "If a reaction is reversed, the sign of ΔH is ___.",
+          "answer": "reversed",
+          "accept": [
+            "changed",
+            "inverted"
+          ],
+          "bank": [
+            "reversed",
+            "unchanged",
+            "doubled",
+            "zero"
+          ],
+          "explanation": "The reverse reaction has the same magnitude but opposite sign.",
+          "terms": [
+            "chemistry-r1.1-hess"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q07",
+          "type": "match",
+          "prompt": "Match each change to the enthalpy adjustment.",
+          "pairs": [
+            {
+              "left": "Reverse the equation",
+              "right": "Change the sign of ΔH"
+            },
+            {
+              "left": "Double the equation",
+              "right": "Double ΔH"
+            },
+            {
+              "left": "Add two equations",
+              "right": "Add their ΔH values"
+            }
+          ],
+          "explanation": "Manipulate equations to build the target, applying the same changes to ΔH.",
+          "terms": [
+            "chemistry-r1.1-hess"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q08",
+          "type": "tf",
+          "statement": "A strong bond has a low bond enthalpy.",
+          "answer": false,
+          "explanation": "Bond enthalpy measures the energy needed to break the bond, so stronger bonds have higher values.",
+          "terms": [
+            "chemistry-r1.1-bond-enthalpy"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q09",
+          "type": "order",
+          "prompt": "Order the steps of a Hess's law calculation using given equations.",
+          "items": [
+            "Write the target equation",
+            "Identify where each target species appears in the given equations",
+            "Reverse or multiply given equations as needed",
+            "Add the manipulated equations and cancel species",
+            "Add the corresponding ΔH values"
+          ],
+          "explanation": "The manipulated equations must sum to the target equation.",
+          "terms": [
+            "chemistry-r1.1-hess"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-2-q10",
+          "type": "mcq",
+          "prompt": "Why is the ΔH of combustion of methane calculated from bond enthalpies different from the data-booklet value?",
+          "options": [
+            "Water is a liquid under standard conditions, but bond enthalpies apply to gases",
+            "Bond enthalpies are exact",
+            "Methane has no C–H bonds",
+            "Hess's law does not apply"
+          ],
+          "answer": 0,
+          "explanation": "Bond enthalpies are averages for gaseous species; condensing water releases extra energy.",
+          "terms": [
+            "chemistry-r1.1-bond-enthalpy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R1.1-3",
+      "title": "Formation, combustion and Born–Haber cycles (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-R1.1-3-q01",
+          "type": "mcq",
+          "prompt": "What is the standard enthalpy of formation of O₂(g)?",
+          "options": [
+            "+249 kJ mol⁻¹",
+            "−286 kJ mol⁻¹",
+            "0 kJ mol⁻¹",
+            "+498 kJ mol⁻¹"
+          ],
+          "answer": 2,
+          "explanation": "Elements in their standard states have ΔHf⦵ = 0 by definition.",
+          "terms": [
+            "chemistry-r1.1-enthalpy-formation"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q02",
+          "type": "fill",
+          "text": "ΔH⦵(reaction) = ΣΔHf⦵(___) − ΣΔHf⦵(reactants).",
+          "answer": "products",
+          "bank": [
+            "products",
+            "reactants",
+            "bonds",
+            "elements"
+          ],
+          "explanation": "Products minus reactants, multiplied by their coefficients.",
+          "terms": [
+            "chemistry-r1.1-enthalpy-formation"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q03",
+          "type": "mcq",
+          "prompt": "Use ΔHf⦵: CO₂(g) −394, H₂O(l) −286, CH₄(g) −75 kJ mol⁻¹. ΔHc⦵ of CH₄ is…",
+          "options": [
+            "−891 kJ mol⁻¹",
+            "−966 kJ mol⁻¹",
+            "−755 kJ mol⁻¹",
+            "−605 kJ mol⁻¹"
+          ],
+          "answer": 0,
+          "explanation": "CH₄ + 2O₂ → CO₂ + 2H₂O: [−394 + 2(−286)] − [−75] = −966 + 75 = −891 kJ mol⁻¹.",
+          "terms": [
+            "chemistry-r1.1-enthalpy-formation",
+            "chemistry-r1.1-enthalpy-combustion"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q04",
+          "type": "tf",
+          "statement": "ΔH(reaction) = ΣΔHc(reactants) − ΣΔHc(products).",
+          "answer": true,
+          "explanation": "With combustion data the cycle runs through combustion products, so it is reactants minus products.",
+          "terms": [
+            "chemistry-r1.1-enthalpy-combustion",
+            "chemistry-r1.1-hess"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q05",
+          "type": "match",
+          "prompt": "Match each Born–Haber step to its sign.",
+          "pairs": [
+            {
+              "left": "Atomization of Na",
+              "right": "Endothermic: metallic bonds overcome"
+            },
+            {
+              "left": "First ionization of Na",
+              "right": "Endothermic: electron removed from Na(g)"
+            },
+            {
+              "left": "First electron affinity of Cl",
+              "right": "Exothermic: electron added to Cl(g)"
+            },
+            {
+              "left": "Ions forming the lattice",
+              "right": "Strongly exothermic: ionic bonds form"
+            }
+          ],
+          "explanation": "The large exothermic lattice formation makes the overall ΔHf negative.",
+          "terms": [
+            "chemistry-r1.1-born-haber"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q06",
+          "type": "order",
+          "prompt": "Order the Born–Haber steps for forming NaCl(s) from its elements.",
+          "items": [
+            "Atomize Na(s) to Na(g)",
+            "Ionize Na(g) to Na⁺(g)",
+            "Atomize ½Cl₂(g) to Cl(g)",
+            "Cl(g) gains an electron to form Cl⁻(g)",
+            "Gaseous ions form NaCl(s)"
+          ],
+          "explanation": "One common order; the cycle total equals ΔHf of NaCl.",
+          "terms": [
+            "chemistry-r1.1-born-haber"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q07",
+          "type": "mcq",
+          "prompt": "Which equation represents the standard enthalpy of formation of water?",
+          "options": [
+            "H₂(g) + ½O₂(g) → H₂O(l)",
+            "H₂O(l) → H₂(g) + ½O₂(g)",
+            "2H(g) + O(g) → H₂O(g)",
+            "2H₂(g) + O₂(g) → 2H₂O(l)"
+          ],
+          "answer": 0,
+          "explanation": "One mole of product from elements in their standard states.",
+          "terms": [
+            "chemistry-r1.1-enthalpy-formation"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q08",
+          "type": "fill",
+          "text": "In a Born–Haber cycle, lattice enthalpy is found using ___ law.",
+          "answer": "Hess's",
+          "accept": [
+            "Hess"
+          ],
+          "bank": [
+            "Hess's",
+            "Boyle's",
+            "Avogadro's",
+            "Charles's"
+          ],
+          "explanation": "It cannot be measured directly, so it is calculated from the other steps.",
+          "terms": [
+            "chemistry-r1.1-born-haber",
+            "chemistry-r1.1-hess"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q09",
+          "type": "tf",
+          "statement": "The second electron affinity of oxygen is exothermic.",
+          "answer": false,
+          "explanation": "Adding an electron to O⁻ requires work against repulsion, so it is endothermic.",
+          "terms": [
+            "chemistry-r1.1-born-haber"
+          ]
+        },
+        {
+          "id": "chemistry-R1.1-3-q10",
+          "type": "mcq",
+          "prompt": "ΔHf⦵ values: NH₃(g) −46, NO(g) +90, H₂O(g) −242 kJ mol⁻¹. For 4NH₃ + 5O₂ → 4NO + 6H₂O, ΔH⦵ is…",
+          "options": [
+            "+908 kJ",
+            "−908 kJ",
+            "−200 kJ",
+            "−1276 kJ"
+          ],
+          "answer": 1,
+          "explanation": "Products: 4(+90) + 6(−242) = −1092. Reactants: 4(−46) = −184 (O₂ is 0). ΔH = −1092 − (−184) = −908 kJ.",
+          "terms": [
+            "chemistry-r1.1-enthalpy-formation"
+          ]
+        }
+      ]
+    }
+  ]
+}

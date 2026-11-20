@@ -1,0 +1,425 @@
+{
+  "id": "chemistry-R2.1",
+  "code": "R2.1",
+  "unit": "R2",
+  "title": "How much? The amount of chemical change",
+  "level": "SL",
+  "summary": "Balanced equations give mole ratios. Use them to find reacting masses, gas volumes and titration results, identify the limiting reactant, and calculate percentage yield and atom economy.",
+  "keyterms": [
+    {
+      "id": "chemistry-r2.1-balanced-equation",
+      "term": "Balanced equation",
+      "definition": "A chemical equation with equal numbers of each atom (and equal charge) on both sides; coefficients give mole ratios.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-mole-ratio",
+      "term": "Mole ratio",
+      "definition": "The ratio of amounts of substances in a reaction, taken from the coefficients of the balanced equation.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-limiting",
+      "term": "Limiting reactant",
+      "definition": "The reactant that is completely used up first and so determines the maximum amount of product.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-excess",
+      "term": "Excess reactant",
+      "definition": "A reactant present in more than the amount needed to react with the limiting reactant.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-theoretical-yield",
+      "term": "Theoretical yield",
+      "definition": "The maximum mass of product that could form from the limiting reactant, calculated from the equation.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-percent-yield",
+      "term": "Percentage yield",
+      "definition": "(Actual yield ÷ theoretical yield) × 100.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-atom-economy",
+      "term": "Atom economy",
+      "definition": "(Molar mass of desired product ÷ total molar mass of all reactants) × 100; a measure of efficiency and waste.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-titration",
+      "term": "Titration",
+      "definition": "A technique in which one solution is added from a burette to a known volume of another until the reaction is just complete (end point).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-end-point",
+      "term": "End point / equivalence point",
+      "definition": "Equivalence: reactants exactly in stoichiometric ratio. End point: when the indicator changes colour.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.1-state-symbols",
+      "term": "State symbols",
+      "definition": "(s), (l), (g) and (aq) show the physical state of each species in an equation.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-R2.1-1",
+      "title": "Reacting amounts and limiting reactants",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R2.1-1-q01",
+          "type": "mcq",
+          "prompt": "What mass of CO₂ forms when 10.0 g of CaCO₃ (M = 100.09 g mol⁻¹) decomposes completely? CaCO₃ → CaO + CO₂",
+          "options": [
+            "4.40 g",
+            "5.60 g",
+            "10.0 g",
+            "2.20 g"
+          ],
+          "answer": 0,
+          "explanation": "n(CaCO₃) = 0.0999 mol = n(CO₂); m = 0.0999 × 44.01 = 4.40 g.",
+          "terms": [
+            "chemistry-r2.1-mole-ratio"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q02",
+          "type": "fill",
+          "text": "2H₂ + O₂ → 2H₂O. 4.0 mol H₂ reacts with 3.0 mol O₂. The limiting reactant is ___.",
+          "answer": "H₂",
+          "accept": [
+            "hydrogen"
+          ],
+          "bank": [
+            "H₂",
+            "O₂",
+            "H₂O"
+          ],
+          "explanation": "4.0 mol H₂ needs only 2.0 mol O₂, so O₂ is in excess and H₂ runs out first.",
+          "terms": [
+            "chemistry-r2.1-limiting",
+            "chemistry-r2.1-excess"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q03",
+          "type": "tf",
+          "statement": "The reactant with the smaller mass is always the limiting reactant.",
+          "answer": false,
+          "explanation": "Compare moles divided by their coefficients, not masses.",
+          "terms": [
+            "chemistry-r2.1-limiting"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q04",
+          "type": "mcq",
+          "prompt": "N₂ + 3H₂ → 2NH₃. What volume of NH₃ forms from 30 dm³ of H₂ (excess N₂), at the same T and p?",
+          "options": [
+            "10 dm³",
+            "20 dm³",
+            "30 dm³",
+            "60 dm³"
+          ],
+          "answer": 1,
+          "explanation": "Gas volumes are in the mole ratio: 3 : 2, so 30 × 2/3 = 20 dm³.",
+          "terms": [
+            "chemistry-r2.1-mole-ratio"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q05",
+          "type": "fill",
+          "text": "A reaction has a theoretical yield of 8.0 g and an actual yield of 6.0 g. The percentage yield is ___ %.",
+          "answer": "75",
+          "bank": [
+            "75",
+            "133",
+            "48",
+            "25"
+          ],
+          "explanation": "(6.0 / 8.0) × 100 = 75 %.",
+          "terms": [
+            "chemistry-r2.1-percent-yield",
+            "chemistry-r2.1-theoretical-yield"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q06",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Limiting reactant",
+              "right": "Used up first"
+            },
+            {
+              "left": "Excess reactant",
+              "right": "Some remains at the end"
+            },
+            {
+              "left": "Theoretical yield",
+              "right": "Maximum possible product"
+            },
+            {
+              "left": "Percentage yield",
+              "right": "Actual ÷ theoretical × 100"
+            }
+          ],
+          "explanation": "Theoretical yield is calculated from the limiting reactant.",
+          "terms": [
+            "chemistry-r2.1-limiting",
+            "chemistry-r2.1-excess",
+            "chemistry-r2.1-theoretical-yield",
+            "chemistry-r2.1-percent-yield"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q07",
+          "type": "mcq",
+          "prompt": "Why is the percentage yield usually below 100 %?",
+          "options": [
+            "Atom economy is always 100 %",
+            "Mass is created in reactions",
+            "Side reactions, incomplete reaction and losses during purification",
+            "The limiting reactant is in excess"
+          ],
+          "answer": 2,
+          "explanation": "Real processes lose product to side reactions, equilibria and transfers.",
+          "terms": [
+            "chemistry-r2.1-percent-yield"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q08",
+          "type": "fill",
+          "text": "The atom economy for making CaO from CaCO₃ → CaO + CO₂ (M: CaO 56.08, CaCO₃ 100.09) is ___ %.",
+          "answer": "56.0",
+          "accept": [
+            "56"
+          ],
+          "bank": [
+            "56.0",
+            "44.0",
+            "100",
+            "78.0"
+          ],
+          "explanation": "56.08 / 100.09 × 100 = 56.0 %; CO₂ is waste.",
+          "terms": [
+            "chemistry-r2.1-atom-economy"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q09",
+          "type": "order",
+          "prompt": "Order the steps in calculating a reacting mass.",
+          "items": [
+            "Write the balanced equation",
+            "Calculate moles of the known substance",
+            "Use the mole ratio to find moles of the unknown",
+            "Convert moles to mass with M"
+          ],
+          "explanation": "Mass → moles → ratio → moles → mass.",
+          "terms": [
+            "chemistry-r2.1-balanced-equation",
+            "chemistry-r2.1-mole-ratio"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-1-q10",
+          "type": "tf",
+          "statement": "Addition reactions have 100 % atom economy.",
+          "answer": true,
+          "explanation": "All reactant atoms end up in the single product, so there is no waste product.",
+          "terms": [
+            "chemistry-r2.1-atom-economy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R2.1-2",
+      "title": "Titrations and equations",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R2.1-2-q01",
+          "type": "mcq",
+          "prompt": "25.0 cm³ of NaOH is neutralized by 20.0 cm³ of 0.100 mol dm⁻³ HCl. What is [NaOH]?",
+          "options": [
+            "0.200 mol dm⁻³",
+            "0.0800 mol dm⁻³",
+            "0.100 mol dm⁻³",
+            "0.125 mol dm⁻³"
+          ],
+          "answer": 1,
+          "explanation": "n(HCl) = 0.00200 mol = n(NaOH) (1 : 1); c = 0.00200 / 0.0250 = 0.0800 mol dm⁻³.",
+          "terms": [
+            "chemistry-r2.1-titration",
+            "chemistry-r2.1-mole-ratio"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q02",
+          "type": "tf",
+          "statement": "At the equivalence point, reactants have been added in the stoichiometric ratio.",
+          "answer": true,
+          "explanation": "The indicator end point should be chosen to match the equivalence point closely.",
+          "terms": [
+            "chemistry-r2.1-end-point"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q03",
+          "type": "fill",
+          "text": "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. 0.0050 mol H₂SO₄ reacts with ___ mol NaOH.",
+          "answer": "0.010",
+          "accept": [
+            "0.01"
+          ],
+          "bank": [
+            "0.010",
+            "0.0050",
+            "0.0025",
+            "0.020"
+          ],
+          "explanation": "The ratio is 1 : 2, so 2 × 0.0050 = 0.010 mol.",
+          "terms": [
+            "chemistry-r2.1-mole-ratio"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q04",
+          "type": "mcq",
+          "prompt": "Which piece of apparatus delivers an accurate fixed volume (e.g. 25.00 cm³) of solution into the flask?",
+          "options": [
+            "Measuring cylinder",
+            "Burette",
+            "Volumetric pipette",
+            "Beaker"
+          ],
+          "answer": 2,
+          "explanation": "A volumetric pipette delivers one precise volume; the burette delivers variable volumes.",
+          "terms": [
+            "chemistry-r2.1-titration"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q05",
+          "type": "match",
+          "prompt": "Match each state symbol to its meaning.",
+          "pairs": [
+            {
+              "left": "(s)",
+              "right": "Solid"
+            },
+            {
+              "left": "(l)",
+              "right": "Pure liquid"
+            },
+            {
+              "left": "(g)",
+              "right": "Gas"
+            },
+            {
+              "left": "(aq)",
+              "right": "Dissolved in water"
+            }
+          ],
+          "explanation": "Use (l) for pure liquids such as water, (aq) for solutions.",
+          "terms": [
+            "chemistry-r2.1-state-symbols"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q06",
+          "type": "order",
+          "prompt": "Order the steps of an acid–base titration.",
+          "items": [
+            "Rinse the burette with the titrant and fill it",
+            "Pipette a known volume of analyte into a conical flask",
+            "Add a few drops of indicator",
+            "Add titrant until the indicator just changes colour",
+            "Repeat to obtain concordant titres"
+          ],
+          "explanation": "Concordant titres (within about 0.10 cm³) are averaged.",
+          "terms": [
+            "chemistry-r2.1-titration",
+            "chemistry-r2.1-end-point"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q07",
+          "type": "mcq",
+          "prompt": "Balance: __Al + __O₂ → __Al₂O₃",
+          "options": [
+            "2, 1, 1",
+            "4, 6, 2",
+            "2, 3, 1",
+            "4, 3, 2"
+          ],
+          "answer": 3,
+          "explanation": "4Al + 3O₂ → 2Al₂O₃: 4 Al and 6 O on each side.",
+          "terms": [
+            "chemistry-r2.1-balanced-equation"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q08",
+          "type": "tf",
+          "statement": "Rinsing the conical flask with distilled water before a titration affects the result.",
+          "answer": false,
+          "explanation": "Water does not change the moles of analyte delivered by the pipette, so the titre is unaffected.",
+          "terms": [
+            "chemistry-r2.1-titration"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q09",
+          "type": "fill",
+          "text": "The ionic equation for any strong acid–strong base neutralization is H⁺(aq) + OH⁻(aq) → ___.",
+          "answer": "H₂O(l)",
+          "accept": [
+            "H2O(l)",
+            "H₂O"
+          ],
+          "bank": [
+            "H₂O(l)",
+            "H₂(g)",
+            "O₂(g)",
+            "H₃O⁺(aq)"
+          ],
+          "explanation": "Spectator ions (e.g. Na⁺, Cl⁻) are left out of ionic equations.",
+          "terms": [
+            "chemistry-r2.1-balanced-equation",
+            "chemistry-r2.1-state-symbols"
+          ]
+        },
+        {
+          "id": "chemistry-R2.1-2-q10",
+          "type": "mcq",
+          "prompt": "Mean titre 22.40 cm³ of 0.0500 mol dm⁻³ KMnO₄ reacts with Fe²⁺ in a 5 Fe²⁺ : 1 MnO₄⁻ ratio. Moles of Fe²⁺ =",
+          "options": [
+            "5.60 × 10⁻³",
+            "2.24 × 10⁻⁴",
+            "2.24 × 10⁻²",
+            "1.12 × 10⁻³"
+          ],
+          "answer": 0,
+          "explanation": "n(MnO₄⁻) = 0.0500 × 0.02240 = 1.12 × 10⁻³; × 5 = 5.60 × 10⁻³ mol.",
+          "terms": [
+            "chemistry-r2.1-titration",
+            "chemistry-r2.1-mole-ratio"
+          ]
+        }
+      ]
+    }
+  ]
+}

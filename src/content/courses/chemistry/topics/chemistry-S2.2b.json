@@ -1,0 +1,597 @@
+{
+  "id": "chemistry-S2.2b",
+  "code": "S2.2",
+  "unit": "S2",
+  "title": "Covalent structures and intermolecular forces",
+  "level": "SL",
+  "summary": "Covalent substances are either giant networks or simple molecules. Compare the allotropes of carbon, rank intermolecular forces to explain physical properties, and at HL use sigma/pi bonds, hybridization and resonance.",
+  "keyterms": [
+    {
+      "id": "chemistry-s2.2b-giant-covalent",
+      "term": "Covalent network structure",
+      "definition": "A giant lattice of atoms joined by covalent bonds throughout, e.g. diamond, graphite, SiO₂; very high melting point.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2b-allotrope",
+      "term": "Allotropes",
+      "definition": "Different structural forms of the same element in the same physical state, e.g. diamond, graphite, graphene, C₆₀.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2b-ldf",
+      "term": "London (dispersion) forces",
+      "definition": "Attractions between instantaneous and induced dipoles; present in all molecules and increase with number of electrons.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2b-dipole-dipole",
+      "term": "Dipole–dipole forces",
+      "definition": "Attractions between permanent dipoles of polar molecules.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2b-hydrogen-bond",
+      "term": "Hydrogen bond",
+      "definition": "Strong dipole attraction between H bonded to N, O or F and a lone pair on N, O or F of another molecule.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2b-imf",
+      "term": "Intermolecular forces",
+      "definition": "Attractions between molecules (London, dipole–dipole, dipole–induced dipole, hydrogen bonding); much weaker than covalent bonds.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2b-solubility",
+      "term": "Solubility",
+      "definition": "How much solute dissolves; \"like dissolves like\": polar solutes in polar solvents, non-polar in non-polar.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2b-rf",
+      "term": "Retardation factor (Rf)",
+      "definition": "Distance moved by a component ÷ distance moved by the solvent front in chromatography.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2b-sigma",
+      "term": "Sigma (σ) bond",
+      "definition": "Bond formed by head-on overlap of orbitals, with electron density along the bond axis.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s2.2b-pi",
+      "term": "Pi (π) bond",
+      "definition": "Bond formed by sideways overlap of p orbitals, with electron density above and below the bond axis.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s2.2b-hybridization",
+      "term": "Hybridization",
+      "definition": "Mixing of atomic orbitals to form new equivalent hybrid orbitals (sp, sp², sp³).",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s2.2b-resonance",
+      "term": "Resonance structures",
+      "definition": "Two or more Lewis formulas for one species differing only in electron positions; the real structure is a hybrid.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s2.2b-delocalization",
+      "term": "Delocalization",
+      "definition": "Electrons shared by more than two atoms, spreading over several bonds, as in benzene and carbonate.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S2.2b-1",
+      "title": "Giant covalent structures",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S2.2b-1-q01",
+          "type": "mcq",
+          "prompt": "Why does graphite conduct electricity but diamond does not?",
+          "options": [
+            "Graphite has ions",
+            "Each C in graphite has one delocalized electron",
+            "Diamond has free electrons",
+            "Graphite is a metal"
+          ],
+          "answer": 1,
+          "explanation": "In graphite each C bonds to three others; the fourth electron is delocalized across the layer.",
+          "terms": [
+            "chemistry-s2.2b-allotrope",
+            "chemistry-s2.2b-giant-covalent"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q02",
+          "type": "tf",
+          "statement": "Diamond has a very high melting point because of strong covalent bonds throughout the structure.",
+          "answer": true,
+          "explanation": "Melting requires breaking many strong C–C covalent bonds in the giant network.",
+          "terms": [
+            "chemistry-s2.2b-giant-covalent"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q03",
+          "type": "match",
+          "prompt": "Match each allotrope to its structure.",
+          "pairs": [
+            {
+              "left": "Diamond",
+              "right": "Each C bonded to 4 others, tetrahedral"
+            },
+            {
+              "left": "Graphite",
+              "right": "Layers of hexagons, weak forces between"
+            },
+            {
+              "left": "Graphene",
+              "right": "A single layer of hexagonal carbon"
+            },
+            {
+              "left": "C₆₀ fullerene",
+              "right": "Molecular sphere of 60 C atoms"
+            }
+          ],
+          "explanation": "Same element, different bonding arrangements and properties.",
+          "terms": [
+            "chemistry-s2.2b-allotrope"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q04",
+          "type": "fill",
+          "text": "Silicon dioxide (quartz) has a covalent ___ structure.",
+          "answer": "network",
+          "accept": [
+            "giant"
+          ],
+          "bank": [
+            "network",
+            "molecular",
+            "ionic",
+            "metallic"
+          ],
+          "explanation": "Each Si bonds to four O and each O to two Si in a giant 3D lattice.",
+          "terms": [
+            "chemistry-s2.2b-giant-covalent"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q05",
+          "type": "mcq",
+          "prompt": "Why is graphite soft and useful as a lubricant?",
+          "options": [
+            "Its covalent bonds are weak",
+            "Layers are held by weak London forces and slide",
+            "It contains ions",
+            "It is amorphous"
+          ],
+          "answer": 1,
+          "explanation": "Within layers bonds are strong; between layers only weak forces act.",
+          "terms": [
+            "chemistry-s2.2b-allotrope",
+            "chemistry-s2.2b-ldf"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q06",
+          "type": "tf",
+          "statement": "Fullerene C₆₀ has a higher melting point than diamond.",
+          "answer": false,
+          "explanation": "C₆₀ is molecular: only weak intermolecular forces hold the molecules together, so it sublimes at a much lower temperature.",
+          "terms": [
+            "chemistry-s2.2b-allotrope"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q07",
+          "type": "mcq",
+          "prompt": "In diamond, the C–C–C bond angle is…",
+          "options": [
+            "120°",
+            "180°",
+            "90°",
+            "109.5°"
+          ],
+          "answer": 3,
+          "explanation": "Each carbon is tetrahedrally bonded to four others.",
+          "terms": [
+            "chemistry-s2.2b-giant-covalent"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q08",
+          "type": "fill",
+          "text": "Different forms of the same element are called ___.",
+          "answer": "allotropes",
+          "bank": [
+            "allotropes",
+            "isotopes",
+            "isomers",
+            "polymers"
+          ],
+          "explanation": "Allotropes differ in how atoms are bonded; isotopes differ in neutron number.",
+          "terms": [
+            "chemistry-s2.2b-allotrope"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q09",
+          "type": "order",
+          "prompt": "Order these by melting point, lowest first.",
+          "items": [
+            "Iodine (I₂)",
+            "Sodium chloride",
+            "Silicon dioxide",
+            "Diamond"
+          ],
+          "explanation": "Iodine is molecular (weak London forces); NaCl is an ionic lattice; SiO₂ and diamond are covalent networks, with diamond highest.",
+          "terms": [
+            "chemistry-s2.2b-giant-covalent",
+            "chemistry-s2.2b-allotrope"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-1-q10",
+          "type": "mcq",
+          "prompt": "Which substance is a good conductor of electricity along its plane and is one atom thick?",
+          "options": [
+            "Graphene",
+            "Silicon dioxide",
+            "C₆₀",
+            "Diamond"
+          ],
+          "answer": 0,
+          "explanation": "Graphene is a single graphite layer with delocalized electrons; it is very strong and conductive.",
+          "terms": [
+            "chemistry-s2.2b-allotrope"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S2.2b-2",
+      "title": "Intermolecular forces and properties",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S2.2b-2-q01",
+          "type": "mcq",
+          "prompt": "Which substance has hydrogen bonding between its molecules?",
+          "options": [
+            "CH₄",
+            "HCl",
+            "CH₃OH",
+            "CH₃OCH₃"
+          ],
+          "answer": 2,
+          "explanation": "Methanol has an O–H group: H bonded to O can attract a lone pair on another O.",
+          "terms": [
+            "chemistry-s2.2b-hydrogen-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q02",
+          "type": "tf",
+          "statement": "London forces exist between all molecules, polar or non-polar.",
+          "answer": true,
+          "explanation": "Temporary dipoles arise in any electron cloud.",
+          "terms": [
+            "chemistry-s2.2b-ldf"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q03",
+          "type": "mcq",
+          "prompt": "Why does the boiling point of the halogens increase down group 17?",
+          "options": [
+            "More electrons give stronger London forces",
+            "Hydrogen bonding increases",
+            "Ionic character increases",
+            "Stronger covalent bonds"
+          ],
+          "answer": 0,
+          "explanation": "Larger molecules with more electrons are more polarizable, so London forces are stronger.",
+          "terms": [
+            "chemistry-s2.2b-ldf"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q04",
+          "type": "fill",
+          "text": "Water boils much higher than H₂S because of ___ bonding between water molecules.",
+          "answer": "hydrogen",
+          "bank": [
+            "hydrogen",
+            "covalent",
+            "ionic",
+            "metallic"
+          ],
+          "explanation": "O is very electronegative and small, so O–H…O hydrogen bonds form; S–H bonds do not hydrogen bond significantly.",
+          "terms": [
+            "chemistry-s2.2b-hydrogen-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q05",
+          "type": "match",
+          "prompt": "Match each substance to its strongest intermolecular force.",
+          "pairs": [
+            {
+              "left": "Ne",
+              "right": "London forces"
+            },
+            {
+              "left": "CH₃Cl",
+              "right": "Dipole–dipole"
+            },
+            {
+              "left": "NH₃",
+              "right": "Hydrogen bonding"
+            },
+            {
+              "left": "C₈H₁₈",
+              "right": "London forces (many electrons)"
+            }
+          ],
+          "explanation": "Hydrogen bonding needs H on N, O or F; polar molecules have dipole–dipole forces.",
+          "terms": [
+            "chemistry-s2.2b-ldf",
+            "chemistry-s2.2b-dipole-dipole",
+            "chemistry-s2.2b-hydrogen-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q06",
+          "type": "tf",
+          "statement": "When ethanol boils, its covalent C–O bonds are broken.",
+          "answer": false,
+          "explanation": "Boiling a molecular substance overcomes intermolecular forces only; the molecules stay intact.",
+          "terms": [
+            "chemistry-s2.2b-imf"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q07",
+          "type": "mcq",
+          "prompt": "Which is most soluble in hexane?",
+          "options": [
+            "Iodine (I₂)",
+            "Glucose",
+            "Ethanoic acid",
+            "NaCl"
+          ],
+          "answer": 0,
+          "explanation": "Like dissolves like: non-polar I₂ dissolves in non-polar hexane via London forces.",
+          "terms": [
+            "chemistry-s2.2b-solubility"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q08",
+          "type": "order",
+          "prompt": "Order by boiling point, lowest first (all have similar molar masses).",
+          "items": [
+            "Butane",
+            "Propanal",
+            "Propan-1-ol"
+          ],
+          "explanation": "Similar London forces; propanal adds dipole–dipole forces; propanol adds hydrogen bonding.",
+          "terms": [
+            "chemistry-s2.2b-ldf",
+            "chemistry-s2.2b-dipole-dipole",
+            "chemistry-s2.2b-hydrogen-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q09",
+          "type": "fill",
+          "text": "In chromatography, a spot travels 3.0 cm while the solvent front travels 6.0 cm. Its Rf is ___.",
+          "answer": "0.50",
+          "accept": [
+            "0.5"
+          ],
+          "bank": [
+            "0.50",
+            "2.0",
+            "3.0",
+            "0.33"
+          ],
+          "explanation": "Rf = 3.0 / 6.0 = 0.50. Rf values are always between 0 and 1.",
+          "terms": [
+            "chemistry-s2.2b-rf"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-2-q10",
+          "type": "mcq",
+          "prompt": "In paper chromatography with a non-polar solvent, which component will have the lowest Rf?",
+          "options": [
+            "The most polar component",
+            "The least polar component",
+            "The most volatile component",
+            "All have the same Rf"
+          ],
+          "answer": 0,
+          "explanation": "Polar components are attracted to the polar stationary phase (water in the paper) and move least.",
+          "terms": [
+            "chemistry-s2.2b-rf",
+            "chemistry-s2.2b-solubility"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S2.2b-3",
+      "title": "Sigma, pi, hybridization and resonance (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-S2.2b-3-q01",
+          "type": "mcq",
+          "prompt": "How many σ and π bonds are in ethyne, H–C≡C–H?",
+          "options": [
+            "2 σ, 3 π",
+            "5 σ, 0 π",
+            "4 σ, 1 π",
+            "3 σ, 2 π"
+          ],
+          "answer": 3,
+          "explanation": "Every bond has one σ; the triple bond adds two π. Two C–H σ + one C–C σ = 3 σ.",
+          "terms": [
+            "chemistry-s2.2b-sigma",
+            "chemistry-s2.2b-pi"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q02",
+          "type": "tf",
+          "statement": "A π bond is formed by sideways overlap of p orbitals.",
+          "answer": true,
+          "explanation": "Electron density lies above and below the internuclear axis.",
+          "terms": [
+            "chemistry-s2.2b-pi"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q03",
+          "type": "match",
+          "prompt": "Match each carbon to its hybridization.",
+          "pairs": [
+            {
+              "left": "C in CH₄",
+              "right": "sp³"
+            },
+            {
+              "left": "C in C₂H₄",
+              "right": "sp²"
+            },
+            {
+              "left": "C in C₂H₂",
+              "right": "sp"
+            }
+          ],
+          "explanation": "Count electron domains: 4 → sp³, 3 → sp², 2 → sp.",
+          "terms": [
+            "chemistry-s2.2b-hybridization"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q04",
+          "type": "fill",
+          "text": "The bond angle around an sp² hybridized carbon is about ___°.",
+          "answer": "120",
+          "bank": [
+            "120",
+            "109.5",
+            "180",
+            "90"
+          ],
+          "explanation": "Three hybrid orbitals point to the corners of a triangle.",
+          "terms": [
+            "chemistry-s2.2b-hybridization"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q05",
+          "type": "mcq",
+          "prompt": "In benzene, all C–C bonds are the same length because…",
+          "options": [
+            "they are all double bonds",
+            "carbon is sp³ hybridized",
+            "they are all single bonds",
+            "π electrons are delocalized over the ring"
+          ],
+          "answer": 3,
+          "explanation": "The six π electrons are spread over all six carbons, giving bonds intermediate between single and double (bond order 1.5).",
+          "terms": [
+            "chemistry-s2.2b-delocalization",
+            "chemistry-s2.2b-resonance"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q06",
+          "type": "tf",
+          "statement": "Benzene readily undergoes addition reactions like alkenes.",
+          "answer": false,
+          "explanation": "Addition would destroy the stable delocalized ring; benzene prefers substitution.",
+          "terms": [
+            "chemistry-s2.2b-delocalization"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q07",
+          "type": "mcq",
+          "prompt": "What is the C–O bond order in the carbonate ion?",
+          "options": [
+            "1",
+            "1.33",
+            "1.5",
+            "2"
+          ],
+          "answer": 1,
+          "explanation": "Three resonance structures share one double bond across three C–O bonds: 4 bonding pairs / 3 bonds = 1.33.",
+          "terms": [
+            "chemistry-s2.2b-resonance",
+            "chemistry-s2.2b-delocalization"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q08",
+          "type": "fill",
+          "text": "A π bond is ___ than a σ bond between the same atoms.",
+          "answer": "weaker",
+          "bank": [
+            "weaker",
+            "stronger",
+            "shorter"
+          ],
+          "explanation": "Sideways overlap is less effective than head-on overlap, so π bonds are weaker and more reactive.",
+          "terms": [
+            "chemistry-s2.2b-pi",
+            "chemistry-s2.2b-sigma"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q09",
+          "type": "mcq",
+          "prompt": "Which species shows resonance?",
+          "options": [
+            "NH₄⁺",
+            "H₂O",
+            "CH₄",
+            "NO₃⁻"
+          ],
+          "answer": 3,
+          "explanation": "NO₃⁻ can be drawn with the N=O double bond in three equivalent positions.",
+          "terms": [
+            "chemistry-s2.2b-resonance"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2b-3-q10",
+          "type": "order",
+          "prompt": "Order by C–C bond length, shortest first.",
+          "items": [
+            "Ethyne C≡C",
+            "Ethene C=C",
+            "Benzene C–C",
+            "Ethane C–C"
+          ],
+          "explanation": "Bond orders 3, 2, 1.5 and 1: higher bond order gives shorter bonds.",
+          "terms": [
+            "chemistry-s2.2b-delocalization"
+          ]
+        }
+      ]
+    }
+  ]
+}

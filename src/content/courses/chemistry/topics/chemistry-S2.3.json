@@ -1,0 +1,581 @@
+{
+  "id": "chemistry-S2.3",
+  "code": "S2.3–S2.4",
+  "unit": "S2",
+  "title": "Metallic model and materials",
+  "level": "SL",
+  "summary": "Metals are lattices of cations in a sea of delocalized electrons. Explain metal properties, use the bonding triangle to classify materials, and understand alloys and polymers; at HL, transition-metal bonding and condensation polymers.",
+  "keyterms": [
+    {
+      "id": "chemistry-s2.3-metallic-bond",
+      "term": "Metallic bond",
+      "definition": "The electrostatic attraction between a lattice of cations and a sea of delocalized electrons.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.3-delocalized-electrons",
+      "term": "Delocalized electrons",
+      "definition": "Valence electrons not attached to any one atom, free to move throughout the metal lattice.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.3-malleable",
+      "term": "Malleable / ductile",
+      "definition": "Able to be hammered into shape / drawn into wires; layers of cations slide without breaking the metallic bond.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.3-bonding-triangle",
+      "term": "Bonding triangle",
+      "definition": "A diagram plotting electronegativity difference against average electronegativity to locate a binary compound between ionic, covalent and metallic bonding.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.3-alloy",
+      "term": "Alloy",
+      "definition": "A mixture of a metal with other elements; different-sized atoms disrupt the layers, usually making it stronger and harder.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.3-polymer",
+      "term": "Polymer",
+      "definition": "A large molecule made of many repeating units joined covalently.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.3-addition-polymer",
+      "term": "Addition polymerization",
+      "definition": "Joining of unsaturated monomers (alkenes) by opening their C=C bonds, with no other product.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.3-repeating-unit",
+      "term": "Repeating unit",
+      "definition": "The smallest part of a polymer chain which repeats to make the whole chain.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.3-condensation-polymer",
+      "term": "Condensation polymerization",
+      "definition": "Joining monomers with two functional groups, eliminating a small molecule (often water) at each link.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s2.3-polyamide",
+      "term": "Polyamide",
+      "definition": "A condensation polymer whose monomers are linked by amide groups (–CONH–), e.g. from a diamine and a dicarboxylic acid.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s2.3-polyester",
+      "term": "Polyester",
+      "definition": "A condensation polymer whose monomers are linked by ester groups (–COO–), e.g. from a diol and a dicarboxylic acid.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s2.3-transition-metallic",
+      "term": "Transition-metal bonding",
+      "definition": "Both 4s and 3d electrons can be delocalized, giving transition metals high melting points and strong metallic bonding.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S2.3-1",
+      "title": "Metallic bonding",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S2.3-1-q01",
+          "type": "mcq",
+          "prompt": "Why do metals conduct electricity?",
+          "options": [
+            "Delocalized electrons move through the lattice",
+            "Protons move through the metal",
+            "Covalent bonds conduct",
+            "Mobile ions carry the charge"
+          ],
+          "answer": 0,
+          "explanation": "Delocalized electrons move when a potential difference is applied.",
+          "terms": [
+            "chemistry-s2.3-delocalized-electrons"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-1-q02",
+          "type": "tf",
+          "statement": "Metals are malleable because layers of cations can slide over each other while the delocalized electrons keep holding them together.",
+          "answer": true,
+          "explanation": "Unlike ionic lattices, no repulsion builds up when layers move.",
+          "terms": [
+            "chemistry-s2.3-malleable",
+            "chemistry-s2.3-metallic-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-1-q03",
+          "type": "mcq",
+          "prompt": "Why does magnesium have a higher melting point than sodium?",
+          "options": [
+            "Mg has weaker metallic bonds",
+            "Na has covalent bonds",
+            "Mg²⁺ is smaller and more charged, with more delocalized electrons",
+            "Mg is a non-metal"
+          ],
+          "answer": 2,
+          "explanation": "Stronger attraction between smaller, more highly charged cations and more delocalized electrons strengthens metallic bonding.",
+          "terms": [
+            "chemistry-s2.3-metallic-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-1-q04",
+          "type": "fill",
+          "text": "Metallic bonding is the attraction between a lattice of cations and ___ electrons.",
+          "answer": "delocalized",
+          "accept": [
+            "delocalised"
+          ],
+          "bank": [
+            "delocalized",
+            "shared",
+            "bonding",
+            "core"
+          ],
+          "explanation": "The electrons are not attached to any one atom.",
+          "terms": [
+            "chemistry-s2.3-delocalized-electrons",
+            "chemistry-s2.3-metallic-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-1-q05",
+          "type": "order",
+          "prompt": "Order by melting point, lowest first.",
+          "items": [
+            "Potassium",
+            "Sodium",
+            "Magnesium",
+            "Aluminium"
+          ],
+          "explanation": "Metallic bond strength rises with smaller cation radius and more delocalized electrons per atom.",
+          "terms": [
+            "chemistry-s2.3-metallic-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-1-q06",
+          "type": "tf",
+          "statement": "Melting points of group 1 metals increase down the group.",
+          "answer": false,
+          "explanation": "Cations get larger down the group, so attraction to the delocalized electrons weakens and melting points fall.",
+          "terms": [
+            "chemistry-s2.3-metallic-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-1-q07",
+          "type": "match",
+          "prompt": "Match each property of metals to its explanation.",
+          "pairs": [
+            {
+              "left": "Electrical conductivity",
+              "right": "Mobile delocalized electrons"
+            },
+            {
+              "left": "Malleability",
+              "right": "Layers slide without breaking bonds"
+            },
+            {
+              "left": "High melting point",
+              "right": "Strong attraction between cations and electrons"
+            }
+          ],
+          "explanation": "All metal properties follow from the cation lattice with delocalized electrons.",
+          "terms": [
+            "chemistry-s2.3-metallic-bond",
+            "chemistry-s2.3-malleable",
+            "chemistry-s2.3-delocalized-electrons"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-1-q08",
+          "type": "mcq",
+          "prompt": "Which statement about metals is correct?",
+          "options": [
+            "Metals have low thermal conductivity",
+            "Metals have shiny surfaces because delocalized electrons interact with light",
+            "Metals form brittle crystals",
+            "Metallic bonding is directional"
+          ],
+          "answer": 1,
+          "explanation": "Delocalized electrons absorb and re-emit light, giving lustre; metallic bonding is non-directional.",
+          "terms": [
+            "chemistry-s2.3-delocalized-electrons"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-1-q09",
+          "type": "fill",
+          "text": "Aluminium forms Al³⁺ ions and contributes ___ delocalized electrons per atom.",
+          "answer": "3",
+          "accept": [
+            "three"
+          ],
+          "bank": [
+            "3",
+            "1",
+            "2",
+            "13"
+          ],
+          "explanation": "Its three valence electrons are delocalized, which strengthens the metallic bond.",
+          "terms": [
+            "chemistry-s2.3-delocalized-electrons"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S2.3-2",
+      "title": "Bonding triangle, alloys and polymers",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S2.3-2-q01",
+          "type": "mcq",
+          "prompt": "In the bonding triangle, a compound with a large electronegativity difference lies near which vertex?",
+          "options": [
+            "Covalent",
+            "Ionic",
+            "Centre",
+            "Metallic"
+          ],
+          "answer": 1,
+          "explanation": "Ionic character increases with Δχ, at the top of the triangle.",
+          "terms": [
+            "chemistry-s2.3-bonding-triangle"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q02",
+          "type": "tf",
+          "statement": "A binary compound with a low electronegativity difference and a high average electronegativity is mainly covalent.",
+          "answer": true,
+          "explanation": "For example Cl₂ or CCl₄: both atoms strongly attract electrons, so they share them.",
+          "terms": [
+            "chemistry-s2.3-bonding-triangle"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q03",
+          "type": "mcq",
+          "prompt": "Why is an alloy usually harder than the pure metal?",
+          "options": [
+            "It has no delocalized electrons",
+            "It is a compound",
+            "It contains ions",
+            "Different-sized atoms disrupt the layers so they slide less easily"
+          ],
+          "answer": 3,
+          "explanation": "Atoms of different sizes distort the regular lattice, hindering layer movement.",
+          "terms": [
+            "chemistry-s2.3-alloy"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q04",
+          "type": "fill",
+          "text": "Steel is an alloy of iron and ___.",
+          "answer": "carbon",
+          "bank": [
+            "carbon",
+            "copper",
+            "tin",
+            "zinc"
+          ],
+          "explanation": "Small amounts of carbon greatly increase the hardness and strength of iron.",
+          "terms": [
+            "chemistry-s2.3-alloy"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q05",
+          "type": "mcq",
+          "prompt": "Which monomer forms poly(chloroethene), PVC?",
+          "options": [
+            "CH₂=CH₂",
+            "CH₂=CHCl",
+            "CHCl=CHCl",
+            "CH₃CH₂Cl"
+          ],
+          "answer": 1,
+          "explanation": "Addition polymers form from alkenes: the C=C of chloroethene opens to link units.",
+          "terms": [
+            "chemistry-s2.3-addition-polymer",
+            "chemistry-s2.3-polymer"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q06",
+          "type": "tf",
+          "statement": "Addition polymerization produces water as a by-product.",
+          "answer": false,
+          "explanation": "Addition polymerization forms only the polymer; small molecules are eliminated in condensation polymerization.",
+          "terms": [
+            "chemistry-s2.3-addition-polymer"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q07",
+          "type": "fill",
+          "text": "The repeating unit of poly(propene) is –CH₂–CH(___)–.",
+          "answer": "CH₃",
+          "accept": [
+            "CH3"
+          ],
+          "bank": [
+            "CH₃",
+            "Cl",
+            "C₆H₅",
+            "OH"
+          ],
+          "explanation": "Propene is CH₂=CHCH₃; the methyl group becomes a side group on the chain.",
+          "terms": [
+            "chemistry-s2.3-repeating-unit"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q08",
+          "type": "match",
+          "prompt": "Match each material to its main bonding type.",
+          "pairs": [
+            {
+              "left": "Brass",
+              "right": "Metallic"
+            },
+            {
+              "left": "Silicon carbide",
+              "right": "Covalent network"
+            },
+            {
+              "left": "Calcium fluoride",
+              "right": "Ionic"
+            },
+            {
+              "left": "Poly(ethene)",
+              "right": "Covalent molecular (polymer chains)"
+            }
+          ],
+          "explanation": "Use bonding type to predict and explain properties of materials.",
+          "terms": [
+            "chemistry-s2.3-bonding-triangle",
+            "chemistry-s2.3-alloy",
+            "chemistry-s2.3-polymer"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q09",
+          "type": "mcq",
+          "prompt": "Why are many plastics a problem in the environment?",
+          "options": [
+            "They are rapidly biodegraded",
+            "Their strong C–C and C–H bonds make them non-biodegradable",
+            "They dissolve in seawater",
+            "They are ionic"
+          ],
+          "answer": 1,
+          "explanation": "Microorganisms cannot easily break the non-polar backbone, so they persist for a long time.",
+          "terms": [
+            "chemistry-s2.3-polymer"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-2-q10",
+          "type": "order",
+          "prompt": "Order these binary substances from most ionic to most covalent character.",
+          "items": [
+            "NaF",
+            "MgO",
+            "AlCl₃",
+            "CCl₄"
+          ],
+          "explanation": "Δχ falls: Na–F 3.1, Mg–O 2.1, Al–Cl 1.6, C–Cl 0.6.",
+          "terms": [
+            "chemistry-s2.3-bonding-triangle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S2.3-3",
+      "title": "Transition metals and condensation polymers (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-S2.3-3-q01",
+          "type": "mcq",
+          "prompt": "Why do transition metals have high melting points?",
+          "options": [
+            "Both 4s and 3d electrons can be delocalized",
+            "They are ionic",
+            "They have small atomic masses",
+            "They form hydrogen bonds"
+          ],
+          "answer": 0,
+          "explanation": "More delocalized electrons and small cations give strong metallic bonding.",
+          "terms": [
+            "chemistry-s2.3-transition-metallic"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q02",
+          "type": "mcq",
+          "prompt": "What small molecule is lost when a diol and a dicarboxylic acid form a polyester?",
+          "options": [
+            "H₂",
+            "H₂O",
+            "HCl",
+            "CO₂"
+          ],
+          "answer": 1,
+          "explanation": "Each ester link forms from –COOH and –OH, eliminating water.",
+          "terms": [
+            "chemistry-s2.3-condensation-polymer",
+            "chemistry-s2.3-polyester"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q03",
+          "type": "tf",
+          "statement": "A polyamide can be made from a diamine and a dicarboxylic acid.",
+          "answer": true,
+          "explanation": "–NH₂ and –COOH react to form amide links, –CONH–, eliminating water.",
+          "terms": [
+            "chemistry-s2.3-polyamide"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q04",
+          "type": "fill",
+          "text": "Condensation polymerization requires each monomer to have ___ functional groups.",
+          "answer": "two",
+          "accept": [
+            "2"
+          ],
+          "bank": [
+            "two",
+            "one",
+            "no",
+            "three only"
+          ],
+          "explanation": "Two reactive groups let each monomer link at both ends to form a chain.",
+          "terms": [
+            "chemistry-s2.3-condensation-polymer"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q05",
+          "type": "match",
+          "prompt": "Match each linkage to its polymer type.",
+          "pairs": [
+            {
+              "left": "–COO–",
+              "right": "Polyester"
+            },
+            {
+              "left": "–CONH–",
+              "right": "Polyamide"
+            },
+            {
+              "left": "–CH₂–CH₂–",
+              "right": "Addition polymer"
+            }
+          ],
+          "explanation": "Linkages show how the monomers were joined.",
+          "terms": [
+            "chemistry-s2.3-polyester",
+            "chemistry-s2.3-polyamide",
+            "chemistry-s2.3-condensation-polymer"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q06",
+          "type": "mcq",
+          "prompt": "Proteins are natural examples of which type of polymer?",
+          "options": [
+            "Polyesters",
+            "Polyamides",
+            "Addition polymers",
+            "Polyalkenes"
+          ],
+          "answer": 1,
+          "explanation": "Amino acids join by amide (peptide) links in condensation reactions.",
+          "terms": [
+            "chemistry-s2.3-polyamide"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q07",
+          "type": "tf",
+          "statement": "Polyesters can be broken down by hydrolysis.",
+          "answer": true,
+          "explanation": "Water (with acid or base) can split the ester links back to the acid and alcohol; this makes polyesters more degradable than polyalkenes.",
+          "terms": [
+            "chemistry-s2.3-polyester"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q08",
+          "type": "fill",
+          "text": "n monomers of an amino acid joined in a chain release ___ water molecules (for one long chain).",
+          "answer": "n − 1",
+          "accept": [
+            "n-1"
+          ],
+          "bank": [
+            "n − 1",
+            "n",
+            "2n",
+            "n + 1"
+          ],
+          "explanation": "Each link releases one water; a chain of n units has n − 1 links (≈ n for large n).",
+          "terms": [
+            "chemistry-s2.3-condensation-polymer"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q09",
+          "type": "order",
+          "prompt": "Order the steps in forming one amide link.",
+          "items": [
+            "–COOH and –NH₂ groups approach",
+            "OH from the acid and H from the amine are removed",
+            "Water is released",
+            "C–N amide bond forms"
+          ],
+          "explanation": "This is a condensation: two molecules join with loss of a small molecule.",
+          "terms": [
+            "chemistry-s2.3-polyamide",
+            "chemistry-s2.3-condensation-polymer"
+          ]
+        },
+        {
+          "id": "chemistry-S2.3-3-q10",
+          "type": "mcq",
+          "prompt": "Why is the melting point of iron much higher than that of calcium?",
+          "options": [
+            "Fe has hydrogen bonding",
+            "Fe has more delocalized electrons from 3d orbitals and a smaller ion",
+            "Fe is heavier",
+            "Ca is covalent"
+          ],
+          "answer": 1,
+          "explanation": "3d electrons add to the electron sea, and Fe ions are smaller, strengthening metallic bonding.",
+          "terms": [
+            "chemistry-s2.3-transition-metallic"
+          ]
+        }
+      ]
+    }
+  ]
+}

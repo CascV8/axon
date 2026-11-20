@@ -1,0 +1,600 @@
+{
+  "id": "chemistry-R3.1",
+  "code": "R3.1",
+  "unit": "R3",
+  "title": "Proton transfer reactions",
+  "level": "SL",
+  "summary": "Brønsted–Lowry acids donate protons and bases accept them. Identify conjugate pairs, use pH and Kw, and distinguish strong from weak acids; at HL, Ka, pKa, buffers, salt hydrolysis and pH curves.",
+  "keyterms": [
+    {
+      "id": "chemistry-r3.1-bl-acid",
+      "term": "Brønsted–Lowry acid",
+      "definition": "A species that donates a proton (H⁺).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-bl-base",
+      "term": "Brønsted–Lowry base",
+      "definition": "A species that accepts a proton (H⁺).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-conjugate",
+      "term": "Conjugate acid–base pair",
+      "definition": "Two species differing by one proton, e.g. CH₃COOH / CH₃COO⁻.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-amphiprotic",
+      "term": "Amphiprotic",
+      "definition": "Able to both donate and accept a proton, e.g. H₂O, HCO₃⁻.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-ph",
+      "term": "pH",
+      "definition": "pH = −log₁₀[H⁺]; a decrease of 1 pH unit means a tenfold increase in [H⁺].",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-kw",
+      "term": "Ionic product of water (Kw)",
+      "definition": "Kw = [H⁺][OH⁻] = 1.00 × 10⁻¹⁴ at 298 K; increases with temperature.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-strong-acid",
+      "term": "Strong acid",
+      "definition": "An acid that dissociates (almost) completely in water, e.g. HCl, HNO₃, H₂SO₄.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-weak-acid",
+      "term": "Weak acid",
+      "definition": "An acid that only partially dissociates in water, e.g. CH₃COOH, H₂CO₃.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-neutralization",
+      "term": "Neutralization",
+      "definition": "Reaction of an acid with a base to form a salt and water; exothermic.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.1-ka",
+      "term": "Acid dissociation constant (Ka)",
+      "definition": "Ka = [H⁺][A⁻]/[HA]; larger Ka (smaller pKa) means a stronger acid. pKa = −log Ka.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r3.1-buffer",
+      "term": "Buffer solution",
+      "definition": "A solution that resists pH change when small amounts of acid or base are added; a weak acid and its conjugate base (or weak base and conjugate acid).",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r3.1-indicator",
+      "term": "Acid–base indicator",
+      "definition": "A weak acid whose conjugate forms differ in colour; chosen so its colour change (pKa ± 1) lies on the steep part of the pH curve.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r3.1-hydrolysis",
+      "term": "Salt hydrolysis",
+      "definition": "Reaction of the ions of a salt with water, giving a non-neutral solution, e.g. CH₃COO⁻ makes sodium ethanoate solution basic.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-R3.1-1",
+      "title": "Brønsted–Lowry acids, bases and pH",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R3.1-1-q01",
+          "type": "mcq",
+          "prompt": "In NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, which species acts as the Brønsted–Lowry acid?",
+          "options": [
+            "H₂O",
+            "NH₄⁺ only",
+            "OH⁻",
+            "NH₃"
+          ],
+          "answer": 0,
+          "explanation": "Water donates a proton to ammonia (forward reaction).",
+          "terms": [
+            "chemistry-r3.1-bl-acid"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q02",
+          "type": "fill",
+          "text": "The conjugate base of H₂SO₄ is ___.",
+          "answer": "HSO₄⁻",
+          "accept": [
+            "HSO4-"
+          ],
+          "bank": [
+            "HSO₄⁻",
+            "SO₄²⁻",
+            "H₃SO₄⁺",
+            "H₂O"
+          ],
+          "explanation": "Remove one H⁺: H₂SO₄ → HSO₄⁻.",
+          "terms": [
+            "chemistry-r3.1-conjugate"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q03",
+          "type": "tf",
+          "statement": "Water is amphiprotic.",
+          "answer": true,
+          "explanation": "It can donate a proton (forming OH⁻) or accept one (forming H₃O⁺).",
+          "terms": [
+            "chemistry-r3.1-amphiprotic"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q04",
+          "type": "mcq",
+          "prompt": "What is the pH of 0.010 mol dm⁻³ HCl?",
+          "options": [
+            "1",
+            "2",
+            "10",
+            "12"
+          ],
+          "answer": 1,
+          "explanation": "HCl is strong, so [H⁺] = 0.010 = 10⁻²; pH = 2.",
+          "terms": [
+            "chemistry-r3.1-ph",
+            "chemistry-r3.1-strong-acid"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q05",
+          "type": "fill",
+          "text": "At 298 K, [OH⁻] in a solution with [H⁺] = 1.0 × 10⁻³ mol dm⁻³ is 1.0 × 10⁻___ mol dm⁻³.",
+          "answer": "11",
+          "bank": [
+            "11",
+            "3",
+            "14",
+            "7"
+          ],
+          "explanation": "[OH⁻] = Kw/[H⁺] = 10⁻¹⁴/10⁻³ = 10⁻¹¹.",
+          "terms": [
+            "chemistry-r3.1-kw"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q06",
+          "type": "match",
+          "prompt": "Match each acid with its conjugate base.",
+          "pairs": [
+            {
+              "left": "HCl",
+              "right": "Cl⁻"
+            },
+            {
+              "left": "H₃O⁺",
+              "right": "H₂O"
+            },
+            {
+              "left": "NH₄⁺",
+              "right": "NH₃"
+            },
+            {
+              "left": "CH₃COOH",
+              "right": "CH₃COO⁻"
+            }
+          ],
+          "explanation": "Each pair differs by one H⁺.",
+          "terms": [
+            "chemistry-r3.1-conjugate"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q07",
+          "type": "tf",
+          "statement": "A solution of pH 3 has ten times the [H⁺] of a solution of pH 4.",
+          "answer": true,
+          "explanation": "pH is logarithmic: one unit = factor of 10.",
+          "terms": [
+            "chemistry-r3.1-ph"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q08",
+          "type": "mcq",
+          "prompt": "0.10 mol dm⁻³ solutions of HCl and CH₃COOH are compared. Which is true?",
+          "options": [
+            "Both have pH 1",
+            "CH₃COOH conducts better",
+            "HCl reacts faster with magnesium",
+            "They need different volumes of NaOH to neutralize"
+          ],
+          "answer": 2,
+          "explanation": "HCl is fully dissociated, so [H⁺] is higher; both need the same NaOH because the total amount of acid is the same.",
+          "terms": [
+            "chemistry-r3.1-strong-acid",
+            "chemistry-r3.1-weak-acid"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q09",
+          "type": "order",
+          "prompt": "Order these 0.1 mol dm⁻³ solutions by pH, lowest first.",
+          "items": [
+            "HCl",
+            "CH₃COOH",
+            "NaCl",
+            "NH₃",
+            "NaOH"
+          ],
+          "explanation": "Strong acid < weak acid < neutral salt < weak base < strong base.",
+          "terms": [
+            "chemistry-r3.1-ph",
+            "chemistry-r3.1-strong-acid",
+            "chemistry-r3.1-weak-acid"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-1-q10",
+          "type": "mcq",
+          "prompt": "Which is a product of neutralizing sulfuric acid with potassium hydroxide?",
+          "options": [
+            "KSO₄",
+            "K₂S",
+            "H₂",
+            "K₂SO₄"
+          ],
+          "answer": 3,
+          "explanation": "H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O.",
+          "terms": [
+            "chemistry-r3.1-neutralization"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R3.1-2",
+      "title": "Reactions of acids and pH changes",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R3.1-2-q01",
+          "type": "mcq",
+          "prompt": "Which gas is produced when an acid reacts with a carbonate?",
+          "options": [
+            "O₂",
+            "CO₂",
+            "Cl₂",
+            "H₂"
+          ],
+          "answer": 1,
+          "explanation": "Acid + carbonate → salt + water + carbon dioxide.",
+          "terms": [
+            "chemistry-r3.1-neutralization"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q02",
+          "type": "fill",
+          "text": "Acid + metal hydroxide → salt + ___.",
+          "answer": "water",
+          "bank": [
+            "water",
+            "hydrogen",
+            "carbon dioxide",
+            "oxygen"
+          ],
+          "explanation": "Hydroxides are bases; neutralization forms a salt and water.",
+          "terms": [
+            "chemistry-r3.1-neutralization"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q03",
+          "type": "tf",
+          "statement": "Reactive metals such as magnesium react with dilute acids to give hydrogen gas.",
+          "answer": true,
+          "explanation": "e.g. Mg + 2HCl → MgCl₂ + H₂.",
+          "terms": [
+            "chemistry-r3.1-bl-acid"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q04",
+          "type": "mcq",
+          "prompt": "What is the pH of 0.0010 mol dm⁻³ NaOH at 298 K?",
+          "options": [
+            "3",
+            "7",
+            "11",
+            "14"
+          ],
+          "answer": 2,
+          "explanation": "[OH⁻] = 10⁻³; [H⁺] = 10⁻¹¹; pH = 11.",
+          "terms": [
+            "chemistry-r3.1-kw",
+            "chemistry-r3.1-ph"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q05",
+          "type": "match",
+          "prompt": "Match each reaction to its products.",
+          "pairs": [
+            {
+              "left": "Acid + metal",
+              "right": "Salt + hydrogen"
+            },
+            {
+              "left": "Acid + metal oxide",
+              "right": "Salt + water"
+            },
+            {
+              "left": "Acid + carbonate",
+              "right": "Salt + water + CO₂"
+            },
+            {
+              "left": "Acid + ammonia",
+              "right": "Ammonium salt only"
+            }
+          ],
+          "explanation": "NH₃ + HCl → NH₄Cl: no water forms.",
+          "terms": [
+            "chemistry-r3.1-neutralization"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q06",
+          "type": "tf",
+          "statement": "Kw is 1.00 × 10⁻¹⁴ at every temperature.",
+          "answer": false,
+          "explanation": "Water dissociation is endothermic, so Kw increases with temperature; pure water at 50 °C has pH below 7 but is still neutral.",
+          "terms": [
+            "chemistry-r3.1-kw"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q07",
+          "type": "mcq",
+          "prompt": "A strong acid is titrated with a strong base. The pH at the equivalence point is…",
+          "options": [
+            "about 9",
+            "about 12",
+            "about 3",
+            "about 7"
+          ],
+          "answer": 3,
+          "explanation": "The salt of a strong acid and strong base (e.g. NaCl) gives a neutral solution.",
+          "terms": [
+            "chemistry-r3.1-neutralization"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q08",
+          "type": "fill",
+          "text": "A 100-fold dilution of a strong acid raises its pH by ___ units.",
+          "answer": "2",
+          "accept": [
+            "two"
+          ],
+          "bank": [
+            "2",
+            "1",
+            "100",
+            "10"
+          ],
+          "explanation": "[H⁺] falls by 10², so pH rises by 2.",
+          "terms": [
+            "chemistry-r3.1-ph",
+            "chemistry-r3.1-strong-acid"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q09",
+          "type": "order",
+          "prompt": "Order the pH readings as NaOH is gradually added to HCl in a flask.",
+          "items": [
+            "About 1 at the start",
+            "Slow rise while acid is in excess",
+            "Sharp jump near the equivalence point",
+            "About 7 at equivalence",
+            "Levels off near 13 with excess base"
+          ],
+          "explanation": "The steep vertical section is where indicators change colour.",
+          "terms": [
+            "chemistry-r3.1-ph",
+            "chemistry-r3.1-neutralization"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-2-q10",
+          "type": "mcq",
+          "prompt": "Which is a weak acid?",
+          "options": [
+            "H₂CO₃",
+            "H₂SO₄",
+            "HNO₃",
+            "HCl"
+          ],
+          "answer": 0,
+          "explanation": "Carbonic acid only partially dissociates; the others are strong.",
+          "terms": [
+            "chemistry-r3.1-weak-acid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R3.1-3",
+      "title": "Ka, buffers and pH curves (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-R3.1-3-q01",
+          "type": "mcq",
+          "prompt": "Which acid is strongest?",
+          "options": [
+            "pKa 10.3",
+            "pKa 4.76",
+            "pKa 3.75",
+            "pKa 9.25"
+          ],
+          "answer": 2,
+          "explanation": "Smaller pKa means larger Ka, a stronger acid.",
+          "terms": [
+            "chemistry-r3.1-ka"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q02",
+          "type": "fill",
+          "text": "For a weak acid at 298 K, pKa + pKb (of its conjugate base) = ___.",
+          "answer": "14",
+          "bank": [
+            "14",
+            "7",
+            "1",
+            "0"
+          ],
+          "explanation": "Ka × Kb = Kw, so pKa + pKb = pKw = 14.",
+          "terms": [
+            "chemistry-r3.1-ka",
+            "chemistry-r3.1-kw"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q03",
+          "type": "mcq",
+          "prompt": "[H⁺] in 0.10 mol dm⁻³ HA (Ka = 1.0 × 10⁻⁵) is approximately…",
+          "options": [
+            "1.0 × 10⁻³",
+            "1.0 × 10⁻⁵",
+            "1.0 × 10⁻⁶",
+            "1.0 × 10⁻¹"
+          ],
+          "answer": 0,
+          "explanation": "[H⁺] ≈ √(Ka × c) = √(1.0 × 10⁻⁶) = 1.0 × 10⁻³; pH = 3.",
+          "terms": [
+            "chemistry-r3.1-ka"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q04",
+          "type": "tf",
+          "statement": "A mixture of ethanoic acid and sodium ethanoate acts as a buffer.",
+          "answer": true,
+          "explanation": "CH₃COO⁻ removes added H⁺; CH₃COOH neutralizes added OH⁻.",
+          "terms": [
+            "chemistry-r3.1-buffer"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q05",
+          "type": "fill",
+          "text": "At the half-equivalence point of a weak acid–strong base titration, pH = ___.",
+          "answer": "pKa",
+          "bank": [
+            "pKa",
+            "pKb",
+            "7",
+            "14"
+          ],
+          "explanation": "Half the acid has been converted to A⁻, so [HA] = [A⁻] and [H⁺] = Ka.",
+          "terms": [
+            "chemistry-r3.1-ka",
+            "chemistry-r3.1-buffer"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q06",
+          "type": "match",
+          "prompt": "Match each salt solution to its pH.",
+          "pairs": [
+            {
+              "left": "NaCl",
+              "right": "Neutral"
+            },
+            {
+              "left": "CH₃COONa",
+              "right": "Basic"
+            },
+            {
+              "left": "NH₄Cl",
+              "right": "Acidic"
+            }
+          ],
+          "explanation": "Ions from weak acids or bases react with water (hydrolysis).",
+          "terms": [
+            "chemistry-r3.1-hydrolysis"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q07",
+          "type": "mcq",
+          "prompt": "Which indicator suits a weak acid–strong base titration (equivalence pH ≈ 9)?",
+          "options": [
+            "Phenolphthalein (pKa 9.6)",
+            "Methyl red (pKa 5.1)",
+            "Methyl orange (pKa 3.7)",
+            "Bromophenol blue (pKa 4.1)"
+          ],
+          "answer": 0,
+          "explanation": "The indicator range must fall on the steep part, which lies above pH 7 here.",
+          "terms": [
+            "chemistry-r3.1-indicator"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q08",
+          "type": "tf",
+          "statement": "Adding a small amount of strong acid to a buffer leaves its pH completely unchanged.",
+          "answer": false,
+          "explanation": "Buffers resist change: the pH changes only slightly, because the added H⁺ is mostly removed by the conjugate base.",
+          "terms": [
+            "chemistry-r3.1-buffer"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q09",
+          "type": "order",
+          "prompt": "Order the regions of a weak acid–strong base pH curve.",
+          "items": [
+            "Initial pH about 3",
+            "Small rise then buffer region",
+            "pH = pKa at half-equivalence",
+            "Steep rise around pH 7–11",
+            "Levels off at high pH"
+          ],
+          "explanation": "The buffer region is flattest around the half-equivalence point.",
+          "terms": [
+            "chemistry-r3.1-buffer",
+            "chemistry-r3.1-ka"
+          ]
+        },
+        {
+          "id": "chemistry-R3.1-3-q10",
+          "type": "mcq",
+          "prompt": "Which pair could form a basic buffer?",
+          "options": [
+            "H₂SO₄ and Na₂SO₄",
+            "NH₃ and NH₄Cl",
+            "HCl and NaCl",
+            "NaOH and NaCl"
+          ],
+          "answer": 1,
+          "explanation": "A weak base with its conjugate acid buffers around pH 9.",
+          "terms": [
+            "chemistry-r3.1-buffer"
+          ]
+        }
+      ]
+    }
+  ]
+}

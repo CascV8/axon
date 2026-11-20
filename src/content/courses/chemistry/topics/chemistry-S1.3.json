@@ -1,0 +1,591 @@
+{
+  "id": "chemistry-S1.3",
+  "code": "S1.3",
+  "unit": "S1",
+  "title": "Electron configurations",
+  "level": "SL",
+  "summary": "Emission spectra show that electrons occupy fixed energy levels. Build electron configurations with sublevels and orbitals; at HL, link spectra and successive ionization energies to structure.",
+  "keyterms": [
+    {
+      "id": "chemistry-s1.3-emission-spectrum",
+      "term": "Emission spectrum",
+      "definition": "Pattern of specific wavelengths emitted when excited electrons fall to lower energy levels; a line spectrum for atoms.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-continuous-spectrum",
+      "term": "Continuous spectrum",
+      "definition": "A spectrum containing all wavelengths in a range with no gaps, such as white light passed through a prism.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-energy-level",
+      "term": "Energy level (shell)",
+      "definition": "A main level of fixed energy an electron can occupy, labelled n = 1, 2, 3…; levels converge at higher energy.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-sublevel",
+      "term": "Sublevel",
+      "definition": "A division of a main energy level (s, p, d, f) containing 1, 3, 5 or 7 orbitals respectively.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-orbital",
+      "term": "Atomic orbital",
+      "definition": "A region around the nucleus where there is a high probability of finding an electron; holds up to two electrons of opposite spin.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-aufbau",
+      "term": "Aufbau principle",
+      "definition": "Electrons fill the lowest-energy orbitals first (1s, 2s, 2p, 3s, 3p, 4s, 3d…).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-hund",
+      "term": "Hund's rule",
+      "definition": "Electrons occupy degenerate orbitals singly with parallel spins before pairing.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-pauli",
+      "term": "Pauli exclusion principle",
+      "definition": "An orbital holds a maximum of two electrons, which must have opposite spins.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-convergence",
+      "term": "Convergence limit",
+      "definition": "The point where spectral lines merge into a continuum; it corresponds to the electron leaving the atom (ionization).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.3-ionization-energy",
+      "term": "First ionization energy",
+      "definition": "Energy needed to remove one mole of electrons from one mole of gaseous atoms to form one mole of gaseous 1+ ions.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s1.3-successive-ie",
+      "term": "Successive ionization energies",
+      "definition": "Energies to remove the 1st, 2nd, 3rd… electrons in turn; large jumps reveal a change of main energy level.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s1.3-frequency",
+      "term": "Frequency–energy relation",
+      "definition": "E = hf: the energy of a photon is proportional to its frequency, so higher-frequency light carries more energy.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S1.3-1",
+      "title": "Emission spectra and energy levels",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.3-1-q01",
+          "type": "mcq",
+          "prompt": "Why does a hydrogen atom give a line spectrum rather than a continuous one?",
+          "options": [
+            "Electrons can only have certain fixed energies",
+            "Hydrogen has only one isotope",
+            "The nucleus emits light",
+            "Light is absorbed by the glass tube"
+          ],
+          "answer": 0,
+          "explanation": "Electron energy is quantized, so transitions between levels release photons of specific energies and wavelengths.",
+          "terms": [
+            "chemistry-s1.3-emission-spectrum",
+            "chemistry-s1.3-energy-level"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q02",
+          "type": "tf",
+          "statement": "In an emission spectrum, lines converge at higher energy (shorter wavelength).",
+          "answer": true,
+          "explanation": "Energy levels get closer together as n increases, so lines crowd together towards the convergence limit.",
+          "terms": [
+            "chemistry-s1.3-convergence",
+            "chemistry-s1.3-energy-level"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q03",
+          "type": "fill",
+          "text": "In the hydrogen spectrum, transitions ending at n = 2 produce lines in the ___ region.",
+          "answer": "visible",
+          "bank": [
+            "visible",
+            "ultraviolet",
+            "infrared",
+            "microwave"
+          ],
+          "explanation": "Transitions to n = 1 emit UV (larger energy gaps); transitions to n = 2 give the visible (Balmer) series.",
+          "terms": [
+            "chemistry-s1.3-emission-spectrum"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q04",
+          "type": "mcq",
+          "prompt": "Which transition in a hydrogen atom emits the photon of highest energy?",
+          "options": [
+            "n = 3 → n = 2",
+            "n = 2 → n = 1",
+            "n = 4 → n = 3",
+            "n = 5 → n = 4"
+          ],
+          "answer": 1,
+          "explanation": "The gap between n = 2 and n = 1 is the largest of these, so the photon has the most energy (UV).",
+          "terms": [
+            "chemistry-s1.3-energy-level"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q05",
+          "type": "match",
+          "prompt": "Match each spectrum type to its description.",
+          "pairs": [
+            {
+              "left": "Continuous spectrum",
+              "right": "All wavelengths, no gaps"
+            },
+            {
+              "left": "Emission line spectrum",
+              "right": "Bright lines on a dark background"
+            },
+            {
+              "left": "Convergence limit",
+              "right": "Lines merge into a continuum"
+            }
+          ],
+          "explanation": "Atoms emit only specific wavelengths; white light contains all.",
+          "terms": [
+            "chemistry-s1.3-continuous-spectrum",
+            "chemistry-s1.3-emission-spectrum",
+            "chemistry-s1.3-convergence"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q06",
+          "type": "tf",
+          "statement": "Electrons emit light when they move from a lower to a higher energy level.",
+          "answer": false,
+          "explanation": "Absorbing energy promotes an electron to a higher level; light is emitted when it falls back to a lower level.",
+          "terms": [
+            "chemistry-s1.3-emission-spectrum"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q07",
+          "type": "mcq",
+          "prompt": "Which colour of visible light has the highest energy?",
+          "options": [
+            "Orange",
+            "Green",
+            "Violet",
+            "Red"
+          ],
+          "answer": 2,
+          "explanation": "Violet has the shortest wavelength and highest frequency in the visible region, so highest photon energy.",
+          "terms": [
+            "chemistry-s1.3-emission-spectrum"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q08",
+          "type": "order",
+          "prompt": "Order these regions of the electromagnetic spectrum by increasing energy.",
+          "items": [
+            "Radio waves",
+            "Infrared",
+            "Visible",
+            "Ultraviolet",
+            "X-rays"
+          ],
+          "explanation": "Energy rises as wavelength falls and frequency rises.",
+          "terms": [
+            "chemistry-s1.3-emission-spectrum"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q09",
+          "type": "fill",
+          "text": "The point where lines in an emission series merge is the ___ limit.",
+          "answer": "convergence",
+          "bank": [
+            "convergence",
+            "emission",
+            "ionization",
+            "threshold"
+          ],
+          "explanation": "Beyond the convergence limit the electron is no longer bound: it corresponds to ionization.",
+          "terms": [
+            "chemistry-s1.3-convergence"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-1-q10",
+          "type": "mcq",
+          "prompt": "Each element produces a unique line spectrum because…",
+          "options": [
+            "each has a unique set of energy levels",
+            "each has a unique mass number",
+            "all atoms emit only red light",
+            "electrons are identical in every element"
+          ],
+          "answer": 0,
+          "explanation": "Different nuclear charge and electron numbers give each element its own energy-level spacing, so spectra act as fingerprints.",
+          "terms": [
+            "chemistry-s1.3-emission-spectrum",
+            "chemistry-s1.3-energy-level"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S1.3-2",
+      "title": "Orbitals and configurations",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.3-2-q01",
+          "type": "mcq",
+          "prompt": "What is the full electron configuration of sulfur (Z = 16)?",
+          "options": [
+            "2, 8, 6 only",
+            "1s² 2s² 2p⁶ 3s² 3p⁴",
+            "1s² 2s² 2p⁶ 3s² 3p⁶",
+            "1s² 2s² 2p⁶ 3p⁶"
+          ],
+          "answer": 1,
+          "explanation": "16 electrons fill 1s, 2s, 2p, 3s, then four go into 3p.",
+          "terms": [
+            "chemistry-s1.3-aufbau",
+            "chemistry-s1.3-sublevel"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q02",
+          "type": "fill",
+          "text": "The maximum number of electrons in a d sublevel is ___.",
+          "answer": "10",
+          "bank": [
+            "10",
+            "6",
+            "2",
+            "14"
+          ],
+          "explanation": "A d sublevel has five orbitals, each holding two electrons.",
+          "terms": [
+            "chemistry-s1.3-sublevel",
+            "chemistry-s1.3-orbital",
+            "chemistry-s1.3-pauli"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q03",
+          "type": "tf",
+          "statement": "The 4s sublevel fills before 3d.",
+          "answer": true,
+          "explanation": "In the Aufbau order 4s is lower in energy than 3d for the atoms in which they are filled (K, Ca), so 4s fills first.",
+          "terms": [
+            "chemistry-s1.3-aufbau"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q04",
+          "type": "mcq",
+          "prompt": "Which is the correct configuration of chromium (Z = 24)?",
+          "options": [
+            "[Ar] 4s² 4p⁴",
+            "[Ar] 3d⁴ 4s²",
+            "[Ar] 3d⁵ 4s¹",
+            "[Ar] 3d⁶"
+          ],
+          "answer": 2,
+          "explanation": "Cr is an exception: a half-filled 3d⁵ with 4s¹ is more stable than 3d⁴ 4s².",
+          "terms": [
+            "chemistry-s1.3-aufbau",
+            "chemistry-s1.3-sublevel"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q05",
+          "type": "match",
+          "prompt": "Match the sublevel to its number of orbitals.",
+          "pairs": [
+            {
+              "left": "s",
+              "right": "1"
+            },
+            {
+              "left": "p",
+              "right": "3"
+            },
+            {
+              "left": "d",
+              "right": "5"
+            },
+            {
+              "left": "f",
+              "right": "7"
+            }
+          ],
+          "explanation": "Each orbital holds two electrons, so s, p, d, f hold 2, 6, 10, 14.",
+          "terms": [
+            "chemistry-s1.3-sublevel",
+            "chemistry-s1.3-orbital"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q06",
+          "type": "tf",
+          "statement": "Hund's rule says the three 2p electrons of nitrogen occupy separate orbitals with parallel spins.",
+          "answer": true,
+          "explanation": "Degenerate orbitals fill singly first, minimizing repulsion.",
+          "terms": [
+            "chemistry-s1.3-hund"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q07",
+          "type": "mcq",
+          "prompt": "What is the configuration of Fe²⁺ (Z = 26)?",
+          "options": [
+            "[Ar] 3d⁵ 4s¹",
+            "[Ar] 3d⁶ 4s²",
+            "[Ar] 3d⁴ 4s²",
+            "[Ar] 3d⁶"
+          ],
+          "answer": 3,
+          "explanation": "Fe is [Ar] 3d⁶ 4s². Transition metals lose 4s electrons first, giving [Ar] 3d⁶.",
+          "terms": [
+            "chemistry-s1.3-aufbau"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q08",
+          "type": "order",
+          "prompt": "Order these sublevels by the sequence in which they fill.",
+          "items": [
+            "1s",
+            "2p",
+            "3s",
+            "4s",
+            "3d",
+            "4p"
+          ],
+          "explanation": "Aufbau order: 1s 2s 2p 3s 3p 4s 3d 4p…",
+          "terms": [
+            "chemistry-s1.3-aufbau"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q09",
+          "type": "fill",
+          "text": "Two electrons in the same orbital must have opposite spins, according to the ___ exclusion principle.",
+          "answer": "Pauli",
+          "bank": [
+            "Pauli",
+            "Hund",
+            "Aufbau",
+            "Heisenberg"
+          ],
+          "explanation": "Pauli: at most two electrons per orbital, with opposite spins.",
+          "terms": [
+            "chemistry-s1.3-pauli"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-2-q10",
+          "type": "mcq",
+          "prompt": "Which shape describes a p orbital?",
+          "options": [
+            "Dumbbell",
+            "Ring",
+            "Cube",
+            "Spherical"
+          ],
+          "answer": 0,
+          "explanation": "s orbitals are spherical; each p orbital is dumbbell-shaped, along x, y or z.",
+          "terms": [
+            "chemistry-s1.3-orbital"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S1.3-3",
+      "title": "Ionization energies (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-S1.3-3-q01",
+          "type": "mcq",
+          "prompt": "Why does first ionization energy generally increase across period 3?",
+          "options": [
+            "Electrons are removed from d orbitals",
+            "Atomic radius increases",
+            "Nuclear charge increases while shielding stays about the same",
+            "More shells are added"
+          ],
+          "answer": 2,
+          "explanation": "Electrons are added to the same shell, so increasing nuclear charge holds them more tightly.",
+          "terms": [
+            "chemistry-s1.3-ionization-energy"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q02",
+          "type": "tf",
+          "statement": "The first ionization energy of aluminium is lower than that of magnesium.",
+          "answer": true,
+          "explanation": "Al's outer electron is in 3p, which is higher in energy and more shielded than Mg's 3s electron.",
+          "terms": [
+            "chemistry-s1.3-ionization-energy"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q03",
+          "type": "mcq",
+          "prompt": "Why is the first IE of sulfur lower than that of phosphorus?",
+          "options": [
+            "S loses an electron from a doubly occupied 3p orbital, where pairing repulsion helps removal",
+            "S has more shells",
+            "P has a half-filled 3s",
+            "S has a smaller nuclear charge"
+          ],
+          "answer": 0,
+          "explanation": "In S (3p⁴) one 3p orbital holds a pair; repulsion between the paired electrons makes one easier to remove.",
+          "terms": [
+            "chemistry-s1.3-ionization-energy",
+            "chemistry-s1.3-hund"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q04",
+          "type": "fill",
+          "text": "An element has successive IEs (kJ mol⁻¹) 578, 1817, 2745, 11 577. It is in group ___.",
+          "answer": "13",
+          "bank": [
+            "13",
+            "2",
+            "3",
+            "14"
+          ],
+          "explanation": "The big jump comes after the third electron, so there are three outer electrons: group 13 (aluminium).",
+          "terms": [
+            "chemistry-s1.3-successive-ie"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q05",
+          "type": "tf",
+          "statement": "Successive ionization energies of an element always increase.",
+          "answer": true,
+          "explanation": "Each electron is removed from an increasingly positive ion, so more energy is needed each time.",
+          "terms": [
+            "chemistry-s1.3-successive-ie"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q06",
+          "type": "mcq",
+          "prompt": "The convergence limit of the hydrogen Lyman series (transitions to n = 1) corresponds to…",
+          "options": [
+            "the n = 2 level",
+            "the first IE of hydrogen",
+            "the energy of a red photon",
+            "electron affinity"
+          ],
+          "answer": 1,
+          "explanation": "At convergence the electron is excited from n = 1 to n = ∞, which is ionization.",
+          "terms": [
+            "chemistry-s1.3-convergence",
+            "chemistry-s1.3-ionization-energy"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q07",
+          "type": "match",
+          "prompt": "Match each quantity to its relationship.",
+          "pairs": [
+            {
+              "left": "E",
+              "right": "hf"
+            },
+            {
+              "left": "c",
+              "right": "fλ"
+            },
+            {
+              "left": "Higher frequency",
+              "right": "Higher photon energy"
+            }
+          ],
+          "explanation": "E = hf and c = fλ combine to E = hc/λ.",
+          "terms": [
+            "chemistry-s1.3-frequency"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q08",
+          "type": "order",
+          "prompt": "Order these period-2 elements by first ionization energy, lowest first.",
+          "items": [
+            "Li",
+            "B",
+            "Be",
+            "C",
+            "N"
+          ],
+          "explanation": "General increase across the period, with dips at B (2p electron) and O; so Li < B < Be < C < N.",
+          "terms": [
+            "chemistry-s1.3-ionization-energy"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q09",
+          "type": "mcq",
+          "prompt": "Which equation represents the first ionization energy of sodium?",
+          "options": [
+            "Na(aq) → Na⁺(aq) + e⁻",
+            "Na(s) → Na⁺(g) + e⁻",
+            "Na(g) → Na⁺(g) + e⁻",
+            "Na(g) + e⁻ → Na⁻(g)"
+          ],
+          "answer": 2,
+          "explanation": "IE is defined for gaseous atoms forming gaseous ions.",
+          "terms": [
+            "chemistry-s1.3-ionization-energy"
+          ]
+        },
+        {
+          "id": "chemistry-S1.3-3-q10",
+          "type": "fill",
+          "text": "A photon has frequency 6.0 × 10¹⁴ s⁻¹. With h = 6.63 × 10⁻³⁴ J s, its energy is ___ × 10⁻¹⁹ J.",
+          "answer": "4.0",
+          "accept": [
+            "3.98",
+            "4"
+          ],
+          "bank": [
+            "4.0",
+            "9.0",
+            "1.1",
+            "0.40"
+          ],
+          "explanation": "E = hf = 6.63 × 10⁻³⁴ × 6.0 × 10¹⁴ = 3.98 × 10⁻¹⁹ J ≈ 4.0 × 10⁻¹⁹ J.",
+          "terms": [
+            "chemistry-s1.3-frequency"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "id": "chemistry-S1.5",
+  "code": "S1.5",
+  "unit": "S1",
+  "title": "Ideal gases",
+  "level": "SL",
+  "summary": "The ideal gas model relates pressure, volume, temperature and amount. Know its assumptions, why real gases deviate, and use the gas laws and pV = nRT.",
+  "keyterms": [
+    {
+      "id": "chemistry-s1.5-ideal-gas",
+      "term": "Ideal gas",
+      "definition": "A model gas whose particles have negligible volume, no intermolecular forces and perfectly elastic collisions.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-real-gas",
+      "term": "Real gas",
+      "definition": "An actual gas; it deviates from ideal behaviour most at high pressure and low temperature.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-pressure",
+      "term": "Pressure",
+      "definition": "Force per unit area, caused by gas particles colliding with the container walls; SI unit Pa.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-molar-volume",
+      "term": "Molar volume",
+      "definition": "Volume occupied by one mole of gas; 22.7 dm³ mol⁻¹ at STP (273.15 K, 100 kPa) for an ideal gas.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-stp",
+      "term": "STP",
+      "definition": "Standard temperature and pressure: 273.15 K and 100 kPa.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-ideal-gas-equation",
+      "term": "Ideal gas equation",
+      "definition": "pV = nRT, with p in Pa, V in m³, T in K and R = 8.31 J K⁻¹ mol⁻¹.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-boyle",
+      "term": "Boyle's law",
+      "definition": "At constant temperature and amount, pressure is inversely proportional to volume (pV = constant).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-charles",
+      "term": "Charles's law",
+      "definition": "At constant pressure and amount, volume is directly proportional to absolute temperature.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-gay-lussac",
+      "term": "Gay-Lussac's law",
+      "definition": "At constant volume and amount, pressure is directly proportional to absolute temperature.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.5-combined",
+      "term": "Combined gas law",
+      "definition": "p₁V₁/T₁ = p₂V₂/T₂ for a fixed amount of gas.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S1.5-1",
+      "title": "The ideal gas model",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.5-1-q01",
+          "type": "mcq",
+          "prompt": "Which is an assumption of the ideal gas model?",
+          "options": [
+            "Particles have negligible volume",
+            "Collisions lose kinetic energy",
+            "Particles are stationary",
+            "Particles attract each other strongly"
+          ],
+          "answer": 0,
+          "explanation": "Ideal gas particles are treated as points with no forces between them and elastic collisions.",
+          "terms": [
+            "chemistry-s1.5-ideal-gas"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q02",
+          "type": "tf",
+          "statement": "Real gases behave most ideally at high temperature and low pressure.",
+          "answer": true,
+          "explanation": "Particles are far apart (volume negligible) and move fast enough that attractions matter little.",
+          "terms": [
+            "chemistry-s1.5-real-gas"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q03",
+          "type": "mcq",
+          "prompt": "Why does a real gas deviate from ideal behaviour at very high pressure?",
+          "options": [
+            "Collisions become perfectly elastic",
+            "Temperature falls",
+            "Particle volume becomes significant compared with the container volume",
+            "Particles move faster"
+          ],
+          "answer": 2,
+          "explanation": "When squeezed, the particles themselves take up a significant fraction of the space.",
+          "terms": [
+            "chemistry-s1.5-real-gas",
+            "chemistry-s1.5-ideal-gas"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q04",
+          "type": "fill",
+          "text": "At low temperature, real gases deviate because intermolecular ___ become significant.",
+          "answer": "attractions",
+          "accept": [
+            "forces"
+          ],
+          "bank": [
+            "attractions",
+            "repulsions",
+            "collisions",
+            "nuclei"
+          ],
+          "explanation": "Slow particles are pulled together by intermolecular forces, lowering the pressure below the ideal value.",
+          "terms": [
+            "chemistry-s1.5-real-gas"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q05",
+          "type": "match",
+          "prompt": "Match each gas law to the variables held constant.",
+          "pairs": [
+            {
+              "left": "Boyle's law",
+              "right": "Temperature and amount"
+            },
+            {
+              "left": "Charles's law",
+              "right": "Pressure and amount"
+            },
+            {
+              "left": "Gay-Lussac's law",
+              "right": "Volume and amount"
+            }
+          ],
+          "explanation": "Each law links two variables while the other two are fixed.",
+          "terms": [
+            "chemistry-s1.5-boyle",
+            "chemistry-s1.5-charles",
+            "chemistry-s1.5-gay-lussac"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q06",
+          "type": "tf",
+          "statement": "Gas pressure is caused by particles colliding with the walls of the container.",
+          "answer": true,
+          "explanation": "Each collision exerts a force; the total force per unit area is the pressure.",
+          "terms": [
+            "chemistry-s1.5-pressure"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q07",
+          "type": "mcq",
+          "prompt": "Which gas is likely to deviate most from ideal behaviour under the same conditions?",
+          "options": [
+            "He",
+            "H₂",
+            "NH₃",
+            "Ne"
+          ],
+          "answer": 2,
+          "explanation": "NH₃ molecules are polar and hydrogen bond, so intermolecular attractions are strongest.",
+          "terms": [
+            "chemistry-s1.5-real-gas"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q08",
+          "type": "fill",
+          "text": "The molar volume of an ideal gas at STP is ___ dm³ mol⁻¹.",
+          "answer": "22.7",
+          "bank": [
+            "22.7",
+            "24.0",
+            "22.4",
+            "8.31"
+          ],
+          "explanation": "At 273.15 K and 100 kPa (the IB STP) the molar volume is 22.7 dm³ mol⁻¹.",
+          "terms": [
+            "chemistry-s1.5-molar-volume",
+            "chemistry-s1.5-stp"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q09",
+          "type": "order",
+          "prompt": "Order these conditions from most ideal to least ideal behaviour for nitrogen.",
+          "items": [
+            "500 K, 50 kPa",
+            "300 K, 100 kPa",
+            "200 K, 1000 kPa",
+            "100 K, 5000 kPa"
+          ],
+          "explanation": "Ideal behaviour improves with higher temperature and lower pressure.",
+          "terms": [
+            "chemistry-s1.5-real-gas",
+            "chemistry-s1.5-ideal-gas"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-1-q10",
+          "type": "mcq",
+          "prompt": "What is the volume of 0.500 mol of an ideal gas at STP?",
+          "options": [
+            "22.7 dm³",
+            "45.4 dm³",
+            "5.68 dm³",
+            "11.4 dm³"
+          ],
+          "answer": 3,
+          "explanation": "V = n × Vm = 0.500 × 22.7 = 11.4 dm³.",
+          "terms": [
+            "chemistry-s1.5-molar-volume"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S1.5-2",
+      "title": "Gas law calculations",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.5-2-q01",
+          "type": "mcq",
+          "prompt": "A gas occupies 2.0 dm³ at 100 kPa. At constant temperature, its volume at 400 kPa is…",
+          "options": [
+            "8.0 dm³",
+            "0.50 dm³",
+            "1.0 dm³",
+            "4.0 dm³"
+          ],
+          "answer": 1,
+          "explanation": "Boyle's law: p₁V₁ = p₂V₂ → V₂ = 100 × 2.0 / 400 = 0.50 dm³.",
+          "terms": [
+            "chemistry-s1.5-boyle"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q02",
+          "type": "fill",
+          "text": "In pV = nRT, the temperature must be in ___.",
+          "answer": "kelvin",
+          "accept": [
+            "K"
+          ],
+          "bank": [
+            "kelvin",
+            "degrees Celsius",
+            "joules",
+            "pascals"
+          ],
+          "explanation": "Gas laws use absolute temperature, which is zero when particle motion is minimal.",
+          "terms": [
+            "chemistry-s1.5-ideal-gas-equation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q03",
+          "type": "tf",
+          "statement": "Doubling the Celsius temperature of a gas at constant pressure doubles its volume.",
+          "answer": false,
+          "explanation": "Volume is proportional to absolute (kelvin) temperature: going from 20 °C to 40 °C is 293 K to 313 K, only about a 7 % increase.",
+          "terms": [
+            "chemistry-s1.5-charles"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q04",
+          "type": "mcq",
+          "prompt": "How many moles of gas are in 0.0240 m³ at 100 kPa and 300 K? (R = 8.31 J K⁻¹ mol⁻¹)",
+          "options": [
+            "963 mol",
+            "0.0963 mol",
+            "0.963 mol",
+            "9.63 mol"
+          ],
+          "answer": 2,
+          "explanation": "n = pV/RT = (100 000 × 0.0240)/(8.31 × 300) = 2400 / 2493 = 0.963 mol.",
+          "terms": [
+            "chemistry-s1.5-ideal-gas-equation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q05",
+          "type": "fill",
+          "text": "A volume of 500 cm³ in SI units is ___ m³.",
+          "answer": "5.00 × 10⁻⁴",
+          "accept": [
+            "0.0005",
+            "5 × 10⁻⁴"
+          ],
+          "bank": [
+            "5.00 × 10⁻⁴",
+            "0.500",
+            "5.00 × 10⁻²",
+            "5.00 × 10²"
+          ],
+          "explanation": "1 m³ = 10⁶ cm³, so 500 cm³ = 5.00 × 10⁻⁴ m³.",
+          "terms": [
+            "chemistry-s1.5-ideal-gas-equation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q06",
+          "type": "match",
+          "prompt": "Match each graph (fixed amount of ideal gas) to its shape.",
+          "pairs": [
+            {
+              "left": "p against V (constant T)",
+              "right": "Curve, inversely proportional"
+            },
+            {
+              "left": "V against T in K (constant p)",
+              "right": "Straight line through origin"
+            },
+            {
+              "left": "pV against p (constant T)",
+              "right": "Horizontal straight line"
+            }
+          ],
+          "explanation": "pV is constant at constant T, so a pV–p plot is flat.",
+          "terms": [
+            "chemistry-s1.5-boyle",
+            "chemistry-s1.5-charles"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q07",
+          "type": "mcq",
+          "prompt": "A sealed rigid can of gas is heated from 300 K to 450 K. The pressure…",
+          "options": [
+            "triples",
+            "halves",
+            "stays the same",
+            "increases by a factor of 1.5"
+          ],
+          "answer": 3,
+          "explanation": "Gay-Lussac: p ∝ T at constant V, so p increases by 450/300 = 1.5.",
+          "terms": [
+            "chemistry-s1.5-gay-lussac"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q08",
+          "type": "tf",
+          "statement": "The molar mass of a gas can be found from its mass, p, V and T using pV = (m/M)RT.",
+          "answer": true,
+          "explanation": "Rearranging gives M = mRT/(pV).",
+          "terms": [
+            "chemistry-s1.5-ideal-gas-equation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q09",
+          "type": "order",
+          "prompt": "Order the steps to find the molar mass of a volatile liquid by vaporizing it in a gas syringe.",
+          "items": [
+            "Weigh the liquid sample",
+            "Inject and vaporize it at a known temperature",
+            "Read the gas volume and pressure",
+            "Calculate n = pV/RT",
+            "Calculate M = m/n"
+          ],
+          "explanation": "This is a common practical use of the ideal gas equation.",
+          "terms": [
+            "chemistry-s1.5-ideal-gas-equation"
+          ]
+        },
+        {
+          "id": "chemistry-S1.5-2-q10",
+          "type": "mcq",
+          "prompt": "A gas at 200 kPa, 1.00 dm³ and 250 K is changed to 100 kPa and 500 K. What is its new volume?",
+          "options": [
+            "4.00 dm³",
+            "0.25 dm³",
+            "1.00 dm³",
+            "2.00 dm³"
+          ],
+          "answer": 0,
+          "explanation": "V₂ = p₁V₁T₂/(p₂T₁) = 200 × 1.00 × 500 / (100 × 250) = 4.00 dm³.",
+          "terms": [
+            "chemistry-s1.5-combined"
+          ]
+        }
+      ]
+    }
+  ]
+}

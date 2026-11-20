@@ -1,0 +1,601 @@
+{
+  "id": "chemistry-R3.3",
+  "code": "R3.3–R3.4",
+  "unit": "R3",
+  "title": "Radicals, nucleophiles and electrophiles",
+  "level": "SL",
+  "summary": "Radicals form by homolytic fission and drive chain reactions such as alkane halogenation. Nucleophiles and electrophiles react by sharing electron pairs; at HL, Lewis acids and bases, SN1/SN2 and electrophilic addition and substitution mechanisms.",
+  "keyterms": [
+    {
+      "id": "chemistry-r3.3-radical",
+      "term": "Radical",
+      "definition": "A species with an unpaired electron, shown with a dot (e.g. Cl•); highly reactive.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-homolytic",
+      "term": "Homolytic fission",
+      "definition": "Breaking of a covalent bond so that each atom takes one electron, forming two radicals.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-heterolytic",
+      "term": "Heterolytic fission",
+      "definition": "Breaking of a covalent bond so that one atom takes both electrons, forming a cation and an anion.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-chain-steps",
+      "term": "Initiation, propagation, termination",
+      "definition": "The three stages of a radical chain reaction: radicals form, react to regenerate radicals, then combine.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-nucleophile",
+      "term": "Nucleophile",
+      "definition": "An electron-rich species with a lone pair that it donates to an electron-deficient carbon, e.g. OH⁻, NH₃, H₂O.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-electrophile",
+      "term": "Electrophile",
+      "definition": "An electron-deficient species that accepts an electron pair, e.g. H⁺, NO₂⁺, Br₂ (polarized).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-substitution",
+      "term": "Nucleophilic substitution",
+      "definition": "A reaction in which a nucleophile replaces a leaving group (such as a halide) on a carbon atom.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-addition",
+      "term": "Electrophilic addition",
+      "definition": "Reaction of an alkene in which an electrophile adds across the C=C bond.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-curly-arrow",
+      "term": "Curly arrow",
+      "definition": "Shows movement of an electron pair from a lone pair or bond to an atom or new bond.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.3-lewis",
+      "term": "Lewis acid / base",
+      "definition": "A Lewis acid accepts an electron pair; a Lewis base donates one.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r3.3-sn1-sn2",
+      "term": "SN1 and SN2",
+      "definition": "SN2: one step, rate = k[RX][Nu⁻], typical of primary halogenoalkanes. SN1: via a carbocation, rate = k[RX], typical of tertiary.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r3.3-carbocation",
+      "term": "Carbocation",
+      "definition": "A positively charged carbon intermediate; stability: tertiary > secondary > primary.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r3.3-markovnikov",
+      "term": "Markovnikov's rule",
+      "definition": "In addition of HX to an unsymmetrical alkene, H adds to the carbon with more H atoms, via the more stable carbocation.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-R3.3-1",
+      "title": "Radicals and alkane halogenation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R3.3-1-q01",
+          "type": "mcq",
+          "prompt": "What is needed to start the reaction of methane with chlorine?",
+          "options": [
+            "Ultraviolet light",
+            "Darkness",
+            "Water",
+            "A catalyst"
+          ],
+          "answer": 0,
+          "explanation": "UV supplies energy for homolytic fission of Cl–Cl (initiation).",
+          "terms": [
+            "chemistry-r3.3-homolytic",
+            "chemistry-r3.3-chain-steps"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q02",
+          "type": "fill",
+          "text": "Cl₂ → 2Cl• is the ___ step.",
+          "answer": "initiation",
+          "bank": [
+            "initiation",
+            "propagation",
+            "termination"
+          ],
+          "explanation": "Radicals are created from a molecule.",
+          "terms": [
+            "chemistry-r3.3-chain-steps"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q03",
+          "type": "tf",
+          "statement": "In a propagation step, a radical reacts and another radical is formed.",
+          "answer": true,
+          "explanation": "e.g. CH₄ + Cl• → CH₃• + HCl; the chain continues.",
+          "terms": [
+            "chemistry-r3.3-chain-steps",
+            "chemistry-r3.3-radical"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q04",
+          "type": "match",
+          "prompt": "Classify each step.",
+          "pairs": [
+            {
+              "left": "Cl₂ → 2Cl•",
+              "right": "Initiation"
+            },
+            {
+              "left": "CH₃• + Cl₂ → CH₃Cl + Cl•",
+              "right": "Propagation"
+            },
+            {
+              "left": "CH₃• + Cl• → CH₃Cl",
+              "right": "Termination"
+            }
+          ],
+          "explanation": "Termination removes radicals by pairing their electrons.",
+          "terms": [
+            "chemistry-r3.3-chain-steps"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q05",
+          "type": "mcq",
+          "prompt": "Why are alkanes generally unreactive?",
+          "options": [
+            "C–C and C–H bonds are strong and almost non-polar",
+            "They contain π bonds",
+            "They are ionic",
+            "They are very polar"
+          ],
+          "answer": 0,
+          "explanation": "With no polar bonds or lone pairs, they do not attract nucleophiles or electrophiles.",
+          "terms": [
+            "chemistry-r3.3-radical"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q06",
+          "type": "tf",
+          "statement": "Homolytic fission produces ions.",
+          "answer": false,
+          "explanation": "Each atom keeps one electron, giving two radicals; heterolytic fission gives ions.",
+          "terms": [
+            "chemistry-r3.3-homolytic",
+            "chemistry-r3.3-heterolytic"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q07",
+          "type": "fill",
+          "text": "A species with an unpaired electron is a ___.",
+          "answer": "radical",
+          "bank": [
+            "radical",
+            "nucleophile",
+            "carbocation",
+            "ion"
+          ],
+          "explanation": "Radicals are shown with a dot and are very reactive.",
+          "terms": [
+            "chemistry-r3.3-radical"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q08",
+          "type": "mcq",
+          "prompt": "Why can the chlorination of methane give a mixture of products?",
+          "options": [
+            "UV light breaks C–C bonds",
+            "Cl• can also substitute into CH₃Cl, giving CH₂Cl₂, CHCl₃ and CCl₄",
+            "Methane is ionic",
+            "Only termination occurs"
+          ],
+          "answer": 1,
+          "explanation": "Further substitution and termination steps give multiple products.",
+          "terms": [
+            "chemistry-r3.3-chain-steps"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q09",
+          "type": "order",
+          "prompt": "Order the steps of the radical chain mechanism.",
+          "items": [
+            "UV light breaks Cl–Cl",
+            "Cl• removes H from CH₄",
+            "CH₃• reacts with Cl₂",
+            "Two radicals combine"
+          ],
+          "explanation": "Initiation, two propagation steps, then termination.",
+          "terms": [
+            "chemistry-r3.3-chain-steps"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-1-q10",
+          "type": "mcq",
+          "prompt": "Which molecule is formed in a termination step of methane chlorination?",
+          "options": [
+            "CH₃•",
+            "HCl",
+            "Cl•",
+            "C₂H₆"
+          ],
+          "answer": 3,
+          "explanation": "Two methyl radicals combine to form ethane.",
+          "terms": [
+            "chemistry-r3.3-chain-steps"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R3.3-2",
+      "title": "Nucleophiles and electrophiles",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R3.3-2-q01",
+          "type": "mcq",
+          "prompt": "Which species is a nucleophile?",
+          "options": [
+            "NO₂⁺",
+            "OH⁻",
+            "Br⁺",
+            "H⁺"
+          ],
+          "answer": 1,
+          "explanation": "OH⁻ has lone pairs and a negative charge; it attacks electron-deficient carbon.",
+          "terms": [
+            "chemistry-r3.3-nucleophile"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q02",
+          "type": "tf",
+          "statement": "In a halogenoalkane, the carbon bonded to the halogen carries a partial positive charge.",
+          "answer": true,
+          "explanation": "The halogen is more electronegative, making C δ+ and open to nucleophilic attack.",
+          "terms": [
+            "chemistry-r3.3-substitution"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q03",
+          "type": "fill",
+          "text": "Bromoethane + OH⁻ → ethanol + ___.",
+          "answer": "Br⁻",
+          "accept": [
+            "Br-",
+            "bromide"
+          ],
+          "bank": [
+            "Br⁻",
+            "Br₂",
+            "HBr",
+            "Br•"
+          ],
+          "explanation": "The hydroxide replaces bromine, which leaves as bromide ion.",
+          "terms": [
+            "chemistry-r3.3-substitution"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q04",
+          "type": "mcq",
+          "prompt": "Ethene reacts with bromine water. What is observed?",
+          "options": [
+            "Effervescence",
+            "Turns orange",
+            "Turns from orange to colourless",
+            "Turns purple"
+          ],
+          "answer": 2,
+          "explanation": "Electrophilic addition of Br₂ across C=C forms colourless 1,2-dibromoethane: a test for unsaturation.",
+          "terms": [
+            "chemistry-r3.3-addition",
+            "chemistry-r3.3-electrophile"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q05",
+          "type": "match",
+          "prompt": "Match each reaction to its type.",
+          "pairs": [
+            {
+              "left": "C₂H₄ + HBr → C₂H₅Br",
+              "right": "Electrophilic addition"
+            },
+            {
+              "left": "CH₃Cl + OH⁻ → CH₃OH + Cl⁻",
+              "right": "Nucleophilic substitution"
+            },
+            {
+              "left": "CH₄ + Cl₂ → CH₃Cl + HCl (UV)",
+              "right": "Radical substitution"
+            }
+          ],
+          "explanation": "Reaction types follow from bond type and reagent.",
+          "terms": [
+            "chemistry-r3.3-addition",
+            "chemistry-r3.3-substitution",
+            "chemistry-r3.3-radical"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q06",
+          "type": "tf",
+          "statement": "A curly arrow shows the movement of a single electron.",
+          "answer": false,
+          "explanation": "A full curly arrow shows a pair of electrons; a half-headed (fish-hook) arrow shows one.",
+          "terms": [
+            "chemistry-r3.3-curly-arrow"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q07",
+          "type": "mcq",
+          "prompt": "Which statement about electrophiles is correct?",
+          "options": [
+            "They are always negative",
+            "They have unpaired electrons",
+            "They donate a lone pair",
+            "They accept an electron pair"
+          ],
+          "answer": 3,
+          "explanation": "Electrophiles are attracted to electron-rich regions such as the C=C π bond.",
+          "terms": [
+            "chemistry-r3.3-electrophile"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q08",
+          "type": "fill",
+          "text": "Heterolytic fission of H–Br produces H⁺ and ___.",
+          "answer": "Br⁻",
+          "accept": [
+            "Br-"
+          ],
+          "bank": [
+            "Br⁻",
+            "Br•",
+            "Br⁺",
+            "Br₂"
+          ],
+          "explanation": "Br is more electronegative and takes both electrons.",
+          "terms": [
+            "chemistry-r3.3-heterolytic"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q09",
+          "type": "order",
+          "prompt": "Order the steps when HBr adds to ethene.",
+          "items": [
+            "C=C π electrons attack the δ+ H of HBr",
+            "H–Br bond breaks heterolytically",
+            "A carbocation and Br⁻ form",
+            "Br⁻ bonds to the carbocation"
+          ],
+          "explanation": "This is electrophilic addition via a carbocation intermediate.",
+          "terms": [
+            "chemistry-r3.3-addition",
+            "chemistry-r3.3-curly-arrow"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-2-q10",
+          "type": "mcq",
+          "prompt": "Which reagent and conditions convert ethene to ethanol?",
+          "options": [
+            "Steam with H₃PO₄ catalyst, high T and p",
+            "NaOH(aq), reflux",
+            "UV light and Cl₂",
+            "H₂ with Ni catalyst"
+          ],
+          "answer": 0,
+          "explanation": "Hydration of alkenes is electrophilic addition of water.",
+          "terms": [
+            "chemistry-r3.3-addition"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R3.3-3",
+      "title": "Lewis acids and organic mechanisms (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-R3.3-3-q01",
+          "type": "mcq",
+          "prompt": "In BF₃ + NH₃ → F₃B–NH₃, BF₃ acts as a…",
+          "options": [
+            "nucleophile",
+            "Lewis base",
+            "Lewis acid",
+            "Brønsted–Lowry acid"
+          ],
+          "answer": 2,
+          "explanation": "BF₃ accepts the lone pair from NH₃ (Lewis base) forming a coordination bond.",
+          "terms": [
+            "chemistry-r3.3-lewis"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q02",
+          "type": "tf",
+          "statement": "All nucleophiles are Lewis bases.",
+          "answer": true,
+          "explanation": "Both donate an electron pair; \"nucleophile\" is used when the pair is donated to carbon.",
+          "terms": [
+            "chemistry-r3.3-lewis",
+            "chemistry-r3.3-nucleophile"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q03",
+          "type": "mcq",
+          "prompt": "2-bromo-2-methylpropane (tertiary) reacts with OH⁻ mainly by…",
+          "options": [
+            "SN1",
+            "electrophilic addition",
+            "radical substitution",
+            "SN2"
+          ],
+          "answer": 0,
+          "explanation": "Tertiary halides form a stable carbocation, and steric hindrance blocks back-side attack.",
+          "terms": [
+            "chemistry-r3.3-sn1-sn2",
+            "chemistry-r3.3-carbocation"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q04",
+          "type": "fill",
+          "text": "The SN2 rate equation is rate = k[RX][___].",
+          "answer": "Nu⁻",
+          "accept": [
+            "OH⁻",
+            "Nu-",
+            "OH-"
+          ],
+          "bank": [
+            "Nu⁻",
+            "RX",
+            "H₂O",
+            "H⁺"
+          ],
+          "explanation": "Both species are in the single rate-determining step (bimolecular).",
+          "terms": [
+            "chemistry-r3.3-sn1-sn2"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q05",
+          "type": "match",
+          "prompt": "Compare SN1 and SN2.",
+          "pairs": [
+            {
+              "left": "SN1",
+              "right": "Carbocation intermediate"
+            },
+            {
+              "left": "SN2",
+              "right": "One step, back-side attack"
+            },
+            {
+              "left": "SN2 stereochemistry",
+              "right": "Inversion of configuration"
+            },
+            {
+              "left": "SN1 rate",
+              "right": "First order in halogenoalkane"
+            }
+          ],
+          "explanation": "Polar protic solvents favour SN1; polar aprotic favour SN2.",
+          "terms": [
+            "chemistry-r3.3-sn1-sn2"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q06",
+          "type": "mcq",
+          "prompt": "HBr adds to propene. The major product is…",
+          "options": [
+            "1-bromopropane",
+            "2-bromopropane",
+            "1,2-dibromopropane",
+            "propan-2-ol"
+          ],
+          "answer": 1,
+          "explanation": "Markovnikov: H adds to CH₂, giving the more stable secondary carbocation, so Br bonds to C2.",
+          "terms": [
+            "chemistry-r3.3-markovnikov",
+            "chemistry-r3.3-carbocation"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q07",
+          "type": "order",
+          "prompt": "Order carbocations by stability, most stable first.",
+          "items": [
+            "(CH₃)₃C⁺",
+            "(CH₃)₂CH⁺",
+            "CH₃CH₂⁺",
+            "CH₃⁺"
+          ],
+          "explanation": "Alkyl groups push electron density towards the positive carbon (positive inductive effect).",
+          "terms": [
+            "chemistry-r3.3-carbocation"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q08",
+          "type": "tf",
+          "statement": "Benzene typically undergoes electrophilic addition rather than substitution.",
+          "answer": false,
+          "explanation": "Substitution keeps the stable delocalized π system; e.g. nitration with NO₂⁺.",
+          "terms": [
+            "chemistry-r3.3-electrophile"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q09",
+          "type": "fill",
+          "text": "In the nitration of benzene, the electrophile is ___.",
+          "answer": "NO₂⁺",
+          "accept": [
+            "NO2+"
+          ],
+          "bank": [
+            "NO₂⁺",
+            "NO₃⁻",
+            "HNO₃",
+            "H⁺"
+          ],
+          "explanation": "Concentrated H₂SO₄ protonates HNO₃, producing the nitronium ion.",
+          "terms": [
+            "chemistry-r3.3-electrophile"
+          ]
+        },
+        {
+          "id": "chemistry-R3.3-3-q10",
+          "type": "mcq",
+          "prompt": "Which halogenoalkane reacts fastest with OH⁻ by SN2, other things being equal?",
+          "options": [
+            "CH₃CH₂Br",
+            "CH₃CH₂I",
+            "CH₃CH₂F",
+            "CH₃CH₂Cl"
+          ],
+          "answer": 1,
+          "explanation": "The C–I bond is the weakest, so iodide is the best leaving group.",
+          "terms": [
+            "chemistry-r3.3-sn1-sn2"
+          ]
+        }
+      ]
+    }
+  ]
+}

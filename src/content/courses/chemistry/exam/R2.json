@@ -1,0 +1,130 @@
+[
+  {
+    "id": "chemistry-X-R2-01",
+    "unit": "R2",
+    "topics": ["chemistry-R2.2"],
+    "paper": "P1B",
+    "level": "HL",
+    "title": "Deducing a rate equation from initial rates",
+    "stem": "The reaction 2A + B → C was studied at 298 K. The initial rate was measured for three different starting mixtures.",
+    "data": {
+      "caption": "Initial rates at 298 K",
+      "columns": ["Experiment", "[A] / mol dm⁻³", "[B] / mol dm⁻³", "Initial rate / mol dm⁻³ s⁻¹"],
+      "rows": [
+        ["1", "0.10", "0.10", "2.0 × 10⁻⁴"],
+        ["2", "0.20", "0.10", "8.0 × 10⁻⁴"],
+        ["3", "0.10", "0.30", "6.0 × 10⁻⁴"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Deduce",
+        "prompt": "Deduce the order of reaction with respect to A and to B, and write the rate equation.",
+        "marks": 3,
+        "markscheme": [
+          "experiments 1 and 2: doubling [A] quadruples rate, so second order in A",
+          "experiments 1 and 3: tripling [B] triples rate, so first order in B",
+          "rate = k[A]²[B]"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the value of the rate constant, k, and state its units.",
+        "marks": 2,
+        "numeric": { "value": 0.2, "tolerance": 0.005, "unit": "dm⁶ mol⁻² s⁻¹" },
+        "markscheme": [
+          "k = 2.0 × 10⁻⁴ / (0.10² × 0.10) = 0.20",
+          "units: dm⁶ mol⁻² s⁻¹"
+        ],
+        "notes": "Apply ECF from (a)."
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the initial rate when [A] = 0.30 mol dm⁻³ and [B] = 0.20 mol dm⁻³ at 298 K.",
+        "marks": 1,
+        "numeric": { "value": 0.0036, "tolerance": 0.0001, "unit": "mol dm⁻³ s⁻¹" },
+        "markscheme": [
+          "rate = 0.20 × 0.30² × 0.20 = 3.6 × 10⁻³ mol dm⁻³ s⁻¹"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "A proposed mechanism has a slow first step A + A → A₂ followed by a fast step A₂ + B → C. Explain whether this mechanism is consistent with your rate equation.",
+        "marks": 2,
+        "markscheme": [
+          "not consistent",
+          "a slow step involving only two A predicts rate = k[A]² / B appears only after the rate-determining step, so the rate would be zero order in B, but the data show first order in B"
+        ],
+        "notes": "Award [1] for a correct prediction of the rate equation from the mechanism even if the conclusion is missing."
+      }
+    ]
+  },
+  {
+    "id": "chemistry-X-R2-02",
+    "unit": "R2",
+    "topics": ["chemistry-R2.1", "chemistry-R2.2", "chemistry-R2.3"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Making sulfur trioxide",
+    "stem": "Sulfur trioxide is made industrially from sulfur dioxide and oxygen in the presence of a vanadium(V) oxide catalyst:\n2SO₂(g) + O₂(g) ⇌ 2SO₃(g)   ΔH = −196 kJ\nIn a laboratory model, 0.40 mol of SO₂ and 0.15 mol of O₂ are placed in a sealed vessel.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Determine",
+        "prompt": "Determine the limiting reactant and the maximum amount, in mol, of SO₃ that could form.",
+        "marks": 2,
+        "numeric": { "value": 0.3, "tolerance": 0.005, "unit": "mol" },
+        "markscheme": [
+          "0.40 mol SO₂ needs 0.20 mol O₂ but only 0.15 mol is present, so O₂ is limiting",
+          "maximum n(SO₃) = 2 × 0.15 = 0.30 mol"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Write",
+        "prompt": "Write the expression for the equilibrium constant, K.",
+        "marks": 1,
+        "markscheme": [
+          "K = [SO₃]² / ([SO₂]² [O₂])"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Predict",
+        "prompt": "Predict, with reasons, the effect of increasing the temperature on the equilibrium yield of SO₃ and on the value of K.",
+        "marks": 3,
+        "markscheme": [
+          "yield of SO₃ decreases / equilibrium shifts left",
+          "forward reaction is exothermic so the endothermic (backward) reaction is favoured to absorb the added heat",
+          "K decreases"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Explain, using collision theory, why the rate of reaction increases at higher temperature. Refer to a Maxwell–Boltzmann distribution in your answer.",
+        "marks": 3,
+        "markscheme": [
+          "particles have greater average kinetic energy / move faster so collide more frequently",
+          "Maxwell–Boltzmann curve shifts to the right / flattens so a greater proportion of particles have E ≥ Ea",
+          "so more frequent successful collisions (greater proportion of collisions are successful)"
+        ],
+        "notes": "The key mark is the increased proportion of particles with energy ≥ Ea."
+      },
+      {
+        "label": "e",
+        "command": "State",
+        "prompt": "State the effect of the catalyst on the position of equilibrium and on the time taken to reach equilibrium.",
+        "marks": 2,
+        "markscheme": [
+          "no effect on the position of equilibrium / yield",
+          "equilibrium is reached faster (forward and backward rates increase equally)"
+        ]
+      }
+    ]
+  }
+]

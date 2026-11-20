@@ -1,0 +1,65 @@
+[
+  {
+    "id": "chemistry-X-S3-01",
+    "unit": "S3",
+    "topics": ["chemistry-S3.2"],
+    "paper": "P1B",
+    "level": "SL",
+    "title": "Identifying an unknown carbonyl compound",
+    "stem": "An unknown liquid Y has the molecular formula C₃H₆O. Its infrared spectrum and mass spectrum were recorded. The main features are summarised below.",
+    "data": {
+      "caption": "Spectroscopic data for compound Y",
+      "columns": ["Technique", "Observation"],
+      "rows": [
+        ["Infrared", "Strong, sharp absorption at 1715 cm⁻¹"],
+        ["Infrared", "Absorptions at 2850–3000 cm⁻¹; no broad absorption at 3200–3600 cm⁻¹"],
+        ["Mass spectrum", "Molecular ion peak at m/z = 58"],
+        ["Mass spectrum", "Most intense (base) peak at m/z = 43; no significant peak at m/z = 29"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the index of hydrogen deficiency (IHD) of Y.",
+        "marks": 1,
+        "numeric": { "value": 1, "tolerance": 0, "unit": "" },
+        "markscheme": [
+          "IHD = (2 × 3 + 2 − 6)/2 = 1"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Identify",
+        "prompt": "Identify the bonds responsible for the absorptions at 1715 cm⁻¹ and at 2850–3000 cm⁻¹, and state what the absence of an absorption at 3200–3600 cm⁻¹ shows.",
+        "marks": 3,
+        "markscheme": [
+          "1715 cm⁻¹: C=O",
+          "2850–3000 cm⁻¹: C–H",
+          "no O–H group present / Y is not an alcohol (or enol)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Deduce",
+        "prompt": "Deduce the formula of the fragment responsible for the peak at m/z = 43 and the species lost from the molecular ion to form it.",
+        "marks": 2,
+        "markscheme": [
+          "CH₃CO⁺ / C₂H₃O⁺",
+          "loss of CH₃ (mass 15) / 58 − 43 = 15"
+        ],
+        "notes": "Charge required on the fragment for the first mark."
+      },
+      {
+        "label": "d",
+        "command": "Deduce",
+        "prompt": "Two isomers of C₃H₆O contain a C=O bond. Deduce, with a reason, whether Y is propanal or propanone.",
+        "marks": 2,
+        "markscheme": [
+          "propanone, CH₃COCH₃",
+          "propanal would give a fragment at m/z = 29 (CHO⁺ / C₂H₅⁺) / loss of CH₃ from propanone gives CH₃CO⁺ at 43 as the base peak"
+        ]
+      }
+    ]
+  }
+]

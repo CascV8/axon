@@ -1,0 +1,613 @@
+{
+  "id": "chemistry-S2.2a",
+  "code": "S2.2",
+  "unit": "S2",
+  "title": "The covalent model: bonds and shapes",
+  "level": "SL",
+  "summary": "Atoms share electron pairs to form covalent bonds. Draw Lewis structures, use VSEPR to predict shapes and bond angles, and decide whether molecules are polar; at HL, handle expanded octets and formal charge.",
+  "keyterms": [
+    {
+      "id": "chemistry-s2.2a-covalent-bond",
+      "term": "Covalent bond",
+      "definition": "The electrostatic attraction between a shared pair of electrons and the positively charged nuclei of the bonded atoms.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-lewis",
+      "term": "Lewis formula",
+      "definition": "A diagram showing all valence electrons in a molecule or ion as bonding pairs and lone (non-bonding) pairs.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-octet",
+      "term": "Octet rule",
+      "definition": "Atoms tend to gain, lose or share electrons to achieve eight valence electrons; hydrogen and some others are exceptions.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-coordination-bond",
+      "term": "Coordination bond",
+      "definition": "A covalent bond in which both shared electrons come from the same atom (dative bond).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-bond-order",
+      "term": "Bond order",
+      "definition": "The number of shared electron pairs between two atoms; higher bond order means shorter, stronger bonds.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-vsepr",
+      "term": "VSEPR theory",
+      "definition": "Electron domains around a central atom repel each other and arrange themselves as far apart as possible.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-electron-domain",
+      "term": "Electron domain",
+      "definition": "A region of electron density around a central atom: a lone pair, single bond or multiple bond.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-lone-pair",
+      "term": "Lone pair",
+      "definition": "A pair of valence electrons not involved in bonding; repels more strongly than bonding pairs.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-bond-polarity",
+      "term": "Bond polarity",
+      "definition": "Unequal sharing of electrons in a bond due to an electronegativity difference, giving partial charges δ+ and δ−.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-molecular-polarity",
+      "term": "Molecular polarity",
+      "definition": "A molecule is polar if its bond dipoles do not cancel, giving a net dipole moment; depends on bonds and shape.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.2a-expanded-octet",
+      "term": "Expanded octet",
+      "definition": "More than eight electrons around a central atom of period 3 or below, giving five or six electron domains.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s2.2a-formal-charge",
+      "term": "Formal charge",
+      "definition": "FC = valence electrons − non-bonding electrons − ½ bonding electrons; the preferred Lewis structure minimizes it.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S2.2a-1",
+      "title": "Lewis structures and bonds",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S2.2a-1-q01",
+          "type": "mcq",
+          "prompt": "How many lone pairs are on the oxygen atom in water?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "0"
+          ],
+          "answer": 1,
+          "explanation": "O has 6 valence electrons: two are used in O–H bonds and four form two lone pairs.",
+          "terms": [
+            "chemistry-s2.2a-lone-pair",
+            "chemistry-s2.2a-lewis"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q02",
+          "type": "tf",
+          "statement": "In a coordination bond both electrons come from the same atom.",
+          "answer": true,
+          "explanation": "For example in NH₄⁺, the N lone pair forms a bond to H⁺. Once formed it is identical to the other N–H bonds.",
+          "terms": [
+            "chemistry-s2.2a-coordination-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q03",
+          "type": "mcq",
+          "prompt": "Which bond is the shortest and strongest?",
+          "options": [
+            "C–C",
+            "C=C",
+            "C≡C",
+            "All equal"
+          ],
+          "answer": 2,
+          "explanation": "More shared pairs (higher bond order) pull the nuclei closer and need more energy to break.",
+          "terms": [
+            "chemistry-s2.2a-bond-order"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q04",
+          "type": "fill",
+          "text": "The number of electron pairs shared between N atoms in N₂ is ___.",
+          "answer": "3",
+          "accept": [
+            "three"
+          ],
+          "bank": [
+            "3",
+            "2",
+            "1",
+            "4"
+          ],
+          "explanation": "N₂ has a triple bond, N≡N, plus one lone pair on each N.",
+          "terms": [
+            "chemistry-s2.2a-bond-order",
+            "chemistry-s2.2a-lewis"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q05",
+          "type": "match",
+          "prompt": "Match each molecule to its bond type between the named atoms.",
+          "pairs": [
+            {
+              "left": "C=O in CO₂",
+              "right": "Double bond"
+            },
+            {
+              "left": "N≡N in N₂",
+              "right": "Triple bond"
+            },
+            {
+              "left": "H–Cl in HCl",
+              "right": "Single bond"
+            },
+            {
+              "left": "C≡O in CO",
+              "right": "Triple bond including a coordination bond"
+            }
+          ],
+          "explanation": "CO has a triple bond in which one pair comes from oxygen.",
+          "terms": [
+            "chemistry-s2.2a-bond-order",
+            "chemistry-s2.2a-coordination-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q06",
+          "type": "tf",
+          "statement": "Boron in BF₃ obeys the octet rule.",
+          "answer": false,
+          "explanation": "B has only three bonding pairs (six electrons): BF₃ is electron deficient and can accept a lone pair.",
+          "terms": [
+            "chemistry-s2.2a-octet"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q07",
+          "type": "mcq",
+          "prompt": "Which species contains a coordination bond?",
+          "options": [
+            "H₂O",
+            "C₂H₆",
+            "CH₄",
+            "H₃O⁺"
+          ],
+          "answer": 3,
+          "explanation": "In H₃O⁺, an O lone pair bonds to H⁺.",
+          "terms": [
+            "chemistry-s2.2a-coordination-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q08",
+          "type": "fill",
+          "text": "A covalent bond is the attraction between a shared pair of electrons and the two ___.",
+          "answer": "nuclei",
+          "bank": [
+            "nuclei",
+            "neutrons",
+            "lone pairs",
+            "ions"
+          ],
+          "explanation": "Both positive nuclei attract the shared negative electron pair.",
+          "terms": [
+            "chemistry-s2.2a-covalent-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q09",
+          "type": "order",
+          "prompt": "Order the steps for drawing a Lewis formula.",
+          "items": [
+            "Count the total valence electrons",
+            "Join atoms with single bonds",
+            "Complete octets of outer atoms with lone pairs",
+            "Place any remaining electrons on the central atom",
+            "Form multiple bonds if the central atom lacks an octet"
+          ],
+          "explanation": "Total valence electrons are distributed so that each atom (except H) reaches an octet where possible.",
+          "terms": [
+            "chemistry-s2.2a-lewis",
+            "chemistry-s2.2a-octet"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-1-q10",
+          "type": "mcq",
+          "prompt": "How many valence electrons are shown in the Lewis formula of CO₃²⁻?",
+          "options": [
+            "24",
+            "26",
+            "20",
+            "22"
+          ],
+          "answer": 0,
+          "explanation": "C 4 + 3 × O 6 = 22, plus 2 for the charge = 24.",
+          "terms": [
+            "chemistry-s2.2a-lewis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S2.2a-2",
+      "title": "VSEPR shapes and polarity",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S2.2a-2-q01",
+          "type": "mcq",
+          "prompt": "What is the shape of NH₃?",
+          "options": [
+            "Bent",
+            "Trigonal planar",
+            "Trigonal pyramidal",
+            "Tetrahedral"
+          ],
+          "answer": 2,
+          "explanation": "Four electron domains (3 bonding, 1 lone pair) give a tetrahedral domain geometry but a trigonal pyramidal molecule.",
+          "terms": [
+            "chemistry-s2.2a-vsepr",
+            "chemistry-s2.2a-lone-pair"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q02",
+          "type": "fill",
+          "text": "The H–O–H bond angle in water is about ___°.",
+          "answer": "104.5",
+          "accept": [
+            "105"
+          ],
+          "bank": [
+            "104.5",
+            "109.5",
+            "120",
+            "180"
+          ],
+          "explanation": "Two lone pairs repel more than bonding pairs, squeezing the angle below 109.5°.",
+          "terms": [
+            "chemistry-s2.2a-vsepr",
+            "chemistry-s2.2a-lone-pair"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q03",
+          "type": "tf",
+          "statement": "CO₂ is a non-polar molecule even though its C=O bonds are polar.",
+          "answer": true,
+          "explanation": "CO₂ is linear, so the two equal bond dipoles point in opposite directions and cancel.",
+          "terms": [
+            "chemistry-s2.2a-molecular-polarity",
+            "chemistry-s2.2a-bond-polarity"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q04",
+          "type": "match",
+          "prompt": "Match each molecule to its shape.",
+          "pairs": [
+            {
+              "left": "BF₃",
+              "right": "Trigonal planar"
+            },
+            {
+              "left": "CH₄",
+              "right": "Tetrahedral"
+            },
+            {
+              "left": "CO₂",
+              "right": "Linear"
+            },
+            {
+              "left": "H₂O",
+              "right": "Bent"
+            },
+            {
+              "left": "SO₂",
+              "right": "Bent (about 117°)"
+            }
+          ],
+          "explanation": "Count electron domains on the central atom, then consider lone pairs.",
+          "terms": [
+            "chemistry-s2.2a-vsepr",
+            "chemistry-s2.2a-electron-domain"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q05",
+          "type": "mcq",
+          "prompt": "Which molecule is polar?",
+          "options": [
+            "CCl₄",
+            "BF₃",
+            "CHCl₃",
+            "CO₂"
+          ],
+          "answer": 2,
+          "explanation": "CHCl₃ is tetrahedral but its bond dipoles are unequal (C–H vs C–Cl), so they do not cancel.",
+          "terms": [
+            "chemistry-s2.2a-molecular-polarity"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q06",
+          "type": "tf",
+          "statement": "A double bond counts as two electron domains in VSEPR theory.",
+          "answer": false,
+          "explanation": "Any bond to an atom, single or multiple, counts as one electron domain.",
+          "terms": [
+            "chemistry-s2.2a-electron-domain"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q07",
+          "type": "mcq",
+          "prompt": "What is the approximate bond angle in methanal, H₂C=O?",
+          "options": [
+            "120°",
+            "180°",
+            "90°",
+            "109.5°"
+          ],
+          "answer": 0,
+          "explanation": "Carbon has three electron domains and no lone pairs: trigonal planar, about 120°.",
+          "terms": [
+            "chemistry-s2.2a-vsepr",
+            "chemistry-s2.2a-electron-domain"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q08",
+          "type": "order",
+          "prompt": "Order by bond angle, smallest first.",
+          "items": [
+            "H₂O",
+            "NH₃",
+            "CH₄",
+            "BF₃",
+            "CO₂"
+          ],
+          "explanation": "104.5° < 107° < 109.5° < 120° < 180°: lone pairs compress angles, and fewer domains spread further.",
+          "terms": [
+            "chemistry-s2.2a-vsepr",
+            "chemistry-s2.2a-lone-pair"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q09",
+          "type": "fill",
+          "text": "In the H–Cl bond, the chlorine atom carries a partial ___ charge.",
+          "answer": "negative",
+          "bank": [
+            "negative",
+            "positive",
+            "zero"
+          ],
+          "explanation": "Cl is more electronegative and pulls the shared pair towards itself (δ−).",
+          "terms": [
+            "chemistry-s2.2a-bond-polarity"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-2-q10",
+          "type": "mcq",
+          "prompt": "Which bond is the most polar?",
+          "options": [
+            "O–H",
+            "F–H",
+            "C–H",
+            "N–H"
+          ],
+          "answer": 1,
+          "explanation": "The electronegativity difference is greatest for H–F (4.0 − 2.2).",
+          "terms": [
+            "chemistry-s2.2a-bond-polarity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S2.2a-3",
+      "title": "Expanded octets and formal charge (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-S2.2a-3-q01",
+          "type": "mcq",
+          "prompt": "What is the shape of SF₆?",
+          "options": [
+            "Square planar",
+            "Tetrahedral",
+            "Trigonal bipyramidal",
+            "Octahedral"
+          ],
+          "answer": 3,
+          "explanation": "Six bonding domains and no lone pairs on S give an octahedral shape with 90° angles.",
+          "terms": [
+            "chemistry-s2.2a-expanded-octet",
+            "chemistry-s2.2a-vsepr"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q02",
+          "type": "mcq",
+          "prompt": "What is the shape of XeF₄?",
+          "options": [
+            "Octahedral",
+            "Tetrahedral",
+            "Square planar",
+            "Seesaw"
+          ],
+          "answer": 2,
+          "explanation": "Xe has six domains: four bonds and two lone pairs opposite each other, so the molecule is square planar.",
+          "terms": [
+            "chemistry-s2.2a-expanded-octet",
+            "chemistry-s2.2a-lone-pair"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q03",
+          "type": "tf",
+          "statement": "Nitrogen can form an expanded octet like phosphorus.",
+          "answer": false,
+          "explanation": "Period 2 atoms have no available d orbitals / too small; PCl₅ exists but NCl₅ does not.",
+          "terms": [
+            "chemistry-s2.2a-expanded-octet"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q04",
+          "type": "match",
+          "prompt": "Match electron domains (bonding + lone) to the molecular shape.",
+          "pairs": [
+            {
+              "left": "5 + 0",
+              "right": "Trigonal bipyramidal"
+            },
+            {
+              "left": "4 + 1",
+              "right": "Seesaw"
+            },
+            {
+              "left": "3 + 2",
+              "right": "T-shaped"
+            },
+            {
+              "left": "2 + 3",
+              "right": "Linear"
+            }
+          ],
+          "explanation": "In trigonal bipyramidal geometry, lone pairs occupy equatorial positions.",
+          "terms": [
+            "chemistry-s2.2a-expanded-octet",
+            "chemistry-s2.2a-vsepr"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q05",
+          "type": "fill",
+          "text": "The formal charge on the central O in O₃ (one single, one double bond) is ___.",
+          "answer": "+1",
+          "accept": [
+            "1",
+            "1+"
+          ],
+          "bank": [
+            "+1",
+            "0",
+            "−1",
+            "+2"
+          ],
+          "explanation": "Central O: 6 valence − 2 non-bonding − ½(6 bonding) = +1.",
+          "terms": [
+            "chemistry-s2.2a-formal-charge"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q06",
+          "type": "mcq",
+          "prompt": "Which Lewis structure is preferred by formal charge?",
+          "options": [
+            "The one with only single bonds",
+            "The one with the largest formal charges",
+            "The one with formal charges closest to zero",
+            "The one with the most lone pairs"
+          ],
+          "answer": 2,
+          "explanation": "Structures with formal charges nearest zero (and negative charge on the more electronegative atom) are preferred.",
+          "terms": [
+            "chemistry-s2.2a-formal-charge"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q07",
+          "type": "tf",
+          "statement": "ClF₃ is T-shaped.",
+          "answer": true,
+          "explanation": "Cl has five domains: three bonds and two lone pairs in equatorial positions, giving a T shape.",
+          "terms": [
+            "chemistry-s2.2a-expanded-octet"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q08",
+          "type": "mcq",
+          "prompt": "Which molecule is non-polar?",
+          "options": [
+            "PCl₅",
+            "ClF₃",
+            "BrF₅",
+            "SF₄"
+          ],
+          "answer": 0,
+          "explanation": "PCl₅ is a symmetrical trigonal bipyramid, so bond dipoles cancel. The others have lone pairs making them asymmetric.",
+          "terms": [
+            "chemistry-s2.2a-molecular-polarity",
+            "chemistry-s2.2a-expanded-octet"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q09",
+          "type": "fill",
+          "text": "The formal charge of any atom in a neutral molecule must add up to ___ overall.",
+          "answer": "0",
+          "accept": [
+            "zero"
+          ],
+          "bank": [
+            "0",
+            "1",
+            "−1",
+            "8"
+          ],
+          "explanation": "The sum of formal charges equals the overall charge of the species.",
+          "terms": [
+            "chemistry-s2.2a-formal-charge"
+          ]
+        },
+        {
+          "id": "chemistry-S2.2a-3-q10",
+          "type": "order",
+          "prompt": "Order by the number of electron domains on the central atom, smallest first.",
+          "items": [
+            "BeCl₂",
+            "BF₃",
+            "CH₄",
+            "PCl₅",
+            "SF₆"
+          ],
+          "explanation": "2, 3, 4, 5 and 6 domains respectively.",
+          "terms": [
+            "chemistry-s2.2a-electron-domain",
+            "chemistry-s2.2a-expanded-octet"
+          ]
+        }
+      ]
+    }
+  ]
+}

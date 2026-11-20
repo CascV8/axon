@@ -1,0 +1,619 @@
+{
+  "id": "chemistry-R3.2",
+  "code": "R3.2",
+  "unit": "R3",
+  "title": "Electron transfer reactions",
+  "level": "SL",
+  "summary": "Redox reactions transfer electrons. Use oxidation states and half-equations, compare metal reactivity, and explain voltaic and electrolytic cells; at HL, standard electrode potentials, E⦵ and ΔG, and electrolysis of aqueous solutions.",
+  "keyterms": [
+    {
+      "id": "chemistry-r3.2-oxidation",
+      "term": "Oxidation",
+      "definition": "Loss of electrons, or an increase in oxidation state.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-reduction",
+      "term": "Reduction",
+      "definition": "Gain of electrons, or a decrease in oxidation state.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-oxidizing-agent",
+      "term": "Oxidizing agent",
+      "definition": "A species that causes oxidation by accepting electrons; it is itself reduced.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-reducing-agent",
+      "term": "Reducing agent",
+      "definition": "A species that causes reduction by donating electrons; it is itself oxidized.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-half-equation",
+      "term": "Half-equation",
+      "definition": "An equation showing either the oxidation or the reduction part of a redox reaction, with electrons.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-activity-series",
+      "term": "Activity series",
+      "definition": "Metals ranked by how readily they are oxidized; a more reactive metal displaces a less reactive one from solution.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-voltaic",
+      "term": "Voltaic (galvanic) cell",
+      "definition": "Converts chemical energy from a spontaneous redox reaction into electrical energy.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-electrolytic",
+      "term": "Electrolytic cell",
+      "definition": "Uses electrical energy to drive a non-spontaneous redox reaction.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-anode",
+      "term": "Anode",
+      "definition": "The electrode where oxidation occurs (negative in a voltaic cell, positive in an electrolytic cell).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-cathode",
+      "term": "Cathode",
+      "definition": "The electrode where reduction occurs (positive in a voltaic cell, negative in an electrolytic cell).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-salt-bridge",
+      "term": "Salt bridge",
+      "definition": "Connects half-cells, allowing ions to move to balance charge while keeping solutions separate.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r3.2-e-standard",
+      "term": "Standard electrode potential (E⦵)",
+      "definition": "Potential of a half-cell relative to the standard hydrogen electrode (0 V) under standard conditions.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r3.2-she",
+      "term": "Standard hydrogen electrode",
+      "definition": "Reference half-cell: Pt in 1 mol dm⁻³ H⁺ with H₂ gas at 100 kPa, 298 K; assigned E⦵ = 0.00 V.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r3.2-electroplating",
+      "term": "Electroplating",
+      "definition": "Electrolysis that deposits a thin layer of metal on an object made the cathode.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-R3.2-1",
+      "title": "Redox, oxidation states and reactivity",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R3.2-1-q01",
+          "type": "mcq",
+          "prompt": "In Zn + Cu²⁺ → Zn²⁺ + Cu, which species is oxidized?",
+          "options": [
+            "Zn",
+            "Cu²⁺",
+            "Zn²⁺",
+            "Cu"
+          ],
+          "answer": 0,
+          "explanation": "Zn loses two electrons (0 → +2).",
+          "terms": [
+            "chemistry-r3.2-oxidation"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q02",
+          "type": "fill",
+          "text": "A species that is reduced is acting as the ___ agent.",
+          "answer": "oxidizing",
+          "accept": [
+            "oxidising"
+          ],
+          "bank": [
+            "oxidizing",
+            "reducing",
+            "catalytic"
+          ],
+          "explanation": "By accepting electrons it oxidizes the other species.",
+          "terms": [
+            "chemistry-r3.2-oxidizing-agent"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q03",
+          "type": "tf",
+          "statement": "In 2Mg + O₂ → 2MgO, oxygen is the reducing agent.",
+          "answer": false,
+          "explanation": "O goes from 0 to −2, so it is reduced: oxygen is the oxidizing agent; Mg is the reducing agent.",
+          "terms": [
+            "chemistry-r3.2-reducing-agent",
+            "chemistry-r3.2-oxidizing-agent"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q04",
+          "type": "mcq",
+          "prompt": "Balance the half-equation MnO₄⁻ + 8H⁺ + __e⁻ → Mn²⁺ + 4H₂O",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "8"
+          ],
+          "answer": 1,
+          "explanation": "Mn: +7 → +2 gains 5 electrons; check charge: −1 + 8 − 5 = +2.",
+          "terms": [
+            "chemistry-r3.2-half-equation"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q05",
+          "type": "match",
+          "prompt": "Match each process to its definition.",
+          "pairs": [
+            {
+              "left": "Oxidation",
+              "right": "Loss of electrons"
+            },
+            {
+              "left": "Reduction",
+              "right": "Gain of electrons"
+            },
+            {
+              "left": "Oxidizing agent",
+              "right": "Electron acceptor"
+            },
+            {
+              "left": "Reducing agent",
+              "right": "Electron donor"
+            }
+          ],
+          "explanation": "OIL RIG: Oxidation Is Loss, Reduction Is Gain.",
+          "terms": [
+            "chemistry-r3.2-oxidation",
+            "chemistry-r3.2-reduction",
+            "chemistry-r3.2-oxidizing-agent",
+            "chemistry-r3.2-reducing-agent"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q06",
+          "type": "mcq",
+          "prompt": "Which metal will displace copper from copper(II) sulfate solution?",
+          "options": [
+            "Platinum",
+            "Silver",
+            "Gold",
+            "Iron"
+          ],
+          "answer": 3,
+          "explanation": "Iron is above copper in the activity series, so it is more easily oxidized.",
+          "terms": [
+            "chemistry-r3.2-activity-series"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q07",
+          "type": "order",
+          "prompt": "Order these metals by reactivity, most reactive first.",
+          "items": [
+            "Potassium",
+            "Magnesium",
+            "Zinc",
+            "Copper",
+            "Silver"
+          ],
+          "explanation": "More reactive metals lose electrons more readily.",
+          "terms": [
+            "chemistry-r3.2-activity-series"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q08",
+          "type": "fill",
+          "text": "Ethanol is oxidized to ethanoic acid by acidified potassium ___.",
+          "answer": "dichromate(VI)",
+          "accept": [
+            "dichromate"
+          ],
+          "bank": [
+            "dichromate(VI)",
+            "chloride",
+            "nitrate",
+            "hydroxide"
+          ],
+          "explanation": "Cr₂O₇²⁻ (orange) is reduced to Cr³⁺ (green) under reflux.",
+          "terms": [
+            "chemistry-r3.2-oxidizing-agent"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q09",
+          "type": "tf",
+          "statement": "Primary alcohols can be oxidized to aldehydes and then carboxylic acids.",
+          "answer": true,
+          "explanation": "Distil off the aldehyde to stop at that stage; reflux for the acid. Tertiary alcohols are not oxidized easily.",
+          "terms": [
+            "chemistry-r3.2-oxidation"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-1-q10",
+          "type": "mcq",
+          "prompt": "Which reacts with dilute HCl to produce hydrogen?",
+          "options": [
+            "Au",
+            "Cu",
+            "Ag",
+            "Zn"
+          ],
+          "answer": 3,
+          "explanation": "Metals above hydrogen in the activity series reduce H⁺ to H₂.",
+          "terms": [
+            "chemistry-r3.2-activity-series"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R3.2-2",
+      "title": "Voltaic and electrolytic cells",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R3.2-2-q01",
+          "type": "mcq",
+          "prompt": "In a Zn/Cu voltaic cell, electrons flow through the external circuit…",
+          "options": [
+            "from Cu to Zn",
+            "from Zn to Cu",
+            "through the salt bridge",
+            "in both directions"
+          ],
+          "answer": 1,
+          "explanation": "Zn is oxidized (anode, negative) and its electrons flow to Cu (cathode).",
+          "terms": [
+            "chemistry-r3.2-voltaic",
+            "chemistry-r3.2-anode",
+            "chemistry-r3.2-cathode"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q02",
+          "type": "tf",
+          "statement": "In both types of cell, oxidation occurs at the anode.",
+          "answer": true,
+          "explanation": "An Ox, Red Cat applies to voltaic and electrolytic cells; only the polarity differs.",
+          "terms": [
+            "chemistry-r3.2-anode",
+            "chemistry-r3.2-cathode"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q03",
+          "type": "fill",
+          "text": "The purpose of the salt bridge is to allow the movement of ___ to balance charge.",
+          "answer": "ions",
+          "bank": [
+            "ions",
+            "electrons",
+            "atoms",
+            "protons only"
+          ],
+          "explanation": "Electrons flow in the wire; ions flow through the bridge.",
+          "terms": [
+            "chemistry-r3.2-salt-bridge"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q04",
+          "type": "mcq",
+          "prompt": "In the electrolysis of molten lead(II) bromide, what forms at the cathode?",
+          "options": [
+            "Oxygen",
+            "Bromine",
+            "Lead",
+            "Hydrogen"
+          ],
+          "answer": 2,
+          "explanation": "Pb²⁺ + 2e⁻ → Pb at the negative cathode; Br₂ forms at the anode.",
+          "terms": [
+            "chemistry-r3.2-electrolytic",
+            "chemistry-r3.2-cathode"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q05",
+          "type": "match",
+          "prompt": "Compare cell types.",
+          "pairs": [
+            {
+              "left": "Voltaic cell",
+              "right": "Chemical → electrical energy"
+            },
+            {
+              "left": "Electrolytic cell",
+              "right": "Electrical → chemical energy"
+            },
+            {
+              "left": "Voltaic anode",
+              "right": "Negative electrode"
+            },
+            {
+              "left": "Electrolytic anode",
+              "right": "Positive electrode"
+            }
+          ],
+          "explanation": "Voltaic reactions are spontaneous; electrolysis needs an external supply.",
+          "terms": [
+            "chemistry-r3.2-voltaic",
+            "chemistry-r3.2-electrolytic",
+            "chemistry-r3.2-anode"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q06",
+          "type": "tf",
+          "statement": "Solid sodium chloride can be electrolysed.",
+          "answer": false,
+          "explanation": "Ions must be mobile, so the electrolyte must be molten or in solution.",
+          "terms": [
+            "chemistry-r3.2-electrolytic"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q07",
+          "type": "fill",
+          "text": "In the electrolysis of molten NaCl, the half-equation at the anode is 2Cl⁻ → Cl₂ + 2___.",
+          "answer": "e⁻",
+          "accept": [
+            "e-",
+            "e"
+          ],
+          "bank": [
+            "e⁻",
+            "H⁺",
+            "Na⁺",
+            "OH⁻"
+          ],
+          "explanation": "Chloride ions lose electrons (oxidation) at the positive anode.",
+          "terms": [
+            "chemistry-r3.2-anode",
+            "chemistry-r3.2-half-equation"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q08",
+          "type": "order",
+          "prompt": "Order the events in a Zn/Cu voltaic cell.",
+          "items": [
+            "Zn atoms lose electrons at the anode",
+            "Electrons flow through the wire",
+            "Cu²⁺ ions gain electrons at the cathode",
+            "Ions move through the salt bridge to balance charge"
+          ],
+          "explanation": "A complete circuit needs both electron flow and ion flow.",
+          "terms": [
+            "chemistry-r3.2-voltaic",
+            "chemistry-r3.2-salt-bridge"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q09",
+          "type": "mcq",
+          "prompt": "Which change increases the voltage of a Mg/Cu cell compared with a Zn/Cu cell?",
+          "options": [
+            "The salt bridge is shorter",
+            "Mg is more reactive than Zn, so there is a bigger difference in reactivity",
+            "Mg is less reactive",
+            "Mg is a better conductor"
+          ],
+          "answer": 1,
+          "explanation": "A larger difference in reducing power gives a larger cell potential.",
+          "terms": [
+            "chemistry-r3.2-voltaic",
+            "chemistry-r3.2-activity-series"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-2-q10",
+          "type": "mcq",
+          "prompt": "A secondary (rechargeable) cell differs from a primary cell because…",
+          "options": [
+            "its reaction can be reversed by applying a current",
+            "it has no electrodes",
+            "it uses no electrolyte",
+            "it produces more voltage"
+          ],
+          "answer": 0,
+          "explanation": "e.g. lithium-ion and lead–acid batteries can be recharged; primary cells cannot.",
+          "terms": [
+            "chemistry-r3.2-voltaic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R3.2-3",
+      "title": "Electrode potentials and electrolysis (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-R3.2-3-q01",
+          "type": "mcq",
+          "prompt": "E⦵(Zn²⁺/Zn) = −0.76 V, E⦵(Cu²⁺/Cu) = +0.34 V. E⦵cell for the Zn/Cu cell is…",
+          "options": [
+            "−0.42 V",
+            "+0.42 V",
+            "+1.10 V",
+            "−1.10 V"
+          ],
+          "answer": 2,
+          "explanation": "E⦵cell = E⦵(cathode) − E⦵(anode) = 0.34 − (−0.76) = +1.10 V.",
+          "terms": [
+            "chemistry-r3.2-e-standard"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q02",
+          "type": "tf",
+          "statement": "A positive E⦵cell means the reaction is spontaneous.",
+          "answer": true,
+          "explanation": "ΔG⦵ = −nFE⦵, so positive E⦵ gives negative ΔG⦵.",
+          "terms": [
+            "chemistry-r3.2-e-standard"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q03",
+          "type": "fill",
+          "text": "The standard hydrogen electrode is assigned an E⦵ of ___ V.",
+          "answer": "0.00",
+          "accept": [
+            "0"
+          ],
+          "bank": [
+            "0.00",
+            "1.00",
+            "−0.76",
+            "+0.34"
+          ],
+          "explanation": "All other potentials are measured relative to it.",
+          "terms": [
+            "chemistry-r3.2-she"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q04",
+          "type": "mcq",
+          "prompt": "Which is the strongest oxidizing agent? E⦵: F₂/F⁻ +2.87, Cl₂/Cl⁻ +1.36, Br₂/Br⁻ +1.07, I₂/I⁻ +0.54 V",
+          "options": [
+            "Cl₂",
+            "Br₂",
+            "I₂",
+            "F₂"
+          ],
+          "answer": 3,
+          "explanation": "The most positive E⦵ means the species is most easily reduced.",
+          "terms": [
+            "chemistry-r3.2-e-standard",
+            "chemistry-r3.2-oxidizing-agent"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q05",
+          "type": "fill",
+          "text": "For a cell with n = 2 and E⦵ = +1.10 V, ΔG⦵ = −nFE⦵ ≈ ___ kJ mol⁻¹ (F = 96 500 C mol⁻¹).",
+          "answer": "−212",
+          "accept": [
+            "-212"
+          ],
+          "bank": [
+            "−212",
+            "−106",
+            "+212",
+            "−424"
+          ],
+          "explanation": "−2 × 96 500 × 1.10 = −212 300 J ≈ −212 kJ mol⁻¹.",
+          "terms": [
+            "chemistry-r3.2-e-standard"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q06",
+          "type": "match",
+          "prompt": "Electrolysis of concentrated NaCl(aq): match the electrode to its product.",
+          "pairs": [
+            {
+              "left": "Cathode",
+              "right": "Hydrogen gas"
+            },
+            {
+              "left": "Anode",
+              "right": "Chlorine gas"
+            },
+            {
+              "left": "Remaining solution",
+              "right": "Sodium hydroxide"
+            }
+          ],
+          "explanation": "Water is reduced rather than Na⁺; high [Cl⁻] makes Cl₂ form at the anode.",
+          "terms": [
+            "chemistry-r3.2-electrolytic"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q07",
+          "type": "tf",
+          "statement": "In the electrolysis of dilute aqueous sodium sulfate, oxygen forms at the anode.",
+          "answer": true,
+          "explanation": "SO₄²⁻ is very hard to oxidize, so water is oxidized: 2H₂O → O₂ + 4H⁺ + 4e⁻.",
+          "terms": [
+            "chemistry-r3.2-electrolytic",
+            "chemistry-r3.2-anode"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q08",
+          "type": "mcq",
+          "prompt": "To copper-plate an iron key, the key should be…",
+          "options": [
+            "the anode in FeSO₄(aq)",
+            "the salt bridge",
+            "the anode in CuSO₄(aq)",
+            "the cathode in CuSO₄(aq)"
+          ],
+          "answer": 3,
+          "explanation": "Cu²⁺ is reduced and deposited at the cathode; a copper anode replenishes Cu²⁺.",
+          "terms": [
+            "chemistry-r3.2-electroplating",
+            "chemistry-r3.2-cathode"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q09",
+          "type": "order",
+          "prompt": "Order the components of the standard hydrogen electrode description.",
+          "items": [
+            "Platinum electrode",
+            "Dipped in 1.00 mol dm⁻³ H⁺(aq)",
+            "H₂ gas bubbled at 100 kPa",
+            "Temperature 298 K"
+          ],
+          "explanation": "Platinum is inert and provides a surface for H₂ ⇌ 2H⁺ + 2e⁻.",
+          "terms": [
+            "chemistry-r3.2-she"
+          ]
+        },
+        {
+          "id": "chemistry-R3.2-3-q10",
+          "type": "mcq",
+          "prompt": "Which factor does NOT affect the product formed at an electrode in aqueous electrolysis?",
+          "options": [
+            "Electrode material",
+            "The colour of the solution",
+            "E⦵ values of possible reactions",
+            "Concentration of the ions"
+          ],
+          "answer": 1,
+          "explanation": "Position in the E⦵ series, concentration and the electrode material all matter.",
+          "terms": [
+            "chemistry-r3.2-electrolytic"
+          ]
+        }
+      ]
+    }
+  ]
+}

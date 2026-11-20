@@ -1,0 +1,419 @@
+{
+  "id": "chemistry-S2.1",
+  "code": "S2.1",
+  "unit": "S2",
+  "title": "The ionic model",
+  "level": "SL",
+  "summary": "Metals lose electrons and non-metals gain them to form ions held in a giant lattice by electrostatic attraction. Write ionic formulas and explain the properties of ionic compounds.",
+  "keyterms": [
+    {
+      "id": "chemistry-s2.1-cation",
+      "term": "Cation",
+      "definition": "A positively charged ion, formed when an atom (usually a metal) loses electrons.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-anion",
+      "term": "Anion",
+      "definition": "A negatively charged ion, formed when an atom (usually a non-metal) gains electrons.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-ionic-bond",
+      "term": "Ionic bond",
+      "definition": "The electrostatic attraction between oppositely charged ions.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-lattice",
+      "term": "Ionic lattice",
+      "definition": "A giant three-dimensional arrangement of alternating cations and anions held by ionic bonds.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-polyatomic",
+      "term": "Polyatomic ion",
+      "definition": "An ion made of several covalently bonded atoms carrying an overall charge, e.g. SO₄²⁻, NH₄⁺.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-electronegativity",
+      "term": "Electronegativity",
+      "definition": "The ability of an atom to attract a shared pair of electrons in a covalent bond.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-lattice-enthalpy",
+      "term": "Lattice enthalpy",
+      "definition": "Enthalpy change to separate one mole of a solid ionic compound into gaseous ions; a measure of ionic bond strength.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-volatility",
+      "term": "Volatility",
+      "definition": "The tendency of a substance to vaporize; ionic compounds have low volatility.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-conductivity",
+      "term": "Electrical conductivity",
+      "definition": "Ability to carry an electric current; ionic compounds conduct only when molten or dissolved, as ions are then mobile.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s2.1-formula-unit",
+      "term": "Formula unit",
+      "definition": "The simplest ratio of ions in an ionic compound, e.g. MgCl₂; ionic compounds do not form molecules.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S2.1-1",
+      "title": "Forming ions and ionic formulas",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S2.1-1-q01",
+          "type": "mcq",
+          "prompt": "What is the formula of aluminium oxide?",
+          "options": [
+            "Al₂O₃",
+            "Al₃O₂",
+            "AlO₃",
+            "AlO"
+          ],
+          "answer": 0,
+          "explanation": "Al³⁺ and O²⁻: two Al³⁺ (+6) balance three O²⁻ (−6).",
+          "terms": [
+            "chemistry-s2.1-formula-unit",
+            "chemistry-s2.1-cation",
+            "chemistry-s2.1-anion"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q02",
+          "type": "tf",
+          "statement": "Metals tend to form cations because they lose their outer electrons.",
+          "answer": true,
+          "explanation": "Metals have few valence electrons and low ionization energies, so they lose electrons to form positive ions.",
+          "terms": [
+            "chemistry-s2.1-cation"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q03",
+          "type": "fill",
+          "text": "The ion formed by a group 17 element has a charge of ___.",
+          "answer": "1−",
+          "accept": [
+            "-1",
+            "−1"
+          ],
+          "bank": [
+            "1−",
+            "1+",
+            "2−",
+            "7+"
+          ],
+          "explanation": "Halogens gain one electron to complete their outer shell, forming X⁻.",
+          "terms": [
+            "chemistry-s2.1-anion"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q04",
+          "type": "match",
+          "prompt": "Match each polyatomic ion to its formula.",
+          "pairs": [
+            {
+              "left": "Sulfate",
+              "right": "SO₄²⁻"
+            },
+            {
+              "left": "Nitrate",
+              "right": "NO₃⁻"
+            },
+            {
+              "left": "Ammonium",
+              "right": "NH₄⁺"
+            },
+            {
+              "left": "Carbonate",
+              "right": "CO₃²⁻"
+            },
+            {
+              "left": "Hydroxide",
+              "right": "OH⁻"
+            }
+          ],
+          "explanation": "Learn these common polyatomic ions; their formulas are not in the data booklet.",
+          "terms": [
+            "chemistry-s2.1-polyatomic"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q05",
+          "type": "mcq",
+          "prompt": "What is the formula of calcium nitrate?",
+          "options": [
+            "Ca(NO₃)₂",
+            "Ca₂NO₃",
+            "Ca(NO₂)₂",
+            "CaNO₃"
+          ],
+          "answer": 0,
+          "explanation": "Ca²⁺ needs two NO₃⁻ ions; brackets show two whole nitrate groups.",
+          "terms": [
+            "chemistry-s2.1-polyatomic",
+            "chemistry-s2.1-formula-unit"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q06",
+          "type": "tf",
+          "statement": "An ionic bond forms when electrons are shared between two non-metal atoms.",
+          "answer": false,
+          "explanation": "Sharing electrons is covalent bonding. Ionic bonding is attraction between ions formed by electron transfer.",
+          "terms": [
+            "chemistry-s2.1-ionic-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q07",
+          "type": "mcq",
+          "prompt": "Which pair of elements is most likely to form an ionic compound?",
+          "options": [
+            "S and Cl",
+            "C and O",
+            "K and F",
+            "N and H"
+          ],
+          "answer": 2,
+          "explanation": "A large electronegativity difference (K 0.8, F 4.0) favours electron transfer and ionic bonding.",
+          "terms": [
+            "chemistry-s2.1-electronegativity",
+            "chemistry-s2.1-ionic-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q08",
+          "type": "fill",
+          "text": "Iron(III) sulfate has the formula Fe₂(SO₄)___.",
+          "answer": "₃",
+          "accept": [
+            "3"
+          ],
+          "bank": [
+            "₃",
+            "₂",
+            "₄",
+            "₆"
+          ],
+          "explanation": "Two Fe³⁺ (+6) balance three SO₄²⁻ (−6): Fe₂(SO₄)₃.",
+          "terms": [
+            "chemistry-s2.1-polyatomic",
+            "chemistry-s2.1-formula-unit"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q09",
+          "type": "order",
+          "prompt": "Order the steps in forming magnesium oxide from its atoms.",
+          "items": [
+            "Mg atom loses two electrons",
+            "O atom gains two electrons",
+            "Mg²⁺ and O²⁻ ions form",
+            "Ions attract and pack into a lattice"
+          ],
+          "explanation": "Electron transfer creates ions; electrostatic attraction then builds the lattice.",
+          "terms": [
+            "chemistry-s2.1-cation",
+            "chemistry-s2.1-anion",
+            "chemistry-s2.1-lattice"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-1-q10",
+          "type": "mcq",
+          "prompt": "Which ion is NOT isoelectronic with neon?",
+          "options": [
+            "Na⁺",
+            "F⁻",
+            "Mg²⁺",
+            "Cl⁻"
+          ],
+          "answer": 3,
+          "explanation": "Cl⁻ has 18 electrons (like Ar); the others have 10.",
+          "terms": [
+            "chemistry-s2.1-cation",
+            "chemistry-s2.1-anion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S2.1-2",
+      "title": "Ionic lattices and properties",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S2.1-2-q01",
+          "type": "mcq",
+          "prompt": "Why does sodium chloride have a high melting point?",
+          "options": [
+            "Strong covalent bonds within NaCl molecules",
+            "Many strong electrostatic attractions between ions throughout the lattice must be overcome",
+            "Weak intermolecular forces",
+            "Delocalized electrons"
+          ],
+          "answer": 1,
+          "explanation": "Melting disrupts a giant lattice of strong ionic bonds, which needs a lot of energy.",
+          "terms": [
+            "chemistry-s2.1-lattice",
+            "chemistry-s2.1-ionic-bond"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q02",
+          "type": "tf",
+          "statement": "Solid sodium chloride conducts electricity.",
+          "answer": false,
+          "explanation": "Ions are fixed in the lattice. Molten or aqueous NaCl conducts because the ions are free to move.",
+          "terms": [
+            "chemistry-s2.1-conductivity"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q03",
+          "type": "fill",
+          "text": "Ionic compounds are brittle because displacing a layer brings ions of the ___ charge next to each other, causing repulsion.",
+          "answer": "same",
+          "bank": [
+            "same",
+            "opposite",
+            "zero",
+            "partial"
+          ],
+          "explanation": "Like charges line up after a shift, and repulsion shatters the crystal.",
+          "terms": [
+            "chemistry-s2.1-lattice"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q04",
+          "type": "mcq",
+          "prompt": "Which compound would have the largest lattice enthalpy?",
+          "options": [
+            "NaCl",
+            "KBr",
+            "MgO",
+            "KCl"
+          ],
+          "answer": 2,
+          "explanation": "Lattice enthalpy increases with ionic charge and decreasing ionic radius; MgO has 2+ and 2− small ions.",
+          "terms": [
+            "chemistry-s2.1-lattice-enthalpy"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q05",
+          "type": "match",
+          "prompt": "Match each condition of an ionic compound to whether it conducts.",
+          "pairs": [
+            {
+              "left": "Solid",
+              "right": "Does not conduct"
+            },
+            {
+              "left": "Molten",
+              "right": "Conducts: mobile ions"
+            },
+            {
+              "left": "Aqueous",
+              "right": "Conducts: mobile hydrated ions"
+            }
+          ],
+          "explanation": "Conduction needs mobile charged particles.",
+          "terms": [
+            "chemistry-s2.1-conductivity"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q06",
+          "type": "tf",
+          "statement": "Ionic compounds have low volatility.",
+          "answer": true,
+          "explanation": "Strong ionic bonds throughout the lattice mean they are hard to vaporize.",
+          "terms": [
+            "chemistry-s2.1-volatility"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q07",
+          "type": "mcq",
+          "prompt": "Why do many ionic compounds dissolve in water but not in hexane?",
+          "options": [
+            "Hexane is too dense",
+            "Water reacts to form covalent bonds",
+            "Ionic compounds are non-polar",
+            "Water molecules are polar and are attracted to the ions"
+          ],
+          "answer": 3,
+          "explanation": "Polar water molecules surround ions (ion–dipole attraction), releasing energy that offsets breaking the lattice; non-polar hexane cannot.",
+          "terms": [
+            "chemistry-s2.1-lattice"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q08",
+          "type": "fill",
+          "text": "In the NaCl lattice, each Na⁺ is surrounded by ___ Cl⁻ ions.",
+          "answer": "6",
+          "bank": [
+            "6",
+            "4",
+            "8",
+            "12"
+          ],
+          "explanation": "NaCl has 6 : 6 coordination: each ion has six nearest neighbours of the opposite charge.",
+          "terms": [
+            "chemistry-s2.1-lattice"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q09",
+          "type": "order",
+          "prompt": "Order by increasing lattice enthalpy.",
+          "items": [
+            "KI",
+            "NaCl",
+            "MgCl₂",
+            "MgO"
+          ],
+          "explanation": "Bigger ions and lower charges give weaker attraction; MgO (2+, 2−, small ions) is strongest.",
+          "terms": [
+            "chemistry-s2.1-lattice-enthalpy"
+          ]
+        },
+        {
+          "id": "chemistry-S2.1-2-q10",
+          "type": "mcq",
+          "prompt": "Ionic character in a binary compound increases as…",
+          "options": [
+            "the electronegativity difference increases",
+            "both elements are non-metals",
+            "atomic masses increase",
+            "the average electronegativity increases"
+          ],
+          "answer": 0,
+          "explanation": "Bonding lies on a continuum; a larger difference in electronegativity gives more ionic character.",
+          "terms": [
+            "chemistry-s2.1-electronegativity",
+            "chemistry-s2.1-ionic-bond"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "id": "chemistry-S1.2",
+  "code": "S1.2",
+  "unit": "S1",
+  "title": "The nuclear atom",
+  "level": "SL",
+  "summary": "Atoms have a tiny dense nucleus of protons and neutrons surrounded by electrons. Use atomic and mass numbers, explain isotopes and calculate relative atomic mass; at HL, interpret mass spectra.",
+  "keyterms": [
+    {
+      "id": "chemistry-s1.2-nucleus",
+      "term": "Nucleus",
+      "definition": "The tiny, dense, positively charged centre of an atom containing protons and neutrons (nucleons) and almost all its mass.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-proton",
+      "term": "Proton",
+      "definition": "Subatomic particle in the nucleus with relative mass 1 and relative charge +1.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-neutron",
+      "term": "Neutron",
+      "definition": "Subatomic particle in the nucleus with relative mass 1 and no charge.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-electron",
+      "term": "Electron",
+      "definition": "Subatomic particle outside the nucleus with relative charge −1 and a relative mass of about 1/1836 (≈ 0.0005).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-atomic-number",
+      "term": "Atomic number (Z)",
+      "definition": "The number of protons in the nucleus of an atom; it defines the element.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-mass-number",
+      "term": "Mass number (A)",
+      "definition": "The total number of protons and neutrons in the nucleus of an atom.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-isotope",
+      "term": "Isotopes",
+      "definition": "Atoms of the same element (same Z) with different numbers of neutrons, so different mass numbers.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-ar",
+      "term": "Relative atomic mass (Ar)",
+      "definition": "The weighted mean mass of an atom of an element, relative to one-twelfth of the mass of a carbon-12 atom.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-ion",
+      "term": "Ion",
+      "definition": "A charged particle formed when an atom or group of atoms loses or gains electrons.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-abundance",
+      "term": "Isotopic abundance",
+      "definition": "The percentage (or fraction) of atoms of an element that are a particular isotope.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.2-mass-spec",
+      "term": "Mass spectrometer",
+      "definition": "Instrument that ionizes a sample and separates the ions by mass-to-charge ratio, giving isotopic masses and abundances.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s1.2-mz",
+      "term": "Mass-to-charge ratio (m/z)",
+      "definition": "The horizontal axis of a mass spectrum; for singly charged ions it equals the mass of the ion.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S1.2-1",
+      "title": "Subatomic particles",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.2-1-q01",
+          "type": "mcq",
+          "prompt": "How many neutrons are in an atom of ⁵⁶Fe (Z = 26)?",
+          "options": [
+            "30",
+            "56",
+            "82",
+            "26"
+          ],
+          "answer": 0,
+          "explanation": "Neutrons = A − Z = 56 − 26 = 30.",
+          "terms": [
+            "chemistry-s1.2-mass-number",
+            "chemistry-s1.2-atomic-number",
+            "chemistry-s1.2-neutron"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q02",
+          "type": "tf",
+          "statement": "Almost all the mass of an atom is in its nucleus.",
+          "answer": true,
+          "explanation": "Protons and neutrons each have relative mass 1, while electrons are about 1/1836 of that.",
+          "terms": [
+            "chemistry-s1.2-nucleus"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q03",
+          "type": "match",
+          "prompt": "Match each particle to its properties.",
+          "pairs": [
+            {
+              "left": "Proton",
+              "right": "Mass 1, charge +1"
+            },
+            {
+              "left": "Neutron",
+              "right": "Mass 1, charge 0"
+            },
+            {
+              "left": "Electron",
+              "right": "Mass ≈ 0.0005, charge −1"
+            }
+          ],
+          "explanation": "These relative values are given in the data booklet and must be known.",
+          "terms": [
+            "chemistry-s1.2-proton",
+            "chemistry-s1.2-neutron",
+            "chemistry-s1.2-electron"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q04",
+          "type": "mcq",
+          "prompt": "How many electrons are in the ion ³²S²⁻ (Z = 16)?",
+          "options": [
+            "16",
+            "18",
+            "32",
+            "14"
+          ],
+          "answer": 1,
+          "explanation": "A 2− charge means two extra electrons: 16 + 2 = 18.",
+          "terms": [
+            "chemistry-s1.2-ion",
+            "chemistry-s1.2-electron"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q05",
+          "type": "fill",
+          "text": "The number of protons in an atom is its ___ number.",
+          "answer": "atomic",
+          "bank": [
+            "atomic",
+            "mass",
+            "neutron",
+            "Avogadro"
+          ],
+          "explanation": "Atomic number Z = number of protons; it fixes the identity of the element.",
+          "terms": [
+            "chemistry-s1.2-atomic-number"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q06",
+          "type": "mcq",
+          "prompt": "A species has 20 protons, 20 neutrons and 18 electrons. What is it?",
+          "options": [
+            "⁴⁰Ca",
+            "³⁸Ar²⁺",
+            "⁴⁰Ar",
+            "⁴⁰Ca²⁺"
+          ],
+          "answer": 3,
+          "explanation": "20 protons = calcium; A = 20 + 20 = 40; two fewer electrons than protons gives a 2+ charge.",
+          "terms": [
+            "chemistry-s1.2-ion",
+            "chemistry-s1.2-atomic-number",
+            "chemistry-s1.2-mass-number"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q07",
+          "type": "tf",
+          "statement": "The nucleus occupies most of the volume of an atom.",
+          "answer": false,
+          "explanation": "The nucleus is tiny (about 10⁻¹⁵ m across) compared with the atom (about 10⁻¹⁰ m); the atom is mostly empty space.",
+          "terms": [
+            "chemistry-s1.2-nucleus"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q08",
+          "type": "fill",
+          "text": "The mass number of an atom with 17 protons and 20 neutrons is ___.",
+          "answer": "37",
+          "bank": [
+            "37",
+            "17",
+            "20",
+            "3"
+          ],
+          "explanation": "A = protons + neutrons = 17 + 20 = 37 (this is chlorine-37).",
+          "terms": [
+            "chemistry-s1.2-mass-number"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q09",
+          "type": "mcq",
+          "prompt": "Which pair has the same number of electrons?",
+          "options": [
+            "Na⁺ and Ne",
+            "Na and Ne",
+            "Cl⁻ and Ne",
+            "Mg²⁺ and Ar"
+          ],
+          "answer": 0,
+          "explanation": "Na⁺ has 11 − 1 = 10 electrons, the same as neon. They are isoelectronic.",
+          "terms": [
+            "chemistry-s1.2-ion",
+            "chemistry-s1.2-electron"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-1-q10",
+          "type": "order",
+          "prompt": "Order these by increasing mass.",
+          "items": [
+            "Electron",
+            "Proton",
+            "Hydrogen-2 nucleus",
+            "Helium-4 nucleus"
+          ],
+          "explanation": "Electron ≪ proton (1) < deuterium nucleus (2) < helium nucleus (4).",
+          "terms": [
+            "chemistry-s1.2-electron",
+            "chemistry-s1.2-proton"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S1.2-2",
+      "title": "Isotopes and relative atomic mass",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.2-2-q01",
+          "type": "mcq",
+          "prompt": "Isotopes of an element have the same…",
+          "options": [
+            "number of neutrons",
+            "chemical properties",
+            "physical properties",
+            "mass number"
+          ],
+          "answer": 1,
+          "explanation": "Same number of protons and electrons, so the same electron configuration and chemistry. Different masses give slightly different physical properties (e.g. density, rate of diffusion).",
+          "terms": [
+            "chemistry-s1.2-isotope"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q02",
+          "type": "fill",
+          "text": "Chlorine is 75 % ³⁵Cl and 25 % ³⁷Cl. Its relative atomic mass is ___.",
+          "answer": "35.5",
+          "bank": [
+            "35.5",
+            "36.0",
+            "35.0",
+            "37.0"
+          ],
+          "explanation": "Ar = (0.75 × 35) + (0.25 × 37) = 26.25 + 9.25 = 35.5.",
+          "terms": [
+            "chemistry-s1.2-ar",
+            "chemistry-s1.2-abundance"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q03",
+          "type": "tf",
+          "statement": "Relative atomic mass has no units.",
+          "answer": true,
+          "explanation": "It is a ratio relative to 1/12 of a ¹²C atom, so it is dimensionless.",
+          "terms": [
+            "chemistry-s1.2-ar"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q04",
+          "type": "mcq",
+          "prompt": "Boron has isotopes ¹⁰B and ¹¹B and Ar = 10.8. What is the percentage abundance of ¹¹B?",
+          "options": [
+            "20 %",
+            "50 %",
+            "80 %",
+            "92 %"
+          ],
+          "answer": 2,
+          "explanation": "Let x = fraction of ¹¹B: 11x + 10(1 − x) = 10.8, so x = 0.8 → 80 %.",
+          "terms": [
+            "chemistry-s1.2-ar",
+            "chemistry-s1.2-abundance"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q05",
+          "type": "tf",
+          "statement": "Isotopes of the same element have different physical properties such as density.",
+          "answer": true,
+          "explanation": "Different numbers of neutrons change the mass, so density, boiling point and rate of diffusion differ slightly.",
+          "terms": [
+            "chemistry-s1.2-isotope"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q06",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Isotopes",
+              "right": "Same Z, different number of neutrons"
+            },
+            {
+              "left": "Mass number",
+              "right": "Protons + neutrons"
+            },
+            {
+              "left": "Relative atomic mass",
+              "right": "Weighted mean atomic mass relative to ¹²C/12"
+            }
+          ],
+          "explanation": "Ar is an average over all isotopes, so it is usually not a whole number.",
+          "terms": [
+            "chemistry-s1.2-isotope",
+            "chemistry-s1.2-mass-number",
+            "chemistry-s1.2-ar"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q07",
+          "type": "mcq",
+          "prompt": "Why is the Ar of copper (63.55) not a whole number?",
+          "options": [
+            "Electrons add a large fractional mass",
+            "It is measured inaccurately",
+            "Copper atoms have fractional protons",
+            "It is a weighted mean of isotopes ⁶³Cu and ⁶⁵Cu"
+          ],
+          "answer": 3,
+          "explanation": "Ar averages the isotopes by abundance, so values lie between the isotope masses.",
+          "terms": [
+            "chemistry-s1.2-ar",
+            "chemistry-s1.2-isotope"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q08",
+          "type": "fill",
+          "text": "Atoms of the same element with different numbers of neutrons are called ___.",
+          "answer": "isotopes",
+          "bank": [
+            "isotopes",
+            "ions",
+            "allotropes",
+            "isomers"
+          ],
+          "explanation": "Allotropes are different structural forms of an element (e.g. diamond and graphite); isotopes differ in neutrons.",
+          "terms": [
+            "chemistry-s1.2-isotope"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q09",
+          "type": "mcq",
+          "prompt": "Which pair are isotopes?",
+          "options": [
+            "¹⁴C and ¹⁴N",
+            "¹²C and ¹³C",
+            "O₂ and O₃",
+            "⁴⁰K and ⁴⁰Ca"
+          ],
+          "answer": 1,
+          "explanation": "Both have 6 protons but different neutron numbers. O₂ and O₃ are allotropes; the others are different elements.",
+          "terms": [
+            "chemistry-s1.2-isotope"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-2-q10",
+          "type": "tf",
+          "statement": "An element with two isotopes in equal abundance has an Ar equal to the mean of the two isotopic masses.",
+          "answer": true,
+          "explanation": "With 50 : 50 abundance the weighted mean is the simple mean.",
+          "terms": [
+            "chemistry-s1.2-ar",
+            "chemistry-s1.2-abundance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S1.2-3",
+      "title": "Mass spectra (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-S1.2-3-q01",
+          "type": "mcq",
+          "prompt": "What does a mass spectrum of an element show?",
+          "options": [
+            "Absorbance against wavenumber",
+            "Wavelengths of light emitted",
+            "Relative abundance against m/z",
+            "Ionization energy against atomic number"
+          ],
+          "answer": 2,
+          "explanation": "Each peak corresponds to an isotope (for 1+ ions); its height shows relative abundance.",
+          "terms": [
+            "chemistry-s1.2-mass-spec",
+            "chemistry-s1.2-mz"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-3-q02",
+          "type": "tf",
+          "statement": "For a singly charged ion, m/z equals the relative mass of the ion.",
+          "answer": true,
+          "explanation": "With z = 1, m/z is just m.",
+          "terms": [
+            "chemistry-s1.2-mz"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-3-q03",
+          "type": "fill",
+          "text": "A mass spectrum shows peaks at m/z 24 (79 %), 25 (10 %) and 26 (11 %). The Ar is ___ (to 3 s.f.).",
+          "answer": "24.3",
+          "bank": [
+            "24.3",
+            "25.0",
+            "24.0",
+            "24.8"
+          ],
+          "explanation": "(24 × 79 + 25 × 10 + 26 × 11)/100 = (1896 + 250 + 286)/100 = 24.32 → 24.3 (magnesium).",
+          "terms": [
+            "chemistry-s1.2-ar",
+            "chemistry-s1.2-mass-spec"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-3-q04",
+          "type": "mcq",
+          "prompt": "A sample of bromine (⁷⁹Br and ⁸¹Br in roughly equal amounts) gives Br₂⁺ peaks. How many molecular-ion peaks appear?",
+          "options": [
+            "4",
+            "1",
+            "2",
+            "3"
+          ],
+          "answer": 3,
+          "explanation": "Combinations ⁷⁹Br⁷⁹Br (158), ⁷⁹Br⁸¹Br (160) and ⁸¹Br⁸¹Br (162) give three peaks in about 1 : 2 : 1 ratio.",
+          "terms": [
+            "chemistry-s1.2-mass-spec",
+            "chemistry-s1.2-isotope"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-3-q05",
+          "type": "tf",
+          "statement": "The number of peaks in the mass spectrum of an element equals its number of isotopes (for 1+ ions).",
+          "answer": true,
+          "explanation": "Each isotope gives one peak at its own m/z.",
+          "terms": [
+            "chemistry-s1.2-mass-spec",
+            "chemistry-s1.2-isotope"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-3-q06",
+          "type": "match",
+          "prompt": "Match the m/z of a singly charged ion to the isotope.",
+          "pairs": [
+            {
+              "left": "35",
+              "right": "Chlorine-35"
+            },
+            {
+              "left": "37",
+              "right": "Chlorine-37"
+            },
+            {
+              "left": "12",
+              "right": "Carbon-12"
+            },
+            {
+              "left": "13",
+              "right": "Carbon-13"
+            }
+          ],
+          "explanation": "For 1+ ions the m/z value is the mass number of the isotope.",
+          "terms": [
+            "chemistry-s1.2-mz",
+            "chemistry-s1.2-isotope"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-3-q07",
+          "type": "mcq",
+          "prompt": "Lithium shows peaks at m/z 6 (7.5 %) and 7 (92.5 %). What is its Ar?",
+          "options": [
+            "6.93",
+            "7.00",
+            "6.08",
+            "6.50"
+          ],
+          "answer": 0,
+          "explanation": "(6 × 7.5 + 7 × 92.5)/100 = (45 + 647.5)/100 = 6.925 ≈ 6.93.",
+          "terms": [
+            "chemistry-s1.2-ar",
+            "chemistry-s1.2-mass-spec"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-3-q08",
+          "type": "fill",
+          "text": "In a mass spectrum, the height of each peak is proportional to the relative ___ of that isotope.",
+          "answer": "abundance",
+          "bank": [
+            "abundance",
+            "charge",
+            "radius",
+            "energy"
+          ],
+          "explanation": "Peak height (or area) gives how common each isotope is.",
+          "terms": [
+            "chemistry-s1.2-abundance",
+            "chemistry-s1.2-mass-spec"
+          ]
+        },
+        {
+          "id": "chemistry-S1.2-3-q09",
+          "type": "order",
+          "prompt": "Order the main stages in a mass spectrometer.",
+          "items": [
+            "Vaporization",
+            "Ionization",
+            "Acceleration",
+            "Deflection / separation by m/z",
+            "Detection"
+          ],
+          "explanation": "The sample must be gaseous and ionized before ions can be accelerated, separated and detected.",
+          "terms": [
+            "chemistry-s1.2-mass-spec"
+          ]
+        }
+      ]
+    }
+  ]
+}

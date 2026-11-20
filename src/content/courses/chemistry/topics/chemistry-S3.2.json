@@ -1,0 +1,603 @@
+{
+  "id": "chemistry-S3.2",
+  "code": "S3.2",
+  "unit": "S3",
+  "title": "Functional groups: classification of organic compounds",
+  "level": "SL",
+  "summary": "Organic compounds are classified by functional group into homologous series. Name compounds with IUPAC rules, identify structural isomers and use IR and mass spectra; at HL, stereoisomerism and ¹H NMR.",
+  "keyterms": [
+    {
+      "id": "chemistry-s3.2-homologous",
+      "term": "Homologous series",
+      "definition": "A family of compounds with the same functional group and general formula, each member differing by CH₂.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-functional-group",
+      "term": "Functional group",
+      "definition": "The atom or group of atoms responsible for the characteristic reactions of a compound.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-structural-formula",
+      "term": "Structural formula",
+      "definition": "A formula showing how atoms are arranged, as full (displayed), condensed or skeletal.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-skeletal",
+      "term": "Skeletal formula",
+      "definition": "Shows the carbon chain as zigzag lines with H atoms on carbon omitted; functional groups are shown.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-saturated",
+      "term": "Saturated / unsaturated",
+      "definition": "Saturated compounds have only C–C single bonds; unsaturated compounds contain C=C or C≡C bonds.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-structural-isomer",
+      "term": "Structural isomers",
+      "definition": "Compounds with the same molecular formula but different structural formulas.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-primary",
+      "term": "Primary, secondary, tertiary",
+      "definition": "Classifies alcohols and halogenoalkanes by how many carbons are bonded to the carbon carrying the functional group (1, 2 or 3).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-ihd",
+      "term": "Index of hydrogen deficiency",
+      "definition": "Number of rings plus π bonds in a molecule, found from its molecular formula.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-ir",
+      "term": "Infrared spectroscopy",
+      "definition": "Identifies bonds/functional groups from absorption of IR radiation at characteristic wavenumbers.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-ms-fragment",
+      "term": "Fragmentation (mass spectrometry)",
+      "definition": "Breaking of the molecular ion into smaller ions; the pattern of m/z values helps identify the structure.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s3.2-stereoisomer",
+      "term": "Stereoisomers",
+      "definition": "Isomers with the same structural formula but a different 3D arrangement of atoms.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s3.2-cis-trans",
+      "term": "Cis–trans isomers",
+      "definition": "Stereoisomers due to restricted rotation about C=C (or in rings), with groups on the same (cis) or opposite (trans) sides.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s3.2-chiral",
+      "term": "Chiral carbon",
+      "definition": "A carbon atom bonded to four different groups; gives two non-superimposable mirror-image enantiomers.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-s3.2-nmr",
+      "term": "¹H NMR spectroscopy",
+      "definition": "Shows hydrogen environments: number of signals, chemical shift, integration (ratio of H) and splitting.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S3.2-1",
+      "title": "Functional groups, naming and isomers",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S3.2-1-q01",
+          "type": "mcq",
+          "prompt": "Which functional group is present in propanone, CH₃COCH₃?",
+          "options": [
+            "Ketone",
+            "Carboxyl",
+            "Ester",
+            "Aldehyde"
+          ],
+          "answer": 0,
+          "explanation": "A carbonyl C=O bonded to two carbons is a ketone (carbonyl).",
+          "terms": [
+            "chemistry-s3.2-functional-group"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q02",
+          "type": "match",
+          "prompt": "Match each functional group to its class.",
+          "pairs": [
+            {
+              "left": "–OH",
+              "right": "Alcohol (hydroxyl)"
+            },
+            {
+              "left": "–COOH",
+              "right": "Carboxylic acid (carboxyl)"
+            },
+            {
+              "left": "–NH₂",
+              "right": "Amine (amino)"
+            },
+            {
+              "left": "–COO–",
+              "right": "Ester"
+            },
+            {
+              "left": "–CHO",
+              "right": "Aldehyde"
+            }
+          ],
+          "explanation": "The functional group determines the class and characteristic reactions.",
+          "terms": [
+            "chemistry-s3.2-functional-group"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q03",
+          "type": "tf",
+          "statement": "Members of a homologous series have similar chemical properties and a gradual trend in physical properties.",
+          "answer": true,
+          "explanation": "Same functional group gives similar reactions; boiling point rises with chain length.",
+          "terms": [
+            "chemistry-s3.2-homologous"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q04",
+          "type": "fill",
+          "text": "The general formula of the alkanes is CₙH___.",
+          "answer": "₂ₙ₊₂",
+          "accept": [
+            "2n+2"
+          ],
+          "bank": [
+            "₂ₙ₊₂",
+            "₂ₙ",
+            "₂ₙ₋₂",
+            "ₙ"
+          ],
+          "explanation": "Alkanes are saturated: CH₄, C₂H₆, C₃H₈…",
+          "terms": [
+            "chemistry-s3.2-homologous"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q05",
+          "type": "mcq",
+          "prompt": "What is the IUPAC name of CH₃CH(CH₃)CH₂CH₃?",
+          "options": [
+            "2-methylbutane",
+            "3-methylbutane",
+            "2-ethylpropane",
+            "Pentane"
+          ],
+          "answer": 0,
+          "explanation": "Longest chain = 4 C (butane); methyl on carbon 2 (lowest number).",
+          "terms": [
+            "chemistry-s3.2-structural-formula"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q06",
+          "type": "mcq",
+          "prompt": "How many structural isomers have the formula C₄H₁₀?",
+          "options": [
+            "3",
+            "4",
+            "1",
+            "2"
+          ],
+          "answer": 3,
+          "explanation": "Butane and 2-methylpropane.",
+          "terms": [
+            "chemistry-s3.2-structural-isomer"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q07",
+          "type": "tf",
+          "statement": "Propan-2-ol is a primary alcohol.",
+          "answer": false,
+          "explanation": "Its –OH carbon is bonded to two other carbons, so it is secondary.",
+          "terms": [
+            "chemistry-s3.2-primary"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q08",
+          "type": "fill",
+          "text": "Compounds containing a C=C double bond are described as ___.",
+          "answer": "unsaturated",
+          "bank": [
+            "unsaturated",
+            "saturated",
+            "aromatic",
+            "chiral"
+          ],
+          "explanation": "Unsaturated compounds can undergo addition reactions.",
+          "terms": [
+            "chemistry-s3.2-saturated"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q09",
+          "type": "order",
+          "prompt": "Order these homologous series members by boiling point, lowest first.",
+          "items": [
+            "Methane",
+            "Ethane",
+            "Propane",
+            "Butane"
+          ],
+          "explanation": "More electrons with each CH₂ gives stronger London forces.",
+          "terms": [
+            "chemistry-s3.2-homologous"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-1-q10",
+          "type": "mcq",
+          "prompt": "Which name matches CH₃CH₂COOCH₃?",
+          "options": [
+            "Propyl methanoate",
+            "Ethyl ethanoate",
+            "Butanoic acid",
+            "Methyl propanoate"
+          ],
+          "answer": 3,
+          "explanation": "Ester: the part attached to O (methyl) comes first, then the acid part (propanoate, 3 C including C=O).",
+          "terms": [
+            "chemistry-s3.2-functional-group"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S3.2-2",
+      "title": "Spectroscopic identification",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S3.2-2-q01",
+          "type": "mcq",
+          "prompt": "An IR spectrum shows a strong, sharp absorption near 1700 cm⁻¹. Which bond is present?",
+          "options": [
+            "O–H",
+            "C=O",
+            "C–H",
+            "C≡C"
+          ],
+          "answer": 1,
+          "explanation": "C=O absorbs strongly around 1700–1750 cm⁻¹.",
+          "terms": [
+            "chemistry-s3.2-ir"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q02",
+          "type": "tf",
+          "statement": "A broad absorption at 2500–3000 cm⁻¹ suggests the O–H of a carboxylic acid.",
+          "answer": true,
+          "explanation": "Hydrogen bonding broadens the acid O–H absorption across this range.",
+          "terms": [
+            "chemistry-s3.2-ir"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q03",
+          "type": "fill",
+          "text": "The IHD of benzene, C₆H₆, is ___.",
+          "answer": "4",
+          "accept": [
+            "four"
+          ],
+          "bank": [
+            "4",
+            "3",
+            "6",
+            "1"
+          ],
+          "explanation": "IHD = (2C + 2 − H)/2 = (12 + 2 − 6)/2 = 4: one ring + three π bonds.",
+          "terms": [
+            "chemistry-s3.2-ihd"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q04",
+          "type": "mcq",
+          "prompt": "A compound C₃H₆O has IHD = 1. Which could it NOT be?",
+          "options": [
+            "Propanal",
+            "Propanone",
+            "Propan-1-ol",
+            "Prop-2-en-1-ol"
+          ],
+          "answer": 2,
+          "explanation": "Propan-1-ol is C₃H₈O (IHD 0). The others have one C=O or C=C.",
+          "terms": [
+            "chemistry-s3.2-ihd"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q05",
+          "type": "mcq",
+          "prompt": "In the mass spectrum of ethanol (M = 46), a peak at m/z = 31 corresponds to the loss of…",
+          "options": [
+            "OH",
+            "CH₃",
+            "C₂H₅",
+            "H₂O"
+          ],
+          "answer": 1,
+          "explanation": "46 − 15 = 31: loss of CH₃ leaves CH₂OH⁺.",
+          "terms": [
+            "chemistry-s3.2-ms-fragment"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q06",
+          "type": "match",
+          "prompt": "Match the mass lost from the molecular ion to the likely fragment lost.",
+          "pairs": [
+            {
+              "left": "15",
+              "right": "CH₃"
+            },
+            {
+              "left": "17",
+              "right": "OH"
+            },
+            {
+              "left": "29",
+              "right": "C₂H₅ or CHO"
+            },
+            {
+              "left": "45",
+              "right": "COOH"
+            }
+          ],
+          "explanation": "Differences between the molecular ion and fragment peaks reveal groups present.",
+          "terms": [
+            "chemistry-s3.2-ms-fragment"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q07",
+          "type": "tf",
+          "statement": "The molecular ion peak shows the relative molecular mass of the compound.",
+          "answer": true,
+          "explanation": "M⁺ is the whole molecule minus one electron; its m/z equals Mr.",
+          "terms": [
+            "chemistry-s3.2-ms-fragment"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q08",
+          "type": "fill",
+          "text": "IR radiation is absorbed when it matches the ___ frequency of a bond.",
+          "answer": "vibrational",
+          "accept": [
+            "vibration"
+          ],
+          "bank": [
+            "vibrational",
+            "rotational",
+            "electronic",
+            "nuclear"
+          ],
+          "explanation": "Bonds that change dipole moment as they stretch or bend absorb IR.",
+          "terms": [
+            "chemistry-s3.2-ir"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q09",
+          "type": "order",
+          "prompt": "Order these bonds by typical IR absorption wavenumber, highest first.",
+          "items": [
+            "O–H (alcohol)",
+            "C–H",
+            "C=O",
+            "C–O"
+          ],
+          "explanation": "Approximate ranges: 3200–3600, 2850–3090, 1700–1750 and 1050–1410 cm⁻¹.",
+          "terms": [
+            "chemistry-s3.2-ir"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-2-q10",
+          "type": "mcq",
+          "prompt": "Which compound has an IR absorption near 3300 cm⁻¹ (broad) but none near 1700 cm⁻¹?",
+          "options": [
+            "Ethanol",
+            "Ethanal",
+            "Ethanoic acid",
+            "Ethyl ethanoate"
+          ],
+          "answer": 0,
+          "explanation": "Ethanol has an O–H but no C=O; ethanoic acid has both.",
+          "terms": [
+            "chemistry-s3.2-ir"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S3.2-3",
+      "title": "Stereoisomerism and ¹H NMR (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-S3.2-3-q01",
+          "type": "mcq",
+          "prompt": "Which compound shows cis–trans isomerism?",
+          "options": [
+            "Ethene",
+            "But-1-ene",
+            "But-2-ene",
+            "2-methylpropene"
+          ],
+          "answer": 2,
+          "explanation": "Each C of the C=C in but-2-ene has two different groups (H and CH₃).",
+          "terms": [
+            "chemistry-s3.2-cis-trans"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q02",
+          "type": "tf",
+          "statement": "A chiral molecule is superimposable on its mirror image.",
+          "answer": false,
+          "explanation": "Chiral molecules are non-superimposable on their mirror images; the two forms are enantiomers.",
+          "terms": [
+            "chemistry-s3.2-chiral"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q03",
+          "type": "mcq",
+          "prompt": "Which compound contains a chiral carbon?",
+          "options": [
+            "Butan-2-ol",
+            "2-methylpropan-2-ol",
+            "Ethanol",
+            "Propan-2-ol"
+          ],
+          "answer": 0,
+          "explanation": "C2 in butan-2-ol bonds to H, OH, CH₃ and C₂H₅: four different groups.",
+          "terms": [
+            "chemistry-s3.2-chiral"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q04",
+          "type": "fill",
+          "text": "Enantiomers rotate plane-polarized light in ___ directions.",
+          "answer": "opposite",
+          "bank": [
+            "opposite",
+            "the same",
+            "no"
+          ],
+          "explanation": "They are optically active; a 50 : 50 (racemic) mixture shows no net rotation.",
+          "terms": [
+            "chemistry-s3.2-chiral",
+            "chemistry-s3.2-stereoisomer"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q05",
+          "type": "mcq",
+          "prompt": "How many signals are in the ¹H NMR spectrum of ethanol, CH₃CH₂OH?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "6"
+          ],
+          "answer": 2,
+          "explanation": "Three hydrogen environments: CH₃, CH₂ and OH.",
+          "terms": [
+            "chemistry-s3.2-nmr"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q06",
+          "type": "fill",
+          "text": "In ¹H NMR, the integration ratio for CH₃CH₂OH is 3 : 2 : ___.",
+          "answer": "1",
+          "bank": [
+            "1",
+            "2",
+            "3",
+            "6"
+          ],
+          "explanation": "The area under each signal is proportional to the number of H in that environment.",
+          "terms": [
+            "chemistry-s3.2-nmr"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q07",
+          "type": "tf",
+          "statement": "Tetramethylsilane (TMS) is used as the reference with a chemical shift of 0 ppm.",
+          "answer": true,
+          "explanation": "TMS gives one strong signal from 12 equivalent H, upfield of most organic signals; it is inert and volatile.",
+          "terms": [
+            "chemistry-s3.2-nmr"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q08",
+          "type": "mcq",
+          "prompt": "The CH₃ signal in ethyl ethanoate next to the CH₂ group appears as a…",
+          "options": [
+            "quartet",
+            "singlet",
+            "doublet",
+            "triplet"
+          ],
+          "answer": 3,
+          "explanation": "n + 1 rule: two neighbouring H on CH₂ split the signal into 3 (triplet).",
+          "terms": [
+            "chemistry-s3.2-nmr"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q09",
+          "type": "match",
+          "prompt": "Match each isomer type to its cause.",
+          "pairs": [
+            {
+              "left": "Cis–trans",
+              "right": "Restricted rotation about C=C"
+            },
+            {
+              "left": "Optical",
+              "right": "Chiral carbon with four different groups"
+            },
+            {
+              "left": "Structural",
+              "right": "Different connectivity of atoms"
+            }
+          ],
+          "explanation": "Stereoisomers share connectivity but differ in 3D arrangement.",
+          "terms": [
+            "chemistry-s3.2-cis-trans",
+            "chemistry-s3.2-chiral",
+            "chemistry-s3.2-structural-isomer"
+          ]
+        },
+        {
+          "id": "chemistry-S3.2-3-q10",
+          "type": "order",
+          "prompt": "Order the analysis of a ¹H NMR spectrum.",
+          "items": [
+            "Count signals to find H environments",
+            "Use chemical shifts to identify environment types",
+            "Use integration for numbers of H",
+            "Use splitting to find neighbouring H",
+            "Propose a structure"
+          ],
+          "explanation": "Combining all four pieces of information identifies the structure.",
+          "terms": [
+            "chemistry-s3.2-nmr"
+          ]
+        }
+      ]
+    }
+  ]
+}

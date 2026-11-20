@@ -1,0 +1,61 @@
+[
+  {
+    "id": "chemistry-X-S1-01",
+    "unit": "S1",
+    "topics": ["chemistry-S1.4", "chemistry-S1.5"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Identifying a volatile liquid from its vapour",
+    "stem": "A colourless liquid X contains carbon, hydrogen and oxygen only. Combustion analysis gave the composition by mass: 52.2 % C, 13.0 % H and 34.8 % O. In a separate experiment, 0.150 g of X was injected into a heated gas syringe, where it vaporized completely. The vapour occupied 101 cm³ at 373 K and 100 kPa.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Determine",
+        "prompt": "Determine the empirical formula of X.",
+        "marks": 2,
+        "markscheme": [
+          "moles: C 52.2/12.01 = 4.35; H 13.0/1.01 = 12.9; O 34.8/16.00 = 2.18",
+          "ratio 2 : 6 : 1 so C₂H₆O"
+        ],
+        "notes": "Award [2] for the correct formula with working. Do not accept a formula without supporting moles."
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the amount, in mol, of X in the gas syringe. Use R = 8.31 J K⁻¹ mol⁻¹.",
+        "marks": 2,
+        "numeric": { "value": 0.00326, "tolerance": 0.00003, "unit": "mol" },
+        "markscheme": [
+          "conversion of units: p = 1.00 × 10⁵ Pa AND V = 1.01 × 10⁻⁴ m³",
+          "n = pV/RT = (1.00 × 10⁵ × 1.01 × 10⁻⁴)/(8.31 × 373) = 3.26 × 10⁻³ mol"
+        ],
+        "notes": "A common error is leaving V in cm³ or p in kPa without a matching factor: award [1] for a correct method with one unit error."
+      },
+      {
+        "label": "c",
+        "command": "Deduce",
+        "prompt": "Deduce the molar mass and the molecular formula of X.",
+        "marks": 2,
+        "numeric": { "value": 46.0, "tolerance": 0.5, "unit": "g mol⁻¹" },
+        "markscheme": [
+          "M = 0.150 / 3.26 × 10⁻³ = 46.0 g mol⁻¹",
+          "empirical formula mass of C₂H₆O = 46.08, so molecular formula = C₂H₆O"
+        ],
+        "notes": "Apply ECF from (a) and (b)."
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "The experiment was repeated at 353 K, just above the boiling point of X. The calculated molar mass was noticeably higher. Explain this result with reference to the ideal gas model.",
+        "marks": 3,
+        "markscheme": [
+          "near its boiling point the vapour does not behave ideally",
+          "intermolecular forces / hydrogen bonds between molecules of X are significant at lower temperature",
+          "so the measured volume is smaller than the ideal value / some molecules associate or condense",
+          "smaller V gives a smaller calculated n, so M = m/n is too large"
+        ],
+        "notes": "Award [1] for each point up to [3]."
+      }
+    ]
+  }
+]

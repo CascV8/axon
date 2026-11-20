@@ -1,0 +1,158 @@
+{
+  "id": "chemistry",
+  "name": "Chemistry",
+  "short": "Chem",
+  "group": "Group 4: Sciences",
+  "icon": "⚗️",
+  "blurb": "Structure (S1–S3) and Reactivity (R1–R3): atoms, bonding, energetics, kinetics, equilibrium and mechanisms",
+  "syllabus": "Subject guide first assessed May 2025",
+  "levels": ["SL", "HL"],
+  "units": [
+    { "id": "S1", "title": "Models of the particulate nature of matter", "blurb": "Atoms, isotopes, electron configurations, the mole and ideal gases." },
+    { "id": "S2", "title": "Models of bonding and structure", "blurb": "Ionic, covalent and metallic bonding, intermolecular forces and materials." },
+    { "id": "S3", "title": "Classification of matter", "blurb": "Periodic trends, transition elements and organic functional groups." },
+    { "id": "R1", "title": "What drives chemical reactions?", "blurb": "Enthalpy changes, Hess's law, fuels, entropy and Gibbs energy." },
+    { "id": "R2", "title": "How much, how fast and how far?", "blurb": "Stoichiometry, reaction rates and chemical equilibrium." },
+    { "id": "R3", "title": "What are the mechanisms of chemical change?", "blurb": "Acids and bases, redox, radicals, nucleophiles and electrophiles." }
+  ],
+  "papers": {
+    "P1B": "Paper 1B · data-based",
+    "P2": "Paper 2"
+  },
+  "mcqExam": { "label": "Paper 1A simulator", "SL": 30, "HL": 40, "secondsPerQuestion": 80 },
+  "assessment": {
+    "SL": {
+      "components": [
+        { "id": "p1a", "name": "Paper 1A", "detail": "30 multiple-choice questions", "max": 30, "group": "p1" },
+        { "id": "p1b", "name": "Paper 1B", "detail": "Data-based questions linked to experimental work", "max": 25, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Short-answer and extended-response questions", "max": 50, "group": "p2" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Scientific investigation", "max": 24, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1 (1A + 1B)", "weight": 36, "time": "1 h 30 min" },
+        "p2": { "name": "Paper 2", "weight": 44, "time": "1 h 30 min" },
+        "ia": { "name": "IA", "weight": 20, "time": "10 hours of class time" }
+      }
+    },
+    "HL": {
+      "components": [
+        { "id": "p1a", "name": "Paper 1A", "detail": "40 multiple-choice questions", "max": 40, "group": "p1" },
+        { "id": "p1b", "name": "Paper 1B", "detail": "Data-based questions linked to experimental work", "max": 35, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Short-answer and extended-response questions", "max": 90, "group": "p2" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Scientific investigation", "max": 24, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1 (1A + 1B)", "weight": 36, "time": "2 h" },
+        "p2": { "name": "Paper 2", "weight": 44, "time": "2 h 30 min" },
+        "ia": { "name": "IA", "weight": 20, "time": "10 hours of class time" }
+      }
+    }
+  },
+  "boundaries": {
+    "SL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 15, 26, 36, 48, 60, 73] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 16, 28, 41, 53, 64, 76] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 13, 22, 34, 46, 56, 69] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 15, 28, 44, 55, 66, 76] },
+      { "session": "Nov 2025", "tz": "TZ3", "min": [0, 15, 28, 43, 54, 65, 75] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 16, 28, 38, 49, 60, 71] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 16, 28, 38, 49, 61, 72] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 14, 24, 36, 47, 58, 70] },
+      { "session": "Nov 2024", "tz": "TZ1", "min": [0, 16, 29, 44, 55, 65, 75], "old": true },
+      { "session": "May 2024", "tz": "TZ1", "min": [0, 15, 26, 38, 50, 61, 73], "old": true },
+      { "session": "May 2024", "tz": "TZ2", "min": [0, 16, 28, 37, 48, 60, 72], "old": true }
+    ],
+    "HL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 15, 25, 39, 52, 63, 75] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 16, 27, 41, 54, 66, 79] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 13, 21, 36, 48, 61, 73] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 16, 26, 38, 51, 63, 76] },
+      { "session": "Nov 2025", "tz": "TZ3", "min": [0, 14, 24, 37, 51, 64, 77] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 15, 26, 40, 51, 63, 74] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 14, 25, 39, 50, 62, 74] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 16, 28, 42, 54, 64, 75] },
+      { "session": "Nov 2024", "tz": "TZ1", "min": [0, 16, 27, 40, 52, 64, 77], "old": true },
+      { "session": "May 2024", "tz": "TZ1", "min": [0, 16, 27, 40, 52, 64, 76], "old": true },
+      { "session": "May 2024", "tz": "TZ2", "min": [0, 16, 26, 40, 52, 64, 77], "old": true }
+    ]
+  },
+  "ia": {
+    "name": "Scientific investigation",
+    "max": 24,
+    "weight": 20,
+    "limit": "3,000 words",
+    "criteria": [
+      {
+        "id": "rd",
+        "name": "Research design",
+        "max": 6,
+        "look": [
+          "A focused research question naming the independent and dependent variables, with the range studied",
+          "Chemical background explaining the reaction or property investigated, with balanced equations",
+          "A method detailed enough to repeat: concentrations, volumes, apparatus and how controlled variables are kept constant",
+          "Enough data (at least five levels of the independent variable, with repeats) to answer the question",
+          "Hazards, disposal of chemicals and any environmental issues addressed"
+        ]
+      },
+      {
+        "id": "da",
+        "name": "Data analysis",
+        "max": 6,
+        "look": [
+          "Raw data tabulated with units, uncertainties and consistent decimal places",
+          "Processing shown with a worked example (e.g. moles, rates, enthalpy changes, gradients)",
+          "Uncertainties propagated through calculations and shown as error bars",
+          "Graphs that suit the data, with labelled axes, units and a justified line or curve of best fit"
+        ]
+      },
+      {
+        "id": "co",
+        "name": "Conclusion",
+        "max": 6,
+        "look": [
+          "A conclusion that answers the research question using processed values",
+          "Comparison with literature values, including a percentage error where one exists",
+          "Explanation of the trend using chemical theory (particles, bonding, energetics)",
+          "An honest judgement of how far the data support the conclusion given the uncertainties"
+        ]
+      },
+      {
+        "id": "ev",
+        "name": "Evaluation",
+        "max": 6,
+        "look": [
+          "Specific weaknesses identified, such as heat loss, gas escaping or end-point judgement",
+          "Each weakness classed as systematic or random and its effect on the result explained",
+          "Realistic, specific improvements linked to each weakness",
+          "Sensible extensions that would develop the investigation further"
+        ]
+      }
+    ],
+    "checklist": [
+      "Research question states the independent variable with its range and the dependent variable with its unit",
+      "Balanced equation(s) for every reaction studied",
+      "At least five levels of the independent variable, each with at least three repeats",
+      "Uncertainty stated for every piece of measuring apparatus",
+      "A worked example for each type of calculation, with uncertainty propagation",
+      "Graphs have titles, labelled axes with units, error bars and a best-fit line",
+      "Final value compared with a literature value and percentage error calculated where possible",
+      "Systematic and random errors distinguished, each with its effect on the result",
+      "Improvements are specific to your own method, not generic ('use better equipment')",
+      "Safety, chemical disposal and environmental impact addressed",
+      "Report is under 3,000 words and all sources are referenced consistently"
+    ]
+  },
+  "examTips": [
+    "Show every step in calculations with units, and give the final answer to the number of significant figures the data justify.",
+    "Use state symbols and balanced equations whenever you write a reaction; an unbalanced equation usually loses the mark.",
+    "Say what happens to particles: \"more frequent successful collisions with E ≥ Ea\" beats \"the particles move faster\".",
+    "In mechanisms, curly arrows start at a lone pair or bond and end at an atom or between atoms; mark partial charges and intermediates.",
+    "Distinguish bonds broken inside molecules from intermolecular forces overcome: boiling a covalent molecular substance breaks no covalent bonds."
+  ],
+  "sources": [
+    { "label": "IB Chemistry subject brief (assessment structure and weightings)", "url": "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/chemistry/" },
+    { "label": "Grade boundary collation, Chemistry SL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/chemistry-sl" },
+    { "label": "Grade boundary collation, Chemistry HL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/chemistry-hl" },
+    { "label": "Paper marks and timings, first assessment 2025 (Save My Exams summary)", "url": "https://www.savemyexams.com/learning-hub/exam-guides/ib-chemistry-syllabus-update/" }
+  ]
+}

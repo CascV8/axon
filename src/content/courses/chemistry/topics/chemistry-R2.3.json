@@ -1,0 +1,579 @@
+{
+  "id": "chemistry-R2.3",
+  "code": "R2.3",
+  "unit": "R2",
+  "title": "How far? The extent of chemical change",
+  "level": "SL",
+  "summary": "Reversible reactions reach dynamic equilibrium. Write equilibrium constant expressions, interpret K and use Le Châtelier's principle; at HL, the reaction quotient, equilibrium calculations and the link to Gibbs energy.",
+  "keyterms": [
+    {
+      "id": "chemistry-r2.3-dynamic-equilibrium",
+      "term": "Dynamic equilibrium",
+      "definition": "State of a reversible reaction in a closed system where forward and backward rates are equal, so concentrations stay constant.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.3-closed-system",
+      "term": "Closed system",
+      "definition": "A system in which matter cannot enter or leave, though energy can be exchanged.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.3-kc",
+      "term": "Equilibrium constant (K)",
+      "definition": "Ratio of product to reactant concentrations at equilibrium, each raised to its coefficient; constant at a given temperature.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.3-le-chatelier",
+      "term": "Le Châtelier's principle",
+      "definition": "If a system at equilibrium is disturbed, the position of equilibrium shifts to partially counteract the change.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.3-position",
+      "term": "Position of equilibrium",
+      "definition": "The relative amounts of reactants and products at equilibrium; \"shifts right\" means more products.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.3-haber",
+      "term": "Haber process",
+      "definition": "Industrial synthesis of ammonia: N₂ + 3H₂ ⇌ 2NH₃, ΔH < 0, using an iron catalyst at a compromise temperature and high pressure.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.3-reversible",
+      "term": "Reversible reaction",
+      "definition": "A reaction that can proceed in both forward and backward directions, shown by ⇌.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-r2.3-q",
+      "term": "Reaction quotient (Q)",
+      "definition": "Same expression as K but using concentrations at any moment; compare with K to predict direction.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r2.3-ice",
+      "term": "ICE table",
+      "definition": "Initial–Change–Equilibrium table used to calculate equilibrium concentrations or K.",
+      "hl": true
+    },
+    {
+      "id": "chemistry-r2.3-small-k",
+      "term": "Small-K approximation",
+      "definition": "When K is very small, the change x is negligible compared with initial concentrations, simplifying calculations.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-R2.3-1",
+      "title": "Dynamic equilibrium and K",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R2.3-1-q01",
+          "type": "mcq",
+          "prompt": "At dynamic equilibrium…",
+          "options": [
+            "forward and backward rates are equal",
+            "reactant and product concentrations are equal",
+            "only products are present",
+            "the reaction has stopped"
+          ],
+          "answer": 0,
+          "explanation": "Both reactions continue at equal rates, so concentrations are constant (but not necessarily equal).",
+          "terms": [
+            "chemistry-r2.3-dynamic-equilibrium"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q02",
+          "type": "fill",
+          "text": "For H₂ + I₂ ⇌ 2HI, K = [HI]___/([H₂][I₂]).",
+          "answer": "²",
+          "accept": [
+            "2",
+            "^2"
+          ],
+          "bank": [
+            "²",
+            "³",
+            "½",
+            "¹"
+          ],
+          "explanation": "Each concentration is raised to the power of its coefficient.",
+          "terms": [
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q03",
+          "type": "tf",
+          "statement": "A very large value of K means the equilibrium mixture contains mostly products.",
+          "answer": true,
+          "explanation": "K ≫ 1: products dominate; K ≪ 1: reactants dominate.",
+          "terms": [
+            "chemistry-r2.3-kc",
+            "chemistry-r2.3-position"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q04",
+          "type": "mcq",
+          "prompt": "If the equation 2SO₂ + O₂ ⇌ 2SO₃ (K) is reversed, the new constant is…",
+          "options": [
+            "−K",
+            "1/K",
+            "K²",
+            "K"
+          ],
+          "answer": 1,
+          "explanation": "Reversing swaps numerator and denominator.",
+          "terms": [
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q05",
+          "type": "match",
+          "prompt": "Match each change to the effect on K (exothermic forward reaction).",
+          "pairs": [
+            {
+              "left": "Raise T, exothermic forward reaction",
+              "right": "K decreases"
+            },
+            {
+              "left": "Raise T, endothermic forward reaction",
+              "right": "K increases"
+            },
+            {
+              "left": "Add a catalyst",
+              "right": "K unchanged"
+            }
+          ],
+          "explanation": "Only temperature changes the value of K; catalysts, pressure and concentration do not.",
+          "terms": [
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q06",
+          "type": "tf",
+          "statement": "Equilibrium can be established in an open beaker from which a gaseous product escapes.",
+          "answer": false,
+          "explanation": "A closed system is needed; escaping product prevents the backward reaction.",
+          "terms": [
+            "chemistry-r2.3-closed-system"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q07",
+          "type": "mcq",
+          "prompt": "Which is the correct K expression for N₂(g) + 3H₂(g) ⇌ 2NH₃(g)?",
+          "options": [
+            "2[NH₃]/(3[H₂][N₂])",
+            "[NH₃]/([N₂][H₂])",
+            "[NH₃]²/([N₂][H₂]³)",
+            "[N₂][H₂]³/[NH₃]²"
+          ],
+          "answer": 2,
+          "explanation": "Products over reactants, each raised to its coefficient.",
+          "terms": [
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q08",
+          "type": "fill",
+          "text": "A reaction that can go in both directions is shown with the symbol ___.",
+          "answer": "⇌",
+          "bank": [
+            "⇌",
+            "→",
+            "↑",
+            "Δ"
+          ],
+          "explanation": "The double half-arrow indicates reversibility.",
+          "terms": [
+            "chemistry-r2.3-reversible"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q09",
+          "type": "order",
+          "prompt": "Order the events as H₂ and I₂ are sealed in a flask and heated.",
+          "items": [
+            "Forward rate is at its maximum",
+            "HI forms and the backward rate begins",
+            "Forward rate falls as reactants are used",
+            "Forward and backward rates become equal",
+            "Concentrations remain constant"
+          ],
+          "explanation": "Equilibrium is reached when rates are equal.",
+          "terms": [
+            "chemistry-r2.3-dynamic-equilibrium"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-1-q10",
+          "type": "mcq",
+          "prompt": "If K = 1 × 10⁻¹⁰ at 298 K, the reaction…",
+          "options": [
+            "is very fast",
+            "is exothermic",
+            "goes almost to completion",
+            "barely proceeds"
+          ],
+          "answer": 3,
+          "explanation": "A tiny K means very little product at equilibrium. K tells nothing about rate.",
+          "terms": [
+            "chemistry-r2.3-kc",
+            "chemistry-r2.3-position"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R2.3-2",
+      "title": "Le Châtelier's principle",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-R2.3-2-q01",
+          "type": "mcq",
+          "prompt": "For N₂ + 3H₂ ⇌ 2NH₃, ΔH < 0, increasing the pressure…",
+          "options": [
+            "shifts equilibrium left",
+            "shifts equilibrium right",
+            "has no effect",
+            "changes K"
+          ],
+          "answer": 1,
+          "explanation": "The right has fewer gas moles (2 vs 4), so the system shifts right to reduce pressure.",
+          "terms": [
+            "chemistry-r2.3-le-chatelier",
+            "chemistry-r2.3-haber"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q02",
+          "type": "tf",
+          "statement": "Increasing the temperature of an exothermic equilibrium shifts it to the left.",
+          "answer": true,
+          "explanation": "The system absorbs the added heat by favouring the endothermic (backward) reaction; K decreases.",
+          "terms": [
+            "chemistry-r2.3-le-chatelier"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q03",
+          "type": "mcq",
+          "prompt": "Adding a catalyst to an equilibrium mixture…",
+          "options": [
+            "increases the yield",
+            "shifts it right",
+            "allows equilibrium to be reached faster without changing position",
+            "decreases K"
+          ],
+          "answer": 2,
+          "explanation": "A catalyst speeds forward and backward reactions equally.",
+          "terms": [
+            "chemistry-r2.3-le-chatelier"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q04",
+          "type": "fill",
+          "text": "Removing a product from an equilibrium mixture shifts the position to the ___.",
+          "answer": "right",
+          "accept": [
+            "products"
+          ],
+          "bank": [
+            "right",
+            "left",
+            "neither side"
+          ],
+          "explanation": "The system makes more product to replace what was removed.",
+          "terms": [
+            "chemistry-r2.3-le-chatelier",
+            "chemistry-r2.3-position"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q05",
+          "type": "match",
+          "prompt": "Match each Haber process choice to its reason.",
+          "pairs": [
+            {
+              "left": "About 450 °C",
+              "right": "Compromise between rate and yield"
+            },
+            {
+              "left": "High pressure (~200 atm)",
+              "right": "Favours fewer gas moles"
+            },
+            {
+              "left": "Iron catalyst",
+              "right": "Faster attainment of equilibrium"
+            },
+            {
+              "left": "Recycling unreacted gases",
+              "right": "Improves overall conversion"
+            }
+          ],
+          "explanation": "Industrial conditions balance yield, rate, cost and safety.",
+          "terms": [
+            "chemistry-r2.3-haber"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q06",
+          "type": "tf",
+          "statement": "For H₂(g) + I₂(g) ⇌ 2HI(g), increasing pressure changes the equilibrium position.",
+          "answer": false,
+          "explanation": "There are equal gas moles on both sides (2 and 2), so pressure has no effect on position.",
+          "terms": [
+            "chemistry-r2.3-le-chatelier"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q07",
+          "type": "mcq",
+          "prompt": "[Co(H₂O)₆]²⁺ (pink) + 4Cl⁻ ⇌ [CoCl₄]²⁻ (blue) + 6H₂O is endothermic. On cooling the solution turns…",
+          "options": [
+            "colourless",
+            "unchanged",
+            "more blue",
+            "more pink"
+          ],
+          "answer": 3,
+          "explanation": "Cooling favours the exothermic (backward) reaction, forming pink [Co(H₂O)₆]²⁺.",
+          "terms": [
+            "chemistry-r2.3-le-chatelier"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q08",
+          "type": "fill",
+          "text": "The only factor that changes the value of K is ___.",
+          "answer": "temperature",
+          "bank": [
+            "temperature",
+            "pressure",
+            "concentration",
+            "a catalyst"
+          ],
+          "explanation": "Other changes shift position but leave K unchanged.",
+          "terms": [
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q09",
+          "type": "order",
+          "prompt": "Order the reasoning when extra N₂ is added to the Haber equilibrium.",
+          "items": [
+            "[N₂] increases",
+            "Forward rate temporarily exceeds backward rate",
+            "More NH₃ forms",
+            "Rates become equal again",
+            "New equilibrium with more NH₃, same K"
+          ],
+          "explanation": "The disturbance is partially counteracted, not removed.",
+          "terms": [
+            "chemistry-r2.3-le-chatelier",
+            "chemistry-r2.3-haber"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-2-q10",
+          "type": "mcq",
+          "prompt": "Why is the Haber process not run at a very low temperature even though yield is higher?",
+          "options": [
+            "The rate would be too slow",
+            "Ammonia would decompose",
+            "The catalyst works better when cold",
+            "K would decrease"
+          ],
+          "answer": 0,
+          "explanation": "Low temperature gives a high equilibrium yield but too slow a rate to be economic.",
+          "terms": [
+            "chemistry-r2.3-haber"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-R2.3-3",
+      "title": "Q, K calculations and ΔG (HL)",
+      "hl": true,
+      "questions": [
+        {
+          "id": "chemistry-R2.3-3-q01",
+          "type": "mcq",
+          "prompt": "If Q < K, the reaction…",
+          "options": [
+            "stops",
+            "is at equilibrium",
+            "proceeds forward to make more products",
+            "proceeds backward"
+          ],
+          "answer": 2,
+          "explanation": "Q must rise to K, so products are formed.",
+          "terms": [
+            "chemistry-r2.3-q",
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q02",
+          "type": "tf",
+          "statement": "Q has the same mathematical form as K.",
+          "answer": true,
+          "explanation": "Q uses current (non-equilibrium) concentrations in the same expression.",
+          "terms": [
+            "chemistry-r2.3-q"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q03",
+          "type": "fill",
+          "text": "For A ⇌ 2B with [A] = 0.40 and [B] = 0.20 mol dm⁻³ at equilibrium, K = ___.",
+          "answer": "0.10",
+          "accept": [
+            "0.1"
+          ],
+          "bank": [
+            "0.10",
+            "0.50",
+            "0.20",
+            "2.0"
+          ],
+          "explanation": "K = [B]²/[A] = 0.040/0.40 = 0.10.",
+          "terms": [
+            "chemistry-r2.3-kc",
+            "chemistry-r2.3-ice"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q04",
+          "type": "mcq",
+          "prompt": "1.00 mol each of H₂ and I₂ in 1.00 dm³ form 1.60 mol HI at equilibrium. K =",
+          "options": [
+            "4.0",
+            "1.6",
+            "16",
+            "64"
+          ],
+          "answer": 3,
+          "explanation": "Change: H₂ and I₂ each −0.80 → 0.20 mol dm⁻³ each. K = 1.60²/(0.20 × 0.20) = 2.56/0.040 = 64.",
+          "terms": [
+            "chemistry-r2.3-ice",
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q05",
+          "type": "match",
+          "prompt": "Match ΔG⦵ to K.",
+          "pairs": [
+            {
+              "left": "ΔG⦵ < 0",
+              "right": "K > 1"
+            },
+            {
+              "left": "ΔG⦵ = 0",
+              "right": "K = 1"
+            },
+            {
+              "left": "ΔG⦵ > 0",
+              "right": "K < 1"
+            }
+          ],
+          "explanation": "ΔG⦵ = −RT ln K.",
+          "terms": [
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q06",
+          "type": "tf",
+          "statement": "The small-K approximation assumes that x is negligible compared with the initial concentration.",
+          "answer": true,
+          "explanation": "It works when K is very small, e.g. for weak acids.",
+          "terms": [
+            "chemistry-r2.3-small-k"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q07",
+          "type": "order",
+          "prompt": "Order the steps of an ICE-table calculation.",
+          "items": [
+            "Write the balanced equation",
+            "Enter initial concentrations",
+            "Express changes in terms of x using the mole ratio",
+            "Write equilibrium concentrations",
+            "Substitute into the K expression and solve"
+          ],
+          "explanation": "Changes must follow the stoichiometry.",
+          "terms": [
+            "chemistry-r2.3-ice"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q08",
+          "type": "mcq",
+          "prompt": "K = 4.0 for A + B ⇌ C. At one moment [A] = [B] = 0.50 and [C] = 2.0 mol dm⁻³. The reaction…",
+          "options": [
+            "moves forward",
+            "moves backward",
+            "is at equilibrium",
+            "cannot be predicted"
+          ],
+          "answer": 1,
+          "explanation": "Q = 2.0/(0.50 × 0.50) = 8.0 > K, so the reaction proceeds backward.",
+          "terms": [
+            "chemistry-r2.3-q"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q09",
+          "type": "fill",
+          "text": "ΔG⦵ = −RT ln ___.",
+          "answer": "K",
+          "bank": [
+            "K",
+            "Q",
+            "T",
+            "k"
+          ],
+          "explanation": "Links thermodynamics to the equilibrium constant.",
+          "terms": [
+            "chemistry-r2.3-kc"
+          ]
+        },
+        {
+          "id": "chemistry-R2.3-3-q10",
+          "type": "mcq",
+          "prompt": "Which statement about K is correct?",
+          "options": [
+            "K depends on initial concentrations",
+            "K changes with temperature only",
+            "K is always greater than 1",
+            "K changes when a catalyst is added"
+          ],
+          "answer": 1,
+          "explanation": "K at a given temperature is fixed regardless of starting amounts.",
+          "terms": [
+            "chemistry-r2.3-kc"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "id": "chemistry-S1.4",
+  "code": "S1.4",
+  "unit": "S1",
+  "title": "Counting particles by mass: the mole",
+  "level": "SL",
+  "summary": "The mole links the number of particles to measurable masses and volumes. Use molar mass, find empirical and molecular formulas, and work with concentrations of solutions.",
+  "keyterms": [
+    {
+      "id": "chemistry-s1.4-mole",
+      "term": "Mole",
+      "definition": "The amount of substance containing exactly 6.02214076 × 10²³ elementary entities (atoms, molecules, ions…).",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-avogadro",
+      "term": "Avogadro constant (NA)",
+      "definition": "The number of particles per mole: 6.02 × 10²³ mol⁻¹.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-molar-mass",
+      "term": "Molar mass (M)",
+      "definition": "The mass of one mole of a substance in g mol⁻¹; numerically equal to its relative formula mass.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-mr",
+      "term": "Relative formula mass (Mr)",
+      "definition": "Sum of the relative atomic masses of all atoms in a formula; it has no units.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-empirical",
+      "term": "Empirical formula",
+      "definition": "The simplest whole-number ratio of atoms of each element in a compound.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-molecular",
+      "term": "Molecular formula",
+      "definition": "The actual number of atoms of each element in one molecule; a whole-number multiple of the empirical formula.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-concentration",
+      "term": "Concentration",
+      "definition": "Amount (or mass) of solute per unit volume of solution, usually in mol dm⁻³ or g dm⁻³.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-solution",
+      "term": "Solution",
+      "definition": "A homogeneous mixture of a solute dissolved in a solvent.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-standard-solution",
+      "term": "Standard solution",
+      "definition": "A solution whose concentration is accurately known, made in a volumetric flask.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-avogadro-law",
+      "term": "Avogadro's law",
+      "definition": "Equal volumes of gases at the same temperature and pressure contain equal numbers of particles.",
+      "hl": false
+    },
+    {
+      "id": "chemistry-s1.4-percent-composition",
+      "term": "Percentage composition",
+      "definition": "The percentage by mass of each element in a compound.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "chemistry-S1.4-1",
+      "title": "Moles, mass and formulas",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.4-1-q01",
+          "type": "mcq",
+          "prompt": "How many moles are in 9.00 g of water (M = 18.02 g mol⁻¹)?",
+          "options": [
+            "0.499 mol",
+            "2.00 mol",
+            "162 mol",
+            "0.250 mol"
+          ],
+          "answer": 0,
+          "explanation": "n = m/M = 9.00 / 18.02 = 0.499 mol.",
+          "terms": [
+            "chemistry-s1.4-mole",
+            "chemistry-s1.4-molar-mass"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q02",
+          "type": "fill",
+          "text": "The number of molecules in 2.00 mol of CO₂ is ___ × 10²⁴.",
+          "answer": "1.20",
+          "accept": [
+            "1.2"
+          ],
+          "bank": [
+            "1.20",
+            "3.01",
+            "6.02",
+            "2.41"
+          ],
+          "explanation": "N = n × NA = 2.00 × 6.02 × 10²³ = 1.20 × 10²⁴.",
+          "terms": [
+            "chemistry-s1.4-avogadro"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q03",
+          "type": "tf",
+          "statement": "The relative formula mass of a substance has units of g mol⁻¹.",
+          "answer": false,
+          "explanation": "Mr is a ratio and has no units; molar mass M has units g mol⁻¹ and the same numerical value.",
+          "terms": [
+            "chemistry-s1.4-mr",
+            "chemistry-s1.4-molar-mass"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q04",
+          "type": "mcq",
+          "prompt": "A compound is 40.0 % C, 6.7 % H and 53.3 % O by mass. What is its empirical formula?",
+          "options": [
+            "CHO",
+            "CH₂O",
+            "C₂H₄O",
+            "CH₃O"
+          ],
+          "answer": 1,
+          "explanation": "Moles: C 40.0/12.01 = 3.33; H 6.7/1.01 = 6.6; O 53.3/16.00 = 3.33. Ratio 1 : 2 : 1 → CH₂O.",
+          "terms": [
+            "chemistry-s1.4-empirical",
+            "chemistry-s1.4-percent-composition"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q05",
+          "type": "fill",
+          "text": "A compound with empirical formula CH₂ has Mr = 56. Its molecular formula is ___.",
+          "answer": "C₄H₈",
+          "accept": [
+            "C4H8"
+          ],
+          "bank": [
+            "C₄H₈",
+            "C₂H₄",
+            "C₃H₆",
+            "C₅H₁₀"
+          ],
+          "explanation": "Empirical mass of CH₂ ≈ 14; 56/14 = 4, so the molecular formula is C₄H₈.",
+          "terms": [
+            "chemistry-s1.4-molecular",
+            "chemistry-s1.4-empirical"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q06",
+          "type": "match",
+          "prompt": "Match each quantity to its unit.",
+          "pairs": [
+            {
+              "left": "Amount of substance",
+              "right": "mol"
+            },
+            {
+              "left": "Molar mass",
+              "right": "g mol⁻¹"
+            },
+            {
+              "left": "Concentration",
+              "right": "mol dm⁻³"
+            },
+            {
+              "left": "Avogadro constant",
+              "right": "mol⁻¹"
+            }
+          ],
+          "explanation": "Keeping units in working is the best way to check a calculation.",
+          "terms": [
+            "chemistry-s1.4-mole",
+            "chemistry-s1.4-molar-mass",
+            "chemistry-s1.4-concentration",
+            "chemistry-s1.4-avogadro"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q07",
+          "type": "mcq",
+          "prompt": "How many atoms in total are in 0.10 mol of NH₃?",
+          "options": [
+            "6.0 × 10²²",
+            "1.8 × 10²³",
+            "2.4 × 10²³",
+            "6.0 × 10²³"
+          ],
+          "answer": 2,
+          "explanation": "Each NH₃ has 4 atoms: 0.10 × 4 × 6.02 × 10²³ = 2.4 × 10²³.",
+          "terms": [
+            "chemistry-s1.4-avogadro",
+            "chemistry-s1.4-mole"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q08",
+          "type": "tf",
+          "statement": "Glucose (C₆H₁₂O₆) and ethanoic acid (C₂H₄O₂) have the same empirical formula.",
+          "answer": true,
+          "explanation": "Both simplify to CH₂O.",
+          "terms": [
+            "chemistry-s1.4-empirical"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q09",
+          "type": "order",
+          "prompt": "Order the steps to find an empirical formula from percentage composition.",
+          "items": [
+            "Assume 100 g so each % becomes a mass in g",
+            "Divide each mass by its Ar to get moles",
+            "Divide all mole values by the smallest",
+            "Multiply to whole numbers if needed",
+            "Write the formula"
+          ],
+          "explanation": "Moles give the atom ratio; dividing by the smallest gives the simplest ratio.",
+          "terms": [
+            "chemistry-s1.4-empirical",
+            "chemistry-s1.4-percent-composition"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-1-q10",
+          "type": "mcq",
+          "prompt": "What is the percentage by mass of nitrogen in NH₄NO₃ (Mr = 80.06)?",
+          "options": [
+            "46.7 %",
+            "60.0 %",
+            "17.5 %",
+            "35.0 %"
+          ],
+          "answer": 3,
+          "explanation": "Two N atoms: 2 × 14.01 = 28.02; 28.02 / 80.06 × 100 = 35.0 %.",
+          "terms": [
+            "chemistry-s1.4-percent-composition",
+            "chemistry-s1.4-mr"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry-S1.4-2",
+      "title": "Solutions and concentration",
+      "hl": false,
+      "questions": [
+        {
+          "id": "chemistry-S1.4-2-q01",
+          "type": "mcq",
+          "prompt": "What is the concentration of a solution with 0.200 mol NaOH in 500 cm³?",
+          "options": [
+            "0.100 mol dm⁻³",
+            "0.400 mol dm⁻³",
+            "0.0004 mol dm⁻³",
+            "100 mol dm⁻³"
+          ],
+          "answer": 1,
+          "explanation": "Convert to dm³: 500 cm³ = 0.500 dm³. c = n/V = 0.200 / 0.500 = 0.400 mol dm⁻³.",
+          "terms": [
+            "chemistry-s1.4-concentration"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q02",
+          "type": "fill",
+          "text": "Moles of HCl in 25.0 cm³ of 0.100 mol dm⁻³ acid = ___ mol.",
+          "answer": "0.00250",
+          "accept": [
+            "2.50 × 10⁻³",
+            "0.0025"
+          ],
+          "bank": [
+            "0.00250",
+            "2.50",
+            "0.250",
+            "0.0250"
+          ],
+          "explanation": "n = cV = 0.100 × 0.0250 dm³ = 2.50 × 10⁻³ mol.",
+          "terms": [
+            "chemistry-s1.4-concentration"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q03",
+          "type": "tf",
+          "statement": "A standard solution is prepared in a volumetric flask.",
+          "answer": true,
+          "explanation": "Volumetric flasks hold one accurate volume, so the concentration is known precisely.",
+          "terms": [
+            "chemistry-s1.4-standard-solution"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q04",
+          "type": "mcq",
+          "prompt": "10.0 cm³ of 2.00 mol dm⁻³ HCl is diluted to 100.0 cm³. The new concentration is…",
+          "options": [
+            "20.0 mol dm⁻³",
+            "1.00 mol dm⁻³",
+            "0.200 mol dm⁻³",
+            "0.020 mol dm⁻³"
+          ],
+          "answer": 2,
+          "explanation": "Moles stay the same: c₁V₁ = c₂V₂ → 2.00 × 10.0 = c₂ × 100.0 → c₂ = 0.200 mol dm⁻³.",
+          "terms": [
+            "chemistry-s1.4-concentration"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q05",
+          "type": "fill",
+          "text": "A 0.50 mol dm⁻³ NaCl solution (M = 58.44 g mol⁻¹) has a mass concentration of ___ g dm⁻³.",
+          "answer": "29",
+          "accept": [
+            "29.2"
+          ],
+          "bank": [
+            "29",
+            "117",
+            "0.0086",
+            "58"
+          ],
+          "explanation": "0.50 mol dm⁻³ × 58.44 g mol⁻¹ = 29.2 g dm⁻³.",
+          "terms": [
+            "chemistry-s1.4-concentration",
+            "chemistry-s1.4-molar-mass"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q06",
+          "type": "match",
+          "prompt": "Match each component to its role.",
+          "pairs": [
+            {
+              "left": "Solute",
+              "right": "Substance that dissolves"
+            },
+            {
+              "left": "Solvent",
+              "right": "Liquid that does the dissolving"
+            },
+            {
+              "left": "Solution",
+              "right": "Homogeneous mixture of the two"
+            }
+          ],
+          "explanation": "Aqueous (aq) solutions have water as the solvent.",
+          "terms": [
+            "chemistry-s1.4-solution"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q07",
+          "type": "order",
+          "prompt": "Order the steps to make 250.0 cm³ of a standard solution from a solid.",
+          "items": [
+            "Weigh the solid accurately",
+            "Dissolve it in a small volume of distilled water in a beaker",
+            "Transfer to a volumetric flask with rinsings",
+            "Add water up to the graduation mark",
+            "Stopper and invert to mix"
+          ],
+          "explanation": "Rinsings ensure all the solute is transferred; filling to the mark gives the exact volume.",
+          "terms": [
+            "chemistry-s1.4-standard-solution"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q08",
+          "type": "tf",
+          "statement": "By Avogadro's law, 1 mol of H₂ and 1 mol of CO₂ occupy the same volume at the same temperature and pressure.",
+          "answer": true,
+          "explanation": "Gas volume depends on the number of particles, not their identity (for ideal gases).",
+          "terms": [
+            "chemistry-s1.4-avogadro-law"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q09",
+          "type": "mcq",
+          "prompt": "What mass of CuSO₄ (M = 159.6 g mol⁻¹) is needed for 250 cm³ of 0.100 mol dm⁻³ solution?",
+          "options": [
+            "1.60 g",
+            "3.99 g",
+            "15.96 g",
+            "39.9 g"
+          ],
+          "answer": 1,
+          "explanation": "n = 0.100 × 0.250 = 0.0250 mol; m = 0.0250 × 159.6 = 3.99 g.",
+          "terms": [
+            "chemistry-s1.4-concentration",
+            "chemistry-s1.4-molar-mass"
+          ]
+        },
+        {
+          "id": "chemistry-S1.4-2-q10",
+          "type": "fill",
+          "text": "1 dm³ is equal to ___ cm³.",
+          "answer": "1000",
+          "bank": [
+            "1000",
+            "100",
+            "10",
+            "1"
+          ],
+          "explanation": "Divide volumes in cm³ by 1000 to convert to dm³.",
+          "terms": [
+            "chemistry-s1.4-concentration"
+          ]
+        }
+      ]
+    }
+  ]
+}

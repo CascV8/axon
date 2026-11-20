@@ -1,0 +1,57 @@
+[
+  {
+    "id": "chemistry-X-S2-01",
+    "unit": "S2",
+    "topics": ["chemistry-S2.2a", "chemistry-S2.2b"],
+    "paper": "P2",
+    "level": "HL",
+    "title": "Shapes and boiling points of group 15 hydrides",
+    "stem": "Ammonia, NH₃, and phosphine, PH₃, are both hydrides of group 15 elements. Ammonia boils at −33 °C and phosphine at −88 °C. Hydrogen cyanide, HCN, is a linear molecule.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Deduce",
+        "prompt": "Deduce the electron domain geometry and the molecular geometry of NH₃, and estimate its H–N–H bond angle.",
+        "marks": 3,
+        "markscheme": [
+          "electron domain geometry: tetrahedral (four domains)",
+          "molecular geometry: trigonal pyramidal",
+          "bond angle about 107° (accept 105°–108°)"
+        ],
+        "notes": "Reject 109.5° for the bond angle."
+      },
+      {
+        "label": "b",
+        "command": "Explain",
+        "prompt": "Explain why the bond angle in NH₃ is smaller than the bond angle in CH₄.",
+        "marks": 2,
+        "markscheme": [
+          "NH₃ has a lone pair on N / CH₄ has no lone pairs",
+          "lone pair–bonding pair repulsion is greater than bonding pair–bonding pair repulsion, so the bonding pairs are pushed closer together"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain why ammonia has a higher boiling point than phosphine even though phosphine has more electrons.",
+        "marks": 3,
+        "markscheme": [
+          "hydrogen bonding between NH₃ molecules",
+          "N is highly electronegative and small, with a lone pair, so N–H…N hydrogen bonds form / P is not electronegative enough",
+          "PH₃ has only London forces (and weak dipole–dipole forces), which are weaker overall / more energy needed to separate NH₃ molecules"
+        ],
+        "notes": "Do not award marks for answers that refer to breaking covalent bonds on boiling."
+      },
+      {
+        "label": "d",
+        "command": "State",
+        "prompt": "State the number of σ and π bonds in HCN and the hybridization of the carbon atom.",
+        "marks": 2,
+        "markscheme": [
+          "2 σ bonds and 2 π bonds",
+          "carbon is sp hybridized"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "chemistry-X-R1-01",
+    "unit": "R1",
+    "topics": ["chemistry-R1.1", "chemistry-R1.3"],
+    "paper": "P1B",
+    "level": "SL",
+    "title": "Enthalpy of combustion of ethanol from a spirit burner",
+    "stem": "A student heated water in a copper can using a spirit burner containing ethanol, C₂H₅OH (M = 46.08 g mol⁻¹). The literature value for the standard enthalpy of combustion of ethanol is −1367 kJ mol⁻¹. The specific heat capacity of water is 4.18 J g⁻¹ K⁻¹.",
+    "data": {
+      "caption": "Results of the spirit-burner experiment",
+      "columns": ["Measurement", "Value"],
+      "rows": [
+        ["Mass of water in can / g", "150.0"],
+        ["Initial temperature of water / °C", "20.5"],
+        ["Final temperature of water / °C", "41.0"],
+        ["Initial mass of burner / g", "185.36"],
+        ["Final mass of burner / g", "184.44"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the heat absorbed by the water, in kJ.",
+        "marks": 1,
+        "numeric": { "value": 12.9, "tolerance": 0.1, "unit": "kJ" },
+        "markscheme": [
+          "Q = 150.0 × 4.18 × 20.5 = 12 854 J = 12.9 kJ"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the enthalpy change of combustion of ethanol, in kJ mol⁻¹, from these results.",
+        "marks": 2,
+        "numeric": { "value": -644, "tolerance": 6, "unit": "kJ mol⁻¹" },
+        "markscheme": [
+          "n(ethanol) = 0.92 / 46.08 = 0.01997 mol",
+          "ΔH = −12.85 / 0.01997 = −644 kJ mol⁻¹ (negative sign required)"
+        ],
+        "notes": "Apply ECF from (a). Accept −640 to −650 kJ mol⁻¹."
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage error of the experimental value compared with the literature value.",
+        "marks": 1,
+        "numeric": { "value": 52.9, "tolerance": 0.6, "unit": "%" },
+        "markscheme": [
+          "(1367 − 644)/1367 × 100 = 52.9 %"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Suggest",
+        "prompt": "Suggest two reasons for the difference from the literature value, and one improvement to the method.",
+        "marks": 3,
+        "markscheme": [
+          "heat lost to the surroundings / air / not all heat transferred to the water",
+          "incomplete combustion of ethanol (soot on the can)",
+          "heat absorbed by the copper can not included / ethanol evaporated from the wick (mass loss not all due to combustion)",
+          "improvement: shield the flame from draughts / use a lid and insulation / reduce distance between flame and can / use a bomb calorimeter / supply more oxygen"
+        ],
+        "notes": "Award [2] max for reasons and [1] for a relevant improvement. Reject vague answers such as 'human error'."
+      }
+    ]
+  }
+]
