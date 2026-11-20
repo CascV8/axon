@@ -1,0 +1,405 @@
+{
+  "id": "psychology-HW.1",
+  "code": "HW.1",
+  "unit": "health",
+  "title": "Explaining mental health disorders",
+  "level": "SL",
+  "summary": "Diagnosis and prevalence of major depressive disorder, with biological, cognitive, cultural and environmental explanations.",
+  "keyterms": [
+    {
+      "id": "psychology-hw.1-mdd",
+      "term": "Major depressive disorder",
+      "definition": "A disorder with persistent low mood or loss of interest plus symptoms such as sleep change, fatigue and worthlessness, lasting at least two weeks.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.1-diagnosis",
+      "term": "Diagnosis",
+      "definition": "Identifying a disorder from symptoms using a classification system such as DSM-5-TR or ICD-11.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.1-prevalence",
+      "term": "Prevalence",
+      "definition": "The proportion of a population with a disorder at a given time or over a given period.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.1-serotonin-hypothesis",
+      "term": "Serotonin hypothesis",
+      "definition": "The idea that low serotonin activity contributes to depression; now seen as an oversimplification.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.1-cognitive-triad",
+      "term": "Cognitive triad",
+      "definition": "Beck: negative views of the self, the world and the future, seen in depression.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.1-negative-schemas",
+      "term": "Negative self-schemas",
+      "definition": "Beliefs about the self formed through experience that bias how events are interpreted.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.1-somatization",
+      "term": "Somatization",
+      "definition": "Expressing psychological distress through physical symptoms such as pain or fatigue.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.1-vulnerability-factors",
+      "term": "Vulnerability factors",
+      "definition": "Circumstances that increase the risk of a disorder when stressful events occur.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.1-cultural-syndromes",
+      "term": "Cultural concepts of distress",
+      "definition": "Ways that particular cultures experience, describe and explain distress.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-HW.1-1",
+      "title": "Diagnosis, biological and cognitive explanations",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HW.1-1-q01",
+          "type": "mcq",
+          "prompt": "Caspi et al. (2003) used a longitudinal sample from Dunedin, New Zealand. Who was most likely to develop depression?",
+          "options": [
+            "People with two long 5-HTT alleles and no stress",
+            "People with short 5-HTT allele(s) who experienced many stressful life events",
+            "Everyone with short alleles",
+            "People with no stressful life events"
+          ],
+          "answer": 1,
+          "explanation": "This gene–environment interaction supports a diathesis-stress explanation.",
+          "terms": [
+            "psychology-hw.1-mdd"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q02",
+          "type": "mcq",
+          "prompt": "Beck's cognitive triad refers to negative views of:",
+          "options": [
+            "Parents, teachers and friends",
+            "The self, the world and the future",
+            "Past, present and future",
+            "Body, mind and spirit"
+          ],
+          "answer": 1,
+          "explanation": "Beck (1967) argued these automatic negative thoughts maintain depression.",
+          "terms": [
+            "psychology-hw.1-cognitive-triad"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q03",
+          "type": "tf",
+          "statement": "Alloy et al. (1999) found students with a negative cognitive style were more likely to develop a depressive episode over the next two and a half years.",
+          "answer": true,
+          "explanation": "This prospective design suggests cognitive style may precede depression rather than only result from it.",
+          "terms": [
+            "psychology-hw.1-negative-schemas"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q04",
+          "type": "tf",
+          "statement": "The serotonin hypothesis is now widely accepted as a complete explanation of depression.",
+          "answer": false,
+          "explanation": "Evidence is mixed; depression is now seen as involving many interacting factors.",
+          "terms": [
+            "psychology-hw.1-serotonin-hypothesis"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q05",
+          "type": "fill",
+          "text": "The proportion of people with a disorder in a population is its ___.",
+          "answer": "prevalence",
+          "bank": [
+            "prevalence",
+            "heritability",
+            "validity",
+            "incidence"
+          ],
+          "explanation": "Prevalence varies across cultures, partly because of diagnosis and reporting.",
+          "terms": [
+            "psychology-hw.1-prevalence"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q06",
+          "type": "fill",
+          "text": "Diagnosis of depression commonly uses the DSM-5-TR or the ___-11.",
+          "answer": "ICD",
+          "bank": [
+            "ICD",
+            "CBT",
+            "MRI",
+            "SSRI"
+          ],
+          "explanation": "ICD-11 is the World Health Organization's classification.",
+          "terms": [
+            "psychology-hw.1-diagnosis"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q07",
+          "type": "match",
+          "prompt": "Match each explanation of depression to its level.",
+          "pairs": [
+            {
+              "left": "Short 5-HTT allele",
+              "right": "Genetic (biological)"
+            },
+            {
+              "left": "Low serotonin activity",
+              "right": "Neurochemical (biological)"
+            },
+            {
+              "left": "Negative cognitive triad",
+              "right": "Cognitive"
+            },
+            {
+              "left": "Lack of an intimate relationship",
+              "right": "Environmental / social"
+            }
+          ],
+          "explanation": "An integrated view combines several levels.",
+          "terms": [
+            "psychology-hw.1-serotonin-hypothesis",
+            "psychology-hw.1-cognitive-triad",
+            "psychology-hw.1-vulnerability-factors"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q08",
+          "type": "mcq",
+          "prompt": "A problem with cognitive explanations of depression is that:",
+          "options": [
+            "They have no supporting studies",
+            "Negative thinking may be a symptom rather than a cause",
+            "They ignore thoughts",
+            "They only apply to animals"
+          ],
+          "answer": 1,
+          "explanation": "Causality is hard to establish: depression may produce negative thinking.",
+          "terms": [
+            "psychology-hw.1-negative-schemas"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which is a validity issue with diagnosing depression?",
+          "options": [
+            "Symptoms are entirely objective",
+            "Diagnosis relies on self-report and clinician judgement, and culture affects how symptoms are expressed",
+            "All clinicians always agree",
+            "There are no criteria"
+          ],
+          "answer": 1,
+          "explanation": "Reliability and validity of diagnosis are measurement issues.",
+          "terms": [
+            "psychology-hw.1-diagnosis"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-1-q10",
+          "type": "order",
+          "prompt": "Order Beck's cognitive model of depression.",
+          "items": [
+            "Negative early experiences",
+            "Negative self-schemas form",
+            "A stressful event activates the schemas",
+            "Automatic negative thoughts (cognitive triad)",
+            "Depressed mood"
+          ],
+          "explanation": "Schemas lie dormant until triggered by stress.",
+          "terms": [
+            "psychology-hw.1-negative-schemas",
+            "psychology-hw.1-cognitive-triad"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-HW.1-2",
+      "title": "Cultural and environmental factors",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HW.1-2-q01",
+          "type": "mcq",
+          "prompt": "Kleinman (1982) studied Chinese patients diagnosed with neurasthenia. What did he find?",
+          "options": [
+            "None had any symptoms of depression",
+            "Most met criteria for major depression but reported mainly physical symptoms",
+            "They all had schizophrenia",
+            "They reported only guilt"
+          ],
+          "answer": 1,
+          "explanation": "This suggests culture shapes how distress is expressed (somatization).",
+          "terms": [
+            "psychology-hw.1-somatization",
+            "psychology-hw.1-cultural-syndromes"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q02",
+          "type": "mcq",
+          "prompt": "Brown and Harris (1978) studied working-class women in London. They identified:",
+          "options": [
+            "Genes for depression",
+            "Vulnerability factors such as lacking an intimate relationship",
+            "A brain area for depression",
+            "That depression only affects men"
+          ],
+          "answer": 1,
+          "explanation": "Vulnerability factors increased the risk of depression after a severe life event.",
+          "terms": [
+            "psychology-hw.1-vulnerability-factors"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q03",
+          "type": "tf",
+          "statement": "Cultural differences in prevalence may partly reflect differences in diagnosis and willingness to report symptoms.",
+          "answer": true,
+          "explanation": "Stigma and different expressions of distress affect measurement.",
+          "terms": [
+            "psychology-hw.1-prevalence",
+            "psychology-hw.1-cultural-syndromes"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q04",
+          "type": "tf",
+          "statement": "Brown and Harris found life events alone fully explained depression.",
+          "answer": false,
+          "explanation": "Severe events led to depression mainly in women who also had vulnerability factors.",
+          "terms": [
+            "psychology-hw.1-vulnerability-factors"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q05",
+          "type": "fill",
+          "text": "Expressing distress mainly as headaches, fatigue or pain is called ___.",
+          "answer": "somatization",
+          "bank": [
+            "somatization",
+            "rumination",
+            "acculturation",
+            "catastrophizing"
+          ],
+          "explanation": "Somatization may be more common where psychological distress is stigmatized.",
+          "terms": [
+            "psychology-hw.1-somatization"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q06",
+          "type": "fill",
+          "text": "In Brown and Harris (1978), losing one's ___ before age 11 was a vulnerability factor.",
+          "answer": "mother",
+          "bank": [
+            "mother",
+            "job",
+            "home",
+            "father"
+          ],
+          "explanation": "Other factors included three or more young children at home and no paid employment.",
+          "terms": [
+            "psychology-hw.1-vulnerability-factors"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q07",
+          "type": "match",
+          "prompt": "Match each study to its focus.",
+          "pairs": [
+            {
+              "left": "Kleinman (1982)",
+              "right": "Culture and somatic expression of depression"
+            },
+            {
+              "left": "Brown & Harris (1978)",
+              "right": "Social vulnerability factors"
+            },
+            {
+              "left": "Caspi et al. (2003)",
+              "right": "Gene–environment interaction"
+            },
+            {
+              "left": "Beck (1967)",
+              "right": "Cognitive triad"
+            }
+          ],
+          "explanation": "Each represents a different perspective on depression.",
+          "terms": [
+            "psychology-hw.1-somatization",
+            "psychology-hw.1-vulnerability-factors",
+            "psychology-hw.1-cognitive-triad"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q08",
+          "type": "mcq",
+          "prompt": "A Western depression questionnaire used in another culture finds low rates. A possible bias is:",
+          "options": [
+            "The questionnaire may not capture local ways of expressing distress",
+            "The sample is too large",
+            "The questionnaire is too reliable",
+            "Twin study bias"
+          ],
+          "answer": 0,
+          "explanation": "This is a cultural (etic) bias in measurement.",
+          "terms": [
+            "psychology-hw.1-cultural-syndromes",
+            "psychology-hw.1-prevalence"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q09",
+          "type": "mcq",
+          "prompt": "Brown and Harris's sample of women in one London area limits:",
+          "options": [
+            "Internal validity of the questionnaire",
+            "Generalization to men and other cultures",
+            "The ethics of the study",
+            "Its use of interviews"
+          ],
+          "answer": 1,
+          "explanation": "Findings may not apply to other populations.",
+          "terms": [
+            "psychology-hw.1-vulnerability-factors"
+          ]
+        },
+        {
+          "id": "psychology-HW.1-2-q10",
+          "type": "order",
+          "prompt": "Order the pathway proposed by Brown and Harris (1978).",
+          "items": [
+            "Woman has vulnerability factors",
+            "A severe life event occurs",
+            "Low self-esteem and hopelessness develop",
+            "Depression onset"
+          ],
+          "explanation": "Vulnerability factors made the stressor more likely to lead to depression.",
+          "terms": [
+            "psychology-hw.1-vulnerability-factors"
+          ]
+        }
+      ]
+    }
+  ]
+}

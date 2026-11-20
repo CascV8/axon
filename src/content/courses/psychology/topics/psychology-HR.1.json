@@ -1,0 +1,400 @@
+{
+  "id": "psychology-HR.1",
+  "code": "HR.1",
+  "unit": "rel",
+  "title": "Group behaviour and interpersonal relationships",
+  "level": "SL",
+  "summary": "How groups form, compete and cooperate, and how attraction, communication and chemical messengers affect close relationships.",
+  "keyterms": [
+    {
+      "id": "psychology-hr.1-realistic-conflict",
+      "term": "Realistic conflict theory",
+      "definition": "Sherif: competition between groups for limited resources produces hostility.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hr.1-superordinate-goal",
+      "term": "Superordinate goal",
+      "definition": "A goal that groups can only reach by working together, reducing conflict.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hr.1-contact-hypothesis",
+      "term": "Contact hypothesis",
+      "definition": "Allport (1954): prejudice can be reduced by contact between groups under certain conditions, e.g. equal status.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hr.1-jigsaw",
+      "term": "Jigsaw classroom",
+      "definition": "Aronson: students in mixed groups each hold part of the material, so they must cooperate.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hr.1-proximity",
+      "term": "Proximity",
+      "definition": "Physical nearness, which increases the chance of forming relationships.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hr.1-similarity",
+      "term": "Similarity",
+      "definition": "Shared attitudes, values and characteristics, which increase attraction.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hr.1-oxytocin",
+      "term": "Oxytocin",
+      "definition": "A hormone and neurotransmitter linked to bonding and trust.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hr.1-four-horsemen",
+      "term": "Four horsemen",
+      "definition": "Gottman: criticism, contempt, defensiveness and stonewalling, which predict relationship breakdown.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hr.1-attribution",
+      "term": "Attribution",
+      "definition": "Explaining the cause of someone's behaviour, e.g. as due to their character or the situation.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-HR.1-1",
+      "title": "Group behaviour",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HR.1-1-q01",
+          "type": "mcq",
+          "prompt": "In Sherif et al.'s Robbers Cave study, what increased hostility between the Eagles and the Rattlers?",
+          "options": [
+            "Shared meals",
+            "Competitive tournaments with prizes for the winners",
+            "Superordinate goals",
+            "Being split by eye colour"
+          ],
+          "answer": 1,
+          "explanation": "Competition for limited resources produced hostility, supporting realistic conflict theory.",
+          "terms": [
+            "psychology-hr.1-realistic-conflict"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q02",
+          "type": "mcq",
+          "prompt": "What reduced conflict between the groups in Robbers Cave?",
+          "options": [
+            "Separate camps",
+            "Superordinate goals, like fixing the water supply together",
+            "More competitions",
+            "Removing leaders"
+          ],
+          "answer": 1,
+          "explanation": "Cooperation on shared goals reduced hostility.",
+          "terms": [
+            "psychology-hr.1-superordinate-goal"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q03",
+          "type": "tf",
+          "statement": "Allport's contact hypothesis says any contact between groups automatically reduces prejudice.",
+          "answer": false,
+          "explanation": "Contact works under conditions such as equal status, shared goals, cooperation and institutional support.",
+          "terms": [
+            "psychology-hr.1-contact-hypothesis"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q04",
+          "type": "tf",
+          "statement": "The jigsaw classroom applies cooperative interdependence to reduce prejudice among students.",
+          "answer": true,
+          "explanation": "Each student's piece is needed, so students must rely on each other.",
+          "terms": [
+            "psychology-hr.1-jigsaw"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q05",
+          "type": "fill",
+          "text": "A goal that requires two groups to cooperate is a ___ goal.",
+          "answer": "superordinate",
+          "bank": [
+            "superordinate",
+            "subordinate",
+            "minimal",
+            "personal"
+          ],
+          "explanation": "Sherif used these to reduce conflict.",
+          "terms": [
+            "psychology-hr.1-superordinate-goal"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q06",
+          "type": "fill",
+          "text": "Sherif's explanation of group hostility is called realistic ___ theory.",
+          "answer": "conflict",
+          "bank": [
+            "conflict",
+            "identity",
+            "learning",
+            "dissonance"
+          ],
+          "explanation": "It focuses on competition for real resources.",
+          "terms": [
+            "psychology-hr.1-realistic-conflict"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q07",
+          "type": "match",
+          "prompt": "Match each concept to its key study or researcher.",
+          "pairs": [
+            {
+              "left": "Realistic conflict",
+              "right": "Sherif et al. (Robbers Cave)"
+            },
+            {
+              "left": "Contact hypothesis",
+              "right": "Allport (1954)"
+            },
+            {
+              "left": "Jigsaw classroom",
+              "right": "Aronson"
+            },
+            {
+              "left": "Minimal groups",
+              "right": "Tajfel et al. (1971)"
+            }
+          ],
+          "explanation": "SIT suggests categorization alone can cause bias, while realistic conflict stresses competition.",
+          "terms": [
+            "psychology-hr.1-realistic-conflict",
+            "psychology-hr.1-contact-hypothesis",
+            "psychology-hr.1-jigsaw"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q08",
+          "type": "mcq",
+          "prompt": "A limitation of the Robbers Cave study is that:",
+          "options": [
+            "It used a large random sample of adults",
+            "Participants were a small group of similar boys, limiting generalization",
+            "It took place in a lab",
+            "It had no measures of behaviour"
+          ],
+          "answer": 1,
+          "explanation": "All were white, middle-class boys of about 11–12 at a summer camp.",
+          "terms": [
+            "psychology-hr.1-realistic-conflict"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which situation best meets the conditions of the contact hypothesis?",
+          "options": [
+            "A manager supervising workers from another group",
+            "Mixed teams of equal status working on a shared project supported by the school",
+            "Brief contact in a crowded street",
+            "Competitive sports between rival schools"
+          ],
+          "answer": 1,
+          "explanation": "Equal status, cooperation, common goals and support are key.",
+          "terms": [
+            "psychology-hr.1-contact-hypothesis"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-1-q10",
+          "type": "order",
+          "prompt": "Order the phases of the Robbers Cave study.",
+          "items": [
+            "In-group formation",
+            "Friction phase (competition)",
+            "Integration phase (superordinate goals)"
+          ],
+          "explanation": "Hostility appeared during competition and fell with cooperation.",
+          "terms": [
+            "psychology-hr.1-realistic-conflict",
+            "psychology-hr.1-superordinate-goal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-HR.1-2",
+      "title": "Interpersonal relationships",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HR.1-2-q01",
+          "type": "mcq",
+          "prompt": "Festinger, Schachter and Back (1950) studied friendships in student housing. Friendships were most common between:",
+          "options": [
+            "People living furthest apart",
+            "People living close to each other",
+            "People with different majors",
+            "Random pairs"
+          ],
+          "answer": 1,
+          "explanation": "Proximity increased interaction and friendship.",
+          "terms": [
+            "psychology-hr.1-proximity"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q02",
+          "type": "mcq",
+          "prompt": "Scheele et al. (2012) gave men oxytocin before meeting an attractive woman. Men in monogamous relationships:",
+          "options": [
+            "Moved closer to her",
+            "Kept a greater distance from her",
+            "Showed no change",
+            "Left the room"
+          ],
+          "answer": 1,
+          "explanation": "Single men were not affected, suggesting oxytocin may help maintain existing bonds.",
+          "terms": [
+            "psychology-hr.1-oxytocin"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q03",
+          "type": "tf",
+          "statement": "Gottman found contempt was one of the strongest predictors of divorce.",
+          "answer": true,
+          "explanation": "Contempt is one of the four horsemen, often seen as the most damaging.",
+          "terms": [
+            "psychology-hr.1-four-horsemen"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q04",
+          "type": "tf",
+          "statement": "Bradbury and Fincham (1990) found that distressed couples tend to explain a partner's positive behaviour as due to their stable character.",
+          "answer": false,
+          "explanation": "Distressed couples tended to attribute positive behaviour to situations and negative behaviour to the partner's character.",
+          "terms": [
+            "psychology-hr.1-attribution"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q05",
+          "type": "fill",
+          "text": "Gottman's four horsemen are criticism, contempt, defensiveness and ___.",
+          "answer": "stonewalling",
+          "bank": [
+            "stonewalling",
+            "jealousy",
+            "conformity",
+            "anxiety"
+          ],
+          "explanation": "Stonewalling means withdrawing from interaction.",
+          "terms": [
+            "psychology-hr.1-four-horsemen"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q06",
+          "type": "fill",
+          "text": "Explaining a partner's behaviour in terms of personality or situation is making an ___.",
+          "answer": "attribution",
+          "bank": [
+            "attribution",
+            "association",
+            "anchor",
+            "assumption"
+          ],
+          "explanation": "Maladaptive attributions can maintain conflict.",
+          "terms": [
+            "psychology-hr.1-attribution"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q07",
+          "type": "match",
+          "prompt": "Match each factor to a relationship study.",
+          "pairs": [
+            {
+              "left": "Proximity",
+              "right": "Festinger, Schachter & Back (1950)"
+            },
+            {
+              "left": "Oxytocin",
+              "right": "Scheele et al. (2012)"
+            },
+            {
+              "left": "Communication patterns",
+              "right": "Gottman & Levenson (2000)"
+            },
+            {
+              "left": "MHC and scent",
+              "right": "Wedekind et al. (1995)"
+            }
+          ],
+          "explanation": "Relationships involve biological, cognitive and sociocultural factors.",
+          "terms": [
+            "psychology-hr.1-proximity",
+            "psychology-hr.1-oxytocin",
+            "psychology-hr.1-four-horsemen"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q08",
+          "type": "mcq",
+          "prompt": "Which strategy would a Gottman-based therapist encourage?",
+          "options": [
+            "Avoiding all discussion of problems",
+            "Expressing complaints gently without blame and showing appreciation",
+            "Stonewalling during conflict",
+            "Using contempt to make a point"
+          ],
+          "answer": 1,
+          "explanation": "Replacing the four horsemen with gentle start-ups and appreciation is linked to stable relationships.",
+          "terms": [
+            "psychology-hr.1-four-horsemen"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q09",
+          "type": "mcq",
+          "prompt": "Why might research on similarity and attraction be culturally limited?",
+          "options": [
+            "It has never been studied",
+            "Many studies use Western students, and in some cultures families play a major role in partner choice",
+            "Similarity cannot be measured",
+            "It only uses animals"
+          ],
+          "answer": 1,
+          "explanation": "Arranged or family-influenced marriages may involve different criteria.",
+          "terms": [
+            "psychology-hr.1-similarity"
+          ]
+        },
+        {
+          "id": "psychology-HR.1-2-q10",
+          "type": "order",
+          "prompt": "Order the steps of a typical Gottman-style intervention.",
+          "items": [
+            "Assess the couple's interaction",
+            "Identify the four horsemen in their communication",
+            "Teach alternatives (e.g. gentle start-up)",
+            "Practise and review new patterns"
+          ],
+          "explanation": "Interventions target observable communication.",
+          "terms": [
+            "psychology-hr.1-four-horsemen"
+          ]
+        }
+      ]
+    }
+  ]
+}

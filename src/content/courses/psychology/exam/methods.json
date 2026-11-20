@@ -1,0 +1,115 @@
+[
+  {
+    "id": "psychology-X-methods-01",
+    "unit": "methods",
+    "topics": ["psychology-RM.1", "psychology-CON.2"],
+    "paper": "P2A",
+    "level": "SL",
+    "title": "Class practical: experiment",
+    "stem": "Answer with reference to the experiment you carried out as your class practical for learning and cognition.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Describe",
+        "prompt": "Describe how you operationalized the independent and dependent variables in your experiment.",
+        "marks": 4,
+        "markscheme": [
+          "IV identified",
+          "IV operationalized precisely, e.g. word list presented in silence vs with background music at a stated volume",
+          "DV identified",
+          "DV operationalized precisely, e.g. number of words correctly recalled in 2 minutes"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Explain",
+        "prompt": "Explain why you chose your sampling technique.",
+        "marks": 4,
+        "markscheme": [
+          "technique identified, e.g. opportunity sampling of classmates",
+          "practical reason, e.g. quick, available, limited time",
+          "link to the target population of the study",
+          "limitation acknowledged, e.g. sample not representative so findings may not generalize"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain how two ethical considerations were applied in your experiment.",
+        "marks": 6,
+        "markscheme": [
+          "first consideration identified, e.g. informed consent",
+          "how it was applied in this study, e.g. consent forms explaining procedure, parental consent for under-16s",
+          "why it mattered in this study",
+          "second consideration identified, e.g. right to withdraw / debriefing / confidentiality",
+          "how it was applied in this study",
+          "why it mattered in this study"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Discuss",
+        "prompt": "Discuss how bias may have affected the results of your experiment.",
+        "marks": 6,
+        "markscheme": [
+          "a specific source of bias in the study identified, e.g. demand characteristics in a repeated measures design",
+          "how it could have affected the DV",
+          "a second source, e.g. researcher bias when scoring recall / sampling bias",
+          "how it could have affected the results",
+          "steps taken or that could be taken to reduce bias, e.g. counterbalancing, single-blind",
+          "judgement of the overall impact on conclusions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "psychology-X-methods-02",
+    "unit": "methods",
+    "topics": ["psychology-RM.1", "psychology-RM.3", "psychology-CON.1"],
+    "paper": "P2B",
+    "level": "SL",
+    "title": "Unseen study: music and reading comprehension",
+    "stem": "A researcher recruited 40 volunteers from a university psychology course through a social media post. Participants were allocated to one of two conditions by the order they arrived: the first 20 read a passage in silence, the next 20 read it while listening to songs with lyrics. All then answered 10 multiple-choice comprehension questions. The researcher, who expected music to impair comprehension, marked the answers and knew which condition each participant was in.",
+    "data": {
+      "caption": "Comprehension scores (out of 10)",
+      "columns": ["Condition", "n", "Mean", "Standard deviation"],
+      "rows": [
+        ["Silence", "20", "7.4", "1.1"],
+        ["Music with lyrics", "20", "6.1", "2.3"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Evaluate",
+        "prompt": "Evaluate this study with reference to measurement and causality.",
+        "marks": 8,
+        "markscheme": [
+          "the mean is higher in silence (7.4 vs 6.1), suggesting a possible negative effect of music",
+          "the larger SD in the music condition shows more variable scores, so some music participants did well",
+          "allocation by arrival order is not random, so participant variables (e.g. early arrivers more motivated) may confound results, weakening causal claims",
+          "only 10 multiple-choice questions: a narrow operationalization of comprehension; possible ceiling effect",
+          "no inferential test reported, so the difference may not be significant",
+          "strength: the IV was manipulated with a control condition, so a causal claim is possible in principle",
+          "the type, volume and familiarity of the music were not controlled",
+          "reasoned judgement about how far the study supports a causal conclusion"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Discuss",
+        "prompt": "Discuss how bias may have affected this study.",
+        "marks": 7,
+        "markscheme": [
+          "researcher bias: the researcher expected impairment and knew participants' conditions while marking",
+          "multiple-choice answers limit researcher bias in scoring, but expectations could affect instructions or interaction",
+          "sampling bias: self-selected psychology students may guess the aim and are not representative",
+          "demand characteristics: music participants may infer the hypothesis",
+          "improvement: double-blind marking and random allocation",
+          "improvement: a more diverse sample to increase generalizability",
+          "judgement of how far bias undermines the findings"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,395 @@
+{
+  "id": "psychology-LC.1",
+  "code": "LC.1",
+  "unit": "learn",
+  "title": "Learning, memory and other cognitive processes",
+  "level": "SL",
+  "summary": "Applying learning theories in education, the reliability of memory, biological, cultural and environmental influences on cognition, and ways to improve memory.",
+  "keyterms": [
+    {
+      "id": "psychology-lc.1-token-economy",
+      "term": "Token economy",
+      "definition": "A system using tokens as reinforcers that can be exchanged for rewards, based on operant conditioning.",
+      "hl": false
+    },
+    {
+      "id": "psychology-lc.1-misleading-information",
+      "term": "Misleading information",
+      "definition": "Information after an event that can distort memory of it, e.g. leading questions.",
+      "hl": false
+    },
+    {
+      "id": "psychology-lc.1-eyewitness",
+      "term": "Eyewitness testimony",
+      "definition": "A witness's account of an event, which may be distorted by schemas, questions or stress.",
+      "hl": false
+    },
+    {
+      "id": "psychology-lc.1-context-dependent",
+      "term": "Context-dependent memory",
+      "definition": "Recall is better when the environment at recall matches that at learning.",
+      "hl": false
+    },
+    {
+      "id": "psychology-lc.1-testing-effect",
+      "term": "Testing effect",
+      "definition": "Practising retrieval improves long-term retention more than restudying.",
+      "hl": false
+    },
+    {
+      "id": "psychology-lc.1-spacing-effect",
+      "term": "Spacing effect",
+      "definition": "Spreading study out over time leads to better long-term memory than cramming.",
+      "hl": false
+    },
+    {
+      "id": "psychology-lc.1-inattentional-blindness",
+      "term": "Inattentional blindness",
+      "definition": "Failing to notice an unexpected stimulus when attention is focused elsewhere.",
+      "hl": false
+    },
+    {
+      "id": "psychology-lc.1-culture-cognition",
+      "term": "Culture and cognition",
+      "definition": "How cultural practices such as schooling influence cognitive strategies.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-LC.1-1",
+      "title": "Memory reliability and influences",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-LC.1-1-q01",
+          "type": "mcq",
+          "prompt": "In Loftus and Palmer (1974), participants who heard the verb \"smashed\" estimated speeds that were:",
+          "options": [
+            "Lower than for \"contacted\"",
+            "Higher than for \"contacted\"",
+            "The same as all other verbs",
+            "Always accurate"
+          ],
+          "answer": 1,
+          "explanation": "The wording of a leading question affected estimates, and later more people falsely recalled broken glass.",
+          "terms": [
+            "psychology-lc.1-misleading-information",
+            "psychology-lc.1-eyewitness"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q02",
+          "type": "mcq",
+          "prompt": "Yuille and Cutshall (1986) interviewed real witnesses to a shooting months later. They found:",
+          "options": [
+            "Witnesses were very inaccurate",
+            "Witnesses were quite accurate and resisted misleading questions",
+            "Nobody remembered anything",
+            "Stress erased memories"
+          ],
+          "answer": 1,
+          "explanation": "This challenges the ecological validity of lab studies like Loftus and Palmer.",
+          "terms": [
+            "psychology-lc.1-eyewitness"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q03",
+          "type": "tf",
+          "statement": "Godden and Baddeley (1975) found divers recalled words better when learning and recall happened in the same environment.",
+          "answer": true,
+          "explanation": "Matching land–land or underwater–underwater improved recall, showing context-dependent memory.",
+          "terms": [
+            "psychology-lc.1-context-dependent"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q04",
+          "type": "tf",
+          "statement": "Simons and Chabris (1999) found that nearly all participants noticed a person in a gorilla suit while counting passes.",
+          "answer": false,
+          "explanation": "About half failed to notice, showing inattentional blindness.",
+          "terms": [
+            "psychology-lc.1-inattentional-blindness"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q05",
+          "type": "fill",
+          "text": "Better recall when the learning and recall environments match is called ___-dependent memory.",
+          "answer": "context",
+          "bank": [
+            "context",
+            "state",
+            "schema",
+            "culture"
+          ],
+          "explanation": "Environmental cues help retrieval.",
+          "terms": [
+            "psychology-lc.1-context-dependent"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q06",
+          "type": "fill",
+          "text": "Cole and Scribner (1974) found Kpelle people with formal ___ were more likely to use categorical clustering in recall.",
+          "answer": "schooling",
+          "bank": [
+            "schooling",
+            "wealth",
+            "training",
+            "religion"
+          ],
+          "explanation": "Memory strategies depend on cultural practices such as schooling.",
+          "terms": [
+            "psychology-lc.1-culture-cognition"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q07",
+          "type": "match",
+          "prompt": "Match each influence on memory to a study.",
+          "pairs": [
+            {
+              "left": "Leading questions",
+              "right": "Loftus & Palmer (1974)"
+            },
+            {
+              "left": "Environment",
+              "right": "Godden & Baddeley (1975)"
+            },
+            {
+              "left": "Culture/schooling",
+              "right": "Cole & Scribner (1974)"
+            },
+            {
+              "left": "Acetylcholine",
+              "right": "Antonova et al. (2011)"
+            }
+          ],
+          "explanation": "Cognition is influenced by biological, cultural and environmental factors.",
+          "terms": [
+            "psychology-lc.1-misleading-information",
+            "psychology-lc.1-context-dependent",
+            "psychology-lc.1-culture-cognition"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q08",
+          "type": "mcq",
+          "prompt": "A limitation of Loftus and Palmer (1974) is that:",
+          "options": [
+            "It used real crimes",
+            "Students watching film clips lacked the emotion of real events",
+            "It had no control group",
+            "It used brain imaging"
+          ],
+          "answer": 1,
+          "explanation": "Low ecological validity: watching a clip is not witnessing a real accident.",
+          "terms": [
+            "psychology-lc.1-eyewitness"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which finding links attention and technology use?",
+          "options": [
+            "Drivers on phones may miss unexpected hazards, like participants missing the gorilla",
+            "Attention is unlimited",
+            "Phones improve driving",
+            "Inattentional blindness only occurs at night"
+          ],
+          "answer": 0,
+          "explanation": "Limited attention means unattended events may not be perceived.",
+          "terms": [
+            "psychology-lc.1-inattentional-blindness"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-1-q10",
+          "type": "order",
+          "prompt": "Order the procedure of Loftus and Palmer's first experiment.",
+          "items": [
+            "Participants watch film clips of car accidents",
+            "They answer questions about the clips",
+            "The critical question uses one of five verbs",
+            "Speed estimates are compared across verb groups"
+          ],
+          "explanation": "Only the verb differed between groups (IV).",
+          "terms": [
+            "psychology-lc.1-misleading-information"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-LC.1-2",
+      "title": "Improving learning and cognition",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-LC.1-2-q01",
+          "type": "mcq",
+          "prompt": "Roediger and Karpicke (2006) compared restudying with practice testing. After a week:",
+          "options": [
+            "Restudying was better",
+            "Practice testing produced better recall",
+            "There was no difference",
+            "Both groups forgot everything"
+          ],
+          "answer": 1,
+          "explanation": "Retrieval practice strengthens long-term memory: the testing effect.",
+          "terms": [
+            "psychology-lc.1-testing-effect"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q02",
+          "type": "mcq",
+          "prompt": "A teacher gives points for good behaviour that students can exchange for privileges. This is:",
+          "options": [
+            "A token economy",
+            "Classical conditioning",
+            "Cognitive dissonance",
+            "A superordinate goal"
+          ],
+          "answer": 0,
+          "explanation": "Token economies apply operant conditioning in classrooms.",
+          "terms": [
+            "psychology-lc.1-token-economy"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q03",
+          "type": "tf",
+          "statement": "Spacing study sessions over several days usually leads to better long-term memory than cramming.",
+          "answer": true,
+          "explanation": "Cepeda et al. (2006) found strong support for the spacing effect in a meta-analysis.",
+          "terms": [
+            "psychology-lc.1-spacing-effect"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q04",
+          "type": "tf",
+          "statement": "Restudying notes feels easy, so it is always the most effective revision strategy.",
+          "answer": false,
+          "explanation": "Feeling familiar is not the same as learning; retrieval practice is more effective.",
+          "terms": [
+            "psychology-lc.1-testing-effect"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q05",
+          "type": "fill",
+          "text": "Improving recall by practising retrieval is called the ___ effect.",
+          "answer": "testing",
+          "bank": [
+            "testing",
+            "spacing",
+            "primacy",
+            "anchoring"
+          ],
+          "explanation": "Self-quizzing is retrieval practice.",
+          "terms": [
+            "psychology-lc.1-testing-effect"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q06",
+          "type": "fill",
+          "text": "Spreading study over time rather than cramming makes use of the ___ effect.",
+          "answer": "spacing",
+          "bank": [
+            "spacing",
+            "recency",
+            "testing",
+            "halo"
+          ],
+          "explanation": "Spaced practice gives repeated chances to retrieve and consolidate.",
+          "terms": [
+            "psychology-lc.1-spacing-effect"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q07",
+          "type": "match",
+          "prompt": "Match each learning strategy to its theory.",
+          "pairs": [
+            {
+              "left": "Token economy",
+              "right": "Operant conditioning"
+            },
+            {
+              "left": "Teacher modelling a skill",
+              "right": "Social learning theory"
+            },
+            {
+              "left": "Worked examples",
+              "right": "Cognitive load theory"
+            },
+            {
+              "left": "Self-quizzing",
+              "right": "Testing effect"
+            }
+          ],
+          "explanation": "Educational practice draws on several approaches.",
+          "terms": [
+            "psychology-lc.1-token-economy",
+            "psychology-lc.1-testing-effect"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q08",
+          "type": "mcq",
+          "prompt": "A criticism of token economies is that:",
+          "options": [
+            "They never change behaviour",
+            "Behaviour may stop when tokens are removed, and they may reduce intrinsic motivation",
+            "They are based on schema theory",
+            "They are only used with animals"
+          ],
+          "answer": 1,
+          "explanation": "Extrinsic rewards may not generalize outside the system.",
+          "terms": [
+            "psychology-lc.1-token-economy"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q09",
+          "type": "mcq",
+          "prompt": "Darley and Gross (1983) found that viewers rated \"Hannah's\" ability differently depending on:",
+          "options": [
+            "Her height",
+            "Whether she appeared to come from a high or low socioeconomic background",
+            "The weather",
+            "Her name"
+          ],
+          "answer": 1,
+          "explanation": "Schemas about class biased judgements of the same performance, a confirmation bias.",
+          "terms": [
+            "psychology-lc.1-culture-cognition"
+          ]
+        },
+        {
+          "id": "psychology-LC.1-2-q10",
+          "type": "order",
+          "prompt": "Order a revision plan using evidence-based strategies.",
+          "items": [
+            "Learn the material initially",
+            "Self-test soon afterwards",
+            "Check answers and correct errors",
+            "Repeat testing after spaced intervals"
+          ],
+          "explanation": "Combining testing with spacing maximises retention.",
+          "terms": [
+            "psychology-lc.1-testing-effect",
+            "psychology-lc.1-spacing-effect"
+          ]
+        }
+      ]
+    }
+  ]
+}

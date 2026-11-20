@@ -1,0 +1,404 @@
+{
+  "id": "psychology-HL.2",
+  "code": "HL.2",
+  "unit": "hl",
+  "title": "HL extension: motivation and technology",
+  "level": "HL",
+  "summary": "How motivation drives behaviour in learning and health, and how digital technology affects cognition, well-being, relationships and treatment.",
+  "keyterms": [
+    {
+      "id": "psychology-hl.2-intrinsic",
+      "term": "Intrinsic motivation",
+      "definition": "Doing something because it is enjoyable or satisfying in itself.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.2-extrinsic",
+      "term": "Extrinsic motivation",
+      "definition": "Doing something to gain a reward or avoid a punishment.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.2-sdt",
+      "term": "Self-determination theory",
+      "definition": "Deci & Ryan: motivation thrives when needs for autonomy, competence and relatedness are met.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.2-overjustification",
+      "term": "Overjustification effect",
+      "definition": "Expected external rewards for an enjoyable activity can reduce intrinsic motivation.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.2-stages-of-change",
+      "term": "Transtheoretical model",
+      "definition": "Prochaska & DiClemente: people move through stages of change, from precontemplation to maintenance.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.2-google-effect",
+      "term": "Google effect",
+      "definition": "People remember less information they expect to be able to look up, but remember where to find it.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.2-media-multitasking",
+      "term": "Media multitasking",
+      "definition": "Using several media at once, linked to poorer filtering of distractions.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.2-vr-exposure",
+      "term": "Virtual reality exposure therapy",
+      "definition": "Treating anxiety by exposing people to feared situations in virtual reality.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.2-digital-wellbeing",
+      "term": "Digital well-being",
+      "definition": "How technology use relates to mental health, mood and life satisfaction.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-HL.2-1",
+      "title": "The role of motivation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HL.2-1-q01",
+          "type": "mcq",
+          "prompt": "Lepper, Greene and Nisbett (1973) told some preschoolers they would get a certificate for drawing. Later, these children:",
+          "options": [
+            "Drew more in free time",
+            "Drew less in free time than children not expecting a reward",
+            "Stopped drawing completely",
+            "Drew exactly the same"
+          ],
+          "answer": 1,
+          "explanation": "An expected reward reduced intrinsic interest: the overjustification effect.",
+          "terms": [
+            "psychology-hl.2-overjustification",
+            "psychology-hl.2-intrinsic"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q02",
+          "type": "mcq",
+          "prompt": "Self-determination theory says motivation depends on needs for:",
+          "options": [
+            "Food, water and sleep",
+            "Autonomy, competence and relatedness",
+            "Money, status and power",
+            "Rewards and punishments only"
+          ],
+          "answer": 1,
+          "explanation": "Meeting these psychological needs supports intrinsic motivation.",
+          "terms": [
+            "psychology-hl.2-sdt"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q03",
+          "type": "tf",
+          "statement": "Murayama and Kuhbandner (2011) found monetary rewards improved delayed memory for boring trivia but not for interesting trivia.",
+          "answer": true,
+          "explanation": "Extrinsic rewards helped where intrinsic interest was low.",
+          "terms": [
+            "psychology-hl.2-extrinsic"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q04",
+          "type": "tf",
+          "statement": "In the transtheoretical model, the first stage is action.",
+          "answer": false,
+          "explanation": "It begins with precontemplation, then contemplation and preparation, before action and maintenance.",
+          "terms": [
+            "psychology-hl.2-stages-of-change"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q05",
+          "type": "fill",
+          "text": "The decline in intrinsic interest after expected rewards is the ___ effect.",
+          "answer": "overjustification",
+          "bank": [
+            "overjustification",
+            "testing",
+            "spacing",
+            "Google"
+          ],
+          "explanation": "Rewards can shift the reason for an activity from enjoyment to payment.",
+          "terms": [
+            "psychology-hl.2-overjustification"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q06",
+          "type": "fill",
+          "text": "Doing homework only to avoid detention is ___ motivation.",
+          "answer": "extrinsic",
+          "bank": [
+            "extrinsic",
+            "intrinsic",
+            "autonomous",
+            "relational"
+          ],
+          "explanation": "Extrinsic motivation comes from outside consequences.",
+          "terms": [
+            "psychology-hl.2-extrinsic"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q07",
+          "type": "match",
+          "prompt": "Match each concept to a context.",
+          "pairs": [
+            {
+              "left": "Stages of change",
+              "right": "Health: quitting smoking"
+            },
+            {
+              "left": "Overjustification",
+              "right": "Learning: rewards in class"
+            },
+            {
+              "left": "Self-determination theory",
+              "right": "Learning: student autonomy"
+            },
+            {
+              "left": "Reward and memory",
+              "right": "Cognition: remembering trivia"
+            }
+          ],
+          "explanation": "Motivation is relevant across all four contexts.",
+          "terms": [
+            "psychology-hl.2-stages-of-change",
+            "psychology-hl.2-overjustification",
+            "psychology-hl.2-sdt"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q08",
+          "type": "mcq",
+          "prompt": "Adcock et al. (2006) found that cues signalling high reward before encoding led to better memory and activation in:",
+          "options": [
+            "Only the visual cortex",
+            "Reward-related midbrain areas and the hippocampus",
+            "The cerebellum only",
+            "No brain areas"
+          ],
+          "answer": 1,
+          "explanation": "This links motivation (reward) to memory biologically.",
+          "terms": [
+            "psychology-hl.2-extrinsic"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q09",
+          "type": "mcq",
+          "prompt": "Which classroom change best supports autonomy according to SDT?",
+          "options": [
+            "Strict rules with no choice",
+            "Giving students meaningful choices in how they complete tasks",
+            "Paying students for every task",
+            "Public ranking of grades"
+          ],
+          "answer": 1,
+          "explanation": "Choice supports autonomy and intrinsic motivation.",
+          "terms": [
+            "psychology-hl.2-sdt",
+            "psychology-hl.2-intrinsic"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-1-q10",
+          "type": "order",
+          "prompt": "Order the stages of the transtheoretical model.",
+          "items": [
+            "Precontemplation",
+            "Contemplation",
+            "Preparation",
+            "Action",
+            "Maintenance"
+          ],
+          "explanation": "Interventions should match the stage a person is in.",
+          "terms": [
+            "psychology-hl.2-stages-of-change"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-HL.2-2",
+      "title": "The role of technology",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HL.2-2-q01",
+          "type": "mcq",
+          "prompt": "Sparrow, Liu and Wegner (2011) found that when people expected information to be saved on a computer they:",
+          "options": [
+            "Remembered the information better",
+            "Remembered the information less but remembered where it was saved",
+            "Forgot both",
+            "Remembered everything perfectly"
+          ],
+          "answer": 1,
+          "explanation": "The internet may act as an external memory store: the \"Google effect\".",
+          "terms": [
+            "psychology-hl.2-google-effect"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q02",
+          "type": "mcq",
+          "prompt": "Ophir, Nass and Wagner (2009) found heavy media multitaskers were:",
+          "options": [
+            "Better at filtering distractions",
+            "Worse at filtering irrelevant information and task switching",
+            "Identical to light multitaskers",
+            "Better at everything"
+          ],
+          "answer": 1,
+          "explanation": "This is correlational: multitasking may cause poor filtering, or vice versa.",
+          "terms": [
+            "psychology-hl.2-media-multitasking"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q03",
+          "type": "tf",
+          "statement": "Mueller and Oppenheimer (2014) found students taking notes by laptop did worse on conceptual questions than those writing by hand.",
+          "answer": true,
+          "explanation": "Laptop users tended to transcribe verbatim, processing material less deeply.",
+          "terms": [
+            "psychology-hl.2-media-multitasking"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q04",
+          "type": "tf",
+          "statement": "Hunt et al. (2018) found limiting social media use to about 10 minutes per platform per day increased loneliness.",
+          "answer": false,
+          "explanation": "Limiting use reduced loneliness and depressive symptoms over three weeks.",
+          "terms": [
+            "psychology-hl.2-digital-wellbeing"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q05",
+          "type": "fill",
+          "text": "Przybylski and Weinstein (2017) proposed the \"___ hypothesis\": moderate screen use is not harmful.",
+          "answer": "Goldilocks",
+          "bank": [
+            "Goldilocks",
+            "Google",
+            "Hawthorne",
+            "Flynn"
+          ],
+          "explanation": "Very high use was linked to slightly lower well-being, but moderate use was not.",
+          "terms": [
+            "psychology-hl.2-digital-wellbeing"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q06",
+          "type": "fill",
+          "text": "Treating fear of heights by exposure to virtual heights is virtual reality ___ therapy.",
+          "answer": "exposure",
+          "bank": [
+            "exposure",
+            "cognitive",
+            "drug",
+            "token"
+          ],
+          "explanation": "Rothbaum et al. (1995) found VR exposure reduced acrophobia compared with a waiting list.",
+          "terms": [
+            "psychology-hl.2-vr-exposure"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q07",
+          "type": "match",
+          "prompt": "Match each study to its finding.",
+          "pairs": [
+            {
+              "left": "Sparrow et al. (2011)",
+              "right": "Expecting access reduces recall of facts"
+            },
+            {
+              "left": "Ophir et al. (2009)",
+              "right": "Heavy multitaskers filter poorly"
+            },
+            {
+              "left": "Hunt et al. (2018)",
+              "right": "Limiting social media reduced loneliness"
+            },
+            {
+              "left": "Rothbaum et al. (1995)",
+              "right": "VR exposure reduced fear of heights"
+            }
+          ],
+          "explanation": "Technology affects cognition, well-being and treatment.",
+          "terms": [
+            "psychology-hl.2-google-effect",
+            "psychology-hl.2-media-multitasking",
+            "psychology-hl.2-digital-wellbeing",
+            "psychology-hl.2-vr-exposure"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q08",
+          "type": "mcq",
+          "prompt": "Why is it hard to establish that social media causes depression?",
+          "options": [
+            "Social media cannot be measured",
+            "Most studies are correlational, and depressed people may use social media more",
+            "There are no studies",
+            "Experiments are always unethical"
+          ],
+          "answer": 1,
+          "explanation": "Bidirectionality and third variables limit causal claims; experiments like Hunt et al. help.",
+          "terms": [
+            "psychology-hl.2-digital-wellbeing"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q09",
+          "type": "mcq",
+          "prompt": "A strength of VR exposure therapy compared with real-life exposure is that:",
+          "options": [
+            "It requires no therapist",
+            "Exposure can be controlled precisely and done safely in the clinic",
+            "It works for every disorder",
+            "It is never distressing"
+          ],
+          "answer": 1,
+          "explanation": "Therapists can control intensity step by step.",
+          "terms": [
+            "psychology-hl.2-vr-exposure"
+          ]
+        },
+        {
+          "id": "psychology-HL.2-2-q10",
+          "type": "order",
+          "prompt": "Order the steps of VR exposure therapy for fear of heights.",
+          "items": [
+            "Build a fear hierarchy",
+            "Learn relaxation or coping skills",
+            "Expose to the lowest virtual height",
+            "Move up the hierarchy as anxiety falls"
+          ],
+          "explanation": "This mirrors systematic desensitization using technology.",
+          "terms": [
+            "psychology-hl.2-vr-exposure"
+          ]
+        }
+      ]
+    }
+  ]
+}

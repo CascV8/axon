@@ -1,0 +1,402 @@
+{
+  "id": "psychology-SOC.1",
+  "code": "SOC.1",
+  "unit": "approaches",
+  "title": "Sociocultural approach: social identity and influence",
+  "level": "SL",
+  "summary": "Social identity theory, social learning theory, cognitive dissonance, conformity and compliance techniques.",
+  "keyterms": [
+    {
+      "id": "psychology-soc.1-sit",
+      "term": "Social identity theory",
+      "definition": "Tajfel & Turner (1979): part of our self-concept comes from group membership, which motivates in-group favouritism.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-in-group-bias",
+      "term": "In-group favouritism",
+      "definition": "Treating members of one's own group more positively than members of other groups.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-minimal-group",
+      "term": "Minimal group paradigm",
+      "definition": "Assigning people to groups on trivial criteria to test whether categorization alone causes in-group bias.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-slt",
+      "term": "Social learning theory",
+      "definition": "Bandura: behaviour is learned by observing and imitating models, influenced by attention, retention, reproduction and motivation.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-vicarious-reinforcement",
+      "term": "Vicarious reinforcement",
+      "definition": "Learning that a behaviour is rewarded by seeing a model rewarded for it.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-cognitive-dissonance",
+      "term": "Cognitive dissonance",
+      "definition": "Festinger: discomfort from holding conflicting beliefs or acting against one's beliefs, which people try to reduce.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-conformity",
+      "term": "Conformity",
+      "definition": "Changing behaviour or beliefs to match a group, due to real or imagined pressure.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-normative-influence",
+      "term": "Normative social influence",
+      "definition": "Conforming to be accepted or avoid rejection.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-informational-influence",
+      "term": "Informational social influence",
+      "definition": "Conforming because we believe others know better.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.1-compliance",
+      "term": "Compliance technique",
+      "definition": "A strategy for getting someone to agree to a request, e.g. foot-in-the-door, door-in-the-face, low-ball.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-SOC.1-1",
+      "title": "Social identity, social learning and dissonance",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-SOC.1-1-q01",
+          "type": "mcq",
+          "prompt": "In Tajfel et al. (1971), schoolboys were split into groups based on supposed preferences for Klee or Kandinsky. When allocating points, they often:",
+          "options": [
+            "Maximised joint profit for both groups",
+            "Maximised the difference in favour of their own group",
+            "Gave all points to the other group",
+            "Refused to allocate points"
+          ],
+          "answer": 1,
+          "explanation": "Even trivial groups produced in-group favouritism, supporting social identity theory.",
+          "terms": [
+            "psychology-soc.1-minimal-group",
+            "psychology-soc.1-in-group-bias"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q02",
+          "type": "mcq",
+          "prompt": "In Bandura, Ross and Ross (1961), which children showed the most imitative aggression?",
+          "options": [
+            "Those who saw a non-aggressive model",
+            "Those who saw an aggressive model",
+            "The control group",
+            "There was no difference"
+          ],
+          "answer": 1,
+          "explanation": "Observing an adult hit a Bobo doll led to imitation, supporting social learning theory.",
+          "terms": [
+            "psychology-soc.1-slt"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q03",
+          "type": "tf",
+          "statement": "In Festinger and Carlsmith (1959), participants paid $1 to say a boring task was fun later rated it as more enjoyable than those paid $20.",
+          "answer": true,
+          "explanation": "With little justification, they reduced dissonance by changing their attitude.",
+          "terms": [
+            "psychology-soc.1-cognitive-dissonance"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q04",
+          "type": "tf",
+          "statement": "Social identity theory says in-group bias only happens when groups compete for resources.",
+          "answer": false,
+          "explanation": "The minimal group studies showed categorization alone can be enough; competition is the focus of realistic conflict theory.",
+          "terms": [
+            "psychology-soc.1-sit"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q05",
+          "type": "fill",
+          "text": "Seeing a model rewarded and then copying the behaviour involves ___ reinforcement.",
+          "answer": "vicarious",
+          "bank": [
+            "vicarious",
+            "negative",
+            "primary",
+            "continuous"
+          ],
+          "explanation": "In SLT, observed consequences shape motivation to imitate.",
+          "terms": [
+            "psychology-soc.1-vicarious-reinforcement"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q06",
+          "type": "fill",
+          "text": "According to SIT, comparing our group favourably with others boosts our self-___.",
+          "answer": "esteem",
+          "bank": [
+            "esteem",
+            "efficacy",
+            "awareness",
+            "control"
+          ],
+          "explanation": "Positive distinctiveness of the in-group enhances self-esteem.",
+          "terms": [
+            "psychology-soc.1-sit"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q07",
+          "type": "match",
+          "prompt": "Match each SLT process to its meaning.",
+          "pairs": [
+            {
+              "left": "Attention",
+              "right": "Noticing the model's behaviour"
+            },
+            {
+              "left": "Retention",
+              "right": "Remembering the behaviour"
+            },
+            {
+              "left": "Reproduction",
+              "right": "Being able to perform it"
+            },
+            {
+              "left": "Motivation",
+              "right": "Having a reason to imitate"
+            }
+          ],
+          "explanation": "Bandura proposed all four are needed for imitation.",
+          "terms": [
+            "psychology-soc.1-slt"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q08",
+          "type": "mcq",
+          "prompt": "A limitation of Bandura, Ross and Ross (1961) is that:",
+          "options": [
+            "It was a field study",
+            "Hitting a doll may not reflect real aggression towards people",
+            "It had no control group",
+            "It used adults only"
+          ],
+          "answer": 1,
+          "explanation": "The Bobo doll is designed to be hit, so ecological validity is limited.",
+          "terms": [
+            "psychology-soc.1-slt"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q09",
+          "type": "mcq",
+          "prompt": "A smoker who knows smoking is harmful says \"my grandad smoked and lived to 90\". This is:",
+          "options": [
+            "Normative influence",
+            "Reducing cognitive dissonance",
+            "Vicarious reinforcement",
+            "Minimal group bias"
+          ],
+          "answer": 1,
+          "explanation": "Adding a consonant belief reduces the discomfort of conflicting cognitions.",
+          "terms": [
+            "psychology-soc.1-cognitive-dissonance"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-1-q10",
+          "type": "order",
+          "prompt": "Order the stages of social identity theory.",
+          "items": [
+            "Social categorization",
+            "Social identification",
+            "Social comparison",
+            "In-group favouritism to boost self-esteem"
+          ],
+          "explanation": "Tajfel and Turner describe categorization, identification and comparison.",
+          "terms": [
+            "psychology-soc.1-sit",
+            "psychology-soc.1-in-group-bias"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-SOC.1-2",
+      "title": "Conformity and compliance",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-SOC.1-2-q01",
+          "type": "mcq",
+          "prompt": "In Asch's line-judgement studies, about what proportion of responses on critical trials conformed to the wrong majority?",
+          "options": [
+            "Almost none",
+            "About one third",
+            "About 90%",
+            "Exactly half"
+          ],
+          "answer": 1,
+          "explanation": "Around a third of critical responses conformed; about a quarter of participants never conformed.",
+          "terms": [
+            "psychology-soc.1-conformity"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q02",
+          "type": "mcq",
+          "prompt": "Asch found conformity dropped sharply when:",
+          "options": [
+            "The majority was larger than 3",
+            "One confederate gave the correct answer",
+            "Answers were said aloud",
+            "The task was harder"
+          ],
+          "answer": 1,
+          "explanation": "A single ally broke the unanimity of the group.",
+          "terms": [
+            "psychology-soc.1-conformity",
+            "psychology-soc.1-normative-influence"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q03",
+          "type": "tf",
+          "statement": "Bond and Smith (1996) found higher conformity in collectivist cultures in their meta-analysis of Asch-type studies.",
+          "answer": true,
+          "explanation": "This links conformity to cultural dimensions.",
+          "terms": [
+            "psychology-soc.1-conformity"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q04",
+          "type": "tf",
+          "statement": "Informational social influence is conforming to be liked.",
+          "answer": false,
+          "explanation": "That is normative influence; informational influence is conforming because others may be right.",
+          "terms": [
+            "psychology-soc.1-informational-influence",
+            "psychology-soc.1-normative-influence"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q05",
+          "type": "fill",
+          "text": "Asking for a small favour first, then a larger one, is the foot-in-the-___ technique.",
+          "answer": "door",
+          "bank": [
+            "door",
+            "face",
+            "ball",
+            "hand"
+          ],
+          "explanation": "Freedman & Fraser (1966) found people who agreed to a small request were much more likely to accept a large one.",
+          "terms": [
+            "psychology-soc.1-compliance"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q06",
+          "type": "fill",
+          "text": "In the door-in-the-face technique, a large request is refused, then a ___ request is made.",
+          "answer": "smaller",
+          "bank": [
+            "smaller",
+            "larger",
+            "identical",
+            "written"
+          ],
+          "explanation": "Cialdini et al. (1975) explained this through reciprocal concessions.",
+          "terms": [
+            "psychology-soc.1-compliance"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q07",
+          "type": "match",
+          "prompt": "Match each compliance technique to its study.",
+          "pairs": [
+            {
+              "left": "Foot-in-the-door",
+              "right": "Freedman & Fraser (1966)"
+            },
+            {
+              "left": "Door-in-the-face",
+              "right": "Cialdini et al. (1975)"
+            },
+            {
+              "left": "Low-ball",
+              "right": "Cialdini et al. (1978)"
+            }
+          ],
+          "explanation": "Each exploits a different principle: consistency, reciprocity or commitment.",
+          "terms": [
+            "psychology-soc.1-compliance"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q08",
+          "type": "mcq",
+          "prompt": "In the low-ball technique, a person:",
+          "options": [
+            "Is asked for something outrageous first",
+            "Agrees to a deal, then the cost is raised",
+            "Is offered a free gift",
+            "Is asked for a tiny favour first"
+          ],
+          "answer": 1,
+          "explanation": "Having committed, people tend to stick to their decision even when it becomes less attractive.",
+          "terms": [
+            "psychology-soc.1-compliance"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q09",
+          "type": "mcq",
+          "prompt": "Asch's participants conformed despite seeing the correct answer. This suggests mainly:",
+          "options": [
+            "Informational influence",
+            "Normative influence",
+            "Vicarious learning",
+            "Anchoring"
+          ],
+          "answer": 1,
+          "explanation": "When writing answers privately, conformity fell, suggesting a desire to fit in.",
+          "terms": [
+            "psychology-soc.1-normative-influence"
+          ]
+        },
+        {
+          "id": "psychology-SOC.1-2-q10",
+          "type": "order",
+          "prompt": "Order the steps of the foot-in-the-door technique.",
+          "items": [
+            "Make a small request",
+            "Person agrees",
+            "Person's self-image shifts towards being helpful",
+            "Make a larger related request"
+          ],
+          "explanation": "Consistency with the earlier commitment increases compliance.",
+          "terms": [
+            "psychology-soc.1-compliance"
+          ]
+        }
+      ]
+    }
+  ]
+}

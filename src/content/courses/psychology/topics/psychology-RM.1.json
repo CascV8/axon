@@ -1,0 +1,430 @@
+{
+  "id": "psychology-RM.1",
+  "code": "RM.1",
+  "unit": "methods",
+  "title": "Experiments, correlations and sampling",
+  "level": "SL",
+  "summary": "Types of experiment, variables, designs and hypotheses, correlational studies, and how samples are chosen.",
+  "keyterms": [
+    {
+      "id": "psychology-rm.1-iv",
+      "term": "Independent variable (IV)",
+      "definition": "The variable the researcher manipulates to see its effect.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-dv",
+      "term": "Dependent variable (DV)",
+      "definition": "The variable that is measured to see whether the IV had an effect.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-hypothesis",
+      "term": "Hypothesis",
+      "definition": "A precise, testable prediction of the relationship between variables.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-lab-experiment",
+      "term": "Laboratory experiment",
+      "definition": "An experiment in a controlled setting where the IV is manipulated; high control, often lower ecological validity.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-field-experiment",
+      "term": "Field experiment",
+      "definition": "An experiment in a natural setting where the IV is still manipulated by the researcher.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-quasi-experiment",
+      "term": "Quasi-experiment",
+      "definition": "Compares groups that differ on a pre-existing characteristic (e.g. gender, age), so there is no random allocation.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-natural-experiment",
+      "term": "Natural experiment",
+      "definition": "The IV varies naturally (e.g. a policy change) and the researcher measures its effect.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-independent-measures",
+      "term": "Independent measures design",
+      "definition": "Different participants take part in each condition.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-repeated-measures",
+      "term": "Repeated measures design",
+      "definition": "The same participants take part in all conditions; counterbalancing controls order effects.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-random-sampling",
+      "term": "Random sampling",
+      "definition": "Every member of the target population has an equal chance of selection.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-opportunity-sampling",
+      "term": "Opportunity sampling",
+      "definition": "Selecting people who are available and willing at the time.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-self-selected",
+      "term": "Self-selected sampling",
+      "definition": "Participants volunteer, e.g. by answering an advert.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.1-generalizability",
+      "term": "Generalizability",
+      "definition": "How far findings from a sample can be applied to the wider population.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-RM.1-1",
+      "title": "Experimental methods",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-RM.1-1-q01",
+          "type": "mcq",
+          "prompt": "A researcher compares memory in people aged 20 and 70. What type of study is this?",
+          "options": [
+            "True laboratory experiment",
+            "Quasi-experiment",
+            "Field experiment",
+            "Case study"
+          ],
+          "answer": 1,
+          "explanation": "Age cannot be randomly assigned, so this is a quasi-experiment and causal claims are weaker.",
+          "terms": [
+            "psychology-rm.1-quasi-experiment"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q02",
+          "type": "mcq",
+          "prompt": "Which design has no participant variables between conditions but risks order effects?",
+          "options": [
+            "Independent measures",
+            "Repeated measures",
+            "Matched pairs",
+            "Correlational"
+          ],
+          "answer": 1,
+          "explanation": "The same people do both conditions; counterbalancing reduces practice and fatigue effects.",
+          "terms": [
+            "psychology-rm.1-repeated-measures"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q03",
+          "type": "tf",
+          "statement": "In a field experiment the researcher still manipulates the IV.",
+          "answer": true,
+          "explanation": "The setting is natural but the IV is controlled by the researcher, unlike a natural experiment.",
+          "terms": [
+            "psychology-rm.1-field-experiment"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q04",
+          "type": "tf",
+          "statement": "The dependent variable is the one the researcher manipulates.",
+          "answer": false,
+          "explanation": "The IV is manipulated; the DV is measured.",
+          "terms": [
+            "psychology-rm.1-iv",
+            "psychology-rm.1-dv"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q05",
+          "type": "fill",
+          "text": "Participants who cannot be randomly allocated to groups because they differ on a pre-existing trait are studied in a ___-experiment.",
+          "answer": "quasi",
+          "bank": [
+            "quasi",
+            "field",
+            "natural",
+            "lab"
+          ],
+          "explanation": "Quasi-experiments use naturally occurring groups.",
+          "terms": [
+            "psychology-rm.1-quasi-experiment"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q06",
+          "type": "fill",
+          "text": "\"Participants who hear words in a quiet room will recall more words than those in a noisy room\" is a ___ hypothesis.",
+          "answer": "directional",
+          "bank": [
+            "directional",
+            "null",
+            "non-directional",
+            "correlational"
+          ],
+          "explanation": "It predicts the direction of the difference.",
+          "terms": [
+            "psychology-rm.1-hypothesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q07",
+          "type": "match",
+          "prompt": "Match each study to its experiment type.",
+          "pairs": [
+            {
+              "left": "Loftus & Palmer (1974): verb wording in lab",
+              "right": "Laboratory experiment"
+            },
+            {
+              "left": "Researchers vary a shop sign and record purchases",
+              "right": "Field experiment"
+            },
+            {
+              "left": "Comparing children before and after TV arrived in a town",
+              "right": "Natural experiment"
+            },
+            {
+              "left": "Comparing taxi drivers with non-drivers",
+              "right": "Quasi-experiment"
+            }
+          ],
+          "explanation": "The key questions: who controls the IV, and is allocation random?",
+          "terms": [
+            "psychology-rm.1-lab-experiment",
+            "psychology-rm.1-field-experiment",
+            "psychology-rm.1-natural-experiment",
+            "psychology-rm.1-quasi-experiment"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q08",
+          "type": "mcq",
+          "prompt": "Why do researchers counterbalance in a repeated measures design?",
+          "options": [
+            "To increase sample size",
+            "To control order effects",
+            "To remove demand characteristics completely",
+            "To make the study ethical"
+          ],
+          "answer": 1,
+          "explanation": "Half the participants do A then B, half B then A, so order effects cancel out.",
+          "terms": [
+            "psychology-rm.1-repeated-measures"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which is the strongest advantage of a lab experiment?",
+          "options": [
+            "High ecological validity",
+            "High control of extraneous variables",
+            "No demand characteristics",
+            "Large natural samples"
+          ],
+          "answer": 1,
+          "explanation": "Control allows cause-and-effect conclusions (internal validity).",
+          "terms": [
+            "psychology-rm.1-lab-experiment"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps of planning an experiment.",
+          "items": [
+            "Write a research question",
+            "Operationalize the IV and DV",
+            "State the hypothesis",
+            "Choose design and sample",
+            "Collect and analyse data"
+          ],
+          "explanation": "Variables must be defined before a precise hypothesis can be written.",
+          "terms": [
+            "psychology-rm.1-iv",
+            "psychology-rm.1-dv",
+            "psychology-rm.1-hypothesis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-RM.1-2",
+      "title": "Correlational studies and sampling",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-RM.1-2-q01",
+          "type": "mcq",
+          "prompt": "Which sampling technique gives every member of the target population an equal chance of selection?",
+          "options": [
+            "Opportunity",
+            "Self-selected",
+            "Random",
+            "Snowball"
+          ],
+          "answer": 2,
+          "explanation": "Random sampling reduces sampling bias, though it is hard to achieve in practice.",
+          "terms": [
+            "psychology-rm.1-random-sampling"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q02",
+          "type": "mcq",
+          "prompt": "A researcher puts up a poster asking for volunteers. What is the main risk?",
+          "options": [
+            "Too much control",
+            "Volunteers may differ from the population (e.g. more motivated)",
+            "Order effects",
+            "Low reliability of the questionnaire"
+          ],
+          "answer": 1,
+          "explanation": "Self-selected samples may be biased, limiting generalizability.",
+          "terms": [
+            "psychology-rm.1-self-selected",
+            "psychology-rm.1-generalizability"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q03",
+          "type": "tf",
+          "statement": "Opportunity sampling is quick and easy but often unrepresentative.",
+          "answer": true,
+          "explanation": "Choosing whoever is available, e.g. students, can bias the sample.",
+          "terms": [
+            "psychology-rm.1-opportunity-sampling"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q04",
+          "type": "tf",
+          "statement": "A correlational study manipulates an independent variable.",
+          "answer": false,
+          "explanation": "Correlational studies measure two co-variables without manipulation.",
+          "terms": [
+            "psychology-rm.1-iv"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q05",
+          "type": "fill",
+          "text": "How far results from a sample apply to the wider population is called ___.",
+          "answer": "generalizability",
+          "bank": [
+            "generalizability",
+            "reliability",
+            "credibility",
+            "counterbalancing"
+          ],
+          "explanation": "Representative sampling improves generalizability.",
+          "terms": [
+            "psychology-rm.1-generalizability"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q06",
+          "type": "fill",
+          "text": "In a correlation, the variables are called co-___.",
+          "answer": "variables",
+          "bank": [
+            "variables",
+            "factors",
+            "conditions",
+            "samples"
+          ],
+          "explanation": "Neither is an IV or DV; both are measured.",
+          "terms": [
+            "psychology-rm.1-generalizability"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q07",
+          "type": "match",
+          "prompt": "Match each sampling technique to a description.",
+          "pairs": [
+            {
+              "left": "Random",
+              "right": "Names drawn from the full list"
+            },
+            {
+              "left": "Opportunity",
+              "right": "Students in the canteen at lunch"
+            },
+            {
+              "left": "Self-selected",
+              "right": "People replying to an online advert"
+            },
+            {
+              "left": "Snowball",
+              "right": "Participants recruit others they know"
+            }
+          ],
+          "explanation": "Snowball sampling is useful for hard-to-reach groups.",
+          "terms": [
+            "psychology-rm.1-random-sampling",
+            "psychology-rm.1-opportunity-sampling",
+            "psychology-rm.1-self-selected"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q08",
+          "type": "mcq",
+          "prompt": "A scatter graph shows points rising from bottom-left to top-right. This shows:",
+          "options": [
+            "A negative correlation",
+            "A positive correlation",
+            "No correlation",
+            "Causation"
+          ],
+          "answer": 1,
+          "explanation": "As one variable increases, so does the other.",
+          "terms": [
+            "psychology-rm.1-generalizability"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q09",
+          "type": "mcq",
+          "prompt": "Why might a researcher choose a correlational study instead of an experiment?",
+          "options": [
+            "To prove causation",
+            "Because manipulating the variable (e.g. childhood trauma) would be unethical",
+            "Because it has more control",
+            "To avoid measuring variables"
+          ],
+          "answer": 1,
+          "explanation": "Correlational studies can examine variables that cannot ethically be manipulated.",
+          "terms": [
+            "psychology-rm.1-iv"
+          ]
+        },
+        {
+          "id": "psychology-RM.1-2-q10",
+          "type": "order",
+          "prompt": "Order the steps of drawing a random sample.",
+          "items": [
+            "Define the target population",
+            "Obtain a list of all members",
+            "Assign each a number",
+            "Use a random number generator to select"
+          ],
+          "explanation": "A complete list (sampling frame) is required.",
+          "terms": [
+            "psychology-rm.1-random-sampling"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "id": "psychology-HL.1",
+  "code": "HL.1",
+  "unit": "hl",
+  "title": "HL extension: the role of culture",
+  "level": "HL",
+  "summary": "How culture shapes cognition, the self, mental health, development and relationships, and how to study culture without bias.",
+  "keyterms": [
+    {
+      "id": "psychology-hl.1-independent-self",
+      "term": "Independent self-construal",
+      "definition": "Seeing the self as separate and defined by personal traits; more common in individualist cultures.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.1-interdependent-self",
+      "term": "Interdependent self-construal",
+      "definition": "Seeing the self as defined by relationships and roles; more common in collectivist cultures.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.1-holistic-thinking",
+      "term": "Holistic thinking",
+      "definition": "Attending to context and relationships between objects; associated with East Asian cultures in Nisbett's research.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.1-analytic-thinking",
+      "term": "Analytic thinking",
+      "definition": "Focusing on objects and their attributes separate from context; associated with Western cultures.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.1-cultural-relativism",
+      "term": "Cultural relativism",
+      "definition": "Judging behaviour by the standards of its own culture rather than another.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.1-ethnocentrism",
+      "term": "Ethnocentrism",
+      "definition": "Judging other cultures by the norms of one's own.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.1-imposed-etic",
+      "term": "Imposed etic",
+      "definition": "Using concepts or tools developed in one culture as if they were universal.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hl.1-cultural-transmission",
+      "term": "Cultural transmission",
+      "definition": "Passing cultural knowledge and norms from one generation to the next.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-HL.1-1",
+      "title": "Culture, self and cognition",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HL.1-1-q01",
+          "type": "mcq",
+          "prompt": "Masuda and Nisbett (2001) showed underwater scenes to Japanese and American participants. Japanese participants:",
+          "options": [
+            "Mentioned the background and context more",
+            "Mentioned only the largest fish",
+            "Remembered nothing",
+            "Responded identically to Americans"
+          ],
+          "answer": 0,
+          "explanation": "This supports cultural differences in holistic versus analytic attention.",
+          "terms": [
+            "psychology-hl.1-holistic-thinking",
+            "psychology-hl.1-analytic-thinking"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q02",
+          "type": "mcq",
+          "prompt": "Markus and Kitayama (1991) proposed that in many collectivist cultures the self is:",
+          "options": [
+            "Independent",
+            "Interdependent",
+            "Absent",
+            "Purely biological"
+          ],
+          "answer": 1,
+          "explanation": "Interdependent self-construal defines the self through relationships.",
+          "terms": [
+            "psychology-hl.1-interdependent-self"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q03",
+          "type": "tf",
+          "statement": "Levine et al. (1995) found people in more individualist countries were more likely to say love was essential for marriage.",
+          "answer": true,
+          "explanation": "Participants in collectivist countries such as India and Pakistan were more willing to marry without love.",
+          "terms": [
+            "psychology-hl.1-independent-self"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q04",
+          "type": "tf",
+          "statement": "Using a Western depression questionnaire everywhere without testing whether it fits local meanings is an imposed etic.",
+          "answer": true,
+          "explanation": "This risks missing culturally specific expressions of distress.",
+          "terms": [
+            "psychology-hl.1-imposed-etic"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q05",
+          "type": "fill",
+          "text": "Judging another culture by the standards of your own is ___.",
+          "answer": "ethnocentrism",
+          "bank": [
+            "ethnocentrism",
+            "relativism",
+            "enculturation",
+            "holism"
+          ],
+          "explanation": "Ethnocentrism is a source of cultural bias in research.",
+          "terms": [
+            "psychology-hl.1-ethnocentrism"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q06",
+          "type": "fill",
+          "text": "Focusing on objects separate from their context is ___ thinking.",
+          "answer": "analytic",
+          "bank": [
+            "analytic",
+            "holistic",
+            "emic",
+            "interdependent"
+          ],
+          "explanation": "Nisbett linked analytic thinking to Western cultures.",
+          "terms": [
+            "psychology-hl.1-analytic-thinking"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q07",
+          "type": "match",
+          "prompt": "Match each finding to the context it informs.",
+          "pairs": [
+            {
+              "left": "Kleinman (1982): somatization",
+              "right": "Health and well-being"
+            },
+            {
+              "left": "Van IJzendoorn & Kroonenberg (1988)",
+              "right": "Human development"
+            },
+            {
+              "left": "Levine et al. (1995): love and marriage",
+              "right": "Human relationships"
+            },
+            {
+              "left": "Masuda & Nisbett (2001)",
+              "right": "Learning and cognition"
+            }
+          ],
+          "explanation": "The culture extension runs across all four contexts.",
+          "terms": [
+            "psychology-hl.1-holistic-thinking",
+            "psychology-hl.1-cultural-transmission"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q08",
+          "type": "mcq",
+          "prompt": "Why should cultural differences in studies like Masuda and Nisbett (2001) be interpreted carefully?",
+          "options": [
+            "They prove genetic differences",
+            "They describe group tendencies, with large individual variation within cultures",
+            "They show cultures never change",
+            "They apply to every person in a culture"
+          ],
+          "answer": 1,
+          "explanation": "Overgeneralizing group findings to individuals leads to stereotyping.",
+          "terms": [
+            "psychology-hl.1-cultural-relativism"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which approach best avoids cultural bias when studying mental health in a new community?",
+          "options": [
+            "Use a translated Western questionnaire only",
+            "Begin with emic interviews to understand local concepts, then design measures",
+            "Assume symptoms are universal",
+            "Study only international students"
+          ],
+          "answer": 1,
+          "explanation": "Combining emic and etic approaches reduces imposed etic bias.",
+          "terms": [
+            "psychology-hl.1-imposed-etic"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-1-q10",
+          "type": "order",
+          "prompt": "Order a culturally sensitive research process.",
+          "items": [
+            "Consult local researchers and community members",
+            "Use emic methods to explore local concepts",
+            "Develop or adapt measures",
+            "Test measures for equivalence",
+            "Compare across cultures"
+          ],
+          "explanation": "Comparison is only fair once measures mean the same thing in each culture.",
+          "terms": [
+            "psychology-hl.1-imposed-etic",
+            "psychology-hl.1-cultural-relativism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-HL.1-2",
+      "title": "Culture across the contexts",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HL.1-2-q01",
+          "type": "mcq",
+          "prompt": "Van IJzendoorn and Kroonenberg (1988) found relatively more insecure-resistant infants in:",
+          "options": [
+            "Germany",
+            "Japan and Israel",
+            "The USA only",
+            "The UK"
+          ],
+          "answer": 1,
+          "explanation": "Childrearing practices, such as little separation from mothers in Japan, may explain this.",
+          "terms": [
+            "psychology-hl.1-cultural-transmission"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q02",
+          "type": "mcq",
+          "prompt": "Bond and Smith (1996) found conformity was higher in collectivist cultures. A cultural explanation is that:",
+          "options": [
+            "Collectivists have weaker eyesight",
+            "Agreeing with the group may be seen as tactful and valued",
+            "Collectivists are less intelligent",
+            "The tasks were translated wrongly"
+          ],
+          "answer": 1,
+          "explanation": "Behaviour that looks like \"conformity\" may reflect cultural values.",
+          "terms": [
+            "psychology-hl.1-interdependent-self"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q03",
+          "type": "tf",
+          "statement": "Cultural relativism means behaviour should be judged using the norms of the culture where it occurs.",
+          "answer": true,
+          "explanation": "This reduces ethnocentric bias in interpreting behaviour.",
+          "terms": [
+            "psychology-hl.1-cultural-relativism"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q04",
+          "type": "tf",
+          "statement": "Culture only affects social behaviour, not perception or memory.",
+          "answer": false,
+          "explanation": "Research such as Masuda and Nisbett (2001) and Cole and Scribner (1974) shows culture affects cognition.",
+          "terms": [
+            "psychology-hl.1-holistic-thinking"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q05",
+          "type": "fill",
+          "text": "Passing cultural norms from one generation to the next is called cultural ___.",
+          "answer": "transmission",
+          "bank": [
+            "transmission",
+            "dimension",
+            "relativism",
+            "bias"
+          ],
+          "explanation": "Transmission happens through enculturation and social learning.",
+          "terms": [
+            "psychology-hl.1-cultural-transmission"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q06",
+          "type": "fill",
+          "text": "Seeing yourself mainly through relationships and roles is an ___ self-construal.",
+          "answer": "interdependent",
+          "bank": [
+            "interdependent",
+            "independent",
+            "analytic",
+            "ethnocentric"
+          ],
+          "explanation": "Markus and Kitayama (1991) introduced this distinction.",
+          "terms": [
+            "psychology-hl.1-interdependent-self"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q07",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Ethnocentrism",
+              "right": "Judging others by your own culture"
+            },
+            {
+              "left": "Cultural relativism",
+              "right": "Judging by the culture's own norms"
+            },
+            {
+              "left": "Imposed etic",
+              "right": "Treating one culture's tools as universal"
+            },
+            {
+              "left": "Emic",
+              "right": "Insider perspective"
+            }
+          ],
+          "explanation": "These ideas are central to the concept of bias in cross-cultural research.",
+          "terms": [
+            "psychology-hl.1-ethnocentrism",
+            "psychology-hl.1-cultural-relativism",
+            "psychology-hl.1-imposed-etic"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q08",
+          "type": "mcq",
+          "prompt": "An HL synthesis question asks about culture and treatment of depression. Which point shows the strongest understanding?",
+          "options": [
+            "All treatments work equally everywhere",
+            "Treatments may need adapting to local beliefs about the causes of distress, and stigma affects help-seeking",
+            "Culture is irrelevant to therapy",
+            "Only drugs work in collectivist cultures"
+          ],
+          "answer": 1,
+          "explanation": "Culturally adapted interventions consider beliefs, language and stigma.",
+          "terms": [
+            "psychology-hl.1-cultural-relativism"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q09",
+          "type": "mcq",
+          "prompt": "Which is a limitation of using nations as \"cultures\"?",
+          "options": [
+            "Nations contain many subcultures, so averages hide variation",
+            "Nations never differ",
+            "Nations are too small",
+            "It increases internal validity"
+          ],
+          "answer": 0,
+          "explanation": "Within-country variation can be as large as between-country variation.",
+          "terms": [
+            "psychology-hl.1-ethnocentrism"
+          ]
+        },
+        {
+          "id": "psychology-HL.1-2-q10",
+          "type": "order",
+          "prompt": "Order how culture might influence attachment, according to cross-cultural research.",
+          "items": [
+            "Cultural values about independence",
+            "Childrearing practices (e.g. how often infants are separated)",
+            "Infant experience of separation",
+            "Behaviour in the Strange Situation"
+          ],
+          "explanation": "Differences in classification may reflect practices rather than poorer bonds.",
+          "terms": [
+            "psychology-hl.1-cultural-transmission"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+{
+  "id": "psychology-CON.1",
+  "code": "CON.1",
+  "unit": "concepts",
+  "title": "Bias, measurement and causality",
+  "level": "SL",
+  "summary": "Three concepts you use to judge any study: whether its measures are reliable and valid, what biases may distort it, and whether it can show cause and effect.",
+  "keyterms": [
+    {
+      "id": "psychology-con.1-bias",
+      "term": "Bias",
+      "definition": "A systematic distortion in how research is designed, carried out or interpreted, so results do not reflect reality.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-researcher-bias",
+      "term": "Researcher bias",
+      "definition": "When the researcher's expectations or beliefs influence how data are collected or interpreted.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-demand-characteristics",
+      "term": "Demand characteristics",
+      "definition": "Cues that let participants guess the aim of a study, so they change their behaviour to fit (or defy) it.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-social-desirability",
+      "term": "Social desirability bias",
+      "definition": "Participants answering or behaving in ways that make them look good rather than truthfully.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-cultural-bias",
+      "term": "Cultural bias",
+      "definition": "Interpreting all behaviour through the norms of one culture, or assuming findings from one culture apply to all.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-operationalization",
+      "term": "Operationalization",
+      "definition": "Defining a variable precisely in terms of how it will be measured or manipulated.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-reliability",
+      "term": "Reliability",
+      "definition": "The consistency of a measure: it gives the same results when repeated under the same conditions.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-validity",
+      "term": "Validity",
+      "definition": "Whether a measure or study actually measures or shows what it claims to.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-internal-validity",
+      "term": "Internal validity",
+      "definition": "How confident we can be that changes in the DV were caused by the IV and not by confounding variables.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-ecological-validity",
+      "term": "Ecological validity",
+      "definition": "How far findings reflect behaviour in real-life settings.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-causality",
+      "term": "Causality",
+      "definition": "A relationship in which a change in one variable produces a change in another.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-correlation",
+      "term": "Correlation",
+      "definition": "A relationship between two co-variables; it shows they vary together but not that one causes the other.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-confounding-variable",
+      "term": "Confounding variable",
+      "definition": "An uncontrolled variable that varies with the IV and could explain changes in the DV.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.1-bidirectional",
+      "term": "Bidirectional relationship",
+      "definition": "Two variables influence each other, e.g. stress may cause poor sleep and poor sleep may increase stress.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-CON.1-1",
+      "title": "Bias in research",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-CON.1-1-q01",
+          "type": "mcq",
+          "prompt": "A researcher who expects a drug to improve mood rates participants' mood after the drug. Which bias is most likely?",
+          "options": [
+            "Social desirability bias",
+            "Researcher bias",
+            "Sampling bias",
+            "Cultural bias"
+          ],
+          "answer": 1,
+          "explanation": "The researcher's expectations can shape their ratings. A double-blind design, where the rater does not know who got the drug, reduces this.",
+          "terms": [
+            "psychology-con.1-researcher-bias",
+            "psychology-con.1-bias"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q02",
+          "type": "mcq",
+          "prompt": "Which design feature best reduces demand characteristics?",
+          "options": [
+            "Telling participants the hypothesis in advance",
+            "Using a repeated measures design",
+            "Using a single-blind procedure so participants do not know their condition",
+            "Using a larger sample"
+          ],
+          "answer": 2,
+          "explanation": "If participants cannot work out the aim or their condition, they are less able to change their behaviour to fit it.",
+          "terms": [
+            "psychology-con.1-demand-characteristics"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q03",
+          "type": "tf",
+          "statement": "Social desirability bias is especially likely when participants answer questions about sensitive topics such as drug use.",
+          "answer": true,
+          "explanation": "People tend to under-report behaviour that is socially disapproved of. Anonymity and confidential questionnaires can reduce this.",
+          "terms": [
+            "psychology-con.1-social-desirability"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q04",
+          "type": "tf",
+          "statement": "Cultural bias only matters in cross-cultural research.",
+          "answer": false,
+          "explanation": "Any study that generalizes from one cultural sample to all humans risks cultural bias, e.g. relying mainly on Western undergraduates.",
+          "terms": [
+            "psychology-con.1-cultural-bias"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q05",
+          "type": "fill",
+          "text": "When participants guess the aim of a study and change their behaviour, this is caused by ___.",
+          "answer": "demand characteristics",
+          "bank": [
+            "demand characteristics",
+            "operationalization",
+            "reliability",
+            "confounding"
+          ],
+          "explanation": "Demand characteristics are cues in the study that reveal its purpose.",
+          "terms": [
+            "psychology-con.1-demand-characteristics"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q06",
+          "type": "fill",
+          "text": "Using double-blind procedures mainly reduces ___ bias and participant expectancy.",
+          "answer": "researcher",
+          "bank": [
+            "researcher",
+            "sampling",
+            "cultural",
+            "gender"
+          ],
+          "explanation": "In a double-blind design neither the researcher collecting data nor the participant knows the condition.",
+          "terms": [
+            "psychology-con.1-researcher-bias"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q07",
+          "type": "match",
+          "prompt": "Match each bias to a way of reducing it.",
+          "pairs": [
+            {
+              "left": "Researcher bias",
+              "right": "Double-blind procedure"
+            },
+            {
+              "left": "Social desirability bias",
+              "right": "Anonymous questionnaires"
+            },
+            {
+              "left": "Demand characteristics",
+              "right": "Deception about the aim, then debriefing"
+            },
+            {
+              "left": "Cultural bias",
+              "right": "Testing samples from several cultures"
+            }
+          ],
+          "explanation": "Each technique targets the source of a specific bias.",
+          "terms": [
+            "psychology-con.1-researcher-bias",
+            "psychology-con.1-social-desirability",
+            "psychology-con.1-demand-characteristics",
+            "psychology-con.1-cultural-bias"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q08",
+          "type": "mcq",
+          "prompt": "Much psychology research has used Western, educated, industrialized, rich and democratic samples. Which concept is this criticism mainly about?",
+          "options": [
+            "Causality",
+            "Bias",
+            "Change",
+            "Responsibility"
+          ],
+          "answer": 1,
+          "explanation": "Over-reliance on WEIRD samples is a form of sampling and cultural bias that limits generalization.",
+          "terms": [
+            "psychology-con.1-bias",
+            "psychology-con.1-cultural-bias"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q09",
+          "type": "mcq",
+          "prompt": "A researcher interviews people and only notes comments that support her hypothesis. This is an example of:",
+          "options": [
+            "Confirmation bias by the researcher",
+            "Participant expectancy",
+            "Order effects",
+            "Social desirability"
+          ],
+          "answer": 0,
+          "explanation": "Selectively noticing confirming data is researcher (confirmation) bias; reflexivity and a second coder help reduce it.",
+          "terms": [
+            "psychology-con.1-researcher-bias"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-1-q10",
+          "type": "mcq",
+          "prompt": "Which bias is a threat mainly to the participant's side of a study?",
+          "options": [
+            "Researcher bias",
+            "Social desirability bias",
+            "Publication bias",
+            "Sampling bias"
+          ],
+          "answer": 1,
+          "explanation": "Social desirability comes from participants presenting themselves favourably; researcher bias comes from the researcher.",
+          "terms": [
+            "psychology-con.1-social-desirability"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-CON.1-2",
+      "title": "Measurement: reliability and validity",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-CON.1-2-q01",
+          "type": "mcq",
+          "prompt": "\"Aggression\" is measured as the number of times a child hits a doll in 10 minutes. This is an example of:",
+          "options": [
+            "Operationalization",
+            "Triangulation",
+            "Counterbalancing",
+            "Randomization"
+          ],
+          "answer": 0,
+          "explanation": "Operationalizing turns an abstract variable into something measurable.",
+          "terms": [
+            "psychology-con.1-operationalization"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q02",
+          "type": "mcq",
+          "prompt": "A questionnaire gives very different scores when the same people complete it twice a week apart (with no real change). The questionnaire lacks:",
+          "options": [
+            "Ecological validity",
+            "Reliability",
+            "Internal validity",
+            "Generalizability"
+          ],
+          "answer": 1,
+          "explanation": "Consistency over time (test–retest reliability) is low, so the measure is unreliable.",
+          "terms": [
+            "psychology-con.1-reliability"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q03",
+          "type": "tf",
+          "statement": "A measure can be reliable without being valid.",
+          "answer": true,
+          "explanation": "A scale that always reads 2 kg too heavy is consistent (reliable) but wrong (not valid).",
+          "terms": [
+            "psychology-con.1-reliability",
+            "psychology-con.1-validity"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q04",
+          "type": "tf",
+          "statement": "A laboratory experiment usually has high ecological validity.",
+          "answer": false,
+          "explanation": "Lab tasks are often artificial, so behaviour may not reflect real life, although control (internal validity) is high.",
+          "terms": [
+            "psychology-con.1-ecological-validity"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q05",
+          "type": "fill",
+          "text": "Checking that two observers give similar scores for the same behaviour tests inter-rater ___.",
+          "answer": "reliability",
+          "bank": [
+            "reliability",
+            "validity",
+            "causality",
+            "bias"
+          ],
+          "explanation": "High agreement between observers shows the coding scheme is applied consistently.",
+          "terms": [
+            "psychology-con.1-reliability"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q06",
+          "type": "fill",
+          "text": "If a study's results could be explained by a confounding variable, its ___ validity is low.",
+          "answer": "internal",
+          "bank": [
+            "internal",
+            "ecological",
+            "population",
+            "face"
+          ],
+          "explanation": "Internal validity is about whether the IV really caused the change in the DV.",
+          "terms": [
+            "psychology-con.1-internal-validity",
+            "psychology-con.1-confounding-variable"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q07",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Reliability",
+              "right": "Consistency of a measure"
+            },
+            {
+              "left": "Internal validity",
+              "right": "IV really caused the change in DV"
+            },
+            {
+              "left": "Ecological validity",
+              "right": "Findings reflect real-life behaviour"
+            },
+            {
+              "left": "Operationalization",
+              "right": "Defining how a variable is measured"
+            }
+          ],
+          "explanation": "These four ideas make up the concept of measurement.",
+          "terms": [
+            "psychology-con.1-reliability",
+            "psychology-con.1-internal-validity",
+            "psychology-con.1-ecological-validity",
+            "psychology-con.1-operationalization"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q08",
+          "type": "mcq",
+          "prompt": "Which is the best way to improve the internal validity of an experiment?",
+          "options": [
+            "Use a more natural setting",
+            "Control or randomize extraneous variables",
+            "Use a self-selected sample",
+            "Let participants choose their condition"
+          ],
+          "answer": 1,
+          "explanation": "Controlling and randomizing extraneous variables rules out alternative explanations.",
+          "terms": [
+            "psychology-con.1-internal-validity"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q09",
+          "type": "mcq",
+          "prompt": "Brain scans measure blood flow, not thinking itself. This is mainly a point about:",
+          "options": [
+            "Measurement and validity",
+            "Ethics",
+            "Cultural bias",
+            "Sampling"
+          ],
+          "answer": 0,
+          "explanation": "fMRI is an indirect measure, so what it shows about cognition depends on interpretation; this is a measurement issue.",
+          "terms": [
+            "psychology-con.1-validity"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for building a reliable observation scheme in order.",
+          "items": [
+            "Operationalize the behaviours into categories",
+            "Train observers using the categories",
+            "Have two observers code the same sample",
+            "Calculate agreement between observers"
+          ],
+          "explanation": "Clear categories and training come first; agreement is then checked to establish inter-rater reliability.",
+          "terms": [
+            "psychology-con.1-operationalization",
+            "psychology-con.1-reliability"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-CON.1-3",
+      "title": "Causality and correlation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-CON.1-3-q01",
+          "type": "mcq",
+          "prompt": "A study finds that teenagers who use social media more report lower mood. What can be concluded?",
+          "options": [
+            "Social media causes low mood",
+            "Low mood causes social media use",
+            "The two variables are related, but the direction of cause is unknown",
+            "There is no relationship"
+          ],
+          "answer": 2,
+          "explanation": "Correlational data cannot show causation; the relationship could be bidirectional or due to a third variable.",
+          "terms": [
+            "psychology-con.1-correlation",
+            "psychology-con.1-causality"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q02",
+          "type": "mcq",
+          "prompt": "Which research method can establish cause and effect most directly?",
+          "options": [
+            "Correlational study",
+            "Case study",
+            "True experiment with random allocation",
+            "Naturalistic observation"
+          ],
+          "answer": 2,
+          "explanation": "Manipulating the IV while controlling other variables and randomly allocating participants allows causal conclusions.",
+          "terms": [
+            "psychology-con.1-causality"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q03",
+          "type": "tf",
+          "statement": "A correlation coefficient of −0.8 shows a strong relationship.",
+          "answer": true,
+          "explanation": "The size (0.8) shows strength; the sign shows direction. −0.8 is a strong negative correlation.",
+          "terms": [
+            "psychology-con.1-correlation"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q04",
+          "type": "tf",
+          "statement": "If two variables correlate strongly, one must cause the other.",
+          "answer": false,
+          "explanation": "A third variable may cause both, or the relationship may be coincidental.",
+          "terms": [
+            "psychology-con.1-correlation",
+            "psychology-con.1-confounding-variable"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q05",
+          "type": "fill",
+          "text": "Stress causing poor sleep, and poor sleep increasing stress, is a ___ relationship.",
+          "answer": "bidirectional",
+          "bank": [
+            "bidirectional",
+            "negative",
+            "spurious",
+            "linear"
+          ],
+          "explanation": "In a bidirectional relationship each variable influences the other.",
+          "terms": [
+            "psychology-con.1-bidirectional"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q06",
+          "type": "fill",
+          "text": "Ice-cream sales and drowning both rise in summer because of hot weather; hot weather is a ___ variable.",
+          "answer": "third",
+          "bank": [
+            "third",
+            "dependent",
+            "independent",
+            "random"
+          ],
+          "explanation": "A third (confounding) variable can create a correlation between two unrelated variables.",
+          "terms": [
+            "psychology-con.1-confounding-variable"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q07",
+          "type": "match",
+          "prompt": "Match each design to what it can show.",
+          "pairs": [
+            {
+              "left": "True experiment",
+              "right": "Cause and effect"
+            },
+            {
+              "left": "Correlational study",
+              "right": "Strength and direction of a relationship"
+            },
+            {
+              "left": "Case study",
+              "right": "In-depth detail on one person or group"
+            },
+            {
+              "left": "Natural experiment",
+              "right": "Effect of an IV that occurs naturally"
+            }
+          ],
+          "explanation": "Only designs where the IV is manipulated with control allow strong causal claims.",
+          "terms": [
+            "psychology-con.1-causality",
+            "psychology-con.1-correlation"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q08",
+          "type": "mcq",
+          "prompt": "Twin studies can show that a behaviour is partly heritable, but genes may not cause it directly. Why?",
+          "options": [
+            "Twins share no environment",
+            "Genes and environment interact and twins often share environments",
+            "Twin studies always use small samples",
+            "Twins are always raised apart"
+          ],
+          "answer": 1,
+          "explanation": "Shared environments and gene–environment interaction make it hard to separate genetic causation.",
+          "terms": [
+            "psychology-con.1-causality",
+            "psychology-con.1-confounding-variable"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q09",
+          "type": "mcq",
+          "prompt": "A researcher randomly allocates participants to conditions. What is the main purpose?",
+          "options": [
+            "To make the sample representative of the population",
+            "To spread participant variables evenly so they do not confound results",
+            "To make the study more ethical",
+            "To increase ecological validity"
+          ],
+          "answer": 1,
+          "explanation": "Random allocation controls participant variables, protecting internal validity and causal claims.",
+          "terms": [
+            "psychology-con.1-confounding-variable",
+            "psychology-con.1-internal-validity"
+          ]
+        },
+        {
+          "id": "psychology-CON.1-3-q10",
+          "type": "order",
+          "prompt": "Order these from weakest to strongest evidence for a causal claim.",
+          "items": [
+            "Single anecdote",
+            "Correlational study",
+            "Quasi-experiment",
+            "Randomized controlled experiment"
+          ],
+          "explanation": "More control over the IV and allocation of participants strengthens causal inference.",
+          "terms": [
+            "psychology-con.1-causality"
+          ]
+        }
+      ]
+    }
+  ]
+}

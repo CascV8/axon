@@ -1,0 +1,78 @@
+[
+  {
+    "id": "psychology-X-hl-01",
+    "unit": "hl",
+    "topics": ["psychology-HL.2", "psychology-RM.3"],
+    "paper": "P3",
+    "level": "HL",
+    "title": "Sources: social media limits and well-being",
+    "stem": "Source A (fictional data): 120 university students were randomly allocated to limit social media to 30 minutes a day or to use it as usual for four weeks. Loneliness was measured on a 20–80 scale before and after. Source B (fictional): semi-structured interviews with 8 students from the limited group. Common themes were \"missing out on plans\", \"more time to sleep\" and \"feeling calmer after the first week\". One interviewer conducted and coded all the interviews.",
+    "data": {
+      "caption": "Source A: mean loneliness scores (higher = lonelier)",
+      "columns": ["Group", "n", "Week 0", "Week 4"],
+      "rows": [
+        ["Limited use", "60", "46", "40"],
+        ["Usual use", "60", "45", "44"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Interpret",
+        "prompt": "Interpret the results shown in Source A.",
+        "marks": 3,
+        "markscheme": [
+          "both groups started at similar levels (46 vs 45)",
+          "loneliness fell by 6 points in the limited group but only 1 point in the usual-use group",
+          "this suggests limiting social media reduced loneliness, though significance is not reported"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Analyse",
+        "prompt": "Analyse the extent to which Source A supports a causal conclusion.",
+        "marks": 6,
+        "markscheme": [
+          "random allocation controls participant variables, supporting a causal claim",
+          "a control group allows comparison with change over time",
+          "self-report loneliness scale may be affected by demand characteristics as participants knew their condition",
+          "compliance with the limit is not verified / may rely on self-report",
+          "no measure of spread or significance test given",
+          "sample of university students limits generalization; conclusion stated"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Discuss",
+        "prompt": "Discuss the credibility of Source B.",
+        "marks": 6,
+        "markscheme": [
+          "credibility = how far findings reflect participants' experiences",
+          "one researcher conducting and coding interviews risks researcher bias",
+          "no researcher triangulation or member checking reported",
+          "small sample from one group limits transferability",
+          "strength: semi-structured interviews give rich data explaining how changes were experienced",
+          "suggest improvements, e.g. second coder, reflexivity statement, member checking"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Evaluate",
+        "prompt": "Using both sources and your own knowledge, evaluate the role of technology in well-being.",
+        "marks": 10,
+        "markscheme": [
+          "uses Source A: experimental evidence that reducing use lowers loneliness",
+          "uses Source B: themes suggest mechanisms (more sleep, calmer) but also costs (missing out)",
+          "sources combined: quantitative effect explained by qualitative experience",
+          "own knowledge: Hunt et al. (2018) similar findings with a 10-minute-per-platform limit",
+          "own knowledge: Przybylski & Weinstein (2017) Goldilocks hypothesis, moderate use not harmful",
+          "causality/bidirectionality: most research is correlational; low well-being may increase use",
+          "measurement issues: self-reported screen time and well-being",
+          "consideration of individual or cultural differences in how technology is used",
+          "balanced, justified conclusion on the role of technology"
+        ],
+        "notes": "In the real Paper 3 the synthesis question is worth 15 marks and needs at least three sources; it is shortened here."
+      }
+    ]
+  }
+]

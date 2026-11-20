@@ -1,0 +1,416 @@
+{
+  "id": "psychology-HD.1",
+  "code": "HD.1",
+  "unit": "dev",
+  "title": "Brain and cognitive development",
+  "level": "SL",
+  "summary": "How the brain develops, stage and continuous models of cognitive development, scaffolding, and theory of mind.",
+  "keyterms": [
+    {
+      "id": "psychology-hd.1-brain-development",
+      "term": "Brain development",
+      "definition": "Growth and reorganisation of the brain, including synaptic pruning and myelination, continuing into the twenties.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-myelination",
+      "term": "Myelination",
+      "definition": "Growth of a fatty sheath around axons that speeds up neural transmission.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-prefrontal-cortex",
+      "term": "Prefrontal cortex",
+      "definition": "Front region of the brain involved in planning and impulse control; one of the last areas to mature.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-stage-theory",
+      "term": "Stage theory",
+      "definition": "A model in which development happens in distinct, qualitatively different stages in a fixed order.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-continuous-model",
+      "term": "Continuous model",
+      "definition": "A model in which development happens gradually and cumulatively, not in separate stages.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-object-permanence",
+      "term": "Object permanence",
+      "definition": "Understanding that objects still exist when they cannot be seen.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-conservation",
+      "term": "Conservation",
+      "definition": "Understanding that quantity stays the same when appearance changes.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-zpd",
+      "term": "Zone of proximal development",
+      "definition": "Vygotsky: the gap between what a child can do alone and with help from a more skilled person.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-scaffolding",
+      "term": "Scaffolding",
+      "definition": "Support from an expert that is adjusted to the learner and gradually withdrawn.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-theory-of-mind",
+      "term": "Theory of mind",
+      "definition": "The ability to understand that others have beliefs, desires and knowledge different from one's own.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.1-false-belief",
+      "term": "False-belief task",
+      "definition": "A test of theory of mind in which a character holds a belief the child knows is wrong.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-HD.1-1",
+      "title": "Brain development and stage theories",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HD.1-1-q01",
+          "type": "mcq",
+          "prompt": "Giedd et al. (1999) scanned children and adolescents repeatedly with MRI. Frontal grey matter:",
+          "options": [
+            "Decreased steadily from birth",
+            "Increased until around puberty, then declined",
+            "Never changed",
+            "Only increased in adulthood"
+          ],
+          "answer": 1,
+          "explanation": "The later decline is thought to reflect synaptic pruning.",
+          "terms": [
+            "psychology-hd.1-brain-development"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q02",
+          "type": "mcq",
+          "prompt": "In Piaget's theory, conservation is typically achieved in which stage?",
+          "options": [
+            "Sensorimotor",
+            "Preoperational",
+            "Concrete operational",
+            "Formal operational"
+          ],
+          "answer": 2,
+          "explanation": "Children of about 7–11 can understand that quantity is conserved.",
+          "terms": [
+            "psychology-hd.1-conservation",
+            "psychology-hd.1-stage-theory"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q03",
+          "type": "tf",
+          "statement": "The prefrontal cortex is one of the last brain areas to mature, which may help explain adolescent risk-taking.",
+          "answer": true,
+          "explanation": "Impulse control matures later than reward systems.",
+          "terms": [
+            "psychology-hd.1-prefrontal-cortex"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q04",
+          "type": "tf",
+          "statement": "Baillargeon and DeVos (1991) found evidence that infants show some understanding of object permanence earlier than Piaget claimed.",
+          "answer": true,
+          "explanation": "Infants of about 3–4 months looked longer at \"impossible\" events, suggesting they expected hidden objects to exist.",
+          "terms": [
+            "psychology-hd.1-object-permanence"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q05",
+          "type": "fill",
+          "text": "Growth of the fatty sheath around axons that speeds transmission is called ___.",
+          "answer": "myelination",
+          "bank": [
+            "myelination",
+            "pruning",
+            "conservation",
+            "scaffolding"
+          ],
+          "explanation": "Myelination continues through adolescence.",
+          "terms": [
+            "psychology-hd.1-myelination"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q06",
+          "type": "fill",
+          "text": "A model where development happens gradually rather than in distinct steps is a ___ model.",
+          "answer": "continuous",
+          "bank": [
+            "continuous",
+            "stage",
+            "dual",
+            "reductionist"
+          ],
+          "explanation": "Information-processing views often see development as continuous.",
+          "terms": [
+            "psychology-hd.1-continuous-model"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q07",
+          "type": "match",
+          "prompt": "Match Piaget's stages to a typical achievement.",
+          "pairs": [
+            {
+              "left": "Sensorimotor",
+              "right": "Object permanence"
+            },
+            {
+              "left": "Preoperational",
+              "right": "Symbolic play"
+            },
+            {
+              "left": "Concrete operational",
+              "right": "Conservation"
+            },
+            {
+              "left": "Formal operational",
+              "right": "Abstract reasoning"
+            }
+          ],
+          "explanation": "Piaget proposed these stages occur in a fixed order.",
+          "terms": [
+            "psychology-hd.1-stage-theory",
+            "psychology-hd.1-object-permanence",
+            "psychology-hd.1-conservation"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q08",
+          "type": "mcq",
+          "prompt": "A criticism of Piaget's stage theory is that:",
+          "options": [
+            "He studied adults only",
+            "Tasks may have underestimated children's abilities",
+            "He used brain imaging",
+            "He studied thousands of children"
+          ],
+          "answer": 1,
+          "explanation": "Changing the task (e.g. looking time) shows abilities earlier.",
+          "terms": [
+            "psychology-hd.1-stage-theory"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q09",
+          "type": "mcq",
+          "prompt": "Baillargeon's method measured:",
+          "options": [
+            "Brain activity",
+            "How long infants looked at possible versus impossible events",
+            "Verbal reports",
+            "Heart rate only"
+          ],
+          "answer": 1,
+          "explanation": "Longer looking is interpreted as surprise; this is an inference, a measurement issue.",
+          "terms": [
+            "psychology-hd.1-object-permanence"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-1-q10",
+          "type": "order",
+          "prompt": "Order Piaget's stages of cognitive development.",
+          "items": [
+            "Sensorimotor",
+            "Preoperational",
+            "Concrete operational",
+            "Formal operational"
+          ],
+          "explanation": "Approximate ages: 0–2, 2–7, 7–11, 11+.",
+          "terms": [
+            "psychology-hd.1-stage-theory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-HD.1-2",
+      "title": "Social influences on cognition and theory of mind",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HD.1-2-q01",
+          "type": "mcq",
+          "prompt": "Baron-Cohen, Leslie and Frith (1985) used the Sally-Anne task. Which group mostly failed?",
+          "options": [
+            "Typically developing children",
+            "Children with Down syndrome",
+            "Autistic children",
+            "All groups passed"
+          ],
+          "answer": 2,
+          "explanation": "About 80% of autistic children failed, compared with most of the other groups passing.",
+          "terms": [
+            "psychology-hd.1-theory-of-mind",
+            "psychology-hd.1-false-belief"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q02",
+          "type": "mcq",
+          "prompt": "Vygotsky's zone of proximal development refers to:",
+          "options": [
+            "What a child can do alone",
+            "The gap between independent ability and what can be done with help",
+            "A brain area",
+            "The age when conservation appears"
+          ],
+          "answer": 1,
+          "explanation": "Learning is most effective in this zone with guidance.",
+          "terms": [
+            "psychology-hd.1-zpd"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q03",
+          "type": "tf",
+          "statement": "Wood, Bruner and Ross (1976) described scaffolding as support that is gradually withdrawn as the learner becomes competent.",
+          "answer": true,
+          "explanation": "Effective tutors adjust help to the child's performance.",
+          "terms": [
+            "psychology-hd.1-scaffolding"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q04",
+          "type": "tf",
+          "statement": "The Sally-Anne task tests conservation.",
+          "answer": false,
+          "explanation": "It tests false-belief understanding, a key part of theory of mind.",
+          "terms": [
+            "psychology-hd.1-false-belief"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q05",
+          "type": "fill",
+          "text": "Understanding that others can hold beliefs different from your own is called theory of ___.",
+          "answer": "mind",
+          "bank": [
+            "mind",
+            "self",
+            "learning",
+            "identity"
+          ],
+          "explanation": "It typically develops around age 4.",
+          "terms": [
+            "psychology-hd.1-theory-of-mind"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q06",
+          "type": "fill",
+          "text": "Temporary, adjustable support from an expert is called ___.",
+          "answer": "scaffolding",
+          "bank": [
+            "scaffolding",
+            "pruning",
+            "modelling",
+            "anchoring"
+          ],
+          "explanation": "The term comes from Wood, Bruner and Ross (1976).",
+          "terms": [
+            "psychology-hd.1-scaffolding"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q07",
+          "type": "match",
+          "prompt": "Match each researcher to their idea.",
+          "pairs": [
+            {
+              "left": "Piaget",
+              "right": "Children pass through cognitive stages"
+            },
+            {
+              "left": "Vygotsky",
+              "right": "Learning through social interaction (ZPD)"
+            },
+            {
+              "left": "Wood, Bruner & Ross",
+              "right": "Scaffolding"
+            },
+            {
+              "left": "Baron-Cohen et al.",
+              "right": "Theory of mind and autism"
+            }
+          ],
+          "explanation": "Vygotsky placed more weight on culture and social interaction than Piaget.",
+          "terms": [
+            "psychology-hd.1-stage-theory",
+            "psychology-hd.1-zpd",
+            "psychology-hd.1-scaffolding",
+            "psychology-hd.1-theory-of-mind"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q08",
+          "type": "mcq",
+          "prompt": "Wimmer and Perner (1983) used a story about Maxi and his chocolate. What were they testing?",
+          "options": [
+            "Conservation",
+            "False-belief understanding",
+            "Attachment type",
+            "Memory span"
+          ],
+          "answer": 1,
+          "explanation": "Children had to predict where Maxi would look, based on his false belief.",
+          "terms": [
+            "psychology-hd.1-false-belief"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q09",
+          "type": "mcq",
+          "prompt": "A limitation of the Sally-Anne task is that:",
+          "options": [
+            "It uses brain imaging",
+            "Failure may reflect language or memory demands rather than lack of theory of mind",
+            "It cannot be repeated",
+            "It requires adults"
+          ],
+          "answer": 1,
+          "explanation": "Task demands can affect performance, a validity issue.",
+          "terms": [
+            "psychology-hd.1-false-belief"
+          ]
+        },
+        {
+          "id": "psychology-HD.1-2-q10",
+          "type": "order",
+          "prompt": "Order the Sally-Anne task.",
+          "items": [
+            "Sally puts her marble in the basket",
+            "Sally leaves",
+            "Anne moves the marble to the box",
+            "Sally returns",
+            "Child is asked where Sally will look"
+          ],
+          "explanation": "Passing means saying \"the basket\", showing understanding of Sally's false belief.",
+          "terms": [
+            "psychology-hd.1-false-belief"
+          ]
+        }
+      ]
+    }
+  ]
+}

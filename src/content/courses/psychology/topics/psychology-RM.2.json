@@ -1,0 +1,425 @@
+{
+  "id": "psychology-RM.2",
+  "code": "RM.2",
+  "unit": "methods",
+  "title": "Qualitative methods and the class practicals",
+  "level": "SL",
+  "summary": "Observations, interviews, focus groups, surveys and case studies; credibility and transferability; and the four class practicals.",
+  "keyterms": [
+    {
+      "id": "psychology-rm.2-naturalistic-observation",
+      "term": "Naturalistic observation",
+      "definition": "Observing behaviour in its natural setting without interfering.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-covert-observation",
+      "term": "Covert observation",
+      "definition": "Participants do not know they are being observed.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-participant-observation",
+      "term": "Participant observation",
+      "definition": "The researcher joins the group being observed.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-semi-structured",
+      "term": "Semi-structured interview",
+      "definition": "An interview with a guide of questions but flexibility to follow up answers.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-focus-group",
+      "term": "Focus group",
+      "definition": "A group interview of several people, led by a moderator, using group interaction to explore a topic.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-questionnaire",
+      "term": "Questionnaire",
+      "definition": "A set of written questions, open or closed, used to collect self-report data.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-case-study",
+      "term": "Case study",
+      "definition": "In-depth study of one person, group or event using several methods.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-credibility",
+      "term": "Credibility",
+      "definition": "In qualitative research: how far findings truly reflect participants' experiences.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-triangulation",
+      "term": "Triangulation",
+      "definition": "Using several methods, researchers or data sources to check findings and increase credibility.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-reflexivity",
+      "term": "Reflexivity",
+      "definition": "The researcher reflecting on how their own background and assumptions might shape the research.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-transferability",
+      "term": "Transferability",
+      "definition": "How far qualitative findings can be applied to other settings or groups.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.2-thematic-analysis",
+      "term": "Thematic analysis",
+      "definition": "Coding qualitative data and grouping codes into themes.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-RM.2-1",
+      "title": "Observations, interviews and surveys",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-RM.2-1-q01",
+          "type": "mcq",
+          "prompt": "A researcher secretly joins an online group to observe it. This is:",
+          "options": [
+            "Overt non-participant observation",
+            "Covert participant observation",
+            "A structured interview",
+            "A field experiment"
+          ],
+          "answer": 1,
+          "explanation": "The researcher is part of the group and members do not know they are observed; this raises consent issues.",
+          "terms": [
+            "psychology-rm.2-covert-observation",
+            "psychology-rm.2-participant-observation"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q02",
+          "type": "mcq",
+          "prompt": "Which interview type best balances comparability with the chance to explore unexpected answers?",
+          "options": [
+            "Structured",
+            "Semi-structured",
+            "Unstructured",
+            "Closed questionnaire"
+          ],
+          "answer": 1,
+          "explanation": "A semi-structured interview uses a guide but allows follow-up questions.",
+          "terms": [
+            "psychology-rm.2-semi-structured"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q03",
+          "type": "tf",
+          "statement": "Covert observation reduces participant reactivity but raises ethical issues about consent.",
+          "answer": true,
+          "explanation": "People behave naturally when unaware, but they cannot consent.",
+          "terms": [
+            "psychology-rm.2-covert-observation"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q04",
+          "type": "tf",
+          "statement": "Closed questions produce mainly qualitative data.",
+          "answer": false,
+          "explanation": "Closed questions (e.g. rating scales) produce quantitative data; open questions produce qualitative data.",
+          "terms": [
+            "psychology-rm.2-questionnaire"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q05",
+          "type": "fill",
+          "text": "A group interview where participants discuss a topic together is a ___ group.",
+          "answer": "focus",
+          "bank": [
+            "focus",
+            "control",
+            "minimal",
+            "target"
+          ],
+          "explanation": "Group interaction can reveal shared views, but dominant members can bias it.",
+          "terms": [
+            "psychology-rm.2-focus-group"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q06",
+          "type": "fill",
+          "text": "An in-depth study of one individual using several methods is a ___ study.",
+          "answer": "case",
+          "bank": [
+            "case",
+            "twin",
+            "field",
+            "cohort"
+          ],
+          "explanation": "HM is a famous example.",
+          "terms": [
+            "psychology-rm.2-case-study"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q07",
+          "type": "match",
+          "prompt": "Match each class practical method to the context usually suggested for it.",
+          "pairs": [
+            {
+              "left": "Interview / focus group",
+              "right": "Health and well-being"
+            },
+            {
+              "left": "Observation",
+              "right": "Human development"
+            },
+            {
+              "left": "Survey / questionnaire",
+              "right": "Human relationships"
+            },
+            {
+              "left": "Experiment",
+              "right": "Learning and cognition"
+            }
+          ],
+          "explanation": "Each context has a recommended class practical, though schools may change the pairings.",
+          "terms": [
+            "psychology-rm.2-focus-group",
+            "psychology-rm.2-questionnaire",
+            "psychology-rm.2-naturalistic-observation"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q08",
+          "type": "mcq",
+          "prompt": "A weakness of focus groups is that:",
+          "options": [
+            "They cannot produce qualitative data",
+            "Some members may dominate or conform to others",
+            "They need thousands of participants",
+            "They always involve deception"
+          ],
+          "answer": 1,
+          "explanation": "Group dynamics can bias what individuals say.",
+          "terms": [
+            "psychology-rm.2-focus-group"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q09",
+          "type": "mcq",
+          "prompt": "Which is a strength of case studies?",
+          "options": [
+            "Easy to generalize",
+            "Rich, detailed data about rare cases",
+            "High control of variables",
+            "No researcher bias"
+          ],
+          "answer": 1,
+          "explanation": "Case studies can reveal things that experiments cannot, but are hard to generalize.",
+          "terms": [
+            "psychology-rm.2-case-study"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-1-q10",
+          "type": "order",
+          "prompt": "Order the steps of carrying out a semi-structured interview.",
+          "items": [
+            "Prepare an interview guide",
+            "Obtain informed consent",
+            "Conduct and record the interview",
+            "Transcribe the recording",
+            "Analyse the transcript"
+          ],
+          "explanation": "Transcripts are then coded, e.g. with thematic analysis.",
+          "terms": [
+            "psychology-rm.2-semi-structured",
+            "psychology-rm.2-thematic-analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-RM.2-2",
+      "title": "Quality in qualitative research",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-RM.2-2-q01",
+          "type": "mcq",
+          "prompt": "Two researchers independently code the same interview transcripts and compare themes. This is:",
+          "options": [
+            "Researcher triangulation",
+            "Counterbalancing",
+            "Random allocation",
+            "Operationalization"
+          ],
+          "answer": 0,
+          "explanation": "Using more than one researcher checks consistency and increases credibility.",
+          "terms": [
+            "psychology-rm.2-triangulation",
+            "psychology-rm.2-credibility"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q02",
+          "type": "mcq",
+          "prompt": "A researcher writes about how her own experience of migration may have shaped her interview questions. This is:",
+          "options": [
+            "Reflexivity",
+            "Generalizability",
+            "Social desirability",
+            "Debriefing"
+          ],
+          "answer": 0,
+          "explanation": "Reflexivity helps identify and reduce researcher bias.",
+          "terms": [
+            "psychology-rm.2-reflexivity"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q03",
+          "type": "tf",
+          "statement": "Qualitative researchers usually talk about transferability rather than statistical generalization.",
+          "answer": true,
+          "explanation": "Readers judge whether rich descriptions fit other settings.",
+          "terms": [
+            "psychology-rm.2-transferability"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q04",
+          "type": "tf",
+          "statement": "Triangulation means using exactly three participants.",
+          "answer": false,
+          "explanation": "Triangulation is using several methods, data sources or researchers to cross-check findings.",
+          "terms": [
+            "psychology-rm.2-triangulation"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q05",
+          "type": "fill",
+          "text": "Coding transcripts and grouping the codes into themes is called ___ analysis.",
+          "answer": "thematic",
+          "bank": [
+            "thematic",
+            "inferential",
+            "correlational",
+            "factor"
+          ],
+          "explanation": "Thematic analysis is common for interview and focus group data.",
+          "terms": [
+            "psychology-rm.2-thematic-analysis"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q06",
+          "type": "fill",
+          "text": "Checking findings with participants to see if they recognise them is called member ___.",
+          "answer": "checking",
+          "bank": [
+            "checking",
+            "sampling",
+            "matching",
+            "testing"
+          ],
+          "explanation": "Member checking supports credibility.",
+          "terms": [
+            "psychology-rm.2-credibility"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q07",
+          "type": "match",
+          "prompt": "Match each quality criterion to its meaning.",
+          "pairs": [
+            {
+              "left": "Credibility",
+              "right": "Findings reflect participants' reality"
+            },
+            {
+              "left": "Transferability",
+              "right": "Applies to other contexts"
+            },
+            {
+              "left": "Reflexivity",
+              "right": "Researcher examines own influence"
+            },
+            {
+              "left": "Triangulation",
+              "right": "Cross-checking with several sources"
+            }
+          ],
+          "explanation": "These are the qualitative counterparts of validity and generalizability.",
+          "terms": [
+            "psychology-rm.2-credibility",
+            "psychology-rm.2-transferability",
+            "psychology-rm.2-reflexivity",
+            "psychology-rm.2-triangulation"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q08",
+          "type": "mcq",
+          "prompt": "Which provides the strongest support for credibility in an interview study?",
+          "options": [
+            "A single interviewer with no notes",
+            "Method and researcher triangulation plus member checking",
+            "A very short interview",
+            "Leading questions"
+          ],
+          "answer": 1,
+          "explanation": "Multiple checks reduce bias and confirm interpretations.",
+          "terms": [
+            "psychology-rm.2-credibility",
+            "psychology-rm.2-triangulation"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q09",
+          "type": "mcq",
+          "prompt": "A \"thick description\" of the setting and participants mainly helps:",
+          "options": [
+            "Statistical significance",
+            "Transferability",
+            "Random sampling",
+            "Counterbalancing"
+          ],
+          "answer": 1,
+          "explanation": "Detailed descriptions let readers judge whether findings fit their own context.",
+          "terms": [
+            "psychology-rm.2-transferability"
+          ]
+        },
+        {
+          "id": "psychology-RM.2-2-q10",
+          "type": "order",
+          "prompt": "Order the steps of thematic analysis.",
+          "items": [
+            "Read transcripts several times",
+            "Generate initial codes",
+            "Group codes into themes",
+            "Review and name themes",
+            "Write up with quotations"
+          ],
+          "explanation": "Quotations show how themes are grounded in the data.",
+          "terms": [
+            "psychology-rm.2-thematic-analysis"
+          ]
+        }
+      ]
+    }
+  ]
+}

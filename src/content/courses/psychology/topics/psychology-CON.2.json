@@ -1,0 +1,435 @@
+{
+  "id": "psychology-CON.2",
+  "code": "CON.2",
+  "unit": "concepts",
+  "title": "Change, perspective and responsibility",
+  "level": "SL",
+  "summary": "How behaviour changes and how we study change, how different perspectives explain the same behaviour, and the ethical responsibilities of psychologists.",
+  "keyterms": [
+    {
+      "id": "psychology-con.2-change",
+      "term": "Change",
+      "definition": "How behaviour, cognition or the brain develops or is altered over time, and how researchers measure this.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-longitudinal",
+      "term": "Longitudinal study",
+      "definition": "Research that follows the same participants over a long period to track change.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-cross-sectional",
+      "term": "Cross-sectional study",
+      "definition": "Research comparing different groups (e.g. ages) at one point in time.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-perspective",
+      "term": "Perspective",
+      "definition": "A particular point of view or level of explanation (biological, cognitive, sociocultural) used to explain behaviour.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-reductionism",
+      "term": "Reductionism",
+      "definition": "Explaining complex behaviour by breaking it down into simpler parts or a single level, e.g. genes or neurotransmitters.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-holism",
+      "term": "Holism",
+      "definition": "Explaining behaviour by looking at the whole person and the interaction of many factors.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-emic",
+      "term": "Emic approach",
+      "definition": "Studying a culture from the inside, using concepts meaningful to its members.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-etic",
+      "term": "Etic approach",
+      "definition": "Studying cultures from the outside using concepts assumed to apply universally, allowing comparison.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-informed-consent",
+      "term": "Informed consent",
+      "definition": "Participants agree to take part after being told what the study involves; parents consent for under-16s.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-debriefing",
+      "term": "Debriefing",
+      "definition": "Explaining the true aims to participants after the study, especially after deception, and checking their well-being.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-right-to-withdraw",
+      "term": "Right to withdraw",
+      "definition": "Participants can leave the study and remove their data at any time without penalty.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-deception",
+      "term": "Deception",
+      "definition": "Misleading participants about the aim or procedure; only acceptable when necessary and followed by debriefing.",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-three-rs",
+      "term": "The 3Rs",
+      "definition": "Replacement, reduction and refinement: principles for ethical animal research (Russell & Burch, 1959).",
+      "hl": false
+    },
+    {
+      "id": "psychology-con.2-social-responsibility",
+      "term": "Social responsibility",
+      "definition": "The duty to consider how findings could be used or misused in society, and who could be harmed.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-CON.2-1",
+      "title": "Change and perspective",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-CON.2-1-q01",
+          "type": "mcq",
+          "prompt": "Which design is best for studying how one group of children's memory changes from age 5 to 15?",
+          "options": [
+            "Cross-sectional study",
+            "Longitudinal study",
+            "Single lab experiment",
+            "Case study of one adult"
+          ],
+          "answer": 1,
+          "explanation": "Following the same children over time shows change within individuals.",
+          "terms": [
+            "psychology-con.2-longitudinal",
+            "psychology-con.2-change"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q02",
+          "type": "mcq",
+          "prompt": "A disadvantage of longitudinal studies is that:",
+          "options": [
+            "They cannot measure change",
+            "Participants drop out over time (attrition)",
+            "They compare different people at one time",
+            "They are always unethical"
+          ],
+          "answer": 1,
+          "explanation": "Attrition can bias the remaining sample if those who leave differ from those who stay.",
+          "terms": [
+            "psychology-con.2-longitudinal"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q03",
+          "type": "tf",
+          "statement": "A cross-sectional study comparing 10-year-olds and 20-year-olds may confuse age differences with cohort (generation) differences.",
+          "answer": true,
+          "explanation": "The groups grew up at different times, so differences may reflect experience, not age.",
+          "terms": [
+            "psychology-con.2-cross-sectional"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q04",
+          "type": "tf",
+          "statement": "Explaining depression only in terms of serotonin is an example of holism.",
+          "answer": false,
+          "explanation": "Reducing depression to one neurotransmitter is biological reductionism.",
+          "terms": [
+            "psychology-con.2-reductionism",
+            "psychology-con.2-holism"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q05",
+          "type": "fill",
+          "text": "Explaining behaviour from the viewpoint of members of the culture being studied is an ___ approach.",
+          "answer": "emic",
+          "bank": [
+            "emic",
+            "etic",
+            "etiological",
+            "holistic"
+          ],
+          "explanation": "Emic research uses insiders' own concepts; etic research applies outside, supposedly universal ones.",
+          "terms": [
+            "psychology-con.2-emic",
+            "psychology-con.2-etic"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q06",
+          "type": "fill",
+          "text": "Breaking behaviour down into one simple level of explanation is called ___.",
+          "answer": "reductionism",
+          "bank": [
+            "reductionism",
+            "holism",
+            "triangulation",
+            "enculturation"
+          ],
+          "explanation": "Reductionism can make research testable but ignores interacting factors.",
+          "terms": [
+            "psychology-con.2-reductionism"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q07",
+          "type": "match",
+          "prompt": "Match each perspective to an explanation of anxiety.",
+          "pairs": [
+            {
+              "left": "Biological",
+              "right": "Overactive amygdala or genetic vulnerability"
+            },
+            {
+              "left": "Cognitive",
+              "right": "Catastrophic thinking about threats"
+            },
+            {
+              "left": "Sociocultural",
+              "right": "Learning fear from family and cultural norms"
+            },
+            {
+              "left": "Holistic",
+              "right": "Several interacting factors combined"
+            }
+          ],
+          "explanation": "Using several perspectives gives a fuller explanation than any single one.",
+          "terms": [
+            "psychology-con.2-perspective",
+            "psychology-con.2-holism"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q08",
+          "type": "mcq",
+          "prompt": "Hofstede's cultural dimensions apply the same measures to every country. This is an example of:",
+          "options": [
+            "An emic approach",
+            "An etic approach",
+            "A case study",
+            "A qualitative approach"
+          ],
+          "answer": 1,
+          "explanation": "Applying common dimensions across cultures is etic; it allows comparison but may miss local meanings.",
+          "terms": [
+            "psychology-con.2-etic"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q09",
+          "type": "mcq",
+          "prompt": "Which is a strength of biological reductionism?",
+          "options": [
+            "It considers free will",
+            "It allows precise, testable hypotheses",
+            "It always includes culture",
+            "It explains all behaviour fully"
+          ],
+          "answer": 1,
+          "explanation": "Reducing behaviour to measurable variables makes it testable, but may oversimplify.",
+          "terms": [
+            "psychology-con.2-reductionism"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-1-q10",
+          "type": "order",
+          "prompt": "Order the stages of a typical longitudinal study.",
+          "items": [
+            "Recruit a sample and take baseline measures",
+            "Re-measure the same participants at intervals",
+            "Track attrition and compare those who stay with those who leave",
+            "Analyse change over time"
+          ],
+          "explanation": "The defining feature is repeated measurement of the same people.",
+          "terms": [
+            "psychology-con.2-longitudinal",
+            "psychology-con.2-change"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-CON.2-2",
+      "title": "Responsibility and ethics",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-CON.2-2-q01",
+          "type": "mcq",
+          "prompt": "In Milgram-style studies where participants are misled about the aim, which ethical step is most essential afterwards?",
+          "options": [
+            "Paying participants more",
+            "A full debriefing",
+            "Publishing participants' names",
+            "Repeating the study"
+          ],
+          "answer": 1,
+          "explanation": "Debriefing reveals the deception, explains the aims and checks participants leave in the state they arrived in.",
+          "terms": [
+            "psychology-con.2-debriefing",
+            "psychology-con.2-deception"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q02",
+          "type": "mcq",
+          "prompt": "A 14-year-old wants to join a study. Who must also give consent?",
+          "options": [
+            "Their teacher only",
+            "A parent or guardian",
+            "Nobody else",
+            "The ethics committee instead of the child"
+          ],
+          "answer": 1,
+          "explanation": "For minors, parental consent is needed, and the child should also agree (assent).",
+          "terms": [
+            "psychology-con.2-informed-consent"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q03",
+          "type": "tf",
+          "statement": "Participants should be able to withdraw their data even after the study has finished.",
+          "answer": true,
+          "explanation": "The right to withdraw includes removing one's data, e.g. after debriefing.",
+          "terms": [
+            "psychology-con.2-right-to-withdraw"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q04",
+          "type": "tf",
+          "statement": "Deception is never allowed in psychological research.",
+          "answer": false,
+          "explanation": "Mild deception can be justified if the study could not work otherwise, no significant harm is expected and participants are debriefed.",
+          "terms": [
+            "psychology-con.2-deception"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q05",
+          "type": "fill",
+          "text": "The 3Rs of animal research are replacement, reduction and ___.",
+          "answer": "refinement",
+          "bank": [
+            "refinement",
+            "replication",
+            "reliability",
+            "reinforcement"
+          ],
+          "explanation": "Refinement means changing procedures to minimise suffering (Russell & Burch, 1959).",
+          "terms": [
+            "psychology-con.2-three-rs"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q06",
+          "type": "fill",
+          "text": "Thinking about how research findings could be used to discriminate against a group is part of social ___.",
+          "answer": "responsibility",
+          "bank": [
+            "responsibility",
+            "desirability",
+            "identity",
+            "learning"
+          ],
+          "explanation": "Psychologists must consider the wider impact of how findings are communicated and applied.",
+          "terms": [
+            "psychology-con.2-social-responsibility"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q07",
+          "type": "match",
+          "prompt": "Match each ethical guideline to its meaning.",
+          "pairs": [
+            {
+              "left": "Informed consent",
+              "right": "Agreeing after knowing what is involved"
+            },
+            {
+              "left": "Confidentiality",
+              "right": "Data cannot be linked to individuals"
+            },
+            {
+              "left": "Right to withdraw",
+              "right": "Leaving at any time without penalty"
+            },
+            {
+              "left": "Debriefing",
+              "right": "Explaining true aims after the study"
+            }
+          ],
+          "explanation": "These guidelines protect participants' dignity and well-being.",
+          "terms": [
+            "psychology-con.2-informed-consent",
+            "psychology-con.2-right-to-withdraw",
+            "psychology-con.2-debriefing"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q08",
+          "type": "mcq",
+          "prompt": "Which is an example of \"replacement\" in animal research?",
+          "options": [
+            "Using fewer rats per group",
+            "Giving rats pain relief",
+            "Using computer models or cell cultures instead of animals",
+            "Housing rats in larger cages"
+          ],
+          "answer": 2,
+          "explanation": "Replacement swaps animals for alternatives; reduction uses fewer; refinement reduces suffering.",
+          "terms": [
+            "psychology-con.2-three-rs"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q09",
+          "type": "mcq",
+          "prompt": "A researcher reports that one ethnic group scores lower on a test without discussing test bias or environment. Which concept is most at stake?",
+          "options": [
+            "Change",
+            "Responsibility",
+            "Measurement only",
+            "Causality only"
+          ],
+          "answer": 1,
+          "explanation": "Reporting group differences without context can cause harm; psychologists have a social responsibility.",
+          "terms": [
+            "psychology-con.2-social-responsibility"
+          ]
+        },
+        {
+          "id": "psychology-CON.2-2-q10",
+          "type": "order",
+          "prompt": "Put these ethical steps in the order they happen in a study.",
+          "items": [
+            "Ethics committee approval",
+            "Informed consent",
+            "Data collection (right to withdraw throughout)",
+            "Debriefing"
+          ],
+          "explanation": "Approval comes before recruiting; debriefing comes at the end.",
+          "terms": [
+            "psychology-con.2-informed-consent",
+            "psychology-con.2-debriefing"
+          ]
+        }
+      ]
+    }
+  ]
+}

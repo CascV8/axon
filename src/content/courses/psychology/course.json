@@ -1,0 +1,154 @@
+{
+  "id": "psychology",
+  "name": "Psychology",
+  "short": "Psych",
+  "group": "Group 3: Individuals and societies",
+  "icon": "🧠",
+  "blurb": "Concepts, approaches, research methods, the four contexts and the HL extensions",
+  "syllabus": "Subject guide first assessed May 2027",
+  "levels": ["SL", "HL"],
+  "units": [
+    { "id": "concepts", "title": "Concepts", "blurb": "Bias, causality, change, measurement, perspective and responsibility." },
+    { "id": "approaches", "title": "Approaches (content)", "blurb": "The biological, cognitive and sociocultural approaches to behaviour." },
+    { "id": "methods", "title": "Research methodology", "blurb": "Experiments, qualitative methods, sampling, ethics, data and the class practicals." },
+    { "id": "health", "title": "Health and well-being", "blurb": "Explaining, preventing and treating mental health disorders and health problems." },
+    { "id": "dev", "title": "Human development", "blurb": "Brain, cognitive and social development, attachment and the self." },
+    { "id": "rel", "title": "Human relationships", "blurb": "Group behaviour and interpersonal relationships." },
+    { "id": "learn", "title": "Learning and cognition", "blurb": "Thinking, learning and cognitive processes such as memory and attention." },
+    { "id": "hl", "title": "HL extensions", "blurb": "The role of culture, motivation and technology in behaviour (HL only)." }
+  ],
+  "papers": {
+    "P1A": "Paper 1 · Section A (short answer)",
+    "P1B": "Paper 1 · Section B (applied)",
+    "P1C": "Paper 1 · Section C (extended response)",
+    "P2A": "Paper 2 · Section A (class practicals)",
+    "P2B": "Paper 2 · Section B (unseen study)",
+    "P3": "Paper 3 · HL source and data analysis"
+  },
+  "mcqExam": null,
+  "assessment": {
+    "SL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Short answer on the approaches, applied questions on an unseen scenario, one concept-based extended response", "max": 35, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Questions on the class practicals and evaluation of an unseen research study", "max": 35, "group": "p2" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Research proposal", "max": 24, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 35, "time": "1 h 30 min" },
+        "p2": { "name": "Paper 2", "weight": 35, "time": "1 h 30 min" },
+        "ia": { "name": "IA", "weight": 30, "time": "Coursework (research proposal)" }
+      }
+    },
+    "HL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Short answer on the approaches, applied questions on an unseen scenario, one concept-based extended response", "max": 35, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Questions on the class practicals and evaluation of an unseen research study", "max": 35, "group": "p2" },
+        { "id": "p3", "name": "Paper 3", "detail": "Four questions on a set of sources with quantitative and qualitative data linked to the HL extensions", "max": 30, "group": "p3" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Research proposal", "max": 24, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 25, "time": "1 h 30 min" },
+        "p2": { "name": "Paper 2", "weight": 25, "time": "1 h 30 min" },
+        "p3": { "name": "Paper 3", "weight": 30, "time": "1 h 45 min" },
+        "ia": { "name": "IA", "weight": 20, "time": "Coursework (research proposal)" }
+      }
+    }
+  },
+  "boundaries": {
+    "SL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 11, 24, 33, 46, 55, 68], "old": true },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 13, 27, 39, 51, 61, 73], "old": true },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 11, 23, 33, 47, 58, 72], "old": true },
+      { "session": "Nov 2025", "tz": "TZ3", "min": [0, 12, 25, 38, 50, 60, 72], "old": true },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 12, 26, 36, 49, 58, 71], "old": true },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 12, 25, 37, 51, 61, 75], "old": true }
+    ],
+    "HL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 10, 22, 34, 46, 58, 70], "old": true },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 12, 25, 37, 50, 61, 73], "old": true },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 10, 22, 35, 48, 61, 74], "old": true },
+      { "session": "Nov 2025", "tz": "TZ3", "min": [0, 11, 23, 37, 49, 61, 73], "old": true },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 10, 21, 33, 45, 57, 68], "old": true },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 11, 23, 37, 49, 61, 73], "old": true }
+    ]
+  },
+  "ia": {
+    "name": "Research proposal",
+    "max": 24,
+    "weight": 30,
+    "limit": "2,200 words (SL and HL; weighted 30% at SL, 20% at HL)",
+    "criteria": [
+      {
+        "id": "a",
+        "name": "Introduction",
+        "max": 6,
+        "look": [
+          "A focused research question about a clearly identified population of interest",
+          "Relevant psychological theory and research explained, not just named",
+          "A clear rationale for why the question is worth investigating",
+          "Key terms and variables or phenomena defined"
+        ]
+      },
+      {
+        "id": "b",
+        "name": "Research methodology",
+        "max": 6,
+        "look": [
+          "One of the class-practical methods (experiment, observation, survey/questionnaire or interview) chosen and justified for this question",
+          "Sampling technique and participants described and justified for the population",
+          "Procedure described in enough detail to be followed",
+          "Ethical considerations specific to the proposal addressed"
+        ]
+      },
+      {
+        "id": "c",
+        "name": "Data collection",
+        "max": 6,
+        "look": [
+          "A data-collection tool (at least five items) designed for the research question and included in the appendix",
+          "Each item or measure clearly linked to what it is meant to capture",
+          "How the data would be recorded and analysed explained",
+          "Issues of measurement (reliability, validity, credibility) considered"
+        ]
+      },
+      {
+        "id": "d",
+        "name": "Discussion",
+        "max": 6,
+        "look": [
+          "Strengths and limitations of the proposed design discussed with reference to the concepts (e.g. bias, measurement)",
+          "Likely sources of bias identified, with how they would be reduced",
+          "How far the findings could be generalized or transferred considered",
+          "Realistic modifications or follow-up research suggested"
+        ]
+      }
+    ],
+    "checklist": [
+      "The research question names the population and what you will investigate",
+      "Background research is cited and actually explained in relation to your question",
+      "Your chosen method matches one of the class practical methods and you justify it over the alternatives",
+      "Sampling technique and sample size are stated and suit the population of interest",
+      "Ethics are specific: consent (including parental consent for minors), withdrawal, confidentiality, debriefing",
+      "The data-collection tool has at least five items and is in the appendix",
+      "You explain how the data would be analysed (e.g. descriptive statistics or thematic analysis)",
+      "Bias and measurement issues are discussed for YOUR design, not in generic terms",
+      "Limitations come with realistic improvements",
+      "The proposal is within 2,200 words; references and appendices are excluded",
+      "All sources are referenced consistently"
+    ]
+  },
+  "examTips": [
+    "Describe studies precisely: researcher(s) and year, aim, procedure, results, and the conclusion linked to the question asked.",
+    "In unseen scenarios, apply theory to the details given in the text rather than writing a generic essay.",
+    "Use the named concepts explicitly: say how bias, measurement or causality affects what a study can claim.",
+    "Correlation is not causation: only a true experiment with controlled variables supports a causal claim.",
+    "When evaluating, give a reason for every strength or limitation (why it matters for validity, credibility or generalization)."
+  ],
+  "sources": [
+    { "label": "IB Psychology subject brief and guide (first assessment 2027)", "url": "https://www.ibo.org/university-admission/latest-curriculum-updates/psychology-updates/" },
+    { "label": "Assessment and IA overview (third party summary of the 2027 guide)", "url": "https://myrevisionagent.com/guides/ib-psychology" },
+    { "label": "Syllabus structure summary (third party)", "url": "https://lanterna.com/resources/psychology-new-syllabus-up-for-fe-in-2027-syllabus-change-details" },
+    { "label": "Grade boundaries, Psychology SL (previous syllabus, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/psychology-sl" },
+    { "label": "Grade boundaries, Psychology HL (previous syllabus, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/psychology-hl" }
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "psychology-X-approaches-01",
+    "unit": "approaches",
+    "topics": ["psychology-BIO.1"],
+    "paper": "P1A",
+    "level": "SL",
+    "title": "Neuroplasticity: one study",
+    "stem": "Section A short-answer question on the biological approach.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Describe",
+        "prompt": "Describe one study that investigated neuroplasticity.",
+        "marks": 4,
+        "markscheme": [
+          "aim of a relevant study identified, e.g. Draganski et al. (2004) investigated whether learning a new skill changes brain structure",
+          "procedure: e.g. participants learned to juggle for three months; MRI scans before, after learning and after a period without practice; control group did not juggle",
+          "results: e.g. grey matter increased in areas linked to processing visual motion in jugglers, and decreased again after they stopped practising",
+          "conclusion linked to neuroplasticity: the brain changes structurally in response to experience / use",
+          "Allow other relevant studies, e.g. Maguire et al. (2000) taxi drivers or Rosenzweig, Bennett & Diamond (1972)"
+        ],
+        "notes": "Answers that only describe the brain area without a study's procedure or results should not get full marks. Evaluation is not required."
+      }
+    ]
+  },
+  {
+    "id": "psychology-X-approaches-02",
+    "unit": "approaches",
+    "topics": ["psychology-COG.1"],
+    "paper": "P1A",
+    "level": "SL",
+    "title": "Schema theory",
+    "stem": "Section A short-answer question on the cognitive approach.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Explain",
+        "prompt": "Explain schema theory with reference to one study.",
+        "marks": 4,
+        "markscheme": [
+          "schemas are mental frameworks of knowledge, built from experience, that create expectations",
+          "schemas influence encoding and retrieval, so memory can be reconstructive / gaps filled by expectations",
+          "relevant study described, e.g. Brewer & Treyens (1981): participants waited in an office and later falsely recalled schema-consistent objects such as books",
+          "explicit link: the study shows the office schema shaped recall / Allow Bartlett (1932) or Bransford & Johnson (1972) with a clear link"
+        ],
+        "notes": "The link between the study and schema theory must be explicit for the final mark."
+      }
+    ]
+  }
+]

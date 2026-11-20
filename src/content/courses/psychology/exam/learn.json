@@ -1,0 +1,41 @@
+[
+  {
+    "id": "psychology-X-learn-01",
+    "unit": "learn",
+    "topics": ["psychology-LC.1", "psychology-COG.2"],
+    "paper": "P1B",
+    "level": "SL",
+    "title": "Applied scenario: Mateo's revision",
+    "stem": "Mateo is preparing for his exams. He reads his notes again and again the night before each test, while messaging friends and listening to podcasts. He says the material \"feels familiar\" but he often goes blank in the exam room. His teacher suggests a different approach.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Explain",
+        "prompt": "Explain why Mateo's current approach may not be effective, using one cognitive theory or model.",
+        "marks": 6,
+        "markscheme": [
+          "theory identified, e.g. cognitive load theory (Sweller, 1988) / working memory model",
+          "working memory has limited capacity",
+          "applied: messaging and podcasts add extraneous load / compete for the phonological loop while reading",
+          "less capacity remains for processing and transferring material to long-term memory",
+          "supporting evidence, e.g. Ophir et al. (2009) multitaskers filter distraction poorly / Landry & Bartling (2011) articulatory suppression",
+          "familiarity from rereading is not the same as being able to retrieve, explaining going blank"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Suggest",
+        "prompt": "Suggest how Mateo could improve his recall, with reference to research.",
+        "marks": 6,
+        "markscheme": [
+          "use retrieval practice / self-testing instead of rereading",
+          "evidence: Roediger & Karpicke (2006) testing produced better recall after a week than restudying",
+          "space sessions over several days rather than cramming",
+          "evidence: spacing effect, e.g. Cepeda et al. (2006) meta-analysis",
+          "remove distractions to reduce cognitive load",
+          "each suggestion is explicitly linked to Mateo's situation"
+        ]
+      }
+    ]
+  }
+]

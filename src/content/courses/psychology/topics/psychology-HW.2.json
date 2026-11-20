@@ -1,0 +1,399 @@
+{
+  "id": "psychology-HW.2",
+  "code": "HW.2",
+  "unit": "health",
+  "title": "Treatment, stress and health problems",
+  "level": "SL",
+  "summary": "Biological and psychological treatments for depression, how stress affects health, and explaining and preventing a health problem such as obesity.",
+  "keyterms": [
+    {
+      "id": "psychology-hw.2-ssri",
+      "term": "SSRI",
+      "definition": "Selective serotonin reuptake inhibitor: an antidepressant that blocks reuptake of serotonin, e.g. fluoxetine.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.2-cbt",
+      "term": "Cognitive behavioural therapy",
+      "definition": "A therapy that challenges negative thoughts and changes behaviour patterns.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.2-placebo",
+      "term": "Placebo",
+      "definition": "An inactive treatment used as a control to separate real drug effects from expectation.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.2-rct",
+      "term": "Randomized controlled trial",
+      "definition": "Participants are randomly allocated to treatment or control conditions to test effectiveness.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.2-stress",
+      "term": "Stress",
+      "definition": "A response that occurs when demands are perceived to exceed one's ability to cope.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.2-gas",
+      "term": "General adaptation syndrome",
+      "definition": "Selye's model of the stress response: alarm, resistance and exhaustion.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.2-cortisol",
+      "term": "Cortisol",
+      "definition": "A stress hormone that releases energy but, when chronically high, suppresses the immune system.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.2-obesity",
+      "term": "Obesity",
+      "definition": "Excess body fat, usually defined as a BMI of 30 or more in adults.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hw.2-hbm",
+      "term": "Health belief model",
+      "definition": "A model predicting health behaviour from perceived susceptibility, severity, benefits, barriers and cues to action.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-HW.2-1",
+      "title": "Treating depression",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HW.2-1-q01",
+          "type": "mcq",
+          "prompt": "In the TADS study (March et al., 2004) of adolescents with depression, which condition had the highest response rate?",
+          "options": [
+            "Placebo",
+            "CBT alone",
+            "Fluoxetine alone",
+            "Fluoxetine combined with CBT"
+          ],
+          "answer": 3,
+          "explanation": "The combination did best, suggesting biological and psychological treatments can complement each other.",
+          "terms": [
+            "psychology-hw.2-ssri",
+            "psychology-hw.2-cbt",
+            "psychology-hw.2-rct"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q02",
+          "type": "mcq",
+          "prompt": "Kirsch et al. (2008) analysed antidepressant trial data. They concluded that the difference between drug and placebo was:",
+          "options": [
+            "Very large for all patients",
+            "Small, except for the most severely depressed",
+            "Zero for all patients",
+            "Larger for mild depression"
+          ],
+          "answer": 1,
+          "explanation": "This raised questions about how much benefit comes from expectation.",
+          "terms": [
+            "psychology-hw.2-ssri",
+            "psychology-hw.2-placebo"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q03",
+          "type": "tf",
+          "statement": "SSRIs work by blocking the reuptake of serotonin, leaving more in the synapse.",
+          "answer": true,
+          "explanation": "This increases serotonin availability, though mood improvement usually takes weeks.",
+          "terms": [
+            "psychology-hw.2-ssri"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q04",
+          "type": "tf",
+          "statement": "CBT focuses mainly on uncovering unconscious childhood conflicts.",
+          "answer": false,
+          "explanation": "CBT targets current thoughts and behaviours; that description fits psychodynamic therapy.",
+          "terms": [
+            "psychology-hw.2-cbt"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q05",
+          "type": "fill",
+          "text": "An inactive pill used as a control in drug trials is a ___.",
+          "answer": "placebo",
+          "bank": [
+            "placebo",
+            "agonist",
+            "antagonist",
+            "stimulus"
+          ],
+          "explanation": "Placebo control separates drug effects from expectancy effects.",
+          "terms": [
+            "psychology-hw.2-placebo"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q06",
+          "type": "fill",
+          "text": "DeRubeis et al. (2005) found CBT was as effective as ___ for moderate to severe depression at 16 weeks.",
+          "answer": "medication",
+          "bank": [
+            "medication",
+            "surgery",
+            "placebo",
+            "exercise"
+          ],
+          "explanation": "Both produced similar response rates in this trial.",
+          "terms": [
+            "psychology-hw.2-cbt"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q07",
+          "type": "match",
+          "prompt": "Match each treatment to an evaluation point.",
+          "pairs": [
+            {
+              "left": "SSRIs",
+              "right": "Side effects; relapse if stopped"
+            },
+            {
+              "left": "CBT",
+              "right": "Requires motivation and time"
+            },
+            {
+              "left": "Combined treatment",
+              "right": "Best results in TADS"
+            },
+            {
+              "left": "Placebo",
+              "right": "Shows the power of expectation"
+            }
+          ],
+          "explanation": "No single treatment suits everyone.",
+          "terms": [
+            "psychology-hw.2-ssri",
+            "psychology-hw.2-cbt",
+            "psychology-hw.2-placebo"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q08",
+          "type": "mcq",
+          "prompt": "Why are double-blind RCTs important in treatment research?",
+          "options": [
+            "They make the drug stronger",
+            "They reduce expectation effects from both patients and researchers",
+            "They remove the need for consent",
+            "They guarantee generalization"
+          ],
+          "answer": 1,
+          "explanation": "Blinding protects against participant and researcher bias.",
+          "terms": [
+            "psychology-hw.2-rct",
+            "psychology-hw.2-placebo"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q09",
+          "type": "mcq",
+          "prompt": "An ethical issue in giving a placebo to depressed participants is:",
+          "options": [
+            "They may be denied effective treatment while suicidal risk exists",
+            "Placebos are always harmful chemicals",
+            "It improves outcomes",
+            "Consent is not needed"
+          ],
+          "answer": 0,
+          "explanation": "Researchers must monitor risk and allow withdrawal.",
+          "terms": [
+            "psychology-hw.2-placebo"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-1-q10",
+          "type": "order",
+          "prompt": "Order the main stages of CBT for depression.",
+          "items": [
+            "Assessment and building a working relationship",
+            "Identifying automatic negative thoughts",
+            "Challenging and testing thoughts",
+            "Practising new behaviours (homework)",
+            "Relapse prevention planning"
+          ],
+          "explanation": "CBT is structured and time-limited.",
+          "terms": [
+            "psychology-hw.2-cbt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-HW.2-2",
+      "title": "Stress and health problems",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HW.2-2-q01",
+          "type": "mcq",
+          "prompt": "Kiecolt-Glaser et al. (1995) compared wound healing in caregivers of relatives with dementia and controls. Caregivers' wounds:",
+          "options": [
+            "Healed faster",
+            "Took significantly longer to heal",
+            "Did not heal",
+            "Healed at the same rate"
+          ],
+          "answer": 1,
+          "explanation": "Chronic stress was linked to slower healing (about 9 days, or 24%, longer), showing an effect on the immune system.",
+          "terms": [
+            "psychology-hw.2-stress",
+            "psychology-hw.2-cortisol"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q02",
+          "type": "mcq",
+          "prompt": "In Selye's general adaptation syndrome, which stage follows prolonged exposure to a stressor?",
+          "options": [
+            "Alarm",
+            "Exhaustion",
+            "Recovery",
+            "Habituation"
+          ],
+          "answer": 1,
+          "explanation": "After alarm and resistance, resources are depleted in the exhaustion stage, increasing illness risk.",
+          "terms": [
+            "psychology-hw.2-gas"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q03",
+          "type": "tf",
+          "statement": "Kiecolt-Glaser et al. (1995) was a quasi-experiment because caregiver status was not randomly allocated.",
+          "answer": true,
+          "explanation": "Other differences between groups could have contributed.",
+          "terms": [
+            "psychology-hw.2-stress"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q04",
+          "type": "tf",
+          "statement": "Stunkard et al. (1986) found adoptees' BMI was more strongly related to their adoptive parents' BMI than to their biological parents'.",
+          "answer": false,
+          "explanation": "BMI was related to biological parents, suggesting a genetic influence on obesity.",
+          "terms": [
+            "psychology-hw.2-obesity"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q05",
+          "type": "fill",
+          "text": "The stress hormone that suppresses the immune system when chronically high is ___.",
+          "answer": "cortisol",
+          "bank": [
+            "cortisol",
+            "oxytocin",
+            "serotonin",
+            "dopamine"
+          ],
+          "explanation": "Long-term cortisol release links stress to illness.",
+          "terms": [
+            "psychology-hw.2-cortisol"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q06",
+          "type": "fill",
+          "text": "In the health belief model, a reminder text from a doctor is a cue to ___.",
+          "answer": "action",
+          "bank": [
+            "action",
+            "stress",
+            "relapse",
+            "conform"
+          ],
+          "explanation": "Cues to action trigger health behaviour.",
+          "terms": [
+            "psychology-hw.2-hbm"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q07",
+          "type": "match",
+          "prompt": "Match each GAS stage to its description.",
+          "pairs": [
+            {
+              "left": "Alarm",
+              "right": "Fight-or-flight activation"
+            },
+            {
+              "left": "Resistance",
+              "right": "Body adapts to continued stress"
+            },
+            {
+              "left": "Exhaustion",
+              "right": "Resources depleted; illness risk rises"
+            }
+          ],
+          "explanation": "Selye based his model partly on animal research.",
+          "terms": [
+            "psychology-hw.2-gas"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q08",
+          "type": "mcq",
+          "prompt": "Which is a sociocultural factor in obesity?",
+          "options": [
+            "Genes affecting appetite",
+            "Norms around food portions and observing family eating habits",
+            "Leptin levels",
+            "Metabolic rate"
+          ],
+          "answer": 1,
+          "explanation": "Social learning and cultural norms shape eating behaviour.",
+          "terms": [
+            "psychology-hw.2-obesity"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q09",
+          "type": "mcq",
+          "prompt": "A health campaign shows how serious type 2 diabetes is. Which HBM factor does it target?",
+          "options": [
+            "Perceived barriers",
+            "Perceived severity",
+            "Self-efficacy only",
+            "Cue to action only"
+          ],
+          "answer": 1,
+          "explanation": "Increasing perceived severity is predicted to increase health behaviour.",
+          "terms": [
+            "psychology-hw.2-hbm"
+          ]
+        },
+        {
+          "id": "psychology-HW.2-2-q10",
+          "type": "order",
+          "prompt": "Order the stages of Selye's general adaptation syndrome.",
+          "items": [
+            "Alarm",
+            "Resistance",
+            "Exhaustion"
+          ],
+          "explanation": "Prolonged stress leads to exhaustion.",
+          "terms": [
+            "psychology-hw.2-gas"
+          ]
+        }
+      ]
+    }
+  ]
+}

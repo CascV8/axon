@@ -1,0 +1,402 @@
+{
+  "id": "psychology-HD.2",
+  "code": "HD.2",
+  "unit": "dev",
+  "title": "Attachment, the self and social development",
+  "level": "SL",
+  "summary": "Attachment theory and research, development of the self, peer influence and the role of childhood experiences.",
+  "keyterms": [
+    {
+      "id": "psychology-hd.2-attachment",
+      "term": "Attachment",
+      "definition": "A strong, lasting emotional bond between an infant and a caregiver.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.2-strange-situation",
+      "term": "Strange Situation",
+      "definition": "Ainsworth's standardized observation that classifies infant attachment by reactions to separation and reunion.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.2-secure",
+      "term": "Secure attachment",
+      "definition": "The infant is distressed when the caregiver leaves, easily comforted on return, and uses them as a safe base.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.2-insecure-avoidant",
+      "term": "Insecure-avoidant attachment",
+      "definition": "The infant shows little distress at separation and avoids the caregiver on return.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.2-insecure-resistant",
+      "term": "Insecure-resistant attachment",
+      "definition": "The infant is very distressed at separation and both seeks and resists comfort on return.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.2-internal-working-model",
+      "term": "Internal working model",
+      "definition": "Bowlby: a mental template of relationships based on the early attachment.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.2-self-recognition",
+      "term": "Self-recognition",
+      "definition": "Recognising oneself, e.g. in a mirror; usually appears between about 18 and 24 months.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.2-peer-influence",
+      "term": "Peer influence",
+      "definition": "The effect of same-age others on attitudes and behaviour, especially strong in adolescence.",
+      "hl": false
+    },
+    {
+      "id": "psychology-hd.2-deprivation",
+      "term": "Early deprivation",
+      "definition": "Lack of adequate care, stimulation or attachment in early childhood.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-HD.2-1",
+      "title": "Attachment",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HD.2-1-q01",
+          "type": "mcq",
+          "prompt": "Harlow (1958) gave infant rhesus monkeys a wire \"mother\" with milk and a cloth \"mother\" without. They:",
+          "options": [
+            "Spent most time with the wire mother",
+            "Spent most time with the cloth mother",
+            "Ignored both",
+            "Only visited the wire mother when frightened"
+          ],
+          "answer": 1,
+          "explanation": "Contact comfort mattered more than food, challenging learning explanations of attachment.",
+          "terms": [
+            "psychology-hd.2-attachment"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q02",
+          "type": "mcq",
+          "prompt": "In the Strange Situation, which behaviour indicates insecure-avoidant attachment?",
+          "options": [
+            "Intense distress and anger on reunion",
+            "Little distress on separation and avoidance on reunion",
+            "Easy comfort on reunion",
+            "Using the mother as a safe base"
+          ],
+          "answer": 1,
+          "explanation": "Avoidant infants seem independent and avoid contact with the caregiver.",
+          "terms": [
+            "psychology-hd.2-insecure-avoidant",
+            "psychology-hd.2-strange-situation"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q03",
+          "type": "tf",
+          "statement": "Van IJzendoorn and Kroonenberg (1988) found secure attachment was the most common type across the countries they studied.",
+          "answer": true,
+          "explanation": "Their meta-analysis also found more variation within cultures than between them.",
+          "terms": [
+            "psychology-hd.2-secure"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q04",
+          "type": "tf",
+          "statement": "Bowlby argued that the first attachment provides an internal working model for later relationships.",
+          "answer": true,
+          "explanation": "The internal working model is a template for expectations of others.",
+          "terms": [
+            "psychology-hd.2-internal-working-model"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q05",
+          "type": "fill",
+          "text": "Ainsworth's standardized procedure for classifying attachment is the Strange ___.",
+          "answer": "Situation",
+          "bank": [
+            "Situation",
+            "Experiment",
+            "Test",
+            "Room"
+          ],
+          "explanation": "It uses episodes of separation from and reunion with the caregiver.",
+          "terms": [
+            "psychology-hd.2-strange-situation"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q06",
+          "type": "fill",
+          "text": "Infants who both seek and resist comfort on reunion show insecure-___ attachment.",
+          "answer": "resistant",
+          "bank": [
+            "resistant",
+            "avoidant",
+            "secure",
+            "disorganized"
+          ],
+          "explanation": "Also called ambivalent attachment.",
+          "terms": [
+            "psychology-hd.2-insecure-resistant"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q07",
+          "type": "match",
+          "prompt": "Match each attachment type to reunion behaviour.",
+          "pairs": [
+            {
+              "left": "Secure",
+              "right": "Greets caregiver and is soothed"
+            },
+            {
+              "left": "Insecure-avoidant",
+              "right": "Ignores caregiver"
+            },
+            {
+              "left": "Insecure-resistant",
+              "right": "Clings but also resists comfort"
+            },
+            {
+              "left": "Disorganized",
+              "right": "Confused or contradictory behaviour"
+            }
+          ],
+          "explanation": "Main and Solomon (1990) later added the disorganized type.",
+          "terms": [
+            "psychology-hd.2-secure",
+            "psychology-hd.2-insecure-avoidant",
+            "psychology-hd.2-insecure-resistant"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q08",
+          "type": "mcq",
+          "prompt": "Why might the Strange Situation be culturally biased?",
+          "options": [
+            "It was developed with US infants, and behaviours like independence are valued differently across cultures",
+            "It uses brain scans",
+            "It is an interview",
+            "It was only used in Japan"
+          ],
+          "answer": 0,
+          "explanation": "Higher avoidant rates in Germany and resistant rates in Japan may reflect childrearing norms, not insecurity.",
+          "terms": [
+            "psychology-hd.2-strange-situation"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q09",
+          "type": "mcq",
+          "prompt": "A key ethical problem with Harlow's research is that:",
+          "options": [
+            "Monkeys gave consent",
+            "Infant monkeys suffered lasting social and emotional harm",
+            "It used human children",
+            "It used deception"
+          ],
+          "answer": 1,
+          "explanation": "Today the 3Rs would demand strong justification; findings may also not generalize to humans.",
+          "terms": [
+            "psychology-hd.2-attachment"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-1-q10",
+          "type": "order",
+          "prompt": "Order the main episodes of the Strange Situation (simplified).",
+          "items": [
+            "Caregiver and infant enter the room",
+            "Stranger enters",
+            "Caregiver leaves",
+            "Caregiver returns (reunion)"
+          ],
+          "explanation": "Further separations and reunions follow; reunion behaviour is key to classification.",
+          "terms": [
+            "psychology-hd.2-strange-situation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-HD.2-2",
+      "title": "Self, peers and childhood experience",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-HD.2-2-q01",
+          "type": "mcq",
+          "prompt": "In the rouge test (Amsterdam, 1972), most children first touched the mark on their own nose at about:",
+          "options": [
+            "3 months",
+            "6–9 months",
+            "18–24 months",
+            "5 years"
+          ],
+          "answer": 2,
+          "explanation": "Self-recognition typically emerges in the second year.",
+          "terms": [
+            "psychology-hd.2-self-recognition"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q02",
+          "type": "mcq",
+          "prompt": "Gardner and Steinberg (2005) had participants play a driving game alone or with peers watching. Peer presence:",
+          "options": [
+            "Reduced risk-taking for everyone",
+            "Increased risk-taking most in adolescents and young adults",
+            "Only affected adults",
+            "Had no effect"
+          ],
+          "answer": 1,
+          "explanation": "This suggests peer influence on risky decisions is greatest in adolescence.",
+          "terms": [
+            "psychology-hd.2-peer-influence"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q03",
+          "type": "tf",
+          "statement": "Rutter et al. found Romanian orphans adopted into UK families before 6 months showed good catch-up in development.",
+          "answer": true,
+          "explanation": "Those adopted later were more likely to show lasting difficulties, suggesting timing of deprivation matters.",
+          "terms": [
+            "psychology-hd.2-deprivation"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q04",
+          "type": "tf",
+          "statement": "Erikson proposed that adolescence involves a crisis of identity versus role confusion.",
+          "answer": true,
+          "explanation": "Erikson's psychosocial theory is a stage theory of the development of self.",
+          "terms": [
+            "psychology-hd.2-peer-influence"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q05",
+          "type": "fill",
+          "text": "Recognising one's own reflection in a mirror is called self-___.",
+          "answer": "recognition",
+          "bank": [
+            "recognition",
+            "efficacy",
+            "esteem",
+            "identity"
+          ],
+          "explanation": "It is an early sign of a developing self-concept.",
+          "terms": [
+            "psychology-hd.2-self-recognition"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q06",
+          "type": "fill",
+          "text": "A lack of adequate care and stimulation in early childhood is called early ___.",
+          "answer": "deprivation",
+          "bank": [
+            "deprivation",
+            "enrichment",
+            "attachment",
+            "pruning"
+          ],
+          "explanation": "Rutter's study of Romanian orphans examined its effects.",
+          "terms": [
+            "psychology-hd.2-deprivation"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q07",
+          "type": "match",
+          "prompt": "Match each study to its finding.",
+          "pairs": [
+            {
+              "left": "Amsterdam (1972)",
+              "right": "Self-recognition by about two years"
+            },
+            {
+              "left": "Gardner & Steinberg (2005)",
+              "right": "Peers increase adolescent risk-taking"
+            },
+            {
+              "left": "Rutter et al. (1998)",
+              "right": "Early adoption helps recovery from deprivation"
+            },
+            {
+              "left": "Harlow (1958)",
+              "right": "Contact comfort over food"
+            }
+          ],
+          "explanation": "Each shows a different influence on development.",
+          "terms": [
+            "psychology-hd.2-self-recognition",
+            "psychology-hd.2-peer-influence",
+            "psychology-hd.2-deprivation",
+            "psychology-hd.2-attachment"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q08",
+          "type": "mcq",
+          "prompt": "Why is Rutter's study of Romanian orphans a natural experiment?",
+          "options": [
+            "Researchers randomly assigned children to orphanages",
+            "The IV (age at adoption) occurred naturally",
+            "It took place in a lab",
+            "It used animals"
+          ],
+          "answer": 1,
+          "explanation": "It would be unethical to manipulate deprivation; this limits control of other variables.",
+          "terms": [
+            "psychology-hd.2-deprivation"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q09",
+          "type": "mcq",
+          "prompt": "Gardner and Steinberg's driving game may lack:",
+          "options": [
+            "Internal validity",
+            "Ecological validity, since a game is not real driving",
+            "A sample",
+            "A control condition"
+          ],
+          "answer": 1,
+          "explanation": "Real-life risks and consequences were absent.",
+          "terms": [
+            "psychology-hd.2-peer-influence"
+          ]
+        },
+        {
+          "id": "psychology-HD.2-2-q10",
+          "type": "order",
+          "prompt": "Order Erikson's first four psychosocial stages.",
+          "items": [
+            "Trust vs mistrust",
+            "Autonomy vs shame and doubt",
+            "Initiative vs guilt",
+            "Industry vs inferiority"
+          ],
+          "explanation": "Identity vs role confusion follows in adolescence.",
+          "terms": [
+            "psychology-hd.2-peer-influence"
+          ]
+        }
+      ]
+    }
+  ]
+}

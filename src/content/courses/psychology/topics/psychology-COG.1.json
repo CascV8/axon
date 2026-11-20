@@ -1,0 +1,414 @@
+{
+  "id": "psychology-COG.1",
+  "code": "COG.1",
+  "unit": "approaches",
+  "title": "Cognitive approach: schemas and models of memory",
+  "level": "SL",
+  "summary": "How schemas shape what we encode and recall, and how the multi-store and working memory models explain memory.",
+  "keyterms": [
+    {
+      "id": "psychology-cog.1-schema",
+      "term": "Schema",
+      "definition": "A mental framework of knowledge and expectations, built from experience, that guides perception and memory.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-reconstructive-memory",
+      "term": "Reconstructive memory",
+      "definition": "Memory is rebuilt at recall using schemas, so it can be distorted rather than replayed exactly.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-cognitive-model",
+      "term": "Cognitive model",
+      "definition": "A simplified representation of a mental process, used to generate testable predictions.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-msm",
+      "term": "Multi-store model",
+      "definition": "Atkinson & Shiffrin (1968): memory flows from sensory memory to short-term memory to long-term memory.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-stm",
+      "term": "Short-term memory",
+      "definition": "A limited-capacity store holding information for a short time unless it is rehearsed.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-ltm",
+      "term": "Long-term memory",
+      "definition": "A store of potentially unlimited capacity and duration.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-wmm",
+      "term": "Working memory model",
+      "definition": "Baddeley & Hitch (1974): short-term memory as an active system with several components.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-phonological-loop",
+      "term": "Phonological loop",
+      "definition": "The WMM component that holds and rehearses sound-based (verbal) information.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-central-executive",
+      "term": "Central executive",
+      "definition": "The WMM component that controls attention and coordinates the other parts.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.1-serial-position",
+      "term": "Serial position effect",
+      "definition": "Better recall of items at the start (primacy) and end (recency) of a list.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-COG.1-1",
+      "title": "Schema theory",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-COG.1-1-q01",
+          "type": "mcq",
+          "prompt": "In Bartlett (1932), English participants retold \"The War of the Ghosts\". What happened to the story?",
+          "options": [
+            "It became longer and more detailed",
+            "It became shorter and was changed to fit their own cultural expectations",
+            "It was recalled perfectly",
+            "It was forgotten entirely"
+          ],
+          "answer": 1,
+          "explanation": "Unfamiliar details were dropped or rationalised, supporting reconstructive memory shaped by schemas.",
+          "terms": [
+            "psychology-cog.1-schema",
+            "psychology-cog.1-reconstructive-memory"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q02",
+          "type": "mcq",
+          "prompt": "Brewer and Treyens (1981) left participants in an office for about 35 seconds. Many later falsely recalled:",
+          "options": [
+            "A gorilla",
+            "Books, which fit an office schema but were absent",
+            "A skull, which was absent",
+            "Nothing at all"
+          ],
+          "answer": 1,
+          "explanation": "Schema-consistent objects were recalled even when not present, showing schemas fill gaps.",
+          "terms": [
+            "psychology-cog.1-schema",
+            "psychology-cog.1-reconstructive-memory"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q03",
+          "type": "tf",
+          "statement": "Bransford and Johnson (1972) found that giving a title before an ambiguous passage improved comprehension and recall.",
+          "answer": true,
+          "explanation": "The title activated a schema (washing clothes) that helped organise the information.",
+          "terms": [
+            "psychology-cog.1-schema"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q04",
+          "type": "tf",
+          "statement": "Schema theory predicts that memory works like a video recording.",
+          "answer": false,
+          "explanation": "Schema theory sees memory as reconstructive and prone to distortion.",
+          "terms": [
+            "psychology-cog.1-reconstructive-memory"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q05",
+          "type": "fill",
+          "text": "A mental framework that organises knowledge and creates expectations is a ___.",
+          "answer": "schema",
+          "bank": [
+            "schema",
+            "synapse",
+            "stimulus",
+            "heuristic"
+          ],
+          "explanation": "Schemas allow quick processing but can lead to errors and stereotypes.",
+          "terms": [
+            "psychology-cog.1-schema"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q06",
+          "type": "fill",
+          "text": "Bartlett used serial ___, where each person retold the story to the next.",
+          "answer": "reproduction",
+          "bank": [
+            "reproduction",
+            "position",
+            "learning",
+            "recall"
+          ],
+          "explanation": "In serial reproduction each retelling builds on the previous one, revealing distortions.",
+          "terms": [
+            "psychology-cog.1-reconstructive-memory"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q07",
+          "type": "match",
+          "prompt": "Match each study to its finding.",
+          "pairs": [
+            {
+              "left": "Bartlett (1932)",
+              "right": "Stories distorted to fit culture"
+            },
+            {
+              "left": "Brewer & Treyens (1981)",
+              "right": "False recall of schema-expected objects"
+            },
+            {
+              "left": "Bransford & Johnson (1972)",
+              "right": "A title helped comprehension"
+            },
+            {
+              "left": "Darley & Gross (1983)",
+              "right": "Expectations about SES biased ratings"
+            }
+          ],
+          "explanation": "All four show schemas influencing cognition.",
+          "terms": [
+            "psychology-cog.1-schema",
+            "psychology-cog.1-reconstructive-memory"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q08",
+          "type": "mcq",
+          "prompt": "A criticism of schema theory is that:",
+          "options": [
+            "It has no supporting research",
+            "It is hard to observe schemas directly, so they are inferred from behaviour",
+            "It only applies to animals",
+            "It ignores memory"
+          ],
+          "answer": 1,
+          "explanation": "Schemas are hypothetical constructs; this is a measurement issue.",
+          "terms": [
+            "psychology-cog.1-schema"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q09",
+          "type": "mcq",
+          "prompt": "Bartlett's procedure lacked standardization. Why does this matter?",
+          "options": [
+            "It made the study more ethical",
+            "It reduced the reliability of the findings",
+            "It increased the sample size",
+            "It proved causation"
+          ],
+          "answer": 1,
+          "explanation": "Without standard instructions or timings, results are harder to replicate.",
+          "terms": [
+            "psychology-cog.1-reconstructive-memory"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-1-q10",
+          "type": "order",
+          "prompt": "Order how a schema affects memory, according to schema theory.",
+          "items": [
+            "Schema is activated by context",
+            "Attention focuses on schema-consistent information",
+            "Information is encoded in line with the schema",
+            "Recall is reconstructed and may include gaps filled by the schema"
+          ],
+          "explanation": "Schemas influence each stage of processing.",
+          "terms": [
+            "psychology-cog.1-schema",
+            "psychology-cog.1-reconstructive-memory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-COG.1-2",
+      "title": "Models of memory",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-COG.1-2-q01",
+          "type": "mcq",
+          "prompt": "In the multi-store model, information moves from STM to LTM mainly through:",
+          "options": [
+            "Rehearsal",
+            "Forgetting",
+            "Sensory registration only",
+            "Displacement"
+          ],
+          "answer": 0,
+          "explanation": "Atkinson & Shiffrin (1968) proposed rehearsal transfers information to LTM.",
+          "terms": [
+            "psychology-cog.1-msm",
+            "psychology-cog.1-stm"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q02",
+          "type": "mcq",
+          "prompt": "Glanzer and Cunitz (1966) found a 30-second delay before recall removed which effect?",
+          "options": [
+            "Primacy effect",
+            "Recency effect",
+            "Both",
+            "Neither"
+          ],
+          "answer": 1,
+          "explanation": "Recency depends on STM, which is lost during a delay; primacy (rehearsed items in LTM) remained.",
+          "terms": [
+            "psychology-cog.1-serial-position",
+            "psychology-cog.1-stm"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q03",
+          "type": "tf",
+          "statement": "HM's case supports the idea that STM and LTM are separate stores.",
+          "answer": true,
+          "explanation": "His STM was intact but he could not transfer new information to LTM.",
+          "terms": [
+            "psychology-cog.1-msm",
+            "psychology-cog.1-ltm"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q04",
+          "type": "tf",
+          "statement": "The working memory model replaced STM with a single unitary store.",
+          "answer": false,
+          "explanation": "The WMM split STM into several components, unlike the single STM store of the MSM.",
+          "terms": [
+            "psychology-cog.1-wmm"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q05",
+          "type": "fill",
+          "text": "In the working memory model, the ___ loop stores verbal information.",
+          "answer": "phonological",
+          "bank": [
+            "phonological",
+            "visuospatial",
+            "episodic",
+            "executive"
+          ],
+          "explanation": "The phonological loop holds sounds and uses subvocal rehearsal.",
+          "terms": [
+            "psychology-cog.1-phonological-loop"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q06",
+          "type": "fill",
+          "text": "Landry and Bartling (2011) found that repeating \"1, 2\" aloud (articulatory ___) reduced recall of letter lists.",
+          "answer": "suppression",
+          "bank": [
+            "suppression",
+            "rehearsal",
+            "priming",
+            "interference"
+          ],
+          "explanation": "Blocking the phonological loop impaired verbal recall, supporting the WMM.",
+          "terms": [
+            "psychology-cog.1-phonological-loop"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q07",
+          "type": "match",
+          "prompt": "Match each WMM component to its role.",
+          "pairs": [
+            {
+              "left": "Central executive",
+              "right": "Directs attention and coordinates"
+            },
+            {
+              "left": "Phonological loop",
+              "right": "Holds verbal and sound information"
+            },
+            {
+              "left": "Visuospatial sketchpad",
+              "right": "Holds visual and spatial information"
+            },
+            {
+              "left": "Episodic buffer",
+              "right": "Links information across components and LTM"
+            }
+          ],
+          "explanation": "Baddeley added the episodic buffer in 2000.",
+          "terms": [
+            "psychology-cog.1-central-executive",
+            "psychology-cog.1-phonological-loop",
+            "psychology-cog.1-wmm"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q08",
+          "type": "mcq",
+          "prompt": "A limitation of the multi-store model is that:",
+          "options": [
+            "It has no evidence",
+            "It suggests rehearsal is the only route to LTM, but we remember many things we never rehearse",
+            "It includes too many components",
+            "It was based only on culture"
+          ],
+          "answer": 1,
+          "explanation": "Its stores are also oversimplified: STM and LTM have sub-components.",
+          "terms": [
+            "psychology-cog.1-msm"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q09",
+          "type": "mcq",
+          "prompt": "Why is the central executive often criticised?",
+          "options": [
+            "It has been located precisely",
+            "It is vaguely defined and hard to measure",
+            "It is identical to the phonological loop",
+            "It explains everything about LTM"
+          ],
+          "answer": 1,
+          "explanation": "The central executive is a poorly specified construct, a measurement issue for the model.",
+          "terms": [
+            "psychology-cog.1-central-executive"
+          ]
+        },
+        {
+          "id": "psychology-COG.1-2-q10",
+          "type": "order",
+          "prompt": "Order the stages of the multi-store model.",
+          "items": [
+            "Sensory memory",
+            "Attention",
+            "Short-term memory",
+            "Rehearsal",
+            "Long-term memory"
+          ],
+          "explanation": "Attention moves information into STM; rehearsal moves it into LTM.",
+          "terms": [
+            "psychology-cog.1-msm",
+            "psychology-cog.1-stm",
+            "psychology-cog.1-ltm"
+          ]
+        }
+      ]
+    }
+  ]
+}

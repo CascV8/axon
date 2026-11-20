@@ -1,0 +1,43 @@
+[
+  {
+    "id": "psychology-X-health-01",
+    "unit": "health",
+    "topics": ["psychology-HW.1", "psychology-HW.2"],
+    "paper": "P1B",
+    "level": "SL",
+    "title": "Applied scenario: Lina's low mood",
+    "stem": "Lina, 34, moved to a new city for work a year ago. For the past six weeks she has felt low almost every day, stopped enjoying her hobbies, sleeps badly and tells her friend, \"I mess everything up and it will never get better.\" Her father and her aunt have both been treated for depression. She lives alone and has not made close friends in the new city.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Explain",
+        "prompt": "Explain how one explanation of a mental health disorder could apply to Lina.",
+        "marks": 6,
+        "markscheme": [
+          "an explanation is identified and outlined, e.g. the diathesis-stress model / Beck's cognitive model / Brown & Harris's vulnerability factors",
+          "applied to the scenario: family history suggests a possible genetic predisposition (diathesis)",
+          "applied to the scenario: the move and isolation act as stressors / life events",
+          "relevant research used as support, e.g. Caspi et al. (2003): short 5-HTT alleles + stressful life events predicted depression / Kendler et al. (2006) twin heritability",
+          "OR cognitive: \"I mess everything up\" (self) and \"never get better\" (future) are examples of the cognitive triad (Beck, 1967); Alloy et al. (1999) as support",
+          "the explanation is consistently linked to details in the scenario rather than described generically",
+          "Allow combined biological and environmental explanations if clearly applied"
+        ],
+        "notes": "Generic description of a theory without reference to Lina's situation should be limited to about 3 marks."
+      },
+      {
+        "label": "b",
+        "command": "Explain",
+        "prompt": "Explain how one treatment might help Lina.",
+        "marks": 6,
+        "markscheme": [
+          "a treatment is identified, e.g. CBT or an SSRI",
+          "how it works: CBT identifies and challenges automatic negative thoughts / SSRIs block serotonin reuptake",
+          "applied: e.g. a therapist could help Lina test the belief that she \"messes everything up\" and plan social activities in the new city",
+          "evidence of effectiveness, e.g. DeRubeis et al. (2005) CBT as effective as medication; March et al. (2004) TADS combined treatment best (adolescents)",
+          "a limitation or consideration relevant to Lina, e.g. CBT needs motivation and time / SSRIs take weeks and have side effects",
+          "conclusion about suitability for Lina"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,418 @@
+{
+  "id": "psychology-RM.3",
+  "code": "RM.3",
+  "unit": "methods",
+  "title": "Data analysis and interpretation",
+  "level": "SL",
+  "summary": "Descriptive statistics, graphs, significance and effect size, and (HL) interpreting quantitative and qualitative sources together.",
+  "keyterms": [
+    {
+      "id": "psychology-rm.3-mean",
+      "term": "Mean",
+      "definition": "The arithmetic average: total of the scores divided by the number of scores.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-median",
+      "term": "Median",
+      "definition": "The middle score when data are in order; less affected by extreme values.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-mode",
+      "term": "Mode",
+      "definition": "The most frequent score.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-standard-deviation",
+      "term": "Standard deviation",
+      "definition": "A measure of spread showing how far scores vary around the mean.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-bar-chart",
+      "term": "Bar chart",
+      "definition": "A graph comparing values (e.g. means) of separate categories or conditions.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-significance",
+      "term": "Statistical significance",
+      "definition": "The probability that a result occurred by chance is low enough (often p ≤ 0.05) to reject the null hypothesis.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-null-hypothesis",
+      "term": "Null hypothesis",
+      "definition": "The prediction that there is no difference or relationship between variables.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-effect-size",
+      "term": "Effect size",
+      "definition": "How large a difference or relationship is, independent of sample size.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-correlation-coefficient",
+      "term": "Correlation coefficient",
+      "definition": "A number from −1 to +1 showing strength and direction of a correlation.",
+      "hl": false
+    },
+    {
+      "id": "psychology-rm.3-meta-analysis",
+      "term": "Meta-analysis",
+      "definition": "Combining results of many studies statistically to find an overall effect.",
+      "hl": true
+    },
+    {
+      "id": "psychology-rm.3-synthesis",
+      "term": "Synthesis",
+      "definition": "Combining evidence from several sources to reach an overall, justified conclusion.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-RM.3-1",
+      "title": "Descriptive statistics and graphs",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-RM.3-1-q01",
+          "type": "mcq",
+          "prompt": "Scores: 2, 3, 3, 4, 18. Which measure of central tendency best represents the data?",
+          "options": [
+            "Mean",
+            "Median",
+            "Range",
+            "Standard deviation"
+          ],
+          "answer": 1,
+          "explanation": "The outlier (18) distorts the mean; the median (3) is more representative.",
+          "terms": [
+            "psychology-rm.3-median",
+            "psychology-rm.3-mean"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q02",
+          "type": "mcq",
+          "prompt": "Two groups have the same mean but group A has a much larger standard deviation. This means:",
+          "options": [
+            "Group A scores are more spread out",
+            "Group A scored higher",
+            "Group A is more reliable",
+            "The groups are identical"
+          ],
+          "answer": 0,
+          "explanation": "SD measures spread around the mean.",
+          "terms": [
+            "psychology-rm.3-standard-deviation"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q03",
+          "type": "tf",
+          "statement": "A bar chart is suitable for comparing mean scores of two experimental conditions.",
+          "answer": true,
+          "explanation": "Conditions are separate categories, so bars (not a histogram or line) are appropriate.",
+          "terms": [
+            "psychology-rm.3-bar-chart"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q04",
+          "type": "tf",
+          "statement": "A result with p = 0.20 is usually considered statistically significant in psychology.",
+          "answer": false,
+          "explanation": "The usual threshold is p ≤ 0.05.",
+          "terms": [
+            "psychology-rm.3-significance"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q05",
+          "type": "fill",
+          "text": "The mean of 4, 6, 8 and 10 is ___.",
+          "answer": "7",
+          "bank": [
+            "7",
+            "6",
+            "8",
+            "28"
+          ],
+          "explanation": "(4 + 6 + 8 + 10) / 4 = 28 / 4 = 7.",
+          "terms": [
+            "psychology-rm.3-mean"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q06",
+          "type": "fill",
+          "text": "The prediction that the IV has no effect on the DV is the ___ hypothesis.",
+          "answer": "null",
+          "bank": [
+            "null",
+            "directional",
+            "alternative",
+            "research"
+          ],
+          "explanation": "Statistical tests check whether the null can be rejected.",
+          "terms": [
+            "psychology-rm.3-null-hypothesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q07",
+          "type": "match",
+          "prompt": "Match each statistic to its purpose.",
+          "pairs": [
+            {
+              "left": "Mean",
+              "right": "Average of all scores"
+            },
+            {
+              "left": "Median",
+              "right": "Middle value"
+            },
+            {
+              "left": "Mode",
+              "right": "Most common value"
+            },
+            {
+              "left": "Standard deviation",
+              "right": "Spread around the mean"
+            }
+          ],
+          "explanation": "Report a measure of central tendency with a measure of spread.",
+          "terms": [
+            "psychology-rm.3-mean",
+            "psychology-rm.3-median",
+            "psychology-rm.3-mode",
+            "psychology-rm.3-standard-deviation"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q08",
+          "type": "mcq",
+          "prompt": "A correlation of r = +0.15 between two variables is:",
+          "options": [
+            "Strong positive",
+            "Weak positive",
+            "Strong negative",
+            "Proof of causation"
+          ],
+          "answer": 1,
+          "explanation": "Values close to 0 indicate weak relationships.",
+          "terms": [
+            "psychology-rm.3-correlation-coefficient"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q09",
+          "type": "mcq",
+          "prompt": "Why report an effect size as well as significance?",
+          "options": [
+            "Significance shows how large an effect is",
+            "With a very large sample, tiny effects can be significant",
+            "Effect size replaces the need for a hypothesis",
+            "It removes bias"
+          ],
+          "answer": 1,
+          "explanation": "Effect size tells you whether a difference is meaningful in practice.",
+          "terms": [
+            "psychology-rm.3-effect-size",
+            "psychology-rm.3-significance"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-1-q10",
+          "type": "order",
+          "prompt": "Order these steps for analysing experimental data.",
+          "items": [
+            "Organize raw data in a table",
+            "Calculate descriptive statistics",
+            "Draw an appropriate graph",
+            "Apply an inferential test",
+            "State whether to reject the null hypothesis"
+          ],
+          "explanation": "Description comes before inference.",
+          "terms": [
+            "psychology-rm.3-mean",
+            "psychology-rm.3-null-hypothesis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-RM.3-2",
+      "title": "HL: interpreting multiple sources",
+      "hl": true,
+      "questions": [
+        {
+          "id": "psychology-RM.3-2-q01",
+          "type": "mcq",
+          "prompt": "A source shows a meta-analysis of 40 studies; another is a single interview with one teenager. How should they be weighed when synthesizing?",
+          "options": [
+            "Ignore the interview",
+            "Use the meta-analysis for the overall trend and the interview for insight into experience, noting its limited transferability",
+            "Treat them as identical evidence",
+            "Trust the interview more because it is detailed"
+          ],
+          "answer": 1,
+          "explanation": "Good synthesis uses each source for what it can show.",
+          "terms": [
+            "psychology-rm.3-meta-analysis",
+            "psychology-rm.3-synthesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q02",
+          "type": "mcq",
+          "prompt": "A graph shows anxiety falling over 8 weeks in a therapy group and a control group, but more in the therapy group. The best interpretation is:",
+          "options": [
+            "Therapy had no effect",
+            "Both groups improved, but the therapy group improved more, suggesting an added effect of therapy",
+            "Time alone explains everything",
+            "The control group received therapy"
+          ],
+          "answer": 1,
+          "explanation": "Comparing with the control separates the therapy effect from change over time.",
+          "terms": [
+            "psychology-rm.3-synthesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q03",
+          "type": "tf",
+          "statement": "A meta-analysis can be biased if studies with non-significant results were never published.",
+          "answer": true,
+          "explanation": "Publication bias inflates the overall effect.",
+          "terms": [
+            "psychology-rm.3-meta-analysis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q04",
+          "type": "tf",
+          "statement": "When sources disagree, a strong synthesis should ignore the source that does not fit.",
+          "answer": false,
+          "explanation": "Strong answers explain disagreements, e.g. by differences in samples, methods or culture.",
+          "terms": [
+            "psychology-rm.3-synthesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q05",
+          "type": "fill",
+          "text": "Combining evidence from several sources to reach an overall judgement is called ___.",
+          "answer": "synthesis",
+          "bank": [
+            "synthesis",
+            "analysis",
+            "description",
+            "replication"
+          ],
+          "explanation": "Synthesis questions require at least several sources plus your own knowledge.",
+          "terms": [
+            "psychology-rm.3-synthesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q06",
+          "type": "fill",
+          "text": "A statistical method that combines the results of many studies is a ___.",
+          "answer": "meta-analysis",
+          "bank": [
+            "meta-analysis",
+            "case study",
+            "pilot study",
+            "focus group"
+          ],
+          "explanation": "Meta-analyses give an overall effect size.",
+          "terms": [
+            "psychology-rm.3-meta-analysis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q07",
+          "type": "match",
+          "prompt": "Match each source type to a key question you should ask about it.",
+          "pairs": [
+            {
+              "left": "Experiment",
+              "right": "Were extraneous variables controlled?"
+            },
+            {
+              "left": "Survey",
+              "right": "Is the sample representative?"
+            },
+            {
+              "left": "Interview",
+              "right": "Is the analysis credible and reflexive?"
+            },
+            {
+              "left": "Meta-analysis",
+              "right": "Could publication bias inflate the effect?"
+            }
+          ],
+          "explanation": "Evaluation questions depend on the method.",
+          "terms": [
+            "psychology-rm.3-meta-analysis",
+            "psychology-rm.3-synthesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q08",
+          "type": "mcq",
+          "prompt": "A table reports mean scores but no measure of spread. What is the main problem?",
+          "options": [
+            "You cannot tell whether the difference is large relative to variation",
+            "The means are wrong",
+            "The table is unethical",
+            "No conclusion is ever possible"
+          ],
+          "answer": 0,
+          "explanation": "Without SD or range, overlap between groups is unknown.",
+          "terms": [
+            "psychology-rm.3-synthesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q09",
+          "type": "mcq",
+          "prompt": "An interview study in one community finds a theme that a large survey in another country did not. A good interpretation is:",
+          "options": [
+            "The survey is wrong",
+            "The theme may be culturally specific, or the survey questions may not capture it",
+            "The interview is fabricated",
+            "Both are irrelevant"
+          ],
+          "answer": 1,
+          "explanation": "Differences in method and culture can explain different findings.",
+          "terms": [
+            "psychology-rm.3-synthesis"
+          ]
+        },
+        {
+          "id": "psychology-RM.3-2-q10",
+          "type": "order",
+          "prompt": "Order a strong approach to a source-synthesis question.",
+          "items": [
+            "Identify what each source shows",
+            "Evaluate each source's method",
+            "Compare where sources agree and disagree",
+            "Add relevant own knowledge",
+            "Reach a justified conclusion"
+          ],
+          "explanation": "A justified conclusion weighs the evidence rather than listing it.",
+          "terms": [
+            "psychology-rm.3-synthesis"
+          ]
+        }
+      ]
+    }
+  ]
+}

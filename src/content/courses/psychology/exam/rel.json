@@ -1,0 +1,44 @@
+[
+  {
+    "id": "psychology-X-rel-01",
+    "unit": "rel",
+    "topics": ["psychology-HR.1", "psychology-SOC.1"],
+    "paper": "P1C",
+    "level": "SL",
+    "title": "Extended response: group behaviour and bias",
+    "stem": "Section C concept-based extended response. In the real paper this is one 15-mark essay; here it is split into a knowledge part and an evaluation part.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Outline",
+        "prompt": "Outline one theory that explains conflict between groups.",
+        "marks": 5,
+        "markscheme": [
+          "theory identified, e.g. social identity theory (Tajfel & Turner, 1979) or realistic conflict theory (Sherif)",
+          "key processes described, e.g. categorization, identification, comparison / competition for limited resources",
+          "how this leads to in-group favouritism or hostility",
+          "supporting study outlined, e.g. Tajfel et al. (1971) minimal groups / Sherif et al. Robbers Cave",
+          "clear link from the study to the theory"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "To what extent",
+        "prompt": "To what extent does bias in research limit our understanding of group behaviour?",
+        "marks": 10,
+        "markscheme": [
+          "the concept of bias is clearly defined (e.g. sampling, cultural, researcher bias, demand characteristics)",
+          "sampling bias: e.g. Robbers Cave used a small group of similar boys; Tajfel used Bristol schoolboys",
+          "cultural bias: e.g. findings from Western samples may not generalize; Bond & Smith (1996) show conformity varies with culture",
+          "demand characteristics: e.g. in minimal group studies participants may have guessed they were expected to favour their group",
+          "researcher bias / ethics: Sherif's team engineered conflict and interpreted observations",
+          "counterpoint: replications across samples and methods (e.g. many minimal group replications) reduce the impact of bias",
+          "counterpoint: field settings increase ecological validity even if control is lower",
+          "balanced judgement answering \"to what extent\" with justification",
+          "well-organized response using research as evidence throughout"
+        ],
+        "notes": "Top answers use bias as the organising concept rather than listing study details."
+      }
+    ]
+  }
+]

@@ -1,0 +1,422 @@
+{
+  "id": "psychology-BIO.1",
+  "code": "BIO.1",
+  "unit": "approaches",
+  "title": "Biological approach: the brain",
+  "level": "SL",
+  "summary": "Localization of function, how brain imaging techniques work, and how experience reshapes the brain through neuroplasticity.",
+  "keyterms": [
+    {
+      "id": "psychology-bio.1-localization",
+      "term": "Localization of function",
+      "definition": "The idea that specific brain areas are responsible for specific functions, such as Broca's area for speech production.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-brocas-area",
+      "term": "Broca's area",
+      "definition": "A region of the left frontal lobe involved in speech production; damage causes difficulty producing fluent speech.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-hippocampus",
+      "term": "Hippocampus",
+      "definition": "A medial temporal lobe structure involved in forming new long-term (declarative) memories and spatial navigation.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-mri",
+      "term": "MRI",
+      "definition": "Magnetic resonance imaging: produces detailed images of brain structure.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-fmri",
+      "term": "fMRI",
+      "definition": "Functional MRI: measures changes in blood oxygenation to show which brain areas are more active during a task.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-eeg",
+      "term": "EEG",
+      "definition": "Electroencephalography: electrodes on the scalp record electrical activity; excellent timing but poor spatial detail.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-pet",
+      "term": "PET",
+      "definition": "Positron emission tomography: tracks a radioactive tracer to show brain activity; invasive and slow.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-neuroplasticity",
+      "term": "Neuroplasticity",
+      "definition": "The brain's ability to change its structure and function in response to experience, learning or injury.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-synaptic-pruning",
+      "term": "Synaptic pruning",
+      "definition": "The removal of rarely used synaptic connections, making neural networks more efficient.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-neural-networks",
+      "term": "Neural network",
+      "definition": "A group of interconnected neurons that fire together; repeated activation strengthens the connections.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.1-animal-models",
+      "term": "Animal research",
+      "definition": "Studying animals to test biological hypotheses that would be unethical or impossible in humans; raises generalization and ethical issues.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-BIO.1-1",
+      "title": "Localization and brain imaging",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-BIO.1-1-q01",
+          "type": "mcq",
+          "prompt": "Scoville and Milner (1957) described patient HM after removal of parts of both medial temporal lobes. What was the main result?",
+          "options": [
+            "He lost all memories from childhood",
+            "He could no longer form new long-term declarative memories",
+            "He could no longer speak",
+            "He lost his short-term memory completely"
+          ],
+          "answer": 1,
+          "explanation": "HM had severe anterograde amnesia but intact short-term memory, supporting the role of the hippocampus in forming new long-term memories.",
+          "terms": [
+            "psychology-bio.1-hippocampus",
+            "psychology-bio.1-localization"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q02",
+          "type": "mcq",
+          "prompt": "Broca's patient \"Tan\" (1861) understood speech but could barely speak. Post-mortem damage was found in the:",
+          "options": [
+            "Left frontal lobe",
+            "Right occipital lobe",
+            "Cerebellum",
+            "Hippocampus"
+          ],
+          "answer": 0,
+          "explanation": "This supported the localization of speech production to Broca's area in the left frontal lobe.",
+          "terms": [
+            "psychology-bio.1-brocas-area",
+            "psychology-bio.1-localization"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q03",
+          "type": "tf",
+          "statement": "HM could still learn new motor skills, such as mirror drawing, even though he did not remember practising.",
+          "answer": true,
+          "explanation": "Procedural memory relies on different structures, showing that memory types are localized differently.",
+          "terms": [
+            "psychology-bio.1-hippocampus"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q04",
+          "type": "tf",
+          "statement": "fMRI directly measures the firing of individual neurons.",
+          "answer": false,
+          "explanation": "fMRI measures blood oxygenation (the BOLD signal), an indirect marker of neural activity.",
+          "terms": [
+            "psychology-bio.1-fmri"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q05",
+          "type": "fill",
+          "text": "Maguire et al. (2000) used ___ to compare the hippocampi of London taxi drivers with controls.",
+          "answer": "MRI",
+          "bank": [
+            "MRI",
+            "EEG",
+            "PET",
+            "a questionnaire"
+          ],
+          "explanation": "Structural MRI showed taxi drivers had larger posterior hippocampi.",
+          "terms": [
+            "psychology-bio.1-mri"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q06",
+          "type": "fill",
+          "text": "The imaging technique with the best temporal resolution (timing) is ___.",
+          "answer": "EEG",
+          "bank": [
+            "EEG",
+            "MRI",
+            "PET",
+            "CT"
+          ],
+          "explanation": "EEG records electrical activity in milliseconds, but cannot locate activity precisely.",
+          "terms": [
+            "psychology-bio.1-eeg"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q07",
+          "type": "match",
+          "prompt": "Match each technique to what it shows best.",
+          "pairs": [
+            {
+              "left": "MRI",
+              "right": "Detailed brain structure"
+            },
+            {
+              "left": "fMRI",
+              "right": "Activity during a task via blood oxygen"
+            },
+            {
+              "left": "EEG",
+              "right": "Electrical activity with precise timing"
+            },
+            {
+              "left": "PET",
+              "right": "Activity using a radioactive tracer"
+            }
+          ],
+          "explanation": "Choosing a technique is a measurement decision: each has strengths and limits.",
+          "terms": [
+            "psychology-bio.1-mri",
+            "psychology-bio.1-fmri",
+            "psychology-bio.1-eeg",
+            "psychology-bio.1-pet"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q08",
+          "type": "mcq",
+          "prompt": "Which is a limitation of using brain imaging to study localization?",
+          "options": [
+            "It is always unethical",
+            "Activity in an area shows correlation with a task, not that the area alone causes the behaviour",
+            "It cannot show any brain structures",
+            "It only works on animals"
+          ],
+          "answer": 1,
+          "explanation": "Many areas are active in any task, and imaging is correlational, so causal claims are limited.",
+          "terms": [
+            "psychology-bio.1-fmri",
+            "psychology-bio.1-localization"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q09",
+          "type": "mcq",
+          "prompt": "Why might case studies of brain damage, like HM, be hard to generalize?",
+          "options": [
+            "They use large random samples",
+            "Damage is unique to the individual and the brain may have changed before or after",
+            "They have no qualitative data",
+            "They are always lab experiments"
+          ],
+          "answer": 1,
+          "explanation": "One person's damage and history are unique, so findings may not apply to everyone.",
+          "terms": [
+            "psychology-bio.1-localization"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-1-q10",
+          "type": "order",
+          "prompt": "Order these techniques from best to worst spatial resolution (roughly).",
+          "items": [
+            "MRI",
+            "fMRI",
+            "PET",
+            "EEG"
+          ],
+          "explanation": "Structural MRI shows fine detail; EEG records from the scalp and is poorest at locating activity.",
+          "terms": [
+            "psychology-bio.1-mri",
+            "psychology-bio.1-fmri",
+            "psychology-bio.1-pet",
+            "psychology-bio.1-eeg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-BIO.1-2",
+      "title": "Neuroplasticity",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-BIO.1-2-q01",
+          "type": "mcq",
+          "prompt": "Maguire et al. (2000) found that taxi drivers' posterior hippocampal volume:",
+          "options": [
+            "Was smaller than controls",
+            "Correlated positively with years spent as a taxi driver",
+            "Was unrelated to experience",
+            "Was only larger in women"
+          ],
+          "answer": 1,
+          "explanation": "The correlation with time driving suggests experience changed the brain, though the study was quasi-experimental.",
+          "terms": [
+            "psychology-bio.1-neuroplasticity",
+            "psychology-bio.1-hippocampus"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q02",
+          "type": "mcq",
+          "prompt": "Draganski et al. (2004) taught participants to juggle for three months. What happened?",
+          "options": [
+            "Grey matter in motion-processing areas increased, then decreased after they stopped",
+            "No brain change was found",
+            "The hippocampus shrank permanently",
+            "Only EEG patterns changed"
+          ],
+          "answer": 0,
+          "explanation": "This experiment shows learning-related plasticity and \"use it or lose it\".",
+          "terms": [
+            "psychology-bio.1-neuroplasticity"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q03",
+          "type": "tf",
+          "statement": "Draganski et al. (2004) is stronger evidence for causation than Maguire et al. (2000) because the brain was scanned before and after learning.",
+          "answer": true,
+          "explanation": "The pre–post design shows the change followed learning, whereas Maguire compared existing groups.",
+          "terms": [
+            "psychology-bio.1-neuroplasticity"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q04",
+          "type": "tf",
+          "statement": "Synaptic pruning is a sign of brain damage.",
+          "answer": false,
+          "explanation": "Pruning is a normal process that removes unused connections to make networks more efficient.",
+          "terms": [
+            "psychology-bio.1-synaptic-pruning"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q05",
+          "type": "fill",
+          "text": "Rosenzweig, Bennett and Diamond (1972) found rats raised in ___ environments developed a heavier cortex.",
+          "answer": "enriched",
+          "bank": [
+            "enriched",
+            "deprived",
+            "isolated",
+            "dark"
+          ],
+          "explanation": "Toys, companions and challenges stimulated cortical growth, an animal model of plasticity.",
+          "terms": [
+            "psychology-bio.1-animal-models",
+            "psychology-bio.1-neuroplasticity"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q06",
+          "type": "fill",
+          "text": "\"Neurons that fire together, wire together\" describes how ___ networks are strengthened.",
+          "answer": "neural",
+          "bank": [
+            "neural",
+            "cultural",
+            "social",
+            "genetic"
+          ],
+          "explanation": "Repeated co-activation strengthens synaptic connections (long-term potentiation).",
+          "terms": [
+            "psychology-bio.1-neural-networks"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q07",
+          "type": "match",
+          "prompt": "Match each study to its finding.",
+          "pairs": [
+            {
+              "left": "Maguire et al. (2000)",
+              "right": "Larger posterior hippocampus in taxi drivers"
+            },
+            {
+              "left": "Draganski et al. (2004)",
+              "right": "Juggling increased grey matter"
+            },
+            {
+              "left": "Rosenzweig et al. (1972)",
+              "right": "Enriched rats had a heavier cortex"
+            },
+            {
+              "left": "Scoville & Milner (1957)",
+              "right": "HM could not form new memories"
+            }
+          ],
+          "explanation": "Three show plasticity; HM shows localization of memory.",
+          "terms": [
+            "psychology-bio.1-neuroplasticity",
+            "psychology-bio.1-animal-models",
+            "psychology-bio.1-hippocampus"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q08",
+          "type": "mcq",
+          "prompt": "A limitation of generalizing Rosenzweig et al. (1972) to humans is that:",
+          "options": [
+            "Rats were not randomly allocated",
+            "Rat brains and environments differ from humans'",
+            "It used brain imaging",
+            "It used human volunteers"
+          ],
+          "answer": 1,
+          "explanation": "Animal research allows control and invasive measures, but species differences limit generalization.",
+          "terms": [
+            "psychology-bio.1-animal-models"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q09",
+          "type": "mcq",
+          "prompt": "Which is a sample limitation of Maguire et al. (2000)?",
+          "options": [
+            "It used thousands of participants",
+            "Only 16 right-handed male taxi drivers were studied",
+            "It used children only",
+            "It was a field experiment"
+          ],
+          "answer": 1,
+          "explanation": "A small, all-male sample limits generalization.",
+          "terms": [
+            "psychology-bio.1-neuroplasticity"
+          ]
+        },
+        {
+          "id": "psychology-BIO.1-2-q10",
+          "type": "order",
+          "prompt": "Order the steps of neuroplasticity during learning.",
+          "items": [
+            "A new skill is practised",
+            "The same neurons are repeatedly activated together",
+            "Synaptic connections strengthen and networks form",
+            "Unused connections are pruned"
+          ],
+          "explanation": "Practice strengthens used pathways while unused ones are pruned.",
+          "terms": [
+            "psychology-bio.1-neural-networks",
+            "psychology-bio.1-synaptic-pruning"
+          ]
+        }
+      ]
+    }
+  ]
+}

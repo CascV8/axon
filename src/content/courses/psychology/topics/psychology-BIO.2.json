@@ -1,0 +1,419 @@
+{
+  "id": "psychology-BIO.2",
+  "code": "BIO.2",
+  "unit": "approaches",
+  "title": "Biological approach: chemical messengers and genes",
+  "level": "SL",
+  "summary": "How neurotransmitters, hormones and pheromones influence behaviour, how far behaviour is inherited, and the diathesis-stress model.",
+  "keyterms": [
+    {
+      "id": "psychology-bio.2-neurotransmitter",
+      "term": "Neurotransmitter",
+      "definition": "A chemical released across a synapse that passes a signal from one neuron to another, e.g. serotonin, dopamine, acetylcholine.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-synapse",
+      "term": "Synapse",
+      "definition": "The gap between neurons across which neurotransmitters travel to bind to receptors.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-agonist",
+      "term": "Agonist",
+      "definition": "A substance that increases or mimics the action of a neurotransmitter.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-antagonist",
+      "term": "Antagonist",
+      "definition": "A substance that blocks or reduces the action of a neurotransmitter.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-hormone",
+      "term": "Hormone",
+      "definition": "A chemical secreted by glands into the bloodstream that affects target organs, e.g. cortisol, oxytocin.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-pheromone",
+      "term": "Pheromone",
+      "definition": "A chemical released outside the body that may affect the behaviour of others of the same species.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-heritability",
+      "term": "Heritability",
+      "definition": "The proportion of variation in a trait within a population that can be attributed to genetic differences.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-twin-study",
+      "term": "Twin study",
+      "definition": "Comparing concordance between identical (MZ) and non-identical (DZ) twins to estimate genetic influence.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-concordance",
+      "term": "Concordance rate",
+      "definition": "The percentage of twin pairs in which both twins show the same trait or disorder.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-diathesis-stress",
+      "term": "Diathesis-stress model",
+      "definition": "A disorder develops when a predisposition (diathesis) combines with environmental stress.",
+      "hl": false
+    },
+    {
+      "id": "psychology-bio.2-epigenetics",
+      "term": "Epigenetics",
+      "definition": "Changes in whether genes are expressed, caused by environment, without changes to the DNA sequence.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-BIO.2-1",
+      "title": "Neurotransmitters, hormones and pheromones",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-BIO.2-1-q01",
+          "type": "mcq",
+          "prompt": "Antonova et al. (2011) gave participants scopolamine before a spatial memory task. What does scopolamine do?",
+          "options": [
+            "It is an acetylcholine antagonist",
+            "It is a serotonin agonist",
+            "It increases cortisol",
+            "It is a dopamine agonist"
+          ],
+          "answer": 0,
+          "explanation": "Scopolamine blocks acetylcholine receptors; it reduced hippocampal activation during memory encoding.",
+          "terms": [
+            "psychology-bio.2-antagonist",
+            "psychology-bio.2-neurotransmitter"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q02",
+          "type": "mcq",
+          "prompt": "Kosfeld et al. (2005) gave men intranasal oxytocin or a placebo before a trust game. Result?",
+          "options": [
+            "No difference",
+            "Oxytocin increased the money investors entrusted to a human trustee",
+            "Oxytocin reduced trust",
+            "Oxytocin increased risk-taking against a computer"
+          ],
+          "answer": 1,
+          "explanation": "Oxytocin increased trust in people but not general risk-taking with a computer.",
+          "terms": [
+            "psychology-bio.2-hormone"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q03",
+          "type": "tf",
+          "statement": "Hormones travel in the bloodstream, whereas neurotransmitters act across synapses.",
+          "answer": true,
+          "explanation": "This is why hormonal effects are usually slower and longer-lasting.",
+          "terms": [
+            "psychology-bio.2-hormone",
+            "psychology-bio.2-neurotransmitter"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q04",
+          "type": "tf",
+          "statement": "Wedekind et al. (1995) found women preferred the smell of T-shirts worn by men with MHC genes similar to their own.",
+          "answer": false,
+          "explanation": "They preferred men with dissimilar MHC genes, except women taking the contraceptive pill, whose preference reversed.",
+          "terms": [
+            "psychology-bio.2-pheromone"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q05",
+          "type": "fill",
+          "text": "A drug that blocks a neurotransmitter's receptors is an ___.",
+          "answer": "antagonist",
+          "bank": [
+            "antagonist",
+            "agonist",
+            "enzyme",
+            "hormone"
+          ],
+          "explanation": "Agonists enhance, antagonists block.",
+          "terms": [
+            "psychology-bio.2-antagonist",
+            "psychology-bio.2-agonist"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q06",
+          "type": "fill",
+          "text": "Crockett et al. (2010) found that boosting serotonin with citalopram made participants more averse to causing ___ in moral dilemmas.",
+          "answer": "harm",
+          "bank": [
+            "harm",
+            "fear",
+            "boredom",
+            "surprise"
+          ],
+          "explanation": "Raising serotonin increased harm aversion, showing a neurotransmitter influencing moral judgement.",
+          "terms": [
+            "psychology-bio.2-neurotransmitter",
+            "psychology-bio.2-agonist"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q07",
+          "type": "match",
+          "prompt": "Match each chemical messenger to its type.",
+          "pairs": [
+            {
+              "left": "Acetylcholine",
+              "right": "Neurotransmitter linked to memory"
+            },
+            {
+              "left": "Cortisol",
+              "right": "Stress hormone"
+            },
+            {
+              "left": "Oxytocin",
+              "right": "Hormone linked to trust and bonding"
+            },
+            {
+              "left": "Serotonin",
+              "right": "Neurotransmitter linked to mood"
+            }
+          ],
+          "explanation": "Some chemicals (like oxytocin) act as both hormones and neurotransmitters.",
+          "terms": [
+            "psychology-bio.2-neurotransmitter",
+            "psychology-bio.2-hormone"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q08",
+          "type": "mcq",
+          "prompt": "Newcomer et al. (1999) gave participants high doses of cortisol for four days. What happened to verbal declarative memory?",
+          "options": [
+            "It improved",
+            "It was impaired, then recovered after the drug stopped",
+            "It was permanently damaged",
+            "It was unaffected"
+          ],
+          "answer": 1,
+          "explanation": "High cortisol, like chronic stress, impaired memory; the effect was reversible.",
+          "terms": [
+            "psychology-bio.2-hormone"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q09",
+          "type": "mcq",
+          "prompt": "Why is research on human pheromones controversial?",
+          "options": [
+            "No studies have been done",
+            "A specific human pheromone has not been reliably identified",
+            "Pheromones only work in plants",
+            "They are illegal to study"
+          ],
+          "answer": 1,
+          "explanation": "Findings like Wedekind's are interesting but often hard to replicate, and no human pheromone is confirmed.",
+          "terms": [
+            "psychology-bio.2-pheromone"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-1-q10",
+          "type": "order",
+          "prompt": "Order the steps of synaptic transmission.",
+          "items": [
+            "Action potential reaches the axon terminal",
+            "Neurotransmitter is released into the synapse",
+            "Neurotransmitter binds to receptors on the next neuron",
+            "Neurotransmitter is reabsorbed or broken down"
+          ],
+          "explanation": "Reuptake ends the signal; SSRIs act by blocking serotonin reuptake.",
+          "terms": [
+            "psychology-bio.2-synapse",
+            "psychology-bio.2-neurotransmitter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-BIO.2-2",
+      "title": "Genes, inheritance and diathesis-stress",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-BIO.2-2-q01",
+          "type": "mcq",
+          "prompt": "In twin studies, genetic influence is suggested when:",
+          "options": [
+            "DZ concordance is higher than MZ",
+            "MZ concordance is higher than DZ",
+            "Both are 0%",
+            "Twins are raised together"
+          ],
+          "answer": 1,
+          "explanation": "MZ twins share about 100% of genes and DZ about 50%, so higher MZ concordance points to genetic influence.",
+          "terms": [
+            "psychology-bio.2-twin-study",
+            "psychology-bio.2-concordance"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q02",
+          "type": "mcq",
+          "prompt": "Bouchard et al. (1990) studied twins reared apart. They estimated that about how much of the variance in IQ was genetic?",
+          "options": [
+            "About 10%",
+            "About 30%",
+            "About 70%",
+            "100%"
+          ],
+          "answer": 2,
+          "explanation": "The Minnesota study estimated about 70%, though the sample was self-selected and twins often had similar environments.",
+          "terms": [
+            "psychology-bio.2-heritability"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q03",
+          "type": "tf",
+          "statement": "A heritability of 0.4 means 40% of a person's depression is caused by genes.",
+          "answer": false,
+          "explanation": "Heritability describes variation in a population, not how much of one individual's trait is genetic.",
+          "terms": [
+            "psychology-bio.2-heritability"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q04",
+          "type": "tf",
+          "statement": "Caspi et al. (2003) found people with short 5-HTT alleles were more likely to become depressed only if they had experienced many stressful life events.",
+          "answer": true,
+          "explanation": "This gene–environment interaction supports the diathesis-stress model.",
+          "terms": [
+            "psychology-bio.2-diathesis-stress"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q05",
+          "type": "fill",
+          "text": "In the diathesis-stress model, the inherited vulnerability is called the ___.",
+          "answer": "diathesis",
+          "bank": [
+            "diathesis",
+            "stressor",
+            "allele",
+            "phenotype"
+          ],
+          "explanation": "The diathesis only leads to a disorder when combined with stress.",
+          "terms": [
+            "psychology-bio.2-diathesis-stress"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q06",
+          "type": "fill",
+          "text": "Weaver et al. (2004) found that rat mothers' licking and grooming changed gene expression in pups, an example of ___.",
+          "answer": "epigenetics",
+          "bank": [
+            "epigenetics",
+            "mutation",
+            "pruning",
+            "conditioning"
+          ],
+          "explanation": "Cross-fostering showed the care, not the birth mother, changed stress-related gene expression.",
+          "terms": [
+            "psychology-bio.2-epigenetics"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q07",
+          "type": "match",
+          "prompt": "Match each study to its contribution.",
+          "pairs": [
+            {
+              "left": "Caspi et al. (2003)",
+              "right": "Gene × stress interaction in depression"
+            },
+            {
+              "left": "Bouchard et al. (1990)",
+              "right": "Twins reared apart and IQ"
+            },
+            {
+              "left": "Weaver et al. (2004)",
+              "right": "Maternal care changed gene expression in rats"
+            },
+            {
+              "left": "Kendler et al. (2006)",
+              "right": "Swedish twin heritability of depression"
+            }
+          ],
+          "explanation": "Together these show genes matter but interact with the environment.",
+          "terms": [
+            "psychology-bio.2-diathesis-stress",
+            "psychology-bio.2-heritability",
+            "psychology-bio.2-epigenetics",
+            "psychology-bio.2-twin-study"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q08",
+          "type": "mcq",
+          "prompt": "Kendler et al. (2006) estimated heritability of major depression in a large Swedish twin sample. They found it was:",
+          "options": [
+            "Higher in women than in men",
+            "Higher in men than in women",
+            "Exactly 100%",
+            "Zero"
+          ],
+          "answer": 0,
+          "explanation": "Estimates were around 40% for women and around 30% for men, so environment also plays a large role.",
+          "terms": [
+            "psychology-bio.2-heritability",
+            "psychology-bio.2-twin-study"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q09",
+          "type": "mcq",
+          "prompt": "A key limitation of twin studies is:",
+          "options": [
+            "MZ twins have different genes",
+            "Twins share environments, so genetic and environmental effects are confounded",
+            "They cannot calculate concordance",
+            "They only study animals"
+          ],
+          "answer": 1,
+          "explanation": "MZ twins may be treated more alike than DZ twins, inflating heritability estimates.",
+          "terms": [
+            "psychology-bio.2-twin-study"
+          ]
+        },
+        {
+          "id": "psychology-BIO.2-2-q10",
+          "type": "order",
+          "prompt": "Order the diathesis-stress pathway proposed by Caspi et al. (2003).",
+          "items": [
+            "Person inherits short 5-HTT allele(s)",
+            "Person experiences several stressful life events",
+            "Vulnerability is triggered",
+            "Depressive symptoms develop"
+          ],
+          "explanation": "Neither the allele nor stress alone predicted depression strongly; the combination did.",
+          "terms": [
+            "psychology-bio.2-diathesis-stress"
+          ]
+        }
+      ]
+    }
+  ]
+}

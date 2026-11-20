@@ -1,0 +1,403 @@
+{
+  "id": "psychology-SOC.2",
+  "code": "SOC.2",
+  "unit": "approaches",
+  "title": "Sociocultural approach: culture and behaviour",
+  "level": "SL",
+  "summary": "Cultural dimensions, enculturation, acculturation, and emic and etic ways of studying culture.",
+  "keyterms": [
+    {
+      "id": "psychology-soc.2-culture",
+      "term": "Culture",
+      "definition": "Shared values, beliefs, norms and practices transmitted between generations in a group.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.2-cultural-dimensions",
+      "term": "Cultural dimensions",
+      "definition": "Hofstede's measurable ways in which national cultures differ, such as individualism–collectivism.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.2-individualism",
+      "term": "Individualism",
+      "definition": "A cultural orientation emphasising personal goals, independence and individual achievement.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.2-collectivism",
+      "term": "Collectivism",
+      "definition": "A cultural orientation emphasising group goals, interdependence and loyalty.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.2-power-distance",
+      "term": "Power distance",
+      "definition": "How far less powerful members of a society accept that power is distributed unequally.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.2-enculturation",
+      "term": "Enculturation",
+      "definition": "Learning the norms and values of one's own culture, e.g. through family and school.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.2-acculturation",
+      "term": "Acculturation",
+      "definition": "Psychological and cultural change when people from different cultures come into contact.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.2-acculturative-stress",
+      "term": "Acculturative stress",
+      "definition": "Stress caused by the challenges of adapting to a new culture.",
+      "hl": false
+    },
+    {
+      "id": "psychology-soc.2-norms",
+      "term": "Norms",
+      "definition": "Unwritten rules about expected behaviour in a group or culture.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-SOC.2-1",
+      "title": "Cultural dimensions and enculturation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-SOC.2-1-q01",
+          "type": "mcq",
+          "prompt": "Hofstede's original cultural dimensions came from surveys of:",
+          "options": [
+            "University students in the USA",
+            "IBM employees in many countries",
+            "Children in schools",
+            "Hospital patients"
+          ],
+          "answer": 1,
+          "explanation": "Using one company controlled some variables but may not represent whole national populations.",
+          "terms": [
+            "psychology-soc.2-cultural-dimensions"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q02",
+          "type": "mcq",
+          "prompt": "Which dimension describes acceptance of unequal power?",
+          "options": [
+            "Uncertainty avoidance",
+            "Power distance",
+            "Indulgence",
+            "Long-term orientation"
+          ],
+          "answer": 1,
+          "explanation": "High power distance cultures accept hierarchy more readily.",
+          "terms": [
+            "psychology-soc.2-power-distance"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q03",
+          "type": "tf",
+          "statement": "Cultural dimensions describe national averages and may not apply to every individual in a country.",
+          "answer": true,
+          "explanation": "Applying them to individuals risks stereotyping; there is variation within cultures.",
+          "terms": [
+            "psychology-soc.2-cultural-dimensions"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q04",
+          "type": "tf",
+          "statement": "Enculturation refers to adapting to a new culture after migration.",
+          "answer": false,
+          "explanation": "That is acculturation; enculturation is learning one's own culture.",
+          "terms": [
+            "psychology-soc.2-enculturation",
+            "psychology-soc.2-acculturation"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q05",
+          "type": "fill",
+          "text": "A culture that values group harmony and loyalty over personal goals is ___.",
+          "answer": "collectivist",
+          "bank": [
+            "collectivist",
+            "individualist",
+            "egalitarian",
+            "indulgent"
+          ],
+          "explanation": "Collectivism is the opposite pole of individualism on Hofstede's dimension.",
+          "terms": [
+            "psychology-soc.2-collectivism"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q06",
+          "type": "fill",
+          "text": "Unwritten rules for how to behave in a culture are called ___.",
+          "answer": "norms",
+          "bank": [
+            "norms",
+            "schemas",
+            "heuristics",
+            "alleles"
+          ],
+          "explanation": "Norms are transmitted through enculturation.",
+          "terms": [
+            "psychology-soc.2-norms"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q07",
+          "type": "match",
+          "prompt": "Match each dimension to a description.",
+          "pairs": [
+            {
+              "left": "Individualism",
+              "right": "Focus on personal achievement"
+            },
+            {
+              "left": "Power distance",
+              "right": "Acceptance of hierarchy"
+            },
+            {
+              "left": "Uncertainty avoidance",
+              "right": "Discomfort with ambiguity"
+            },
+            {
+              "left": "Long-term orientation",
+              "right": "Valuing persistence and future rewards"
+            }
+          ],
+          "explanation": "Hofstede later added long-term orientation and indulgence to his original four.",
+          "terms": [
+            "psychology-soc.2-cultural-dimensions",
+            "psychology-soc.2-individualism",
+            "psychology-soc.2-power-distance"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q08",
+          "type": "mcq",
+          "prompt": "Bond and Smith (1996) linked higher conformity to collectivism. This illustrates:",
+          "options": [
+            "A biological explanation",
+            "Cultural dimensions influencing social behaviour",
+            "Operant conditioning",
+            "Localization"
+          ],
+          "answer": 1,
+          "explanation": "Collectivist values may make agreeing with the group more important.",
+          "terms": [
+            "psychology-soc.2-collectivism",
+            "psychology-soc.2-cultural-dimensions"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q09",
+          "type": "mcq",
+          "prompt": "Which is a limitation of Hofstede's research?",
+          "options": [
+            "It used no quantitative data",
+            "Cultures change over time, but the data were originally collected decades ago",
+            "It studied only one country",
+            "It used brain imaging"
+          ],
+          "answer": 1,
+          "explanation": "Cultures change, so dimension scores may become outdated.",
+          "terms": [
+            "psychology-soc.2-cultural-dimensions"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-1-q10",
+          "type": "order",
+          "prompt": "Order how a norm is passed on through enculturation.",
+          "items": [
+            "Child observes family members' behaviour",
+            "Behaviour is modelled and rewarded",
+            "Child internalises the norm",
+            "Child later passes the norm to their own children"
+          ],
+          "explanation": "Enculturation involves social learning across generations.",
+          "terms": [
+            "psychology-soc.2-enculturation",
+            "psychology-soc.2-norms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-SOC.2-2",
+      "title": "Acculturation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-SOC.2-2-q01",
+          "type": "mcq",
+          "prompt": "Berry (1997) proposed acculturation strategies. Keeping one's heritage culture while also adopting the new one is:",
+          "options": [
+            "Assimilation",
+            "Integration",
+            "Separation",
+            "Marginalization"
+          ],
+          "answer": 1,
+          "explanation": "Integration is usually linked to the best psychological outcomes.",
+          "terms": [
+            "psychology-soc.2-acculturation"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q02",
+          "type": "mcq",
+          "prompt": "Rejecting the heritage culture and fully adopting the host culture is:",
+          "options": [
+            "Integration",
+            "Separation",
+            "Assimilation",
+            "Marginalization"
+          ],
+          "answer": 2,
+          "explanation": "Assimilation means giving up heritage culture for the host culture.",
+          "terms": [
+            "psychology-soc.2-acculturation"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q03",
+          "type": "tf",
+          "statement": "Marginalization, losing contact with both cultures, is linked to the highest acculturative stress.",
+          "answer": true,
+          "explanation": "Berry's model links marginalization with poorest adaptation.",
+          "terms": [
+            "psychology-soc.2-acculturative-stress"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q04",
+          "type": "tf",
+          "statement": "Acculturation only affects migrants, never the host culture.",
+          "answer": false,
+          "explanation": "Acculturation is two-way: both groups may change, although usually unequally.",
+          "terms": [
+            "psychology-soc.2-acculturation"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q05",
+          "type": "fill",
+          "text": "Stress caused by adapting to a new culture is called ___ stress.",
+          "answer": "acculturative",
+          "bank": [
+            "acculturative",
+            "post-traumatic",
+            "occupational",
+            "cognitive"
+          ],
+          "explanation": "It can involve language barriers, discrimination and loss of support.",
+          "terms": [
+            "psychology-soc.2-acculturative-stress"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q06",
+          "type": "fill",
+          "text": "Berry's model is based on two questions: maintaining heritage culture, and seeking contact with the ___ culture.",
+          "answer": "host",
+          "bank": [
+            "host",
+            "home",
+            "minority",
+            "global"
+          ],
+          "explanation": "The answers to both questions give four strategies.",
+          "terms": [
+            "psychology-soc.2-acculturation"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q07",
+          "type": "match",
+          "prompt": "Match Berry's strategies to their description.",
+          "pairs": [
+            {
+              "left": "Integration",
+              "right": "Keep heritage and join host culture"
+            },
+            {
+              "left": "Assimilation",
+              "right": "Adopt host culture, drop heritage"
+            },
+            {
+              "left": "Separation",
+              "right": "Keep heritage, avoid host culture"
+            },
+            {
+              "left": "Marginalization",
+              "right": "Little contact with either culture"
+            }
+          ],
+          "explanation": "The four strategies come from crossing two yes/no dimensions.",
+          "terms": [
+            "psychology-soc.2-acculturation"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q08",
+          "type": "mcq",
+          "prompt": "Lueck and Wilson (2010) studied acculturative stress in Asian immigrants to the USA. Which factor tended to reduce it?",
+          "options": [
+            "Being unable to speak English",
+            "Being bilingual and keeping ties to the heritage culture",
+            "Recent arrival",
+            "Experiencing discrimination"
+          ],
+          "answer": 1,
+          "explanation": "Bilingualism and family support were protective, consistent with integration benefits.",
+          "terms": [
+            "psychology-soc.2-acculturative-stress"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q09",
+          "type": "mcq",
+          "prompt": "A researcher uses a questionnaire developed in the USA to measure acculturation in Japanese migrants. The main risk is:",
+          "options": [
+            "Researcher bias only",
+            "The measure may not capture culturally meaningful experiences (an etic imposition)",
+            "Increased internal validity",
+            "Order effects"
+          ],
+          "answer": 1,
+          "explanation": "Measures may not translate in meaning; emic methods can help.",
+          "terms": [
+            "psychology-soc.2-acculturation",
+            "psychology-soc.2-culture"
+          ]
+        },
+        {
+          "id": "psychology-SOC.2-2-q10",
+          "type": "order",
+          "prompt": "Order a typical acculturation process for a new migrant.",
+          "items": [
+            "Arrival and first contact with the host culture",
+            "Experience of differences and possible stress",
+            "Choice of strategy (e.g. integration)",
+            "Longer-term adaptation"
+          ],
+          "explanation": "Adaptation usually takes time and depends on the strategy and context.",
+          "terms": [
+            "psychology-soc.2-acculturation",
+            "psychology-soc.2-acculturative-stress"
+          ]
+        }
+      ]
+    }
+  ]
+}

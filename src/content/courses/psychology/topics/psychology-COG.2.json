@@ -1,0 +1,418 @@
+{
+  "id": "psychology-COG.2",
+  "code": "COG.2",
+  "unit": "approaches",
+  "title": "Cognitive approach: thinking, biases and conditioning",
+  "level": "SL",
+  "summary": "Dual processing, cognitive biases such as anchoring and confirmation bias, cognitive load, and learning through classical and operant conditioning.",
+  "keyterms": [
+    {
+      "id": "psychology-cog.2-dual-processing",
+      "term": "Dual processing theory",
+      "definition": "Thinking uses two systems: fast, automatic System 1 and slow, effortful System 2.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-system-1",
+      "term": "System 1",
+      "definition": "Fast, intuitive, automatic thinking that relies on heuristics.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-system-2",
+      "term": "System 2",
+      "definition": "Slow, deliberate, rational thinking that requires effort and attention.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-heuristic",
+      "term": "Heuristic",
+      "definition": "A mental shortcut that allows fast decisions but can produce systematic errors.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-anchoring",
+      "term": "Anchoring bias",
+      "definition": "Relying too much on the first number or piece of information when making estimates.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-confirmation-bias",
+      "term": "Confirmation bias",
+      "definition": "Seeking or interpreting information in ways that confirm existing beliefs.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-cognitive-load",
+      "term": "Cognitive load theory",
+      "definition": "Sweller (1988): working memory is limited, so learning suffers when tasks impose too much load.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-classical-conditioning",
+      "term": "Classical conditioning",
+      "definition": "Learning by association: a neutral stimulus paired with an unconditioned stimulus comes to trigger a response.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-operant-conditioning",
+      "term": "Operant conditioning",
+      "definition": "Learning from consequences: reinforced behaviour increases, punished behaviour decreases.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-reinforcement",
+      "term": "Reinforcement",
+      "definition": "A consequence that makes a behaviour more likely; positive adds something pleasant, negative removes something unpleasant.",
+      "hl": false
+    },
+    {
+      "id": "psychology-cog.2-punishment",
+      "term": "Punishment",
+      "definition": "A consequence that makes a behaviour less likely.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "psychology-COG.2-1",
+      "title": "Dual processing and cognitive biases",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-COG.2-1-q01",
+          "type": "mcq",
+          "prompt": "In Tversky and Kahneman (1974), participants spun a wheel landing on 10 or 65, then estimated the percentage of African countries in the UN. What happened?",
+          "options": [
+            "Estimates were unaffected",
+            "Those who saw 65 gave higher estimates",
+            "Those who saw 10 gave higher estimates",
+            "Everyone gave the correct answer"
+          ],
+          "answer": 1,
+          "explanation": "An irrelevant number acted as an anchor, showing anchoring bias.",
+          "terms": [
+            "psychology-cog.2-anchoring",
+            "psychology-cog.2-heuristic"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q02",
+          "type": "mcq",
+          "prompt": "Englich, Mussweiler and Strack (2006) found that experienced judges' sentences were influenced by:",
+          "options": [
+            "Their own past sentences only",
+            "A sentencing demand determined by rolling dice",
+            "The defendant's height",
+            "Nothing; experts were immune"
+          ],
+          "answer": 1,
+          "explanation": "Even experts were anchored by a random number, showing System 1 influences professional judgement.",
+          "terms": [
+            "psychology-cog.2-anchoring"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q03",
+          "type": "tf",
+          "statement": "Wason's (1960) 2-4-6 task showed that people tend to test hypotheses by looking for confirming rather than disconfirming examples.",
+          "answer": true,
+          "explanation": "Participants proposed sequences that fit their rule rather than trying to falsify it.",
+          "terms": [
+            "psychology-cog.2-confirmation-bias"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q04",
+          "type": "tf",
+          "statement": "System 2 thinking is fast and requires little effort.",
+          "answer": false,
+          "explanation": "System 2 is slow and effortful; System 1 is fast and automatic.",
+          "terms": [
+            "psychology-cog.2-system-2",
+            "psychology-cog.2-system-1"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q05",
+          "type": "fill",
+          "text": "Mental shortcuts that allow quick judgements are called ___.",
+          "answer": "heuristics",
+          "bank": [
+            "heuristics",
+            "schemas",
+            "reinforcers",
+            "anchors"
+          ],
+          "explanation": "Heuristics are efficient but can produce biases.",
+          "terms": [
+            "psychology-cog.2-heuristic"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q06",
+          "type": "fill",
+          "text": "Shiv and Fedorikhin (1999) found people holding a seven-digit number were more likely to choose chocolate cake, because high cognitive ___ reduced System 2 control.",
+          "answer": "load",
+          "bank": [
+            "load",
+            "dissonance",
+            "reinforcement",
+            "schema"
+          ],
+          "explanation": "With working memory busy, the impulsive System 1 choice won more often.",
+          "terms": [
+            "psychology-cog.2-cognitive-load",
+            "psychology-cog.2-system-1"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q07",
+          "type": "match",
+          "prompt": "Match each concept to an example.",
+          "pairs": [
+            {
+              "left": "Anchoring",
+              "right": "Estimating price after seeing a high starting offer"
+            },
+            {
+              "left": "Confirmation bias",
+              "right": "Only reading news that supports your view"
+            },
+            {
+              "left": "System 1",
+              "right": "Instantly recognising an angry face"
+            },
+            {
+              "left": "System 2",
+              "right": "Working out 17 × 24 in your head"
+            }
+          ],
+          "explanation": "Biases mostly arise from System 1 shortcuts.",
+          "terms": [
+            "psychology-cog.2-anchoring",
+            "psychology-cog.2-confirmation-bias",
+            "psychology-cog.2-system-1",
+            "psychology-cog.2-system-2"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q08",
+          "type": "mcq",
+          "prompt": "Which item tends to trigger a fast, wrong System 1 answer? \"A bat and ball cost $1.10; the bat costs $1 more than the ball. How much is the ball?\"",
+          "options": [
+            "The intuitive answer 10 cents",
+            "The correct answer 5 cents",
+            "Both answers equally",
+            "Neither"
+          ],
+          "answer": 0,
+          "explanation": "This item from Frederick's (2005) Cognitive Reflection Test shows System 1 producing an answer that System 2 should override.",
+          "terms": [
+            "psychology-cog.2-system-1",
+            "psychology-cog.2-dual-processing"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q09",
+          "type": "mcq",
+          "prompt": "A criticism of dual processing theory is that:",
+          "options": [
+            "It has no supporting studies",
+            "The two systems are hard to separate and measure directly",
+            "It ignores biases",
+            "It only explains animal behaviour"
+          ],
+          "answer": 1,
+          "explanation": "Researchers infer the systems from behaviour; some argue thinking is a continuum.",
+          "terms": [
+            "psychology-cog.2-dual-processing"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-1-q10",
+          "type": "order",
+          "prompt": "According to cognitive load theory, order these steps for designing a lesson that reduces extraneous load.",
+          "items": [
+            "Identify what learners already know",
+            "Present new material in small chunks",
+            "Give worked examples",
+            "Gradually remove support as skill grows"
+          ],
+          "explanation": "Worked examples and chunking free working memory for learning.",
+          "terms": [
+            "psychology-cog.2-cognitive-load"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychology-COG.2-2",
+      "title": "Classical and operant conditioning",
+      "hl": false,
+      "questions": [
+        {
+          "id": "psychology-COG.2-2-q01",
+          "type": "mcq",
+          "prompt": "In Watson and Rayner (1920), what was the unconditioned stimulus for \"Little Albert\"?",
+          "options": [
+            "A white rat",
+            "A loud noise made by striking a steel bar",
+            "A rabbit",
+            "A fur coat"
+          ],
+          "answer": 1,
+          "explanation": "The loud noise naturally caused fear; paired with the rat, the rat became a conditioned stimulus.",
+          "terms": [
+            "psychology-cog.2-classical-conditioning"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q02",
+          "type": "mcq",
+          "prompt": "Removing an unpleasant stimulus to make a behaviour more likely is:",
+          "options": [
+            "Positive reinforcement",
+            "Negative reinforcement",
+            "Positive punishment",
+            "Extinction"
+          ],
+          "answer": 1,
+          "explanation": "Negative reinforcement strengthens behaviour by taking something unpleasant away.",
+          "terms": [
+            "psychology-cog.2-reinforcement"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q03",
+          "type": "tf",
+          "statement": "Garcia and Koelling (1966) found rats easily associated taste with illness but not light and sound with illness.",
+          "answer": true,
+          "explanation": "This shows biological preparedness: not all associations are learned equally easily.",
+          "terms": [
+            "psychology-cog.2-classical-conditioning"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q04",
+          "type": "tf",
+          "statement": "Punishment and negative reinforcement mean the same thing.",
+          "answer": false,
+          "explanation": "Punishment decreases behaviour; any reinforcement increases it.",
+          "terms": [
+            "psychology-cog.2-punishment",
+            "psychology-cog.2-reinforcement"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q05",
+          "type": "fill",
+          "text": "In classical conditioning, a previously neutral stimulus that triggers a learned response is a ___ stimulus.",
+          "answer": "conditioned",
+          "bank": [
+            "conditioned",
+            "unconditioned",
+            "neutral",
+            "discriminative"
+          ],
+          "explanation": "After pairing, the CS alone produces the conditioned response.",
+          "terms": [
+            "psychology-cog.2-classical-conditioning"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q06",
+          "type": "fill",
+          "text": "Giving a child a sticker for finishing homework is positive ___.",
+          "answer": "reinforcement",
+          "bank": [
+            "reinforcement",
+            "punishment",
+            "extinction",
+            "conditioning"
+          ],
+          "explanation": "Adding something pleasant to increase a behaviour is positive reinforcement.",
+          "terms": [
+            "psychology-cog.2-reinforcement",
+            "psychology-cog.2-operant-conditioning"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q07",
+          "type": "match",
+          "prompt": "Match each example to the process.",
+          "pairs": [
+            {
+              "left": "Detention for being late",
+              "right": "Positive punishment"
+            },
+            {
+              "left": "Losing phone time for rudeness",
+              "right": "Negative punishment"
+            },
+            {
+              "left": "Praise for answering",
+              "right": "Positive reinforcement"
+            },
+            {
+              "left": "Headache stops after taking a pill",
+              "right": "Negative reinforcement"
+            }
+          ],
+          "explanation": "Positive adds, negative removes; reinforcement increases, punishment decreases behaviour.",
+          "terms": [
+            "psychology-cog.2-reinforcement",
+            "psychology-cog.2-punishment"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q08",
+          "type": "mcq",
+          "prompt": "Which reinforcement schedule produces behaviour most resistant to extinction, as in gambling?",
+          "options": [
+            "Continuous reinforcement",
+            "Variable ratio",
+            "Fixed interval",
+            "No reinforcement"
+          ],
+          "answer": 1,
+          "explanation": "Unpredictable rewards keep behaviour going long after rewards stop.",
+          "terms": [
+            "psychology-cog.2-operant-conditioning"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q09",
+          "type": "mcq",
+          "prompt": "Which is an ethical criticism of Watson and Rayner (1920)?",
+          "options": [
+            "Albert gave full informed consent",
+            "A baby was deliberately made afraid and not deconditioned",
+            "It used too many participants",
+            "It used deception about the aim with adults"
+          ],
+          "answer": 1,
+          "explanation": "Causing fear in an infant without reversing it would breach modern guidelines on harm.",
+          "terms": [
+            "psychology-cog.2-classical-conditioning"
+          ]
+        },
+        {
+          "id": "psychology-COG.2-2-q10",
+          "type": "order",
+          "prompt": "Order the stages of classical conditioning.",
+          "items": [
+            "UCS produces UCR",
+            "Neutral stimulus is paired repeatedly with UCS",
+            "Neutral stimulus becomes a CS",
+            "CS alone produces a CR"
+          ],
+          "explanation": "Pavlov showed this with a bell and food in dogs.",
+          "terms": [
+            "psychology-cog.2-classical-conditioning"
+          ]
+        }
+      ]
+    }
+  ]
+}
