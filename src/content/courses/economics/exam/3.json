@@ -1,0 +1,197 @@
+[
+  {
+    "id": "economics-X-3-01",
+    "unit": "3",
+    "topics": ["economics-3.3", "economics-3.2", "economics-3.5-3.6"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Slowdown in Norland",
+    "stem": "Norland is a high-income economy that relies heavily on manufacturing exports. After strong growth in 2022, demand from its main trading partners weakened and household confidence fell as mortgage costs rose. By 2025 the economy had experienced two years of falling real output. Factories in the north laid off workers, and the government came under pressure to act. Some economists argued for a large rise in infrastructure spending; others warned that government debt, already 95% of GDP, was too high. In 2025 the labour force was 24.0 million and 1.44 million people were unemployed.",
+    "data": {
+      "caption": "Norland: selected macroeconomic indicators",
+      "columns": ["Year", "Real GDP growth (%)", "Unemployment rate (%)", "Consumer price index (2020 = 100)"],
+      "rows": [
+        ["2022", "3.1", "4.2", "114.0"],
+        ["2023", "1.0", "4.8", "120.0"],
+        ["2024", "−0.8", "5.5", "126.0"],
+        ["2025", "−1.5", "—", "128.5"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Define",
+        "prompt": "Define the term cyclical unemployment.",
+        "marks": 2,
+        "markscheme": [
+          "unemployment caused by a fall in aggregate demand / during a downturn or recession",
+          "also called demand-deficient unemployment; linked to the business cycle"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate Norland's unemployment rate in 2025.",
+        "marks": 2,
+        "numeric": { "value": 6, "tolerance": 0.05, "unit": "%" },
+        "markscheme": [
+          "1.44 / 24.0 × 100",
+          "= 6.0%"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the rate of inflation in Norland in 2024.",
+        "marks": 2,
+        "numeric": { "value": 5, "tolerance": 0.05, "unit": "%" },
+        "markscheme": [
+          "(126.0 − 120.0) / 120.0 × 100",
+          "= 5.0%"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Using an AD/AS diagram, explain how the events described in the text led to falling real output in Norland.",
+        "marks": 4,
+        "markscheme": [
+          "correctly labelled AD/AS diagram (price level, real GDP) with AD shifting left",
+          "new equilibrium at lower real GDP, recessionary gap shown relative to LRAS/Yp",
+          "lower exports to trading partners reduce (X − M)",
+          "higher mortgage costs and falling confidence reduce consumption (and investment)"
+        ],
+        "notes": "Accept a Keynesian or new classical model, as long as it is used consistently."
+      },
+      {
+        "label": "e",
+        "command": "Explain",
+        "prompt": "Using the data, explain why Norland's inflation slowed in 2025.",
+        "marks": 4,
+        "markscheme": [
+          "inflation fell from 5.0% in 2024 to about 2.0% in 2025 (128.5 vs 126.0): disinflation, not deflation",
+          "falling AD reduces demand-pull pressure",
+          "rising unemployment (5.5% to 6.0%) reduces wage pressure",
+          "spare capacity means firms are less able to raise prices"
+        ]
+      },
+      {
+        "label": "f",
+        "command": "Evaluate",
+        "prompt": "Using information from the text/data and your knowledge of economics, evaluate the use of expansionary fiscal policy to reduce unemployment in Norland.",
+        "marks": 10,
+        "markscheme": [
+          "definition of expansionary fiscal policy",
+          "AD/AS diagram showing AD shifting right and closing the recessionary gap",
+          "unemployment is mainly cyclical (rising since 2022 as output fell), so demand-side policy is appropriate",
+          "infrastructure spending creates jobs and a multiplier effect; also raises LRAS in the long run",
+          "inflation is low (about 2%), so risk of demand-pull inflation is limited",
+          "debt already 95% of GDP: higher interest payments, possible crowding out, loss of confidence",
+          "time lags in planning infrastructure; may come too late",
+          "unemployment in northern manufacturing may be partly structural: needs supply-side measures",
+          "alternatives: monetary policy (cut interest rates), retraining, targeted tax cuts",
+          "a justified conclusion weighing short-run and long-run effects"
+        ],
+        "notes": "Worth 15 marks on the real paper; reward explicit use of the data."
+      }
+    ]
+  },
+  {
+    "id": "economics-X-3-02",
+    "unit": "3",
+    "topics": ["economics-3.1", "economics-3.5-3.6"],
+    "paper": "P3",
+    "level": "HL",
+    "title": "Closing the output gap in Tarvia",
+    "stem": "Tarvia's statistics office reports that nominal GDP in 2025 was $535.5 bn and the GDP deflator was 105 (2020 = 100). Real GDP in 2024 was $520 bn. The central bank's interest rate is already at 0.25%. Economists estimate that Tarvia's potential real output is $560 bn. The marginal propensity to save is 0.15, the marginal propensity to tax is 0.25 and the marginal propensity to import is 0.20. In 2025 government spending was $155 bn and tax revenue was $140 bn.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate Tarvia's real GDP in 2025.",
+        "marks": 2,
+        "numeric": { "value": 510, "tolerance": 0.5, "unit": "$ bn" },
+        "markscheme": [
+          "535.5 / 105 × 100",
+          "= $510 bn"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the rate of real economic growth in 2025.",
+        "marks": 2,
+        "numeric": { "value": -1.92, "tolerance": 0.02, "unit": "%" },
+        "markscheme": [
+          "(510 − 520) / 520 × 100",
+          "= −1.92% (negative sign or 'fall' required)"
+        ],
+        "notes": "Allow ECF from part (a)."
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the value of the Keynesian multiplier.",
+        "marks": 2,
+        "numeric": { "value": 1.67, "tolerance": 0.01, "unit": "" },
+        "markscheme": [
+          "k = 1 / (MPS + MPT + MPM) = 1 / (0.15 + 0.25 + 0.20) = 1 / 0.6",
+          "= 1.67"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Calculate",
+        "prompt": "Calculate the increase in government spending needed to close the output gap, assuming no crowding out.",
+        "marks": 2,
+        "numeric": { "value": 30, "tolerance": 0.5, "unit": "$ bn" },
+        "markscheme": [
+          "output gap = 560 − 510 = $50 bn",
+          "ΔG = 50 / 1.67 = $30 bn"
+        ],
+        "notes": "Allow ECF. Accept 29.9–30.1 from rounded multiplier."
+      },
+      {
+        "label": "e",
+        "command": "Calculate",
+        "prompt": "Calculate Tarvia's 2025 budget deficit as a percentage of nominal GDP.",
+        "marks": 2,
+        "numeric": { "value": 2.8, "tolerance": 0.05, "unit": "% of GDP" },
+        "markscheme": [
+          "deficit = 155 − 140 = $15 bn",
+          "15 / 535.5 × 100 = 2.8% of GDP"
+        ]
+      },
+      {
+        "label": "f",
+        "command": "Explain",
+        "prompt": "Explain why the multiplier in Tarvia is relatively small.",
+        "marks": 4,
+        "markscheme": [
+          "the multiplier depends on leakages from each round of spending",
+          "the sum of withdrawals is high (0.6): 60 cents of each extra dollar leaks",
+          "a high MPM (0.20) means much spending goes on imports, not domestic output",
+          "a high MPT (0.25) means much extra income is taken in tax, so less is re-spent"
+        ]
+      },
+      {
+        "label": "g",
+        "command": "Recommend",
+        "prompt": "Using the information above and your knowledge of economics, recommend a policy to close Tarvia's output gap.",
+        "marks": 10,
+        "markscheme": [
+          "clear recommendation, e.g. a fiscal stimulus of about $30 bn focused on infrastructure",
+          "monetary policy is constrained: interest rate is 0.25%, close to the zero lower bound",
+          "the multiplier (1.67) means GDP rises by more than the initial spending",
+          "AD/AS reasoning: AD shifts right, real output rises towards $560 bn, cyclical unemployment falls",
+          "deficit would rise from 2.8% of GDP (to roughly 8% if spending rose by $30 bn with no induced tax): debt sustainability concerns",
+          "high MPM means some stimulus leaks abroad and may worsen the current account",
+          "time lags and the possibility of crowding out",
+          "alternatives: QE, tax cuts with a smaller multiplier, supply-side spending that also raises LRAS",
+          "stakeholders: unemployed workers, taxpayers, future generations, firms",
+          "justified conclusion considering short and long run"
+        ]
+      }
+    ]
+  }
+]

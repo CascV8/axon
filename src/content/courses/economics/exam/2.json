@@ -1,0 +1,241 @@
+[
+  {
+    "id": "economics-X-2-01",
+    "unit": "2",
+    "topics": ["economics-2.5-2.6", "economics-2.7"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "A tax on cooking oil in Veridia",
+    "stem": "Veridia is a lower-middle-income country where cooking oil is a staple in almost every household. Most oil is produced by a few large domestic refiners. In 2025 the government raised the indirect tax on cooking oil to fund school meals. Consumer groups complained that poorer families spend a much larger share of their income on food than richer families. Refiners said their profit margins were squeezed because they could pass only part of the tax on to consumers. Weekly market data before and after the tax rise are shown below.",
+    "data": {
+      "caption": "Veridia: weekly market for cooking oil",
+      "columns": ["", "Before tax rise", "After tax rise"],
+      "rows": [
+        ["Price paid by consumers ($ per litre)", "2.00", "2.40"],
+        ["Quantity sold (thousand litres per week)", "500", "460"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Define",
+        "prompt": "Define the term indirect tax.",
+        "marks": 2,
+        "markscheme": [
+          "a tax on spending on goods/services (not on income)",
+          "collected from/paid to government by the seller/producer, who may pass some of it on to consumers"
+        ],
+        "notes": "1 mark for a vague definition, e.g. 'a tax on goods'."
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Using the data, calculate the price elasticity of demand (PED) for cooking oil.",
+        "marks": 2,
+        "numeric": { "value": -0.4, "tolerance": 0.01, "unit": "" },
+        "markscheme": [
+          "%ΔQ = (460 − 500) / 500 × 100 = −8%; %ΔP = (2.40 − 2.00) / 2.00 × 100 = +20%",
+          "PED = −8 / 20 = −0.4 (accept 0.4)"
+        ],
+        "notes": "Award 1 mark for a correct formula/method with an arithmetic slip."
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the change in weekly consumer spending on cooking oil after the tax rise.",
+        "marks": 2,
+        "numeric": { "value": 104000, "tolerance": 1, "unit": "$" },
+        "markscheme": [
+          "before: 2.00 × 500 000 = $1 000 000; after: 2.40 × 460 000 = $1 104 000",
+          "increase of $104 000 per week (direction required)"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Using a tax diagram, explain why consumers bear more of the tax than refiners in this market.",
+        "marks": 4,
+        "markscheme": [
+          "diagram: axes P and Q; relatively steep (inelastic) D; S shifts up to S + tax; new consumer price, price received by producers and lower quantity shown",
+          "consumer burden shown as the area between new and old price × new quantity; producer burden below the old price",
+          "PED is −0.4 / demand is inelastic: cooking oil is a necessity with few substitutes",
+          "so producers can raise price without losing many sales; most of the tax is passed to consumers"
+        ],
+        "notes": "Maximum 2 marks if the diagram is missing or inaccurate."
+      },
+      {
+        "label": "e",
+        "command": "Explain",
+        "prompt": "Using the text, explain why the tax may be described as regressive.",
+        "marks": 4,
+        "markscheme": [
+          "a regressive tax takes a higher percentage of income from lower-income earners / average tax rate falls as income rises",
+          "poorer households spend a larger share of income on food/cooking oil (text)",
+          "demand is inelastic so they keep buying and pay the higher price",
+          "so the tax paid is a larger proportion of a poor household's income than a rich one's"
+        ]
+      },
+      {
+        "label": "f",
+        "command": "Evaluate",
+        "prompt": "Using information from the text/data and your knowledge of economics, evaluate the decision to raise the indirect tax on cooking oil.",
+        "marks": 10,
+        "markscheme": [
+          "relevant terms defined, e.g. indirect tax, PED, regressive tax, stakeholder",
+          "accurate tax diagram used and explained",
+          "revenue raised is substantial because demand is inelastic: quantity fell only 8%",
+          "revenue funds school meals: positive consumption externality/merit good, may benefit poor families",
+          "negative effects on low-income consumers: regressive, reduces real income and equity",
+          "refiners' revenue per unit and profits fall; possible job losses (text)",
+          "the tax causes a welfare/deadweight loss because cooking oil has no obvious negative externality",
+          "alternatives: progressive income tax or taxes on demerit goods would raise revenue with less regressive effect",
+          "short run vs long run / stakeholders weighed",
+          "a reasoned, supported conclusion"
+        ],
+        "notes": "On the real Paper 2 the final evaluation part is worth 15 marks and is marked with levels descriptors; reward balanced, data-based judgement."
+      }
+    ]
+  },
+  {
+    "id": "economics-X-2-02",
+    "unit": "2",
+    "topics": ["economics-2.8-2.9", "economics-2.7"],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Vaccinations and merit goods",
+    "stem": "Answer both parts of this extended-response question.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Explain",
+        "prompt": "Explain, using an appropriate diagram, why a free market may lead to underconsumption of vaccinations.",
+        "marks": 10,
+        "markscheme": [
+          "definition of a positive consumption externality / merit good",
+          "diagram: MPB below MSB, MSC = MPC; free market at Qm where MPB = MSC; optimum Qopt where MSB = MSC",
+          "welfare loss triangle correctly identified between Qm and Qopt",
+          "vaccinated people reduce the risk of infection for others (third-party benefits)",
+          "individuals consider only private benefits so consume where MPB = MPC",
+          "imperfect information: people may underestimate the benefits of vaccination",
+          "so Qm < Qopt: underconsumption and allocative inefficiency (MSB > MSC at Qm)",
+          "clear explanation linking the diagram to the argument"
+        ],
+        "notes": "Real Paper 1 part (a) is 10 marks, marked against levels descriptors; a full answer needs accurate diagram plus full explanation."
+      },
+      {
+        "label": "b",
+        "command": "Evaluate",
+        "prompt": "Evaluate the effectiveness of government subsidies as a means of increasing the consumption of merit goods.",
+        "marks": 10,
+        "markscheme": [
+          "definition of subsidy and merit good",
+          "subsidy diagram: supply shifts right, price falls, quantity rises towards Qopt",
+          "real-world example used, e.g. subsidised flu vaccines or school meals",
+          "effective if demand is price elastic; less effective if demand is inelastic or barriers are not about price",
+          "opportunity cost of government spending / funded by taxes",
+          "difficult to calculate the size of the external benefit, so the subsidy may be too large or small",
+          "alternatives: direct (free) provision, information campaigns/nudges, legislation (compulsory vaccination)",
+          "may be most effective combined with information to tackle imperfect information",
+          "consideration of stakeholders: consumers, producers, taxpayers, government",
+          "a justified conclusion"
+        ],
+        "notes": "On the real paper part (b) is worth 15 marks; the app caps parts at 10."
+      }
+    ]
+  },
+  {
+    "id": "economics-X-2-03",
+    "unit": "2",
+    "topics": ["economics-2.3", "economics-2.7"],
+    "paper": "P3",
+    "level": "HL",
+    "title": "A minimum price for rice in Sorland",
+    "stem": "In Sorland the domestic rice market is competitive. Demand and supply are given by Qd = 400 − 20P and Qs = −100 + 30P, where P is the price in $ per kg and Q is in thousand tonnes per year. Farmers' incomes have fallen, and the government is considering a guaranteed minimum price of $12 per kg, buying any surplus at that price.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the equilibrium price of rice.",
+        "marks": 2,
+        "numeric": { "value": 10, "tolerance": 0.01, "unit": "$ per kg" },
+        "markscheme": [
+          "400 − 20P = −100 + 30P → 500 = 50P",
+          "P = $10 per kg"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the equilibrium quantity of rice.",
+        "marks": 1,
+        "numeric": { "value": 200, "tolerance": 0.5, "unit": "thousand tonnes" },
+        "markscheme": ["Q = 400 − 20 × 10 = 200 thousand tonnes"]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the surplus of rice at the minimum price of $12.",
+        "marks": 2,
+        "numeric": { "value": 100, "tolerance": 0.5, "unit": "thousand tonnes" },
+        "markscheme": [
+          "Qs = −100 + 30 × 12 = 260; Qd = 400 − 20 × 12 = 160",
+          "surplus = 260 − 160 = 100 thousand tonnes"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Calculate",
+        "prompt": "Calculate the cost to the government of buying the surplus.",
+        "marks": 2,
+        "numeric": { "value": 1200, "tolerance": 1, "unit": "$ million" },
+        "markscheme": [
+          "100 000 tonnes = 100 million kg × $12",
+          "= $1 200 million ($1.2 billion)"
+        ],
+        "notes": "Allow ECF from part (c). Accept '$1200 m' or '$1.2 bn'; penalise missing unit once."
+      },
+      {
+        "label": "e",
+        "command": "Calculate",
+        "prompt": "Calculate the change in farmers' total revenue (including sales to the government) resulting from the minimum price.",
+        "marks": 2,
+        "numeric": { "value": 1120, "tolerance": 1, "unit": "$ million" },
+        "markscheme": [
+          "before: $10 × 200 million kg = $2 000 m; after: $12 × 260 million kg = $3 120 m",
+          "increase of $1 120 million"
+        ]
+      },
+      {
+        "label": "f",
+        "command": "Draw",
+        "prompt": "Draw a diagram to illustrate the effect of the minimum price on the rice market, showing the surplus and the government's expenditure.",
+        "marks": 4,
+        "markscheme": [
+          "correctly labelled axes (price $/kg; quantity thousand tonnes) with D and S intersecting at $10 and 200",
+          "minimum price line at $12 above equilibrium",
+          "Qd = 160 and Qs = 260 shown, surplus marked",
+          "government expenditure shown as the rectangle $12 × (260 − 160)"
+        ]
+      },
+      {
+        "label": "g",
+        "command": "Recommend",
+        "prompt": "Using the information above and your knowledge of economics, recommend a policy the government of Sorland could use to support farmers' incomes.",
+        "marks": 10,
+        "markscheme": [
+          "clear recommendation, e.g. a targeted income transfer, a producer subsidy, or investment in farm productivity rather than a minimum price",
+          "the minimum price raises farmers' revenue by $1 120 m but costs taxpayers $1 200 m",
+          "consumers pay more and buy less: consumption falls from 200 to 160 thousand tonnes",
+          "surplus must be stored, destroyed or dumped abroad: waste and possible trade disputes",
+          "overproduction / allocative inefficiency and welfare loss",
+          "alternative: a subsidy lowers consumer prices while raising producer revenue, but also costs government",
+          "alternative: direct income support avoids distorting output decisions",
+          "supply-side measures (irrigation, training) raise long-run productivity",
+          "stakeholders considered: farmers, consumers, taxpayers, foreign producers",
+          "justified final judgement with short- and long-run considerations"
+        ],
+        "notes": "On the real Paper 3 the policy recommendation is worth 10 marks and is marked with levels descriptors."
+      }
+    ]
+  }
+]

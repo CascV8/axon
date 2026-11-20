@@ -1,0 +1,612 @@
+{
+  "id": "economics-3.5-3.6",
+  "code": "3.5–3.6",
+  "unit": "3",
+  "title": "Demand management: monetary and fiscal policy",
+  "level": "SL",
+  "summary": "Central banks use interest rates, open market operations, reserve requirements and quantitative easing; governments use taxes and spending. Both shift AD but face time lags and constraints. HL covers money creation and the Keynesian multiplier.",
+  "keyterms": [
+    {
+      "id": "economics-3.5-3.6-monetary-policy",
+      "term": "Monetary policy",
+      "definition": "Central bank action on interest rates and the money supply to influence AD, usually to meet an inflation target.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-central-bank",
+      "term": "Central bank",
+      "definition": "The institution that issues currency, sets the policy interest rate, acts as banker to the government and lender of last resort.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-interest-rate",
+      "term": "Policy interest rate",
+      "definition": "The rate the central bank charges commercial banks, which influences all other interest rates in the economy.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-omo",
+      "term": "Open market operations",
+      "definition": "Central bank buying or selling government bonds to change the money supply and interest rates.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-reserve-requirement",
+      "term": "Minimum reserve requirement",
+      "definition": "The share of deposits commercial banks must hold in reserve; raising it reduces banks’ ability to lend.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-qe",
+      "term": "Quantitative easing (QE)",
+      "definition": "Large-scale central bank purchases of bonds and other assets to lower long-term interest rates when policy rates are near zero.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-real-interest",
+      "term": "Real interest rate",
+      "definition": "The nominal interest rate minus the inflation rate.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-fiscal-policy",
+      "term": "Fiscal policy",
+      "definition": "The use of government spending and taxation to influence AD.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-budget-deficit",
+      "term": "Budget deficit",
+      "definition": "When government spending exceeds tax revenue in a year.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-automatic-stabilisers",
+      "term": "Automatic stabilisers",
+      "definition": "Taxes and transfers that change automatically with the cycle, e.g. unemployment benefits rise and tax revenue falls in a recession.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-crowding-out",
+      "term": "Crowding out",
+      "definition": "When government borrowing raises interest rates and reduces private investment, weakening the effect of fiscal expansion.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-time-lags",
+      "term": "Time lags",
+      "definition": "Delays between recognising a problem, acting and the policy taking effect.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.5-3.6-money-creation",
+      "term": "Money creation",
+      "definition": "Commercial banks create new deposits (money) when they make loans, limited by reserves and demand for credit.",
+      "hl": true
+    },
+    {
+      "id": "economics-3.5-3.6-multiplier",
+      "term": "Keynesian multiplier",
+      "definition": "The ratio of the final change in real GDP to the initial change in spending: k = 1 ÷ (1 − MPC) = 1 ÷ (MPS + MPT + MPM).",
+      "hl": true
+    },
+    {
+      "id": "economics-3.5-3.6-mpc",
+      "term": "Marginal propensity to consume (MPC)",
+      "definition": "The share of an extra unit of income that is spent on domestic consumption.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-3.5-3.6-1",
+      "title": "Monetary policy",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.5-3.6-1-q01",
+          "type": "mcq",
+          "prompt": "To reduce high inflation, a central bank is most likely to…",
+          "options": [
+            "buy government bonds",
+            "cut the reserve requirement",
+            "start quantitative easing",
+            "raise its policy interest rate"
+          ],
+          "answer": 3,
+          "explanation": "Higher interest rates reduce borrowing and spending, so AD falls.",
+          "terms": [
+            "economics-3.5-3.6-interest-rate",
+            "economics-3.5-3.6-monetary-policy"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q02",
+          "type": "order",
+          "prompt": "Order the transmission of an interest rate cut.",
+          "items": [
+            "Central bank cuts the policy rate",
+            "Commercial banks cut lending rates",
+            "Borrowing for consumption and investment rises",
+            "AD shifts right"
+          ],
+          "explanation": "Lower rates reduce the cost of borrowing and the reward for saving.",
+          "terms": [
+            "economics-3.5-3.6-interest-rate",
+            "economics-3.5-3.6-monetary-policy"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q03",
+          "type": "tf",
+          "statement": "When a central bank sells government bonds, the money supply tends to fall.",
+          "answer": true,
+          "explanation": "Buyers pay the central bank, draining reserves from the banking system.",
+          "terms": [
+            "economics-3.5-3.6-omo"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q04",
+          "type": "fill",
+          "text": "Nominal interest rate 5%, inflation 3%. The real interest rate is ___%.",
+          "answer": "2",
+          "accept": [
+            "2%"
+          ],
+          "bank": [
+            "8",
+            "1.67",
+            "2",
+            "15"
+          ],
+          "explanation": "Real rate ≈ nominal − inflation = 2%.",
+          "terms": [
+            "economics-3.5-3.6-real-interest"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q05",
+          "type": "mcq",
+          "prompt": "Why did central banks use quantitative easing after 2008 and in 2020?",
+          "options": [
+            "Inflation was too high",
+            "To reduce the money supply",
+            "To raise long-term interest rates",
+            "Policy rates were already close to zero"
+          ],
+          "answer": 3,
+          "explanation": "QE buys assets to lower long-term rates when the policy rate cannot fall further.",
+          "terms": [
+            "economics-3.5-3.6-qe"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q06",
+          "type": "match",
+          "prompt": "Match each tool to its expansionary use.",
+          "pairs": [
+            {
+              "left": "Policy rate",
+              "right": "Cut it"
+            },
+            {
+              "left": "Open market operations",
+              "right": "Buy bonds"
+            },
+            {
+              "left": "Reserve requirement",
+              "right": "Lower it"
+            },
+            {
+              "left": "Quantitative easing",
+              "right": "Large-scale asset purchases"
+            }
+          ],
+          "explanation": "Each increases money supply or lowers interest rates to raise AD.",
+          "terms": [
+            "economics-3.5-3.6-interest-rate",
+            "economics-3.5-3.6-omo",
+            "economics-3.5-3.6-reserve-requirement",
+            "economics-3.5-3.6-qe"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q07",
+          "type": "mcq",
+          "prompt": "Which is a constraint on expansionary monetary policy in a deep recession?",
+          "options": [
+            "It cannot be changed quickly",
+            "It always causes budget deficits",
+            "Parliament must approve each change",
+            "Low confidence means people may not borrow even at low rates"
+          ],
+          "answer": 3,
+          "explanation": "Low confidence and the zero lower bound limit monetary policy (\"pushing on a string\").",
+          "terms": [
+            "economics-3.5-3.6-monetary-policy"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q08",
+          "type": "tf",
+          "statement": "An advantage of monetary policy is that independent central banks can change rates quickly, free of political pressure.",
+          "answer": true,
+          "explanation": "Decisions can be made at regular meetings without legislation.",
+          "terms": [
+            "economics-3.5-3.6-central-bank"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q09",
+          "type": "fill",
+          "text": "Central bank buying or selling of government bonds is called ___ market operations.",
+          "answer": "open",
+          "bank": [
+            "closed",
+            "foreign",
+            "capital",
+            "open"
+          ],
+          "explanation": "OMOs are a routine way to manage liquidity and interest rates.",
+          "terms": [
+            "economics-3.5-3.6-omo"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-1-q10",
+          "type": "mcq",
+          "prompt": "Higher interest rates can also reduce AD through the exchange rate because…",
+          "options": [
+            "imports become dearer",
+            "the currency depreciates",
+            "hot money inflows raise the currency’s value, making exports dearer",
+            "exports become cheaper"
+          ],
+          "answer": 2,
+          "explanation": "An appreciation reduces net exports.",
+          "terms": [
+            "economics-3.5-3.6-interest-rate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.5-3.6-2",
+      "title": "Fiscal policy",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.5-3.6-2-q01",
+          "type": "mcq",
+          "prompt": "Which is an example of expansionary fiscal policy?",
+          "options": [
+            "Cutting income tax and raising infrastructure spending",
+            "Raising interest rates",
+            "Raising VAT",
+            "Cutting welfare spending"
+          ],
+          "answer": 0,
+          "explanation": "Lower taxes and higher spending raise AD.",
+          "terms": [
+            "economics-3.5-3.6-fiscal-policy"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q02",
+          "type": "tf",
+          "statement": "Unemployment benefits act as an automatic stabiliser.",
+          "answer": true,
+          "explanation": "They rise automatically in a downturn, supporting incomes and AD without new decisions.",
+          "terms": [
+            "economics-3.5-3.6-automatic-stabilisers"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q03",
+          "type": "fill",
+          "text": "Government spending greater than tax revenue in a year is a budget ___.",
+          "answer": "deficit",
+          "bank": [
+            "surplus",
+            "debt",
+            "deficit",
+            "balance"
+          ],
+          "explanation": "Deficits add to government debt.",
+          "terms": [
+            "economics-3.5-3.6-budget-deficit"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q04",
+          "type": "mcq",
+          "prompt": "What is crowding out?",
+          "options": [
+            "Imports replace domestic goods",
+            "Firms leave a market",
+            "Government borrowing raises interest rates and reduces private investment",
+            "Higher taxes raise saving"
+          ],
+          "answer": 2,
+          "explanation": "It reduces the net effect of fiscal expansion on AD.",
+          "terms": [
+            "economics-3.5-3.6-crowding-out"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q05",
+          "type": "match",
+          "prompt": "Match each item to its category.",
+          "pairs": [
+            {
+              "left": "Income tax",
+              "right": "Direct tax"
+            },
+            {
+              "left": "VAT",
+              "right": "Indirect tax"
+            },
+            {
+              "left": "Building a hospital",
+              "right": "Capital expenditure"
+            },
+            {
+              "left": "Nurses’ salaries",
+              "right": "Current expenditure"
+            }
+          ],
+          "explanation": "Government revenue and spending have several categories.",
+          "terms": [
+            "economics-3.5-3.6-fiscal-policy"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q06",
+          "type": "mcq",
+          "prompt": "Which is a key weakness of discretionary fiscal policy?",
+          "options": [
+            "It cannot affect AD",
+            "It never affects employment",
+            "Long time lags in planning and approving spending",
+            "It always reduces debt"
+          ],
+          "answer": 2,
+          "explanation": "By the time spending happens, the economy may already be recovering.",
+          "terms": [
+            "economics-3.5-3.6-time-lags"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q07",
+          "type": "tf",
+          "statement": "Fiscal policy can target specific regions or industries more easily than monetary policy.",
+          "answer": true,
+          "explanation": "Spending and tax changes can be directed, whereas interest rates affect everyone.",
+          "terms": [
+            "economics-3.5-3.6-fiscal-policy"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q08",
+          "type": "mcq",
+          "prompt": "In a recession with very low interest rates, why might fiscal policy be preferred?",
+          "options": [
+            "Fiscal policy has no time lags",
+            "Fiscal policy reduces debt",
+            "Monetary policy has little room left, and government spending directly raises AD",
+            "It causes crowding out"
+          ],
+          "answer": 2,
+          "explanation": "At the zero lower bound, fiscal stimulus is often more powerful.",
+          "terms": [
+            "economics-3.5-3.6-fiscal-policy",
+            "economics-3.5-3.6-crowding-out"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q09",
+          "type": "fill",
+          "text": "Delays between identifying a problem and a policy having an effect are time ___.",
+          "answer": "lags",
+          "bank": [
+            "lags",
+            "gaps",
+            "cycles",
+            "limits"
+          ],
+          "explanation": "Both monetary and fiscal policy suffer lags.",
+          "terms": [
+            "economics-3.5-3.6-time-lags"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-2-q10",
+          "type": "order",
+          "prompt": "Order the effect of a fiscal stimulus.",
+          "items": [
+            "Government raises infrastructure spending",
+            "Construction firms hire workers",
+            "Workers spend their new income",
+            "AD and real GDP rise by more than the initial spending"
+          ],
+          "explanation": "The extra rounds of spending are the multiplier effect.",
+          "terms": [
+            "economics-3.5-3.6-fiscal-policy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.5-3.6-3",
+      "title": "HL: Money creation and the multiplier",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-3.5-3.6-3-q01",
+          "type": "mcq",
+          "prompt": "MPS = 0.1, MPT = 0.2, MPM = 0.2. What is the multiplier?",
+          "options": [
+            "5",
+            "2",
+            "10",
+            "0.5"
+          ],
+          "answer": 1,
+          "explanation": "k = 1 ÷ (0.1 + 0.2 + 0.2) = 1 ÷ 0.5 = 2.",
+          "terms": [
+            "economics-3.5-3.6-multiplier"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q02",
+          "type": "fill",
+          "text": "With a multiplier of 2, a $5 bn rise in government spending raises real GDP by $___ bn.",
+          "answer": "10",
+          "accept": [
+            "10 bn"
+          ],
+          "bank": [
+            "2.5",
+            "5",
+            "10",
+            "7"
+          ],
+          "explanation": "ΔY = k × ΔG = 2 × 5 = 10.",
+          "terms": [
+            "economics-3.5-3.6-multiplier"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q03",
+          "type": "mcq",
+          "prompt": "If MPC (domestic) is 0.75, the multiplier is…",
+          "options": [
+            "0.25",
+            "4",
+            "1.33",
+            "7.5"
+          ],
+          "answer": 1,
+          "explanation": "k = 1 ÷ (1 − 0.75) = 4.",
+          "terms": [
+            "economics-3.5-3.6-multiplier",
+            "economics-3.5-3.6-mpc"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q04",
+          "type": "tf",
+          "statement": "A higher marginal propensity to import makes the multiplier smaller.",
+          "answer": true,
+          "explanation": "More of each extra dollar leaks abroad rather than being re-spent domestically.",
+          "terms": [
+            "economics-3.5-3.6-multiplier"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q05",
+          "type": "mcq",
+          "prompt": "Government wants real GDP to rise by $12 bn. The multiplier is 3. What initial injection is needed?",
+          "options": [
+            "$36 bn",
+            "$4 bn",
+            "$9 bn",
+            "$15 bn"
+          ],
+          "answer": 1,
+          "explanation": "ΔG = ΔY ÷ k = 12 ÷ 3 = 4.",
+          "terms": [
+            "economics-3.5-3.6-multiplier"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q06",
+          "type": "tf",
+          "statement": "Commercial banks create money when they make loans.",
+          "answer": true,
+          "explanation": "A loan creates a new deposit in the borrower’s account.",
+          "terms": [
+            "economics-3.5-3.6-money-creation"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q07",
+          "type": "mcq",
+          "prompt": "How does a higher minimum reserve requirement affect money creation?",
+          "options": [
+            "Banks can lend more",
+            "Banks can lend less from each deposit, so less money is created",
+            "It has no effect",
+            "It creates inflation"
+          ],
+          "answer": 1,
+          "explanation": "More must be held in reserve, reducing lending.",
+          "terms": [
+            "economics-3.5-3.6-money-creation",
+            "economics-3.5-3.6-reserve-requirement"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q08",
+          "type": "fill",
+          "text": "The share of extra income spent on domestic consumption is the marginal propensity to ___.",
+          "answer": "consume",
+          "bank": [
+            "consume",
+            "save",
+            "import",
+            "invest"
+          ],
+          "explanation": "MPC + MPS + MPT + MPM = 1.",
+          "terms": [
+            "economics-3.5-3.6-mpc"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q09",
+          "type": "match",
+          "prompt": "Match each leakage to its propensity.",
+          "pairs": [
+            {
+              "left": "Saving",
+              "right": "MPS"
+            },
+            {
+              "left": "Taxation",
+              "right": "MPT"
+            },
+            {
+              "left": "Imports",
+              "right": "MPM"
+            },
+            {
+              "left": "Domestic spending",
+              "right": "MPC"
+            }
+          ],
+          "explanation": "The multiplier = 1 ÷ (sum of marginal propensities to withdraw).",
+          "terms": [
+            "economics-3.5-3.6-multiplier",
+            "economics-3.5-3.6-mpc"
+          ]
+        },
+        {
+          "id": "economics-3.5-3.6-3-q10",
+          "type": "order",
+          "prompt": "Order the multiplier process after $100 m of new investment (MPC = 0.5).",
+          "items": [
+            "$100 m becomes income for workers and firms",
+            "$50 m is spent on domestic output",
+            "$25 m is spent in the next round",
+            "Total rise in GDP approaches $200 m"
+          ],
+          "explanation": "Each round is half the previous one; k = 1 ÷ 0.5 = 2.",
+          "terms": [
+            "economics-3.5-3.6-multiplier"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "id": "economics-4.7-4.10",
+  "code": "4.7–4.10",
+  "unit": "4",
+  "title": "Sustainable development: measurement, barriers and strategies",
+  "level": "SL",
+  "summary": "Development means broad improvements in well-being, not just growth. It is measured with single and composite indicators such as the HDI, held back by economic, social, political and institutional barriers, and promoted through trade, investment, aid, institutions and empowerment.",
+  "keyterms": [
+    {
+      "id": "economics-4.7-4.10-development",
+      "term": "Economic development",
+      "definition": "A broad improvement in living standards and well-being, including health, education, freedom and reduced poverty.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-sdgs",
+      "term": "Sustainable Development Goals (SDGs)",
+      "definition": "The 17 United Nations goals for 2030, covering poverty, health, education, inequality and the environment.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-hdi",
+      "term": "Human Development Index (HDI)",
+      "definition": "A UN composite index of health (life expectancy), education (years of schooling) and income (GNI per capita at PPP).",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-ihdi",
+      "term": "Inequality-adjusted HDI (IHDI)",
+      "definition": "The HDI adjusted for inequality in each dimension; the gap shows the loss in development due to inequality.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-gii",
+      "term": "Gender Inequality Index (GII)",
+      "definition": "A UN index measuring gender gaps in reproductive health, empowerment and labour market participation.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-poverty-trap",
+      "term": "Poverty trap",
+      "definition": "A self-reinforcing cycle where low income leads to low saving, investment and human capital, keeping income low.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-informal-economy",
+      "term": "Informal economy",
+      "definition": "Economic activity that is unregistered, untaxed and unregulated by government.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-primary-dependence",
+      "term": "Dependence on primary commodities",
+      "definition": "Reliance on a few raw material exports, exposing a country to volatile prices and possibly declining terms of trade.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-institutions",
+      "term": "Institutions",
+      "definition": "The formal and informal rules of a society, such as property rights, the legal system and control of corruption.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-fdi",
+      "term": "Foreign direct investment (FDI)",
+      "definition": "Long-term investment by a firm in productive assets in another country, e.g. a multinational building a factory.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-aid",
+      "term": "Foreign aid",
+      "definition": "Grants, concessional loans or technical help given to developing countries by governments or NGOs.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-microfinance",
+      "term": "Microfinance",
+      "definition": "Small loans and financial services for low-income people without access to banks, often to start small businesses.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-diversification",
+      "term": "Diversification",
+      "definition": "Spreading production and exports across more goods and services to reduce risk.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.7-4.10-empowerment",
+      "term": "Women’s empowerment",
+      "definition": "Improving women’s access to education, finance, work and decision-making, which raises growth and development.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-4.7-4.10-1",
+      "title": "Sustainable development and measuring it",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-4.7-4.10-1-q01",
+          "type": "tf",
+          "statement": "Economic growth and economic development mean exactly the same thing.",
+          "answer": false,
+          "explanation": "Growth is a rise in real output; development is broader improvement in well-being.",
+          "terms": [
+            "economics-4.7-4.10-development"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q02",
+          "type": "fill",
+          "text": "The UN has set ___ Sustainable Development Goals for 2030.",
+          "answer": "17",
+          "bank": [
+            "8",
+            "17",
+            "10",
+            "25"
+          ],
+          "explanation": "The SDGs replaced the eight Millennium Development Goals in 2015.",
+          "terms": [
+            "economics-4.7-4.10-sdgs"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q03",
+          "type": "match",
+          "prompt": "Match each HDI dimension to its indicator.",
+          "pairs": [
+            {
+              "left": "Health",
+              "right": "Life expectancy at birth"
+            },
+            {
+              "left": "Education",
+              "right": "Mean and expected years of schooling"
+            },
+            {
+              "left": "Standard of living",
+              "right": "GNI per capita (PPP)"
+            }
+          ],
+          "explanation": "The HDI is a composite of these three dimensions.",
+          "terms": [
+            "economics-4.7-4.10-hdi"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q04",
+          "type": "mcq",
+          "prompt": "Country P’s IHDI is far below its HDI. What does this suggest?",
+          "options": [
+            "Its GDP is falling",
+            "It has very low life expectancy",
+            "High inequality reduces its human development",
+            "Its data are wrong"
+          ],
+          "answer": 2,
+          "explanation": "The gap between HDI and IHDI shows development lost to inequality.",
+          "terms": [
+            "economics-4.7-4.10-ihdi"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q05",
+          "type": "mcq",
+          "prompt": "A country’s GNI per capita rank is much higher than its HDI rank. The most likely explanation is…",
+          "options": [
+            "Income is not translating into good health and education outcomes",
+            "It has a very equal income distribution",
+            "It has high life expectancy",
+            "It is a low-income country"
+          ],
+          "answer": 0,
+          "explanation": "Resource-rich economies with weak public services often show this pattern.",
+          "terms": [
+            "economics-4.7-4.10-hdi"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q06",
+          "type": "tf",
+          "statement": "The Gender Inequality Index includes measures of reproductive health.",
+          "answer": true,
+          "explanation": "It covers reproductive health, empowerment and labour market participation.",
+          "terms": [
+            "economics-4.7-4.10-gii"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q07",
+          "type": "mcq",
+          "prompt": "Which single indicator is a health measure of development?",
+          "options": [
+            "Infant mortality rate",
+            "GDP growth",
+            "Exports per capita",
+            "Interest rate"
+          ],
+          "answer": 0,
+          "explanation": "Health indicators include life expectancy and infant mortality.",
+          "terms": [
+            "economics-4.7-4.10-development"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q08",
+          "type": "fill",
+          "text": "A UN composite index of health, education and income is the ___.",
+          "answer": "HDI",
+          "bank": [
+            "GII",
+            "MPI",
+            "CPI",
+            "HDI"
+          ],
+          "explanation": "It ranges from 0 to 1.",
+          "terms": [
+            "economics-4.7-4.10-hdi"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q09",
+          "type": "mcq",
+          "prompt": "Why is sustainability central to development?",
+          "options": [
+            "Growth that depletes resources reduces future generations’ well-being",
+            "Sustainability always raises GDP",
+            "Development requires higher emissions",
+            "It only matters in rich countries"
+          ],
+          "answer": 0,
+          "explanation": "Sustainable development meets present needs without compromising the future.",
+          "terms": [
+            "economics-4.7-4.10-sdgs",
+            "economics-4.7-4.10-development"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-1-q10",
+          "type": "order",
+          "prompt": "Order the poverty trap.",
+          "items": [
+            "Low incomes",
+            "Low saving and investment",
+            "Low productivity and capital",
+            "Continued low incomes"
+          ],
+          "explanation": "Breaking the cycle may need outside finance, aid or investment in human capital.",
+          "terms": [
+            "economics-4.7-4.10-poverty-trap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-4.7-4.10-2",
+      "title": "Barriers and strategies",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-4.7-4.10-2-q01",
+          "type": "mcq",
+          "prompt": "Why is dependence on primary commodity exports a barrier to development?",
+          "options": [
+            "Primary goods have high YED",
+            "Prices are volatile and the terms of trade may decline",
+            "Demand for commodities is perfectly elastic",
+            "They can never be exported"
+          ],
+          "answer": 1,
+          "explanation": "Export revenue swings with world prices, making planning hard.",
+          "terms": [
+            "economics-4.7-4.10-primary-dependence"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q02",
+          "type": "match",
+          "prompt": "Match each barrier to its type.",
+          "pairs": [
+            {
+              "left": "Weak property rights",
+              "right": "Institutional"
+            },
+            {
+              "left": "Low female school enrolment",
+              "right": "Social"
+            },
+            {
+              "left": "Civil conflict",
+              "right": "Political"
+            },
+            {
+              "left": "Large informal economy",
+              "right": "Economic"
+            }
+          ],
+          "explanation": "Barriers interact and reinforce each other.",
+          "terms": [
+            "economics-4.7-4.10-institutions",
+            "economics-4.7-4.10-informal-economy"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q03",
+          "type": "tf",
+          "statement": "A large informal economy reduces government tax revenue.",
+          "answer": true,
+          "explanation": "Unregistered activity is untaxed, limiting spending on public services.",
+          "terms": [
+            "economics-4.7-4.10-informal-economy"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q04",
+          "type": "fill",
+          "text": "Long-term investment by a multinational in a factory abroad is foreign ___ investment.",
+          "answer": "direct",
+          "bank": [
+            "direct",
+            "portfolio",
+            "indirect",
+            "public"
+          ],
+          "explanation": "FDI brings capital, jobs and technology but may repatriate profits.",
+          "terms": [
+            "economics-4.7-4.10-fdi"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q05",
+          "type": "mcq",
+          "prompt": "Which is a possible disadvantage of FDI for a host country?",
+          "options": [
+            "It always reduces employment",
+            "Profits may be sent abroad and local firms crowded out",
+            "It never transfers technology",
+            "It reduces exports"
+          ],
+          "answer": 1,
+          "explanation": "Benefits depend on links to the local economy and regulation.",
+          "terms": [
+            "economics-4.7-4.10-fdi"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q06",
+          "type": "mcq",
+          "prompt": "Microfinance aims mainly to…",
+          "options": [
+            "fund large infrastructure projects",
+            "reduce interest rates nationwide",
+            "replace government spending",
+            "give small loans to low-income people without access to banks"
+          ],
+          "answer": 3,
+          "explanation": "It helps entrepreneurs, especially women, start small businesses.",
+          "terms": [
+            "economics-4.7-4.10-microfinance"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q07",
+          "type": "tf",
+          "statement": "Diversifying exports can reduce a country’s vulnerability to price shocks.",
+          "answer": true,
+          "explanation": "A wider export base spreads risk.",
+          "terms": [
+            "economics-4.7-4.10-diversification"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q08",
+          "type": "mcq",
+          "prompt": "Which is a criticism of tied aid?",
+          "options": [
+            "It has no conditions",
+            "It is always a grant",
+            "It goes directly to the poorest",
+            "It must be spent on goods from the donor country, often at higher cost"
+          ],
+          "answer": 3,
+          "explanation": "Tied aid may serve the donor’s interests more than the recipient’s.",
+          "terms": [
+            "economics-4.7-4.10-aid"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q09",
+          "type": "fill",
+          "text": "Spreading production across more goods and services to reduce risk is ___.",
+          "answer": "diversification",
+          "bank": [
+            "specialisation",
+            "diversification",
+            "privatisation",
+            "integration"
+          ],
+          "explanation": "It moves an economy away from reliance on a few commodities.",
+          "terms": [
+            "economics-4.7-4.10-diversification"
+          ]
+        },
+        {
+          "id": "economics-4.7-4.10-2-q10",
+          "type": "mcq",
+          "prompt": "Why is women’s empowerment seen as a powerful development strategy?",
+          "options": [
+            "Educated women tend to have healthier, better-educated children and raise household income",
+            "It reduces the labour force",
+            "It lowers productivity",
+            "It only affects social outcomes"
+          ],
+          "answer": 0,
+          "explanation": "Gains in female education and work spread across generations.",
+          "terms": [
+            "economics-4.7-4.10-empowerment"
+          ]
+        }
+      ]
+    }
+  ]
+}

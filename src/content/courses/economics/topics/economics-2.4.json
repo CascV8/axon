@@ -1,0 +1,445 @@
+{
+  "id": "economics-2.4",
+  "code": "2.4",
+  "unit": "2",
+  "title": "Critique of the maximizing behaviour of consumers and producers",
+  "level": "SL",
+  "summary": "Standard theory assumes people maximise utility and firms maximise profit. Behavioural economics shows how biases and limits change real choices, and how nudges and choice architecture use this. Firms may pursue other goals too.",
+  "keyterms": [
+    {
+      "id": "economics-2.4-rational-choice",
+      "term": "Rational consumer choice",
+      "definition": "The assumption that consumers have consistent preferences, full information and always choose to maximise their utility.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-utility",
+      "term": "Utility",
+      "definition": "The satisfaction or benefit a consumer gets from consuming a good or service.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-bounded-rationality",
+      "term": "Bounded rationality",
+      "definition": "People are rational only within limits of information, time and thinking ability, so they look for satisfactory rather than best choices.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-bounded-self-control",
+      "term": "Bounded self-control",
+      "definition": "People lack the self-discipline to always act in their own long-term interest, e.g. under-saving or overeating.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-bounded-selfishness",
+      "term": "Bounded selfishness",
+      "definition": "People often act unselfishly, e.g. giving to charity, rather than purely in their own interest.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-anchoring",
+      "term": "Anchoring",
+      "definition": "A bias where people rely heavily on the first piece of information (an \"anchor\") when making decisions.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-framing",
+      "term": "Framing",
+      "definition": "A bias where choices depend on how options are presented, e.g. \"90% fat free\" versus \"10% fat\".",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-rule-of-thumb",
+      "term": "Rules of thumb (heuristics)",
+      "definition": "Mental shortcuts that simplify decisions, such as always buying the same brand.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-choice-architecture",
+      "term": "Choice architecture",
+      "definition": "Designing the way choices are presented to influence decisions, including default, restricted and mandated choices.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-nudge",
+      "term": "Nudge",
+      "definition": "A change in how choices are presented that steers behaviour in a predictable way without banning options or changing incentives significantly.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-default-choice",
+      "term": "Default choice",
+      "definition": "The option that applies automatically unless a person actively opts out, e.g. automatic enrolment in a pension.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-profit-max",
+      "term": "Profit maximisation",
+      "definition": "The assumed goal of firms: producing where the gap between total revenue and total cost is greatest.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-csr",
+      "term": "Corporate social responsibility (CSR)",
+      "definition": "When a firm acts ethically and considers its impact on society and the environment, not just profit.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-satisficing",
+      "term": "Satisficing",
+      "definition": "Aiming for satisfactory results (e.g. enough profit to keep owners happy) rather than the maximum.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.4-market-share",
+      "term": "Market share",
+      "definition": "A firm’s sales as a percentage of total market sales; some firms aim to grow it, even at the cost of short-run profit.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-2.4-1",
+      "title": "Rational choice and behavioural economics",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.4-1-q01",
+          "type": "mcq",
+          "prompt": "Which is an assumption of rational consumer choice?",
+          "options": [
+            "Consumers are influenced by how choices are framed",
+            "Consumers use rules of thumb",
+            "Consumers act out of concern for others",
+            "Consumers have perfect information and consistent preferences"
+          ],
+          "answer": 3,
+          "explanation": "Standard theory assumes consistent preferences, perfect information and utility maximisation; the others are behavioural findings.",
+          "terms": [
+            "economics-2.4-rational-choice",
+            "economics-2.4-utility"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q02",
+          "type": "tf",
+          "statement": "Behavioural economics argues that consumers always maximise utility.",
+          "answer": false,
+          "explanation": "It shows systematic departures from rationality due to biases and limits on information, willpower and selfishness.",
+          "terms": [
+            "economics-2.4-rational-choice",
+            "economics-2.4-bounded-rationality"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q03",
+          "type": "match",
+          "prompt": "Match each behaviour to the concept it illustrates.",
+          "pairs": [
+            {
+              "left": "Buying a gym membership but never going",
+              "right": "Bounded self-control"
+            },
+            {
+              "left": "Donating to a disaster appeal",
+              "right": "Bounded selfishness"
+            },
+            {
+              "left": "Choosing the first decent phone plan found",
+              "right": "Bounded rationality"
+            },
+            {
+              "left": "Always buying the same cereal brand",
+              "right": "Rule of thumb"
+            }
+          ],
+          "explanation": "Each shows a limit to the textbook \"rational maximiser\".",
+          "terms": [
+            "economics-2.4-bounded-self-control",
+            "economics-2.4-bounded-selfishness",
+            "economics-2.4-bounded-rationality",
+            "economics-2.4-rule-of-thumb"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q04",
+          "type": "mcq",
+          "prompt": "A shop marks a coat \"Was $300, now $180\". Shoppers think $180 is a bargain. Which bias is the shop using?",
+          "options": [
+            "Bounded selfishness",
+            "Anchoring",
+            "Default choice",
+            "Satisficing"
+          ],
+          "answer": 1,
+          "explanation": "The original $300 acts as an anchor that makes $180 look cheap.",
+          "terms": [
+            "economics-2.4-anchoring"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q05",
+          "type": "fill",
+          "text": "Describing yoghurt as \"95% fat free\" rather than \"5% fat\" is an example of ___.",
+          "answer": "framing",
+          "bank": [
+            "anchoring",
+            "satisficing",
+            "mandating",
+            "framing"
+          ],
+          "explanation": "The same information presented differently changes the choice.",
+          "terms": [
+            "economics-2.4-framing"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q06",
+          "type": "mcq",
+          "prompt": "A government automatically enrols all workers in a pension scheme but lets them opt out. This is…",
+          "options": [
+            "a mandated choice",
+            "a default choice",
+            "a restricted choice",
+            "a subsidy"
+          ],
+          "answer": 1,
+          "explanation": "The default option applies unless people actively change it; inertia keeps most people enrolled.",
+          "terms": [
+            "economics-2.4-default-choice",
+            "economics-2.4-choice-architecture"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q07",
+          "type": "tf",
+          "statement": "A nudge works by banning undesirable options.",
+          "answer": false,
+          "explanation": "Nudges steer behaviour while keeping freedom of choice; banning is a restricted choice or regulation.",
+          "terms": [
+            "economics-2.4-nudge"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q08",
+          "type": "fill",
+          "text": "Placing fruit at eye level in a school canteen to encourage healthy eating is a ___.",
+          "answer": "nudge",
+          "bank": [
+            "tax",
+            "quota",
+            "nudge",
+            "subsidy"
+          ],
+          "explanation": "Changing how options are presented, without banning or pricing, is a nudge.",
+          "terms": [
+            "economics-2.4-nudge",
+            "economics-2.4-choice-architecture"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q09",
+          "type": "mcq",
+          "prompt": "Requiring people to state, when renewing a driving licence, whether they wish to be organ donors is a…",
+          "options": [
+            "default choice",
+            "restricted choice",
+            "price incentive",
+            "mandated choice"
+          ],
+          "answer": 3,
+          "explanation": "A mandated choice forces an active decision, rather than relying on a default.",
+          "terms": [
+            "economics-2.4-choice-architecture"
+          ]
+        },
+        {
+          "id": "economics-2.4-1-q10",
+          "type": "order",
+          "prompt": "Order the steps by which a nudge raises pension saving.",
+          "items": [
+            "Workers procrastinate and under-save",
+            "Government sets enrolment as the default",
+            "Most workers stay enrolled through inertia",
+            "Saving rates rise without compulsion"
+          ],
+          "explanation": "Default choices exploit inertia (bounded self-control) to improve long-term outcomes.",
+          "terms": [
+            "economics-2.4-default-choice",
+            "economics-2.4-bounded-self-control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.4-2",
+      "title": "Business objectives",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.4-2-q01",
+          "type": "mcq",
+          "prompt": "In standard theory, firms aim to…",
+          "options": [
+            "maximise profit",
+            "maximise revenue",
+            "maximise market share",
+            "maximise employment"
+          ],
+          "answer": 0,
+          "explanation": "Profit maximisation is the standard assumption, though real firms may have other goals.",
+          "terms": [
+            "economics-2.4-profit-max"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q02",
+          "type": "tf",
+          "statement": "A firm that accepts lower profits to source fair-trade inputs is showing corporate social responsibility.",
+          "answer": true,
+          "explanation": "CSR means considering social and environmental impacts, which may increase costs.",
+          "terms": [
+            "economics-2.4-csr"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q03",
+          "type": "fill",
+          "text": "Aiming for a satisfactory level of profit rather than the maximum is called ___.",
+          "answer": "satisficing",
+          "bank": [
+            "maximising",
+            "nudging",
+            "satisficing",
+            "anchoring"
+          ],
+          "explanation": "Managers may satisfice to balance the goals of different stakeholders.",
+          "terms": [
+            "economics-2.4-satisficing"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q04",
+          "type": "mcq",
+          "prompt": "Why might a new streaming service set low prices that give losses for its first two years?",
+          "options": [
+            "Because it aims to maximise short-run profit",
+            "Because costs are zero",
+            "To gain market share and build a customer base",
+            "Because the government sets its price"
+          ],
+          "answer": 2,
+          "explanation": "Growing market share can bring long-run market power and profit.",
+          "terms": [
+            "economics-2.4-market-share"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q05",
+          "type": "match",
+          "prompt": "Match the business objective to an example.",
+          "pairs": [
+            {
+              "left": "Profit maximisation",
+              "right": "Setting output where profit is greatest"
+            },
+            {
+              "left": "CSR",
+              "right": "Cutting emissions beyond legal limits"
+            },
+            {
+              "left": "Market share",
+              "right": "Undercutting rivals to win customers"
+            },
+            {
+              "left": "Satisficing",
+              "right": "Earning enough to keep shareholders content"
+            }
+          ],
+          "explanation": "Firms may combine objectives, and these can conflict.",
+          "terms": [
+            "economics-2.4-profit-max",
+            "economics-2.4-csr",
+            "economics-2.4-market-share",
+            "economics-2.4-satisficing"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q06",
+          "type": "tf",
+          "statement": "Satisficing is more likely when ownership and management of a firm are separated.",
+          "answer": true,
+          "explanation": "Managers may pursue their own goals (salary, size, an easy life) as long as owners receive acceptable profits.",
+          "terms": [
+            "economics-2.4-satisficing"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q07",
+          "type": "mcq",
+          "prompt": "Which reason might lead a profit-seeking firm to adopt CSR?",
+          "options": [
+            "It improves its reputation and can raise long-run demand",
+            "It always lowers costs immediately",
+            "It is required in every country by law",
+            "It removes all competition"
+          ],
+          "answer": 0,
+          "explanation": "CSR can attract customers and staff, so it may be consistent with long-run profit.",
+          "terms": [
+            "economics-2.4-csr",
+            "economics-2.4-profit-max"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q08",
+          "type": "mcq",
+          "prompt": "Which is a criticism of the assumption that firms always maximise profit?",
+          "options": [
+            "Firms never care about profit",
+            "Firms are always run by owners",
+            "Firms often lack the information on costs and demand to find the profit-maximising point",
+            "Profit cannot be measured"
+          ],
+          "answer": 2,
+          "explanation": "Bounded rationality applies to firms too; they may use rules of thumb such as cost-plus pricing.",
+          "terms": [
+            "economics-2.4-profit-max",
+            "economics-2.4-satisficing"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q09",
+          "type": "fill",
+          "text": "A firm’s sales as a percentage of total market sales is its market ___.",
+          "answer": "share",
+          "bank": [
+            "share",
+            "power",
+            "structure",
+            "value"
+          ],
+          "explanation": "Market share is a measure of a firm’s relative size in its market.",
+          "terms": [
+            "economics-2.4-market-share"
+          ]
+        },
+        {
+          "id": "economics-2.4-2-q10",
+          "type": "order",
+          "prompt": "Order the steps of a market-share strategy.",
+          "items": [
+            "Firm cuts prices below rivals",
+            "Consumers switch to the firm",
+            "Market share and brand loyalty grow",
+            "Firm later raises prices or profits"
+          ],
+          "explanation": "Short-run sacrifices of profit can lead to long-run gains if rivals are weakened.",
+          "terms": [
+            "economics-2.4-market-share"
+          ]
+        }
+      ]
+    }
+  ]
+}

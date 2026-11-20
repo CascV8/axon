@@ -1,0 +1,447 @@
+{
+  "id": "economics-2.8-2.9",
+  "code": "2.8–2.9",
+  "unit": "2",
+  "title": "Market failure: externalities, common pool resources and public goods",
+  "level": "SL",
+  "summary": "Markets over- or under-produce when costs or benefits fall on third parties, when shared resources are overused, and when public goods face the free-rider problem. Governments respond with taxes, subsidies, regulation, permits, provision and cooperation.",
+  "keyterms": [
+    {
+      "id": "economics-2.8-2.9-market-failure",
+      "term": "Market failure",
+      "definition": "When the free market fails to allocate resources efficiently, so output is not where MSB = MSC.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-externality",
+      "term": "Externality",
+      "definition": "A cost or benefit of production or consumption that affects third parties not involved in the transaction.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-msc-msb",
+      "term": "Marginal social cost and benefit (MSC, MSB)",
+      "definition": "The full cost or benefit to society of one more unit: private plus external.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-neg-production",
+      "term": "Negative production externality",
+      "definition": "External costs from producing a good, e.g. pollution from a factory; MSC > MPC, so the good is overproduced.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-neg-consumption",
+      "term": "Negative consumption externality",
+      "definition": "External costs from consuming a good, e.g. passive smoking; MSB < MPB, so the good is overconsumed.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-pos-consumption",
+      "term": "Positive consumption externality",
+      "definition": "External benefits from consumption, e.g. vaccinations; MSB > MPB, so the good is underconsumed.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-pos-production",
+      "term": "Positive production externality",
+      "definition": "External benefits from production, e.g. staff training used by other firms; MSC < MPC, so underproduced.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-merit-good",
+      "term": "Merit good",
+      "definition": "A good that benefits users and society more than people realise, so it is underconsumed, e.g. education.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-demerit-good",
+      "term": "Demerit good",
+      "definition": "A good more harmful to users and society than people realise, so it is overconsumed, e.g. tobacco.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-pigouvian-tax",
+      "term": "Pigouvian (carbon) tax",
+      "definition": "A tax equal to the external cost per unit, which shifts MPC up to MSC to internalise the externality.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-tradable-permits",
+      "term": "Tradable permits (cap and trade)",
+      "definition": "A cap on total pollution with permits that firms can buy and sell, so cuts are made where they are cheapest.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-common-pool",
+      "term": "Common pool resource",
+      "definition": "A resource that is rivalrous but non-excludable, such as fish stocks, so it tends to be overused.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-tragedy-commons",
+      "term": "Tragedy of the commons",
+      "definition": "Overuse and depletion of a common pool resource because each user ignores the cost imposed on others.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-public-good",
+      "term": "Public good",
+      "definition": "A good that is non-rivalrous and non-excludable, e.g. street lighting or national defence.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-free-rider",
+      "term": "Free-rider problem",
+      "definition": "People can benefit from a public good without paying, so private firms cannot profitably supply it.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.8-2.9-self-governance",
+      "term": "Collective self-governance",
+      "definition": "Communities managing shared resources through their own rules and monitoring, as studied by Elinor Ostrom.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-2.8-2.9-1",
+      "title": "Externalities and merit/demerit goods",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.8-2.9-1-q01",
+          "type": "mcq",
+          "prompt": "A paper mill pollutes a river used by fishers. In the paper market…",
+          "options": [
+            "MSB > MPB, so paper is underproduced",
+            "MSC < MPC, so paper is underproduced",
+            "The market is allocatively efficient",
+            "MSC > MPC, so paper is overproduced"
+          ],
+          "answer": 3,
+          "explanation": "The pollution is an external cost; ignoring it, the market produces beyond the social optimum.",
+          "terms": [
+            "economics-2.8-2.9-neg-production",
+            "economics-2.8-2.9-msc-msb"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q02",
+          "type": "tf",
+          "statement": "Vaccinations generate a positive consumption externality because vaccinated people reduce the spread of disease to others.",
+          "answer": true,
+          "explanation": "MSB > MPB, so the free market underconsumes vaccines.",
+          "terms": [
+            "economics-2.8-2.9-pos-consumption"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q03",
+          "type": "match",
+          "prompt": "Match each example to the type of externality.",
+          "pairs": [
+            {
+              "left": "Factory smoke",
+              "right": "Negative production"
+            },
+            {
+              "left": "Loud music at a party",
+              "right": "Negative consumption"
+            },
+            {
+              "left": "A beekeeper’s bees pollinate nearby orchards",
+              "right": "Positive production"
+            },
+            {
+              "left": "Education raising others’ productivity",
+              "right": "Positive consumption"
+            }
+          ],
+          "explanation": "Ask: who causes the spillover (producer or consumer) and is it a cost or benefit?",
+          "terms": [
+            "economics-2.8-2.9-neg-production",
+            "economics-2.8-2.9-neg-consumption",
+            "economics-2.8-2.9-pos-production",
+            "economics-2.8-2.9-pos-consumption"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q04",
+          "type": "fill",
+          "text": "A good that is underconsumed because people underestimate its benefits is a ___ good.",
+          "answer": "merit",
+          "bank": [
+            "demerit",
+            "public",
+            "merit",
+            "inferior"
+          ],
+          "explanation": "Merit goods are often linked to positive consumption externalities and imperfect information.",
+          "terms": [
+            "economics-2.8-2.9-merit-good"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q05",
+          "type": "mcq",
+          "prompt": "Which policy best internalises a negative production externality?",
+          "options": [
+            "A subsidy to producers",
+            "A maximum price",
+            "Free provision of the good",
+            "A tax per unit equal to the external cost"
+          ],
+          "answer": 3,
+          "explanation": "A Pigouvian tax raises MPC to MSC, so output falls to the social optimum.",
+          "terms": [
+            "economics-2.8-2.9-pigouvian-tax"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q06",
+          "type": "mcq",
+          "prompt": "What is the main advantage of tradable permits over command-and-control regulation?",
+          "options": [
+            "They raise no revenue",
+            "Pollution is cut by the firms that can do so most cheaply",
+            "They guarantee zero pollution",
+            "They require no monitoring"
+          ],
+          "answer": 1,
+          "explanation": "Firms with low abatement costs cut more and sell permits; the cap still fixes total emissions.",
+          "terms": [
+            "economics-2.8-2.9-tradable-permits"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q07",
+          "type": "tf",
+          "statement": "A carbon tax gives firms an ongoing incentive to cut emissions.",
+          "answer": true,
+          "explanation": "Every tonne avoided saves tax, encouraging cleaner technology.",
+          "terms": [
+            "economics-2.8-2.9-pigouvian-tax"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q08",
+          "type": "fill",
+          "text": "The welfare loss from a negative externality arises because output is above the level where MSB = ___.",
+          "answer": "MSC",
+          "bank": [
+            "MPC",
+            "MPB",
+            "MSC",
+            "AC"
+          ],
+          "explanation": "The allocatively efficient output is where marginal social benefit equals marginal social cost.",
+          "terms": [
+            "economics-2.8-2.9-msc-msb",
+            "economics-2.8-2.9-market-failure"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q09",
+          "type": "mcq",
+          "prompt": "Which is the best policy to increase consumption of a merit good like preventive health checks?",
+          "options": [
+            "An indirect tax",
+            "A price floor",
+            "A ban on private clinics",
+            "A subsidy or free provision, plus information campaigns"
+          ],
+          "answer": 3,
+          "explanation": "Lowering the price and correcting information gaps both raise consumption towards the optimum.",
+          "terms": [
+            "economics-2.8-2.9-merit-good"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-1-q10",
+          "type": "order",
+          "prompt": "Order the effects of a carbon tax.",
+          "items": [
+            "Tax raises the cost of emitting",
+            "Firms’ supply shifts left (MPC rises towards MSC)",
+            "Output and emissions fall",
+            "Revenue can fund green investment"
+          ],
+          "explanation": "A Pigouvian tax internalises the externality and raises revenue.",
+          "terms": [
+            "economics-2.8-2.9-pigouvian-tax"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.8-2.9-2",
+      "title": "Common pool resources and public goods",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.8-2.9-2-q01",
+          "type": "mcq",
+          "prompt": "Why are ocean fish stocks a common pool resource?",
+          "options": [
+            "They are rivalrous but hard to exclude people from",
+            "They are non-rivalrous and non-excludable",
+            "They are excludable and rivalrous",
+            "They are produced by the government"
+          ],
+          "answer": 0,
+          "explanation": "One boat’s catch leaves fewer fish for others, but stopping boats from fishing is hard.",
+          "terms": [
+            "economics-2.8-2.9-common-pool"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q02",
+          "type": "fill",
+          "text": "Overuse of a shared resource because users ignore costs imposed on others is the tragedy of the ___.",
+          "answer": "commons",
+          "bank": [
+            "market",
+            "commons",
+            "public good",
+            "free rider"
+          ],
+          "explanation": "Rational individual choices lead to collective depletion.",
+          "terms": [
+            "economics-2.8-2.9-tragedy-commons"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q03",
+          "type": "tf",
+          "statement": "A lighthouse is a classic example of a public good.",
+          "answer": true,
+          "explanation": "One ship using the light does not reduce it for others, and ships cannot easily be excluded.",
+          "terms": [
+            "economics-2.8-2.9-public-good"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q04",
+          "type": "mcq",
+          "prompt": "Why does the free market fail to provide public goods?",
+          "options": [
+            "Public goods are always too expensive to produce",
+            "Demand for public goods is zero",
+            "People can benefit without paying (free riding), so firms cannot earn revenue",
+            "Public goods have negative externalities"
+          ],
+          "answer": 2,
+          "explanation": "Non-excludability creates the free-rider problem, so there is a \"missing market\".",
+          "terms": [
+            "economics-2.8-2.9-free-rider",
+            "economics-2.8-2.9-public-good"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q05",
+          "type": "match",
+          "prompt": "Match each good to its classification.",
+          "pairs": [
+            {
+              "left": "National defence",
+              "right": "Public good"
+            },
+            {
+              "left": "Fish in international waters",
+              "right": "Common pool resource"
+            },
+            {
+              "left": "A sandwich",
+              "right": "Private good"
+            },
+            {
+              "left": "A toll road",
+              "right": "Excludable (can charge)"
+            }
+          ],
+          "explanation": "Rivalry and excludability decide the category.",
+          "terms": [
+            "economics-2.8-2.9-public-good",
+            "economics-2.8-2.9-common-pool"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q06",
+          "type": "mcq",
+          "prompt": "Elinor Ostrom showed that common pool resources can be managed sustainably by…",
+          "options": [
+            "only full privatisation",
+            "only central government ownership",
+            "local communities setting and enforcing their own rules",
+            "removing all rules"
+          ],
+          "answer": 2,
+          "explanation": "Collective self-governance can work where users communicate, monitor and sanction rule-breakers.",
+          "terms": [
+            "economics-2.8-2.9-self-governance"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q07",
+          "type": "tf",
+          "statement": "Climate change requires international cooperation because the atmosphere is a global common pool resource.",
+          "answer": true,
+          "explanation": "No single country can solve it; each faces incentives to free ride on others’ cuts.",
+          "terms": [
+            "economics-2.8-2.9-common-pool",
+            "economics-2.8-2.9-free-rider"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q08",
+          "type": "fill",
+          "text": "Goods that are non-rivalrous and non-excludable are ___ goods.",
+          "answer": "public",
+          "bank": [
+            "merit",
+            "private",
+            "common pool",
+            "public"
+          ],
+          "explanation": "Pure public goods are usually funded by taxes.",
+          "terms": [
+            "economics-2.8-2.9-public-good"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q09",
+          "type": "mcq",
+          "prompt": "Which policy directly limits overfishing?",
+          "options": [
+            "Catch quotas enforced by regulators",
+            "A subsidy for fuel for fishing boats",
+            "Removing all fishing licences",
+            "A maximum price on fish"
+          ],
+          "answer": 0,
+          "explanation": "Quotas cap the amount taken. Fuel subsidies would encourage more fishing.",
+          "terms": [
+            "economics-2.8-2.9-common-pool",
+            "economics-2.8-2.9-tragedy-commons"
+          ]
+        },
+        {
+          "id": "economics-2.8-2.9-2-q10",
+          "type": "order",
+          "prompt": "Order the tragedy of the commons for a shared pasture.",
+          "items": [
+            "Each herder adds animals to gain more",
+            "Total grazing exceeds the pasture’s regeneration",
+            "Grass is depleted",
+            "All herders are worse off"
+          ],
+          "explanation": "Individual incentives conflict with collective sustainability.",
+          "terms": [
+            "economics-2.8-2.9-tragedy-commons"
+          ]
+        }
+      ]
+    }
+  ]
+}

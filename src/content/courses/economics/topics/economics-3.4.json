@@ -1,0 +1,611 @@
+{
+  "id": "economics-3.4",
+  "code": "3.4",
+  "unit": "3",
+  "title": "Economics of inequality and poverty (incl. 2.12 equity)",
+  "level": "SL",
+  "summary": "Markets do not guarantee a fair distribution. Inequality is measured with Lorenz curves and Gini coefficients; poverty can be absolute or relative. Taxes, transfers and public provision redistribute. HL calculates average and marginal tax rates.",
+  "keyterms": [
+    {
+      "id": "economics-3.4-equality-equity",
+      "term": "Equality vs equity",
+      "definition": "Equality means everyone has the same; equity means fairness, which may involve unequal treatment.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-income-inequality",
+      "term": "Income inequality",
+      "definition": "Differences in income between individuals or households.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-wealth-inequality",
+      "term": "Wealth inequality",
+      "definition": "Differences in the ownership of assets such as property, shares and savings; usually greater than income inequality.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-lorenz",
+      "term": "Lorenz curve",
+      "definition": "A curve showing the cumulative % of income received by the cumulative % of households; the further from the diagonal, the more unequal.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-gini",
+      "term": "Gini coefficient",
+      "definition": "A measure of inequality from 0 (perfect equality) to 1 (perfect inequality), based on the Lorenz curve.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-absolute-poverty",
+      "term": "Absolute poverty",
+      "definition": "Income below what is needed for basic needs, e.g. below the World Bank international poverty line (about $3 a day at PPP).",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-relative-poverty",
+      "term": "Relative poverty",
+      "definition": "Income below a set share of the median income in a country, e.g. below 50% or 60% of the median.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-mpi",
+      "term": "Multidimensional Poverty Index (MPI)",
+      "definition": "A measure of poverty across health, education and living standards indicators.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-progressive-tax",
+      "term": "Progressive tax",
+      "definition": "A tax where the average tax rate rises as income rises, taking a larger share from higher incomes.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-regressive-tax",
+      "term": "Regressive tax",
+      "definition": "A tax where the average tax rate falls as income rises, so lower earners pay a larger share of income.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-proportional-tax",
+      "term": "Proportional tax",
+      "definition": "A tax where the average rate stays the same at all incomes (a flat tax).",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-transfer-payments",
+      "term": "Transfer payments",
+      "definition": "Payments from government to individuals with no output in return, e.g. pensions and unemployment benefits.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.4-average-tax-rate",
+      "term": "Average tax rate",
+      "definition": "Total tax paid ÷ total income × 100.",
+      "hl": true
+    },
+    {
+      "id": "economics-3.4-marginal-tax-rate",
+      "term": "Marginal tax rate",
+      "definition": "The tax rate paid on an additional unit of income.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-3.4-1",
+      "title": "Measuring inequality and poverty",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.4-1-q01",
+          "type": "tf",
+          "statement": "Equity and equality mean the same thing.",
+          "answer": false,
+          "explanation": "Equity is fairness; an equitable distribution may still be unequal.",
+          "terms": [
+            "economics-3.4-equality-equity"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q02",
+          "type": "mcq",
+          "prompt": "On a Lorenz curve diagram, what does the diagonal line represent?",
+          "options": [
+            "Perfect inequality",
+            "The poverty line",
+            "Perfect equality",
+            "The Gini coefficient"
+          ],
+          "answer": 2,
+          "explanation": "Along the diagonal, each x% of households receives x% of income.",
+          "terms": [
+            "economics-3.4-lorenz"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q03",
+          "type": "fill",
+          "text": "A Gini coefficient closer to 1 indicates more ___.",
+          "answer": "inequality",
+          "bank": [
+            "equality",
+            "growth",
+            "inequality",
+            "poverty"
+          ],
+          "explanation": "0 is perfect equality; 1 is perfect inequality.",
+          "terms": [
+            "economics-3.4-gini"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q04",
+          "type": "mcq",
+          "prompt": "Country A has a Gini of 0.28, Country B 0.52. Which statement is correct?",
+          "options": [
+            "B has more poverty",
+            "A has a higher GDP",
+            "Income is more unequally distributed in B",
+            "A’s Lorenz curve is further from the diagonal"
+          ],
+          "answer": 2,
+          "explanation": "A higher Gini means a Lorenz curve further from the line of equality. It says nothing directly about poverty or GDP.",
+          "terms": [
+            "economics-3.4-gini",
+            "economics-3.4-lorenz"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q05",
+          "type": "match",
+          "prompt": "Match each term with its meaning.",
+          "pairs": [
+            {
+              "left": "Absolute poverty",
+              "right": "Cannot meet basic needs"
+            },
+            {
+              "left": "Relative poverty",
+              "right": "Well below median income"
+            },
+            {
+              "left": "MPI",
+              "right": "Deprivation in health, education, living standards"
+            },
+            {
+              "left": "Wealth inequality",
+              "right": "Unequal ownership of assets"
+            }
+          ],
+          "explanation": "Different measures capture different aspects of disadvantage.",
+          "terms": [
+            "economics-3.4-absolute-poverty",
+            "economics-3.4-relative-poverty",
+            "economics-3.4-mpi",
+            "economics-3.4-wealth-inequality"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q06",
+          "type": "tf",
+          "statement": "Relative poverty can exist even in very rich countries.",
+          "answer": true,
+          "explanation": "It is defined relative to the country’s median income.",
+          "terms": [
+            "economics-3.4-relative-poverty"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q07",
+          "type": "mcq",
+          "prompt": "Which is a cause of rising income inequality?",
+          "options": [
+            "Technological change that raises demand for high-skilled workers",
+            "Free universal education",
+            "Progressive income taxes",
+            "Universal pensions"
+          ],
+          "answer": 0,
+          "explanation": "Skill-biased technology widens wage gaps; the others tend to reduce inequality.",
+          "terms": [
+            "economics-3.4-income-inequality"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q08",
+          "type": "fill",
+          "text": "Inequality in the ownership of assets is called ___ inequality.",
+          "answer": "wealth",
+          "bank": [
+            "income",
+            "gender",
+            "regional",
+            "wealth"
+          ],
+          "explanation": "Wealth generates income (rent, dividends), which can widen income gaps over time.",
+          "terms": [
+            "economics-3.4-wealth-inequality"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q09",
+          "type": "mcq",
+          "prompt": "Why might markets fail to achieve equity?",
+          "options": [
+            "Incomes reflect factor ownership and bargaining power, not need",
+            "Markets always allocate inefficiently",
+            "Prices never change",
+            "All workers have equal skills"
+          ],
+          "answer": 0,
+          "explanation": "Those who own little capital or have scarce skills earn little in a free market.",
+          "terms": [
+            "economics-3.4-equality-equity",
+            "economics-3.4-income-inequality"
+          ]
+        },
+        {
+          "id": "economics-3.4-1-q10",
+          "type": "order",
+          "prompt": "Order the poverty cycle for a low-income household.",
+          "items": [
+            "Low income",
+            "Little spending on education and health",
+            "Low skills and productivity",
+            "Low future income"
+          ],
+          "explanation": "Poverty can be self-reinforcing across generations.",
+          "terms": [
+            "economics-3.4-absolute-poverty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.4-2",
+      "title": "Taxes, transfers and redistribution",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.4-2-q01",
+          "type": "mcq",
+          "prompt": "Which tax is usually regressive?",
+          "options": [
+            "A progressive income tax",
+            "A sales tax (VAT) on most goods",
+            "A tax on wealth",
+            "A tax on luxury cars only"
+          ],
+          "answer": 1,
+          "explanation": "Poorer households spend a higher share of income, so VAT takes a larger share of their income.",
+          "terms": [
+            "economics-3.4-regressive-tax"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q02",
+          "type": "tf",
+          "statement": "With a progressive tax, higher earners pay a higher average tax rate.",
+          "answer": true,
+          "explanation": "That is the definition of a progressive tax.",
+          "terms": [
+            "economics-3.4-progressive-tax"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q03",
+          "type": "fill",
+          "text": "A tax with the same average rate at all incomes is a ___ tax.",
+          "answer": "proportional",
+          "bank": [
+            "progressive",
+            "regressive",
+            "indirect",
+            "proportional"
+          ],
+          "explanation": "Also called a flat tax.",
+          "terms": [
+            "economics-3.4-proportional-tax"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q04",
+          "type": "mcq",
+          "prompt": "Which is a transfer payment?",
+          "options": [
+            "A teacher’s salary",
+            "Spending on a new bridge",
+            "Defence spending",
+            "An unemployment benefit"
+          ],
+          "answer": 3,
+          "explanation": "Transfers redistribute income with no output in return.",
+          "terms": [
+            "economics-3.4-transfer-payments"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q05",
+          "type": "match",
+          "prompt": "Match each policy to how it reduces inequality.",
+          "pairs": [
+            {
+              "left": "Progressive income tax",
+              "right": "Takes more from high incomes"
+            },
+            {
+              "left": "Child benefit",
+              "right": "Transfers income to families"
+            },
+            {
+              "left": "Free public education",
+              "right": "Raises future earnings of the poor"
+            },
+            {
+              "left": "Minimum wage",
+              "right": "Raises pay of low earners"
+            }
+          ],
+          "explanation": "Redistribution uses taxes, transfers, provision and regulation.",
+          "terms": [
+            "economics-3.4-progressive-tax",
+            "economics-3.4-transfer-payments"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q06",
+          "type": "mcq",
+          "prompt": "A possible drawback of very high marginal income tax rates is that they…",
+          "options": [
+            "always raise more revenue",
+            "increase inequality",
+            "are regressive",
+            "may reduce incentives to work and invest"
+          ],
+          "answer": 3,
+          "explanation": "High rates can discourage effort and encourage tax avoidance.",
+          "terms": [
+            "economics-3.4-progressive-tax"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q07",
+          "type": "tf",
+          "statement": "Universal free healthcare can reduce inequality in living standards even if income inequality is unchanged.",
+          "answer": true,
+          "explanation": "In-kind provision raises the real welfare of low-income households.",
+          "terms": [
+            "economics-3.4-equality-equity"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q08",
+          "type": "mcq",
+          "prompt": "Which policy would most directly reduce wealth inequality?",
+          "options": [
+            "A cut in VAT",
+            "A subsidy to luxury goods",
+            "A cut in the top income tax rate",
+            "An inheritance or wealth tax"
+          ],
+          "answer": 3,
+          "explanation": "Taxes on assets target wealth concentration.",
+          "terms": [
+            "economics-3.4-wealth-inequality"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q09",
+          "type": "fill",
+          "text": "Payments from government to individuals with no output in return are ___ payments.",
+          "answer": "transfer",
+          "bank": [
+            "factor",
+            "transfer",
+            "subsidy",
+            "capital"
+          ],
+          "explanation": "Pensions and benefits are examples.",
+          "terms": [
+            "economics-3.4-transfer-payments"
+          ]
+        },
+        {
+          "id": "economics-3.4-2-q10",
+          "type": "order",
+          "prompt": "Order the redistribution effect of a progressive tax funding cash benefits.",
+          "items": [
+            "Higher earners pay a larger share of income in tax",
+            "Revenue funds transfer payments",
+            "Low-income households receive benefits",
+            "The Lorenz curve moves closer to the diagonal"
+          ],
+          "explanation": "Taxes and transfers together reduce post-tax inequality.",
+          "terms": [
+            "economics-3.4-progressive-tax",
+            "economics-3.4-lorenz"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.4-3",
+      "title": "HL: Calculating tax rates",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-3.4-3-q01",
+          "type": "mcq",
+          "prompt": "Tax bands: 0% on the first $10 000; 20% on $10 001–$40 000; 40% above $40 000. How much tax does someone earning $60 000 pay?",
+          "options": [
+            "$24 000",
+            "$12 000",
+            "$14 000",
+            "$20 000"
+          ],
+          "answer": 2,
+          "explanation": "0 + 20% × 30 000 + 40% × 20 000 = 6 000 + 8 000 = $14 000.",
+          "terms": [
+            "economics-3.4-marginal-tax-rate"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q02",
+          "type": "fill",
+          "text": "Same bands: the average tax rate on $60 000 is ___% (1 d.p.).",
+          "answer": "23.3",
+          "accept": [
+            "23.3%",
+            "23.33"
+          ],
+          "bank": [
+            "40",
+            "20",
+            "14",
+            "23.3"
+          ],
+          "explanation": "14 000 ÷ 60 000 × 100 = 23.3%.",
+          "terms": [
+            "economics-3.4-average-tax-rate"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q03",
+          "type": "tf",
+          "statement": "In the same system, the marginal tax rate for someone earning $60 000 is 40%.",
+          "answer": true,
+          "explanation": "An extra dollar of income falls in the top band.",
+          "terms": [
+            "economics-3.4-marginal-tax-rate"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q04",
+          "type": "mcq",
+          "prompt": "Same bands: tax on an income of $25 000 is…",
+          "options": [
+            "$3 000",
+            "$5 000",
+            "$2 000",
+            "$4 000"
+          ],
+          "answer": 0,
+          "explanation": "20% × (25 000 − 10 000) = $3 000.",
+          "terms": [
+            "economics-3.4-marginal-tax-rate"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q05",
+          "type": "mcq",
+          "prompt": "The average tax rate on $25 000 in this system is…",
+          "options": [
+            "20%",
+            "3%",
+            "12%",
+            "15%"
+          ],
+          "answer": 2,
+          "explanation": "3 000 ÷ 25 000 × 100 = 12%.",
+          "terms": [
+            "economics-3.4-average-tax-rate"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q06",
+          "type": "tf",
+          "statement": "This tax system is progressive because the average tax rate rises from 12% to 23.3% as income rises.",
+          "answer": true,
+          "explanation": "Rising average rates with income define a progressive tax.",
+          "terms": [
+            "economics-3.4-progressive-tax",
+            "economics-3.4-average-tax-rate"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q07",
+          "type": "match",
+          "prompt": "Match each term to its calculation.",
+          "pairs": [
+            {
+              "left": "Average tax rate",
+              "right": "Total tax ÷ total income"
+            },
+            {
+              "left": "Marginal tax rate",
+              "right": "Extra tax ÷ extra income"
+            },
+            {
+              "left": "Progressive system",
+              "right": "ATR rises with income"
+            },
+            {
+              "left": "Regressive system",
+              "right": "ATR falls with income"
+            }
+          ],
+          "explanation": "In a progressive system, the marginal rate is above the average rate.",
+          "terms": [
+            "economics-3.4-average-tax-rate",
+            "economics-3.4-marginal-tax-rate",
+            "economics-3.4-progressive-tax",
+            "economics-3.4-regressive-tax"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q08",
+          "type": "mcq",
+          "prompt": "A household earning $20 000 pays $1 000 in sales tax; one earning $80 000 pays $2 000. The sales tax is…",
+          "options": [
+            "regressive: 5% versus 2.5% of income",
+            "progressive",
+            "proportional",
+            "neutral"
+          ],
+          "answer": 0,
+          "explanation": "The richer household pays more dollars but a smaller share of income.",
+          "terms": [
+            "economics-3.4-regressive-tax",
+            "economics-3.4-average-tax-rate"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q09",
+          "type": "fill",
+          "text": "A worker’s income rises from $40 000 to $41 000 and her tax rises by $300. Her marginal tax rate is ___%.",
+          "answer": "30",
+          "accept": [
+            "30%"
+          ],
+          "bank": [
+            "0.3",
+            "3",
+            "30",
+            "7.5"
+          ],
+          "explanation": "300 ÷ 1 000 × 100 = 30%.",
+          "terms": [
+            "economics-3.4-marginal-tax-rate"
+          ]
+        },
+        {
+          "id": "economics-3.4-3-q10",
+          "type": "order",
+          "prompt": "Order the steps to calculate tax in a banded system.",
+          "items": [
+            "Split income into the bands",
+            "Multiply each slice by its band rate",
+            "Add the tax from each band",
+            "Divide by total income for the average rate"
+          ],
+          "explanation": "Only income within each band is taxed at that band’s rate.",
+          "terms": [
+            "economics-3.4-average-tax-rate",
+            "economics-3.4-marginal-tax-rate"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "id": "economics-2.1",
+  "code": "2.1",
+  "unit": "2",
+  "title": "Demand",
+  "level": "SL",
+  "summary": "The law of demand says quantity demanded falls as price rises. Price changes cause movements along the curve; other determinants shift it. HL adds marginal utility and linear demand functions.",
+  "keyterms": [
+    {
+      "id": "economics-2.1-demand",
+      "term": "Demand",
+      "definition": "The quantity of a good consumers are willing and able to buy at each possible price over a given time period, ceteris paribus.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-law-of-demand",
+      "term": "Law of demand",
+      "definition": "As the price of a good rises, quantity demanded falls (and vice versa), ceteris paribus: an inverse relationship.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-market-demand",
+      "term": "Market demand",
+      "definition": "The sum of all individual consumers’ demand for a good at each price.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-movement",
+      "term": "Movement along the demand curve",
+      "definition": "A change in quantity demanded caused only by a change in the good’s own price.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-shift",
+      "term": "Shift of the demand curve",
+      "definition": "A change in demand at every price, caused by a change in a non-price determinant.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-substitute",
+      "term": "Substitute goods",
+      "definition": "Goods that can be used in place of each other; a rise in the price of one raises demand for the other.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-complement",
+      "term": "Complementary goods",
+      "definition": "Goods used together; a rise in the price of one lowers demand for the other.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-normal-good",
+      "term": "Normal good",
+      "definition": "A good whose demand rises when consumer income rises.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-inferior-good",
+      "term": "Inferior good",
+      "definition": "A good whose demand falls when consumer income rises, as consumers switch to better alternatives.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.1-income-effect",
+      "term": "Income effect",
+      "definition": "When price falls, consumers’ real income rises so they can buy more of the good.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.1-substitution-effect",
+      "term": "Substitution effect",
+      "definition": "When price falls, the good becomes cheaper relative to substitutes, so consumers switch towards it.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.1-dmu",
+      "term": "Diminishing marginal utility",
+      "definition": "Each extra unit consumed adds less satisfaction than the one before, so consumers pay less for extra units.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.1-demand-function",
+      "term": "Linear demand function",
+      "definition": "An equation Qd = a − bP, where a is quantity demanded at zero price and b gives the slope.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-2.1-1",
+      "title": "The law of demand and the demand curve",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which best describes the law of demand?",
+          "options": [
+            "As price rises, quantity demanded falls, ceteris paribus",
+            "As price rises, demand rises",
+            "As income rises, demand for all goods rises",
+            "As supply rises, demand rises"
+          ],
+          "answer": 0,
+          "explanation": "There is an inverse relationship between a good’s price and the quantity demanded, other things equal.",
+          "terms": [
+            "economics-2.1-law-of-demand"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q02",
+          "type": "tf",
+          "statement": "Demand means the quantity consumers would like to buy, even if they cannot afford it.",
+          "answer": false,
+          "explanation": "Economic demand requires both willingness AND ability to pay.",
+          "terms": [
+            "economics-2.1-demand"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q03",
+          "type": "fill",
+          "text": "A change in a good’s own price causes a ___ along the demand curve.",
+          "answer": "movement",
+          "bank": [
+            "shift",
+            "rotation",
+            "movement",
+            "leakage"
+          ],
+          "explanation": "Only the own price moves you along the curve; other factors shift the whole curve.",
+          "terms": [
+            "economics-2.1-movement"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q04",
+          "type": "mcq",
+          "prompt": "Which would shift the demand curve for coffee to the right?",
+          "options": [
+            "A fall in the price of coffee",
+            "A rise in the price of milk",
+            "A rise in the price of tea",
+            "A new tax on coffee producers"
+          ],
+          "answer": 2,
+          "explanation": "Tea is a substitute, so dearer tea raises demand for coffee. A fall in coffee’s price is a movement; milk is a complement; a tax affects supply.",
+          "terms": [
+            "economics-2.1-shift",
+            "economics-2.1-substitute",
+            "economics-2.1-complement"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q05",
+          "type": "mcq",
+          "prompt": "The price of printers falls sharply. What happens to demand for ink cartridges?",
+          "options": [
+            "It increases, because they are complements",
+            "It decreases, because they are substitutes",
+            "It is unchanged, because only own price matters",
+            "Quantity demanded of cartridges falls along the curve"
+          ],
+          "answer": 0,
+          "explanation": "Cheaper printers mean more printers in use, raising demand for the complementary good, ink.",
+          "terms": [
+            "economics-2.1-complement",
+            "economics-2.1-shift"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q06",
+          "type": "match",
+          "prompt": "Match each change to its effect on demand for a normal good, bus travel by students.",
+          "pairs": [
+            {
+              "left": "Fall in student incomes",
+              "right": "Demand falls (shift left)"
+            },
+            {
+              "left": "Rise in the fare",
+              "right": "Quantity demanded falls (movement)"
+            },
+            {
+              "left": "Rise in petrol prices",
+              "right": "Demand rises (shift right)"
+            },
+            {
+              "left": "More students in the city",
+              "right": "Demand rises (more buyers)"
+            }
+          ],
+          "explanation": "Own-price changes cause movements; income, prices of related goods and the number of buyers shift the curve. Note bus travel may be inferior for some groups.",
+          "terms": [
+            "economics-2.1-movement",
+            "economics-2.1-shift",
+            "economics-2.1-normal-good"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q07",
+          "type": "tf",
+          "statement": "Market demand is found by adding individual demands horizontally at each price.",
+          "answer": true,
+          "explanation": "At each price, the quantities demanded by every consumer are summed.",
+          "terms": [
+            "economics-2.1-market-demand"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q08",
+          "type": "fill",
+          "text": "A good whose demand falls as income rises is an ___ good.",
+          "answer": "inferior",
+          "bank": [
+            "normal",
+            "luxury",
+            "complementary",
+            "inferior"
+          ],
+          "explanation": "Consumers switch away from inferior goods (e.g. cheap own-brand foods) as they get richer.",
+          "terms": [
+            "economics-2.1-inferior-good",
+            "economics-2.1-normal-good"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which is NOT a non-price determinant of demand?",
+          "options": [
+            "The cost of raw materials",
+            "Tastes and preferences",
+            "Consumer income",
+            "Prices of related goods"
+          ],
+          "answer": 0,
+          "explanation": "Raw material costs affect supply, not demand.",
+          "terms": [
+            "economics-2.1-shift"
+          ]
+        },
+        {
+          "id": "economics-2.1-1-q10",
+          "type": "order",
+          "prompt": "A rival smartphone brand cuts its price. Order the effects on the market for Brand X phones.",
+          "items": [
+            "Rival phones become relatively cheaper",
+            "Some consumers switch to the rival",
+            "Demand for Brand X shifts left",
+            "Brand X price and quantity fall"
+          ],
+          "explanation": "A cheaper substitute reduces demand for Brand X; with an unchanged supply curve, its equilibrium price and quantity fall.",
+          "terms": [
+            "economics-2.1-substitute",
+            "economics-2.1-shift"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.1-2",
+      "title": "HL: utility, income and substitution effects, demand functions",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-2.1-2-q01",
+          "type": "mcq",
+          "prompt": "Why does diminishing marginal utility help explain a downward-sloping demand curve?",
+          "options": [
+            "Total utility falls as more is consumed",
+            "Consumers get less extra satisfaction from each extra unit, so they will only buy more at a lower price",
+            "Firms lower prices as they produce more",
+            "Income falls as more is bought"
+          ],
+          "answer": 1,
+          "explanation": "If each additional unit is worth less to the consumer, they are willing to pay less for it.",
+          "terms": [
+            "economics-2.1-dmu"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q02",
+          "type": "tf",
+          "statement": "When the price of a normal good falls, the income and substitution effects both increase quantity demanded.",
+          "answer": true,
+          "explanation": "Cheaper relative price (substitution) and higher real income (income effect) both raise purchases of a normal good.",
+          "terms": [
+            "economics-2.1-income-effect",
+            "economics-2.1-substitution-effect"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q03",
+          "type": "fill",
+          "text": "When a good becomes cheaper relative to alternatives and consumers switch towards it, this is the ___ effect.",
+          "answer": "substitution",
+          "bank": [
+            "income",
+            "wealth",
+            "multiplier",
+            "substitution"
+          ],
+          "explanation": "The substitution effect reflects changes in relative prices.",
+          "terms": [
+            "economics-2.1-substitution-effect"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q04",
+          "type": "mcq",
+          "prompt": "Given Qd = 120 − 4P, what is quantity demanded when P = 10?",
+          "options": [
+            "116",
+            "40",
+            "110",
+            "80"
+          ],
+          "answer": 3,
+          "explanation": "120 − 4 × 10 = 80 units.",
+          "terms": [
+            "economics-2.1-demand-function"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q05",
+          "type": "mcq",
+          "prompt": "For Qd = 120 − 4P, at what price is quantity demanded zero?",
+          "options": [
+            "120",
+            "30",
+            "4",
+            "480"
+          ],
+          "answer": 1,
+          "explanation": "Set 0 = 120 − 4P, so P = 30. This is the vertical (price) intercept.",
+          "terms": [
+            "economics-2.1-demand-function"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q06",
+          "type": "tf",
+          "statement": "In Qd = 60 − 3P, a rise in the \"a\" term from 60 to 75 shows a rightward shift of demand.",
+          "answer": true,
+          "explanation": "The \"a\" term captures non-price determinants; a larger value means more is demanded at every price.",
+          "terms": [
+            "economics-2.1-demand-function"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q07",
+          "type": "mcq",
+          "prompt": "In Qd = a − bP, what does a larger value of b mean?",
+          "options": [
+            "Demand has shifted right",
+            "Quantity demanded is more responsive to price, giving a flatter curve (P on the vertical axis)",
+            "The curve is steeper",
+            "The good is inferior"
+          ],
+          "answer": 1,
+          "explanation": "b is the change in Qd per $1 change in price; a larger b means a flatter curve when price is on the vertical axis.",
+          "terms": [
+            "economics-2.1-demand-function"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q08",
+          "type": "fill",
+          "text": "Qd = 200 − 5P. If P rises from 20 to 24, quantity demanded falls by ___ units.",
+          "answer": "20",
+          "bank": [
+            "20",
+            "4",
+            "5",
+            "100"
+          ],
+          "explanation": "Each $1 rise cuts Qd by 5, so a $4 rise cuts Qd by 20 (from 100 to 80).",
+          "terms": [
+            "economics-2.1-demand-function"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q09",
+          "type": "match",
+          "prompt": "Match each concept to its description.",
+          "pairs": [
+            {
+              "left": "Marginal utility",
+              "right": "Extra satisfaction from one more unit"
+            },
+            {
+              "left": "Income effect",
+              "right": "Change in real purchasing power"
+            },
+            {
+              "left": "Substitution effect",
+              "right": "Change in relative price"
+            },
+            {
+              "left": "Demand function",
+              "right": "Equation linking Qd and price"
+            }
+          ],
+          "explanation": "These HL tools explain the shape and position of the demand curve.",
+          "terms": [
+            "economics-2.1-dmu",
+            "economics-2.1-income-effect",
+            "economics-2.1-substitution-effect",
+            "economics-2.1-demand-function"
+          ]
+        },
+        {
+          "id": "economics-2.1-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to plot Qd = 40 − 2P on a diagram.",
+          "items": [
+            "Find the Q-intercept: P = 0 gives Q = 40",
+            "Find the P-intercept: Q = 0 gives P = 20",
+            "Mark both points on the axes (P vertical, Q horizontal)",
+            "Join them with a straight line labelled D"
+          ],
+          "explanation": "Two points are enough to draw a linear function.",
+          "terms": [
+            "economics-2.1-demand-function"
+          ]
+        }
+      ]
+    }
+  ]
+}

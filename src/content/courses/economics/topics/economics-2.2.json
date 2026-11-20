@@ -1,0 +1,428 @@
+{
+  "id": "economics-2.2",
+  "code": "2.2",
+  "unit": "2",
+  "title": "Supply",
+  "level": "SL",
+  "summary": "The law of supply says quantity supplied rises with price. Non-price determinants shift supply. HL adds diminishing marginal returns and linear supply functions.",
+  "keyterms": [
+    {
+      "id": "economics-2.2-supply",
+      "term": "Supply",
+      "definition": "The quantity of a good firms are willing and able to produce and sell at each possible price over a time period, ceteris paribus.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-law-of-supply",
+      "term": "Law of supply",
+      "definition": "As the price of a good rises, quantity supplied rises, ceteris paribus: a positive relationship.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-market-supply",
+      "term": "Market supply",
+      "definition": "The sum of all individual firms’ supply at each price.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-costs-of-production",
+      "term": "Costs of production",
+      "definition": "Payments for inputs such as wages, raw materials and energy; higher costs shift supply left.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-indirect-tax",
+      "term": "Indirect tax",
+      "definition": "A tax on spending on goods and services, paid to government by the seller; it shifts supply left (up).",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-subsidy",
+      "term": "Subsidy",
+      "definition": "A payment by government to producers per unit or in total; it lowers costs and shifts supply right.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-joint-supply",
+      "term": "Joint supply",
+      "definition": "When producing one good automatically produces another, e.g. beef and leather.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-competitive-supply",
+      "term": "Competitive supply",
+      "definition": "When producers can switch resources between goods, so more of one means less of another, e.g. wheat and corn.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-expectations",
+      "term": "Producer expectations",
+      "definition": "Firms’ beliefs about future prices; expecting higher prices may cause them to hold back supply now.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.2-short-run",
+      "term": "Short run",
+      "definition": "The period in which at least one factor of production is fixed.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.2-dmr",
+      "term": "Law of diminishing marginal returns",
+      "definition": "In the short run, as more of a variable factor is added to a fixed factor, the extra output from each unit eventually falls.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.2-marginal-cost",
+      "term": "Marginal cost",
+      "definition": "The extra cost of producing one more unit of output.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.2-supply-function",
+      "term": "Linear supply function",
+      "definition": "An equation Qs = c + dP, where d > 0 shows how quantity supplied responds to price.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-2.2-1",
+      "title": "The law of supply and its determinants",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.2-1-q01",
+          "type": "mcq",
+          "prompt": "Why does the supply curve usually slope upward?",
+          "options": [
+            "Consumers buy more at higher prices",
+            "Higher prices make production more profitable and cover rising costs",
+            "Taxes rise with price",
+            "Firms have fixed costs"
+          ],
+          "answer": 1,
+          "explanation": "Higher prices give an incentive to produce more and allow firms to cover the higher cost of extra output.",
+          "terms": [
+            "economics-2.2-law-of-supply"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q02",
+          "type": "tf",
+          "statement": "A rise in wages paid to workers in the clothing industry shifts the supply curve of clothing to the right.",
+          "answer": false,
+          "explanation": "Higher costs reduce supply at every price: the curve shifts left.",
+          "terms": [
+            "economics-2.2-costs-of-production"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q03",
+          "type": "mcq",
+          "prompt": "Which would shift the supply of rice to the right?",
+          "options": [
+            "A rise in the price of rice",
+            "Improved irrigation technology",
+            "A new indirect tax on rice",
+            "A flood destroying crops"
+          ],
+          "answer": 1,
+          "explanation": "Better technology lowers costs. A higher rice price is a movement; a tax and a flood shift supply left.",
+          "terms": [
+            "economics-2.2-supply",
+            "economics-2.2-costs-of-production"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q04",
+          "type": "fill",
+          "text": "A government payment to producers that lowers their costs is a ___.",
+          "answer": "subsidy",
+          "bank": [
+            "subsidy",
+            "tariff",
+            "quota",
+            "tax"
+          ],
+          "explanation": "Subsidies shift supply right (down) by the amount of the subsidy per unit.",
+          "terms": [
+            "economics-2.2-subsidy"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q05",
+          "type": "match",
+          "prompt": "Match each event to its effect on the supply of cars.",
+          "pairs": [
+            {
+              "left": "New robots cut assembly costs",
+              "right": "Supply shifts right"
+            },
+            {
+              "left": "Steel prices rise",
+              "right": "Supply shifts left"
+            },
+            {
+              "left": "Car price rises",
+              "right": "Quantity supplied rises (movement)"
+            },
+            {
+              "left": "Tax of $500 per car",
+              "right": "Supply shifts up by $500"
+            }
+          ],
+          "explanation": "Own price moves along the curve; costs, technology, taxes and subsidies shift it.",
+          "terms": [
+            "economics-2.2-costs-of-production",
+            "economics-2.2-indirect-tax"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q06",
+          "type": "tf",
+          "statement": "Beef and leather are in joint supply: more beef production automatically raises leather supply.",
+          "answer": true,
+          "explanation": "They come from the same animal, so supply of one rises with the other.",
+          "terms": [
+            "economics-2.2-joint-supply"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q07",
+          "type": "mcq",
+          "prompt": "A farmer can grow either wheat or barley. The price of barley rises. What happens to the supply of wheat?",
+          "options": [
+            "It shifts right",
+            "It shifts left as land is switched to barley",
+            "It is unchanged",
+            "Quantity supplied of wheat rises along the curve"
+          ],
+          "answer": 1,
+          "explanation": "Wheat and barley are in competitive supply; resources move to the more profitable crop.",
+          "terms": [
+            "economics-2.2-competitive-supply"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q08",
+          "type": "fill",
+          "text": "Adding together the supply of every firm at each price gives ___ supply.",
+          "answer": "market",
+          "bank": [
+            "market",
+            "individual",
+            "joint",
+            "aggregate"
+          ],
+          "explanation": "Market supply is the horizontal sum of individual firms’ supply curves.",
+          "terms": [
+            "economics-2.2-market-supply"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q09",
+          "type": "mcq",
+          "prompt": "Oil producers expect prices to rise sharply next month. What is the likely effect on supply today?",
+          "options": [
+            "Supply today increases",
+            "Supply today decreases as they hold back output",
+            "Demand today decreases",
+            "No effect on today’s market"
+          ],
+          "answer": 1,
+          "explanation": "Firms may store output to sell later at a higher price, shifting current supply left.",
+          "terms": [
+            "economics-2.2-expectations"
+          ]
+        },
+        {
+          "id": "economics-2.2-1-q10",
+          "type": "order",
+          "prompt": "Order the effects of a per-unit indirect tax on sugar.",
+          "items": [
+            "Government levies a tax per kilo sold",
+            "Firms’ costs per unit rise",
+            "Supply curve shifts vertically upward",
+            "Equilibrium price rises and quantity falls"
+          ],
+          "explanation": "A specific tax raises costs per unit, shifting supply up by the tax amount and creating a new equilibrium.",
+          "terms": [
+            "economics-2.2-indirect-tax"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.2-2",
+      "title": "HL: diminishing returns and supply functions",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-2.2-2-q01",
+          "type": "mcq",
+          "prompt": "The law of diminishing marginal returns applies…",
+          "options": [
+            "only in the long run",
+            "only to monopolies",
+            "in the short run, when at least one factor is fixed",
+            "when all factors are variable"
+          ],
+          "answer": 2,
+          "explanation": "Diminishing returns occur because a variable factor is added to a fixed factor.",
+          "terms": [
+            "economics-2.2-dmr",
+            "economics-2.2-short-run"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q02",
+          "type": "tf",
+          "statement": "Because of diminishing marginal returns, marginal cost eventually rises as output increases.",
+          "answer": true,
+          "explanation": "If each extra worker adds less output, each extra unit of output costs more to produce.",
+          "terms": [
+            "economics-2.2-dmr",
+            "economics-2.2-marginal-cost"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q03",
+          "type": "fill",
+          "text": "The extra cost of producing one more unit is ___ cost.",
+          "answer": "marginal",
+          "bank": [
+            "marginal",
+            "average",
+            "fixed",
+            "sunk"
+          ],
+          "explanation": "Rising marginal cost explains why firms need a higher price to supply more in the short run.",
+          "terms": [
+            "economics-2.2-marginal-cost"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q04",
+          "type": "mcq",
+          "prompt": "A bakery with one oven hires workers: total output is 20, 45, 65, 80 loaves with 1, 2, 3, 4 workers. When do diminishing marginal returns begin?",
+          "options": [
+            "With the 3rd worker",
+            "With the 2nd worker",
+            "With the 4th worker",
+            "They never occur"
+          ],
+          "answer": 0,
+          "explanation": "Marginal products are 20, 25, 20, 15. MP starts falling with the 3rd worker.",
+          "terms": [
+            "economics-2.2-dmr"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q05",
+          "type": "mcq",
+          "prompt": "Given Qs = −20 + 5P, what is quantity supplied at P = 12?",
+          "options": [
+            "80",
+            "60",
+            "40",
+            "−8"
+          ],
+          "answer": 2,
+          "explanation": "−20 + 5 × 12 = 40 units.",
+          "terms": [
+            "economics-2.2-supply-function"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q06",
+          "type": "mcq",
+          "prompt": "For Qs = −20 + 5P, below what price will nothing be supplied?",
+          "options": [
+            "4",
+            "20",
+            "5",
+            "0"
+          ],
+          "answer": 0,
+          "explanation": "Set 0 = −20 + 5P, so P = 4. This is the price intercept of supply.",
+          "terms": [
+            "economics-2.2-supply-function"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q07",
+          "type": "tf",
+          "statement": "A subsidy to producers would raise the \"c\" term in Qs = c + dP.",
+          "answer": true,
+          "explanation": "More is supplied at every price, so the constant rises and the curve shifts right.",
+          "terms": [
+            "economics-2.2-supply-function"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q08",
+          "type": "fill",
+          "text": "Qs = 10 + 4P. If price rises by $3, quantity supplied rises by ___ units.",
+          "answer": "12",
+          "bank": [
+            "3",
+            "12",
+            "4",
+            "22"
+          ],
+          "explanation": "Each $1 adds 4 units, so $3 adds 12.",
+          "terms": [
+            "economics-2.2-supply-function"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q09",
+          "type": "match",
+          "prompt": "Match each concept to its description.",
+          "pairs": [
+            {
+              "left": "Short run",
+              "right": "At least one factor is fixed"
+            },
+            {
+              "left": "Diminishing marginal returns",
+              "right": "Falling extra output from a variable factor"
+            },
+            {
+              "left": "Marginal cost",
+              "right": "Cost of one more unit"
+            },
+            {
+              "left": "Supply function",
+              "right": "Equation linking Qs and price"
+            }
+          ],
+          "explanation": "Diminishing returns raise marginal cost, which underlies the upward-sloping short-run supply curve.",
+          "terms": [
+            "economics-2.2-short-run",
+            "economics-2.2-dmr",
+            "economics-2.2-marginal-cost",
+            "economics-2.2-supply-function"
+          ]
+        },
+        {
+          "id": "economics-2.2-2-q10",
+          "type": "order",
+          "prompt": "Order the chain explaining why short-run supply slopes upward.",
+          "items": [
+            "A fixed factor limits production",
+            "Extra workers add less and less output",
+            "Marginal cost rises",
+            "Firms need higher prices to supply more"
+          ],
+          "explanation": "Diminishing marginal returns raise marginal cost, so a higher price is needed to make extra output worthwhile.",
+          "terms": [
+            "economics-2.2-dmr",
+            "economics-2.2-marginal-cost"
+          ]
+        }
+      ]
+    }
+  ]
+}

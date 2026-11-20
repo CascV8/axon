@@ -1,0 +1,441 @@
+{
+  "id": "economics-1.2",
+  "code": "1.2",
+  "unit": "1",
+  "title": "How do economists approach the world?",
+  "level": "SL",
+  "summary": "Economists build simplified models, test them against evidence and use ceteris paribus. The subject has developed through competing schools of thought and nine key concepts frame the course.",
+  "keyterms": [
+    {
+      "id": "economics-1.2-model",
+      "term": "Economic model",
+      "definition": "A simplified representation of reality, built on assumptions, used to explain and predict economic behaviour.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-ceteris-paribus",
+      "term": "Ceteris paribus",
+      "definition": "Latin for \"other things being equal\"; the assumption that only one variable changes while all others are held constant.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-assumption",
+      "term": "Assumption",
+      "definition": "A simplifying condition a model takes as given, e.g. that consumers are rational.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-hypothesis",
+      "term": "Hypothesis",
+      "definition": "A testable statement about a relationship between variables that can be checked against data.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-empirical-evidence",
+      "term": "Empirical evidence",
+      "definition": "Information gathered from observation and data, used to test economic theories.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-scientific-method",
+      "term": "Scientific method",
+      "definition": "Developing a hypothesis, testing it with data and accepting, revising or rejecting the theory.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-classical",
+      "term": "Classical economics",
+      "definition": "A school of thought holding that free markets self-correct and government intervention should be minimal.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-keynesian",
+      "term": "Keynesian economics",
+      "definition": "A school of thought arguing that economies can stay below full employment and that government spending can raise demand.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-behavioural",
+      "term": "Behavioural economics",
+      "definition": "A field combining psychology and economics to study why people often do not behave as rational, self-interested maximisers.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-key-concepts",
+      "term": "Key concepts",
+      "definition": "The nine ideas framing the course: scarcity, choice, efficiency, equity, economic well-being, sustainability, change, interdependence, intervention.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-efficiency",
+      "term": "Efficiency",
+      "definition": "Making the best use of scarce resources, e.g. producing at lowest cost or allocating resources to what society values most.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-equity",
+      "term": "Equity",
+      "definition": "Fairness; in economics often about how fairly income, wealth and opportunities are distributed.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-sustainability",
+      "term": "Sustainability",
+      "definition": "Meeting present needs without compromising the ability of future generations to meet theirs.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.2-economic-well-being",
+      "term": "Economic well-being",
+      "definition": "The level of prosperity, economic security and quality of life people enjoy.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-1.2-1",
+      "title": "Models, assumptions and the scientific method",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-1.2-1-q01",
+          "type": "mcq",
+          "prompt": "Why do economists use the ceteris paribus assumption?",
+          "options": [
+            "To isolate the effect of one variable on another",
+            "To make models more realistic",
+            "To remove the need for data",
+            "To show that markets are always efficient"
+          ],
+          "answer": 0,
+          "explanation": "Holding other factors constant lets economists study a single cause-and-effect relationship.",
+          "terms": [
+            "economics-1.2-ceteris-paribus"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q02",
+          "type": "fill",
+          "text": "A simplified representation of reality used to explain and predict is an economic ___.",
+          "answer": "model",
+          "bank": [
+            "hypothesis",
+            "model",
+            "policy",
+            "statistic"
+          ],
+          "explanation": "Models simplify the real world so its key relationships can be analysed.",
+          "terms": [
+            "economics-1.2-model"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q03",
+          "type": "tf",
+          "statement": "An economic model is useless if its assumptions are not completely realistic.",
+          "answer": false,
+          "explanation": "All models simplify. A model is judged by how well it explains and predicts, though unrealistic assumptions can limit it.",
+          "terms": [
+            "economics-1.2-model",
+            "economics-1.2-assumption"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q04",
+          "type": "order",
+          "prompt": "Put the steps of the scientific method in economics in order.",
+          "items": [
+            "Observe an economic issue",
+            "Form a hypothesis",
+            "Gather data to test it",
+            "Accept, revise or reject the theory"
+          ],
+          "explanation": "Economists observe, hypothesise, test against data and then refine theories, although controlled experiments are rarely possible.",
+          "terms": [
+            "economics-1.2-scientific-method",
+            "economics-1.2-hypothesis"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q05",
+          "type": "mcq",
+          "prompt": "Which is a positive statement?",
+          "options": [
+            "A 10% rise in the price of cigarettes reduced smoking by 4%",
+            "The government should tax cigarettes more heavily",
+            "Smoking is a bad habit that must end",
+            "It is unfair to tax smokers"
+          ],
+          "answer": 0,
+          "explanation": "Positive statements can be tested against evidence; the others contain value judgements (normative).",
+          "terms": [
+            "economics-1.2-hypothesis",
+            "economics-1.2-empirical-evidence"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q06",
+          "type": "tf",
+          "statement": "\"The minimum wage ought to be raised\" is a normative statement.",
+          "answer": true,
+          "explanation": "\"Ought\" signals a value judgement that cannot be proven true or false.",
+          "terms": [
+            "economics-1.2-assumption"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q07",
+          "type": "mcq",
+          "prompt": "Why is it hard for economists to run controlled experiments?",
+          "options": [
+            "Economies involve many people and variables that cannot be held constant",
+            "Economists do not use data",
+            "Economic theories cannot be tested at all",
+            "Governments ban economic research"
+          ],
+          "answer": 0,
+          "explanation": "Economists rely mostly on observed data and natural or field experiments because they cannot control whole economies in a lab.",
+          "terms": [
+            "economics-1.2-empirical-evidence",
+            "economics-1.2-scientific-method"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q08",
+          "type": "match",
+          "prompt": "Match the term to its meaning.",
+          "pairs": [
+            {
+              "left": "Hypothesis",
+              "right": "A testable statement about variables"
+            },
+            {
+              "left": "Assumption",
+              "right": "A simplifying condition taken as given"
+            },
+            {
+              "left": "Empirical evidence",
+              "right": "Data from observation of the real world"
+            },
+            {
+              "left": "Ceteris paribus",
+              "right": "All other things held constant"
+            }
+          ],
+          "explanation": "These are the building blocks of how economists construct and test theories.",
+          "terms": [
+            "economics-1.2-hypothesis",
+            "economics-1.2-assumption",
+            "economics-1.2-empirical-evidence",
+            "economics-1.2-ceteris-paribus"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q09",
+          "type": "mcq",
+          "prompt": "An economist finds that data do not support her hypothesis. What should she do according to the scientific method?",
+          "options": [
+            "Revise or reject the hypothesis",
+            "Ignore the data",
+            "Assume ceteris paribus was violated and keep the theory unchanged",
+            "Make the hypothesis normative"
+          ],
+          "answer": 0,
+          "explanation": "Theories that fail empirical tests should be refined or replaced.",
+          "terms": [
+            "economics-1.2-scientific-method",
+            "economics-1.2-hypothesis"
+          ]
+        },
+        {
+          "id": "economics-1.2-1-q10",
+          "type": "fill",
+          "text": "Studying how psychology causes people to depart from rational choice is ___ economics.",
+          "answer": "behavioural",
+          "bank": [
+            "classical",
+            "Keynesian",
+            "behavioural",
+            "monetarist"
+          ],
+          "explanation": "Behavioural economics brings insights from psychology into economic decision making.",
+          "terms": [
+            "economics-1.2-behavioural"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-1.2-2",
+      "title": "Schools of thought and key concepts",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-1.2-2-q01",
+          "type": "mcq",
+          "prompt": "Which view is most closely associated with Keynesian economics?",
+          "options": [
+            "Markets always clear quickly without intervention",
+            "Government spending can lift an economy out of a recession",
+            "Only the money supply matters for output",
+            "Consumers are perfectly rational"
+          ],
+          "answer": 1,
+          "explanation": "Keynes argued that deficient demand could leave an economy stuck below full employment, justifying government action.",
+          "terms": [
+            "economics-1.2-keynesian"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q02",
+          "type": "tf",
+          "statement": "Classical economists generally believe that the economy tends to move back to full employment on its own.",
+          "answer": true,
+          "explanation": "Classical (and later monetarist/new classical) thinkers emphasise self-correcting markets through flexible prices and wages.",
+          "terms": [
+            "economics-1.2-classical"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q03",
+          "type": "match",
+          "prompt": "Match each key concept to an illustration.",
+          "pairs": [
+            {
+              "left": "Sustainability",
+              "right": "Protecting fish stocks for future catches"
+            },
+            {
+              "left": "Equity",
+              "right": "Reducing the gap between rich and poor"
+            },
+            {
+              "left": "Efficiency",
+              "right": "Producing output at the lowest possible cost"
+            },
+            {
+              "left": "Interdependence",
+              "right": "Countries relying on each other through trade"
+            }
+          ],
+          "explanation": "The nine key concepts give a lens for analysing any economic issue, including in the IA.",
+          "terms": [
+            "economics-1.2-key-concepts",
+            "economics-1.2-sustainability",
+            "economics-1.2-equity",
+            "economics-1.2-efficiency"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q04",
+          "type": "fill",
+          "text": "Fairness in the distribution of income and opportunities is the key concept of ___.",
+          "answer": "equity",
+          "bank": [
+            "equity",
+            "equality",
+            "efficiency",
+            "scarcity"
+          ],
+          "explanation": "Equity means fairness, which is not the same as equality (everyone having the same).",
+          "terms": [
+            "economics-1.2-equity"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q05",
+          "type": "mcq",
+          "prompt": "Which pair are BOTH among the nine IB economics key concepts?",
+          "options": [
+            "Profit and globalisation",
+            "Intervention and change",
+            "Inflation and growth",
+            "Supply and demand"
+          ],
+          "answer": 1,
+          "explanation": "The nine are scarcity, choice, efficiency, equity, economic well-being, sustainability, change, interdependence and intervention.",
+          "terms": [
+            "economics-1.2-key-concepts"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q06",
+          "type": "tf",
+          "statement": "Equity and equality mean exactly the same thing in economics.",
+          "answer": false,
+          "explanation": "Equity is about fairness; an equal distribution is not necessarily seen as fair, and a fair one need not be equal.",
+          "terms": [
+            "economics-1.2-equity"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q07",
+          "type": "mcq",
+          "prompt": "The idea that people use rules of thumb and are affected by how choices are framed comes from…",
+          "options": [
+            "classical economics",
+            "behavioural economics",
+            "mercantilism",
+            "Marxist economics"
+          ],
+          "answer": 1,
+          "explanation": "Behavioural economics studies biases and heuristics in real decision making.",
+          "terms": [
+            "economics-1.2-behavioural"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q08",
+          "type": "order",
+          "prompt": "Order these economic thinkers or ideas by when they became influential, earliest first.",
+          "items": [
+            "Adam Smith and the \"invisible hand\"",
+            "Keynes and demand management",
+            "Monetarism and free-market revival",
+            "Behavioural economics"
+          ],
+          "explanation": "Smith wrote in 1776, Keynes in the 1930s, monetarism rose in the 1970s and behavioural economics became mainstream from the late 20th century.",
+          "terms": [
+            "economics-1.2-classical",
+            "economics-1.2-keynesian",
+            "economics-1.2-behavioural"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q09",
+          "type": "mcq",
+          "prompt": "A news article about a city providing free bus passes to low-income residents best fits which key concept?",
+          "options": [
+            "Scarcity",
+            "Equity",
+            "Interdependence",
+            "Change"
+          ],
+          "answer": 1,
+          "explanation": "Targeting help at low-income households is mainly about fairness, though intervention is also involved.",
+          "terms": [
+            "economics-1.2-equity",
+            "economics-1.2-key-concepts"
+          ]
+        },
+        {
+          "id": "economics-1.2-2-q10",
+          "type": "fill",
+          "text": "The key concept about meeting present needs without harming future generations is ___.",
+          "answer": "sustainability",
+          "bank": [
+            "efficiency",
+            "well-being",
+            "change",
+            "sustainability"
+          ],
+          "explanation": "Sustainability links environmental and economic choices across time.",
+          "terms": [
+            "economics-1.2-sustainability",
+            "economics-1.2-economic-well-being"
+          ]
+        }
+      ]
+    }
+  ]
+}

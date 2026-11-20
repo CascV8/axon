@@ -1,0 +1,607 @@
+{
+  "id": "economics-4.5-4.6",
+  "code": "4.5–4.6",
+  "unit": "4",
+  "title": "Exchange rates and the balance of payments",
+  "level": "SL",
+  "summary": "Exchange rates are set by demand and supply of currencies, or fixed or managed by governments. Their movements affect trade, inflation and growth. The balance of payments records all transactions with the rest of the world. HL adds conversions, the Marshall–Lerner condition, the J-curve and the terms of trade.",
+  "keyterms": [
+    {
+      "id": "economics-4.5-4.6-exchange-rate",
+      "term": "Exchange rate",
+      "definition": "The price of one currency in terms of another.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-floating",
+      "term": "Floating exchange rate",
+      "definition": "An exchange rate determined by market demand and supply without government intervention.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-fixed",
+      "term": "Fixed exchange rate",
+      "definition": "An exchange rate set and maintained by the government or central bank against another currency.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-managed",
+      "term": "Managed exchange rate",
+      "definition": "A floating rate where the central bank intervenes periodically to influence its value.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-appreciation",
+      "term": "Appreciation",
+      "definition": "A rise in the value of a currency in a floating system.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-depreciation",
+      "term": "Depreciation",
+      "definition": "A fall in the value of a currency in a floating system.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-devaluation",
+      "term": "Devaluation",
+      "definition": "A deliberate reduction in the value of a fixed exchange rate by the government.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-bop",
+      "term": "Balance of payments",
+      "definition": "A record of all transactions between residents of a country and the rest of the world over a period.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-current-account",
+      "term": "Current account",
+      "definition": "Records trade in goods and services, primary income (wages, interest, profits) and secondary income (transfers).",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-capital-account",
+      "term": "Capital account",
+      "definition": "Records capital transfers and the sale or purchase of non-produced, non-financial assets.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-financial-account",
+      "term": "Financial account",
+      "definition": "Records direct investment, portfolio investment and changes in reserve assets.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-ca-deficit",
+      "term": "Current account deficit",
+      "definition": "When the debits (e.g. imports) on the current account exceed the credits; it must be matched by a surplus on the capital and financial accounts.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.5-4.6-marshall-lerner",
+      "term": "Marshall–Lerner condition",
+      "definition": "A depreciation improves the current account only if the sum of the PEDs for exports and imports is greater than 1.",
+      "hl": true
+    },
+    {
+      "id": "economics-4.5-4.6-j-curve",
+      "term": "J-curve",
+      "definition": "The path of the current account after a depreciation: it worsens at first (inelastic demand in the short run) then improves.",
+      "hl": true
+    },
+    {
+      "id": "economics-4.5-4.6-terms-of-trade",
+      "term": "Terms of trade",
+      "definition": "Index of average export prices ÷ index of average import prices × 100.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-4.5-4.6-1",
+      "title": "Exchange rates",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-4.5-4.6-1-q01",
+          "type": "mcq",
+          "prompt": "Which would cause the euro to appreciate against the dollar?",
+          "options": [
+            "Higher inflation in the eurozone",
+            "Higher interest rates in the eurozone attracting US savings",
+            "Eurozone residents buying more US goods",
+            "A recession in the eurozone"
+          ],
+          "answer": 1,
+          "explanation": "Demand for euros rises as investors seek higher returns.",
+          "terms": [
+            "economics-4.5-4.6-appreciation",
+            "economics-4.5-4.6-floating"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q02",
+          "type": "tf",
+          "statement": "A depreciation of a country’s currency makes its exports cheaper for foreigners.",
+          "answer": true,
+          "explanation": "Foreign buyers need less of their currency to buy the same goods.",
+          "terms": [
+            "economics-4.5-4.6-depreciation"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q03",
+          "type": "fill",
+          "text": "A deliberate cut in the value of a fixed exchange rate is a ___.",
+          "answer": "devaluation",
+          "bank": [
+            "depreciation",
+            "revaluation",
+            "deflation",
+            "devaluation"
+          ],
+          "explanation": "Depreciation is the floating-rate equivalent.",
+          "terms": [
+            "economics-4.5-4.6-devaluation"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q04",
+          "type": "match",
+          "prompt": "Match each event to its effect on the domestic currency (floating).",
+          "pairs": [
+            {
+              "left": "Tourists flock to the country",
+              "right": "Appreciates: demand for currency rises"
+            },
+            {
+              "left": "Domestic interest rates are cut",
+              "right": "Depreciates: hot money leaves"
+            },
+            {
+              "left": "Foreign firms build factories here",
+              "right": "Appreciates: FDI inflow"
+            },
+            {
+              "left": "Residents import more",
+              "right": "Depreciates: supply of currency rises"
+            }
+          ],
+          "explanation": "Anything raising demand for the currency raises its value; anything raising supply lowers it.",
+          "terms": [
+            "economics-4.5-4.6-appreciation",
+            "economics-4.5-4.6-depreciation"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q05",
+          "type": "mcq",
+          "prompt": "Which is a likely consequence of a strong appreciation?",
+          "options": [
+            "Higher export sales",
+            "Lower import prices, reducing inflation",
+            "Higher cost-push inflation",
+            "A larger current account surplus"
+          ],
+          "answer": 1,
+          "explanation": "Cheaper imports reduce inflation, but exporters lose competitiveness.",
+          "terms": [
+            "economics-4.5-4.6-appreciation"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q06",
+          "type": "mcq",
+          "prompt": "How does a central bank keep a fixed exchange rate from falling?",
+          "options": [
+            "It prints more money",
+            "It sells its own currency",
+            "It cuts interest rates",
+            "It buys its own currency using foreign reserves or raises interest rates"
+          ],
+          "answer": 3,
+          "explanation": "Buying the currency increases demand for it.",
+          "terms": [
+            "economics-4.5-4.6-fixed"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q07",
+          "type": "tf",
+          "statement": "A floating exchange rate gives a country freedom to use monetary policy for domestic goals.",
+          "answer": true,
+          "explanation": "It does not need interest rates to defend a currency peg.",
+          "terms": [
+            "economics-4.5-4.6-floating"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q08",
+          "type": "fill",
+          "text": "A floating rate with occasional central bank intervention is a ___ exchange rate.",
+          "answer": "managed",
+          "bank": [
+            "managed",
+            "fixed",
+            "pegged",
+            "free"
+          ],
+          "explanation": "Many countries operate managed floats.",
+          "terms": [
+            "economics-4.5-4.6-managed"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q09",
+          "type": "mcq",
+          "prompt": "Which is an advantage of a fixed exchange rate?",
+          "options": [
+            "Monetary policy freedom",
+            "Certainty for traders and investors",
+            "No need for reserves",
+            "Automatic correction of trade deficits"
+          ],
+          "answer": 1,
+          "explanation": "Stable rates reduce exchange-rate risk.",
+          "terms": [
+            "economics-4.5-4.6-fixed"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-1-q10",
+          "type": "order",
+          "prompt": "Order the effect of a fall in domestic interest rates on the exchange rate.",
+          "items": [
+            "Domestic savings become less attractive",
+            "Hot money flows out of the country",
+            "Supply of the currency rises",
+            "The currency depreciates"
+          ],
+          "explanation": "Interest rate differentials drive short-term capital flows.",
+          "terms": [
+            "economics-4.5-4.6-depreciation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-4.5-4.6-2",
+      "title": "The balance of payments",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-4.5-4.6-2-q01",
+          "type": "mcq",
+          "prompt": "Where are profits earned by foreign-owned firms and sent home recorded?",
+          "options": [
+            "Capital account",
+            "Trade in goods",
+            "Primary income in the current account",
+            "Reserve assets"
+          ],
+          "answer": 2,
+          "explanation": "Investment income is primary income.",
+          "terms": [
+            "economics-4.5-4.6-current-account"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q02",
+          "type": "match",
+          "prompt": "Match each transaction to its account.",
+          "pairs": [
+            {
+              "left": "Export of cars",
+              "right": "Current account"
+            },
+            {
+              "left": "Foreign firm builds a factory",
+              "right": "Financial account (FDI)"
+            },
+            {
+              "left": "Debt forgiveness by another government",
+              "right": "Capital account"
+            },
+            {
+              "left": "Remittances from migrant workers",
+              "right": "Current account (secondary income)"
+            }
+          ],
+          "explanation": "The BoP has three accounts plus errors and omissions.",
+          "terms": [
+            "economics-4.5-4.6-current-account",
+            "economics-4.5-4.6-capital-account",
+            "economics-4.5-4.6-financial-account"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q03",
+          "type": "tf",
+          "statement": "A current account deficit must be matched by a surplus on the capital and financial accounts.",
+          "answer": true,
+          "explanation": "Overall the BoP balances, apart from errors and omissions.",
+          "terms": [
+            "economics-4.5-4.6-ca-deficit",
+            "economics-4.5-4.6-bop"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q04",
+          "type": "fill",
+          "text": "Foreign direct investment is recorded in the ___ account.",
+          "answer": "financial",
+          "bank": [
+            "current",
+            "financial",
+            "capital",
+            "trade"
+          ],
+          "explanation": "FDI and portfolio investment are financial account items.",
+          "terms": [
+            "economics-4.5-4.6-financial-account"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q05",
+          "type": "mcq",
+          "prompt": "Which is a possible consequence of a persistent current account deficit?",
+          "options": [
+            "Appreciation of the currency",
+            "Lower interest rates are needed",
+            "Rising foreign debt or sale of domestic assets to foreigners",
+            "Rising foreign reserves"
+          ],
+          "answer": 2,
+          "explanation": "The deficit must be financed by borrowing or selling assets.",
+          "terms": [
+            "economics-4.5-4.6-ca-deficit"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q06",
+          "type": "mcq",
+          "prompt": "Which policy aims to reduce a current account deficit through expenditure reduction?",
+          "options": [
+            "Contractionary fiscal policy to reduce spending on imports",
+            "Cutting tariffs",
+            "Raising consumer spending",
+            "Appreciating the currency"
+          ],
+          "answer": 0,
+          "explanation": "Lower incomes reduce import spending; expenditure switching uses tariffs or depreciation.",
+          "terms": [
+            "economics-4.5-4.6-ca-deficit"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q07",
+          "type": "tf",
+          "statement": "Supply-side policies that improve competitiveness can reduce a current account deficit in the long run.",
+          "answer": true,
+          "explanation": "Higher productivity makes exports more competitive.",
+          "terms": [
+            "economics-4.5-4.6-ca-deficit"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q08",
+          "type": "fill",
+          "text": "A record of all transactions with the rest of the world is the balance of ___.",
+          "answer": "payments",
+          "bank": [
+            "trade",
+            "payments",
+            "accounts",
+            "reserves"
+          ],
+          "explanation": "The balance of trade is only part of the current account.",
+          "terms": [
+            "economics-4.5-4.6-bop"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q09",
+          "type": "mcq",
+          "prompt": "A large current account surplus may cause…",
+          "options": [
+            "falling foreign reserves",
+            "a depreciating currency",
+            "upward pressure on the exchange rate and friction with trading partners",
+            "rising foreign debt"
+          ],
+          "answer": 2,
+          "explanation": "Strong demand for exports raises demand for the currency.",
+          "terms": [
+            "economics-4.5-4.6-current-account"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-2-q10",
+          "type": "order",
+          "prompt": "Order the sections of the balance of payments as usually presented.",
+          "items": [
+            "Current account",
+            "Capital account",
+            "Financial account",
+            "Errors and omissions"
+          ],
+          "explanation": "The sum of all should be zero.",
+          "terms": [
+            "economics-4.5-4.6-bop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-4.5-4.6-3",
+      "title": "HL: Conversions, Marshall–Lerner, J-curve and terms of trade",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-4.5-4.6-3-q01",
+          "type": "mcq",
+          "prompt": "€1 = $1.25. How many euros is a $50 item?",
+          "options": [
+            "€62.50",
+            "€50",
+            "€48.75",
+            "€40"
+          ],
+          "answer": 3,
+          "explanation": "50 ÷ 1.25 = €40.",
+          "terms": [
+            "economics-4.5-4.6-exchange-rate"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q02",
+          "type": "fill",
+          "text": "If €1 = $1.25, then $1 = €___.",
+          "answer": "0.80",
+          "accept": [
+            "0.8",
+            "€0.80"
+          ],
+          "bank": [
+            "0.80",
+            "1.25",
+            "0.75",
+            "0.8125"
+          ],
+          "explanation": "1 ÷ 1.25 = 0.80.",
+          "terms": [
+            "economics-4.5-4.6-exchange-rate"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q03",
+          "type": "mcq",
+          "prompt": "Goods balance −40, services +15, primary income −5, secondary income +10 (all $ bn). What is the current account balance?",
+          "options": [
+            "−$30 bn",
+            "+$20 bn",
+            "−$40 bn",
+            "−$20 bn"
+          ],
+          "answer": 3,
+          "explanation": "−40 + 15 − 5 + 10 = −20.",
+          "terms": [
+            "economics-4.5-4.6-current-account"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q04",
+          "type": "tf",
+          "statement": "The Marshall–Lerner condition says a depreciation improves the current account if PEDx + PEDm > 1.",
+          "answer": true,
+          "explanation": "Demand must be elastic enough for volumes to outweigh the price changes.",
+          "terms": [
+            "economics-4.5-4.6-marshall-lerner"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q05",
+          "type": "mcq",
+          "prompt": "Why does the current account often worsen immediately after a depreciation?",
+          "options": [
+            "Demand is perfectly elastic",
+            "Exports become dearer",
+            "Import prices fall",
+            "Demand for exports and imports is inelastic in the short run"
+          ],
+          "answer": 3,
+          "explanation": "Contracts and habits take time to change: the J-curve effect.",
+          "terms": [
+            "economics-4.5-4.6-j-curve"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q06",
+          "type": "mcq",
+          "prompt": "The export price index rises to 110 and the import price index to 125. What are the terms of trade?",
+          "options": [
+            "113.6",
+            "88",
+            "115",
+            "235"
+          ],
+          "answer": 1,
+          "explanation": "110 ÷ 125 × 100 = 88: a deterioration.",
+          "terms": [
+            "economics-4.5-4.6-terms-of-trade"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q07",
+          "type": "tf",
+          "statement": "An improvement in the terms of trade means each unit of exports buys more imports.",
+          "answer": true,
+          "explanation": "Export prices rise relative to import prices.",
+          "terms": [
+            "economics-4.5-4.6-terms-of-trade"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q08",
+          "type": "fill",
+          "text": "The path of the current account after a depreciation (worse, then better) is the ___-curve.",
+          "answer": "J",
+          "bank": [
+            "S",
+            "L",
+            "J",
+            "U"
+          ],
+          "explanation": "Shown as a J on a graph of the balance over time.",
+          "terms": [
+            "economics-4.5-4.6-j-curve"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q09",
+          "type": "match",
+          "prompt": "Match each cause to its effect on the terms of trade.",
+          "pairs": [
+            {
+              "left": "World copper price soars (copper exporter)",
+              "right": "Improves: export prices up"
+            },
+            {
+              "left": "Oil import prices rise",
+              "right": "Deteriorates: import prices up"
+            },
+            {
+              "left": "Currency appreciates",
+              "right": "Improves: exports dearer in foreign currency"
+            },
+            {
+              "left": "Global glut of coffee (coffee exporter)",
+              "right": "Deteriorates: export prices down"
+            }
+          ],
+          "explanation": "Anything raising export prices relative to import prices improves the ToT.",
+          "terms": [
+            "economics-4.5-4.6-terms-of-trade"
+          ]
+        },
+        {
+          "id": "economics-4.5-4.6-3-q10",
+          "type": "order",
+          "prompt": "Order the J-curve following a depreciation.",
+          "items": [
+            "Currency depreciates",
+            "Import bill rises as volumes adjust slowly",
+            "Current account worsens",
+            "Volumes respond and the balance improves"
+          ],
+          "explanation": "Over time, demand becomes more elastic and Marshall–Lerner holds.",
+          "terms": [
+            "economics-4.5-4.6-j-curve",
+            "economics-4.5-4.6-marshall-lerner"
+          ]
+        }
+      ]
+    }
+  ]
+}

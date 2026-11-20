@@ -1,0 +1,609 @@
+{
+  "id": "economics-2.7",
+  "code": "2.7",
+  "unit": "2",
+  "title": "Role of government in microeconomics",
+  "level": "SL",
+  "summary": "Governments intervene with price ceilings and floors, indirect taxes, subsidies, direct provision, regulation and nudges. Each has consequences for stakeholders. HL quantifies these effects.",
+  "keyterms": [
+    {
+      "id": "economics-2.7-price-ceiling",
+      "term": "Price ceiling (maximum price)",
+      "definition": "A legal maximum price set below equilibrium to make a good affordable; it causes a shortage.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-price-floor",
+      "term": "Price floor (minimum price)",
+      "definition": "A legal minimum price set above equilibrium, e.g. to support farmers or workers; it causes a surplus.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-minimum-wage",
+      "term": "Minimum wage",
+      "definition": "A price floor in the labour market; if set above equilibrium it may cause unemployment.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-black-market",
+      "term": "Parallel (black) market",
+      "definition": "Illegal trade at prices above a legal maximum, which often appears when a ceiling causes a shortage.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-specific-tax",
+      "term": "Specific tax",
+      "definition": "An indirect tax of a fixed amount per unit sold; supply shifts up parallel by the tax.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-ad-valorem",
+      "term": "Ad valorem tax",
+      "definition": "An indirect tax charged as a percentage of the price (e.g. VAT); the supply curve pivots upward.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-tax-incidence",
+      "term": "Tax incidence",
+      "definition": "How the burden of an indirect tax is shared between consumers and producers; consumers bear more when demand is inelastic.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-welfare-loss",
+      "term": "Welfare (deadweight) loss",
+      "definition": "The loss of social surplus when output differs from the allocatively efficient level.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-direct-provision",
+      "term": "Direct provision",
+      "definition": "When government itself supplies goods or services, e.g. state schools or hospitals.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-regulation",
+      "term": "Command and control regulation",
+      "definition": "Laws that limit or ban activities, e.g. age limits for alcohol or emission standards.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-stakeholder",
+      "term": "Stakeholder",
+      "definition": "Any group affected by a policy, e.g. consumers, producers, workers, government and society.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.7-subsidy-cost",
+      "term": "Cost of a subsidy",
+      "definition": "Subsidy per unit × new quantity; an opportunity cost for government spending.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.7-tax-revenue",
+      "term": "Tax revenue",
+      "definition": "Tax per unit × quantity sold after the tax.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-2.7-1",
+      "title": "Price controls, taxes and subsidies",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.7-1-q01",
+          "type": "mcq",
+          "prompt": "A city sets a maximum rent below the equilibrium rent. What is the most likely result?",
+          "options": [
+            "A surplus of rental housing",
+            "Higher rents for all tenants",
+            "A shortage of rental housing",
+            "No change in the market"
+          ],
+          "answer": 2,
+          "explanation": "At the lower price, Qd rises and Qs falls, creating excess demand.",
+          "terms": [
+            "economics-2.7-price-ceiling"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q02",
+          "type": "tf",
+          "statement": "A price floor is effective only if it is set above the equilibrium price.",
+          "answer": true,
+          "explanation": "A floor below equilibrium has no effect because the market price is already higher.",
+          "terms": [
+            "economics-2.7-price-floor"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q03",
+          "type": "fill",
+          "text": "Illegal trade above a legal maximum price takes place on a ___ market.",
+          "answer": "parallel",
+          "bank": [
+            "parallel",
+            "primary",
+            "futures",
+            "common"
+          ],
+          "explanation": "Shortages create incentives for buyers to pay more illegally.",
+          "terms": [
+            "economics-2.7-black-market"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q04",
+          "type": "mcq",
+          "prompt": "A government guarantees farmers a minimum price above equilibrium and buys the surplus. Who gains most directly?",
+          "options": [
+            "Farmers",
+            "Consumers",
+            "Taxpayers",
+            "Foreign producers"
+          ],
+          "answer": 0,
+          "explanation": "Farmers get higher prices and sell more; consumers pay more and taxpayers fund the purchases.",
+          "terms": [
+            "economics-2.7-price-floor",
+            "economics-2.7-stakeholder"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q05",
+          "type": "mcq",
+          "prompt": "Demand for cigarettes is price inelastic. Who bears most of a cigarette tax?",
+          "options": [
+            "Producers",
+            "The government",
+            "Consumers",
+            "Retail workers"
+          ],
+          "answer": 2,
+          "explanation": "When demand is inelastic, producers can pass most of the tax on as a higher price.",
+          "terms": [
+            "economics-2.7-tax-incidence"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q06",
+          "type": "match",
+          "prompt": "Match each policy to its effect on the market.",
+          "pairs": [
+            {
+              "left": "Specific tax",
+              "right": "Supply shifts up by a fixed amount"
+            },
+            {
+              "left": "Ad valorem tax",
+              "right": "Supply pivots upward"
+            },
+            {
+              "left": "Subsidy",
+              "right": "Supply shifts down/right"
+            },
+            {
+              "left": "Maximum price",
+              "right": "Shortage at controlled price"
+            }
+          ],
+          "explanation": "Taxes raise firms’ costs; subsidies lower them; controls fix the price.",
+          "terms": [
+            "economics-2.7-specific-tax",
+            "economics-2.7-ad-valorem",
+            "economics-2.7-price-ceiling"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q07",
+          "type": "tf",
+          "statement": "A minimum wage set above the market wage may cause unemployment.",
+          "answer": true,
+          "explanation": "More workers want jobs and firms demand fewer, creating excess supply of labour.",
+          "terms": [
+            "economics-2.7-minimum-wage"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q08",
+          "type": "mcq",
+          "prompt": "Which is a likely consequence of a subsidy to solar panel producers?",
+          "options": [
+            "Lower price and higher output of solar panels",
+            "Higher price and lower output",
+            "A shortage of panels",
+            "Higher tax revenue"
+          ],
+          "answer": 0,
+          "explanation": "Lower costs shift supply right; consumers pay less and buy more.",
+          "terms": [
+            "economics-2.7-subsidy-cost"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q09",
+          "type": "fill",
+          "text": "A tax charged as a percentage of price, such as VAT, is an ___ tax.",
+          "answer": "ad valorem",
+          "bank": [
+            "specific",
+            "direct",
+            "ad valorem",
+            "progressive"
+          ],
+          "explanation": "Ad valorem taxes rise with price, so the supply curve diverges from the original.",
+          "terms": [
+            "economics-2.7-ad-valorem"
+          ]
+        },
+        {
+          "id": "economics-2.7-1-q10",
+          "type": "order",
+          "prompt": "Order the effects of a price ceiling on bread.",
+          "items": [
+            "Ceiling set below equilibrium",
+            "Quantity supplied falls and quantity demanded rises",
+            "Queues and shortages appear",
+            "Parallel markets or non-price rationing develop"
+          ],
+          "explanation": "Shortages lead to queues, rationing and black markets.",
+          "terms": [
+            "economics-2.7-price-ceiling",
+            "economics-2.7-black-market"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.7-2",
+      "title": "Other interventions and evaluation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.7-2-q01",
+          "type": "mcq",
+          "prompt": "Which is an example of direct provision?",
+          "options": [
+            "A tax on sugary drinks",
+            "A ban on smoking indoors",
+            "A minimum price for alcohol",
+            "A state-run public hospital"
+          ],
+          "answer": 3,
+          "explanation": "Direct provision means government supplies the good itself.",
+          "terms": [
+            "economics-2.7-direct-provision"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q02",
+          "type": "tf",
+          "statement": "Command and control regulation works by changing prices.",
+          "answer": false,
+          "explanation": "Regulation uses rules and penalties rather than price signals.",
+          "terms": [
+            "economics-2.7-regulation"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q03",
+          "type": "fill",
+          "text": "A group affected by a policy is called a ___.",
+          "answer": "stakeholder",
+          "bank": [
+            "shareholder",
+            "stakeholder",
+            "consumer",
+            "producer"
+          ],
+          "explanation": "Evaluation of intervention considers effects on each stakeholder.",
+          "terms": [
+            "economics-2.7-stakeholder"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q04",
+          "type": "mcq",
+          "prompt": "Why do governments set price ceilings on staple foods?",
+          "options": [
+            "To raise tax revenue",
+            "To make necessities affordable for low-income households",
+            "To increase producers’ profits",
+            "To correct a positive externality"
+          ],
+          "answer": 1,
+          "explanation": "Equity is the main aim, but shortages can result.",
+          "terms": [
+            "economics-2.7-price-ceiling"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q05",
+          "type": "mcq",
+          "prompt": "Which is a weakness of a price floor for farm products?",
+          "options": [
+            "Farmers lose income",
+            "Consumers pay lower prices",
+            "It reduces output",
+            "Taxpayers fund the purchase and storage of surpluses"
+          ],
+          "answer": 3,
+          "explanation": "Surpluses must be bought, stored or destroyed: an opportunity cost for government.",
+          "terms": [
+            "economics-2.7-price-floor",
+            "economics-2.7-stakeholder"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q06",
+          "type": "match",
+          "prompt": "Match the intervention to a likely aim.",
+          "pairs": [
+            {
+              "left": "Tax on alcohol",
+              "right": "Reduce consumption and raise revenue"
+            },
+            {
+              "left": "Rent ceiling",
+              "right": "Make housing affordable"
+            },
+            {
+              "left": "Minimum wage",
+              "right": "Raise low earners’ incomes"
+            },
+            {
+              "left": "Subsidy for vaccines",
+              "right": "Increase consumption of a merit good"
+            }
+          ],
+          "explanation": "Governments intervene to raise revenue, support groups or correct market failure.",
+          "terms": [
+            "economics-2.7-stakeholder"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q07",
+          "type": "tf",
+          "statement": "All indirect taxes create a welfare loss in a competitive market without externalities.",
+          "answer": true,
+          "explanation": "Output falls below the efficient level, losing some consumer and producer surplus.",
+          "terms": [
+            "economics-2.7-welfare-loss"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q08",
+          "type": "mcq",
+          "prompt": "Which statement about tax incidence is correct?",
+          "options": [
+            "Consumers always pay the full tax",
+            "The more price elastic the demand, the larger the share of the tax paid by producers",
+            "Producers always pay the full tax",
+            "Incidence does not depend on elasticity"
+          ],
+          "answer": 1,
+          "explanation": "If consumers can easily switch away, firms cannot pass the tax on.",
+          "terms": [
+            "economics-2.7-tax-incidence"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q09",
+          "type": "fill",
+          "text": "The loss of social surplus caused by a policy that moves output away from the efficient level is a ___ loss.",
+          "answer": "welfare",
+          "bank": [
+            "revenue",
+            "capital",
+            "trade",
+            "welfare"
+          ],
+          "explanation": "Also called deadweight loss.",
+          "terms": [
+            "economics-2.7-welfare-loss"
+          ]
+        },
+        {
+          "id": "economics-2.7-2-q10",
+          "type": "order",
+          "prompt": "Order a structured evaluation of a sugar tax.",
+          "items": [
+            "Explain how the tax shifts supply",
+            "Identify effects on consumers, producers and government",
+            "Weigh short-run versus long-run effects",
+            "Reach a justified judgement"
+          ],
+          "explanation": "Good evaluation considers stakeholders, time, and alternatives before concluding.",
+          "terms": [
+            "economics-2.7-stakeholder",
+            "economics-2.7-tax-incidence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.7-3",
+      "title": "HL: Calculating the effects of intervention",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-2.7-3-q01",
+          "type": "mcq",
+          "prompt": "Qd = 100 − 2P and Qs = −20 + 4P. A $3 per-unit tax is imposed, so Qs = −32 + 4P. What is the new price paid by consumers?",
+          "options": [
+            "$22",
+            "$23",
+            "$20",
+            "$19"
+          ],
+          "answer": 0,
+          "explanation": "100 − 2P = −32 + 4P → 6P = 132 → P = $22.",
+          "terms": [
+            "economics-2.7-tax-incidence"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q02",
+          "type": "mcq",
+          "prompt": "After the $3 tax, quantity is 56 units. What is government tax revenue?",
+          "options": [
+            "$180",
+            "$112",
+            "$168",
+            "$56"
+          ],
+          "answer": 2,
+          "explanation": "Revenue = $3 × 56 = $168.",
+          "terms": [
+            "economics-2.7-tax-revenue"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q03",
+          "type": "fill",
+          "text": "Before the tax P = $20; after it consumers pay $22 and firms keep $19. Per unit, consumers bear $___ of the tax.",
+          "answer": "2",
+          "accept": [
+            "$2"
+          ],
+          "bank": [
+            "1",
+            "3",
+            "2",
+            "22"
+          ],
+          "explanation": "Consumers pay $2 more; producers receive $1 less. Demand is less elastic than supply here.",
+          "terms": [
+            "economics-2.7-tax-incidence"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q04",
+          "type": "tf",
+          "statement": "In this example, the total tax paid by producers is $56.",
+          "answer": true,
+          "explanation": "Producer share = $1 × 56 units = $56; consumer share = $2 × 56 = $112.",
+          "terms": [
+            "economics-2.7-tax-incidence",
+            "economics-2.7-tax-revenue"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q05",
+          "type": "mcq",
+          "prompt": "Same market (Qd = 100 − 2P, Qs = −20 + 4P). A maximum price of $15 is set. What is the shortage?",
+          "options": [
+            "30 units",
+            "15 units",
+            "70 units",
+            "40 units"
+          ],
+          "answer": 0,
+          "explanation": "Qd = 70 and Qs = 40 at $15, so excess demand = 30.",
+          "terms": [
+            "economics-2.7-price-ceiling"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q06",
+          "type": "mcq",
+          "prompt": "A minimum price of $25 is set and the government buys the surplus. How much does it spend?",
+          "options": [
+            "$1250",
+            "$2000",
+            "$750",
+            "$300"
+          ],
+          "answer": 2,
+          "explanation": "At $25, Qs = 80 and Qd = 50, surplus = 30; 30 × $25 = $750.",
+          "terms": [
+            "economics-2.7-price-floor"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q07",
+          "type": "mcq",
+          "prompt": "A $1.50 per-unit subsidy gives Qs = −14 + 4P. New equilibrium is P = $19, Q = 62. What is the cost of the subsidy?",
+          "options": [
+            "$93",
+            "$90",
+            "$28.50",
+            "$62"
+          ],
+          "answer": 0,
+          "explanation": "Cost = subsidy × quantity = 1.50 × 62 = $93.",
+          "terms": [
+            "economics-2.7-subsidy-cost"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q08",
+          "type": "fill",
+          "text": "With the subsidy, producers receive $19 + $1.50 = $___ per unit.",
+          "answer": "20.50",
+          "accept": [
+            "20.5",
+            "$20.50"
+          ],
+          "bank": [
+            "19",
+            "17.50",
+            "21",
+            "20.50"
+          ],
+          "explanation": "Producers get the market price plus the subsidy.",
+          "terms": [
+            "economics-2.7-subsidy-cost"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q09",
+          "type": "match",
+          "prompt": "Match each calculation to its formula.",
+          "pairs": [
+            {
+              "left": "Tax revenue",
+              "right": "Tax per unit × new quantity"
+            },
+            {
+              "left": "Subsidy cost",
+              "right": "Subsidy per unit × new quantity"
+            },
+            {
+              "left": "Shortage under a ceiling",
+              "right": "Qd − Qs at the ceiling price"
+            },
+            {
+              "left": "Cost of buying a surplus",
+              "right": "(Qs − Qd) × floor price"
+            }
+          ],
+          "explanation": "These areas can be read from diagrams or calculated from functions.",
+          "terms": [
+            "economics-2.7-tax-revenue",
+            "economics-2.7-subsidy-cost",
+            "economics-2.7-price-ceiling",
+            "economics-2.7-price-floor"
+          ]
+        },
+        {
+          "id": "economics-2.7-3-q10",
+          "type": "order",
+          "prompt": "Order the steps to find the effect of a $t tax using functions.",
+          "items": [
+            "Rewrite supply as Qs = c + d(P − t)",
+            "Set Qd equal to the new Qs and solve for P",
+            "Substitute to find the new quantity",
+            "Calculate revenue and each group’s share of the tax"
+          ],
+          "explanation": "The tax lowers the price sellers keep by t at every consumer price.",
+          "terms": [
+            "economics-2.7-tax-revenue",
+            "economics-2.7-tax-incidence"
+          ]
+        }
+      ]
+    }
+  ]
+}

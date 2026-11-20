@@ -1,0 +1,163 @@
+{
+  "id": "economics",
+  "name": "Economics",
+  "short": "Econ",
+  "group": "Group 3: Individuals and societies",
+  "icon": "📈",
+  "blurb": "Micro, macro and the global economy: markets, policy, trade and development",
+  "syllabus": "Subject guide first assessed May 2022",
+  "levels": ["SL", "HL"],
+  "units": [
+    { "id": "1", "title": "Introduction to economics", "blurb": "Scarcity, choice, the economic problem and how economists build and test models." },
+    { "id": "2", "title": "Microeconomics", "blurb": "Demand, supply, elasticity, government intervention, market failure and (HL) theory of the firm." },
+    { "id": "3", "title": "Macroeconomics", "blurb": "National income, AD/AS, growth, unemployment, inflation, inequality and macro policy." },
+    { "id": "4", "title": "The global economy", "blurb": "Trade, protection, integration, exchange rates, the balance of payments and development." }
+  ],
+  "papers": {
+    "P1": "Paper 1 · extended response",
+    "P2": "Paper 2 · data response",
+    "P3": "Paper 3 · policy paper (HL)"
+  },
+  "mcqExam": null,
+  "assessment": {
+    "SL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Extended response: one question from three, parts (a) 10 marks and (b) 15 marks", "max": 25, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Data response: one question from two, short answers, calculations, diagrams and a 15-mark evaluation", "max": 40, "group": "p2" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Portfolio of three commentaries on news articles", "max": 45, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 30, "time": "1 h 15 min" },
+        "p2": { "name": "Paper 2", "weight": 40, "time": "1 h 45 min" },
+        "ia": { "name": "IA portfolio", "weight": 30, "time": "20 hours of class time" }
+      }
+    },
+    "HL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Extended response: one question from three, parts (a) 10 marks and (b) 15 marks", "max": 25, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Data response: one question from two, including HL extension material", "max": 40, "group": "p2" },
+        { "id": "p3", "name": "Paper 3", "detail": "Policy paper: two compulsory questions of 30 marks, calculations and a policy recommendation", "max": 60, "group": "p3" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Portfolio of three commentaries on news articles", "max": 45, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 20, "time": "1 h 15 min" },
+        "p2": { "name": "Paper 2", "weight": 30, "time": "1 h 45 min" },
+        "p3": { "name": "Paper 3", "weight": 30, "time": "1 h 45 min" },
+        "ia": { "name": "IA portfolio", "weight": 20, "time": "20 hours of class time" }
+      }
+    }
+  },
+  "boundaries": {
+    "SL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 15, 30, 43, 53, 63, 74] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 16, 31, 42, 53, 64, 76] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 12, 25, 39, 51, 63, 75] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 15, 29, 42, 54, 67, 79] },
+      { "session": "Nov 2025", "tz": "TZ3", "min": [0, 16, 31, 43, 54, 69, 81] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 15, 30, 43, 54, 64, 75] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 15, 29, 40, 52, 64, 76] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 12, 25, 39, 51, 64, 76] }
+    ],
+    "HL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 13, 25, 38, 51, 64, 76] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 13, 27, 37, 50, 64, 77] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 13, 27, 39, 51, 63, 76] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 13, 26, 38, 51, 65, 77] },
+      { "session": "Nov 2025", "tz": "TZ3", "min": [0, 13, 26, 38, 52, 65, 79] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 14, 29, 42, 54, 65, 77] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 14, 27, 38, 50, 63, 76] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 14, 28, 40, 52, 65, 77] }
+    ]
+  },
+  "ia": {
+    "name": "Portfolio of three commentaries",
+    "max": 45,
+    "weight": 30,
+    "limit": "800 words per commentary (three commentaries)",
+    "criteria": [
+      {
+        "id": "a",
+        "name": "A · Diagrams (3 marks × 3 commentaries)",
+        "max": 9,
+        "look": [
+          "Diagrams that are relevant to the article and fully labelled (axes, curves, equilibria)",
+          "Diagrams adapted to the article's context, e.g. shifts shown and real names or prices used",
+          "Each diagram fully explained in the text, not just drawn"
+        ]
+      },
+      {
+        "id": "b",
+        "name": "B · Terminology (2 marks × 3 commentaries)",
+        "max": 6,
+        "look": [
+          "Economic terms relevant to the article used throughout",
+          "Terms used precisely and correctly, not just listed or defined"
+        ]
+      },
+      {
+        "id": "c",
+        "name": "C · Application and analysis (3 marks × 3 commentaries)",
+        "max": 9,
+        "look": [
+          "Economic theory applied directly to the events in the article",
+          "Analysis that follows a clear chain of cause and effect",
+          "Evidence from the article used to support each step"
+        ]
+      },
+      {
+        "id": "d",
+        "name": "D · Key concept (3 marks × 3 commentaries)",
+        "max": 9,
+        "look": [
+          "One key concept clearly identified for each commentary, and a different one each time",
+          "The concept linked to the article in a developed, explicit way, not only named in the introduction"
+        ]
+      },
+      {
+        "id": "e",
+        "name": "E · Evaluation (3 marks × 3 commentaries)",
+        "max": 9,
+        "look": [
+          "Judgements supported by reasoning and evidence",
+          "Consideration of stakeholders, short versus long run, assumptions and alternatives",
+          "A justified conclusion that answers the issue raised by the article"
+        ]
+      },
+      {
+        "id": "f",
+        "name": "F · Rubric requirements (whole portfolio)",
+        "max": 3,
+        "look": [
+          "Each commentary based on a different unit of the syllabus (not unit 1)",
+          "Each article from a different, appropriate published source",
+          "Each article published no earlier than one year before the commentary was written"
+        ]
+      }
+    ],
+    "checklist": [
+      "Three commentaries, each on a different syllabus unit (micro, macro, global economy)",
+      "Each commentary is 800 words or fewer (excluding diagrams, labels, headings, footnotes, references)",
+      "Each article comes from a different source and is no more than a year old when you write about it",
+      "A different key concept is chosen for each commentary and named on the cover sheet",
+      "Every commentary has at least one accurate, fully labelled diagram tailored to the article",
+      "Each diagram is explained in the text and linked to the article's events",
+      "Key terms are used precisely (and defined only where it helps the analysis)",
+      "Evaluation weighs stakeholders, short-run versus long-run effects and possible alternatives",
+      "A copy of the article (with the relevant parts highlighted) is attached to each commentary",
+      "Cover sheet includes title, source, dates, word count, unit and key concept"
+    ]
+  },
+  "examTips": [
+    "Draw a fully labelled diagram whenever you can: titled axes, labelled curves, equilibrium points and arrows showing shifts, then explain it in words.",
+    "In Paper 2 and Paper 3, always refer to the text or data: name the country or firm and quote figures from the extract.",
+    "Show all working in calculations and give units (%, $, millions); a correct method can still earn marks if the arithmetic slips.",
+    "For 15-mark evaluation questions, weigh both sides with stakeholders, short versus long run and assumptions, then reach a clear judgement.",
+    "Define the key term in the question, then build a step-by-step chain of reasoning; vague lists of points score poorly."
+  ],
+  "sources": [
+    { "label": "IB Economics subject brief (assessment outline)", "url": "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/economics/" },
+    { "label": "Grade boundary collation, Economics SL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/economics-sl" },
+    { "label": "Grade boundary collation, Economics HL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/economics-hl" },
+    { "label": "Paper weighting summary (Clastify)", "url": "https://clastify.com/blog/ib-economics-paper-weighting" }
+  ]
+}

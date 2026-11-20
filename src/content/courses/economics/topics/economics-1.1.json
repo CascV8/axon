@@ -1,0 +1,452 @@
+{
+  "id": "economics-1.1",
+  "code": "1.1",
+  "unit": "1",
+  "title": "What is economics?",
+  "level": "SL",
+  "summary": "Economics studies how societies use scarce resources to meet unlimited wants. Scarcity forces choices, every choice has an opportunity cost, and the PPC shows the trade-offs.",
+  "keyterms": [
+    {
+      "id": "economics-1.1-scarcity",
+      "term": "Scarcity",
+      "definition": "The situation where resources are limited relative to the unlimited wants and needs of people, so not every want can be satisfied.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-choice",
+      "term": "Choice",
+      "definition": "The decision about how to use scarce resources, forced on individuals, firms and governments because of scarcity.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-opportunity-cost",
+      "term": "Opportunity cost",
+      "definition": "The value of the next best alternative given up when a choice is made.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-free-good",
+      "term": "Free good",
+      "definition": "A good with zero opportunity cost because it is not scarce, e.g. air or sunlight in most places.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-economic-good",
+      "term": "Economic good",
+      "definition": "A good that is scarce and so has an opportunity cost to produce or consume.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-factors-of-production",
+      "term": "Factors of production",
+      "definition": "The resources used to produce goods and services: land, labour, capital and entrepreneurship.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-capital",
+      "term": "Capital",
+      "definition": "Man-made goods used to produce other goods and services, e.g. machinery, tools, buildings and infrastructure.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-entrepreneurship",
+      "term": "Entrepreneurship",
+      "definition": "The willingness and ability to organise the other factors of production and take risks to run a business.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-ppc",
+      "term": "Production possibilities curve (PPC)",
+      "definition": "A curve showing the maximum combinations of two goods an economy can produce with all resources fully and efficiently employed, given technology.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-economic-growth",
+      "term": "Economic growth",
+      "definition": "An increase in real output (real GDP) over time; shown on a PPC by an outward shift of the curve.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-microeconomics",
+      "term": "Microeconomics",
+      "definition": "The study of individual markets and the behaviour of consumers, firms and workers within them.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-macroeconomics",
+      "term": "Macroeconomics",
+      "definition": "The study of the economy as a whole: total output, unemployment, inflation and growth.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-positive-economics",
+      "term": "Positive economics",
+      "definition": "Statements that can be tested against evidence; they describe what is, was or will be.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-normative-economics",
+      "term": "Normative economics",
+      "definition": "Statements involving value judgements about what ought to be; they cannot be tested as true or false.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-circular-flow",
+      "term": "Circular flow of income model",
+      "definition": "A model showing how income, spending and factor services flow between households, firms, government and the foreign sector.",
+      "hl": false
+    },
+    {
+      "id": "economics-1.1-leakages-injections",
+      "term": "Leakages and injections",
+      "definition": "Leakages (saving, taxes, imports) remove income from the circular flow; injections (investment, government spending, exports) add to it.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-1.1-1",
+      "title": "Scarcity, choice and opportunity cost",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-1.1-1-q01",
+          "type": "mcq",
+          "prompt": "What is the basic economic problem?",
+          "options": [
+            "Prices are always rising",
+            "Governments spend more than they earn",
+            "Firms always try to maximise profit",
+            "Resources are limited but wants are unlimited"
+          ],
+          "answer": 3,
+          "explanation": "Scarcity of resources relative to unlimited wants is the basic economic problem, which forces choices.",
+          "terms": [
+            "economics-1.1-scarcity"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q02",
+          "type": "tf",
+          "statement": "Scarcity only affects poor countries.",
+          "answer": false,
+          "explanation": "Every economy faces scarcity because resources are finite relative to wants; rich countries face it too.",
+          "terms": [
+            "economics-1.1-scarcity"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q03",
+          "type": "mcq",
+          "prompt": "Maya has one free evening. She can work for $40, see a film or study. She prefers working to studying, and studies. What is her opportunity cost?",
+          "options": [
+            "The film and the $40 together",
+            "Nothing, because she chose freely",
+            "The cost of her textbooks",
+            "The $40 (working), her next best alternative"
+          ],
+          "answer": 3,
+          "explanation": "Opportunity cost is only the single next best alternative given up, not the sum of all alternatives.",
+          "terms": [
+            "economics-1.1-opportunity-cost"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q04",
+          "type": "fill",
+          "text": "The value of the next best alternative given up is the ___.",
+          "answer": "opportunity cost",
+          "bank": [
+            "marginal cost",
+            "sunk cost",
+            "opportunity cost",
+            "average cost"
+          ],
+          "explanation": "Opportunity cost measures the real cost of any choice in terms of what is sacrificed.",
+          "terms": [
+            "economics-1.1-opportunity-cost"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q05",
+          "type": "match",
+          "prompt": "Match each factor of production with an example.",
+          "pairs": [
+            {
+              "left": "Land",
+              "right": "A forest used for timber"
+            },
+            {
+              "left": "Labour",
+              "right": "A nurse working a shift"
+            },
+            {
+              "left": "Capital",
+              "right": "A delivery van owned by a firm"
+            },
+            {
+              "left": "Entrepreneurship",
+              "right": "Starting a café and bearing the risk"
+            }
+          ],
+          "explanation": "Land is natural resources, labour is human effort, capital is man-made means of production, entrepreneurship organises and takes risks.",
+          "terms": [
+            "economics-1.1-factors-of-production",
+            "economics-1.1-capital",
+            "economics-1.1-entrepreneurship"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q06",
+          "type": "mcq",
+          "prompt": "Which is a free good in most places?",
+          "options": [
+            "Bottled water",
+            "Sunlight",
+            "Public education",
+            "Electricity"
+          ],
+          "answer": 1,
+          "explanation": "A free good has no opportunity cost. Public education is free at the point of use but uses scarce resources, so it is an economic good.",
+          "terms": [
+            "economics-1.1-free-good",
+            "economics-1.1-economic-good"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q07",
+          "type": "tf",
+          "statement": "A government-provided school that charges no fees is a free good.",
+          "answer": false,
+          "explanation": "It is still an economic good: teachers and buildings have an opportunity cost, paid for through taxes.",
+          "terms": [
+            "economics-1.1-economic-good",
+            "economics-1.1-free-good"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q08",
+          "type": "mcq",
+          "prompt": "Which of the following is classed as capital in economics?",
+          "options": [
+            "Money saved in a bank",
+            "A factory robot",
+            "Shares in a company",
+            "Crude oil underground"
+          ],
+          "answer": 1,
+          "explanation": "In economics capital means physical man-made inputs; money and shares are financial assets, and oil underground is land.",
+          "terms": [
+            "economics-1.1-capital"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q09",
+          "type": "order",
+          "prompt": "Order the reasoning that links scarcity to opportunity cost.",
+          "items": [
+            "Resources are finite",
+            "Wants exceed what resources can produce",
+            "Choices must be made",
+            "Each choice sacrifices an alternative"
+          ],
+          "explanation": "Scarcity forces choice, and every choice has an opportunity cost: the next best alternative forgone.",
+          "terms": [
+            "economics-1.1-scarcity",
+            "economics-1.1-choice",
+            "economics-1.1-opportunity-cost"
+          ]
+        },
+        {
+          "id": "economics-1.1-1-q10",
+          "type": "fill",
+          "text": "The study of individual markets, consumers and firms is called ___.",
+          "answer": "microeconomics",
+          "bank": [
+            "macroeconomics",
+            "microeconomics",
+            "econometrics",
+            "development economics"
+          ],
+          "explanation": "Microeconomics looks at individual decision makers and markets; macroeconomics looks at the whole economy.",
+          "terms": [
+            "economics-1.1-microeconomics",
+            "economics-1.1-macroeconomics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-1.1-2",
+      "title": "The PPC and the circular flow",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-1.1-2-q01",
+          "type": "mcq",
+          "prompt": "A point inside an economy’s PPC shows…",
+          "options": [
+            "unemployed or inefficiently used resources",
+            "economic growth",
+            "an unattainable combination",
+            "maximum efficiency"
+          ],
+          "answer": 0,
+          "explanation": "Inside the PPC the economy could produce more of both goods; resources are unemployed or misallocated.",
+          "terms": [
+            "economics-1.1-ppc"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q02",
+          "type": "mcq",
+          "prompt": "Which event shifts a country’s PPC outward?",
+          "options": [
+            "A fall in unemployment",
+            "A rise in the price of exports",
+            "An improvement in technology",
+            "A move from producing cars to food"
+          ],
+          "answer": 2,
+          "explanation": "Better technology raises productive capacity. Lower unemployment moves the economy towards the existing PPC, not shifting it.",
+          "terms": [
+            "economics-1.1-ppc",
+            "economics-1.1-economic-growth"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q03",
+          "type": "tf",
+          "statement": "A PPC that is bowed outward (concave) shows increasing opportunity cost.",
+          "answer": true,
+          "explanation": "Resources are not equally suited to both goods, so producing more of one requires giving up ever larger amounts of the other.",
+          "terms": [
+            "economics-1.1-ppc",
+            "economics-1.1-opportunity-cost"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q04",
+          "type": "fill",
+          "text": "A straight-line PPC shows ___ opportunity cost.",
+          "answer": "constant",
+          "bank": [
+            "increasing",
+            "decreasing",
+            "zero",
+            "constant"
+          ],
+          "explanation": "If resources are equally good at producing both goods, each extra unit costs the same amount of the other good.",
+          "terms": [
+            "economics-1.1-ppc",
+            "economics-1.1-opportunity-cost"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q05",
+          "type": "mcq",
+          "prompt": "An economy moves along its PPC from point A (50 food, 20 machines) to point B (40 food, 30 machines). What is the opportunity cost of the extra 10 machines?",
+          "options": [
+            "10 units of food",
+            "40 units of food",
+            "30 machines",
+            "Zero, since the economy stays on the PPC"
+          ],
+          "answer": 0,
+          "explanation": "Moving along the PPC, 10 food units are given up to gain 10 machines.",
+          "terms": [
+            "economics-1.1-opportunity-cost",
+            "economics-1.1-ppc"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q06",
+          "type": "match",
+          "prompt": "Match each flow with its category in the circular flow model.",
+          "pairs": [
+            {
+              "left": "Saving",
+              "right": "Leakage"
+            },
+            {
+              "left": "Investment",
+              "right": "Injection"
+            },
+            {
+              "left": "Factor services",
+              "right": "Households to firms"
+            },
+            {
+              "left": "Wages and rent",
+              "right": "Firms to households"
+            }
+          ],
+          "explanation": "Saving, taxes and imports are leakages; investment, government spending and exports are injections. Factor incomes flow to households in return for factor services.",
+          "terms": [
+            "economics-1.1-circular-flow",
+            "economics-1.1-leakages-injections"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q07",
+          "type": "tf",
+          "statement": "If injections are greater than leakages, the size of the circular flow (national income) will tend to rise.",
+          "answer": true,
+          "explanation": "More is entering the flow than leaving it, so income and output expand until a new equilibrium is reached.",
+          "terms": [
+            "economics-1.1-leakages-injections",
+            "economics-1.1-circular-flow"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q08",
+          "type": "mcq",
+          "prompt": "Which is an injection into the circular flow?",
+          "options": [
+            "Imports",
+            "Taxes",
+            "Exports",
+            "Saving"
+          ],
+          "answer": 2,
+          "explanation": "Exports bring foreign spending into the domestic economy; the other three are leakages.",
+          "terms": [
+            "economics-1.1-leakages-injections"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q09",
+          "type": "order",
+          "prompt": "Order these stages in the simple two-sector circular flow, starting with households.",
+          "items": [
+            "Households supply factors of production to firms",
+            "Firms pay households wages, rent, interest and profit",
+            "Households spend their income on goods and services",
+            "Firms receive revenue and produce more output"
+          ],
+          "explanation": "Real flows (factors, goods) go one way and money flows (incomes, spending) the other, so income = expenditure = output.",
+          "terms": [
+            "economics-1.1-circular-flow"
+          ]
+        },
+        {
+          "id": "economics-1.1-2-q10",
+          "type": "fill",
+          "text": "Real output growth is shown on a PPC by an ___ shift of the curve.",
+          "answer": "outward",
+          "bank": [
+            "inward",
+            "downward",
+            "outward",
+            "along-the-curve"
+          ],
+          "explanation": "Economic growth raises the maximum possible output, shifting the PPC outward.",
+          "terms": [
+            "economics-1.1-economic-growth",
+            "economics-1.1-ppc"
+          ]
+        }
+      ]
+    }
+  ]
+}

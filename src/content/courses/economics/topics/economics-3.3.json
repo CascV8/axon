@@ -1,0 +1,615 @@
+{
+  "id": "economics-3.3",
+  "code": "3.3",
+  "unit": "3",
+  "title": "Macroeconomic objectives",
+  "level": "SL",
+  "summary": "Governments aim for economic growth, low unemployment, low and stable inflation and sustainable public debt. Each objective has causes, costs and trade-offs. HL adds price-index and unemployment calculations and the Phillips curve.",
+  "keyterms": [
+    {
+      "id": "economics-3.3-growth",
+      "term": "Economic growth",
+      "definition": "An increase in real GDP over time, from rising AD (actual growth) or rising productive capacity (potential growth).",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-unemployment",
+      "term": "Unemployment",
+      "definition": "People of working age who are able, available and actively looking for work but do not have a job.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-unemployment-rate",
+      "term": "Unemployment rate",
+      "definition": "Number unemployed ÷ labour force × 100.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-structural",
+      "term": "Structural unemployment",
+      "definition": "Unemployment caused by a mismatch between workers’ skills or location and available jobs, e.g. after an industry declines.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-frictional",
+      "term": "Frictional unemployment",
+      "definition": "Short-term unemployment while people move between jobs.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-cyclical",
+      "term": "Cyclical (demand-deficient) unemployment",
+      "definition": "Unemployment caused by a fall in AD during a downturn.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-natural-rate",
+      "term": "Natural rate of unemployment",
+      "definition": "Unemployment when the economy is at full employment: frictional + structural + seasonal.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-inflation",
+      "term": "Inflation",
+      "definition": "A sustained rise in the average price level, usually measured by the consumer price index (CPI).",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-deflation",
+      "term": "Deflation",
+      "definition": "A sustained fall in the average price level (negative inflation).",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-disinflation",
+      "term": "Disinflation",
+      "definition": "A fall in the rate of inflation: prices still rise, but more slowly.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-demand-pull",
+      "term": "Demand-pull inflation",
+      "definition": "Inflation caused by AD rising faster than the economy’s capacity to produce.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-cost-push",
+      "term": "Cost-push inflation",
+      "definition": "Inflation caused by rising costs of production, e.g. wages or imported energy, shifting SRAS left.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-public-debt",
+      "term": "Government (public) debt",
+      "definition": "The total amount a government owes, the accumulation of past budget deficits; often shown as a % of GDP.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.3-weighted-index",
+      "term": "Weighted price index",
+      "definition": "A price index where each item’s price change is weighted by its share of household spending.",
+      "hl": true
+    },
+    {
+      "id": "economics-3.3-phillips",
+      "term": "Phillips curve",
+      "definition": "The short-run inverse relationship between inflation and unemployment; in the long run the curve is vertical at the natural rate.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-3.3-1",
+      "title": "Growth and unemployment",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.3-1-q01",
+          "type": "mcq",
+          "prompt": "Which is a cost of economic growth?",
+          "options": [
+            "Higher living standards",
+            "More tax revenue",
+            "Lower unemployment",
+            "Environmental damage and resource depletion"
+          ],
+          "answer": 3,
+          "explanation": "Growth can harm the environment and may increase inequality.",
+          "terms": [
+            "economics-3.3-growth"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q02",
+          "type": "fill",
+          "text": "A labour force of 25 million with 1.5 million unemployed has an unemployment rate of ___%.",
+          "answer": "6",
+          "accept": [
+            "6%"
+          ],
+          "bank": [
+            "6",
+            "1.5",
+            "16.7",
+            "60"
+          ],
+          "explanation": "1.5 ÷ 25 × 100 = 6%.",
+          "terms": [
+            "economics-3.3-unemployment-rate"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q03",
+          "type": "match",
+          "prompt": "Match each case to the type of unemployment.",
+          "pairs": [
+            {
+              "left": "Coal miners after mines close",
+              "right": "Structural"
+            },
+            {
+              "left": "Graduate searching for a first job",
+              "right": "Frictional"
+            },
+            {
+              "left": "Factory workers laid off in a recession",
+              "right": "Cyclical"
+            },
+            {
+              "left": "Ski instructors in summer",
+              "right": "Seasonal"
+            }
+          ],
+          "explanation": "Identifying the cause tells you which policy fits.",
+          "terms": [
+            "economics-3.3-structural",
+            "economics-3.3-frictional",
+            "economics-3.3-cyclical"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q04",
+          "type": "tf",
+          "statement": "Cyclical unemployment is best reduced by policies that raise aggregate demand.",
+          "answer": true,
+          "explanation": "It is caused by deficient demand, so demand-side policy is appropriate.",
+          "terms": [
+            "economics-3.3-cyclical"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q05",
+          "type": "mcq",
+          "prompt": "Which policy best addresses structural unemployment?",
+          "options": [
+            "Cutting interest rates",
+            "Raising government spending on defence",
+            "Raising income tax",
+            "Retraining and relocation support"
+          ],
+          "answer": 3,
+          "explanation": "Structural unemployment needs supply-side measures that fix the skills or location mismatch.",
+          "terms": [
+            "economics-3.3-structural"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q06",
+          "type": "fill",
+          "text": "Unemployment at full employment (frictional + structural + seasonal) is the ___ rate of unemployment.",
+          "answer": "natural",
+          "bank": [
+            "natural",
+            "cyclical",
+            "real",
+            "nominal"
+          ],
+          "explanation": "Even at full employment some unemployment remains.",
+          "terms": [
+            "economics-3.3-natural-rate"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q07",
+          "type": "tf",
+          "statement": "The official unemployment rate may understate true unemployment because of hidden unemployment and underemployment.",
+          "answer": true,
+          "explanation": "Discouraged workers and part-timers wanting full-time work are not fully captured.",
+          "terms": [
+            "economics-3.3-unemployment-rate"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q08",
+          "type": "mcq",
+          "prompt": "Which is a consequence of high unemployment?",
+          "options": [
+            "Higher inflation always",
+            "Lost output and lower tax revenue",
+            "Rising tax revenue",
+            "Higher potential output"
+          ],
+          "answer": 1,
+          "explanation": "Unemployment wastes resources, raises welfare costs and harms individuals.",
+          "terms": [
+            "economics-3.3-unemployment"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q09",
+          "type": "mcq",
+          "prompt": "Who is counted as unemployed?",
+          "options": [
+            "A full-time student",
+            "A retired person",
+            "A parent choosing to stay at home",
+            "A 30-year-old actively searching and available for work"
+          ],
+          "answer": 3,
+          "explanation": "They must be able, available and actively seeking work.",
+          "terms": [
+            "economics-3.3-unemployment"
+          ]
+        },
+        {
+          "id": "economics-3.3-1-q10",
+          "type": "order",
+          "prompt": "Order the chain of a recession raising unemployment.",
+          "items": [
+            "AD falls",
+            "Firms’ sales and output fall",
+            "Firms need fewer workers",
+            "Cyclical unemployment rises"
+          ],
+          "explanation": "Labour is a derived demand: it depends on demand for output.",
+          "terms": [
+            "economics-3.3-cyclical"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.3-2",
+      "title": "Inflation, deflation and public debt",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.3-2-q01",
+          "type": "mcq",
+          "prompt": "Which is the best example of disinflation?",
+          "options": [
+            "Inflation falls from 6% to 3%",
+            "The price level falls by 2%",
+            "Inflation rises from 2% to 5%",
+            "Prices are unchanged"
+          ],
+          "answer": 0,
+          "explanation": "Disinflation is a slower rate of price increases, not falling prices.",
+          "terms": [
+            "economics-3.3-disinflation",
+            "economics-3.3-deflation"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q02",
+          "type": "tf",
+          "statement": "Deflation always benefits an economy because goods become cheaper.",
+          "answer": false,
+          "explanation": "Consumers may delay purchases, debt burdens rise in real terms and firms cut output and jobs.",
+          "terms": [
+            "economics-3.3-deflation"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q03",
+          "type": "match",
+          "prompt": "Match each cause to the type of inflation.",
+          "pairs": [
+            {
+              "left": "Booming consumer spending",
+              "right": "Demand-pull"
+            },
+            {
+              "left": "Rising imported oil prices",
+              "right": "Cost-push"
+            },
+            {
+              "left": "Wage rises above productivity",
+              "right": "Cost-push (wages)"
+            },
+            {
+              "left": "Large rise in government spending at full capacity",
+              "right": "Demand-pull (fiscal)"
+            }
+          ],
+          "explanation": "Demand-pull comes from AD; cost-push from SRAS shifting left.",
+          "terms": [
+            "economics-3.3-demand-pull",
+            "economics-3.3-cost-push"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q04",
+          "type": "fill",
+          "text": "Inflation caused by rising production costs is ___ inflation.",
+          "answer": "cost-push",
+          "bank": [
+            "demand-pull",
+            "core",
+            "headline",
+            "cost-push"
+          ],
+          "explanation": "Cost-push shifts SRAS left, raising the price level and reducing output.",
+          "terms": [
+            "economics-3.3-cost-push"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q05",
+          "type": "mcq",
+          "prompt": "Who is most likely to lose from unexpected inflation?",
+          "options": [
+            "Savers whose interest rate is below inflation",
+            "Borrowers with fixed-rate loans",
+            "Governments with large debts",
+            "Firms selling at rising prices"
+          ],
+          "answer": 0,
+          "explanation": "Inflation erodes the real value of savings and fixed incomes.",
+          "terms": [
+            "economics-3.3-inflation"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q06",
+          "type": "mcq",
+          "prompt": "Why do many central banks target low, positive inflation (around 2%) rather than zero?",
+          "options": [
+            "Inflation has no costs",
+            "It raises unemployment",
+            "It avoids the risks of deflation and gives room for real interest rates to fall",
+            "It is required by the IMF"
+          ],
+          "answer": 2,
+          "explanation": "A small buffer above zero helps avoid deflationary spirals.",
+          "terms": [
+            "economics-3.3-inflation",
+            "economics-3.3-deflation"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q07",
+          "type": "tf",
+          "statement": "Government debt is the accumulation of past budget deficits.",
+          "answer": true,
+          "explanation": "Each year’s deficit adds to the stock of debt.",
+          "terms": [
+            "economics-3.3-public-debt"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q08",
+          "type": "mcq",
+          "prompt": "Which is a risk of very high government debt?",
+          "options": [
+            "Lower interest rates for all borrowers",
+            "Higher credit ratings",
+            "Rising interest payments that crowd out other spending",
+            "Automatic growth"
+          ],
+          "answer": 2,
+          "explanation": "Debt servicing has an opportunity cost and may lead to credit downgrades.",
+          "terms": [
+            "economics-3.3-public-debt"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q09",
+          "type": "fill",
+          "text": "A sustained fall in the average price level is ___.",
+          "answer": "deflation",
+          "bank": [
+            "deflation",
+            "disinflation",
+            "recession",
+            "devaluation"
+          ],
+          "explanation": "Deflation can be caused by falling AD (bad) or rising AS (benign).",
+          "terms": [
+            "economics-3.3-deflation"
+          ]
+        },
+        {
+          "id": "economics-3.3-2-q10",
+          "type": "order",
+          "prompt": "Order a deflationary spiral.",
+          "items": [
+            "Prices start to fall",
+            "Consumers delay purchases",
+            "Firms cut output and jobs",
+            "Incomes fall and prices fall further"
+          ],
+          "explanation": "Expectations of falling prices can feed on themselves.",
+          "terms": [
+            "economics-3.3-deflation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.3-3",
+      "title": "HL: Price indices and the Phillips curve",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-3.3-3-q01",
+          "type": "mcq",
+          "prompt": "Basket weights: food 40, housing 35, transport 25. Price indices: food 105, housing 110, transport 96. What is the weighted CPI?",
+          "options": [
+            "103.7",
+            "104.5",
+            "311",
+            "105.0"
+          ],
+          "answer": 1,
+          "explanation": "(40×105 + 35×110 + 25×96) ÷ 100 = (4200 + 3850 + 2400) ÷ 100 = 104.5.",
+          "terms": [
+            "economics-3.3-weighted-index"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q02",
+          "type": "fill",
+          "text": "A CPI that rises from 125 to 130 shows an inflation rate of ___%.",
+          "answer": "4",
+          "accept": [
+            "4%",
+            "4.0"
+          ],
+          "bank": [
+            "5",
+            "3.8",
+            "4",
+            "130"
+          ],
+          "explanation": "(130 − 125) ÷ 125 × 100 = 4%.",
+          "terms": [
+            "economics-3.3-inflation"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q03",
+          "type": "tf",
+          "statement": "Weights in a CPI reflect the share of household spending on each item.",
+          "answer": true,
+          "explanation": "Items that take a larger share of the budget have more effect on measured inflation.",
+          "terms": [
+            "economics-3.3-weighted-index"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q04",
+          "type": "mcq",
+          "prompt": "The short-run Phillips curve shows…",
+          "options": [
+            "a positive relationship between inflation and unemployment",
+            "that unemployment is always at its natural rate",
+            "the link between growth and debt",
+            "an inverse relationship between inflation and unemployment"
+          ],
+          "answer": 3,
+          "explanation": "Lower unemployment tends to be accompanied by higher inflation in the short run.",
+          "terms": [
+            "economics-3.3-phillips"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q05",
+          "type": "tf",
+          "statement": "In the long run, the Phillips curve is vertical at the natural rate of unemployment.",
+          "answer": true,
+          "explanation": "Once expectations adjust, there is no lasting trade-off between inflation and unemployment.",
+          "terms": [
+            "economics-3.3-phillips",
+            "economics-3.3-natural-rate"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q06",
+          "type": "mcq",
+          "prompt": "According to the expectations-augmented Phillips curve, what happens if government holds unemployment below the natural rate?",
+          "options": [
+            "Inflation falls to zero",
+            "Unemployment stays low with stable inflation",
+            "The natural rate falls automatically",
+            "Inflation keeps accelerating as expectations rise"
+          ],
+          "answer": 3,
+          "explanation": "Workers expect higher inflation, the SRPC shifts up, and only accelerating inflation keeps unemployment below the natural rate.",
+          "terms": [
+            "economics-3.3-phillips"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q07",
+          "type": "fill",
+          "text": "Labour force 32 million, employed 30.4 million. The unemployment rate is ___%.",
+          "answer": "5",
+          "accept": [
+            "5%",
+            "5.0"
+          ],
+          "bank": [
+            "1.6",
+            "95",
+            "5.3",
+            "5"
+          ],
+          "explanation": "Unemployed = 1.6 m; 1.6 ÷ 32 × 100 = 5%.",
+          "terms": [
+            "economics-3.3-unemployment-rate"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q08",
+          "type": "mcq",
+          "prompt": "Which problem limits the accuracy of the CPI?",
+          "options": [
+            "It uses no data on prices",
+            "It measures only exports",
+            "It includes all asset prices",
+            "Quality improvements and new products are hard to account for"
+          ],
+          "answer": 3,
+          "explanation": "The basket may not reflect individual spending, and quality changes bias the index.",
+          "terms": [
+            "economics-3.3-weighted-index"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q09",
+          "type": "match",
+          "prompt": "Match each concept to its description.",
+          "pairs": [
+            {
+              "left": "SRPC",
+              "right": "Inflation–unemployment trade-off"
+            },
+            {
+              "left": "LRPC",
+              "right": "Vertical at the natural rate"
+            },
+            {
+              "left": "Stagflation",
+              "right": "High inflation and high unemployment"
+            },
+            {
+              "left": "Base year",
+              "right": "Index set at 100"
+            }
+          ],
+          "explanation": "Stagflation in the 1970s challenged the simple Phillips curve.",
+          "terms": [
+            "economics-3.3-phillips",
+            "economics-3.3-weighted-index"
+          ]
+        },
+        {
+          "id": "economics-3.3-3-q10",
+          "type": "order",
+          "prompt": "Order the shift in a short-run Phillips curve.",
+          "items": [
+            "Government stimulates AD",
+            "Unemployment falls below the natural rate and inflation rises",
+            "Workers expect higher inflation and demand higher wages",
+            "SRPC shifts up and unemployment returns to the natural rate"
+          ],
+          "explanation": "This explains why the long-run Phillips curve is vertical.",
+          "terms": [
+            "economics-3.3-phillips"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "id": "economics-2.3",
+  "code": "2.3",
+  "unit": "2",
+  "title": "Competitive market equilibrium",
+  "level": "SL",
+  "summary": "Demand and supply set the equilibrium price. Prices signal and give incentives, rationing scarce goods. At equilibrium, social surplus is maximised. HL calculates equilibrium from functions.",
+  "keyterms": [
+    {
+      "id": "economics-2.3-equilibrium",
+      "term": "Market equilibrium",
+      "definition": "The price and quantity at which quantity demanded equals quantity supplied, so there is no tendency to change.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-excess-demand",
+      "term": "Excess demand (shortage)",
+      "definition": "When quantity demanded exceeds quantity supplied at the current price, putting upward pressure on price.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-excess-supply",
+      "term": "Excess supply (surplus)",
+      "definition": "When quantity supplied exceeds quantity demanded at the current price, putting downward pressure on price.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-price-mechanism",
+      "term": "Price mechanism",
+      "definition": "The way prices adjust to changes in demand and supply to allocate scarce resources.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-signalling",
+      "term": "Signalling function",
+      "definition": "Price changes give information to buyers and sellers about where resources are wanted.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-incentive",
+      "term": "Incentive function",
+      "definition": "Price changes motivate producers and consumers to change their behaviour, e.g. higher prices encourage more output.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-rationing",
+      "term": "Rationing function",
+      "definition": "Higher prices limit who buys a scarce good to those most willing and able to pay.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-consumer-surplus",
+      "term": "Consumer surplus",
+      "definition": "The difference between the maximum price consumers are willing to pay and the price they actually pay.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-producer-surplus",
+      "term": "Producer surplus",
+      "definition": "The difference between the price producers receive and the minimum price they would accept.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-social-surplus",
+      "term": "Social surplus",
+      "definition": "Consumer surplus plus producer surplus; maximised at the competitive equilibrium when there are no market failures.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-allocative-efficiency",
+      "term": "Allocative efficiency",
+      "definition": "Producing the combination of goods society values most; occurs where marginal benefit equals marginal cost (MSB = MSC).",
+      "hl": false
+    },
+    {
+      "id": "economics-2.3-simultaneous",
+      "term": "Solving demand and supply functions",
+      "definition": "Setting Qd = Qs to find the equilibrium price, then substituting back to find equilibrium quantity.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-2.3-1",
+      "title": "Equilibrium and the price mechanism",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.3-1-q01",
+          "type": "mcq",
+          "prompt": "At a price above equilibrium, what exists and what happens next?",
+          "options": [
+            "Excess demand; price tends to rise",
+            "Excess supply; price tends to rise",
+            "Excess supply; price tends to fall",
+            "Equilibrium; nothing changes"
+          ],
+          "answer": 2,
+          "explanation": "Above equilibrium, Qs > Qd; sellers cut prices to clear unsold stock.",
+          "terms": [
+            "economics-2.3-excess-supply"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q02",
+          "type": "tf",
+          "statement": "At a price below equilibrium there is a shortage, which pushes price up.",
+          "answer": true,
+          "explanation": "Qd > Qs; buyers compete for the limited supply and price rises towards equilibrium.",
+          "terms": [
+            "economics-2.3-excess-demand"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q03",
+          "type": "mcq",
+          "prompt": "Demand for electric bikes rises. Which price function makes producers switch resources into making e-bikes?",
+          "options": [
+            "The rationing function",
+            "The redistribution function",
+            "The incentive function",
+            "The multiplier function"
+          ],
+          "answer": 2,
+          "explanation": "Higher prices and profits create an incentive for firms to produce more.",
+          "terms": [
+            "economics-2.3-incentive",
+            "economics-2.3-signalling"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q04",
+          "type": "fill",
+          "text": "Demand rises while supply is unchanged: equilibrium price ___ and quantity rises.",
+          "answer": "rises",
+          "bank": [
+            "falls",
+            "rises",
+            "stays the same",
+            "is indeterminate"
+          ],
+          "explanation": "A rightward demand shift moves along the supply curve to a higher price and quantity.",
+          "terms": [
+            "economics-2.3-equilibrium"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q05",
+          "type": "mcq",
+          "prompt": "Supply increases AND demand increases at the same time. What is certain?",
+          "options": [
+            "Equilibrium price rises",
+            "Equilibrium price falls",
+            "Equilibrium quantity rises",
+            "Both price and quantity rise"
+          ],
+          "answer": 2,
+          "explanation": "Both shifts raise quantity; the price effect depends on which shift is larger.",
+          "terms": [
+            "economics-2.3-equilibrium"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q06",
+          "type": "match",
+          "prompt": "Match each market change to the effect on equilibrium.",
+          "pairs": [
+            {
+              "left": "Demand rises",
+              "right": "P up, Q up"
+            },
+            {
+              "left": "Demand falls",
+              "right": "P down, Q down"
+            },
+            {
+              "left": "Supply rises",
+              "right": "P down, Q up"
+            },
+            {
+              "left": "Supply falls",
+              "right": "P up, Q down"
+            }
+          ],
+          "explanation": "Use a diagram: shift the curve and read off the new intersection.",
+          "terms": [
+            "economics-2.3-equilibrium"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q07",
+          "type": "tf",
+          "statement": "Higher concert ticket prices that leave only the most willing fans buying show the rationing function of price.",
+          "answer": true,
+          "explanation": "Price rations scarce goods to those willing and able to pay most.",
+          "terms": [
+            "economics-2.3-rationing"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q08",
+          "type": "fill",
+          "text": "The way prices adjust to allocate scarce resources is called the price ___.",
+          "answer": "mechanism",
+          "bank": [
+            "ceiling",
+            "mechanism",
+            "index",
+            "elasticity"
+          ],
+          "explanation": "Adam Smith’s \"invisible hand\" describes this decentralised allocation.",
+          "terms": [
+            "economics-2.3-price-mechanism"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q09",
+          "type": "order",
+          "prompt": "Order the adjustment after a frost destroys half the orange crop.",
+          "items": [
+            "Supply of oranges shifts left",
+            "A shortage appears at the old price",
+            "Price rises, rationing the oranges",
+            "Higher price signals farmers to expand future output"
+          ],
+          "explanation": "The price mechanism rations and signals in response to the supply shock.",
+          "terms": [
+            "economics-2.3-price-mechanism",
+            "economics-2.3-rationing",
+            "economics-2.3-signalling"
+          ]
+        },
+        {
+          "id": "economics-2.3-1-q10",
+          "type": "mcq",
+          "prompt": "Which statement about the price mechanism is accurate?",
+          "options": [
+            "It always gives a fair distribution of income",
+            "It coordinates millions of decisions without central planning",
+            "It works only when government sets prices",
+            "It cannot respond to changes in tastes"
+          ],
+          "answer": 1,
+          "explanation": "Prices coordinate decentralised decisions efficiently, but say nothing about equity.",
+          "terms": [
+            "economics-2.3-price-mechanism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.3-2",
+      "title": "Consumer surplus, producer surplus and efficiency",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.3-2-q01",
+          "type": "mcq",
+          "prompt": "A consumer would pay up to $50 for a jacket and buys it for $35. What is her consumer surplus?",
+          "options": [
+            "$35",
+            "$50",
+            "$85",
+            "$15"
+          ],
+          "answer": 3,
+          "explanation": "Consumer surplus = willingness to pay − price paid = 50 − 35 = $15.",
+          "terms": [
+            "economics-2.3-consumer-surplus"
+          ]
+        },
+        {
+          "id": "economics-2.3-2-q02",
+          "type": "tf",
+          "statement": "Producer surplus is the area above the supply curve and below the price.",
+          "answer": true,
+          "explanation": "It shows the gain to producers from selling at a price above their minimum acceptable price.",
+          "terms": [
+            "economics-2.3-producer-surplus"
+          ]
+        },
+        {
+          "id": "economics-2.3-2-q03",
+          "type": "fill",
+          "text": "Consumer surplus plus producer surplus equals ___ surplus.",
+          "answer": "social",
+          "bank": [
+            "total",
+            "social",
+            "economic",
+            "marginal"
+          ],
+          "explanation": "Social (community) surplus is maximised at the competitive equilibrium without externalities.",
+          "terms": [
+            "economics-2.3-social-surplus"
+          ]
+        },
+        {
+          "id": "economics-2.3-2-q04",
+          "type": "mcq",
+          "prompt": "Allocative efficiency occurs where…",
+          "options": [
+            "price equals average cost",
+            "marginal social benefit equals marginal social cost",
+            "total revenue is maximised",
+            "consumer surplus is zero"
+          ],
+          "answer": 1,
+          "explanation": "MSB = MSC means society cannot gain by producing more or less.",
+          "terms": [
+            "economics-2.3-allocative-efficiency"
+          ]
+        },
+        {
+          "id": "economics-2.3-2-q05",
+          "type": "tf",
+          "statement": "Any price above the competitive equilibrium raises social surplus.",
+          "answer": false,
+          "explanation": "Moving away from equilibrium creates a deadweight (welfare) loss and reduces social surplus.",
+          "terms": [
+            "economics-2.3-social-surplus"
+          ]
+        },
+        {
+          "id": "economics-2.3-2-q06",
+          "type": "mcq",
+          "prompt": "A consumer would pay up to $8 for a sandwich, and the sandwich costs the seller $3 to make. It sells for $5. What is the social surplus from this sale?",
+          "options": [
+            "$3",
+            "$2",
+            "$5",
+            "$8"
+          ],
+          "answer": 2,
+          "explanation": "Consumer surplus = 8 − 5 = $3 and producer surplus = 5 − 3 = $2, so social surplus = $5.",
+          "terms": [
+            "economics-2.3-consumer-surplus",
+            "economics-2.3-producer-surplus",
+            "economics-2.3-social-surplus"
+          ]
+        },
+        {
+          "id": "economics-2.3-2-q07",
+          "type": "fill",
+          "text": "At the competitive equilibrium without externalities, marginal benefit equals marginal cost, so resources are allocated ___.",
+          "answer": "efficiently",
+          "bank": [
+            "inefficiently",
+            "equitably",
+            "efficiently",
+            "randomly"
+          ],
+          "explanation": "MB = MC at equilibrium means allocative efficiency and maximum social surplus.",
+          "terms": [
+            "economics-2.3-allocative-efficiency"
+          ]
+        },
+        {
+          "id": "economics-2.3-2-q08",
+          "type": "match",
+          "prompt": "Match each area on a demand and supply diagram to its name.",
+          "pairs": [
+            {
+              "left": "Area below demand and above price",
+              "right": "Consumer surplus"
+            },
+            {
+              "left": "Area above supply and below price",
+              "right": "Producer surplus"
+            },
+            {
+              "left": "Sum of the two areas",
+              "right": "Social surplus"
+            }
+          ],
+          "explanation": "Social surplus is greatest at the competitive equilibrium.",
+          "terms": [
+            "economics-2.3-consumer-surplus",
+            "economics-2.3-producer-surplus",
+            "economics-2.3-social-surplus"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.3-3",
+      "title": "HL: Calculating equilibrium from linear functions",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-2.3-3-q01",
+          "type": "mcq",
+          "prompt": "HL: Qd = 100 − 2P and Qs = −20 + 4P. What is the equilibrium price?",
+          "options": [
+            "30",
+            "20",
+            "60",
+            "40"
+          ],
+          "answer": 1,
+          "explanation": "100 − 2P = −20 + 4P → 120 = 6P → P = 20.",
+          "terms": [
+            "economics-2.3-simultaneous"
+          ]
+        },
+        {
+          "id": "economics-2.3-3-q02",
+          "type": "mcq",
+          "prompt": "HL: Using the same functions (Qd = 100 − 2P, Qs = −20 + 4P), what is equilibrium quantity?",
+          "options": [
+            "20",
+            "80",
+            "100",
+            "60"
+          ],
+          "answer": 3,
+          "explanation": "Substitute P = 20: Qd = 100 − 40 = 60 (check: Qs = −20 + 80 = 60).",
+          "terms": [
+            "economics-2.3-simultaneous"
+          ]
+        },
+        {
+          "id": "economics-2.3-3-q03",
+          "type": "fill",
+          "text": "HL: With Qd = 100 − 2P and Qs = −20 + 4P, at P = 15 there is excess demand of ___ units.",
+          "answer": "30",
+          "bank": [
+            "15",
+            "70",
+            "30",
+            "40"
+          ],
+          "explanation": "Qd = 70, Qs = 40, so excess demand = 30.",
+          "terms": [
+            "economics-2.3-simultaneous",
+            "economics-2.3-excess-demand"
+          ]
+        },
+        {
+          "id": "economics-2.3-3-q04",
+          "type": "match",
+          "prompt": "HL: Qd = 100 − 2P, Qs = −20 + 4P. Match each price to the market situation.",
+          "pairs": [
+            {
+              "left": "P = 15",
+              "right": "Excess demand of 30"
+            },
+            {
+              "left": "P = 20",
+              "right": "Equilibrium at Q = 60"
+            },
+            {
+              "left": "P = 25",
+              "right": "Excess supply of 30"
+            },
+            {
+              "left": "P = 5",
+              "right": "Quantity supplied is zero"
+            }
+          ],
+          "explanation": "At P = 25, Qd = 50 and Qs = 80. At P = 5, Qs = 0.",
+          "terms": [
+            "economics-2.3-simultaneous",
+            "economics-2.3-excess-supply"
+          ]
+        },
+        {
+          "id": "economics-2.3-3-q05",
+          "type": "order",
+          "prompt": "HL: Order the steps to find equilibrium from linear functions.",
+          "items": [
+            "Set Qd equal to Qs",
+            "Solve for P",
+            "Substitute P into either function",
+            "State equilibrium price and quantity"
+          ],
+          "explanation": "Solving the simultaneous equations gives the price where plans match.",
+          "terms": [
+            "economics-2.3-simultaneous"
+          ]
+        },
+        {
+          "id": "economics-2.3-3-q06",
+          "type": "mcq",
+          "prompt": "HL: Qd = 90 − 3P and Qs = −10 + 2P. What is the equilibrium price?",
+          "options": [
+            "30",
+            "20",
+            "25",
+            "16"
+          ],
+          "answer": 1,
+          "explanation": "90 − 3P = −10 + 2P → 100 = 5P → P = 20; Q = 30.",
+          "terms": [
+            "economics-2.3-simultaneous"
+          ]
+        },
+        {
+          "id": "economics-2.3-3-q07",
+          "type": "tf",
+          "statement": "HL: If Qd = 90 − 3P and Qs = −10 + 2P, there is excess supply at a price of 25.",
+          "answer": true,
+          "explanation": "At P = 25, Qd = 15 and Qs = 40, so excess supply = 25 units.",
+          "terms": [
+            "economics-2.3-simultaneous",
+            "economics-2.3-excess-supply"
+          ]
+        },
+        {
+          "id": "economics-2.3-3-q08",
+          "type": "fill",
+          "text": "HL: Qd = 100 − 2P and Qs = −20 + 4P. Demand rises to Qd = 130 − 2P. The new equilibrium price is ___.",
+          "answer": "25",
+          "bank": [
+            "20",
+            "30",
+            "15",
+            "25"
+          ],
+          "explanation": "130 − 2P = −20 + 4P → 150 = 6P → P = 25 (Q = 80).",
+          "terms": [
+            "economics-2.3-simultaneous"
+          ]
+        }
+      ]
+    }
+  ]
+}

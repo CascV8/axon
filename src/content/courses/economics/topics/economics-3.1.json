@@ -1,0 +1,614 @@
+{
+  "id": "economics-3.1",
+  "code": "3.1",
+  "unit": "3",
+  "title": "Measuring economic activity and illustrating its variations",
+  "level": "SL",
+  "summary": "GDP and GNI measure national output and income. Real and per-capita figures allow fair comparisons; the business cycle shows fluctuations. Other measures of well-being look beyond GDP. HL calculates real GDP and GNI.",
+  "keyterms": [
+    {
+      "id": "economics-3.1-gdp",
+      "term": "Gross domestic product (GDP)",
+      "definition": "The total value of all final goods and services produced within a country in a given time period, usually a year.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-gni",
+      "term": "Gross national income (GNI)",
+      "definition": "GDP plus net income from abroad: income earned by a country’s residents and firms wherever they produce.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-expenditure-approach",
+      "term": "Expenditure approach",
+      "definition": "Measuring GDP by adding spending: C + I + G + (X − M).",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-three-approaches",
+      "term": "Output, income and expenditure approaches",
+      "definition": "Three ways of measuring national income which should give the same total, as shown by the circular flow.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-nominal",
+      "term": "Nominal GDP",
+      "definition": "GDP measured at current prices, not adjusted for inflation.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-real",
+      "term": "Real GDP",
+      "definition": "GDP adjusted for inflation (measured at constant prices), so it shows changes in actual output.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-per-capita",
+      "term": "GDP per capita",
+      "definition": "GDP divided by population: average output per person.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-ppp",
+      "term": "Purchasing power parity (PPP)",
+      "definition": "An exchange rate adjustment that equalises the purchasing power of currencies, allowing fairer international comparisons.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-business-cycle",
+      "term": "Business cycle",
+      "definition": "Short-term fluctuations of real GDP around its long-term growth trend: expansion, peak, contraction, trough.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-recession",
+      "term": "Recession",
+      "definition": "A fall in real GDP, commonly defined as two consecutive quarters of negative growth.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-potential-output",
+      "term": "Potential output",
+      "definition": "The output an economy can produce when all resources are fully employed, shown by the long-term trend.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-well-being-measures",
+      "term": "Alternative measures of well-being",
+      "definition": "Indicators beyond GDP, e.g. OECD Better Life Index, Happy Planet Index and World Happiness Report.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.1-gdp-deflator",
+      "term": "GDP deflator",
+      "definition": "A price index used to convert nominal GDP into real GDP: real = nominal ÷ deflator × 100.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-3.1-1",
+      "title": "GDP, GNI and the circular flow",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which is included in a country’s GDP?",
+          "options": [
+            "Profits a domestic firm earns from its factories abroad",
+            "Cars made by a foreign-owned factory located in the country",
+            "A second-hand car resold this year",
+            "Unpaid housework"
+          ],
+          "answer": 1,
+          "explanation": "GDP counts production within the borders. Overseas profits count in GNI; second-hand sales and unpaid work are excluded.",
+          "terms": [
+            "economics-3.1-gdp",
+            "economics-3.1-gni"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q02",
+          "type": "fill",
+          "text": "GDP by the expenditure method = C + I + G + ___.",
+          "answer": "(X − M)",
+          "accept": [
+            "X − M",
+            "X-M",
+            "(X-M)"
+          ],
+          "bank": [
+            "(M − X)",
+            "S",
+            "(X − M)",
+            "T"
+          ],
+          "explanation": "Net exports (exports minus imports) complete the expenditure approach.",
+          "terms": [
+            "economics-3.1-expenditure-approach"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q03",
+          "type": "tf",
+          "statement": "GNI equals GDP plus net income from abroad.",
+          "answer": true,
+          "explanation": "Income earned by residents abroad is added; income sent to foreign owners is subtracted.",
+          "terms": [
+            "economics-3.1-gni"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q04",
+          "type": "mcq",
+          "prompt": "Why should the output, income and expenditure approaches give the same total?",
+          "options": [
+            "Governments adjust the data",
+            "They measure different things",
+            "Imports equal exports",
+            "Every dollar spent on output becomes someone’s income"
+          ],
+          "answer": 3,
+          "explanation": "The circular flow shows output = income = expenditure.",
+          "terms": [
+            "economics-3.1-three-approaches"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q05",
+          "type": "mcq",
+          "prompt": "Why is GDP per capita at PPP better than total GDP for comparing living standards?",
+          "options": [
+            "It includes unpaid work",
+            "It adjusts for population size and for differences in price levels",
+            "It measures happiness directly",
+            "It ignores inflation"
+          ],
+          "answer": 1,
+          "explanation": "Per capita divides by population; PPP corrects for differing costs of living.",
+          "terms": [
+            "economics-3.1-per-capita",
+            "economics-3.1-ppp"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q06",
+          "type": "match",
+          "prompt": "Match each component of expenditure to an example.",
+          "pairs": [
+            {
+              "left": "C",
+              "right": "Households buying groceries"
+            },
+            {
+              "left": "I",
+              "right": "A firm buying new machinery"
+            },
+            {
+              "left": "G",
+              "right": "Government paying teachers"
+            },
+            {
+              "left": "X",
+              "right": "Foreigners buying domestic wine"
+            }
+          ],
+          "explanation": "Transfer payments such as pensions are not part of G, as no output is produced in return.",
+          "terms": [
+            "economics-3.1-expenditure-approach"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q07",
+          "type": "tf",
+          "statement": "Nominal GDP can rise even when the quantity of output is falling.",
+          "answer": true,
+          "explanation": "If prices rise faster than output falls, nominal GDP increases; that is why real GDP is used.",
+          "terms": [
+            "economics-3.1-nominal",
+            "economics-3.1-real"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q08",
+          "type": "fill",
+          "text": "GDP adjusted for inflation is called ___ GDP.",
+          "answer": "real",
+          "bank": [
+            "real",
+            "nominal",
+            "potential",
+            "green"
+          ],
+          "explanation": "Real GDP measures changes in the volume of output.",
+          "terms": [
+            "economics-3.1-real"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which is a limitation of GDP as a measure of well-being?",
+          "options": [
+            "It counts only exports",
+            "It ignores environmental damage and the distribution of income",
+            "It is measured in physical units",
+            "It includes leisure time"
+          ],
+          "answer": 1,
+          "explanation": "GDP misses inequality, the informal economy, unpaid work, leisure and environmental costs.",
+          "terms": [
+            "economics-3.1-gdp",
+            "economics-3.1-well-being-measures"
+          ]
+        },
+        {
+          "id": "economics-3.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to compare living standards across two countries.",
+          "items": [
+            "Start with nominal GDP",
+            "Adjust for inflation to get real GDP",
+            "Divide by population",
+            "Convert at PPP exchange rates"
+          ],
+          "explanation": "Real GDP per capita at PPP gives the fairest simple comparison.",
+          "terms": [
+            "economics-3.1-real",
+            "economics-3.1-per-capita",
+            "economics-3.1-ppp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.1-2",
+      "title": "The business cycle and well-being",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.1-2-q01",
+          "type": "order",
+          "prompt": "Order the phases of the business cycle, starting from a trough.",
+          "items": [
+            "Trough",
+            "Expansion (recovery)",
+            "Peak (boom)",
+            "Contraction (recession)"
+          ],
+          "explanation": "Real GDP fluctuates around its long-term trend line.",
+          "terms": [
+            "economics-3.1-business-cycle"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q02",
+          "type": "mcq",
+          "prompt": "What does the long-term trend line on a business cycle diagram show?",
+          "options": [
+            "Potential output growth over time",
+            "Actual output each quarter",
+            "The inflation rate",
+            "Nominal GDP"
+          ],
+          "answer": 0,
+          "explanation": "The trend shows average growth of productive capacity (potential output).",
+          "terms": [
+            "economics-3.1-potential-output",
+            "economics-3.1-business-cycle"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q03",
+          "type": "tf",
+          "statement": "A recession is commonly defined as two consecutive quarters of negative real GDP growth.",
+          "answer": true,
+          "explanation": "This is a widely used rule of thumb.",
+          "terms": [
+            "economics-3.1-recession"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q04",
+          "type": "fill",
+          "text": "Short-term fluctuations of real GDP around its trend are called the business ___.",
+          "answer": "cycle",
+          "bank": [
+            "trend",
+            "cycle",
+            "curve",
+            "flow"
+          ],
+          "explanation": "Phases are expansion, peak, contraction and trough.",
+          "terms": [
+            "economics-3.1-business-cycle"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q05",
+          "type": "mcq",
+          "prompt": "In which phase is unemployment likely to be rising and inflation falling?",
+          "options": [
+            "Expansion",
+            "Peak",
+            "Contraction",
+            "All phases equally"
+          ],
+          "answer": 2,
+          "explanation": "Falling output reduces the demand for labour and eases price pressure.",
+          "terms": [
+            "economics-3.1-business-cycle",
+            "economics-3.1-recession"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q06",
+          "type": "match",
+          "prompt": "Match each measure to what it includes.",
+          "pairs": [
+            {
+              "left": "OECD Better Life Index",
+              "right": "Eleven dimensions such as housing and safety"
+            },
+            {
+              "left": "Happy Planet Index",
+              "right": "Well-being and life expectancy relative to ecological footprint"
+            },
+            {
+              "left": "World Happiness Report",
+              "right": "Survey-based life evaluations"
+            },
+            {
+              "left": "GDP per capita",
+              "right": "Average output per person"
+            }
+          ],
+          "explanation": "Alternative measures capture aspects of well-being GDP misses.",
+          "terms": [
+            "economics-3.1-well-being-measures"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q07",
+          "type": "tf",
+          "statement": "Two countries with the same GDP per capita must have the same standard of living.",
+          "answer": false,
+          "explanation": "Inequality, leisure, environment, health and the informal sector may differ greatly.",
+          "terms": [
+            "economics-3.1-per-capita",
+            "economics-3.1-well-being-measures"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q08",
+          "type": "mcq",
+          "prompt": "At a peak of the business cycle, actual output is likely to be…",
+          "options": [
+            "above potential output",
+            "below potential output",
+            "zero",
+            "equal to the trough level"
+          ],
+          "answer": 0,
+          "explanation": "At a peak, resources are over-stretched and inflationary pressure builds.",
+          "terms": [
+            "economics-3.1-potential-output"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q09",
+          "type": "fill",
+          "text": "The output an economy can produce with full employment of resources is ___ output.",
+          "answer": "potential",
+          "bank": [
+            "actual",
+            "nominal",
+            "potential",
+            "real"
+          ],
+          "explanation": "It grows over time as capacity increases.",
+          "terms": [
+            "economics-3.1-potential-output"
+          ]
+        },
+        {
+          "id": "economics-3.1-2-q10",
+          "type": "mcq",
+          "prompt": "Why may GDP understate output in low-income countries?",
+          "options": [
+            "Exports are counted twice",
+            "A large informal economy and subsistence farming are not recorded",
+            "Government spending is excluded",
+            "They use PPP"
+          ],
+          "answer": 1,
+          "explanation": "Unrecorded activity means official GDP misses much real production.",
+          "terms": [
+            "economics-3.1-gdp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.1-3",
+      "title": "HL: Calculating national income",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-3.1-3-q01",
+          "type": "mcq",
+          "prompt": "Nominal GDP is $660 bn and the GDP deflator is 120. What is real GDP?",
+          "options": [
+            "$792 bn",
+            "$540 bn",
+            "$660 bn",
+            "$550 bn"
+          ],
+          "answer": 3,
+          "explanation": "Real GDP = 660 ÷ 120 × 100 = $550 bn.",
+          "terms": [
+            "economics-3.1-gdp-deflator",
+            "economics-3.1-real"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q02",
+          "type": "mcq",
+          "prompt": "C = 400, I = 120, G = 150, X = 90, M = 110 (all $ bn). What is GDP?",
+          "options": [
+            "$870 bn",
+            "$650 bn",
+            "$670 bn",
+            "$630 bn"
+          ],
+          "answer": 1,
+          "explanation": "400 + 120 + 150 + (90 − 110) = 650.",
+          "terms": [
+            "economics-3.1-expenditure-approach"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q03",
+          "type": "fill",
+          "text": "GDP = $800 bn. Income from abroad = $30 bn; income paid abroad = $50 bn. GNI = $___ bn.",
+          "answer": "780",
+          "bank": [
+            "880",
+            "780",
+            "820",
+            "800"
+          ],
+          "explanation": "GNI = 800 + 30 − 50 = 780.",
+          "terms": [
+            "economics-3.1-gni"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q04",
+          "type": "mcq",
+          "prompt": "Real GDP rises from $500 bn to $520 bn. What is the growth rate?",
+          "options": [
+            "20%",
+            "4%",
+            "2%",
+            "3.8%"
+          ],
+          "answer": 1,
+          "explanation": "(520 − 500) ÷ 500 × 100 = 4%.",
+          "terms": [
+            "economics-3.1-real"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q05",
+          "type": "tf",
+          "statement": "If nominal GDP rises by 7% and the price level rises by 3%, real GDP grows by roughly 4%.",
+          "answer": true,
+          "explanation": "Approximately, real growth ≈ nominal growth − inflation.",
+          "terms": [
+            "economics-3.1-nominal",
+            "economics-3.1-real"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q06",
+          "type": "fill",
+          "text": "Real GDP is $2.4 trillion and population is 60 million. Real GDP per capita = $___.",
+          "answer": "40 000",
+          "accept": [
+            "40000",
+            "40,000"
+          ],
+          "bank": [
+            "40 000",
+            "4 000",
+            "400 000",
+            "144"
+          ],
+          "explanation": "2 400 000 000 000 ÷ 60 000 000 = $40 000.",
+          "terms": [
+            "economics-3.1-per-capita"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q07",
+          "type": "mcq",
+          "prompt": "In the base year, the GDP deflator equals…",
+          "options": [
+            "0",
+            "1",
+            "the inflation rate",
+            "100"
+          ],
+          "answer": 3,
+          "explanation": "Base-year prices are the reference, so the index is 100.",
+          "terms": [
+            "economics-3.1-gdp-deflator"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q08",
+          "type": "match",
+          "prompt": "Match each calculation with its formula.",
+          "pairs": [
+            {
+              "left": "Real GDP",
+              "right": "Nominal GDP ÷ deflator × 100"
+            },
+            {
+              "left": "GNI",
+              "right": "GDP + net income from abroad"
+            },
+            {
+              "left": "GDP per capita",
+              "right": "GDP ÷ population"
+            },
+            {
+              "left": "Growth rate",
+              "right": "Change in real GDP ÷ original × 100"
+            }
+          ],
+          "explanation": "These are the core HL national income calculations.",
+          "terms": [
+            "economics-3.1-gdp-deflator",
+            "economics-3.1-gni",
+            "economics-3.1-per-capita"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q09",
+          "type": "mcq",
+          "prompt": "Nominal GDP is $450 bn in year 2; the deflator is 90. Real GDP is…",
+          "options": [
+            "$405 bn",
+            "$450 bn",
+            "$540 bn",
+            "$500 bn"
+          ],
+          "answer": 3,
+          "explanation": "450 ÷ 90 × 100 = 500. A deflator below 100 means prices are lower than the base year.",
+          "terms": [
+            "economics-3.1-gdp-deflator"
+          ]
+        },
+        {
+          "id": "economics-3.1-3-q10",
+          "type": "order",
+          "prompt": "Order the steps to calculate real GDP growth from nominal data.",
+          "items": [
+            "Find nominal GDP for both years",
+            "Divide each by its deflator and multiply by 100",
+            "Find the change in real GDP",
+            "Divide by the first year’s real GDP and multiply by 100"
+          ],
+          "explanation": "Always deflate before comparing years.",
+          "terms": [
+            "economics-3.1-gdp-deflator",
+            "economics-3.1-real"
+          ]
+        }
+      ]
+    }
+  ]
+}

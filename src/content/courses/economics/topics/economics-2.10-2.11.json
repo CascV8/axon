@@ -1,0 +1,616 @@
+{
+  "id": "economics-2.10-2.11",
+  "code": "2.10–2.11",
+  "unit": "2",
+  "title": "HL: Asymmetric information and market power (theory of the firm)",
+  "level": "HL",
+  "summary": "HL only. When one side knows more than the other, markets fail through adverse selection and moral hazard. Firms’ costs, revenues and market structure determine output, price, profit and efficiency.",
+  "keyterms": [
+    {
+      "id": "economics-2.10-2.11-asymmetric-info",
+      "term": "Asymmetric information",
+      "definition": "When one party in a transaction has more or better information than the other.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-adverse-selection",
+      "term": "Adverse selection",
+      "definition": "Asymmetric information before a transaction, e.g. sellers of used cars know their quality, so good products leave the market.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-moral-hazard",
+      "term": "Moral hazard",
+      "definition": "Asymmetric information after a transaction, when one party takes more risk because another bears the cost, e.g. insured drivers.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-screening",
+      "term": "Screening and signalling",
+      "definition": "Ways to reduce information gaps: the less informed party gathers information (screening) or the informed party reveals it (signalling).",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-normal-profit",
+      "term": "Normal profit",
+      "definition": "The minimum profit needed to keep a firm in the industry; total revenue just covers all economic costs including opportunity cost.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-abnormal-profit",
+      "term": "Abnormal (supernormal) profit",
+      "definition": "Profit above normal profit: total revenue exceeds total economic cost.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-mc-mr",
+      "term": "Profit maximisation rule",
+      "definition": "Firms maximise profit by producing where marginal cost equals marginal revenue (MC = MR).",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-perfect-competition",
+      "term": "Perfect competition",
+      "definition": "Many small firms selling identical products, perfect information, free entry and exit; each firm is a price taker.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-monopoly",
+      "term": "Monopoly",
+      "definition": "A single seller with high barriers to entry, facing the downward-sloping market demand curve.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-barriers",
+      "term": "Barriers to entry",
+      "definition": "Obstacles to new firms entering a market, e.g. economies of scale, legal protection, control of resources.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-natural-monopoly",
+      "term": "Natural monopoly",
+      "definition": "An industry where economies of scale are so large that one firm can supply the market at lower cost than several.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-oligopoly",
+      "term": "Oligopoly",
+      "definition": "A market dominated by a few large interdependent firms, with high barriers to entry.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-collusion",
+      "term": "Collusion",
+      "definition": "Agreement between firms to limit competition, e.g. fixing prices; formal collusion is a cartel.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-game-theory",
+      "term": "Game theory",
+      "definition": "Analysis of strategic decisions where each firm’s best choice depends on what rivals do, e.g. the prisoner’s dilemma.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-monopolistic-competition",
+      "term": "Monopolistic competition",
+      "definition": "Many firms selling differentiated products with free entry, so each has a little price-setting power.",
+      "hl": true
+    },
+    {
+      "id": "economics-2.10-2.11-concentration-ratio",
+      "term": "Concentration ratio",
+      "definition": "The combined market share of the largest firms, e.g. a 4-firm ratio of 80% suggests oligopoly.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-2.10-2.11-1",
+      "title": "Asymmetric information",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-2.10-2.11-1-q01",
+          "type": "mcq",
+          "prompt": "A buyer of a used car cannot tell whether it is reliable, so she will pay only an average price. Good cars are withdrawn from sale. This is…",
+          "options": [
+            "moral hazard",
+            "adverse selection",
+            "a positive externality",
+            "collusion"
+          ],
+          "answer": 1,
+          "explanation": "Information asymmetry before the deal drives high-quality goods out of the market.",
+          "terms": [
+            "economics-2.10-2.11-adverse-selection"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q02",
+          "type": "tf",
+          "statement": "Moral hazard occurs when a party changes behaviour after a deal because someone else bears the risk.",
+          "answer": true,
+          "explanation": "E.g. a bank taking big risks expecting a government bailout.",
+          "terms": [
+            "economics-2.10-2.11-moral-hazard"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q03",
+          "type": "fill",
+          "text": "Asymmetric information before a transaction leads to adverse ___.",
+          "answer": "selection",
+          "bank": [
+            "hazard",
+            "signalling",
+            "screening",
+            "selection"
+          ],
+          "explanation": "Adverse selection is a pre-contract problem; moral hazard is post-contract.",
+          "terms": [
+            "economics-2.10-2.11-adverse-selection"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q04",
+          "type": "match",
+          "prompt": "Match each example to the concept.",
+          "pairs": [
+            {
+              "left": "Insurer requires a medical exam",
+              "right": "Screening"
+            },
+            {
+              "left": "Job applicant shows a degree",
+              "right": "Signalling"
+            },
+            {
+              "left": "Insured cyclist stops locking bike",
+              "right": "Moral hazard"
+            },
+            {
+              "left": "Only the sickest buy health insurance",
+              "right": "Adverse selection"
+            }
+          ],
+          "explanation": "Screening and signalling are responses; moral hazard and adverse selection are the problems.",
+          "terms": [
+            "economics-2.10-2.11-screening",
+            "economics-2.10-2.11-moral-hazard",
+            "economics-2.10-2.11-adverse-selection"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q05",
+          "type": "mcq",
+          "prompt": "Which government response reduces asymmetric information in the market for doctors?",
+          "options": [
+            "A tax on medical services",
+            "Licensing that requires qualifications",
+            "A price floor for consultations",
+            "Removing professional registers"
+          ],
+          "answer": 1,
+          "explanation": "Licensing and regulation guarantee minimum standards consumers cannot check.",
+          "terms": [
+            "economics-2.10-2.11-asymmetric-info"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q06",
+          "type": "tf",
+          "statement": "Warranties offered by sellers can help solve adverse selection.",
+          "answer": true,
+          "explanation": "They signal confidence in quality and shift risk to the seller.",
+          "terms": [
+            "economics-2.10-2.11-screening",
+            "economics-2.10-2.11-adverse-selection"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q07",
+          "type": "mcq",
+          "prompt": "Why might health insurance premiums rise if insurance is voluntary?",
+          "options": [
+            "Insurers are always monopolies",
+            "Healthier people opt out, leaving a riskier pool of buyers",
+            "Doctors charge less",
+            "The government taxes premiums"
+          ],
+          "answer": 1,
+          "explanation": "Adverse selection: buyers know their own risk better than insurers.",
+          "terms": [
+            "economics-2.10-2.11-adverse-selection"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q08",
+          "type": "fill",
+          "text": "A bank expecting to be rescued may take more risk; this is moral ___.",
+          "answer": "hazard",
+          "bank": [
+            "hazard",
+            "selection",
+            "suasion",
+            "signalling"
+          ],
+          "explanation": "Moral hazard was a key issue in the 2008 financial crisis.",
+          "terms": [
+            "economics-2.10-2.11-moral-hazard"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q09",
+          "type": "mcq",
+          "prompt": "Which is the best example of asymmetric information?",
+          "options": [
+            "Both buyer and seller know the price of milk",
+            "A mechanic knows more than the customer about what repairs are needed",
+            "A shop advertises prices clearly",
+            "A government publishes inflation data"
+          ],
+          "answer": 1,
+          "explanation": "The seller can exploit superior knowledge.",
+          "terms": [
+            "economics-2.10-2.11-asymmetric-info"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-1-q10",
+          "type": "order",
+          "prompt": "Order the \"market for lemons\" process.",
+          "items": [
+            "Sellers know quality; buyers do not",
+            "Buyers offer an average price",
+            "Owners of good cars withdraw them",
+            "Average quality and price fall further"
+          ],
+          "explanation": "Adverse selection can shrink or destroy a market.",
+          "terms": [
+            "economics-2.10-2.11-adverse-selection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.10-2.11-2",
+      "title": "Costs, revenue, profit and perfect competition",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-2.10-2.11-2-q01",
+          "type": "mcq",
+          "prompt": "A firm maximises profit where…",
+          "options": [
+            "AC is at its minimum",
+            "TR is at its maximum",
+            "MC = MR",
+            "P = AC"
+          ],
+          "answer": 2,
+          "explanation": "If MR > MC, an extra unit adds to profit; if MC > MR, it reduces it.",
+          "terms": [
+            "economics-2.10-2.11-mc-mr"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q02",
+          "type": "tf",
+          "statement": "Normal profit is included in a firm’s economic costs.",
+          "answer": true,
+          "explanation": "It is the opportunity cost of the entrepreneur, so zero economic profit = normal profit.",
+          "terms": [
+            "economics-2.10-2.11-normal-profit"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q03",
+          "type": "mcq",
+          "prompt": "A firm sells 500 units at $12. Its average total cost is $10. What is its economic profit?",
+          "options": [
+            "$6000",
+            "$5000",
+            "$1000 abnormal profit",
+            "$1000 loss"
+          ],
+          "answer": 2,
+          "explanation": "TR = 6000, TC = 5000, so profit = $1000 above normal profit.",
+          "terms": [
+            "economics-2.10-2.11-abnormal-profit"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q04",
+          "type": "fill",
+          "text": "In perfect competition each firm is a price ___.",
+          "answer": "taker",
+          "bank": [
+            "maker",
+            "taker",
+            "setter",
+            "leader"
+          ],
+          "explanation": "Each firm is too small to affect the market price, so its demand curve is horizontal at P = AR = MR.",
+          "terms": [
+            "economics-2.10-2.11-perfect-competition"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q05",
+          "type": "mcq",
+          "prompt": "Why do perfectly competitive firms earn only normal profit in the long run?",
+          "options": [
+            "Government taxes the profits",
+            "Firms collude to lower prices",
+            "Abnormal profits attract new entrants, shifting supply right until price = minimum AC",
+            "Demand always falls over time"
+          ],
+          "answer": 2,
+          "explanation": "Free entry and exit compete away abnormal profits and losses.",
+          "terms": [
+            "economics-2.10-2.11-perfect-competition",
+            "economics-2.10-2.11-normal-profit"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q06",
+          "type": "tf",
+          "statement": "In the long run, a perfectly competitive firm is both allocatively (P = MC) and productively (min AC) efficient.",
+          "answer": true,
+          "explanation": "It produces at the bottom of its AC curve and price equals marginal cost.",
+          "terms": [
+            "economics-2.10-2.11-perfect-competition"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q07",
+          "type": "match",
+          "prompt": "Match each cost or revenue to its definition.",
+          "pairs": [
+            {
+              "left": "Fixed cost",
+              "right": "Does not vary with output"
+            },
+            {
+              "left": "Marginal cost",
+              "right": "Extra cost of one more unit"
+            },
+            {
+              "left": "Average revenue",
+              "right": "Total revenue ÷ quantity"
+            },
+            {
+              "left": "Marginal revenue",
+              "right": "Extra revenue from one more unit"
+            }
+          ],
+          "explanation": "For a price taker, P = AR = MR.",
+          "terms": [
+            "economics-2.10-2.11-mc-mr"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q08",
+          "type": "fill",
+          "text": "Profit above normal profit is called ___ profit.",
+          "answer": "abnormal",
+          "bank": [
+            "normal",
+            "abnormal",
+            "marginal",
+            "gross"
+          ],
+          "explanation": "Also called supernormal or economic profit.",
+          "terms": [
+            "economics-2.10-2.11-abnormal-profit"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q09",
+          "type": "mcq",
+          "prompt": "Total revenue is $800 and total costs (including normal profit) are $900. The firm…",
+          "options": [
+            "makes normal profit",
+            "makes abnormal profit of $100",
+            "makes a loss of $100",
+            "breaks even"
+          ],
+          "answer": 2,
+          "explanation": "TR < TC means an economic loss.",
+          "terms": [
+            "economics-2.10-2.11-normal-profit"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-2-q10",
+          "type": "order",
+          "prompt": "Order the long-run adjustment in perfect competition after demand rises.",
+          "items": [
+            "Market price rises",
+            "Existing firms earn abnormal profit",
+            "New firms enter the industry",
+            "Price falls back until normal profit is earned"
+          ],
+          "explanation": "Entry restores long-run equilibrium at minimum AC.",
+          "terms": [
+            "economics-2.10-2.11-perfect-competition",
+            "economics-2.10-2.11-abnormal-profit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.10-2.11-3",
+      "title": "Monopoly, oligopoly and monopolistic competition",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-2.10-2.11-3-q01",
+          "type": "mcq",
+          "prompt": "Why is a monopoly allocatively inefficient?",
+          "options": [
+            "It produces too much",
+            "It always makes losses",
+            "It is a price taker",
+            "It sets price above marginal cost and restricts output"
+          ],
+          "answer": 3,
+          "explanation": "P > MC means society values extra units more than they cost, giving a welfare loss.",
+          "terms": [
+            "economics-2.10-2.11-monopoly"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q02",
+          "type": "tf",
+          "statement": "A natural monopoly arises because economies of scale let one firm supply the whole market at lowest cost.",
+          "answer": true,
+          "explanation": "E.g. water pipes or power grids; duplicating the network would waste resources.",
+          "terms": [
+            "economics-2.10-2.11-natural-monopoly"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q03",
+          "type": "match",
+          "prompt": "Match each market structure to a feature.",
+          "pairs": [
+            {
+              "left": "Perfect competition",
+              "right": "Identical products, price takers"
+            },
+            {
+              "left": "Monopolistic competition",
+              "right": "Differentiated products, free entry"
+            },
+            {
+              "left": "Oligopoly",
+              "right": "Few interdependent firms"
+            },
+            {
+              "left": "Monopoly",
+              "right": "Single seller, high barriers"
+            }
+          ],
+          "explanation": "Number of firms, product type and barriers distinguish the structures.",
+          "terms": [
+            "economics-2.10-2.11-perfect-competition",
+            "economics-2.10-2.11-monopolistic-competition",
+            "economics-2.10-2.11-oligopoly",
+            "economics-2.10-2.11-monopoly"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q04",
+          "type": "fill",
+          "text": "The top four firms in a market have shares of 30%, 25%, 15% and 10%. The 4-firm concentration ratio is ___%.",
+          "answer": "80",
+          "accept": [
+            "80%"
+          ],
+          "bank": [
+            "30",
+            "70",
+            "80",
+            "100"
+          ],
+          "explanation": "30 + 25 + 15 + 10 = 80%, indicating oligopoly.",
+          "terms": [
+            "economics-2.10-2.11-concentration-ratio"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q05",
+          "type": "mcq",
+          "prompt": "In the prisoner’s dilemma, why do two oligopolists often both cut prices?",
+          "options": [
+            "Price cutting maximises joint profit",
+            "Governments require it",
+            "They have perfect information about each other’s costs",
+            "Each fears the other will cheat, so cutting is the dominant strategy, though both would earn more by colluding"
+          ],
+          "answer": 3,
+          "explanation": "Individually rational choices lead to a worse joint outcome.",
+          "terms": [
+            "economics-2.10-2.11-game-theory",
+            "economics-2.10-2.11-oligopoly"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q06",
+          "type": "tf",
+          "statement": "A cartel is an example of formal collusion and is illegal in most countries.",
+          "answer": true,
+          "explanation": "Competition law bans price fixing because it harms consumers.",
+          "terms": [
+            "economics-2.10-2.11-collusion"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q07",
+          "type": "mcq",
+          "prompt": "Why do firms in monopolistic competition earn only normal profit in the long run?",
+          "options": [
+            "They are price takers",
+            "Government regulates their prices",
+            "They collude",
+            "Free entry of firms with similar products reduces each firm’s demand"
+          ],
+          "answer": 3,
+          "explanation": "New entrants take customers until AR is tangent to AC.",
+          "terms": [
+            "economics-2.10-2.11-monopolistic-competition"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q08",
+          "type": "fill",
+          "text": "Obstacles such as patents and economies of scale that keep new firms out are barriers to ___.",
+          "answer": "entry",
+          "bank": [
+            "exit",
+            "trade",
+            "entry",
+            "growth"
+          ],
+          "explanation": "High barriers let monopolies keep abnormal profit in the long run.",
+          "terms": [
+            "economics-2.10-2.11-barriers"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q09",
+          "type": "mcq",
+          "prompt": "Which is a possible benefit of monopoly?",
+          "options": [
+            "Lower prices than perfect competition always",
+            "Allocative efficiency",
+            "Many consumer choices",
+            "Abnormal profits can fund research and development"
+          ],
+          "answer": 3,
+          "explanation": "Dynamic efficiency and economies of scale may offset some costs of market power.",
+          "terms": [
+            "economics-2.10-2.11-monopoly",
+            "economics-2.10-2.11-abnormal-profit"
+          ]
+        },
+        {
+          "id": "economics-2.10-2.11-3-q10",
+          "type": "order",
+          "prompt": "Order how a regulator might deal with a natural monopoly.",
+          "items": [
+            "Identify a market with huge economies of scale",
+            "Allow a single supplier rather than many",
+            "Set a price cap or regulate prices",
+            "Monitor quality and investment"
+          ],
+          "explanation": "Regulation aims to keep cost advantages while limiting abuse of market power.",
+          "terms": [
+            "economics-2.10-2.11-natural-monopoly"
+          ]
+        }
+      ]
+    }
+  ]
+}

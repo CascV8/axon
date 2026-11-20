@@ -1,0 +1,437 @@
+{
+  "id": "economics-2.5-2.6",
+  "code": "2.5–2.6",
+  "unit": "2",
+  "title": "Elasticities of demand and supply",
+  "level": "SL",
+  "summary": "Elasticity measures responsiveness. PED links price changes to total revenue, YED shows how demand changes as incomes grow, and PES shows how easily producers can respond.",
+  "keyterms": [
+    {
+      "id": "economics-2.5-2.6-ped",
+      "term": "Price elasticity of demand (PED)",
+      "definition": "Responsiveness of quantity demanded to a change in price: PED = %ΔQd ÷ %ΔP.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-elastic",
+      "term": "Price elastic demand",
+      "definition": "When |PED| > 1: quantity demanded changes by a larger percentage than price.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-inelastic",
+      "term": "Price inelastic demand",
+      "definition": "When |PED| < 1: quantity demanded changes by a smaller percentage than price.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-unit-elastic",
+      "term": "Unit elastic demand",
+      "definition": "When |PED| = 1: the percentage change in quantity equals the percentage change in price, so total revenue is unchanged.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-total-revenue",
+      "term": "Total revenue",
+      "definition": "Price × quantity sold.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-ped-determinants",
+      "term": "Determinants of PED",
+      "definition": "Number and closeness of substitutes, necessity versus luxury, share of income spent and time period.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-yed",
+      "term": "Income elasticity of demand (YED)",
+      "definition": "Responsiveness of demand to a change in income: YED = %ΔQd ÷ %ΔY.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-luxury",
+      "term": "Income elastic (luxury) good",
+      "definition": "A normal good with YED > 1: demand rises more than proportionately as income rises.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-necessity",
+      "term": "Income inelastic (necessity) good",
+      "definition": "A normal good with 0 < YED < 1: demand rises less than proportionately as income rises.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-sectoral-change",
+      "term": "Sectoral change",
+      "definition": "The shift of output and employment from primary to secondary and then tertiary sectors as incomes grow, linked to YED.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-pes",
+      "term": "Price elasticity of supply (PES)",
+      "definition": "Responsiveness of quantity supplied to a change in price: PES = %ΔQs ÷ %ΔP.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-pes-determinants",
+      "term": "Determinants of PES",
+      "definition": "Time period, spare capacity, ability to store stock, and mobility of factors of production.",
+      "hl": false
+    },
+    {
+      "id": "economics-2.5-2.6-primary-commodity",
+      "term": "Primary commodity",
+      "definition": "A raw material or farm product (e.g. coffee, copper) whose demand and supply tend to be price inelastic, causing volatile prices.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-2.5-2.6-1",
+      "title": "Price elasticity of demand",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.5-2.6-1-q01",
+          "type": "mcq",
+          "prompt": "The price of a concert ticket rises from $40 to $50 and tickets sold fall from 2000 to 1800. What is PED?",
+          "options": [
+            "−2.5",
+            "−0.4",
+            "−0.2",
+            "−4.0"
+          ],
+          "answer": 1,
+          "explanation": "%ΔQ = −200/2000 = −10%; %ΔP = 10/40 = +25%. PED = −10/25 = −0.4 (inelastic).",
+          "terms": [
+            "economics-2.5-2.6-ped"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q02",
+          "type": "tf",
+          "statement": "If demand is price inelastic, a price rise increases total revenue.",
+          "answer": true,
+          "explanation": "Quantity falls by a smaller percentage than price rises, so P × Q rises.",
+          "terms": [
+            "economics-2.5-2.6-inelastic",
+            "economics-2.5-2.6-total-revenue"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q03",
+          "type": "fill",
+          "text": "When |PED| is greater than 1, demand is price ___.",
+          "answer": "elastic",
+          "bank": [
+            "inelastic",
+            "unit elastic",
+            "perfectly inelastic",
+            "elastic"
+          ],
+          "explanation": "Quantity demanded is highly responsive to price.",
+          "terms": [
+            "economics-2.5-2.6-elastic"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q04",
+          "type": "mcq",
+          "prompt": "Which good is likely to have the MOST price elastic demand?",
+          "options": [
+            "Insulin for diabetics",
+            "Petrol in the short run",
+            "Salt",
+            "One brand of bottled water"
+          ],
+          "answer": 3,
+          "explanation": "A single brand has many close substitutes; the others are necessities with few substitutes or a small budget share.",
+          "terms": [
+            "economics-2.5-2.6-ped-determinants",
+            "economics-2.5-2.6-elastic"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q05",
+          "type": "match",
+          "prompt": "Match each PED value to its description.",
+          "pairs": [
+            {
+              "left": "PED = 0",
+              "right": "Perfectly inelastic"
+            },
+            {
+              "left": "PED = −0.5",
+              "right": "Inelastic"
+            },
+            {
+              "left": "PED = −1",
+              "right": "Unit elastic"
+            },
+            {
+              "left": "PED = −3",
+              "right": "Elastic"
+            }
+          ],
+          "explanation": "Economists usually compare the absolute value of PED with 1.",
+          "terms": [
+            "economics-2.5-2.6-ped",
+            "economics-2.5-2.6-elastic",
+            "economics-2.5-2.6-inelastic",
+            "economics-2.5-2.6-unit-elastic"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q06",
+          "type": "mcq",
+          "prompt": "A firm faces elastic demand and wants to raise total revenue. It should…",
+          "options": [
+            "raise its price",
+            "keep price unchanged",
+            "cut output whatever the price",
+            "lower its price"
+          ],
+          "answer": 3,
+          "explanation": "With elastic demand, a price cut raises quantity by a larger percentage, so revenue rises.",
+          "terms": [
+            "economics-2.5-2.6-elastic",
+            "economics-2.5-2.6-total-revenue"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q07",
+          "type": "tf",
+          "statement": "Demand usually becomes more price elastic over a longer time period.",
+          "answer": true,
+          "explanation": "Consumers have more time to find substitutes and change habits.",
+          "terms": [
+            "economics-2.5-2.6-ped-determinants"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q08",
+          "type": "mcq",
+          "prompt": "Why does the government prefer to levy indirect taxes on goods with inelastic demand?",
+          "options": [
+            "Consumers bear none of the tax",
+            "Producers raise output",
+            "It reduces consumption sharply",
+            "Quantity falls little, so tax revenue stays high"
+          ],
+          "answer": 3,
+          "explanation": "Inelastic demand means a large tax base is maintained; but it does little to cut consumption.",
+          "terms": [
+            "economics-2.5-2.6-inelastic"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q09",
+          "type": "fill",
+          "text": "Price falls by 10% and quantity demanded rises by 15%. PED = ___.",
+          "answer": "−1.5",
+          "accept": [
+            "-1.5",
+            "1.5"
+          ],
+          "bank": [
+            "−0.67",
+            "−1.5",
+            "−15",
+            "−0.15"
+          ],
+          "explanation": "PED = +15% ÷ −10% = −1.5.",
+          "terms": [
+            "economics-2.5-2.6-ped"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to work out whether a price cut raises revenue.",
+          "items": [
+            "Calculate the % change in quantity",
+            "Calculate the % change in price",
+            "Divide to find PED",
+            "Compare |PED| with 1 to judge the revenue effect"
+          ],
+          "explanation": "If |PED| > 1 a price cut raises revenue; if < 1 it lowers it.",
+          "terms": [
+            "economics-2.5-2.6-ped",
+            "economics-2.5-2.6-total-revenue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-2.5-2.6-2",
+      "title": "Income elasticity and price elasticity of supply",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-2.5-2.6-2-q01",
+          "type": "mcq",
+          "prompt": "Average income rises by 5% and demand for foreign holidays rises by 12%. What is YED and what type of good is it?",
+          "options": [
+            "0.42: a necessity",
+            "−2.4: an inferior good",
+            "2.4: a luxury (income elastic) normal good",
+            "2.4: an inferior good"
+          ],
+          "answer": 2,
+          "explanation": "YED = 12 ÷ 5 = 2.4. Positive and above 1, so income elastic.",
+          "terms": [
+            "economics-2.5-2.6-yed",
+            "economics-2.5-2.6-luxury"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q02",
+          "type": "tf",
+          "statement": "A good with a negative YED is an inferior good.",
+          "answer": true,
+          "explanation": "Demand falls as income rises.",
+          "terms": [
+            "economics-2.5-2.6-yed"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q03",
+          "type": "fill",
+          "text": "A normal good with YED between 0 and 1 is a ___.",
+          "answer": "necessity",
+          "bank": [
+            "necessity",
+            "luxury",
+            "inferior good",
+            "substitute"
+          ],
+          "explanation": "Demand rises with income, but less than proportionately.",
+          "terms": [
+            "economics-2.5-2.6-necessity"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q04",
+          "type": "mcq",
+          "prompt": "Why does the share of agriculture in output tend to fall as a country grows richer?",
+          "options": [
+            "Food has low YED, while demand for services has higher YED",
+            "Food has a negative PED",
+            "Farmers lose comparative advantage everywhere",
+            "Agricultural PES is very high"
+          ],
+          "answer": 0,
+          "explanation": "As incomes rise, spending on income-elastic services grows faster than on food: sectoral change.",
+          "terms": [
+            "economics-2.5-2.6-sectoral-change",
+            "economics-2.5-2.6-yed"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q05",
+          "type": "mcq",
+          "prompt": "The price of strawberries rises by 20% and quantity supplied rises by 5% in the same week. What is PES?",
+          "options": [
+            "4",
+            "−0.25",
+            "0.25",
+            "1.25"
+          ],
+          "answer": 2,
+          "explanation": "PES = 5 ÷ 20 = 0.25: inelastic, because farmers cannot grow more quickly.",
+          "terms": [
+            "economics-2.5-2.6-pes"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q06",
+          "type": "match",
+          "prompt": "Match each factor to its effect on PES.",
+          "pairs": [
+            {
+              "left": "Lots of spare capacity",
+              "right": "Output can rise quickly: more elastic"
+            },
+            {
+              "left": "Perishable product, cannot be stored",
+              "right": "No stocks to release: less elastic"
+            },
+            {
+              "left": "A longer time period",
+              "right": "Time to expand capacity: more elastic"
+            },
+            {
+              "left": "Specialised, immobile labour",
+              "right": "Hard to hire extra workers: less elastic"
+            }
+          ],
+          "explanation": "PES depends on how easily firms can raise output when price rises.",
+          "terms": [
+            "economics-2.5-2.6-pes-determinants"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q07",
+          "type": "tf",
+          "statement": "Supply of primary commodities tends to be price inelastic in the short run.",
+          "answer": true,
+          "explanation": "Crops and mines take a long time to expand, so short-run supply responds little to price.",
+          "terms": [
+            "economics-2.5-2.6-primary-commodity",
+            "economics-2.5-2.6-pes"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q08",
+          "type": "mcq",
+          "prompt": "Why are prices of commodities such as coffee so volatile?",
+          "options": [
+            "Both demand and supply are price inelastic, so shifts cause large price changes",
+            "Demand is perfectly elastic",
+            "Supply is perfectly elastic",
+            "Governments fix their prices"
+          ],
+          "answer": 0,
+          "explanation": "With steep curves, a small supply shock (e.g. drought) leads to a big price change.",
+          "terms": [
+            "economics-2.5-2.6-primary-commodity"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q09",
+          "type": "fill",
+          "text": "Manufactured goods tend to have ___ elastic supply than primary commodities.",
+          "answer": "more",
+          "bank": [
+            "less",
+            "equally",
+            "more",
+            "perfectly"
+          ],
+          "explanation": "Factories can often increase shifts or use spare capacity quickly.",
+          "terms": [
+            "economics-2.5-2.6-pes",
+            "economics-2.5-2.6-primary-commodity"
+          ]
+        },
+        {
+          "id": "economics-2.5-2.6-2-q10",
+          "type": "order",
+          "prompt": "Order these goods from lowest to highest likely YED.",
+          "items": [
+            "Cheap instant noodles (inferior)",
+            "Rice (necessity)",
+            "Mobile phone data (normal)",
+            "Luxury cruises (luxury)"
+          ],
+          "explanation": "YED runs from negative for inferior goods to above 1 for luxuries.",
+          "terms": [
+            "economics-2.5-2.6-yed",
+            "economics-2.5-2.6-necessity",
+            "economics-2.5-2.6-luxury"
+          ]
+        }
+      ]
+    }
+  ]
+}

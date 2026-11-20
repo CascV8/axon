@@ -1,0 +1,419 @@
+{
+  "id": "economics-3.2",
+  "code": "3.2",
+  "unit": "3",
+  "title": "Variations in economic activity: aggregate demand and aggregate supply",
+  "level": "SL",
+  "summary": "AD is total planned spending; AS is total planned output. Their interaction determines real output and the price level. Keynesian and new classical views disagree on whether economies self-correct.",
+  "keyterms": [
+    {
+      "id": "economics-3.2-ad",
+      "term": "Aggregate demand (AD)",
+      "definition": "Total planned spending on an economy’s goods and services at each price level: C + I + G + (X − M).",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-consumption",
+      "term": "Consumption (C)",
+      "definition": "Household spending on goods and services; affected by income, wealth, confidence, interest rates and debt.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-investment",
+      "term": "Investment (I)",
+      "definition": "Spending by firms on capital goods; affected by interest rates, business confidence, technology and taxes.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-sras",
+      "term": "Short-run aggregate supply (SRAS)",
+      "definition": "Total output firms plan to supply at each price level when wages and other input prices are fixed.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-lras",
+      "term": "Long-run aggregate supply (LRAS)",
+      "definition": "Output at full employment; vertical at potential output in the new classical (monetarist) view.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-keynesian-as",
+      "term": "Keynesian AS curve",
+      "definition": "An AS curve that is flat at low output (spare capacity), upward sloping as capacity is approached, and vertical at full employment.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-recessionary-gap",
+      "term": "Recessionary (deflationary) gap",
+      "definition": "When equilibrium real output is below potential output, so there is cyclical unemployment.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-inflationary-gap",
+      "term": "Inflationary gap",
+      "definition": "When equilibrium real output is above potential output, pushing up the price level.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-wealth-effect",
+      "term": "Wealth effect",
+      "definition": "A rise in asset prices (houses, shares) makes households feel richer, so consumption rises.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-supply-shock",
+      "term": "Supply shock",
+      "definition": "A sudden change in costs (e.g. oil prices) that shifts SRAS.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.2-self-correction",
+      "term": "Self-correction (new classical view)",
+      "definition": "The idea that flexible wages and prices return the economy to full employment in the long run.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-3.2-1",
+      "title": "Aggregate demand and aggregate supply",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.2-1-q01",
+          "type": "mcq",
+          "prompt": "Why does the AD curve slope downward?",
+          "options": [
+            "Firms supply more at lower prices",
+            "Government spends more at lower prices",
+            "A lower price level raises real wealth, lowers interest rates and makes exports more competitive",
+            "Imports rise when prices fall"
+          ],
+          "answer": 2,
+          "explanation": "The wealth, interest-rate and international trade effects explain the slope.",
+          "terms": [
+            "economics-3.2-ad"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q02",
+          "type": "match",
+          "prompt": "Match each event to its effect on AD.",
+          "pairs": [
+            {
+              "left": "Consumer confidence falls",
+              "right": "AD left: consumption falls"
+            },
+            {
+              "left": "Interest rates are cut",
+              "right": "AD right: borrowing rises"
+            },
+            {
+              "left": "Trading partners enter recession",
+              "right": "AD left: exports fall"
+            },
+            {
+              "left": "Government builds new roads",
+              "right": "AD right: G rises"
+            }
+          ],
+          "explanation": "Changes in any component of C + I + G + (X − M) shift AD.",
+          "terms": [
+            "economics-3.2-ad",
+            "economics-3.2-consumption",
+            "economics-3.2-investment"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q03",
+          "type": "tf",
+          "statement": "A rise in house prices is likely to increase consumption through the wealth effect.",
+          "answer": true,
+          "explanation": "Households feel richer and may borrow against higher home values.",
+          "terms": [
+            "economics-3.2-wealth-effect",
+            "economics-3.2-consumption"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q04",
+          "type": "fill",
+          "text": "Spending by firms on capital goods is called ___.",
+          "answer": "investment",
+          "bank": [
+            "consumption",
+            "investment",
+            "saving",
+            "government spending"
+          ],
+          "explanation": "Investment is the most volatile component of AD.",
+          "terms": [
+            "economics-3.2-investment"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q05",
+          "type": "mcq",
+          "prompt": "A sharp rise in world oil prices will…",
+          "options": [
+            "shift AD right",
+            "shift LRAS right",
+            "shift SRAS left, raising the price level and lowering output",
+            "have no macro effect"
+          ],
+          "answer": 2,
+          "explanation": "Higher costs reduce the output firms will supply at each price level: a negative supply shock.",
+          "terms": [
+            "economics-3.2-supply-shock",
+            "economics-3.2-sras"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q06",
+          "type": "mcq",
+          "prompt": "Which shifts LRAS to the right?",
+          "options": [
+            "An improvement in the quality of education and training",
+            "A rise in consumer spending",
+            "A fall in interest rates",
+            "A rise in the price level"
+          ],
+          "answer": 0,
+          "explanation": "LRAS depends on the quantity and quality of factors of production and technology.",
+          "terms": [
+            "economics-3.2-lras"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q07",
+          "type": "tf",
+          "statement": "In the new classical model, the LRAS curve is vertical at potential output.",
+          "answer": true,
+          "explanation": "In the long run, output is set by productive capacity, not by the price level.",
+          "terms": [
+            "economics-3.2-lras"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q08",
+          "type": "fill",
+          "text": "Total output firms plan to supply when input prices are fixed is short-run aggregate ___.",
+          "answer": "supply",
+          "bank": [
+            "demand",
+            "supply",
+            "output",
+            "expenditure"
+          ],
+          "explanation": "SRAS slopes upward and shifts with costs of production.",
+          "terms": [
+            "economics-3.2-sras"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q09",
+          "type": "mcq",
+          "prompt": "Which is the most likely result of a fall in AD when the economy is at full employment (new classical view) in the short run?",
+          "options": [
+            "Output rises",
+            "The price level rises",
+            "Real output falls below potential and unemployment rises",
+            "LRAS shifts left"
+          ],
+          "answer": 2,
+          "explanation": "In the short run, falling AD reduces output; in the long run wages adjust and SRAS shifts.",
+          "terms": [
+            "economics-3.2-ad",
+            "economics-3.2-sras"
+          ]
+        },
+        {
+          "id": "economics-3.2-1-q10",
+          "type": "order",
+          "prompt": "Order the effects of a rise in business confidence.",
+          "items": [
+            "Firms expect higher future sales",
+            "Investment spending rises",
+            "AD shifts right",
+            "Real output and the price level rise"
+          ],
+          "explanation": "Confidence is a key determinant of investment.",
+          "terms": [
+            "economics-3.2-investment",
+            "economics-3.2-ad"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.2-2",
+      "title": "Equilibrium, gaps and schools of thought",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.2-2-q01",
+          "type": "mcq",
+          "prompt": "When equilibrium output is below potential output, there is…",
+          "options": [
+            "an inflationary gap",
+            "full employment",
+            "excess demand for labour",
+            "a recessionary gap"
+          ],
+          "answer": 3,
+          "explanation": "Output below potential means cyclical unemployment.",
+          "terms": [
+            "economics-3.2-recessionary-gap"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q02",
+          "type": "tf",
+          "statement": "Keynesians argue that an economy can remain in a recessionary gap for a long time.",
+          "answer": true,
+          "explanation": "Wages are sticky downward and confidence is low, so government action may be needed.",
+          "terms": [
+            "economics-3.2-keynesian-as",
+            "economics-3.2-recessionary-gap"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q03",
+          "type": "mcq",
+          "prompt": "On the horizontal section of the Keynesian AS curve, a rise in AD causes…",
+          "options": [
+            "a higher price level and no change in output",
+            "lower output",
+            "a fall in the price level",
+            "higher output with no rise in the price level"
+          ],
+          "answer": 3,
+          "explanation": "There is spare capacity, so firms can expand without raising prices.",
+          "terms": [
+            "economics-3.2-keynesian-as"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q04",
+          "type": "fill",
+          "text": "Equilibrium output above potential output creates an ___ gap.",
+          "answer": "inflationary",
+          "bank": [
+            "recessionary",
+            "output",
+            "inflationary",
+            "trade"
+          ],
+          "explanation": "Excess demand pushes up the price level.",
+          "terms": [
+            "economics-3.2-inflationary-gap"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q05",
+          "type": "match",
+          "prompt": "Match each view to its belief.",
+          "pairs": [
+            {
+              "left": "New classical",
+              "right": "Flexible wages restore full employment"
+            },
+            {
+              "left": "Keynesian",
+              "right": "Demand deficiency can persist"
+            },
+            {
+              "left": "Keynesian AS",
+              "right": "Flat, then rising, then vertical"
+            },
+            {
+              "left": "New classical LRAS",
+              "right": "Vertical at potential output"
+            }
+          ],
+          "explanation": "The schools disagree about the speed of self-correction and need for intervention.",
+          "terms": [
+            "economics-3.2-self-correction",
+            "economics-3.2-keynesian-as",
+            "economics-3.2-lras"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q06",
+          "type": "mcq",
+          "prompt": "In the new classical model, how does an economy in a recessionary gap return to full employment?",
+          "options": [
+            "Government must raise spending",
+            "Wages and costs fall, shifting SRAS right",
+            "AD shifts right automatically",
+            "LRAS shifts left"
+          ],
+          "answer": 1,
+          "explanation": "Unemployment puts downward pressure on wages, lowering costs and raising SRAS.",
+          "terms": [
+            "economics-3.2-self-correction",
+            "economics-3.2-sras"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q07",
+          "type": "tf",
+          "statement": "On the vertical section of the Keynesian AS curve, a rise in AD increases only the price level.",
+          "answer": true,
+          "explanation": "The economy is at full capacity, so extra demand is purely inflationary.",
+          "terms": [
+            "economics-3.2-keynesian-as"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q08",
+          "type": "mcq",
+          "prompt": "Which combination shows stagflation?",
+          "options": [
+            "Rising output and falling prices",
+            "Falling output and rising price level, caused by SRAS shifting left",
+            "Rising output and rising prices from AD shifting right",
+            "Falling output and falling prices from AD shifting left"
+          ],
+          "answer": 1,
+          "explanation": "A negative supply shock causes both unemployment and inflation.",
+          "terms": [
+            "economics-3.2-supply-shock"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q09",
+          "type": "fill",
+          "text": "The idea that markets return the economy to full employment unaided is ___-correction.",
+          "answer": "self",
+          "bank": [
+            "auto",
+            "fiscal",
+            "market",
+            "self"
+          ],
+          "explanation": "New classical economists stress self-correction.",
+          "terms": [
+            "economics-3.2-self-correction"
+          ]
+        },
+        {
+          "id": "economics-3.2-2-q10",
+          "type": "order",
+          "prompt": "Order the Keynesian argument for intervention in a recession.",
+          "items": [
+            "AD falls and output drops below potential",
+            "Wages are sticky, so the labour market does not clear",
+            "Unemployment persists",
+            "Government raises spending to boost AD"
+          ],
+          "explanation": "Keynesians see a role for demand management to close recessionary gaps.",
+          "terms": [
+            "economics-3.2-keynesian-as",
+            "economics-3.2-recessionary-gap"
+          ]
+        }
+      ]
+    }
+  ]
+}

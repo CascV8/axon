@@ -1,0 +1,415 @@
+{
+  "id": "economics-3.7",
+  "code": "3.7",
+  "unit": "3",
+  "title": "Supply-side policies",
+  "level": "SL",
+  "summary": "Supply-side policies aim to raise long-run productive capacity, shifting LRAS right. Market-based policies rely on freer markets; interventionist policies use government investment. They take time and have costs.",
+  "keyterms": [
+    {
+      "id": "economics-3.7-supply-side",
+      "term": "Supply-side policies",
+      "definition": "Policies aimed at increasing the quantity or quality of factors of production, shifting LRAS right.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-market-based",
+      "term": "Market-based supply-side policies",
+      "definition": "Policies that improve how markets work: deregulation, privatisation, competition policy, tax cuts and labour market reforms.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-interventionist",
+      "term": "Interventionist supply-side policies",
+      "definition": "Government investment in education, training, healthcare, infrastructure, research and industrial policy.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-deregulation",
+      "term": "Deregulation",
+      "definition": "Removing or reducing rules that restrict competition or raise costs for firms.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-privatisation",
+      "term": "Privatisation",
+      "definition": "Selling state-owned firms to the private sector to increase efficiency through the profit motive.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-competition-policy",
+      "term": "Competition policy",
+      "definition": "Laws and agencies that prevent anti-competitive behaviour such as cartels and abuse of monopoly power.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-labour-reform",
+      "term": "Labour market reforms",
+      "definition": "Measures making labour markets more flexible, e.g. reducing trade union power or minimum wage, or easing hiring and firing.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-infrastructure",
+      "term": "Infrastructure",
+      "definition": "Physical capital such as roads, ports, broadband and power networks that support production.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-human-capital",
+      "term": "Human capital",
+      "definition": "The skills, knowledge and health of workers, which raise their productivity.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-industrial-policy",
+      "term": "Industrial policy",
+      "definition": "Government support for specific sectors, e.g. subsidies or tax credits for green technology or R&D.",
+      "hl": false
+    },
+    {
+      "id": "economics-3.7-productivity",
+      "term": "Labour productivity",
+      "definition": "Output per worker or per hour worked.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-3.7-1",
+      "title": "Market-based and interventionist policies",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.7-1-q01",
+          "type": "mcq",
+          "prompt": "What is the main aim of supply-side policies?",
+          "options": [
+            "To raise AD quickly",
+            "To cut the budget deficit immediately",
+            "To raise inflation",
+            "To raise potential output by shifting LRAS right"
+          ],
+          "answer": 3,
+          "explanation": "They target the economy’s productive capacity.",
+          "terms": [
+            "economics-3.7-supply-side"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q02",
+          "type": "match",
+          "prompt": "Classify each policy.",
+          "pairs": [
+            {
+              "left": "Privatising the national airline",
+              "right": "Market-based: transfer to private owners"
+            },
+            {
+              "left": "Funding apprenticeships",
+              "right": "Interventionist: human capital"
+            },
+            {
+              "left": "Cutting red tape for start-ups",
+              "right": "Market-based: deregulation"
+            },
+            {
+              "left": "Building high-speed rail",
+              "right": "Interventionist: infrastructure"
+            }
+          ],
+          "explanation": "Market-based policies reduce government role; interventionist ones increase it.",
+          "terms": [
+            "economics-3.7-market-based",
+            "economics-3.7-interventionist"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q03",
+          "type": "tf",
+          "statement": "Spending on education is an interventionist supply-side policy that raises human capital.",
+          "answer": true,
+          "explanation": "Better skills raise productivity, though benefits take years.",
+          "terms": [
+            "economics-3.7-interventionist",
+            "economics-3.7-human-capital"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q04",
+          "type": "fill",
+          "text": "Selling state-owned firms to private owners is ___.",
+          "answer": "privatisation",
+          "bank": [
+            "nationalisation",
+            "deregulation",
+            "privatisation",
+            "subsidisation"
+          ],
+          "explanation": "The aim is efficiency through the profit motive and competition.",
+          "terms": [
+            "economics-3.7-privatisation"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q05",
+          "type": "mcq",
+          "prompt": "Which is a labour market reform?",
+          "options": [
+            "Raising the minimum wage",
+            "Building roads",
+            "Funding universities",
+            "Reducing restrictions on hiring and firing"
+          ],
+          "answer": 3,
+          "explanation": "Such reforms aim to make labour markets more flexible.",
+          "terms": [
+            "economics-3.7-labour-reform"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q06",
+          "type": "mcq",
+          "prompt": "How can investment in infrastructure shift LRAS?",
+          "options": [
+            "It raises AD only",
+            "Lower transport costs and better connectivity raise productivity",
+            "It reduces the labour force",
+            "It increases import prices"
+          ],
+          "answer": 1,
+          "explanation": "Infrastructure also adds to AD in the short run when it is built.",
+          "terms": [
+            "economics-3.7-infrastructure"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q07",
+          "type": "tf",
+          "statement": "Competition policy aims to protect cartels from new entrants.",
+          "answer": false,
+          "explanation": "It prevents anti-competitive behaviour such as cartels and abuse of dominance.",
+          "terms": [
+            "economics-3.7-competition-policy"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q08",
+          "type": "fill",
+          "text": "Output per worker is labour ___.",
+          "answer": "productivity",
+          "bank": [
+            "efficiency",
+            "intensity",
+            "productivity",
+            "mobility"
+          ],
+          "explanation": "Higher productivity is the source of long-run growth in living standards.",
+          "terms": [
+            "economics-3.7-productivity"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q09",
+          "type": "mcq",
+          "prompt": "A government gives tax credits to firms developing battery technology. This is…",
+          "options": [
+            "deregulation",
+            "privatisation",
+            "monetary policy",
+            "industrial policy"
+          ],
+          "answer": 3,
+          "explanation": "Industrial policy targets particular sectors.",
+          "terms": [
+            "economics-3.7-industrial-policy"
+          ]
+        },
+        {
+          "id": "economics-3.7-1-q10",
+          "type": "order",
+          "prompt": "Order how a training programme raises growth.",
+          "items": [
+            "Government funds technical training",
+            "Workers gain skills",
+            "Labour productivity rises",
+            "LRAS shifts right"
+          ],
+          "explanation": "Interventionist policies raise human capital.",
+          "terms": [
+            "economics-3.7-human-capital",
+            "economics-3.7-interventionist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-3.7-2",
+      "title": "Evaluating macro policies",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-3.7-2-q01",
+          "type": "mcq",
+          "prompt": "Which is a major limitation of supply-side policies?",
+          "options": [
+            "They take a long time to have an effect",
+            "They always cause inflation",
+            "They reduce potential output",
+            "They have no costs"
+          ],
+          "answer": 0,
+          "explanation": "Education and infrastructure take years to raise capacity.",
+          "terms": [
+            "economics-3.7-supply-side"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q02",
+          "type": "tf",
+          "statement": "Supply-side policies can reduce inflation and unemployment at the same time in the long run.",
+          "answer": true,
+          "explanation": "Shifting LRAS right raises output while easing price pressure.",
+          "terms": [
+            "economics-3.7-supply-side"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q03",
+          "type": "mcq",
+          "prompt": "Which is a criticism of labour market reforms such as cutting the minimum wage?",
+          "options": [
+            "They may increase inequality and in-work poverty",
+            "They raise firms’ costs",
+            "They reduce flexibility",
+            "They raise union power"
+          ],
+          "answer": 0,
+          "explanation": "Flexibility may come at the cost of equity.",
+          "terms": [
+            "economics-3.7-labour-reform"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q04",
+          "type": "mcq",
+          "prompt": "Which policy affects BOTH AD and LRAS?",
+          "options": [
+            "A cut in interest rates",
+            "Deregulation of taxis",
+            "Government investment in infrastructure",
+            "A rise in VAT"
+          ],
+          "answer": 2,
+          "explanation": "Spending raises AD now; the finished infrastructure raises capacity later.",
+          "terms": [
+            "economics-3.7-infrastructure",
+            "economics-3.7-interventionist"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q05",
+          "type": "fill",
+          "text": "Removing rules that restrict competition is called ___.",
+          "answer": "deregulation",
+          "bank": [
+            "deregulation",
+            "privatisation",
+            "regulation",
+            "protection"
+          ],
+          "explanation": "Deregulation aims to lower costs and encourage entry.",
+          "terms": [
+            "economics-3.7-deregulation"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q06",
+          "type": "match",
+          "prompt": "Match each policy to a key weakness.",
+          "pairs": [
+            {
+              "left": "Monetary policy",
+              "right": "Weak when confidence is low"
+            },
+            {
+              "left": "Fiscal policy",
+              "right": "Political delays and debt"
+            },
+            {
+              "left": "Market-based supply side",
+              "right": "May worsen inequality"
+            },
+            {
+              "left": "Interventionist supply side",
+              "right": "Costly and slow to work"
+            }
+          ],
+          "explanation": "No single policy is best; a mix is usually used.",
+          "terms": [
+            "economics-3.7-supply-side",
+            "economics-3.7-market-based",
+            "economics-3.7-interventionist"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q07",
+          "type": "tf",
+          "statement": "Privatisation always improves efficiency.",
+          "answer": false,
+          "explanation": "A private monopoly may simply exploit market power; regulation and competition still matter.",
+          "terms": [
+            "economics-3.7-privatisation"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q08",
+          "type": "mcq",
+          "prompt": "An economy has high structural unemployment. Which policy mix is most suitable?",
+          "options": [
+            "Interest rate rises",
+            "A cut in infrastructure spending",
+            "Retraining schemes and support for labour mobility",
+            "Higher import tariffs"
+          ],
+          "answer": 2,
+          "explanation": "Structural problems need supply-side solutions.",
+          "terms": [
+            "economics-3.7-human-capital",
+            "economics-3.7-supply-side"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q09",
+          "type": "fill",
+          "text": "Policies that improve how markets work, such as tax cuts and deregulation, are ___-based.",
+          "answer": "market",
+          "bank": [
+            "market",
+            "state",
+            "demand",
+            "fiscal"
+          ],
+          "explanation": "They rely on incentives and competition.",
+          "terms": [
+            "economics-3.7-market-based"
+          ]
+        },
+        {
+          "id": "economics-3.7-2-q10",
+          "type": "order",
+          "prompt": "Order a strong 15-mark evaluation of a supply-side policy.",
+          "items": [
+            "Define the policy and explain how it works",
+            "Illustrate with an AD/AS diagram showing LRAS shifting",
+            "Weigh time lags, costs and stakeholders",
+            "Give a justified conclusion"
+          ],
+          "explanation": "Evaluation needs balance, context and a clear judgement.",
+          "terms": [
+            "economics-3.7-supply-side"
+          ]
+        }
+      ]
+    }
+  ]
+}

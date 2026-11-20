@@ -1,0 +1,160 @@
+[
+  {
+    "id": "economics-X-4-01",
+    "unit": "4",
+    "topics": ["economics-4.5-4.6", "economics-4.7-4.10"],
+    "paper": "P2",
+    "level": "HL",
+    "title": "Kestria's falling currency",
+    "stem": "Kestria is a middle-income country whose main exports are copper and coffee, and which imports most of its fuel and machinery. During 2025 world copper prices fell sharply while oil prices rose. Foreign investors withdrew funds, and the Kestrian shilling (KSD), which floats freely, fell from 1 KSD = US$0.50 to 1 KSD = US$0.40. The central bank argues that the depreciation will make exports more competitive, but importers warn of higher fuel prices and rising inflation.",
+    "data": {
+      "caption": "Kestria: selected balance of payments items and price indices, 2025",
+      "columns": ["Item", "Value"],
+      "rows": [
+        ["Exports of goods ($ bn)", "85"],
+        ["Imports of goods ($ bn)", "102"],
+        ["Exports of services ($ bn)", "30"],
+        ["Imports of services ($ bn)", "21"],
+        ["Net primary income ($ bn)", "−6"],
+        ["Net secondary income ($ bn)", "+4"],
+        ["Index of average export prices (2024 = 100)", "94"],
+        ["Index of average import prices (2024 = 100)", "108"]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Define",
+        "prompt": "Define the term depreciation.",
+        "marks": 2,
+        "markscheme": [
+          "a fall in the value of a currency in terms of another currency",
+          "in a floating exchange rate system / determined by market forces (distinguish from devaluation)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate Kestria's current account balance in 2025.",
+        "marks": 2,
+        "numeric": { "value": -10, "tolerance": 0.1, "unit": "$ bn" },
+        "markscheme": [
+          "(85 − 102) + (30 − 21) − 6 + 4",
+          "= −$10 bn (deficit)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate Kestria's terms of trade index for 2025.",
+        "marks": 2,
+        "numeric": { "value": 87.0, "tolerance": 0.1, "unit": "" },
+        "markscheme": [
+          "94 / 108 × 100",
+          "= 87.0 (a deterioration from 100)"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Calculate",
+        "prompt": "A machine costs US$200. Calculate the increase in its price in Kestrian shillings caused by the depreciation.",
+        "marks": 2,
+        "numeric": { "value": 100, "tolerance": 0.5, "unit": "KSD" },
+        "markscheme": [
+          "before: 200 / 0.50 = 400 KSD; after: 200 / 0.40 = 500 KSD",
+          "increase of 100 KSD (25%)"
+        ]
+      },
+      {
+        "label": "e",
+        "command": "Explain",
+        "prompt": "Using an exchange rate diagram, explain two reasons from the text for the depreciation of the shilling.",
+        "marks": 4,
+        "markscheme": [
+          "diagram: price of KSD in US$ on vertical axis, quantity of KSD; demand falls (D shifts left) and/or supply rises (S shifts right); new rate $0.40 below $0.50",
+          "lower copper prices reduce export revenue, so demand for KSD falls",
+          "higher oil prices raise import spending, so supply of KSD rises",
+          "foreign investors withdrawing funds sell KSD / supply rises (or demand falls)"
+        ]
+      },
+      {
+        "label": "f",
+        "command": "Explain",
+        "prompt": "Using a J-curve diagram, explain why the depreciation may worsen Kestria's current account before improving it.",
+        "marks": 4,
+        "markscheme": [
+          "diagram: current account balance against time, initial dip then rise above the starting level",
+          "in the short run demand for imports (fuel, machinery) and exports is price inelastic",
+          "so import spending in KSD rises more than export revenue: the balance worsens",
+          "over time volumes adjust; if the Marshall–Lerner condition holds (PEDx + PEDm > 1) the balance improves"
+        ]
+      },
+      {
+        "label": "g",
+        "command": "Evaluate",
+        "prompt": "Using information from the text/data and your knowledge of economics, evaluate the view that the depreciation will benefit the Kestrian economy.",
+        "marks": 10,
+        "markscheme": [
+          "definitions: depreciation, current account deficit, terms of trade",
+          "benefit: exports become cheaper in foreign currency, raising export volumes and AD/growth/jobs",
+          "benefit: imports dearer, encouraging import substitution",
+          "cost: fuel and machinery are essential imports with inelastic demand, causing cost-push inflation",
+          "cost: ToT have deteriorated (87.0), so each unit of exports buys fewer imports",
+          "commodity exports (copper, coffee) have inelastic supply in the short run, so volumes may not rise much",
+          "Marshall–Lerner / J-curve: current account may worsen before improving",
+          "foreign-currency debt becomes more expensive to service",
+          "stakeholders: exporters, importers, consumers, workers, government",
+          "justified conclusion, e.g. limited short-run benefit; diversification needed in the long run"
+        ],
+        "notes": "Worth 15 marks on the real paper."
+      }
+    ]
+  },
+  {
+    "id": "economics-X-4-02",
+    "unit": "4",
+    "topics": ["economics-4.1-4.4"],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Tariffs and domestic producers",
+    "stem": "Answer both parts of this extended-response question.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Explain",
+        "prompt": "Explain, using a diagram, the effects of a tariff on domestic producers, consumers and the government.",
+        "marks": 10,
+        "markscheme": [
+          "definition of a tariff (a tax on imported goods)",
+          "diagram: domestic D and S, world supply at Pw, tariff raises price to Pw + t",
+          "domestic production rises (Q1 to Q3) and domestic consumption falls (Q2 to Q4)",
+          "imports fall from Q2 − Q1 to Q4 − Q3",
+          "domestic producers gain: higher price and higher sales/revenue",
+          "consumers lose: pay higher prices, buy less, lose consumer surplus",
+          "government gains tariff revenue = t × new imports (rectangle shown)",
+          "welfare loss triangles identified (inefficient production and lost consumption)"
+        ],
+        "notes": "Full marks need an accurate, fully labelled diagram explained in the text."
+      },
+      {
+        "label": "b",
+        "command": "Evaluate",
+        "prompt": "Evaluate the view that developing countries should use trade protection to promote economic development.",
+        "marks": 10,
+        "markscheme": [
+          "definitions: trade protection, economic development",
+          "infant industry argument: temporary protection allows economies of scale and diversification",
+          "tariff revenue is important where tax collection is weak / large informal sector",
+          "protection can save jobs and reduce dependence on primary commodity exports",
+          "against: higher prices for consumers and firms using imported inputs",
+          "inefficiency: protected firms lack competitive pressure; protection may become permanent",
+          "risk of retaliation and breach of WTO commitments; lost export markets",
+          "real-world example, e.g. East Asian economies combining protection with export promotion",
+          "alternatives: export promotion, FDI, investment in human capital",
+          "justified conclusion: e.g. limited, temporary, targeted protection may help if combined with export-oriented strategies"
+        ],
+        "notes": "On the real paper part (b) is worth 15 marks."
+      }
+    ]
+  }
+]

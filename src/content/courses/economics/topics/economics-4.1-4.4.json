@@ -1,0 +1,631 @@
+{
+  "id": "economics-4.1-4.4",
+  "code": "4.1–4.4",
+  "unit": "4",
+  "title": "International trade, protection and economic integration",
+  "level": "SL",
+  "summary": "Trade lets countries specialise and gain from lower costs and wider choice. Governments still protect industries with tariffs, quotas and subsidies, and join trade agreements of deepening integration. HL covers comparative advantage, trade creation and diversion, and calculating the effects of protection.",
+  "keyterms": [
+    {
+      "id": "economics-4.1-4.4-free-trade",
+      "term": "Free trade",
+      "definition": "International trade without government barriers such as tariffs or quotas.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-specialisation",
+      "term": "Specialisation",
+      "definition": "Concentrating on producing a limited range of goods, which raises efficiency and enables trade.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-absolute-advantage",
+      "term": "Absolute advantage",
+      "definition": "When a country can produce more of a good than another with the same resources.",
+      "hl": true
+    },
+    {
+      "id": "economics-4.1-4.4-comparative-advantage",
+      "term": "Comparative advantage",
+      "definition": "When a country can produce a good at a lower opportunity cost than another country.",
+      "hl": true
+    },
+    {
+      "id": "economics-4.1-4.4-tariff",
+      "term": "Tariff",
+      "definition": "A tax on imported goods, raising their domestic price.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-quota",
+      "term": "Import quota",
+      "definition": "A legal limit on the quantity of a good that can be imported.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-production-subsidy",
+      "term": "Production subsidy",
+      "definition": "A government payment to domestic producers that lowers their costs so they compete with imports.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-export-subsidy",
+      "term": "Export subsidy",
+      "definition": "A payment per unit to firms that export, making exports cheaper abroad.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-admin-barriers",
+      "term": "Administrative barriers",
+      "definition": "Rules, standards and paperwork that make importing more difficult or costly.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-infant-industry",
+      "term": "Infant industry argument",
+      "definition": "The case for temporarily protecting new domestic industries until they gain economies of scale and can compete.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-dumping",
+      "term": "Dumping",
+      "definition": "Selling exports abroad at a price below the cost of production or below the domestic price.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-wto",
+      "term": "World Trade Organization (WTO)",
+      "definition": "The international body that sets rules for trade between members, negotiates liberalisation and settles trade disputes.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-fta",
+      "term": "Free trade area",
+      "definition": "Members remove trade barriers between themselves but keep their own barriers against non-members.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-customs-union",
+      "term": "Customs union",
+      "definition": "A free trade area with a common external tariff against non-members.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-common-market",
+      "term": "Common market",
+      "definition": "A customs union that also allows free movement of labour and capital.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-monetary-union",
+      "term": "Monetary union",
+      "definition": "A common market with a single currency and common monetary policy, e.g. the eurozone.",
+      "hl": false
+    },
+    {
+      "id": "economics-4.1-4.4-trade-creation",
+      "term": "Trade creation",
+      "definition": "When joining a trading bloc shifts production from a higher-cost to a lower-cost member producer.",
+      "hl": true
+    },
+    {
+      "id": "economics-4.1-4.4-trade-diversion",
+      "term": "Trade diversion",
+      "definition": "When joining a trading bloc shifts imports from a low-cost non-member to a higher-cost member.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "economics-4.1-4.4-1",
+      "title": "Gains from trade and economic integration",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-4.1-4.4-1-q01",
+          "type": "mcq",
+          "prompt": "Which is a benefit of international trade?",
+          "options": [
+            "Higher prices for consumers",
+            "Less competition for domestic firms",
+            "Smaller markets for firms",
+            "Lower prices and greater choice for consumers"
+          ],
+          "answer": 3,
+          "explanation": "Trade widens markets, raises competition and allows economies of scale.",
+          "terms": [
+            "economics-4.1-4.4-free-trade"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q02",
+          "type": "tf",
+          "statement": "Trade allows firms to achieve economies of scale by selling to larger markets.",
+          "answer": true,
+          "explanation": "Longer production runs lower average costs.",
+          "terms": [
+            "economics-4.1-4.4-specialisation"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q03",
+          "type": "order",
+          "prompt": "Order these forms of integration from least to most integrated.",
+          "items": [
+            "Free trade area",
+            "Customs union",
+            "Common market",
+            "Monetary union"
+          ],
+          "explanation": "Each step adds a feature: common external tariff, free factor movement, single currency.",
+          "terms": [
+            "economics-4.1-4.4-fta",
+            "economics-4.1-4.4-customs-union",
+            "economics-4.1-4.4-common-market",
+            "economics-4.1-4.4-monetary-union"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q04",
+          "type": "match",
+          "prompt": "Match each form of integration to its key feature.",
+          "pairs": [
+            {
+              "left": "Free trade area",
+              "right": "Own external tariffs"
+            },
+            {
+              "left": "Customs union",
+              "right": "Common external tariff"
+            },
+            {
+              "left": "Common market",
+              "right": "Free movement of labour and capital"
+            },
+            {
+              "left": "Monetary union",
+              "right": "Single currency"
+            }
+          ],
+          "explanation": "Deeper integration means giving up more national control.",
+          "terms": [
+            "economics-4.1-4.4-fta",
+            "economics-4.1-4.4-customs-union",
+            "economics-4.1-4.4-common-market",
+            "economics-4.1-4.4-monetary-union"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q05",
+          "type": "fill",
+          "text": "A customs union is a free trade area with a common ___ tariff.",
+          "answer": "external",
+          "bank": [
+            "internal",
+            "import",
+            "zero",
+            "external"
+          ],
+          "explanation": "Members agree one tariff on goods from outside the bloc.",
+          "terms": [
+            "economics-4.1-4.4-customs-union"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q06",
+          "type": "mcq",
+          "prompt": "What is a main function of the WTO?",
+          "options": [
+            "Setting interest rates",
+            "Settling trade disputes between member countries",
+            "Lending to countries in crisis",
+            "Running a single currency"
+          ],
+          "answer": 1,
+          "explanation": "The WTO administers trade rules and resolves disputes.",
+          "terms": [
+            "economics-4.1-4.4-wto"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q07",
+          "type": "tf",
+          "statement": "Members of a monetary union lose the ability to set their own interest rates.",
+          "answer": true,
+          "explanation": "A single central bank sets one rate for all members.",
+          "terms": [
+            "economics-4.1-4.4-monetary-union"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q08",
+          "type": "mcq",
+          "prompt": "Which is a disadvantage of joining a trading bloc?",
+          "options": [
+            "Larger markets",
+            "Loss of some national sovereignty over trade policy",
+            "More competition",
+            "Lower prices"
+          ],
+          "answer": 1,
+          "explanation": "Members must follow common rules and cannot set their own policy freely.",
+          "terms": [
+            "economics-4.1-4.4-customs-union"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q09",
+          "type": "fill",
+          "text": "Concentrating on producing a narrow range of goods and trading for the rest is ___.",
+          "answer": "specialisation",
+          "bank": [
+            "diversification",
+            "protection",
+            "integration",
+            "specialisation"
+          ],
+          "explanation": "Specialisation raises efficiency but increases dependence on others.",
+          "terms": [
+            "economics-4.1-4.4-specialisation"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-1-q10",
+          "type": "mcq",
+          "prompt": "A bilateral trade agreement is one between…",
+          "options": [
+            "all WTO members",
+            "countries in one region only",
+            "two countries",
+            "a country and a firm"
+          ],
+          "answer": 2,
+          "explanation": "Bilateral means two parties; multilateral means many.",
+          "terms": [
+            "economics-4.1-4.4-fta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-4.1-4.4-2",
+      "title": "Trade protection and its arguments",
+      "hl": false,
+      "questions": [
+        {
+          "id": "economics-4.1-4.4-2-q01",
+          "type": "mcq",
+          "prompt": "What is the effect of a tariff on domestic producers?",
+          "options": [
+            "They sell more at a higher price",
+            "They sell less at a lower price",
+            "They are unaffected",
+            "They must pay the tariff"
+          ],
+          "answer": 0,
+          "explanation": "The tariff raises the domestic price, so domestic supply rises.",
+          "terms": [
+            "economics-4.1-4.4-tariff"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q02",
+          "type": "tf",
+          "statement": "An import quota raises government revenue in the same way as a tariff.",
+          "answer": false,
+          "explanation": "A quota limits quantity; any extra price gain usually goes to importers or foreign firms holding licences.",
+          "terms": [
+            "economics-4.1-4.4-quota"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q03",
+          "type": "match",
+          "prompt": "Match each type of protection to its description.",
+          "pairs": [
+            {
+              "left": "Tariff",
+              "right": "Tax on imports"
+            },
+            {
+              "left": "Quota",
+              "right": "Limit on import quantity"
+            },
+            {
+              "left": "Production subsidy",
+              "right": "Payment that lowers domestic costs"
+            },
+            {
+              "left": "Administrative barrier",
+              "right": "Strict standards and paperwork"
+            }
+          ],
+          "explanation": "Each makes imports less competitive in a different way.",
+          "terms": [
+            "economics-4.1-4.4-tariff",
+            "economics-4.1-4.4-quota",
+            "economics-4.1-4.4-production-subsidy",
+            "economics-4.1-4.4-admin-barriers"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q04",
+          "type": "fill",
+          "text": "Selling exports below the cost of production is called ___.",
+          "answer": "dumping",
+          "bank": [
+            "subsidising",
+            "protection",
+            "diversion",
+            "dumping"
+          ],
+          "explanation": "Countries may respond with anti-dumping duties.",
+          "terms": [
+            "economics-4.1-4.4-dumping"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q05",
+          "type": "mcq",
+          "prompt": "Which is the infant industry argument?",
+          "options": [
+            "New industries need temporary protection until they can compete",
+            "Old industries should be protected forever",
+            "All trade should be banned",
+            "Imports should be subsidised"
+          ],
+          "answer": 0,
+          "explanation": "Critics say protection may become permanent and remove the pressure to become efficient.",
+          "terms": [
+            "economics-4.1-4.4-infant-industry"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q06",
+          "type": "mcq",
+          "prompt": "Who loses from a tariff on imported steel?",
+          "options": [
+            "Domestic steel producers",
+            "The government",
+            "Domestic car makers who buy steel",
+            "Domestic steelworkers"
+          ],
+          "answer": 2,
+          "explanation": "Steel users face higher input costs, raising their prices.",
+          "terms": [
+            "economics-4.1-4.4-tariff"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q07",
+          "type": "tf",
+          "statement": "Protection can lead to retaliation that harms a country’s exporters.",
+          "answer": true,
+          "explanation": "Trade wars hurt export industries on both sides.",
+          "terms": [
+            "economics-4.1-4.4-tariff"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q08",
+          "type": "mcq",
+          "prompt": "Which is the strongest economic argument AGAINST protection?",
+          "options": [
+            "It always raises unemployment immediately",
+            "It lowers domestic prices",
+            "It causes a misallocation of resources and higher prices for consumers",
+            "It increases consumer choice"
+          ],
+          "answer": 2,
+          "explanation": "Inefficient domestic firms are supported and consumers pay more.",
+          "terms": [
+            "economics-4.1-4.4-free-trade"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q09",
+          "type": "fill",
+          "text": "A payment per unit to domestic firms that sell abroad is an ___ subsidy.",
+          "answer": "export",
+          "bank": [
+            "export",
+            "import",
+            "production",
+            "consumption"
+          ],
+          "explanation": "Export subsidies are generally banned under WTO rules except in limited cases.",
+          "terms": [
+            "economics-4.1-4.4-export-subsidy"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-2-q10",
+          "type": "order",
+          "prompt": "Order the effects of a tariff in the domestic market.",
+          "items": [
+            "Tariff raises the price of imports",
+            "Domestic price rises",
+            "Domestic production rises and consumption falls",
+            "Imports fall and government gains revenue"
+          ],
+          "explanation": "There is also a welfare loss from inefficient production and lost consumption.",
+          "terms": [
+            "economics-4.1-4.4-tariff"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics-4.1-4.4-3",
+      "title": "HL: Comparative advantage and the effects of protection",
+      "hl": true,
+      "questions": [
+        {
+          "id": "economics-4.1-4.4-3-q01",
+          "type": "mcq",
+          "prompt": "With one worker-day, Country A makes 10 wheat or 5 cloth; Country B makes 6 wheat or 2 cloth. Which has comparative advantage in cloth?",
+          "options": [
+            "Country B: it is less productive",
+            "Country A: 1 cloth costs 2 wheat versus 3 wheat in B",
+            "Country A in both goods",
+            "Neither country"
+          ],
+          "answer": 1,
+          "explanation": "A’s opportunity cost of cloth (2 wheat) is lower than B’s (3 wheat).",
+          "terms": [
+            "economics-4.1-4.4-comparative-advantage"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q02",
+          "type": "tf",
+          "statement": "In the example above, Country A has an absolute advantage in both goods.",
+          "answer": true,
+          "explanation": "10 > 6 wheat and 5 > 2 cloth per worker-day.",
+          "terms": [
+            "economics-4.1-4.4-absolute-advantage"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q03",
+          "type": "fill",
+          "text": "In the example above, B’s opportunity cost of 1 wheat is ___ of a unit of cloth.",
+          "answer": "1/3",
+          "accept": [
+            "0.33",
+            "⅓"
+          ],
+          "bank": [
+            "1/2",
+            "3",
+            "2",
+            "1/3"
+          ],
+          "explanation": "B gives up 2 cloth for 6 wheat, so 1 wheat costs 1/3 cloth; in A it costs 1/2 cloth. B should specialise in wheat.",
+          "terms": [
+            "economics-4.1-4.4-comparative-advantage"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q04",
+          "type": "mcq",
+          "prompt": "World price $10, tariff $2. At $10 domestic firms supply 40 and consumers demand 100; at $12 supply is 50 and demand 90. What is the fall in imports?",
+          "options": [
+            "10 units",
+            "40 units",
+            "60 units",
+            "20 units"
+          ],
+          "answer": 3,
+          "explanation": "Imports fall from 60 (100 − 40) to 40 (90 − 50).",
+          "terms": [
+            "economics-4.1-4.4-tariff"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q05",
+          "type": "mcq",
+          "prompt": "In the same example, what is the tariff revenue?",
+          "options": [
+            "$120",
+            "$80",
+            "$200",
+            "$20"
+          ],
+          "answer": 1,
+          "explanation": "Revenue = $2 × 40 imports = $80.",
+          "terms": [
+            "economics-4.1-4.4-tariff"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q06",
+          "type": "fill",
+          "text": "In the same example, domestic producers’ revenue rises from $400 to $___.",
+          "answer": "600",
+          "bank": [
+            "500",
+            "480",
+            "600",
+            "1080"
+          ],
+          "explanation": "$12 × 50 = $600.",
+          "terms": [
+            "economics-4.1-4.4-tariff"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q07",
+          "type": "tf",
+          "statement": "Trade diversion occurs when a bloc member switches imports from a cheaper non-member to a dearer member.",
+          "answer": true,
+          "explanation": "The common external tariff makes the outside supplier seem dearer, reducing efficiency.",
+          "terms": [
+            "economics-4.1-4.4-trade-diversion"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q08",
+          "type": "mcq",
+          "prompt": "Country X joins a customs union and now imports cars from a lower-cost member instead of producing them at high cost itself. This is…",
+          "options": [
+            "trade diversion",
+            "dumping",
+            "a quota",
+            "trade creation"
+          ],
+          "answer": 3,
+          "explanation": "Production moves to a more efficient producer, raising welfare.",
+          "terms": [
+            "economics-4.1-4.4-trade-creation"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q09",
+          "type": "match",
+          "prompt": "Match each theory to its idea.",
+          "pairs": [
+            {
+              "left": "Absolute advantage",
+              "right": "More output from the same resources"
+            },
+            {
+              "left": "Comparative advantage",
+              "right": "Lower opportunity cost"
+            },
+            {
+              "left": "Trade creation",
+              "right": "Shift to lower-cost member supplier"
+            },
+            {
+              "left": "Trade diversion",
+              "right": "Shift from cheaper outsider to member"
+            }
+          ],
+          "explanation": "Comparative advantage, not absolute advantage, determines the gains from trade.",
+          "terms": [
+            "economics-4.1-4.4-absolute-advantage",
+            "economics-4.1-4.4-comparative-advantage",
+            "economics-4.1-4.4-trade-creation",
+            "economics-4.1-4.4-trade-diversion"
+          ]
+        },
+        {
+          "id": "economics-4.1-4.4-3-q10",
+          "type": "order",
+          "prompt": "Order the steps to identify comparative advantage.",
+          "items": [
+            "Find each country’s output of both goods",
+            "Calculate the opportunity cost of each good in each country",
+            "Compare opportunity costs",
+            "Each country specialises in the good with the lower opportunity cost"
+          ],
+          "explanation": "Gains from trade arise if the terms of trade lie between the two opportunity cost ratios.",
+          "terms": [
+            "economics-4.1-4.4-comparative-advantage"
+          ]
+        }
+      ]
+    }
+  ]
+}
