@@ -1,0 +1,411 @@
+{
+  "id": "physics-D.4",
+  "code": "D.4",
+  "unit": "D",
+  "title": "Induction",
+  "level": "HL",
+  "summary": "Magnetic flux and flux linkage, Faraday’s and Lenz’s laws, induced e.m.f. in moving conductors and rotating coils, and how generators produce alternating current.",
+  "keyterms": [
+    {
+      "id": "physics-d.4-flux",
+      "term": "Magnetic flux",
+      "definition": "Φ = BA cos θ, where θ is the angle between B and the normal to the area; unit weber (Wb).",
+      "hl": true
+    },
+    {
+      "id": "physics-d.4-flux-linkage",
+      "term": "Flux linkage",
+      "definition": "Total flux through a coil of N turns: NΦ.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.4-faradays-law",
+      "term": "Faraday’s law",
+      "definition": "Induced e.m.f. equals the rate of change of flux linkage: ε = −NΔΦ/Δt.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.4-lenzs-law",
+      "term": "Lenz’s law",
+      "definition": "The induced current flows so as to oppose the change that produces it; a consequence of energy conservation.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.4-motional-emf",
+      "term": "Motional e.m.f.",
+      "definition": "E.m.f. induced in a rod of length L moving at v through field B: ε = BvL.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.4-generator",
+      "term": "Generator",
+      "definition": "A coil rotating in a magnetic field, producing a sinusoidal alternating e.m.f.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.4-eddy-currents",
+      "term": "Eddy currents",
+      "definition": "Induced currents circulating in bulk conductors, which oppose motion and dissipate energy.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.4-weber",
+      "term": "Weber",
+      "definition": "Unit of magnetic flux: 1 Wb = 1 T m².",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-D.4-1",
+      "title": "Flux, Faraday and Lenz",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-D.4-1-q01",
+          "type": "fill",
+          "text": "A 0.40 T field passes perpendicularly through a loop of area 0.050 m². The flux is ___ Wb.",
+          "answer": "0.020",
+          "accept": [
+            "0.02"
+          ],
+          "bank": [
+            "0.020",
+            "0.20",
+            "8.0",
+            "0.0020"
+          ],
+          "explanation": "Φ = BA = 0.40 × 0.050 = 0.020 Wb.",
+          "terms": [
+            "physics-d.4-flux",
+            "physics-d.4-weber"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q02",
+          "type": "mcq",
+          "prompt": "A 200-turn coil has its flux changed from 0.020 Wb to zero in 0.10 s. The average induced e.m.f. is",
+          "options": [
+            "0.20 V",
+            "4.0 V",
+            "40 V",
+            "2.0 V"
+          ],
+          "answer": 2,
+          "explanation": "ε = NΔΦ/Δt = 200 × 0.020 / 0.10 = 40 V.",
+          "terms": [
+            "physics-d.4-faradays-law",
+            "physics-d.4-flux-linkage"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q03",
+          "type": "tf",
+          "statement": "A steady, unchanging magnetic field through a stationary coil induces an e.m.f.",
+          "answer": false,
+          "explanation": "An e.m.f. is induced only when the flux linkage changes.",
+          "terms": [
+            "physics-d.4-faradays-law"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q04",
+          "type": "mcq",
+          "prompt": "A magnet’s north pole is pushed into a coil. By Lenz’s law, the end of the coil nearest the magnet becomes",
+          "options": [
+            "a north pole, repelling the magnet",
+            "a south pole, attracting the magnet",
+            "unmagnetized",
+            "alternately north and south"
+          ],
+          "answer": 0,
+          "explanation": "The induced current opposes the change (the approach), so a north pole forms and repels the magnet.",
+          "terms": [
+            "physics-d.4-lenzs-law"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q05",
+          "type": "fill",
+          "text": "A 0.30 m rod moves at 5.0 m s⁻¹ perpendicular to a 0.20 T field. The induced e.m.f. is ___ V.",
+          "answer": "0.30",
+          "accept": [
+            "0.3"
+          ],
+          "bank": [
+            "0.30",
+            "3.0",
+            "7.5",
+            "0.075"
+          ],
+          "explanation": "ε = BvL = 0.20 × 5.0 × 0.30 = 0.30 V.",
+          "terms": [
+            "physics-d.4-motional-emf"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q06",
+          "type": "match",
+          "prompt": "Match each idea to its description.",
+          "pairs": [
+            {
+              "left": "Faraday’s law",
+              "right": "Size of the induced e.m.f."
+            },
+            {
+              "left": "Lenz’s law",
+              "right": "Direction of the induced current"
+            },
+            {
+              "left": "Flux",
+              "right": "BA cos θ"
+            },
+            {
+              "left": "Flux linkage",
+              "right": "NΦ"
+            }
+          ],
+          "explanation": "Faraday gives the magnitude; the minus sign (Lenz) gives the direction.",
+          "terms": [
+            "physics-d.4-faradays-law",
+            "physics-d.4-lenzs-law",
+            "physics-d.4-flux",
+            "physics-d.4-flux-linkage"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q07",
+          "type": "tf",
+          "statement": "Lenz’s law is a consequence of conservation of energy.",
+          "answer": true,
+          "explanation": "If the induced current aided the change, energy would be created from nothing.",
+          "terms": [
+            "physics-d.4-lenzs-law"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q08",
+          "type": "mcq",
+          "prompt": "Which change would NOT increase the e.m.f. induced by moving a magnet into a coil?",
+          "options": [
+            "Moving the magnet faster",
+            "Using a stronger magnet",
+            "Using more turns",
+            "Using thicker wire with the same turns"
+          ],
+          "answer": 3,
+          "explanation": "ε depends on N and the rate of change of flux; wire thickness changes resistance (current) but not e.m.f.",
+          "terms": [
+            "physics-d.4-faradays-law"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q09",
+          "type": "mcq",
+          "prompt": "A copper disc swinging between magnet poles stops quickly. This is due to",
+          "options": [
+            "friction with air",
+            "eddy currents opposing the motion",
+            "gravity",
+            "electrostatic attraction"
+          ],
+          "answer": 1,
+          "explanation": "Induced eddy currents oppose the relative motion (Lenz), transferring kinetic energy to internal energy; used in magnetic braking.",
+          "terms": [
+            "physics-d.4-eddy-currents",
+            "physics-d.4-lenzs-law"
+          ]
+        },
+        {
+          "id": "physics-D.4-1-q10",
+          "type": "order",
+          "prompt": "Order the reasoning for a falling magnet slowing in a copper tube.",
+          "items": [
+            "The magnet falls and the flux through the tube changes",
+            "E.m.f.s are induced in the copper",
+            "Eddy currents flow in the tube",
+            "Their magnetic field opposes the magnet’s motion"
+          ],
+          "explanation": "Energy is dissipated in the tube, so the magnet reaches a low terminal speed.",
+          "terms": [
+            "physics-d.4-eddy-currents",
+            "physics-d.4-faradays-law",
+            "physics-d.4-lenzs-law"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-D.4-2",
+      "title": "Generators and alternating e.m.f.",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-D.4-2-q01",
+          "type": "mcq",
+          "prompt": "A coil rotates at constant rate in a uniform field. The induced e.m.f. is maximum when the plane of the coil is",
+          "options": [
+            "perpendicular to the field",
+            "parallel to the field",
+            "at 45° to the field",
+            "never maximum"
+          ],
+          "answer": 1,
+          "explanation": "When the plane is parallel to B the flux is zero but changing fastest, so ε is maximum.",
+          "terms": [
+            "physics-d.4-generator",
+            "physics-d.4-faradays-law"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q02",
+          "type": "tf",
+          "statement": "When the flux through a rotating coil is maximum, the induced e.m.f. is zero.",
+          "answer": true,
+          "explanation": "At maximum flux the rate of change of flux is momentarily zero.",
+          "terms": [
+            "physics-d.4-generator",
+            "physics-d.4-flux"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q03",
+          "type": "fill",
+          "text": "If a generator coil’s rotation frequency doubles, the peak e.m.f. is multiplied by ___.",
+          "answer": "2",
+          "bank": [
+            "2",
+            "4",
+            "1",
+            "½"
+          ],
+          "explanation": "Peak ε = NBAω, so doubling ω doubles the peak e.m.f. (and the frequency of the a.c.).",
+          "terms": [
+            "physics-d.4-generator"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q04",
+          "type": "mcq",
+          "prompt": "A graph of flux linkage against time for a rotating coil is a sine curve. The e.m.f.–time graph is",
+          "options": [
+            "identical",
+            "a cosine curve (90° out of phase), with minus sign",
+            "a straight line",
+            "a square wave"
+          ],
+          "answer": 1,
+          "explanation": "ε = −d(NΦ)/dt; the derivative of a sine is a cosine, shifted by a quarter period.",
+          "terms": [
+            "physics-d.4-faradays-law",
+            "physics-d.4-generator"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q05",
+          "type": "match",
+          "prompt": "Match each feature to its effect.",
+          "pairs": [
+            {
+              "left": "Slip rings",
+              "right": "Keep the output alternating"
+            },
+            {
+              "left": "Split-ring commutator",
+              "right": "Gives a one-direction output (d.c.)"
+            },
+            {
+              "left": "More turns",
+              "right": "Larger peak e.m.f."
+            },
+            {
+              "left": "Faster rotation",
+              "right": "Larger peak e.m.f. and higher frequency"
+            }
+          ],
+          "explanation": "Generator design choices change the output.",
+          "terms": [
+            "physics-d.4-generator"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q06",
+          "type": "mcq",
+          "prompt": "A rectangular coil of 50 turns and area 0.020 m² rotates at 10 rad s⁻¹ in a 0.50 T field. The peak e.m.f. is",
+          "options": [
+            "5.0 V",
+            "0.50 V",
+            "50 V",
+            "10 V"
+          ],
+          "answer": 0,
+          "explanation": "ε₀ = NBAω = 50 × 0.50 × 0.020 × 10 = 5.0 V.",
+          "terms": [
+            "physics-d.4-generator"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q07",
+          "type": "tf",
+          "statement": "A bigger current drawn from a generator makes it harder to turn.",
+          "answer": true,
+          "explanation": "The larger induced current produces a larger opposing force (Lenz), so more work is needed: electrical energy comes from mechanical work.",
+          "terms": [
+            "physics-d.4-lenzs-law",
+            "physics-d.4-generator"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q08",
+          "type": "fill",
+          "text": "The unit T m² is called the ___.",
+          "answer": "weber",
+          "bank": [
+            "weber",
+            "henry",
+            "tesla",
+            "volt"
+          ],
+          "explanation": "Magnetic flux Φ = BA is measured in webers.",
+          "terms": [
+            "physics-d.4-weber",
+            "physics-d.4-flux"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q09",
+          "type": "mcq",
+          "prompt": "A rod is pulled across rails in a magnetic field, completing a circuit. The force needed to keep it at constant speed",
+          "options": [
+            "is zero",
+            "equals the magnetic force on the induced current",
+            "decreases with speed",
+            "depends only on its mass"
+          ],
+          "answer": 1,
+          "explanation": "The induced current gives a force BIL opposing motion; at constant velocity the pull balances it, and its power equals the electrical power.",
+          "terms": [
+            "physics-d.4-motional-emf",
+            "physics-d.4-lenzs-law"
+          ]
+        },
+        {
+          "id": "physics-D.4-2-q10",
+          "type": "mcq",
+          "prompt": "Flux through a coil falls linearly from 0.06 Wb to 0.02 Wb in 0.020 s. For a 10-turn coil the e.m.f. is",
+          "options": [
+            "20 V",
+            "2.0 V",
+            "0.8 V",
+            "200 V"
+          ],
+          "answer": 0,
+          "explanation": "ε = NΔΦ/Δt = 10 × 0.04/0.020 = 20 V.",
+          "terms": [
+            "physics-d.4-faradays-law"
+          ]
+        }
+      ]
+    }
+  ]
+}

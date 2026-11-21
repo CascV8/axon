@@ -1,0 +1,422 @@
+{
+  "id": "physics-A.3",
+  "code": "A.3",
+  "unit": "A",
+  "title": "Work, energy and power",
+  "level": "SL",
+  "summary": "Work as energy transfer, kinetic, gravitational and elastic potential energy, conservation of energy, power and efficiency, and the energy density of fuels.",
+  "keyterms": [
+    {
+      "id": "physics-a.3-work",
+      "term": "Work done",
+      "definition": "Energy transferred when a force moves its point of application: W = Fs cos θ, in joules.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-kinetic-energy",
+      "term": "Kinetic energy",
+      "definition": "Energy of a moving mass: E_k = ½mv² = p²/2m.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-gpe",
+      "term": "Gravitational potential energy",
+      "definition": "Energy stored due to position in a gravitational field; near Earth, ΔE_p = mgΔh.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-elastic-pe",
+      "term": "Elastic potential energy",
+      "definition": "Energy stored in a stretched or compressed spring: E_H = ½kΔx².",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-conservation-of-energy",
+      "term": "Conservation of energy",
+      "definition": "Energy cannot be created or destroyed, only transferred or transformed; the total in an isolated system is constant.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-power",
+      "term": "Power",
+      "definition": "Rate of doing work or transferring energy, P = ΔW/Δt; for a constant force, P = Fv. Unit: watt.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-efficiency",
+      "term": "Efficiency",
+      "definition": "Useful energy (or power) output divided by total energy (or power) input; always less than 1 in real devices.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-energy-density",
+      "term": "Energy density",
+      "definition": "Energy released per unit volume of a fuel, in J m⁻³.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-specific-energy",
+      "term": "Specific energy",
+      "definition": "Energy released per unit mass of a fuel, in J kg⁻¹.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.3-sankey",
+      "term": "Sankey diagram",
+      "definition": "A flow diagram whose arrow widths are proportional to energy, showing useful output and dissipated energy.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-A.3-1",
+      "title": "Work and forms of energy",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-A.3-1-q01",
+          "type": "mcq",
+          "prompt": "A 40 N force pulls a sledge 5.0 m along level ground; the rope is at 60° to the horizontal. How much work does the force do?",
+          "options": [
+            "200 J",
+            "173 J",
+            "100 J",
+            "40 J"
+          ],
+          "answer": 2,
+          "explanation": "W = Fs cos θ = 40 × 5.0 × cos 60° = 100 J.",
+          "terms": [
+            "physics-a.3-work"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q02",
+          "type": "tf",
+          "statement": "A person holding a heavy box stationary does no mechanical work on it.",
+          "answer": true,
+          "explanation": "The box does not move, so the displacement is zero and W = Fs cos θ = 0, even though muscles use chemical energy.",
+          "terms": [
+            "physics-a.3-work"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q03",
+          "type": "fill",
+          "text": "A 1200 kg car travels at 20 m s⁻¹. Its kinetic energy is ___ kJ.",
+          "answer": "240",
+          "bank": [
+            "240",
+            "24",
+            "480",
+            "12"
+          ],
+          "explanation": "E_k = ½mv² = ½ × 1200 × 400 = 240 000 J = 240 kJ.",
+          "terms": [
+            "physics-a.3-kinetic-energy"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q04",
+          "type": "mcq",
+          "prompt": "If the speed of a car doubles, its kinetic energy",
+          "options": [
+            "doubles",
+            "is multiplied by 4",
+            "is multiplied by 8",
+            "halves"
+          ],
+          "answer": 1,
+          "explanation": "E_k ∝ v², so doubling v quadruples E_k, which is why braking distances rise sharply with speed.",
+          "terms": [
+            "physics-a.3-kinetic-energy"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q05",
+          "type": "fill",
+          "text": "A spring of stiffness 200 N m⁻¹ is stretched by 0.10 m. The elastic potential energy stored is ___ J.",
+          "answer": "1.0",
+          "accept": [
+            "1"
+          ],
+          "bank": [
+            "1.0",
+            "2.0",
+            "10",
+            "20"
+          ],
+          "explanation": "E_H = ½kΔx² = ½ × 200 × 0.010 = 1.0 J.",
+          "terms": [
+            "physics-a.3-elastic-pe"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q06",
+          "type": "mcq",
+          "prompt": "A 2.0 kg book is lifted from the floor onto a shelf 1.5 m high (g = 9.8 m s⁻²). Its gain in GPE is",
+          "options": [
+            "3.0 J",
+            "29 J",
+            "14.7 J",
+            "1.3 J"
+          ],
+          "answer": 1,
+          "explanation": "ΔE_p = mgΔh = 2.0 × 9.8 × 1.5 = 29.4 J ≈ 29 J.",
+          "terms": [
+            "physics-a.3-gpe"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q07",
+          "type": "match",
+          "prompt": "Match each expression to the energy it gives.",
+          "pairs": [
+            {
+              "left": "½mv²",
+              "right": "Kinetic energy"
+            },
+            {
+              "left": "mgΔh",
+              "right": "Change in gravitational PE"
+            },
+            {
+              "left": "½kΔx²",
+              "right": "Elastic potential energy"
+            },
+            {
+              "left": "Fs cos θ",
+              "right": "Work done by a force"
+            }
+          ],
+          "explanation": "Each expression gives a quantity measured in joules.",
+          "terms": [
+            "physics-a.3-kinetic-energy",
+            "physics-a.3-gpe",
+            "physics-a.3-elastic-pe",
+            "physics-a.3-work"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q08",
+          "type": "tf",
+          "statement": "The area under a force–extension graph equals the work done stretching the object.",
+          "answer": true,
+          "explanation": "Work = force × displacement summed over the extension, which is the area under the graph; for a spring this is ½kx².",
+          "terms": [
+            "physics-a.3-work",
+            "physics-a.3-elastic-pe"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q09",
+          "type": "mcq",
+          "prompt": "A ball of mass m has momentum p. Its kinetic energy is",
+          "options": [
+            "p²/2m",
+            "p/2m",
+            "2mp²",
+            "mp²/2"
+          ],
+          "answer": 0,
+          "explanation": "E_k = ½mv² and p = mv, so E_k = p²/2m.",
+          "terms": [
+            "physics-a.3-kinetic-energy"
+          ]
+        },
+        {
+          "id": "physics-A.3-1-q10",
+          "type": "mcq",
+          "prompt": "Friction does work on a sliding block. What happens to this energy?",
+          "options": [
+            "It is destroyed",
+            "It becomes internal (thermal) energy of the block and surface",
+            "It becomes GPE",
+            "It is stored as elastic energy"
+          ],
+          "answer": 1,
+          "explanation": "Energy is conserved: work against friction is dissipated as internal energy, raising the temperature.",
+          "terms": [
+            "physics-a.3-conservation-of-energy",
+            "physics-a.3-work"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-A.3-2",
+      "title": "Conservation of energy, power and efficiency",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-A.3-2-q01",
+          "type": "mcq",
+          "prompt": "A stone falls from rest through 5.0 m (g = 9.8 m s⁻², no air resistance). What is its speed at the bottom?",
+          "options": [
+            "9.9 m s⁻¹",
+            "49 m s⁻¹",
+            "7.0 m s⁻¹",
+            "98 m s⁻¹"
+          ],
+          "answer": 0,
+          "explanation": "mgh = ½mv², so v = √(2gh) = √98 ≈ 9.9 m s⁻¹. Mass cancels.",
+          "terms": [
+            "physics-a.3-conservation-of-energy",
+            "physics-a.3-gpe",
+            "physics-a.3-kinetic-energy"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q02",
+          "type": "fill",
+          "text": "A motor lifts a 50 kg load through 4.0 m in 8.0 s (g = 9.8 m s⁻²). The useful power output is ___ W.",
+          "answer": "245",
+          "accept": [
+            "250",
+            "245 W"
+          ],
+          "bank": [
+            "245",
+            "1960",
+            "25",
+            "98"
+          ],
+          "explanation": "P = mgh/t = 50 × 9.8 × 4.0 / 8.0 = 245 W.",
+          "terms": [
+            "physics-a.3-power"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q03",
+          "type": "tf",
+          "statement": "A car moving at constant velocity on a level road needs no engine power.",
+          "answer": false,
+          "explanation": "Drag and rolling resistance oppose motion; the engine must supply P = Fv to balance them.",
+          "terms": [
+            "physics-a.3-power"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q04",
+          "type": "mcq",
+          "prompt": "A car’s engine supplies a driving force of 600 N at a steady 25 m s⁻¹. What is the useful power?",
+          "options": [
+            "24 W",
+            "15 kW",
+            "625 W",
+            "1.5 kW"
+          ],
+          "answer": 1,
+          "explanation": "P = Fv = 600 × 25 = 15 000 W = 15 kW.",
+          "terms": [
+            "physics-a.3-power"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q05",
+          "type": "fill",
+          "text": "A lamp takes in 60 J of electrical energy and gives out 9 J as light. Its efficiency is ___%.",
+          "answer": "15",
+          "bank": [
+            "15",
+            "85",
+            "9",
+            "51"
+          ],
+          "explanation": "Efficiency = useful output / input = 9/60 = 0.15 = 15 %.",
+          "terms": [
+            "physics-a.3-efficiency"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q06",
+          "type": "mcq",
+          "prompt": "In a Sankey diagram, the width of each arrow is proportional to",
+          "options": [
+            "the time taken",
+            "the energy (or power) it represents",
+            "the efficiency",
+            "the temperature"
+          ],
+          "answer": 1,
+          "explanation": "Widths show amounts of energy, making losses easy to see; input width equals the total output width.",
+          "terms": [
+            "physics-a.3-sankey"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q07",
+          "type": "match",
+          "prompt": "Match each quantity to its SI unit.",
+          "pairs": [
+            {
+              "left": "Energy density",
+              "right": "J m⁻³"
+            },
+            {
+              "left": "Specific energy",
+              "right": "J kg⁻¹"
+            },
+            {
+              "left": "Power",
+              "right": "W"
+            },
+            {
+              "left": "Work",
+              "right": "J"
+            }
+          ],
+          "explanation": "Energy density is per volume; specific energy is per mass.",
+          "terms": [
+            "physics-a.3-energy-density",
+            "physics-a.3-specific-energy",
+            "physics-a.3-power",
+            "physics-a.3-work"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q08",
+          "type": "tf",
+          "statement": "Efficiency can be calculated using either energies or powers.",
+          "answer": true,
+          "explanation": "Since power = energy/time over the same time interval, the ratio is the same.",
+          "terms": [
+            "physics-a.3-efficiency",
+            "physics-a.3-power"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q09",
+          "type": "mcq",
+          "prompt": "A 40 kg child slides down a slide 3.0 m high, reaching the bottom at 6.0 m s⁻¹ (g = 9.8 m s⁻²). About how much energy was dissipated?",
+          "options": [
+            "1176 J",
+            "720 J",
+            "456 J",
+            "0 J"
+          ],
+          "answer": 2,
+          "explanation": "GPE lost = 40 × 9.8 × 3.0 = 1176 J; KE gained = ½ × 40 × 36 = 720 J; dissipated = 456 J.",
+          "terms": [
+            "physics-a.3-conservation-of-energy"
+          ]
+        },
+        {
+          "id": "physics-A.3-2-q10",
+          "type": "order",
+          "prompt": "Order the energy transfers in a hydroelectric power station.",
+          "items": [
+            "Gravitational PE of stored water",
+            "Kinetic energy of falling water",
+            "Kinetic energy of the rotating turbine",
+            "Electrical energy from the generator"
+          ],
+          "explanation": "At each stage some energy is dissipated, so overall efficiency is below 100 %.",
+          "terms": [
+            "physics-a.3-conservation-of-energy",
+            "physics-a.3-efficiency"
+          ]
+        }
+      ]
+    }
+  ]
+}

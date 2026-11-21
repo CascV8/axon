@@ -1,0 +1,433 @@
+{
+  "id": "physics-E.4-E.5",
+  "code": "E.4–E.5",
+  "unit": "E",
+  "title": "Fission, fusion and stars",
+  "level": "SL",
+  "summary": "Nuclear fission, chain reactions and reactor design; fusion as the energy source of stars, stellar equilibrium, parallax, luminosity and brightness, the Hertzsprung–Russell diagram and stellar evolution.",
+  "keyterms": [
+    {
+      "id": "physics-e.4-e.5-fission",
+      "term": "Nuclear fission",
+      "definition": "Splitting of a heavy nucleus, usually after neutron absorption, into two smaller nuclei plus neutrons and energy.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-chain-reaction",
+      "term": "Chain reaction",
+      "definition": "Self-sustaining fission in which neutrons released by one fission cause further fissions.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-critical-mass",
+      "term": "Critical mass",
+      "definition": "Minimum mass of fissile material needed to sustain a chain reaction.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-moderator",
+      "term": "Moderator",
+      "definition": "Material (e.g. water, graphite) that slows fast neutrons so they are more likely to cause fission.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-control-rods",
+      "term": "Control rods",
+      "definition": "Neutron-absorbing rods (e.g. boron) moved in or out to control the reaction rate.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-fusion",
+      "term": "Nuclear fusion",
+      "definition": "Joining of light nuclei to form a heavier nucleus, releasing energy; needs very high temperature to overcome repulsion.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-stellar-equilibrium",
+      "term": "Stellar equilibrium",
+      "definition": "Balance between inward gravity and outward radiation and gas pressure in a stable star.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-luminosity",
+      "term": "Luminosity",
+      "definition": "Total power emitted by a star, L = σAT⁴.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-apparent-brightness",
+      "term": "Apparent brightness",
+      "definition": "Power received per unit area at the observer: b = L/4πd².",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-parallax",
+      "term": "Stellar parallax",
+      "definition": "Apparent shift of a nearby star against distant stars; d (parsec) = 1/p (arcsecond).",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-hr-diagram",
+      "term": "Hertzsprung–Russell diagram",
+      "definition": "Plot of luminosity against surface temperature (decreasing to the right) showing star types.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-main-sequence",
+      "term": "Main sequence",
+      "definition": "Band on the HR diagram where stars fuse hydrogen into helium in their cores.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.4-e.5-white-dwarf",
+      "term": "White dwarf",
+      "definition": "Small, hot, dim remnant core of a low-mass star, supported by electron degeneracy pressure.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-E.4-E.5-1",
+      "title": "Fission and nuclear reactors",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-E.4-E.5-1-q01",
+          "type": "mcq",
+          "prompt": "What starts the fission of a uranium-235 nucleus in a reactor?",
+          "options": [
+            "Heating it",
+            "Absorbing a slow (thermal) neutron",
+            "Absorbing an alpha particle",
+            "Electric current"
+          ],
+          "answer": 1,
+          "explanation": "U-235 captures a thermal neutron, becomes unstable U-236 and splits.",
+          "terms": [
+            "physics-e.4-e.5-fission"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q02",
+          "type": "tf",
+          "statement": "A moderator absorbs neutrons to slow down the chain reaction.",
+          "answer": false,
+          "explanation": "The moderator slows neutrons (by collisions) without absorbing them; control rods absorb neutrons.",
+          "terms": [
+            "physics-e.4-e.5-moderator",
+            "physics-e.4-e.5-control-rods"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q03",
+          "type": "match",
+          "prompt": "Match each reactor component to its function.",
+          "pairs": [
+            {
+              "left": "Moderator",
+              "right": "Slows neutrons down"
+            },
+            {
+              "left": "Control rods",
+              "right": "Absorb neutrons"
+            },
+            {
+              "left": "Coolant",
+              "right": "Removes thermal energy from the core"
+            },
+            {
+              "left": "Shielding",
+              "right": "Protects workers from radiation"
+            }
+          ],
+          "explanation": "Each reactor component has a distinct job.",
+          "terms": [
+            "physics-e.4-e.5-moderator",
+            "physics-e.4-e.5-control-rods"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q04",
+          "type": "fill",
+          "text": "A chain reaction can be sustained only if the mass of fuel is at least the ___ mass.",
+          "answer": "critical",
+          "bank": [
+            "critical",
+            "atomic",
+            "binding",
+            "reduced"
+          ],
+          "explanation": "Below critical mass too many neutrons escape through the surface to keep the chain going.",
+          "terms": [
+            "physics-e.4-e.5-critical-mass",
+            "physics-e.4-e.5-chain-reaction"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q05",
+          "type": "mcq",
+          "prompt": "In a fission event, about 200 MeV is released. Most of this appears as",
+          "options": [
+            "kinetic energy of the fission fragments",
+            "gamma rays only",
+            "neutrino energy",
+            "mass of the neutrons"
+          ],
+          "answer": 0,
+          "explanation": "Most of the energy is the KE of the two repelling fragments, which becomes thermal energy in the fuel.",
+          "terms": [
+            "physics-e.4-e.5-fission"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q06",
+          "type": "tf",
+          "statement": "In steady reactor operation, on average exactly one neutron from each fission causes another fission.",
+          "answer": true,
+          "explanation": "Control rods keep the multiplication factor at 1; more would grow exponentially, fewer would die out.",
+          "terms": [
+            "physics-e.4-e.5-chain-reaction",
+            "physics-e.4-e.5-control-rods"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q07",
+          "type": "mcq",
+          "prompt": "Why is natural uranium usually enriched before use in reactors?",
+          "options": [
+            "To raise the proportion of fissile U-235",
+            "To remove U-235",
+            "To make it denser",
+            "To make it non-radioactive"
+          ],
+          "answer": 0,
+          "explanation": "Natural uranium is about 0.7 % U-235; enrichment raises this to a few percent.",
+          "terms": [
+            "physics-e.4-e.5-fission"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q08",
+          "type": "fill",
+          "text": "Neutrons slow down most efficiently in collisions with nuclei of ___ mass, such as hydrogen in water.",
+          "answer": "similar",
+          "bank": [
+            "similar",
+            "much greater",
+            "zero",
+            "infinite"
+          ],
+          "explanation": "In elastic collisions, maximum KE transfer occurs between equal masses.",
+          "terms": [
+            "physics-e.4-e.5-moderator"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q09",
+          "type": "mcq",
+          "prompt": "Which is a major disadvantage of fission power?",
+          "options": [
+            "It emits large amounts of CO₂ while running",
+            "It produces long-lived radioactive waste",
+            "It has a very low energy density",
+            "It cannot produce electricity"
+          ],
+          "answer": 1,
+          "explanation": "Spent fuel stays hazardous for thousands of years and needs secure storage.",
+          "terms": [
+            "physics-e.4-e.5-fission"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-1-q10",
+          "type": "order",
+          "prompt": "Order the energy transfers in a nuclear power station.",
+          "items": [
+            "Nuclear energy released by fission",
+            "Internal energy of the fuel and coolant",
+            "Steam drives the turbine",
+            "Generator produces electrical energy"
+          ],
+          "explanation": "Apart from the heat source, the process matches a fossil-fuel station.",
+          "terms": [
+            "physics-e.4-e.5-fission"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-E.4-E.5-2",
+      "title": "Fusion and the lives of stars",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-E.4-E.5-2-q01",
+          "type": "mcq",
+          "prompt": "Why does fusion require extremely high temperatures?",
+          "options": [
+            "To ionize the electrons",
+            "So nuclei move fast enough to overcome electrostatic repulsion",
+            "To melt the fuel",
+            "To create neutrons"
+          ],
+          "answer": 1,
+          "explanation": "Nuclei must get close enough for the strong force to act, which needs very high kinetic energies.",
+          "terms": [
+            "physics-e.4-e.5-fusion"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q02",
+          "type": "tf",
+          "statement": "A main-sequence star is stable because outward radiation and gas pressure balance gravity.",
+          "answer": true,
+          "explanation": "This hydrostatic equilibrium keeps the star’s size roughly constant for most of its life.",
+          "terms": [
+            "physics-e.4-e.5-stellar-equilibrium",
+            "physics-e.4-e.5-main-sequence"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q03",
+          "type": "fill",
+          "text": "A star with parallax angle 0.25 arcseconds is ___ parsecs away.",
+          "answer": "4",
+          "accept": [
+            "4.0"
+          ],
+          "bank": [
+            "4",
+            "0.25",
+            "25",
+            "40"
+          ],
+          "explanation": "d = 1/p = 1/0.25 = 4 pc.",
+          "terms": [
+            "physics-e.4-e.5-parallax"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q04",
+          "type": "mcq",
+          "prompt": "Star X has the same surface temperature as star Y but four times the radius. Its luminosity is",
+          "options": [
+            "4 times larger",
+            "16 times larger",
+            "64 times larger",
+            "the same"
+          ],
+          "answer": 1,
+          "explanation": "L = σ4πR²T⁴, so L ∝ R²: 4² = 16.",
+          "terms": [
+            "physics-e.4-e.5-luminosity"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q05",
+          "type": "mcq",
+          "prompt": "Two stars have equal luminosity, but star A is twice as far away as star B. A’s apparent brightness is",
+          "options": [
+            "half B’s",
+            "one quarter of B’s",
+            "twice B’s",
+            "the same"
+          ],
+          "answer": 1,
+          "explanation": "b = L/4πd², so doubling d reduces b by 4.",
+          "terms": [
+            "physics-e.4-e.5-apparent-brightness"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q06",
+          "type": "match",
+          "prompt": "Match each star type to its description.",
+          "pairs": [
+            {
+              "left": "Main sequence",
+              "right": "Hydrogen fusion in the core"
+            },
+            {
+              "left": "Red giant",
+              "right": "Cool surface, very large and luminous"
+            },
+            {
+              "left": "White dwarf",
+              "right": "Hot, small and dim"
+            },
+            {
+              "left": "Neutron star",
+              "right": "Remnant of a massive star’s supernova"
+            }
+          ],
+          "explanation": "Position on the HR diagram reveals a star’s stage of life.",
+          "terms": [
+            "physics-e.4-e.5-main-sequence",
+            "physics-e.4-e.5-white-dwarf",
+            "physics-e.4-e.5-hr-diagram"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q07",
+          "type": "fill",
+          "text": "On a Hertzsprung–Russell diagram, surface temperature ___ from left to right.",
+          "answer": "decreases",
+          "bank": [
+            "decreases",
+            "increases",
+            "stays constant",
+            "oscillates"
+          ],
+          "explanation": "The temperature axis is reversed: hot blue stars on the left, cool red stars on the right.",
+          "terms": [
+            "physics-e.4-e.5-hr-diagram"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q08",
+          "type": "tf",
+          "statement": "A star like the Sun will end its life as a neutron star.",
+          "answer": false,
+          "explanation": "Low-mass stars become red giants, shed planetary nebulae and leave white dwarfs; only massive stars leave neutron stars or black holes.",
+          "terms": [
+            "physics-e.4-e.5-white-dwarf"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q09",
+          "type": "mcq",
+          "prompt": "Which nuclear process powers a main-sequence star?",
+          "options": [
+            "Fission of uranium",
+            "Fusion of hydrogen into helium",
+            "Fusion of iron",
+            "Radioactive decay of carbon"
+          ],
+          "answer": 1,
+          "explanation": "Main-sequence stars convert hydrogen into helium in their cores (e.g. the proton–proton chain).",
+          "terms": [
+            "physics-e.4-e.5-fusion",
+            "physics-e.4-e.5-main-sequence"
+          ]
+        },
+        {
+          "id": "physics-E.4-E.5-2-q10",
+          "type": "order",
+          "prompt": "Order the life stages of a Sun-like star.",
+          "items": [
+            "Protostar contracting from a gas cloud",
+            "Main-sequence star",
+            "Red giant",
+            "Planetary nebula ejected",
+            "White dwarf"
+          ],
+          "explanation": "Its evolution is set mainly by its mass.",
+          "terms": [
+            "physics-e.4-e.5-main-sequence",
+            "physics-e.4-e.5-white-dwarf"
+          ]
+        }
+      ]
+    }
+  ]
+}

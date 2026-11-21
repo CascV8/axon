@@ -1,0 +1,424 @@
+{
+  "id": "physics-A.4",
+  "code": "A.4",
+  "unit": "A",
+  "title": "Rigid body mechanics",
+  "level": "HL",
+  "summary": "Torque, rotational equilibrium, angular kinematics, moment of inertia, Newton’s second law for rotation, angular momentum and rotational kinetic energy.",
+  "keyterms": [
+    {
+      "id": "physics-a.4-torque",
+      "term": "Torque",
+      "definition": "Turning effect of a force about an axis: τ = Fr sin θ, measured in N m.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.4-couple",
+      "term": "Couple",
+      "definition": "Two equal, opposite, non-collinear forces giving a resultant torque but no resultant force.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.4-rotational-equilibrium",
+      "term": "Rotational equilibrium",
+      "definition": "The state in which the resultant torque on a body is zero, so its angular velocity is constant.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.4-angular-acceleration",
+      "term": "Angular acceleration",
+      "definition": "Rate of change of angular velocity, α = Δω/Δt, in rad s⁻².",
+      "hl": true
+    },
+    {
+      "id": "physics-a.4-moment-of-inertia",
+      "term": "Moment of inertia",
+      "definition": "Resistance of a body to angular acceleration, I = Σmr²; depends on mass distribution about the axis.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.4-angular-momentum",
+      "term": "Angular momentum",
+      "definition": "L = Iω; conserved when no resultant external torque acts.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.4-rotational-ke",
+      "term": "Rotational kinetic energy",
+      "definition": "Kinetic energy of a rotating body, E_k = ½Iω² = L²/2I.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.4-angular-impulse",
+      "term": "Angular impulse",
+      "definition": "Change in angular momentum produced by a torque, ΔL = τΔt.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.4-rolling",
+      "term": "Rolling without slipping",
+      "definition": "Motion where the contact point is momentarily at rest, so v = ωr for the centre of mass.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-A.4-1",
+      "title": "Torque and rotational kinematics",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-A.4-1-q01",
+          "type": "mcq",
+          "prompt": "A 20 N force acts at the end of a 0.30 m spanner, at 90° to it. What torque does it produce?",
+          "options": [
+            "6.0 N m",
+            "67 N m",
+            "0.015 N m",
+            "20 N m"
+          ],
+          "answer": 0,
+          "explanation": "τ = Fr sin θ = 20 × 0.30 × 1 = 6.0 N m.",
+          "terms": [
+            "physics-a.4-torque"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q02",
+          "type": "tf",
+          "statement": "A body in rotational equilibrium must be at rest.",
+          "answer": false,
+          "explanation": "Zero resultant torque means constant angular velocity, which may be non-zero.",
+          "terms": [
+            "physics-a.4-rotational-equilibrium"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q03",
+          "type": "fill",
+          "text": "A force applied along a line passing through the pivot produces a torque of ___.",
+          "answer": "zero",
+          "accept": [
+            "0"
+          ],
+          "bank": [
+            "zero",
+            "maximum",
+            "Fr",
+            "Fr/2"
+          ],
+          "explanation": "The perpendicular distance (sin θ with θ = 0) is zero, so τ = 0.",
+          "terms": [
+            "physics-a.4-torque"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q04",
+          "type": "mcq",
+          "prompt": "A couple acting on a body produces",
+          "options": [
+            "a resultant force but no torque",
+            "a torque but no resultant force",
+            "neither",
+            "both"
+          ],
+          "answer": 1,
+          "explanation": "The two forces cancel, so there is no translational acceleration, only rotation.",
+          "terms": [
+            "physics-a.4-couple"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q05",
+          "type": "mcq",
+          "prompt": "A wheel accelerates uniformly from rest to 12 rad s⁻¹ in 4.0 s. Through what angle does it turn?",
+          "options": [
+            "48 rad",
+            "3.0 rad",
+            "24 rad",
+            "12 rad"
+          ],
+          "answer": 2,
+          "explanation": "θ = ½(ω_i + ω_f)t = ½ × 12 × 4.0 = 24 rad.",
+          "terms": [
+            "physics-a.4-angular-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q06",
+          "type": "fill",
+          "text": "The angular acceleration in the previous wheel example is ___ rad s⁻².",
+          "answer": "3.0",
+          "accept": [
+            "3"
+          ],
+          "bank": [
+            "3.0",
+            "48",
+            "0.33",
+            "12"
+          ],
+          "explanation": "α = Δω/Δt = 12/4.0 = 3.0 rad s⁻².",
+          "terms": [
+            "physics-a.4-angular-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q07",
+          "type": "match",
+          "prompt": "Match each linear quantity to its rotational analogue.",
+          "pairs": [
+            {
+              "left": "Displacement s",
+              "right": "Angle θ"
+            },
+            {
+              "left": "Velocity v",
+              "right": "Angular velocity ω"
+            },
+            {
+              "left": "Acceleration a",
+              "right": "Angular acceleration α"
+            },
+            {
+              "left": "Mass m",
+              "right": "Moment of inertia I"
+            },
+            {
+              "left": "Force F",
+              "right": "Torque τ"
+            }
+          ],
+          "explanation": "Rotational equations mirror linear ones with these substitutions.",
+          "terms": [
+            "physics-a.4-angular-acceleration",
+            "physics-a.4-moment-of-inertia",
+            "physics-a.4-torque"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q08",
+          "type": "tf",
+          "statement": "For a body rolling without slipping, the speed of its centre equals ωr.",
+          "answer": true,
+          "explanation": "The contact point is instantaneously at rest, so the centre moves at ωr relative to the ground.",
+          "terms": [
+            "physics-a.4-rolling"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q09",
+          "type": "mcq",
+          "prompt": "A uniform 4.0 m plank of weight 200 N is supported at its centre. A 300 N child sits 1.0 m from the centre. How far on the other side must a 150 N child sit for balance?",
+          "options": [
+            "1.5 m",
+            "2.0 m",
+            "0.5 m",
+            "1.0 m"
+          ],
+          "answer": 1,
+          "explanation": "Moments about the centre: 300 × 1.0 = 150 × d, so d = 2.0 m. The plank’s weight acts at the pivot.",
+          "terms": [
+            "physics-a.4-torque",
+            "physics-a.4-rotational-equilibrium"
+          ]
+        },
+        {
+          "id": "physics-A.4-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to solve a static equilibrium problem for an extended body.",
+          "items": [
+            "Draw all forces at their points of application",
+            "Choose a pivot that eliminates an unknown force",
+            "Set clockwise moments equal to anticlockwise moments",
+            "Use resultant force = 0 to find remaining forces"
+          ],
+          "explanation": "Taking moments about the point where an unknown force acts removes it from the torque equation.",
+          "terms": [
+            "physics-a.4-rotational-equilibrium",
+            "physics-a.4-torque"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-A.4-2",
+      "title": "Moment of inertia and angular momentum",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-A.4-2-q01",
+          "type": "mcq",
+          "prompt": "Two wheels have equal mass and radius. Wheel X has its mass concentrated at the rim; wheel Y is a uniform disc. Which has the larger moment of inertia?",
+          "options": [
+            "Y",
+            "X",
+            "They are equal",
+            "It depends on the angular velocity"
+          ],
+          "answer": 1,
+          "explanation": "I = Σmr²: mass further from the axis contributes more, so the rim-loaded wheel has the larger I.",
+          "terms": [
+            "physics-a.4-moment-of-inertia"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q02",
+          "type": "fill",
+          "text": "A net torque of 6.0 N m acts on a flywheel of moment of inertia 2.0 kg m². Its angular acceleration is ___ rad s⁻².",
+          "answer": "3.0",
+          "accept": [
+            "3"
+          ],
+          "bank": [
+            "3.0",
+            "12",
+            "0.33",
+            "8.0"
+          ],
+          "explanation": "τ = Iα, so α = 6.0/2.0 = 3.0 rad s⁻².",
+          "terms": [
+            "physics-a.4-moment-of-inertia",
+            "physics-a.4-angular-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q03",
+          "type": "mcq",
+          "prompt": "A spinning skater pulls her arms in. Which statement is correct?",
+          "options": [
+            "Her angular momentum increases",
+            "Her moment of inertia increases",
+            "Her angular velocity increases and angular momentum is unchanged",
+            "Her rotational kinetic energy is unchanged"
+          ],
+          "answer": 2,
+          "explanation": "With no external torque L = Iω is conserved; I falls so ω rises. E_k = L²/2I increases, supplied by the work her muscles do.",
+          "terms": [
+            "physics-a.4-angular-momentum",
+            "physics-a.4-moment-of-inertia",
+            "physics-a.4-rotational-ke"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q04",
+          "type": "tf",
+          "statement": "Rotational kinetic energy is conserved whenever angular momentum is conserved.",
+          "answer": false,
+          "explanation": "L can be conserved while E_k changes, as when a skater pulls in her arms and does internal work.",
+          "terms": [
+            "physics-a.4-angular-momentum",
+            "physics-a.4-rotational-ke"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q05",
+          "type": "fill",
+          "text": "A flywheel with I = 0.50 kg m² spins at 20 rad s⁻¹. Its rotational kinetic energy is ___ J.",
+          "answer": "100",
+          "bank": [
+            "100",
+            "10",
+            "200",
+            "5.0"
+          ],
+          "explanation": "E_k = ½Iω² = ½ × 0.50 × 400 = 100 J.",
+          "terms": [
+            "physics-a.4-rotational-ke"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q06",
+          "type": "mcq",
+          "prompt": "A disc with I = 0.40 kg m² spins at 10 rad s⁻¹. A ring of I = 0.10 kg m², initially not rotating, is dropped onto it and they spin together. What is the final angular velocity?",
+          "options": [
+            "8.0 rad s⁻¹",
+            "10 rad s⁻¹",
+            "2.0 rad s⁻¹",
+            "12.5 rad s⁻¹"
+          ],
+          "answer": 0,
+          "explanation": "L conserved: 0.40 × 10 = 0.50 × ω, so ω = 8.0 rad s⁻¹.",
+          "terms": [
+            "physics-a.4-angular-momentum"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q07",
+          "type": "match",
+          "prompt": "Match each equation to what it describes.",
+          "pairs": [
+            {
+              "left": "τ = Iα",
+              "right": "Newton’s second law for rotation"
+            },
+            {
+              "left": "L = Iω",
+              "right": "Angular momentum"
+            },
+            {
+              "left": "E_k = ½Iω²",
+              "right": "Rotational kinetic energy"
+            },
+            {
+              "left": "ΔL = τΔt",
+              "right": "Angular impulse"
+            }
+          ],
+          "explanation": "These are the rotational counterparts of F = ma, p = mv, ½mv² and FΔt.",
+          "terms": [
+            "physics-a.4-moment-of-inertia",
+            "physics-a.4-angular-momentum",
+            "physics-a.4-rotational-ke",
+            "physics-a.4-angular-impulse"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q08",
+          "type": "mcq",
+          "prompt": "A solid ball and a hollow ball of the same mass and radius roll without slipping down the same slope from rest. Which reaches the bottom first?",
+          "options": [
+            "The hollow ball",
+            "Both together",
+            "The solid ball",
+            "It depends on their mass"
+          ],
+          "answer": 2,
+          "explanation": "The solid ball has the smaller I, so a smaller fraction of its energy becomes rotational KE and more becomes translational KE.",
+          "terms": [
+            "physics-a.4-moment-of-inertia",
+            "physics-a.4-rolling",
+            "physics-a.4-rotational-ke"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q09",
+          "type": "tf",
+          "statement": "A torque of 4.0 N m acting for 3.0 s changes the angular momentum of a body by 12 kg m² s⁻¹.",
+          "answer": true,
+          "explanation": "Angular impulse ΔL = τΔt = 4.0 × 3.0 = 12 kg m² s⁻¹ (equivalently N m s).",
+          "terms": [
+            "physics-a.4-angular-impulse"
+          ]
+        },
+        {
+          "id": "physics-A.4-2-q10",
+          "type": "mcq",
+          "prompt": "Why does a long pole help a tightrope walker keep balance?",
+          "options": [
+            "It lowers her weight",
+            "It increases her moment of inertia, so a given torque produces a smaller angular acceleration",
+            "It increases her angular momentum",
+            "It removes all torques"
+          ],
+          "answer": 1,
+          "explanation": "α = τ/I; a large I slows any tipping, giving time to correct it.",
+          "terms": [
+            "physics-a.4-moment-of-inertia",
+            "physics-a.4-angular-acceleration"
+          ]
+        }
+      ]
+    }
+  ]
+}

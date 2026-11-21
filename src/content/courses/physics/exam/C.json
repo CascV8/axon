@@ -1,0 +1,61 @@
+[
+  {
+    "id": "physics-X-C-01",
+    "unit": "C",
+    "topics": ["physics-C.2-C.3"],
+    "paper": "P1B",
+    "level": "SL",
+    "title": "Measuring wavelength with a double slit",
+    "stem": "Monochromatic laser light passes through a double slit of separation 0.40 mm. The fringe spacing s on a screen is measured for different slit-to-screen distances D. For each D, the distance across ten fringe spacings is measured and divided by ten.",
+    "data": {
+      "caption": "Fringe spacing against slit-to-screen distance",
+      "columns": ["D / m", "s / mm"],
+      "rows": [["1.00", "1.62"], ["1.50", "2.43"], ["2.00", "3.24"], ["2.50", "4.05"]]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Explain",
+        "prompt": "Explain why the distance across ten fringe spacings was measured rather than a single spacing.",
+        "marks": 2,
+        "markscheme": [
+          "the absolute uncertainty of the ruler is spread over ten spacings",
+          "so the percentage uncertainty in s is reduced (by a factor of about 10)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Determine",
+        "prompt": "Determine the gradient of a graph of s against D.",
+        "marks": 2,
+        "numeric": { "value": 0.00162, "tolerance": 0.00003, "unit": "(no unit)" },
+        "markscheme": [
+          "gradient = (4.05 − 1.62) × 10⁻³ m / (2.50 − 1.00) m",
+          "= 1.62 × 10⁻³ (dimensionless)"
+        ],
+        "notes": "Penalize failure to convert mm to m only once."
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the wavelength of the laser light.",
+        "marks": 2,
+        "numeric": { "value": 648, "tolerance": 5, "unit": "nm" },
+        "markscheme": [
+          "s = λD/d, so gradient = λ/d",
+          "λ = 1.62 × 10⁻³ × 0.40 × 10⁻³ = 6.5 × 10⁻⁷ m / 648 nm"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Predict",
+        "prompt": "The red laser is replaced by a blue laser. Predict, with a reason, the change in the gradient of the graph.",
+        "marks": 2,
+        "markscheme": [
+          "gradient decreases",
+          "blue light has a shorter wavelength and gradient = λ/d (d unchanged)"
+        ]
+      }
+    ]
+  }
+]

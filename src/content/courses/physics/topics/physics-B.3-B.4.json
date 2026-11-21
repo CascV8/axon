@@ -1,0 +1,609 @@
+{
+  "id": "physics-B.3-B.4",
+  "code": "B.3–B.4",
+  "unit": "B",
+  "title": "Gas laws and thermodynamics",
+  "level": "SL",
+  "summary": "Pressure, the mole and the ideal gas law, the kinetic model of an ideal gas, and (HL) the first and second laws of thermodynamics, entropy and heat engines.",
+  "keyterms": [
+    {
+      "id": "physics-b.3-b.4-pressure",
+      "term": "Pressure",
+      "definition": "Force per unit area acting normally on a surface, p = F/A, in pascals (Pa).",
+      "hl": false
+    },
+    {
+      "id": "physics-b.3-b.4-mole",
+      "term": "Mole",
+      "definition": "Amount of substance containing N_A = 6.02 × 10²³ particles.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.3-b.4-ideal-gas",
+      "term": "Ideal gas",
+      "definition": "A model gas with point particles, no intermolecular forces except in elastic collisions; obeys pV = nRT exactly.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.3-b.4-ideal-gas-law",
+      "term": "Ideal gas law",
+      "definition": "pV = nRT = Nk_BT, where T is the absolute temperature in kelvin.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.3-b.4-boltzmann-constant",
+      "term": "Boltzmann constant",
+      "definition": "k_B = R/N_A = 1.38 × 10⁻²³ J K⁻¹; links particle energy to temperature.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.3-b.4-mean-ke",
+      "term": "Mean kinetic energy of a particle",
+      "definition": "For an ideal gas, average translational KE = (3/2)k_BT.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.3-b.4-first-law",
+      "term": "First law of thermodynamics",
+      "definition": "Q = ΔU + W: heat supplied equals increase in internal energy plus work done by the gas.",
+      "hl": true
+    },
+    {
+      "id": "physics-b.3-b.4-adiabatic",
+      "term": "Adiabatic process",
+      "definition": "A process with no heat transfer (Q = 0); for a monatomic ideal gas pV^(5/3) is constant.",
+      "hl": true
+    },
+    {
+      "id": "physics-b.3-b.4-isothermal",
+      "term": "Isothermal process",
+      "definition": "A process at constant temperature, so ΔU = 0 for an ideal gas and Q = W.",
+      "hl": true
+    },
+    {
+      "id": "physics-b.3-b.4-entropy",
+      "term": "Entropy",
+      "definition": "A measure of disorder; ΔS = ΔQ/T for heat transferred reversibly. It never decreases for an isolated system.",
+      "hl": true
+    },
+    {
+      "id": "physics-b.3-b.4-second-law",
+      "term": "Second law of thermodynamics",
+      "definition": "The entropy of an isolated system never decreases; no engine can convert heat completely into work.",
+      "hl": true
+    },
+    {
+      "id": "physics-b.3-b.4-carnot-efficiency",
+      "term": "Carnot efficiency",
+      "definition": "Maximum efficiency of a heat engine between reservoirs at T_h and T_c: η = 1 − T_c/T_h.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-B.3-B.4-1",
+      "title": "The gas laws",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-B.3-B.4-1-q01",
+          "type": "mcq",
+          "prompt": "A fixed mass of ideal gas at constant temperature has its volume halved. Its pressure",
+          "options": [
+            "halves",
+            "doubles",
+            "quadruples",
+            "stays the same"
+          ],
+          "answer": 1,
+          "explanation": "Boyle’s law (pV constant at constant T): halving V doubles p.",
+          "terms": [
+            "physics-b.3-b.4-ideal-gas-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q02",
+          "type": "fill",
+          "text": "A gas is heated at constant volume from 300 K to 450 K. Its pressure increases by a factor of ___.",
+          "answer": "1.5",
+          "bank": [
+            "1.5",
+            "2.0",
+            "0.67",
+            "150"
+          ],
+          "explanation": "At constant V, p ∝ T: 450/300 = 1.5. Temperatures must be in kelvin.",
+          "terms": [
+            "physics-b.3-b.4-ideal-gas-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q03",
+          "type": "tf",
+          "statement": "In the ideal gas law, temperature may be entered in degrees Celsius.",
+          "answer": false,
+          "explanation": "pV = nRT requires absolute temperature in kelvin; at 0 °C the gas still has pressure.",
+          "terms": [
+            "physics-b.3-b.4-ideal-gas-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q04",
+          "type": "mcq",
+          "prompt": "How many moles are in 0.024 m³ of ideal gas at 1.0 × 10⁵ Pa and 300 K? (R = 8.31 J mol⁻¹ K⁻¹)",
+          "options": [
+            "0.96 mol",
+            "9.6 mol",
+            "0.096 mol",
+            "96 mol"
+          ],
+          "answer": 0,
+          "explanation": "n = pV/RT = (1.0 × 10⁵ × 0.024)/(8.31 × 300) = 2400/2493 ≈ 0.96 mol.",
+          "terms": [
+            "physics-b.3-b.4-ideal-gas-law",
+            "physics-b.3-b.4-mole"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q05",
+          "type": "match",
+          "prompt": "Match each gas law to its statement.",
+          "pairs": [
+            {
+              "left": "Boyle’s law",
+              "right": "pV constant at constant T"
+            },
+            {
+              "left": "Charles’s law",
+              "right": "V/T constant at constant p"
+            },
+            {
+              "left": "Pressure law",
+              "right": "p/T constant at constant V"
+            },
+            {
+              "left": "Avogadro’s law",
+              "right": "V ∝ n at constant p and T"
+            }
+          ],
+          "explanation": "All are special cases of pV = nRT.",
+          "terms": [
+            "physics-b.3-b.4-ideal-gas-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q06",
+          "type": "mcq",
+          "prompt": "According to kinetic theory, what causes the pressure of a gas on a container wall?",
+          "options": [
+            "Particles attracting the wall",
+            "The rate of change of momentum of particles colliding with the wall",
+            "The weight of the gas",
+            "Heat flowing into the wall"
+          ],
+          "answer": 1,
+          "explanation": "Each collision reverses the normal momentum; the total force per unit area from many collisions is the pressure.",
+          "terms": [
+            "physics-b.3-b.4-pressure",
+            "physics-b.3-b.4-ideal-gas"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q07",
+          "type": "fill",
+          "text": "The average translational kinetic energy of a gas particle at 300 K is ___ × 10⁻²¹ J (k_B = 1.38 × 10⁻²³ J K⁻¹).",
+          "answer": "6.2",
+          "accept": [
+            "6.21"
+          ],
+          "bank": [
+            "6.2",
+            "4.1",
+            "12.4",
+            "2.1"
+          ],
+          "explanation": "E = (3/2)k_BT = 1.5 × 1.38 × 10⁻²³ × 300 = 6.2 × 10⁻²¹ J.",
+          "terms": [
+            "physics-b.3-b.4-mean-ke",
+            "physics-b.3-b.4-boltzmann-constant"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q08",
+          "type": "tf",
+          "statement": "Real gases behave most like an ideal gas at low pressure and high temperature.",
+          "answer": true,
+          "explanation": "Particles are then far apart (negligible volume) and fast (intermolecular forces matter less).",
+          "terms": [
+            "physics-b.3-b.4-ideal-gas"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q09",
+          "type": "mcq",
+          "prompt": "The internal energy of an ideal monatomic gas consists of",
+          "options": [
+            "only the kinetic energy of its particles",
+            "only intermolecular potential energy",
+            "kinetic and potential energy equally",
+            "the energy of its container"
+          ],
+          "answer": 0,
+          "explanation": "There are no intermolecular forces in an ideal gas, so U = (3/2)nRT is entirely kinetic.",
+          "terms": [
+            "physics-b.3-b.4-ideal-gas",
+            "physics-b.3-b.4-mean-ke"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-1-q10",
+          "type": "order",
+          "prompt": "Order the reasoning for why heating a gas at constant volume raises its pressure.",
+          "items": [
+            "Temperature rises",
+            "Mean speed of particles increases",
+            "Particles hit the walls more often and with greater momentum change",
+            "Force per unit area on the walls increases"
+          ],
+          "explanation": "Both collision rate and momentum change per collision increase.",
+          "terms": [
+            "physics-b.3-b.4-pressure",
+            "physics-b.3-b.4-mean-ke"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-B.3-B.4-2",
+      "title": "Thermodynamic processes and the first law",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-B.3-B.4-2-q01",
+          "type": "mcq",
+          "prompt": "A gas absorbs 500 J of heat and does 200 J of work on its surroundings. Its internal energy changes by",
+          "options": [
+            "+700 J",
+            "+300 J",
+            "−300 J",
+            "−700 J"
+          ],
+          "answer": 1,
+          "explanation": "Q = ΔU + W, so ΔU = 500 − 200 = +300 J.",
+          "terms": [
+            "physics-b.3-b.4-first-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q02",
+          "type": "fill",
+          "text": "A gas expands at a constant pressure of 2.0 × 10⁵ Pa from 0.010 m³ to 0.030 m³. The work done by the gas is ___ kJ.",
+          "answer": "4.0",
+          "accept": [
+            "4"
+          ],
+          "bank": [
+            "4.0",
+            "2.0",
+            "6.0",
+            "0.4"
+          ],
+          "explanation": "W = pΔV = 2.0 × 10⁵ × 0.020 = 4000 J = 4.0 kJ.",
+          "terms": [
+            "physics-b.3-b.4-first-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q03",
+          "type": "tf",
+          "statement": "In an isothermal expansion of an ideal gas, all the heat absorbed is converted into work done by the gas.",
+          "answer": true,
+          "explanation": "T is constant so ΔU = 0, and Q = W.",
+          "terms": [
+            "physics-b.3-b.4-isothermal",
+            "physics-b.3-b.4-first-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q04",
+          "type": "mcq",
+          "prompt": "In a rapid adiabatic compression of a gas, its temperature",
+          "options": [
+            "falls",
+            "stays constant",
+            "rises",
+            "drops to zero"
+          ],
+          "answer": 2,
+          "explanation": "Q = 0, and work is done ON the gas (W negative), so ΔU = −W > 0 and the temperature rises.",
+          "terms": [
+            "physics-b.3-b.4-adiabatic",
+            "physics-b.3-b.4-first-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q05",
+          "type": "match",
+          "prompt": "Match each process to its defining condition.",
+          "pairs": [
+            {
+              "left": "Isothermal",
+              "right": "ΔU = 0"
+            },
+            {
+              "left": "Adiabatic",
+              "right": "Q = 0"
+            },
+            {
+              "left": "Isovolumetric",
+              "right": "W = 0"
+            },
+            {
+              "left": "Isobaric",
+              "right": "Constant pressure, W = pΔV"
+            }
+          ],
+          "explanation": "Each process fixes one quantity, simplifying Q = ΔU + W.",
+          "terms": [
+            "physics-b.3-b.4-isothermal",
+            "physics-b.3-b.4-adiabatic",
+            "physics-b.3-b.4-first-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q06",
+          "type": "mcq",
+          "prompt": "On a p–V diagram, the work done by a gas during a cycle equals",
+          "options": [
+            "the area enclosed by the loop",
+            "the area under the highest curve only",
+            "zero always",
+            "the change in internal energy"
+          ],
+          "answer": 0,
+          "explanation": "Net work is the area enclosed; ΔU over a full cycle is zero because the gas returns to its initial state.",
+          "terms": [
+            "physics-b.3-b.4-first-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q07",
+          "type": "fill",
+          "text": "For a monatomic ideal gas undergoing an adiabatic change, p V^___ is constant.",
+          "answer": "5/3",
+          "accept": [
+            "1.67"
+          ],
+          "bank": [
+            "5/3",
+            "3/2",
+            "1",
+            "2/3"
+          ],
+          "explanation": "The adiabatic relation for a monatomic ideal gas is pV^(5/3) = constant.",
+          "terms": [
+            "physics-b.3-b.4-adiabatic"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q08",
+          "type": "tf",
+          "statement": "An adiabatic curve on a p–V diagram is less steep than an isothermal curve through the same point.",
+          "answer": false,
+          "explanation": "Adiabatic curves are steeper because temperature also changes in the same direction as pressure.",
+          "terms": [
+            "physics-b.3-b.4-adiabatic",
+            "physics-b.3-b.4-isothermal"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q09",
+          "type": "mcq",
+          "prompt": "A gas is compressed at constant temperature. Which statement is correct?",
+          "options": [
+            "It absorbs heat",
+            "It releases heat equal to the work done on it",
+            "Its internal energy rises",
+            "No energy is transferred"
+          ],
+          "answer": 1,
+          "explanation": "ΔU = 0, so Q = W; W is negative (work done on the gas), so Q is negative: heat leaves.",
+          "terms": [
+            "physics-b.3-b.4-isothermal",
+            "physics-b.3-b.4-first-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-2-q10",
+          "type": "mcq",
+          "prompt": "The internal energy of 2.0 mol of monatomic ideal gas rises when its temperature rises by 10 K. By how much? (R = 8.31 J mol⁻¹ K⁻¹)",
+          "options": [
+            "249 J",
+            "166 J",
+            "83 J",
+            "125 J"
+          ],
+          "answer": 0,
+          "explanation": "ΔU = (3/2)nRΔT = 1.5 × 2.0 × 8.31 × 10 ≈ 249 J.",
+          "terms": [
+            "physics-b.3-b.4-first-law",
+            "physics-b.3-b.4-ideal-gas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-B.3-B.4-3",
+      "title": "Entropy, the second law and heat engines",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-B.3-B.4-3-q01",
+          "type": "mcq",
+          "prompt": "What is the maximum efficiency of an engine operating between 600 K and 300 K?",
+          "options": [
+            "25 %",
+            "50 %",
+            "75 %",
+            "100 %"
+          ],
+          "answer": 1,
+          "explanation": "η_Carnot = 1 − T_c/T_h = 1 − 300/600 = 0.50.",
+          "terms": [
+            "physics-b.3-b.4-carnot-efficiency"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q02",
+          "type": "tf",
+          "statement": "A heat engine can convert all the heat it absorbs into work if it is frictionless.",
+          "answer": false,
+          "explanation": "The second law (Kelvin form) forbids it: some heat must always be rejected to a cold reservoir.",
+          "terms": [
+            "physics-b.3-b.4-second-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q03",
+          "type": "fill",
+          "text": "1200 J of heat flows reversibly into a reservoir at 400 K. Its entropy increases by ___ J K⁻¹.",
+          "answer": "3.0",
+          "accept": [
+            "3"
+          ],
+          "bank": [
+            "3.0",
+            "0.33",
+            "480",
+            "1600"
+          ],
+          "explanation": "ΔS = ΔQ/T = 1200/400 = 3.0 J K⁻¹.",
+          "terms": [
+            "physics-b.3-b.4-entropy"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q04",
+          "type": "mcq",
+          "prompt": "Heat flows spontaneously from a hot body to a cold body. Why does this increase total entropy?",
+          "options": [
+            "The cold body gains more entropy (Q/T_c) than the hot body loses (Q/T_h)",
+            "Energy is created",
+            "Temperature is destroyed",
+            "The hot body gains entropy"
+          ],
+          "answer": 0,
+          "explanation": "Since T_c < T_h, Q/T_c > Q/T_h, so the net entropy change is positive.",
+          "terms": [
+            "physics-b.3-b.4-entropy",
+            "physics-b.3-b.4-second-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q05",
+          "type": "match",
+          "prompt": "Match each part of a heat engine to its role.",
+          "pairs": [
+            {
+              "left": "Hot reservoir",
+              "right": "Supplies heat Q_h"
+            },
+            {
+              "left": "Cold reservoir",
+              "right": "Receives rejected heat Q_c"
+            },
+            {
+              "left": "Work output",
+              "right": "W = Q_h − Q_c"
+            },
+            {
+              "left": "Efficiency",
+              "right": "W/Q_h"
+            }
+          ],
+          "explanation": "A heat engine turns part of the heat flow from hot to cold into work.",
+          "terms": [
+            "physics-b.3-b.4-carnot-efficiency",
+            "physics-b.3-b.4-second-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q06",
+          "type": "tf",
+          "statement": "The entropy of a system can decrease if the entropy of its surroundings increases by at least as much.",
+          "answer": true,
+          "explanation": "Only the total entropy of an isolated system cannot decrease; a refrigerator lowers the entropy inside but raises it more outside.",
+          "terms": [
+            "physics-b.3-b.4-entropy",
+            "physics-b.3-b.4-second-law"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q07",
+          "type": "fill",
+          "text": "An engine takes in 1000 J and rejects 700 J each cycle. Its efficiency is ___%.",
+          "answer": "30",
+          "bank": [
+            "30",
+            "70",
+            "43",
+            "10"
+          ],
+          "explanation": "W = 1000 − 700 = 300 J, so η = 300/1000 = 30 %.",
+          "terms": [
+            "physics-b.3-b.4-carnot-efficiency"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q08",
+          "type": "mcq",
+          "prompt": "Which processes make up a Carnot cycle?",
+          "options": [
+            "Two isothermals and two adiabatics",
+            "Two isobarics and two isovolumetrics",
+            "Four adiabatics",
+            "Two isothermals and two isovolumetrics"
+          ],
+          "answer": 0,
+          "explanation": "The Carnot cycle is the idealized reversible cycle with the highest possible efficiency between two temperatures.",
+          "terms": [
+            "physics-b.3-b.4-carnot-efficiency",
+            "physics-b.3-b.4-adiabatic",
+            "physics-b.3-b.4-isothermal"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q09",
+          "type": "mcq",
+          "prompt": "Statistically, entropy is related to the number of microstates Ω by",
+          "options": [
+            "S = k_B ln Ω",
+            "S = k_B Ω",
+            "S = Ω/k_B",
+            "S = ln(k_B Ω²)"
+          ],
+          "answer": 0,
+          "explanation": "More ways to arrange the particles (more microstates) means higher entropy.",
+          "terms": [
+            "physics-b.3-b.4-entropy"
+          ]
+        },
+        {
+          "id": "physics-B.3-B.4-3-q10",
+          "type": "order",
+          "prompt": "Order the stages of a Carnot cycle starting at the hottest, smallest-volume state.",
+          "items": [
+            "Isothermal expansion at T_h",
+            "Adiabatic expansion, cooling to T_c",
+            "Isothermal compression at T_c",
+            "Adiabatic compression, heating back to T_h"
+          ],
+          "explanation": "Heat enters during the hot isothermal and leaves during the cold isothermal.",
+          "terms": [
+            "physics-b.3-b.4-carnot-efficiency"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "id": "physics-C.4-C.5",
+  "code": "C.4–C.5",
+  "unit": "C",
+  "title": "Standing waves, resonance and the Doppler effect",
+  "level": "SL",
+  "summary": "How standing waves form on strings and in pipes, harmonics, natural frequency, resonance and damping, and the Doppler effect for sound and light, with (HL) the Doppler equations for moving sources and observers.",
+  "keyterms": [
+    {
+      "id": "physics-c.4-c.5-standing-wave",
+      "term": "Standing wave",
+      "definition": "A wave pattern formed by superposition of two identical waves travelling in opposite directions; it stores rather than transfers energy.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-node",
+      "term": "Node",
+      "definition": "A point on a standing wave with zero amplitude.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-antinode",
+      "term": "Antinode",
+      "definition": "A point on a standing wave with maximum amplitude.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-harmonic",
+      "term": "Harmonic",
+      "definition": "A standing-wave mode whose frequency is a whole-number multiple of the fundamental frequency.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-fundamental",
+      "term": "Fundamental",
+      "definition": "The lowest-frequency standing-wave mode (first harmonic).",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-natural-frequency",
+      "term": "Natural frequency",
+      "definition": "The frequency at which a system oscillates when displaced and released.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-resonance",
+      "term": "Resonance",
+      "definition": "Large-amplitude oscillation when the driving frequency equals the natural frequency.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-damping",
+      "term": "Damping",
+      "definition": "Loss of energy from an oscillator due to resistive forces, reducing amplitude.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-doppler",
+      "term": "Doppler effect",
+      "definition": "Change in observed frequency when the source and observer move relative to each other.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.4-c.5-redshift",
+      "term": "Redshift",
+      "definition": "Increase in observed wavelength of light from a receding source: Δλ/λ ≈ v/c.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-C.4-C.5-1",
+      "title": "Standing waves and resonance",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-C.4-C.5-1-q01",
+          "type": "mcq",
+          "prompt": "How far apart are adjacent nodes on a standing wave of wavelength λ?",
+          "options": [
+            "λ/4",
+            "λ/2",
+            "λ",
+            "2λ"
+          ],
+          "answer": 1,
+          "explanation": "Nodes (and antinodes) are separated by half a wavelength.",
+          "terms": [
+            "physics-c.4-c.5-node",
+            "physics-c.4-c.5-standing-wave"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q02",
+          "type": "tf",
+          "statement": "All points between two adjacent nodes of a standing wave oscillate in phase.",
+          "answer": true,
+          "explanation": "Within one loop all points move together; points in adjacent loops are in antiphase.",
+          "terms": [
+            "physics-c.4-c.5-standing-wave",
+            "physics-c.4-c.5-node"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q03",
+          "type": "fill",
+          "text": "A string 0.80 m long fixed at both ends vibrates in its fundamental mode. The wavelength is ___ m.",
+          "answer": "1.6",
+          "bank": [
+            "1.6",
+            "0.80",
+            "0.40",
+            "3.2"
+          ],
+          "explanation": "The fundamental has one loop: L = λ/2, so λ = 2L = 1.6 m.",
+          "terms": [
+            "physics-c.4-c.5-fundamental",
+            "physics-c.4-c.5-harmonic"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q04",
+          "type": "mcq",
+          "prompt": "A pipe closed at one end has fundamental frequency 100 Hz. Which harmonic frequencies can it produce?",
+          "options": [
+            "100, 200, 300 Hz…",
+            "100, 300, 500 Hz…",
+            "50, 100, 150 Hz…",
+            "200, 400, 600 Hz…"
+          ],
+          "answer": 1,
+          "explanation": "A closed pipe has a node at the closed end and an antinode at the open end, so only odd harmonics occur.",
+          "terms": [
+            "physics-c.4-c.5-harmonic",
+            "physics-c.4-c.5-fundamental"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q05",
+          "type": "fill",
+          "text": "The fundamental frequency of a string is 220 Hz. Its third harmonic is ___ Hz.",
+          "answer": "660",
+          "bank": [
+            "660",
+            "440",
+            "73",
+            "1100"
+          ],
+          "explanation": "For a string fixed at both ends, f_n = nf₁, so f₃ = 3 × 220 = 660 Hz.",
+          "terms": [
+            "physics-c.4-c.5-harmonic"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q06",
+          "type": "match",
+          "prompt": "Match each term to its behaviour.",
+          "pairs": [
+            {
+              "left": "Light damping",
+              "right": "Amplitude decays slowly over many cycles"
+            },
+            {
+              "left": "Critical damping",
+              "right": "Returns to equilibrium fastest without oscillating"
+            },
+            {
+              "left": "Heavy damping",
+              "right": "Returns slowly without oscillating"
+            },
+            {
+              "left": "Resonance",
+              "right": "Driving frequency matches natural frequency"
+            }
+          ],
+          "explanation": "Car suspensions are designed to be close to critically damped.",
+          "terms": [
+            "physics-c.4-c.5-damping",
+            "physics-c.4-c.5-resonance"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q07",
+          "type": "mcq",
+          "prompt": "How does increasing damping affect a resonance curve (amplitude against driving frequency)?",
+          "options": [
+            "The peak becomes higher and sharper",
+            "The peak becomes lower and broader",
+            "The peak moves to much higher frequency",
+            "No effect"
+          ],
+          "answer": 1,
+          "explanation": "Damping lowers the maximum amplitude and widens the peak (and shifts it slightly lower in frequency).",
+          "terms": [
+            "physics-c.4-c.5-damping",
+            "physics-c.4-c.5-resonance"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q08",
+          "type": "tf",
+          "statement": "A standing wave transfers energy along the medium in the same way as a travelling wave.",
+          "answer": false,
+          "explanation": "There is no net energy transfer in a standing wave; energy is stored in the oscillating pattern.",
+          "terms": [
+            "physics-c.4-c.5-standing-wave"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q09",
+          "type": "mcq",
+          "prompt": "An open pipe (open at both ends) of length 0.50 m has its fundamental wavelength equal to",
+          "options": [
+            "0.25 m",
+            "0.50 m",
+            "1.0 m",
+            "2.0 m"
+          ],
+          "answer": 2,
+          "explanation": "Antinodes at both ends with one node between: L = λ/2, so λ = 1.0 m.",
+          "terms": [
+            "physics-c.4-c.5-fundamental"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-1-q10",
+          "type": "order",
+          "prompt": "Order the formation of a standing wave on a string.",
+          "items": [
+            "A wave travels along the string",
+            "It reflects at the fixed end",
+            "Incident and reflected waves superpose",
+            "At certain frequencies stable nodes and antinodes form"
+          ],
+          "explanation": "Only frequencies that fit whole loops between the fixed ends give stable patterns.",
+          "terms": [
+            "physics-c.4-c.5-standing-wave",
+            "physics-c.4-c.5-node",
+            "physics-c.4-c.5-antinode"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-C.4-C.5-2",
+      "title": "The Doppler effect",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-C.4-C.5-2-q01",
+          "type": "mcq",
+          "prompt": "An ambulance approaches a stationary listener. Compared with the emitted siren frequency, the heard frequency is",
+          "options": [
+            "lower",
+            "higher",
+            "the same",
+            "zero"
+          ],
+          "answer": 1,
+          "explanation": "Wavefronts bunch up ahead of a moving source, so the observed wavelength is shorter and frequency higher.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q02",
+          "type": "tf",
+          "statement": "The Doppler effect occurs only for sound waves.",
+          "answer": false,
+          "explanation": "It applies to all waves, including light; astronomers use it to measure the speeds of galaxies and stars.",
+          "terms": [
+            "physics-c.4-c.5-doppler",
+            "physics-c.4-c.5-redshift"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q03",
+          "type": "fill",
+          "text": "Light from a galaxy has a fractional wavelength increase Δλ/λ = 0.010. Its recession speed is about ___ × 10⁶ m s⁻¹.",
+          "answer": "3.0",
+          "accept": [
+            "3"
+          ],
+          "bank": [
+            "3.0",
+            "30",
+            "0.30",
+            "1.0"
+          ],
+          "explanation": "v ≈ c(Δλ/λ) = 3.0 × 10⁸ × 0.010 = 3.0 × 10⁶ m s⁻¹.",
+          "terms": [
+            "physics-c.4-c.5-redshift"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q04",
+          "type": "mcq",
+          "prompt": "A line in a star’s spectrum is observed at a shorter wavelength than measured in the lab. The star is",
+          "options": [
+            "moving away",
+            "moving towards us",
+            "not moving",
+            "getting hotter"
+          ],
+          "answer": 1,
+          "explanation": "A shorter wavelength (blueshift) means the source is approaching.",
+          "terms": [
+            "physics-c.4-c.5-doppler",
+            "physics-c.4-c.5-redshift"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q05",
+          "type": "match",
+          "prompt": "Match each situation to the effect.",
+          "pairs": [
+            {
+              "left": "Source approaching",
+              "right": "Higher observed frequency"
+            },
+            {
+              "left": "Source receding",
+              "right": "Lower observed frequency"
+            },
+            {
+              "left": "Galaxy redshift",
+              "right": "Galaxy moving away"
+            },
+            {
+              "left": "Blueshift",
+              "right": "Source moving towards observer"
+            }
+          ],
+          "explanation": "Approach compresses waves; recession stretches them.",
+          "terms": [
+            "physics-c.4-c.5-doppler",
+            "physics-c.4-c.5-redshift"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q06",
+          "type": "mcq",
+          "prompt": "Which application uses the Doppler effect?",
+          "options": [
+            "Measuring blood flow speed with ultrasound",
+            "Focusing light with a lens",
+            "Measuring resistance",
+            "Splitting light with a prism"
+          ],
+          "answer": 0,
+          "explanation": "Ultrasound reflected from moving blood cells is frequency-shifted, giving the flow speed; radar speed guns work similarly.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q07",
+          "type": "tf",
+          "statement": "The Doppler shift depends on the relative speed of source and observer along the line joining them.",
+          "answer": true,
+          "explanation": "Only the radial component of velocity changes the received frequency.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q08",
+          "type": "fill",
+          "text": "Wavefronts in front of an approaching source are ___ together than those behind it.",
+          "answer": "closer",
+          "bank": [
+            "closer",
+            "further",
+            "equally",
+            "randomly"
+          ],
+          "explanation": "The source moves forward between emissions, shortening the wavelength ahead.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q09",
+          "type": "mcq",
+          "prompt": "A car horn sounds as the car passes a pedestrian. What does the pedestrian hear?",
+          "options": [
+            "A steady pitch",
+            "A rising pitch",
+            "A sudden drop from higher to lower pitch",
+            "A sudden rise from lower to higher pitch"
+          ],
+          "answer": 2,
+          "explanation": "Approaching gives a raised frequency, receding a lowered one, so the pitch drops as the car passes.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-2-q10",
+          "type": "order",
+          "prompt": "Order the steps to find a galaxy’s recession speed from its spectrum.",
+          "items": [
+            "Identify a known spectral line",
+            "Measure its observed wavelength",
+            "Calculate Δλ/λ using the lab wavelength",
+            "Use v ≈ cΔλ/λ"
+          ],
+          "explanation": "This approximation is valid when v ≪ c.",
+          "terms": [
+            "physics-c.4-c.5-redshift"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-C.4-C.5-3",
+      "title": "Doppler equations for sound",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-C.4-C.5-3-q01",
+          "type": "mcq",
+          "prompt": "A source emitting 500 Hz moves at 34 m s⁻¹ towards a stationary observer. Speed of sound 340 m s⁻¹. The observed frequency is about",
+          "options": [
+            "556 Hz",
+            "455 Hz",
+            "550 Hz",
+            "500 Hz"
+          ],
+          "answer": 0,
+          "explanation": "f′ = f v/(v − u_s) = 500 × 340/306 ≈ 556 Hz.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q02",
+          "type": "fill",
+          "text": "The same 500 Hz source moving away at 34 m s⁻¹ is heard at about ___ Hz (v = 340 m s⁻¹).",
+          "answer": "455",
+          "accept": [
+            "454.5"
+          ],
+          "bank": [
+            "455",
+            "450",
+            "556",
+            "545"
+          ],
+          "explanation": "f′ = f v/(v + u_s) = 500 × 340/374 ≈ 455 Hz.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q03",
+          "type": "mcq",
+          "prompt": "An observer moves at 34 m s⁻¹ towards a stationary 500 Hz source (v = 340 m s⁻¹). The observed frequency is",
+          "options": [
+            "550 Hz",
+            "556 Hz",
+            "450 Hz",
+            "500 Hz"
+          ],
+          "answer": 0,
+          "explanation": "f′ = f(v + u_o)/v = 500 × 374/340 = 550 Hz.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q04",
+          "type": "tf",
+          "statement": "For sound, a source moving at speed u towards a stationary observer gives exactly the same shift as an observer moving at u towards a stationary source.",
+          "answer": false,
+          "explanation": "The equations differ (556 Hz vs 550 Hz above) because sound needs a medium, so motion relative to the air matters.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q05",
+          "type": "match",
+          "prompt": "Match each case to its equation.",
+          "pairs": [
+            {
+              "left": "Source approaching",
+              "right": "f′ = fv/(v − u_s)"
+            },
+            {
+              "left": "Source receding",
+              "right": "f′ = fv/(v + u_s)"
+            },
+            {
+              "left": "Observer approaching",
+              "right": "f′ = f(v + u_o)/v"
+            },
+            {
+              "left": "Observer receding",
+              "right": "f′ = f(v − u_o)/v"
+            }
+          ],
+          "explanation": "Signs follow the rule: approach always raises the frequency.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q06",
+          "type": "fill",
+          "text": "In the Doppler equations for sound, v is the speed of sound relative to the ___.",
+          "answer": "medium",
+          "bank": [
+            "medium",
+            "source",
+            "observer",
+            "vacuum"
+          ],
+          "explanation": "Sound travels at a fixed speed through still air, independent of source motion.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q07",
+          "type": "mcq",
+          "prompt": "A bat emits 40 kHz and flies towards a wall. The reflected wave it hears is",
+          "options": [
+            "at 40 kHz exactly",
+            "raised by a single Doppler shift",
+            "raised by two shifts: wall as moving observer, then wall as moving source",
+            "lowered"
+          ],
+          "answer": 2,
+          "explanation": "The wall receives a shifted frequency, then acts as a source relative to the approaching bat, so the shift happens twice.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q08",
+          "type": "tf",
+          "statement": "As the source speed approaches the speed of sound, the observed frequency ahead of it becomes very large.",
+          "answer": true,
+          "explanation": "The denominator v − u_s tends to zero; wavefronts pile up, forming a shock wave (sonic boom) at u_s ≥ v.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q09",
+          "type": "mcq",
+          "prompt": "A train whistle heard at 520 Hz while approaching and 480 Hz while receding. The emitted frequency is closest to",
+          "options": [
+            "480 Hz",
+            "499 Hz",
+            "520 Hz",
+            "1000 Hz"
+          ],
+          "answer": 1,
+          "explanation": "From f v/(v−u) = 520 and f v/(v+u) = 480, 1/f = (1/520 + 1/480)/2, giving f ≈ 499 Hz.",
+          "terms": [
+            "physics-c.4-c.5-doppler"
+          ]
+        },
+        {
+          "id": "physics-C.4-C.5-3-q10",
+          "type": "mcq",
+          "prompt": "Why does the Doppler formula for light use only the relative velocity of source and observer?",
+          "options": [
+            "Light needs no medium and its speed is the same for all observers",
+            "Light is slower than sound",
+            "Light is longitudinal",
+            "Light has no frequency"
+          ],
+          "answer": 0,
+          "explanation": "With no medium, only relative motion matters, consistent with special relativity.",
+          "terms": [
+            "physics-c.4-c.5-doppler",
+            "physics-c.4-c.5-redshift"
+          ]
+        }
+      ]
+    }
+  ]
+}

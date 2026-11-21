@@ -1,0 +1,609 @@
+{
+  "id": "physics-A.1",
+  "code": "A.1",
+  "unit": "A",
+  "title": "Kinematics",
+  "level": "SL",
+  "summary": "Describing motion with displacement, velocity and acceleration: motion graphs, the suvat equations for uniform acceleration, and projectile motion with and without air resistance.",
+  "keyterms": [
+    {
+      "id": "physics-a.1-displacement",
+      "term": "Displacement",
+      "definition": "The change in position of an object in a stated direction; a vector, measured in metres.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-distance",
+      "term": "Distance",
+      "definition": "The total length of path travelled; a scalar, so it ignores direction.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-velocity",
+      "term": "Velocity",
+      "definition": "Rate of change of displacement, v = Δs/Δt; a vector measured in m s⁻¹.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-speed",
+      "term": "Speed",
+      "definition": "Rate of change of distance travelled; the magnitude of velocity for straight-line motion.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-acceleration",
+      "term": "Acceleration",
+      "definition": "Rate of change of velocity, a = Δv/Δt; a vector measured in m s⁻².",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-uniform-acceleration",
+      "term": "Uniform acceleration",
+      "definition": "Acceleration that is constant in magnitude and direction; the condition for using the suvat equations.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-free-fall",
+      "term": "Free fall",
+      "definition": "Motion under gravity alone, with no air resistance; acceleration g ≈ 9.8 m s⁻² downwards near Earth.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-projectile",
+      "term": "Projectile",
+      "definition": "An object launched into the air and moving under gravity, with independent horizontal and vertical motion.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-terminal-velocity",
+      "term": "Terminal velocity",
+      "definition": "The constant velocity reached when drag balances weight, so the resultant force and acceleration are zero.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-relative-velocity",
+      "term": "Relative velocity",
+      "definition": "The velocity of one object as measured by an observer moving with another: v_AB = v_A − v_B.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-instantaneous",
+      "term": "Instantaneous velocity",
+      "definition": "The velocity at one moment, equal to the gradient of the tangent to a displacement–time graph.",
+      "hl": false
+    },
+    {
+      "id": "physics-a.1-average-velocity",
+      "term": "Average velocity",
+      "definition": "Total displacement divided by total time taken.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-A.1-1",
+      "title": "Describing motion and motion graphs",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-A.1-1-q01",
+          "type": "mcq",
+          "prompt": "A runner completes exactly one lap of a 400 m track in 80 s. What are her average speed and average velocity?",
+          "options": [
+            "5 m s⁻¹ and 5 m s⁻¹",
+            "0 and 5 m s⁻¹",
+            "5 m s⁻¹ and 0",
+            "0 and 0"
+          ],
+          "answer": 2,
+          "explanation": "Average speed uses distance (400 m / 80 s = 5 m s⁻¹). After one full lap the displacement is zero, so the average velocity is zero.",
+          "terms": [
+            "physics-a.1-distance",
+            "physics-a.1-displacement",
+            "physics-a.1-average-velocity"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q02",
+          "type": "tf",
+          "statement": "Speed is a vector quantity.",
+          "answer": false,
+          "explanation": "Speed is a scalar: it has magnitude only. Velocity is the corresponding vector.",
+          "terms": [
+            "physics-a.1-speed",
+            "physics-a.1-velocity"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q03",
+          "type": "fill",
+          "text": "The gradient of a velocity–time graph gives the ___.",
+          "answer": "acceleration",
+          "bank": [
+            "acceleration",
+            "displacement",
+            "velocity",
+            "distance"
+          ],
+          "explanation": "Acceleration is the rate of change of velocity, so it is the gradient of a v–t graph.",
+          "terms": [
+            "physics-a.1-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q04",
+          "type": "mcq",
+          "prompt": "What does the area under a velocity–time graph represent?",
+          "options": [
+            "Acceleration",
+            "Displacement",
+            "Average speed",
+            "Jerk"
+          ],
+          "answer": 1,
+          "explanation": "Area = velocity × time, which is displacement. Areas below the time axis count as negative displacement.",
+          "terms": [
+            "physics-a.1-displacement"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q05",
+          "type": "match",
+          "prompt": "Match each graph feature to the quantity it gives.",
+          "pairs": [
+            {
+              "left": "Gradient of s–t graph",
+              "right": "Velocity"
+            },
+            {
+              "left": "Gradient of v–t graph",
+              "right": "Acceleration"
+            },
+            {
+              "left": "Area under v–t graph",
+              "right": "Displacement"
+            },
+            {
+              "left": "Area under a–t graph",
+              "right": "Change in velocity"
+            }
+          ],
+          "explanation": "Gradients give rates of change; areas under graphs give the accumulated quantity.",
+          "terms": [
+            "physics-a.1-velocity",
+            "physics-a.1-acceleration",
+            "physics-a.1-displacement"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q06",
+          "type": "mcq",
+          "prompt": "A displacement–time graph for a car is a straight line with a negative gradient. The car is moving with",
+          "options": [
+            "constant velocity in the negative direction",
+            "constant negative acceleration",
+            "increasing speed",
+            "zero velocity"
+          ],
+          "answer": 0,
+          "explanation": "A straight s–t line means constant velocity; a negative gradient means the velocity is in the negative direction.",
+          "terms": [
+            "physics-a.1-velocity",
+            "physics-a.1-instantaneous"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q07",
+          "type": "tf",
+          "statement": "An object can have a velocity of zero and a non-zero acceleration at the same instant.",
+          "answer": true,
+          "explanation": "A ball thrown upwards is momentarily at rest at the top, but its acceleration is still g downwards.",
+          "terms": [
+            "physics-a.1-velocity",
+            "physics-a.1-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q08",
+          "type": "fill",
+          "text": "A car changes velocity from 12 m s⁻¹ to 30 m s⁻¹ in 6.0 s. Its average acceleration is ___ m s⁻².",
+          "answer": "3.0",
+          "accept": [
+            "3"
+          ],
+          "bank": [
+            "3.0",
+            "5.0",
+            "7.0",
+            "18"
+          ],
+          "explanation": "a = Δv/Δt = (30 − 12)/6.0 = 3.0 m s⁻².",
+          "terms": [
+            "physics-a.1-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q09",
+          "type": "mcq",
+          "prompt": "Train A moves east at 25 m s⁻¹ and train B moves east at 15 m s⁻¹. What is the velocity of A relative to B?",
+          "options": [
+            "40 m s⁻¹ east",
+            "10 m s⁻¹ west",
+            "10 m s⁻¹ east",
+            "40 m s⁻¹ west"
+          ],
+          "answer": 2,
+          "explanation": "v_AB = v_A − v_B = 25 − 15 = 10 m s⁻¹ east: a passenger on B sees A pulling ahead.",
+          "terms": [
+            "physics-a.1-relative-velocity"
+          ]
+        },
+        {
+          "id": "physics-A.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to find instantaneous velocity from a curved s–t graph.",
+          "items": [
+            "Choose the instant on the time axis",
+            "Draw a tangent to the curve at that point",
+            "Read two well-separated points on the tangent",
+            "Calculate Δs/Δt for the tangent"
+          ],
+          "explanation": "The instantaneous velocity is the gradient of the tangent at that time; using widely spaced points reduces reading error.",
+          "terms": [
+            "physics-a.1-instantaneous"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-A.1-2",
+      "title": "Uniform acceleration and the suvat equations",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-A.1-2-q01",
+          "type": "mcq",
+          "prompt": "Which condition must hold for the equations v = u + at and s = ut + ½at² to be valid?",
+          "options": [
+            "Velocity is constant",
+            "Acceleration is constant",
+            "The object starts from rest",
+            "Air resistance is present"
+          ],
+          "answer": 1,
+          "explanation": "The suvat equations are derived assuming uniform (constant) acceleration.",
+          "terms": [
+            "physics-a.1-uniform-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q02",
+          "type": "fill",
+          "text": "A stone is dropped from rest. Taking g = 9.8 m s⁻², its speed after 2.0 s is ___ m s⁻¹.",
+          "answer": "19.6",
+          "accept": [
+            "20",
+            "19.6 m/s"
+          ],
+          "bank": [
+            "9.8",
+            "19.6",
+            "39.2",
+            "4.9"
+          ],
+          "explanation": "v = u + at = 0 + 9.8 × 2.0 = 19.6 m s⁻¹.",
+          "terms": [
+            "physics-a.1-free-fall",
+            "physics-a.1-uniform-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q03",
+          "type": "mcq",
+          "prompt": "A car accelerates uniformly from rest at 2.0 m s⁻² for 5.0 s. How far does it travel?",
+          "options": [
+            "10 m",
+            "50 m",
+            "25 m",
+            "20 m"
+          ],
+          "answer": 2,
+          "explanation": "s = ut + ½at² = 0 + ½ × 2.0 × 5.0² = 25 m.",
+          "terms": [
+            "physics-a.1-uniform-acceleration",
+            "physics-a.1-displacement"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q04",
+          "type": "tf",
+          "statement": "In the absence of air resistance, a heavy ball and a light ball dropped together from the same height land at the same time.",
+          "answer": true,
+          "explanation": "In free fall all objects have the same acceleration g, independent of mass.",
+          "terms": [
+            "physics-a.1-free-fall"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q05",
+          "type": "mcq",
+          "prompt": "A cyclist moving at 8.0 m s⁻¹ brakes uniformly to rest in 16 m. What is the deceleration?",
+          "options": [
+            "0.5 m s⁻²",
+            "1.0 m s⁻²",
+            "4.0 m s⁻²",
+            "2.0 m s⁻²"
+          ],
+          "answer": 3,
+          "explanation": "v² = u² + 2as gives 0 = 64 + 2a(16), so a = −2.0 m s⁻²: a deceleration of 2.0 m s⁻².",
+          "terms": [
+            "physics-a.1-uniform-acceleration",
+            "physics-a.1-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q06",
+          "type": "fill",
+          "text": "A ball thrown vertically upwards has, at its highest point, a vertical velocity of ___.",
+          "answer": "zero",
+          "accept": [
+            "0"
+          ],
+          "bank": [
+            "zero",
+            "g",
+            "its launch speed",
+            "maximum"
+          ],
+          "explanation": "At the top the vertical velocity changes sign, so it is momentarily zero, while the acceleration is still g downwards.",
+          "terms": [
+            "physics-a.1-free-fall",
+            "physics-a.1-velocity"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q07",
+          "type": "match",
+          "prompt": "Match each equation to the variable it does not contain.",
+          "pairs": [
+            {
+              "left": "v = u + at",
+              "right": "No displacement needed"
+            },
+            {
+              "left": "s = ½(u + v)t",
+              "right": "No acceleration needed"
+            },
+            {
+              "left": "v² = u² + 2as",
+              "right": "No time needed"
+            },
+            {
+              "left": "s = ut + ½at²",
+              "right": "No final velocity needed"
+            }
+          ],
+          "explanation": "Pick the suvat equation that omits the quantity you neither know nor need.",
+          "terms": [
+            "physics-a.1-uniform-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q08",
+          "type": "tf",
+          "statement": "A falling skydiver reaches terminal velocity when her weight becomes zero.",
+          "answer": false,
+          "explanation": "Her weight stays the same. Terminal velocity is reached when drag grows to equal the weight, so the resultant force is zero.",
+          "terms": [
+            "physics-a.1-terminal-velocity"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q09",
+          "type": "mcq",
+          "prompt": "A ball is thrown straight up at 14.7 m s⁻¹ (g = 9.8 m s⁻², no air resistance). How long until it returns to the thrower’s hand?",
+          "options": [
+            "1.5 s",
+            "3.0 s",
+            "4.5 s",
+            "0.67 s"
+          ],
+          "answer": 1,
+          "explanation": "Time to the top = u/g = 14.7/9.8 = 1.5 s; the motion is symmetric so the total time is 3.0 s.",
+          "terms": [
+            "physics-a.1-free-fall",
+            "physics-a.1-uniform-acceleration"
+          ]
+        },
+        {
+          "id": "physics-A.1-2-q10",
+          "type": "order",
+          "prompt": "Order the stages of a skydiver’s fall before opening the parachute.",
+          "items": [
+            "Leaves the plane: acceleration ≈ g",
+            "Speed rises and drag increases",
+            "Acceleration decreases",
+            "Drag equals weight: terminal velocity"
+          ],
+          "explanation": "As speed increases so does drag, reducing the resultant force and acceleration until they reach zero.",
+          "terms": [
+            "physics-a.1-terminal-velocity",
+            "physics-a.1-free-fall"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-A.1-3",
+      "title": "Projectile motion",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-A.1-3-q01",
+          "type": "mcq",
+          "prompt": "Ignoring air resistance, which quantity stays constant during the flight of a projectile?",
+          "options": [
+            "Vertical velocity",
+            "Speed",
+            "Horizontal velocity",
+            "Kinetic energy"
+          ],
+          "answer": 2,
+          "explanation": "Gravity acts only vertically, so with no air resistance there is no horizontal force and the horizontal velocity is constant.",
+          "terms": [
+            "physics-a.1-projectile"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q02",
+          "type": "tf",
+          "statement": "The horizontal and vertical motions of a projectile can be analysed independently.",
+          "answer": true,
+          "explanation": "Perpendicular components of motion are independent; they share only the time of flight.",
+          "terms": [
+            "physics-a.1-projectile"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q03",
+          "type": "mcq",
+          "prompt": "A ball is rolled horizontally off a table 1.25 m high at 3.0 m s⁻¹ (g = 10 m s⁻²). How far from the table does it land?",
+          "options": [
+            "1.5 m",
+            "3.0 m",
+            "0.75 m",
+            "3.75 m"
+          ],
+          "answer": 0,
+          "explanation": "Fall time: 1.25 = ½(10)t², so t = 0.50 s. Horizontal distance = 3.0 × 0.50 = 1.5 m.",
+          "terms": [
+            "physics-a.1-projectile",
+            "physics-a.1-displacement"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q04",
+          "type": "fill",
+          "text": "A projectile is launched at 20 m s⁻¹ at 30° above the horizontal. Its initial vertical velocity component is ___ m s⁻¹.",
+          "answer": "10",
+          "accept": [
+            "10.0"
+          ],
+          "bank": [
+            "10",
+            "17.3",
+            "20",
+            "11.5"
+          ],
+          "explanation": "u_y = u sin θ = 20 × sin 30° = 10 m s⁻¹. The horizontal component is 20 cos 30° ≈ 17.3 m s⁻¹.",
+          "terms": [
+            "physics-a.1-projectile",
+            "physics-a.1-velocity"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q05",
+          "type": "mcq",
+          "prompt": "Without air resistance, which launch angle gives the maximum range on level ground?",
+          "options": [
+            "30°",
+            "60°",
+            "90°",
+            "45°"
+          ],
+          "answer": 3,
+          "explanation": "Range = u² sin 2θ / g, which is greatest when sin 2θ = 1, i.e. θ = 45°.",
+          "terms": [
+            "physics-a.1-projectile"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q06",
+          "type": "tf",
+          "statement": "At the highest point of its path, a projectile launched at an angle has zero velocity.",
+          "answer": false,
+          "explanation": "Only the vertical component is zero at the top; the horizontal component is still present.",
+          "terms": [
+            "physics-a.1-projectile",
+            "physics-a.1-velocity"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q07",
+          "type": "mcq",
+          "prompt": "How does air resistance change the trajectory of a projectile compared with the ideal case?",
+          "options": [
+            "Range and maximum height both decrease, and the path is no longer symmetric",
+            "Range increases but maximum height decreases",
+            "The path stays a symmetric parabola but is shorter",
+            "Only the time of flight changes"
+          ],
+          "answer": 0,
+          "explanation": "Drag removes energy and opposes motion, so the projectile goes less high and less far, and the descent is steeper than the ascent.",
+          "terms": [
+            "physics-a.1-projectile"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q08",
+          "type": "fill",
+          "text": "Two balls leave a cliff at the same moment: one dropped, one thrown horizontally. Ignoring air resistance, they hit the level ground below ___.",
+          "answer": "at the same time",
+          "bank": [
+            "at the same time",
+            "thrown ball first",
+            "dropped ball first",
+            "at the same speed"
+          ],
+          "explanation": "Both have zero initial vertical velocity and the same vertical acceleration g, so their fall times are equal.",
+          "terms": [
+            "physics-a.1-projectile",
+            "physics-a.1-free-fall"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q09",
+          "type": "match",
+          "prompt": "Match each feature of ideal projectile motion.",
+          "pairs": [
+            {
+              "left": "Horizontal velocity (no drag)",
+              "right": "Constant"
+            },
+            {
+              "left": "Vertical acceleration",
+              "right": "g downwards"
+            },
+            {
+              "left": "Vertical velocity at the top",
+              "right": "Zero"
+            },
+            {
+              "left": "Trajectory shape (no drag)",
+              "right": "Parabola"
+            }
+          ],
+          "explanation": "In ideal projectile motion only the vertical velocity changes, at a constant rate g.",
+          "terms": [
+            "physics-a.1-projectile"
+          ]
+        },
+        {
+          "id": "physics-A.1-3-q10",
+          "type": "order",
+          "prompt": "Order the steps to find the range of a projectile launched from level ground.",
+          "items": [
+            "Resolve the launch velocity into components",
+            "Use the vertical motion to find the time of flight",
+            "Multiply horizontal velocity by time of flight",
+            "State the range with units"
+          ],
+          "explanation": "Time links the two independent components: find it from the vertical motion, then use it horizontally.",
+          "terms": [
+            "physics-a.1-projectile"
+          ]
+        }
+      ]
+    }
+  ]
+}

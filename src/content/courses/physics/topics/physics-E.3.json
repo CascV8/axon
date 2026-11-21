@@ -1,0 +1,602 @@
+{
+  "id": "physics-E.3",
+  "code": "E.3",
+  "unit": "E",
+  "title": "Radioactive decay",
+  "level": "SL",
+  "summary": "Isotopes, mass defect and binding energy, alpha, beta and gamma decay, the strong and weak forces, half-life and background radiation, and (HL) the decay constant and activity equations.",
+  "keyterms": [
+    {
+      "id": "physics-e.3-isotope",
+      "term": "Isotope",
+      "definition": "Nuclides of the same element (same Z) with different numbers of neutrons.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-mass-defect",
+      "term": "Mass defect",
+      "definition": "Difference between the total mass of separate nucleons and the mass of the nucleus.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-binding-energy",
+      "term": "Binding energy",
+      "definition": "Energy needed to separate a nucleus into its nucleons: E = Δmc².",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-bepn",
+      "term": "Binding energy per nucleon",
+      "definition": "Binding energy divided by nucleon number; a measure of stability, peaking near iron-56.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-alpha",
+      "term": "Alpha decay",
+      "definition": "Emission of a helium-4 nucleus; A falls by 4 and Z by 2.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-beta-minus",
+      "term": "Beta-minus decay",
+      "definition": "A neutron becomes a proton, emitting an electron and an electron antineutrino.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-gamma",
+      "term": "Gamma emission",
+      "definition": "Emission of a high-energy photon from an excited nucleus; A and Z unchanged.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-half-life",
+      "term": "Half-life",
+      "definition": "Time for half the nuclei in a sample to decay, or for the activity to halve.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-strong-force",
+      "term": "Strong nuclear force",
+      "definition": "Short-range attractive force between nucleons that holds the nucleus together.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-background",
+      "term": "Background radiation",
+      "definition": "Ionizing radiation always present from natural and artificial sources.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.3-decay-constant",
+      "term": "Decay constant",
+      "definition": "Probability of decay per unit time, λ; T½ = ln 2/λ.",
+      "hl": true
+    },
+    {
+      "id": "physics-e.3-activity",
+      "term": "Activity",
+      "definition": "Number of decays per second, A = λN, measured in becquerels.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-E.3-1",
+      "title": "Nuclear stability and binding energy",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-E.3-1-q01",
+          "type": "mcq",
+          "prompt": "Which nuclide has the highest binding energy per nucleon?",
+          "options": [
+            "Hydrogen-2",
+            "Helium-4",
+            "Iron-56",
+            "Uranium-235"
+          ],
+          "answer": 2,
+          "explanation": "Iron-56 (and nickel nearby) is at the peak of the curve, so it is among the most stable nuclei.",
+          "terms": [
+            "physics-e.3-bepn"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q02",
+          "type": "tf",
+          "statement": "The mass of a nucleus is less than the total mass of its separate protons and neutrons.",
+          "answer": true,
+          "explanation": "The mass defect corresponds to the binding energy released when the nucleus formed.",
+          "terms": [
+            "physics-e.3-mass-defect",
+            "physics-e.3-binding-energy"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q03",
+          "type": "fill",
+          "text": "A mass defect of 0.030 u corresponds to a binding energy of about ___ MeV (1 u = 931.5 MeV c⁻²).",
+          "answer": "28",
+          "accept": [
+            "27.9"
+          ],
+          "bank": [
+            "28",
+            "0.030",
+            "31",
+            "2.8"
+          ],
+          "explanation": "E = 0.030 × 931.5 ≈ 27.9 MeV ≈ 28 MeV.",
+          "terms": [
+            "physics-e.3-mass-defect",
+            "physics-e.3-binding-energy"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q04",
+          "type": "mcq",
+          "prompt": "Why do heavy stable nuclei have more neutrons than protons?",
+          "options": [
+            "Neutrons are lighter",
+            "Extra neutrons add strong-force attraction without adding electrostatic repulsion",
+            "Protons decay",
+            "Neutrons have negative charge"
+          ],
+          "answer": 1,
+          "explanation": "As Z grows, proton repulsion grows; additional neutrons provide extra binding.",
+          "terms": [
+            "physics-e.3-strong-force"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q05",
+          "type": "match",
+          "prompt": "Match each force to its role in the nucleus.",
+          "pairs": [
+            {
+              "left": "Strong nuclear force",
+              "right": "Holds nucleons together, very short range"
+            },
+            {
+              "left": "Electrostatic force",
+              "right": "Repels protons, infinite range"
+            },
+            {
+              "left": "Weak nuclear force",
+              "right": "Responsible for beta decay"
+            },
+            {
+              "left": "Gravitational force",
+              "right": "Negligible inside nuclei"
+            }
+          ],
+          "explanation": "Nuclear stability is a balance of strong attraction against electrostatic repulsion.",
+          "terms": [
+            "physics-e.3-strong-force"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q06",
+          "type": "mcq",
+          "prompt": "The strong nuclear force between two nucleons is",
+          "options": [
+            "attractive at all separations",
+            "repulsive at very short separations (below about 0.5 fm), attractive at about 1 fm, negligible beyond a few fm",
+            "long-range like gravity",
+            "only between protons"
+          ],
+          "answer": 1,
+          "explanation": "Its short range explains why very large nuclei are less stable.",
+          "terms": [
+            "physics-e.3-strong-force"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q07",
+          "type": "fill",
+          "text": "Carbon-12 and carbon-14 are ___ of each other.",
+          "answer": "isotopes",
+          "bank": [
+            "isotopes",
+            "isomers",
+            "isobars",
+            "ions"
+          ],
+          "explanation": "Same Z = 6, different neutron numbers (6 and 8).",
+          "terms": [
+            "physics-e.3-isotope"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q08",
+          "type": "tf",
+          "statement": "Binding energy is energy stored in the nucleus that is released when it is broken apart.",
+          "answer": false,
+          "explanation": "Binding energy must be SUPPLIED to separate the nucleons; it was released when the nucleus formed.",
+          "terms": [
+            "physics-e.3-binding-energy"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q09",
+          "type": "mcq",
+          "prompt": "Both fission of heavy nuclei and fusion of light nuclei release energy because",
+          "options": [
+            "products have higher binding energy per nucleon",
+            "products have more mass",
+            "neutrons are created",
+            "charge increases"
+          ],
+          "answer": 0,
+          "explanation": "Both move towards the iron peak, so the products are more tightly bound and mass is converted to energy.",
+          "terms": [
+            "physics-e.3-bepn"
+          ]
+        },
+        {
+          "id": "physics-E.3-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to calculate binding energy per nucleon.",
+          "items": [
+            "Add the masses of the separate protons and neutrons",
+            "Subtract the nuclear mass to get the mass defect",
+            "Convert to energy using 931.5 MeV per u",
+            "Divide by the nucleon number A"
+          ],
+          "explanation": "Use nuclear (not atomic) masses or account for the electrons consistently.",
+          "terms": [
+            "physics-e.3-mass-defect",
+            "physics-e.3-binding-energy",
+            "physics-e.3-bepn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-E.3-2",
+      "title": "Decay types and half-life",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-E.3-2-q01",
+          "type": "mcq",
+          "prompt": "Radium-226 (Z = 88) undergoes alpha decay. The daughter nucleus is",
+          "options": [
+            "²²²₈₆Rn",
+            "²²⁶₈₉Ac",
+            "²²²₈₈Ra",
+            "²²⁴₈₆Rn"
+          ],
+          "answer": 0,
+          "explanation": "Alpha decay: A − 4 = 222, Z − 2 = 86 (radon).",
+          "terms": [
+            "physics-e.3-alpha"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q02",
+          "type": "fill",
+          "text": "In beta-minus decay, the proton number of the nucleus increases by ___.",
+          "answer": "1",
+          "bank": [
+            "1",
+            "2",
+            "0",
+            "4"
+          ],
+          "explanation": "A neutron changes into a proton, so Z increases by 1 and A is unchanged.",
+          "terms": [
+            "physics-e.3-beta-minus"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q03",
+          "type": "tf",
+          "statement": "The continuous energy spectrum of beta particles was evidence for the existence of the neutrino.",
+          "answer": true,
+          "explanation": "If only two particles shared the energy, beta electrons would have one fixed energy; a third particle (antineutrino) shares it.",
+          "terms": [
+            "physics-e.3-beta-minus"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q04",
+          "type": "match",
+          "prompt": "Match each emission to its property.",
+          "pairs": [
+            {
+              "left": "Alpha",
+              "right": "Most ionizing, stopped by paper"
+            },
+            {
+              "left": "Beta-minus",
+              "right": "Fast electron, stopped by a few mm of aluminium"
+            },
+            {
+              "left": "Gamma",
+              "right": "Least ionizing, reduced by thick lead"
+            },
+            {
+              "left": "Neutrino",
+              "right": "Barely interacts with matter"
+            }
+          ],
+          "explanation": "Ionizing power and penetration are inversely related.",
+          "terms": [
+            "physics-e.3-alpha",
+            "physics-e.3-beta-minus",
+            "physics-e.3-gamma"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q05",
+          "type": "mcq",
+          "prompt": "A sample has activity 800 Bq. Its half-life is 2.0 h. What is the activity after 6.0 h?",
+          "options": [
+            "400 Bq",
+            "200 Bq",
+            "100 Bq",
+            "0 Bq"
+          ],
+          "answer": 2,
+          "explanation": "6.0 h is 3 half-lives: 800 → 400 → 200 → 100 Bq.",
+          "terms": [
+            "physics-e.3-half-life"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q06",
+          "type": "fill",
+          "text": "After 4 half-lives, the fraction of the original nuclei remaining is ___.",
+          "answer": "1/16",
+          "accept": [
+            "0.0625"
+          ],
+          "bank": [
+            "1/16",
+            "1/8",
+            "1/4",
+            "1/32"
+          ],
+          "explanation": "(½)⁴ = 1/16.",
+          "terms": [
+            "physics-e.3-half-life"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q07",
+          "type": "tf",
+          "statement": "Radioactive decay is random: you cannot predict when a particular nucleus will decay.",
+          "answer": true,
+          "explanation": "Only the probability of decay per unit time is fixed, so large samples follow predictable statistics.",
+          "terms": [
+            "physics-e.3-half-life"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q08",
+          "type": "mcq",
+          "prompt": "Which of these is a major natural source of background radiation?",
+          "options": [
+            "Mobile phones",
+            "Radon gas from rocks",
+            "Microwave ovens",
+            "Radio broadcasts"
+          ],
+          "answer": 1,
+          "explanation": "Radon from uranium in rocks and soil is a large contributor; phones and radios emit non-ionizing radiation.",
+          "terms": [
+            "physics-e.3-background"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q09",
+          "type": "mcq",
+          "prompt": "Gamma emission changes the nucleus by",
+          "options": [
+            "reducing A by 4",
+            "increasing Z by 1",
+            "reducing its energy only",
+            "turning a proton into a neutron"
+          ],
+          "answer": 2,
+          "explanation": "Gamma photons carry away excess energy from an excited nucleus; A and Z are unchanged.",
+          "terms": [
+            "physics-e.3-gamma"
+          ]
+        },
+        {
+          "id": "physics-E.3-2-q10",
+          "type": "order",
+          "prompt": "Order the steps when measuring the half-life of a short-lived source.",
+          "items": [
+            "Measure the background count rate",
+            "Record the count rate at regular intervals",
+            "Subtract the background from each reading",
+            "Plot corrected count rate against time and read the halving time"
+          ],
+          "explanation": "Background correction matters most when the source count rate becomes small.",
+          "terms": [
+            "physics-e.3-half-life",
+            "physics-e.3-background"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-E.3-3",
+      "title": "The decay law and activity",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-E.3-3-q01",
+          "type": "fill",
+          "text": "A nuclide has half-life 10 s. Its decay constant is ___ s⁻¹.",
+          "answer": "0.069",
+          "accept": [
+            "0.0693",
+            "0.07"
+          ],
+          "bank": [
+            "0.069",
+            "6.9",
+            "0.10",
+            "14.4"
+          ],
+          "explanation": "λ = ln 2 / T½ = 0.693/10 = 0.0693 s⁻¹.",
+          "terms": [
+            "physics-e.3-decay-constant"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q02",
+          "type": "mcq",
+          "prompt": "A sample contains 2.0 × 10¹² nuclei with λ = 3.0 × 10⁻⁴ s⁻¹. Its activity is",
+          "options": [
+            "6.0 × 10⁸ Bq",
+            "6.7 × 10¹⁵ Bq",
+            "1.5 × 10⁻¹⁶ Bq",
+            "3.0 × 10⁸ Bq"
+          ],
+          "answer": 0,
+          "explanation": "A = λN = 3.0 × 10⁻⁴ × 2.0 × 10¹² = 6.0 × 10⁸ Bq.",
+          "terms": [
+            "physics-e.3-activity",
+            "physics-e.3-decay-constant"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q03",
+          "type": "tf",
+          "statement": "A graph of ln(activity) against time for a single nuclide is a straight line of gradient −λ.",
+          "answer": true,
+          "explanation": "A = A₀e^(−λt), so ln A = ln A₀ − λt.",
+          "terms": [
+            "physics-e.3-decay-constant",
+            "physics-e.3-activity"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q04",
+          "type": "mcq",
+          "prompt": "What fraction of nuclei remain after time t = 1/λ?",
+          "options": [
+            "1/2",
+            "1/e ≈ 0.37",
+            "0",
+            "1/λ"
+          ],
+          "answer": 1,
+          "explanation": "N = N₀e^(−λt) = N₀e^(−1).",
+          "terms": [
+            "physics-e.3-decay-constant"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q05",
+          "type": "fill",
+          "text": "The SI unit of activity, one decay per second, is the ___.",
+          "answer": "becquerel",
+          "bank": [
+            "becquerel",
+            "gray",
+            "sievert",
+            "hertz"
+          ],
+          "explanation": "Activity is measured in becquerels (Bq).",
+          "terms": [
+            "physics-e.3-activity"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q06",
+          "type": "mcq",
+          "prompt": "A source’s activity falls from 640 Bq to 40 Bq in 20 days. Its half-life is",
+          "options": [
+            "5 days",
+            "4 days",
+            "10 days",
+            "2.5 days"
+          ],
+          "answer": 0,
+          "explanation": "640/40 = 16 = 2⁴: four half-lives in 20 days, so T½ = 5 days.",
+          "terms": [
+            "physics-e.3-half-life"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q07",
+          "type": "match",
+          "prompt": "Match each equation to what it gives.",
+          "pairs": [
+            {
+              "left": "N = N₀e^(−λt)",
+              "right": "Number of nuclei remaining"
+            },
+            {
+              "left": "A = λN",
+              "right": "Activity"
+            },
+            {
+              "left": "T½ = ln 2/λ",
+              "right": "Half-life"
+            },
+            {
+              "left": "A = A₀e^(−λt)",
+              "right": "Activity at time t"
+            }
+          ],
+          "explanation": "Activity decays with the same exponential as the number of nuclei.",
+          "terms": [
+            "physics-e.3-decay-constant",
+            "physics-e.3-activity",
+            "physics-e.3-half-life"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q08",
+          "type": "mcq",
+          "prompt": "To measure the half-life of a very long-lived isotope you should",
+          "options": [
+            "watch the count rate halve",
+            "measure its activity and the number of nuclei, then use λ = A/N",
+            "heat the sample",
+            "use a stronger detector only"
+          ],
+          "answer": 1,
+          "explanation": "For very long half-lives the activity barely changes; finding N from mass and molar mass gives λ = A/N.",
+          "terms": [
+            "physics-e.3-activity",
+            "physics-e.3-decay-constant"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q09",
+          "type": "tf",
+          "statement": "Increasing the temperature of a radioactive sample shortens its half-life.",
+          "answer": false,
+          "explanation": "Nuclear decay is unaffected by physical or chemical conditions such as temperature.",
+          "terms": [
+            "physics-e.3-half-life"
+          ]
+        },
+        {
+          "id": "physics-E.3-3-q10",
+          "type": "mcq",
+          "prompt": "After 3.0 half-lives, what percentage of the original nuclei have decayed?",
+          "options": [
+            "12.5 %",
+            "87.5 %",
+            "75 %",
+            "33 %"
+          ],
+          "answer": 1,
+          "explanation": "Remaining fraction = 1/8 = 12.5 %, so 87.5 % have decayed.",
+          "terms": [
+            "physics-e.3-half-life"
+          ]
+        }
+      ]
+    }
+  ]
+}

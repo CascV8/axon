@@ -1,0 +1,591 @@
+{
+  "id": "physics-D.1",
+  "code": "D.1",
+  "unit": "D",
+  "title": "Gravitational fields",
+  "level": "SL",
+  "summary": "Kepler’s laws, Newton’s law of gravitation, gravitational field strength and orbital motion, with (HL) gravitational potential, potential energy, equipotentials, escape speed and orbital energy.",
+  "keyterms": [
+    {
+      "id": "physics-d.1-newtons-law-gravitation",
+      "term": "Newton’s law of gravitation",
+      "definition": "Every pair of point masses attracts with force F = GMm/r², along the line joining them.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.1-field-strength",
+      "term": "Gravitational field strength",
+      "definition": "Force per unit mass on a small test mass, g = F/m = GM/r², in N kg⁻¹.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.1-field-lines",
+      "term": "Field lines",
+      "definition": "Lines showing the direction of force on a test mass; closer lines mean a stronger field.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.1-kepler-third",
+      "term": "Kepler’s third law",
+      "definition": "For orbits around the same central body, T² ∝ r³.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.1-kepler-first",
+      "term": "Kepler’s first law",
+      "definition": "Planets move in ellipses with the Sun at one focus.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.1-kepler-second",
+      "term": "Kepler’s second law",
+      "definition": "A line from the Sun to a planet sweeps out equal areas in equal times.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.1-orbital-speed",
+      "term": "Orbital speed",
+      "definition": "Speed of a circular orbit, v = √(GM/r).",
+      "hl": false
+    },
+    {
+      "id": "physics-d.1-gravitational-potential",
+      "term": "Gravitational potential",
+      "definition": "Work done per unit mass bringing a small mass from infinity to a point: V_g = −GM/r.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.1-gpe-field",
+      "term": "Gravitational potential energy",
+      "definition": "Work done bringing a mass from infinity to a point: E_p = −GMm/r.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.1-escape-speed",
+      "term": "Escape speed",
+      "definition": "Minimum launch speed to reach infinity with no propulsion: v_esc = √(2GM/r).",
+      "hl": true
+    },
+    {
+      "id": "physics-d.1-equipotential",
+      "term": "Equipotential surface",
+      "definition": "Surface of constant potential; perpendicular to field lines, and no work is done moving along it.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-D.1-1",
+      "title": "Newton’s law of gravitation and field strength",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-D.1-1-q01",
+          "type": "mcq",
+          "prompt": "The distance between two masses is tripled. The gravitational force between them becomes",
+          "options": [
+            "one-third",
+            "one-ninth",
+            "three times",
+            "nine times"
+          ],
+          "answer": 1,
+          "explanation": "F ∝ 1/r², so tripling r reduces F by a factor of 9.",
+          "terms": [
+            "physics-d.1-newtons-law-gravitation"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q02",
+          "type": "tf",
+          "statement": "Newton’s law of gravitation applies to spherical bodies as if their mass were concentrated at their centre.",
+          "answer": true,
+          "explanation": "Outside a uniform sphere the field is the same as that of a point mass at its centre.",
+          "terms": [
+            "physics-d.1-newtons-law-gravitation"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q03",
+          "type": "fill",
+          "text": "Gravitational field strength has the unit N kg⁻¹, which is equivalent to ___.",
+          "answer": "m s⁻²",
+          "accept": [
+            "m/s²"
+          ],
+          "bank": [
+            "m s⁻²",
+            "J kg⁻¹",
+            "N m",
+            "kg m⁻¹"
+          ],
+          "explanation": "1 N kg⁻¹ = 1 kg m s⁻² / kg = 1 m s⁻², so g is also the free-fall acceleration.",
+          "terms": [
+            "physics-d.1-field-strength"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q04",
+          "type": "mcq",
+          "prompt": "A planet has twice Earth’s mass and twice Earth’s radius. The surface g compared with Earth is",
+          "options": [
+            "the same",
+            "twice",
+            "half",
+            "one quarter"
+          ],
+          "answer": 2,
+          "explanation": "g = GM/r²: 2/2² = ½.",
+          "terms": [
+            "physics-d.1-field-strength"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q05",
+          "type": "mcq",
+          "prompt": "At what height above Earth’s surface (radius R) is g one quarter of its surface value?",
+          "options": [
+            "R",
+            "2R",
+            "R/2",
+            "4R"
+          ],
+          "answer": 0,
+          "explanation": "g ∝ 1/r²; one quarter needs r = 2R, which is a height of R above the surface.",
+          "terms": [
+            "physics-d.1-field-strength"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q06",
+          "type": "match",
+          "prompt": "Match each law to its statement.",
+          "pairs": [
+            {
+              "left": "Kepler’s first law",
+              "right": "Elliptical orbits with the Sun at a focus"
+            },
+            {
+              "left": "Kepler’s second law",
+              "right": "Equal areas in equal times"
+            },
+            {
+              "left": "Kepler’s third law",
+              "right": "T² ∝ r³"
+            },
+            {
+              "left": "Newton’s law of gravitation",
+              "right": "F = GMm/r²"
+            }
+          ],
+          "explanation": "Newton’s law explains all three of Kepler’s empirical laws.",
+          "terms": [
+            "physics-d.1-kepler-first",
+            "physics-d.1-kepler-second",
+            "physics-d.1-kepler-third",
+            "physics-d.1-newtons-law-gravitation"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q07",
+          "type": "tf",
+          "statement": "Gravitational field lines point away from a mass.",
+          "answer": false,
+          "explanation": "They show the force on a test mass, which is attractive, so they point towards the mass.",
+          "terms": [
+            "physics-d.1-field-lines"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q08",
+          "type": "fill",
+          "text": "By Kepler’s second law, a planet moves ___ when it is closest to the Sun.",
+          "answer": "fastest",
+          "bank": [
+            "fastest",
+            "slowest",
+            "at constant speed",
+            "backwards"
+          ],
+          "explanation": "Equal areas in equal times means a shorter radius must be swept faster.",
+          "terms": [
+            "physics-d.1-kepler-second"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q09",
+          "type": "mcq",
+          "prompt": "Between Earth and the Moon there is a point where the resultant gravitational field is zero. It is",
+          "options": [
+            "exactly halfway",
+            "closer to the Moon",
+            "closer to Earth",
+            "at the Moon’s surface"
+          ],
+          "answer": 1,
+          "explanation": "Earth is much more massive, so equal field strengths require being nearer the Moon.",
+          "terms": [
+            "physics-d.1-field-strength"
+          ]
+        },
+        {
+          "id": "physics-D.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to find g at a height h above a planet of mass M and radius R.",
+          "items": [
+            "Find r = R + h",
+            "Square r",
+            "Divide GM by r²",
+            "State g in N kg⁻¹"
+          ],
+          "explanation": "Distances in Newton’s law are always measured from the centre of the planet.",
+          "terms": [
+            "physics-d.1-field-strength"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-D.1-2",
+      "title": "Orbits",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-D.1-2-q01",
+          "type": "mcq",
+          "prompt": "For a satellite in circular orbit, which force provides the centripetal force?",
+          "options": [
+            "Thrust from its engines",
+            "The gravitational force from the planet",
+            "Air resistance",
+            "Its weight minus the normal force"
+          ],
+          "answer": 1,
+          "explanation": "GMm/r² = mv²/r, giving v = √(GM/r).",
+          "terms": [
+            "physics-d.1-orbital-speed",
+            "physics-d.1-newtons-law-gravitation"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q02",
+          "type": "tf",
+          "statement": "A satellite in a higher circular orbit moves more slowly than one in a lower orbit.",
+          "answer": true,
+          "explanation": "v = √(GM/r), so larger r means smaller orbital speed (and a longer period).",
+          "terms": [
+            "physics-d.1-orbital-speed"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q03",
+          "type": "fill",
+          "text": "Using T² ∝ r³, if the orbital radius increases by a factor of 4, the period increases by a factor of ___.",
+          "answer": "8",
+          "bank": [
+            "8",
+            "4",
+            "16",
+            "64"
+          ],
+          "explanation": "T ∝ r^(3/2) = 4^(3/2) = 8.",
+          "terms": [
+            "physics-d.1-kepler-third"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q04",
+          "type": "mcq",
+          "prompt": "Astronauts in the orbiting International Space Station feel weightless because",
+          "options": [
+            "there is no gravity in orbit",
+            "they and the station are in free fall together",
+            "they are beyond Earth’s field",
+            "the station spins"
+          ],
+          "answer": 1,
+          "explanation": "g at that height is about 90 % of surface g; everything falls with the same acceleration so there is no normal force.",
+          "terms": [
+            "physics-d.1-field-strength",
+            "physics-d.1-orbital-speed"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q05",
+          "type": "mcq",
+          "prompt": "A geostationary satellite must orbit with a period of",
+          "options": [
+            "1 h",
+            "12 h",
+            "24 h (one sidereal day)",
+            "27 days"
+          ],
+          "answer": 2,
+          "explanation": "It must turn with Earth to stay above one point on the equator.",
+          "terms": [
+            "physics-d.1-kepler-third"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q06",
+          "type": "fill",
+          "text": "Combining GMm/r² = m(2π/T)²r gives T² = (4π²/___)r³.",
+          "answer": "GM",
+          "bank": [
+            "GM",
+            "Gm",
+            "g",
+            "MR"
+          ],
+          "explanation": "This derivation of Kepler’s third law shows the constant depends only on the central mass.",
+          "terms": [
+            "physics-d.1-kepler-third"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q07",
+          "type": "match",
+          "prompt": "Match each quantity to its expression.",
+          "pairs": [
+            {
+              "left": "Orbital speed",
+              "right": "√(GM/r)"
+            },
+            {
+              "left": "Surface field strength",
+              "right": "GM/R²"
+            },
+            {
+              "left": "Centripetal acceleration",
+              "right": "v²/r"
+            },
+            {
+              "left": "Period of circular orbit",
+              "right": "2π√(r³/GM)"
+            }
+          ],
+          "explanation": "All follow from gravity supplying the centripetal force.",
+          "terms": [
+            "physics-d.1-orbital-speed",
+            "physics-d.1-field-strength"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q08",
+          "type": "tf",
+          "statement": "The orbital speed of a satellite depends on its own mass.",
+          "answer": false,
+          "explanation": "The satellite mass m cancels, so all satellites at the same radius have the same speed.",
+          "terms": [
+            "physics-d.1-orbital-speed"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q09",
+          "type": "mcq",
+          "prompt": "Earth is about 1.5 × 10¹¹ m from the Sun with T = 1 year. A planet at 6.0 × 10¹¹ m has a period of about",
+          "options": [
+            "4 years",
+            "8 years",
+            "16 years",
+            "2 years"
+          ],
+          "answer": 1,
+          "explanation": "r is 4 times larger, so T is 4^(3/2) = 8 times longer.",
+          "terms": [
+            "physics-d.1-kepler-third"
+          ]
+        },
+        {
+          "id": "physics-D.1-2-q10",
+          "type": "mcq",
+          "prompt": "Why do satellites in very low orbits gradually lose height?",
+          "options": [
+            "Gravity increases with time",
+            "Drag from the thin upper atmosphere removes energy",
+            "The Moon pulls them away",
+            "Their mass decreases"
+          ],
+          "answer": 1,
+          "explanation": "Atmospheric drag reduces total energy, so the orbit decays; the satellite actually speeds up as it falls.",
+          "terms": [
+            "physics-d.1-orbital-speed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-D.1-3",
+      "title": "Gravitational potential and energy",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-D.1-3-q01",
+          "type": "mcq",
+          "prompt": "Why is gravitational potential negative everywhere at a finite distance?",
+          "options": [
+            "Zero is defined at infinity and gravity is attractive, so work must be done to move a mass out to infinity",
+            "Mass is negative",
+            "Field lines point outward",
+            "It is a convention with no meaning"
+          ],
+          "answer": 0,
+          "explanation": "Positive work is needed to move outwards to V = 0, so all closer points have lower (negative) potential.",
+          "terms": [
+            "physics-d.1-gravitational-potential"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q02",
+          "type": "fill",
+          "text": "The escape speed from a planet is given by v = √(2GM/___).",
+          "answer": "r",
+          "bank": [
+            "r",
+            "r²",
+            "m",
+            "g"
+          ],
+          "explanation": "Setting ½mv² = GMm/r gives v_esc = √(2GM/r), independent of the escaping mass.",
+          "terms": [
+            "physics-d.1-escape-speed"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q03",
+          "type": "mcq",
+          "prompt": "Escape speed compared with orbital speed at the same radius is",
+          "options": [
+            "the same",
+            "√2 times larger",
+            "2 times larger",
+            "half"
+          ],
+          "answer": 1,
+          "explanation": "√(2GM/r) / √(GM/r) = √2.",
+          "terms": [
+            "physics-d.1-escape-speed",
+            "physics-d.1-orbital-speed"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q04",
+          "type": "tf",
+          "statement": "Equipotential surfaces around a spherical planet are concentric spheres.",
+          "answer": true,
+          "explanation": "V = −GM/r depends only on r, so surfaces of constant V are spheres, perpendicular to the radial field lines.",
+          "terms": [
+            "physics-d.1-equipotential"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q05",
+          "type": "fill",
+          "text": "For a satellite in circular orbit, its total energy is ___ times its kinetic energy.",
+          "answer": "−1",
+          "accept": [
+            "-1"
+          ],
+          "bank": [
+            "−1",
+            "2",
+            "−2",
+            "½"
+          ],
+          "explanation": "E_k = GMm/2r and E_p = −GMm/r, so E_total = −GMm/2r = −E_k.",
+          "terms": [
+            "physics-d.1-gpe-field"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q06",
+          "type": "mcq",
+          "prompt": "A satellite moves to a higher circular orbit. Which change is correct?",
+          "options": [
+            "Kinetic energy increases",
+            "Total energy increases (becomes less negative)",
+            "Potential energy decreases",
+            "Total energy decreases"
+          ],
+          "answer": 1,
+          "explanation": "Total energy −GMm/2r rises towards zero; E_p rises and E_k falls.",
+          "terms": [
+            "physics-d.1-gpe-field"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q07",
+          "type": "match",
+          "prompt": "Match each expression to its quantity.",
+          "pairs": [
+            {
+              "left": "V_g = −GM/r",
+              "right": "Gravitational potential"
+            },
+            {
+              "left": "E_p = −GMm/r",
+              "right": "Gravitational potential energy"
+            },
+            {
+              "left": "g = −ΔV/Δr",
+              "right": "Field as potential gradient"
+            },
+            {
+              "left": "v = √(2GM/r)",
+              "right": "Escape speed"
+            }
+          ],
+          "explanation": "Field strength is the negative gradient of the potential.",
+          "terms": [
+            "physics-d.1-gravitational-potential",
+            "physics-d.1-gpe-field",
+            "physics-d.1-escape-speed"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q08",
+          "type": "tf",
+          "statement": "No work is done moving a mass along an equipotential surface.",
+          "answer": true,
+          "explanation": "W = mΔV and ΔV = 0 along an equipotential.",
+          "terms": [
+            "physics-d.1-equipotential"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q09",
+          "type": "mcq",
+          "prompt": "Moving a 2.0 kg mass from a point where V = −60 MJ kg⁻¹ to one where V = −20 MJ kg⁻¹ requires work of",
+          "options": [
+            "80 MJ",
+            "40 MJ",
+            "160 MJ",
+            "20 MJ"
+          ],
+          "answer": 0,
+          "explanation": "W = mΔV = 2.0 × (−20 − (−60)) MJ kg⁻¹ = 80 MJ.",
+          "terms": [
+            "physics-d.1-gravitational-potential"
+          ]
+        },
+        {
+          "id": "physics-D.1-3-q10",
+          "type": "mcq",
+          "prompt": "On a graph of potential V against distance r, the gravitational field strength at a point is given by",
+          "options": [
+            "the area under the graph",
+            "minus the gradient of the graph",
+            "the value of V",
+            "V/r²"
+          ],
+          "answer": 1,
+          "explanation": "g = −ΔV/Δr: the steeper the potential, the stronger the field.",
+          "terms": [
+            "physics-d.1-gravitational-potential",
+            "physics-d.1-field-strength"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "id": "physics-E.1-E.2",
+  "code": "E.1–E.2",
+  "unit": "E",
+  "title": "Structure of the atom and quantum physics",
+  "level": "SL",
+  "summary": "The nuclear model from alpha scattering, nuclear notation, photons and atomic spectra, energy levels, and (HL) the Bohr model, nuclear radius, the photoelectric effect, matter waves and Compton scattering.",
+  "keyterms": [
+    {
+      "id": "physics-e.1-e.2-nuclear-model",
+      "term": "Nuclear model",
+      "definition": "An atom has a tiny, dense, positive nucleus containing almost all its mass, surrounded mostly by empty space with electrons.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.1-e.2-geiger-marsden",
+      "term": "Geiger–Marsden experiment",
+      "definition": "Alpha particles fired at thin gold foil; rare large-angle deflections revealed a small massive nucleus.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.1-e.2-nucleon-number",
+      "term": "Nucleon number",
+      "definition": "A: the total number of protons and neutrons in a nucleus.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.1-e.2-proton-number",
+      "term": "Proton number",
+      "definition": "Z: the number of protons in a nucleus, which identifies the element.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.1-e.2-photon",
+      "term": "Photon",
+      "definition": "A quantum of electromagnetic energy, E = hf = hc/λ.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.1-e.2-energy-level",
+      "term": "Energy level",
+      "definition": "One of the discrete energies an electron in an atom may have.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.1-e.2-emission-spectrum",
+      "term": "Emission spectrum",
+      "definition": "Bright lines at specific wavelengths emitted when electrons drop between energy levels.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.1-e.2-absorption-spectrum",
+      "term": "Absorption spectrum",
+      "definition": "Dark lines in a continuous spectrum where atoms absorb photons that match level differences.",
+      "hl": false
+    },
+    {
+      "id": "physics-e.1-e.2-bohr-model",
+      "term": "Bohr model",
+      "definition": "Hydrogen model with quantized angular momentum mvr = nh/2π and levels E = −13.6/n² eV.",
+      "hl": true
+    },
+    {
+      "id": "physics-e.1-e.2-photoelectric-effect",
+      "term": "Photoelectric effect",
+      "definition": "Emission of electrons from a metal surface when light above a threshold frequency falls on it: E_max = hf − Φ.",
+      "hl": true
+    },
+    {
+      "id": "physics-e.1-e.2-work-function",
+      "term": "Work function",
+      "definition": "Minimum energy Φ needed to remove an electron from a metal surface.",
+      "hl": true
+    },
+    {
+      "id": "physics-e.1-e.2-de-broglie",
+      "term": "de Broglie wavelength",
+      "definition": "Wavelength associated with a moving particle: λ = h/p.",
+      "hl": true
+    },
+    {
+      "id": "physics-e.1-e.2-compton",
+      "term": "Compton scattering",
+      "definition": "Increase in wavelength of an X-ray photon scattered by an electron: Δλ = (h/m_ec)(1 − cos θ).",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-E.1-E.2-1",
+      "title": "The nuclear atom",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-E.1-E.2-1-q01",
+          "type": "mcq",
+          "prompt": "In the Geiger–Marsden experiment, what did the very rare large-angle deflections of alpha particles show?",
+          "options": [
+            "Atoms are mostly empty space",
+            "Positive charge and most mass are concentrated in a tiny nucleus",
+            "Electrons orbit in fixed shells",
+            "Alpha particles are helium nuclei"
+          ],
+          "answer": 1,
+          "explanation": "Only a tiny, massive, positive nucleus could repel alphas strongly enough to turn them back. Most passing straight through showed the atom is mostly empty.",
+          "terms": [
+            "physics-e.1-e.2-geiger-marsden",
+            "physics-e.1-e.2-nuclear-model"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q02",
+          "type": "tf",
+          "statement": "Most alpha particles passed straight through the gold foil with little or no deflection.",
+          "answer": true,
+          "explanation": "This showed that most of the atom is empty space.",
+          "terms": [
+            "physics-e.1-e.2-geiger-marsden"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q03",
+          "type": "fill",
+          "text": "A nucleus of uranium-238 (Z = 92) contains ___ neutrons.",
+          "answer": "146",
+          "bank": [
+            "146",
+            "92",
+            "238",
+            "330"
+          ],
+          "explanation": "Neutrons = A − Z = 238 − 92 = 146.",
+          "terms": [
+            "physics-e.1-e.2-nucleon-number",
+            "physics-e.1-e.2-proton-number"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q04",
+          "type": "match",
+          "prompt": "Match each symbol or term to its meaning.",
+          "pairs": [
+            {
+              "left": "Z",
+              "right": "Number of protons"
+            },
+            {
+              "left": "A",
+              "right": "Number of nucleons"
+            },
+            {
+              "left": "A − Z",
+              "right": "Number of neutrons"
+            },
+            {
+              "left": "Isotopes",
+              "right": "Same Z, different A"
+            }
+          ],
+          "explanation": "Nuclide notation writes A above and Z below the element symbol.",
+          "terms": [
+            "physics-e.1-e.2-nucleon-number",
+            "physics-e.1-e.2-proton-number"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q05",
+          "type": "mcq",
+          "prompt": "Why was gold foil used in the scattering experiment?",
+          "options": [
+            "Gold is magnetic",
+            "It can be made extremely thin and has heavy nuclei",
+            "It is a good conductor",
+            "It emits alpha particles"
+          ],
+          "answer": 1,
+          "explanation": "Very thin foil means each alpha meets few nuclei; large Z gives strong repulsion.",
+          "terms": [
+            "physics-e.1-e.2-geiger-marsden"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q06",
+          "type": "mcq",
+          "prompt": "The radius of an atom is roughly how many times larger than the radius of its nucleus?",
+          "options": [
+            "10",
+            "10²",
+            "10⁵",
+            "10¹⁰"
+          ],
+          "answer": 2,
+          "explanation": "Atoms are about 10⁻¹⁰ m across; nuclei about 10⁻¹⁵ m, a factor of about 10⁵.",
+          "terms": [
+            "physics-e.1-e.2-nuclear-model"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q07",
+          "type": "tf",
+          "statement": "Electrons in the nuclear model are found inside the nucleus.",
+          "answer": false,
+          "explanation": "The nucleus holds protons and neutrons; electrons occupy the surrounding space.",
+          "terms": [
+            "physics-e.1-e.2-nuclear-model"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q08",
+          "type": "fill",
+          "text": "In the Geiger–Marsden experiment, the force that deflected alpha particles was the electrostatic (___) force.",
+          "answer": "Coulomb",
+          "bank": [
+            "Coulomb",
+            "strong",
+            "gravitational",
+            "weak"
+          ],
+          "explanation": "Repulsion between the positive alpha and the positive nucleus, F = kq₁q₂/r².",
+          "terms": [
+            "physics-e.1-e.2-geiger-marsden"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q09",
+          "type": "mcq",
+          "prompt": "Which nucleus has 8 protons and 10 neutrons?",
+          "options": [
+            "¹⁸₈O",
+            "¹⁰₈O",
+            "¹⁸₁₀Ne",
+            "⁸₁₀O"
+          ],
+          "answer": 0,
+          "explanation": "A = 8 + 10 = 18, Z = 8 (oxygen).",
+          "terms": [
+            "physics-e.1-e.2-nucleon-number",
+            "physics-e.1-e.2-proton-number"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-1-q10",
+          "type": "order",
+          "prompt": "Order the development of atomic models.",
+          "items": [
+            "Dalton’s indivisible atom",
+            "Thomson’s plum-pudding model",
+            "Rutherford’s nuclear model",
+            "Bohr’s quantized orbits"
+          ],
+          "explanation": "Each model was replaced when experiments revealed something it could not explain.",
+          "terms": [
+            "physics-e.1-e.2-nuclear-model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-E.1-E.2-2",
+      "title": "Photons, energy levels and spectra",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-E.1-E.2-2-q01",
+          "type": "fill",
+          "text": "A photon of wavelength 500 nm has energy ___ × 10⁻¹⁹ J (h = 6.63 × 10⁻³⁴ J s, c = 3.00 × 10⁸ m s⁻¹).",
+          "answer": "3.98",
+          "accept": [
+            "4.0",
+            "3.97"
+          ],
+          "bank": [
+            "3.98",
+            "1.99",
+            "6.63",
+            "0.40"
+          ],
+          "explanation": "E = hc/λ = 6.63 × 10⁻³⁴ × 3.00 × 10⁸ / 5.00 × 10⁻⁷ = 3.98 × 10⁻¹⁹ J (about 2.5 eV).",
+          "terms": [
+            "physics-e.1-e.2-photon"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q02",
+          "type": "mcq",
+          "prompt": "An electron drops from a level at −1.5 eV to one at −3.4 eV. The emitted photon has energy",
+          "options": [
+            "4.9 eV",
+            "1.9 eV",
+            "1.5 eV",
+            "3.4 eV"
+          ],
+          "answer": 1,
+          "explanation": "E = ΔE = −1.5 − (−3.4) = 1.9 eV.",
+          "terms": [
+            "physics-e.1-e.2-energy-level",
+            "physics-e.1-e.2-photon"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q03",
+          "type": "tf",
+          "statement": "Line spectra are evidence that electrons in atoms have only discrete energies.",
+          "answer": true,
+          "explanation": "Only specific photon energies appear, matching differences between fixed energy levels.",
+          "terms": [
+            "physics-e.1-e.2-energy-level",
+            "physics-e.1-e.2-emission-spectrum"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q04",
+          "type": "mcq",
+          "prompt": "Dark lines in the spectrum of starlight are caused by",
+          "options": [
+            "emission by hot gas",
+            "absorption by cooler gas in the star’s outer layers",
+            "diffraction",
+            "Doppler broadening"
+          ],
+          "answer": 1,
+          "explanation": "Atoms in the cooler atmosphere absorb photons that match their level differences, removing those wavelengths.",
+          "terms": [
+            "physics-e.1-e.2-absorption-spectrum"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q05",
+          "type": "match",
+          "prompt": "Match each spectrum type to its appearance.",
+          "pairs": [
+            {
+              "left": "Emission spectrum",
+              "right": "Bright lines on a dark background"
+            },
+            {
+              "left": "Absorption spectrum",
+              "right": "Dark lines on a continuous spectrum"
+            },
+            {
+              "left": "Continuous spectrum",
+              "right": "All wavelengths present"
+            },
+            {
+              "left": "Photon energy",
+              "right": "hf"
+            }
+          ],
+          "explanation": "Comparing line positions identifies the elements present.",
+          "terms": [
+            "physics-e.1-e.2-emission-spectrum",
+            "physics-e.1-e.2-absorption-spectrum",
+            "physics-e.1-e.2-photon"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q06",
+          "type": "fill",
+          "text": "An atom with four energy levels can emit up to ___ different photon energies.",
+          "answer": "6",
+          "bank": [
+            "6",
+            "4",
+            "3",
+            "12"
+          ],
+          "explanation": "The number of possible transitions between 4 levels is 4 × 3/2 = 6.",
+          "terms": [
+            "physics-e.1-e.2-energy-level",
+            "physics-e.1-e.2-emission-spectrum"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q07",
+          "type": "mcq",
+          "prompt": "Which photon has the greatest energy?",
+          "options": [
+            "Red light",
+            "Infrared",
+            "Ultraviolet",
+            "Radio"
+          ],
+          "answer": 2,
+          "explanation": "E = hf, so the highest-frequency photon (ultraviolet here) has the most energy.",
+          "terms": [
+            "physics-e.1-e.2-photon"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q08",
+          "type": "tf",
+          "statement": "An atom can absorb a photon of any energy greater than the gap between two levels and keep the excess.",
+          "answer": false,
+          "explanation": "For bound–bound transitions the photon energy must match the level difference exactly.",
+          "terms": [
+            "physics-e.1-e.2-absorption-spectrum",
+            "physics-e.1-e.2-energy-level"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q09",
+          "type": "mcq",
+          "prompt": "The emission and absorption lines of the same element occur at",
+          "options": [
+            "the same wavelengths",
+            "longer wavelengths for absorption",
+            "shorter wavelengths for absorption",
+            "unrelated wavelengths"
+          ],
+          "answer": 0,
+          "explanation": "Both involve the same energy-level differences.",
+          "terms": [
+            "physics-e.1-e.2-emission-spectrum",
+            "physics-e.1-e.2-absorption-spectrum"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-2-q10",
+          "type": "order",
+          "prompt": "Order the processes producing an emission line.",
+          "items": [
+            "Atom gains energy (e.g. collision)",
+            "Electron moves to a higher level",
+            "Electron falls back to a lower level",
+            "Photon with energy ΔE is emitted"
+          ],
+          "explanation": "The photon’s energy equals the difference between the two levels.",
+          "terms": [
+            "physics-e.1-e.2-emission-spectrum",
+            "physics-e.1-e.2-energy-level"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-E.1-E.2-3",
+      "title": "Bohr model and quantum phenomena",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-E.1-E.2-3-q01",
+          "type": "fill",
+          "text": "In the Bohr model, the energy of the n = 2 level of hydrogen is ___ eV.",
+          "answer": "−3.4",
+          "accept": [
+            "-3.4"
+          ],
+          "bank": [
+            "−3.4",
+            "−6.8",
+            "−13.6",
+            "−1.5"
+          ],
+          "explanation": "E = −13.6/n² = −13.6/4 = −3.4 eV.",
+          "terms": [
+            "physics-e.1-e.2-bohr-model"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q02",
+          "type": "mcq",
+          "prompt": "Light of frequency above the threshold frequency falls on a metal. Increasing the intensity",
+          "options": [
+            "increases the maximum kinetic energy of electrons",
+            "increases the number of electrons emitted per second",
+            "decreases the threshold frequency",
+            "has no effect"
+          ],
+          "answer": 1,
+          "explanation": "Higher intensity means more photons per second, so more electrons; each photon’s energy hf is unchanged, so E_max is unchanged.",
+          "terms": [
+            "physics-e.1-e.2-photoelectric-effect"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q03",
+          "type": "mcq",
+          "prompt": "Photons of energy 4.0 eV hit a metal with work function 2.5 eV. The maximum kinetic energy of emitted electrons is",
+          "options": [
+            "6.5 eV",
+            "1.5 eV",
+            "2.5 eV",
+            "4.0 eV"
+          ],
+          "answer": 1,
+          "explanation": "E_max = hf − Φ = 4.0 − 2.5 = 1.5 eV.",
+          "terms": [
+            "physics-e.1-e.2-photoelectric-effect",
+            "physics-e.1-e.2-work-function"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q04",
+          "type": "tf",
+          "statement": "Below the threshold frequency, very bright light will eventually release photoelectrons.",
+          "answer": false,
+          "explanation": "Each photon must individually supply at least Φ; the wave model wrongly predicted energy could build up.",
+          "terms": [
+            "physics-e.1-e.2-photoelectric-effect",
+            "physics-e.1-e.2-work-function"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q05",
+          "type": "fill",
+          "text": "An electron (m = 9.11 × 10⁻³¹ kg) moving at 1.0 × 10⁶ m s⁻¹ has de Broglie wavelength ___ nm (h = 6.63 × 10⁻³⁴ J s).",
+          "answer": "0.73",
+          "accept": [
+            "0.728"
+          ],
+          "bank": [
+            "0.73",
+            "7.3",
+            "0.073",
+            "1.4"
+          ],
+          "explanation": "λ = h/mv = 6.63 × 10⁻³⁴ / (9.11 × 10⁻³¹ × 1.0 × 10⁶) = 7.3 × 10⁻¹⁰ m = 0.73 nm.",
+          "terms": [
+            "physics-e.1-e.2-de-broglie"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q06",
+          "type": "mcq",
+          "prompt": "Which experiment showed that electrons have wave properties?",
+          "options": [
+            "Electron diffraction by a crystal",
+            "The photoelectric effect",
+            "Alpha scattering",
+            "Millikan’s oil drop"
+          ],
+          "answer": 0,
+          "explanation": "Electrons diffract with λ = h/p, comparable to atomic spacing.",
+          "terms": [
+            "physics-e.1-e.2-de-broglie"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q07",
+          "type": "match",
+          "prompt": "Match each experiment to what it shows.",
+          "pairs": [
+            {
+              "left": "Photoelectric effect",
+              "right": "Light behaves as particles"
+            },
+            {
+              "left": "Electron diffraction",
+              "right": "Matter behaves as waves"
+            },
+            {
+              "left": "Compton scattering",
+              "right": "Photons carry momentum"
+            },
+            {
+              "left": "Line spectra",
+              "right": "Atomic energy is quantized"
+            }
+          ],
+          "explanation": "Each experiment supports a key quantum idea.",
+          "terms": [
+            "physics-e.1-e.2-photoelectric-effect",
+            "physics-e.1-e.2-de-broglie",
+            "physics-e.1-e.2-compton",
+            "physics-e.1-e.2-bohr-model"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q08",
+          "type": "mcq",
+          "prompt": "In Compton scattering, the wavelength shift is greatest when the photon is scattered through",
+          "options": [
+            "0°",
+            "45°",
+            "90°",
+            "180°"
+          ],
+          "answer": 3,
+          "explanation": "Δλ = (h/m_ec)(1 − cos θ) is largest when cos θ = −1, i.e. θ = 180°.",
+          "terms": [
+            "physics-e.1-e.2-compton"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q09",
+          "type": "mcq",
+          "prompt": "The radius of a nucleus is R = R₀A^(1/3). How does the nuclear density depend on A?",
+          "options": [
+            "It increases with A",
+            "It is roughly independent of A",
+            "It decreases with A",
+            "It is proportional to A²"
+          ],
+          "answer": 1,
+          "explanation": "Volume ∝ R³ ∝ A and mass ∝ A, so density is about the same for all nuclei.",
+          "terms": [
+            "physics-e.1-e.2-nuclear-model"
+          ]
+        },
+        {
+          "id": "physics-E.1-E.2-3-q10",
+          "type": "mcq",
+          "prompt": "A graph of E_max against frequency for photoemission is a straight line. Its gradient is",
+          "options": [
+            "the work function",
+            "Planck’s constant",
+            "the threshold frequency",
+            "the electron charge"
+          ],
+          "answer": 1,
+          "explanation": "E_max = hf − Φ: gradient h, x-intercept the threshold frequency, y-intercept −Φ.",
+          "terms": [
+            "physics-e.1-e.2-photoelectric-effect",
+            "physics-e.1-e.2-work-function"
+          ]
+        }
+      ]
+    }
+  ]
+}

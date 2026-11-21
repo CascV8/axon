@@ -1,0 +1,110 @@
+[
+  {
+    "id": "physics-X-E-01",
+    "unit": "E",
+    "topics": ["physics-E.1-E.2"],
+    "paper": "P2",
+    "level": "HL",
+    "title": "Photoelectric emission from a metal",
+    "stem": "Ultraviolet light of wavelength 250 nm falls on a clean metal surface whose work function is 2.3 eV. h = 6.63 × 10⁻³⁴ J s, c = 3.00 × 10⁸ m s⁻¹, e = 1.60 × 10⁻¹⁹ C.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the energy of one photon, in eV.",
+        "marks": 2,
+        "numeric": { "value": 4.97, "tolerance": 0.05, "unit": "eV" },
+        "markscheme": [
+          "E = hc/λ = 6.63 × 10⁻³⁴ × 3.00 × 10⁸ / 250 × 10⁻⁹ = 7.96 × 10⁻¹⁹ J",
+          "÷ 1.60 × 10⁻¹⁹ = 4.97 eV"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Determine",
+        "prompt": "Determine the stopping potential needed to prevent all photoelectrons reaching the collector.",
+        "marks": 2,
+        "numeric": { "value": 2.67, "tolerance": 0.05, "unit": "V" },
+        "markscheme": [
+          "E_max = hf − Φ = 4.97 − 2.3 = 2.7 eV",
+          "eV_s = E_max so V_s = 2.7 V"
+        ],
+        "notes": "Allow ECF from (a)."
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the threshold wavelength for this metal.",
+        "marks": 2,
+        "numeric": { "value": 540, "tolerance": 5, "unit": "nm" },
+        "markscheme": [
+          "λ₀ = hc/Φ with Φ = 2.3 × 1.60 × 10⁻¹⁹ = 3.68 × 10⁻¹⁹ J",
+          "λ₀ = 1.99 × 10⁻²⁵ / 3.68 × 10⁻¹⁹ = 5.4 × 10⁻⁷ m / 540 nm"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "The intensity of the ultraviolet light is doubled. Explain, using the photon model, the effect on the photoelectric current and on the stopping potential.",
+        "marks": 3,
+        "markscheme": [
+          "doubling intensity doubles the number of photons per second (same photon energy)",
+          "so (about) twice as many electrons emitted per second / current doubles",
+          "each electron still receives one photon of the same energy hf",
+          "so maximum kinetic energy and stopping potential are unchanged"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "physics-X-E-02",
+    "unit": "E",
+    "topics": ["physics-E.3", "physics-E.4-E.5"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Binding energy of helium-4",
+    "stem": "The table gives masses of particles involved in the formation of a helium-4 nucleus. 1 u = 931.5 MeV c⁻².",
+    "data": {
+      "caption": "Particle masses",
+      "columns": ["Particle", "Mass / u"],
+      "rows": [["proton", "1.007276"], ["neutron", "1.008665"], ["helium-4 nucleus", "4.001506"]]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the mass defect of the helium-4 nucleus.",
+        "marks": 2,
+        "numeric": { "value": 0.030376, "tolerance": 0.00001, "unit": "u" },
+        "markscheme": [
+          "mass of separate nucleons = 2 × 1.007276 + 2 × 1.008665 = 4.031882 u",
+          "Δm = 4.031882 − 4.001506 = 0.030376 u"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Determine",
+        "prompt": "Determine the binding energy per nucleon of helium-4, in MeV.",
+        "marks": 2,
+        "numeric": { "value": 7.07, "tolerance": 0.03, "unit": "MeV" },
+        "markscheme": [
+          "binding energy = 0.030376 × 931.5 = 28.3 MeV",
+          "per nucleon = 28.3 / 4 = 7.07 MeV"
+        ],
+        "notes": "Allow ECF from (a)."
+      },
+      {
+        "label": "c",
+        "command": "Explain",
+        "prompt": "Explain why the fusion of hydrogen nuclei into helium releases energy in the core of a star.",
+        "marks": 3,
+        "markscheme": [
+          "helium-4 has a much higher binding energy per nucleon than hydrogen nuclei",
+          "so the products have less total mass than the reactants / there is a mass decrease",
+          "the mass difference is released as energy according to E = Δmc² (kinetic energy of products / photons)",
+          "high core temperature lets nuclei overcome electrostatic repulsion so fusion can occur"
+        ]
+      }
+    ]
+  }
+]

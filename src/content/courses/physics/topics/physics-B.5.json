@@ -1,0 +1,421 @@
+{
+  "id": "physics-B.5",
+  "code": "B.5",
+  "unit": "B",
+  "title": "Current and circuits",
+  "level": "SL",
+  "summary": "Charge, current, potential difference and resistance, resistivity, Ohm’s law and I–V characteristics, power, series and parallel circuits, potential dividers and internal resistance.",
+  "keyterms": [
+    {
+      "id": "physics-b.5-current",
+      "term": "Electric current",
+      "definition": "Rate of flow of charge, I = Δq/Δt, measured in amperes.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-pd",
+      "term": "Potential difference",
+      "definition": "Work done per unit charge moving between two points, V = W/q, measured in volts.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-resistance",
+      "term": "Resistance",
+      "definition": "Ratio of potential difference to current, R = V/I, measured in ohms.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-ohms-law",
+      "term": "Ohm’s law",
+      "definition": "For an ohmic conductor at constant temperature, current is proportional to potential difference.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-resistivity",
+      "term": "Resistivity",
+      "definition": "Material property ρ in R = ρL/A, measured in Ω m.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-emf",
+      "term": "Electromotive force",
+      "definition": "Energy transferred to each coulomb of charge by a source, ε = W/q.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-internal-resistance",
+      "term": "Internal resistance",
+      "definition": "Resistance inside a source, causing lost volts: ε = I(R + r).",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-potential-divider",
+      "term": "Potential divider",
+      "definition": "Resistors in series used to provide a fraction of a supply voltage.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-ldr",
+      "term": "Light-dependent resistor",
+      "definition": "A component whose resistance decreases as light intensity increases.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-thermistor",
+      "term": "Thermistor (NTC)",
+      "definition": "A component whose resistance decreases as temperature increases.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.5-drift-velocity",
+      "term": "Drift speed",
+      "definition": "Average speed of charge carriers along a conductor, from I = nAvq.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-B.5-1",
+      "title": "Current, resistance and power",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-B.5-1-q01",
+          "type": "fill",
+          "text": "A current of 0.50 A flows for 2.0 minutes. The charge that passes is ___ C.",
+          "answer": "60",
+          "bank": [
+            "60",
+            "1.0",
+            "240",
+            "0.25"
+          ],
+          "explanation": "Δq = IΔt = 0.50 × 120 = 60 C.",
+          "terms": [
+            "physics-b.5-current"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q02",
+          "type": "mcq",
+          "prompt": "A 12 V supply drives 0.40 A through a resistor. What is its resistance?",
+          "options": [
+            "4.8 Ω",
+            "30 Ω",
+            "0.033 Ω",
+            "12 Ω"
+          ],
+          "answer": 1,
+          "explanation": "R = V/I = 12/0.40 = 30 Ω.",
+          "terms": [
+            "physics-b.5-resistance"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q03",
+          "type": "tf",
+          "statement": "A filament lamp is an ohmic conductor.",
+          "answer": false,
+          "explanation": "As the filament heats up its resistance increases, so its I–V graph curves and current is not proportional to p.d.",
+          "terms": [
+            "physics-b.5-ohms-law"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q04",
+          "type": "mcq",
+          "prompt": "A wire is replaced by one of the same material with twice the length and twice the cross-sectional area. Its resistance",
+          "options": [
+            "doubles",
+            "halves",
+            "quadruples",
+            "stays the same"
+          ],
+          "answer": 3,
+          "explanation": "R = ρL/A: doubling L doubles R, doubling A halves it, so R is unchanged.",
+          "terms": [
+            "physics-b.5-resistivity"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q05",
+          "type": "fill",
+          "text": "A 2.0 kW kettle runs on a 230 V supply. The current it draws is about ___ A.",
+          "answer": "8.7",
+          "accept": [
+            "8.70",
+            "9"
+          ],
+          "bank": [
+            "8.7",
+            "0.12",
+            "460",
+            "115"
+          ],
+          "explanation": "I = P/V = 2000/230 ≈ 8.7 A.",
+          "terms": [
+            "physics-b.5-current"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q06",
+          "type": "match",
+          "prompt": "Match each equation to its use.",
+          "pairs": [
+            {
+              "left": "P = VI",
+              "right": "Power from p.d. and current"
+            },
+            {
+              "left": "P = I²R",
+              "right": "Power from current and resistance"
+            },
+            {
+              "left": "P = V²/R",
+              "right": "Power from p.d. and resistance"
+            },
+            {
+              "left": "R = ρL/A",
+              "right": "Resistance of a wire"
+            }
+          ],
+          "explanation": "Choose the power equation that uses the quantities you know.",
+          "terms": [
+            "physics-b.5-resistance",
+            "physics-b.5-resistivity"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q07",
+          "type": "mcq",
+          "prompt": "A resistor dissipates 4.0 W when the current is 1.0 A. What power is dissipated when the current is 2.0 A?",
+          "options": [
+            "8.0 W",
+            "16 W",
+            "4.0 W",
+            "2.0 W"
+          ],
+          "answer": 1,
+          "explanation": "P = I²R, so doubling I quadruples P: 16 W.",
+          "terms": [
+            "physics-b.5-resistance"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q08",
+          "type": "tf",
+          "statement": "The drift speed of electrons in a typical copper wire is less than 1 mm s⁻¹.",
+          "answer": true,
+          "explanation": "Copper has a huge density of free electrons, so I = nAvq gives a tiny v for ordinary currents.",
+          "terms": [
+            "physics-b.5-drift-velocity"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q09",
+          "type": "mcq",
+          "prompt": "As the temperature of an NTC thermistor rises, its resistance",
+          "options": [
+            "increases",
+            "decreases",
+            "stays constant",
+            "becomes zero"
+          ],
+          "answer": 1,
+          "explanation": "More charge carriers are released at higher temperature, so the resistance falls.",
+          "terms": [
+            "physics-b.5-thermistor"
+          ]
+        },
+        {
+          "id": "physics-B.5-1-q10",
+          "type": "order",
+          "prompt": "Order the steps to determine the resistivity of a wire experimentally.",
+          "items": [
+            "Measure the wire’s diameter with a micrometer",
+            "Measure R for several lengths L",
+            "Plot R against L and find the gradient",
+            "Multiply the gradient by the cross-sectional area"
+          ],
+          "explanation": "Gradient = ρ/A, so ρ = gradient × A; using several lengths reduces random error.",
+          "terms": [
+            "physics-b.5-resistivity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-B.5-2",
+      "title": "Circuits, potential dividers and internal resistance",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-B.5-2-q01",
+          "type": "mcq",
+          "prompt": "What is the total resistance of 6.0 Ω and 3.0 Ω connected in parallel?",
+          "options": [
+            "9.0 Ω",
+            "2.0 Ω",
+            "4.5 Ω",
+            "0.5 Ω"
+          ],
+          "answer": 1,
+          "explanation": "1/R = 1/6 + 1/3 = 1/2, so R = 2.0 Ω, less than the smallest resistor.",
+          "terms": [
+            "physics-b.5-resistance"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q02",
+          "type": "fill",
+          "text": "Resistors of 4.0 Ω and 8.0 Ω are in series across 12 V. The p.d. across the 8.0 Ω resistor is ___ V.",
+          "answer": "8.0",
+          "accept": [
+            "8"
+          ],
+          "bank": [
+            "8.0",
+            "4.0",
+            "6.0",
+            "12"
+          ],
+          "explanation": "Current = 12/12 = 1.0 A, so V = 1.0 × 8.0 = 8.0 V: the p.d. divides in proportion to resistance.",
+          "terms": [
+            "physics-b.5-potential-divider"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q03",
+          "type": "tf",
+          "statement": "In a series circuit the current is the same through every component.",
+          "answer": true,
+          "explanation": "Charge is conserved and there is only one path, so the current is the same everywhere.",
+          "terms": [
+            "physics-b.5-current"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q04",
+          "type": "mcq",
+          "prompt": "A cell of e.m.f. 6.0 V and internal resistance 1.0 Ω is connected to a 5.0 Ω resistor. What is the terminal p.d.?",
+          "options": [
+            "6.0 V",
+            "1.0 V",
+            "5.0 V",
+            "1.2 V"
+          ],
+          "answer": 2,
+          "explanation": "I = ε/(R + r) = 6.0/6.0 = 1.0 A; terminal p.d. = IR = 5.0 V (1.0 V is lost inside the cell).",
+          "terms": [
+            "physics-b.5-internal-resistance",
+            "physics-b.5-emf"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q05",
+          "type": "mcq",
+          "prompt": "In a potential divider an LDR is the lower resistor, with the output taken across it. When light intensity increases, the output voltage",
+          "options": [
+            "increases",
+            "decreases",
+            "stays the same",
+            "reverses"
+          ],
+          "answer": 1,
+          "explanation": "The LDR’s resistance falls, so it takes a smaller share of the supply voltage.",
+          "terms": [
+            "physics-b.5-potential-divider",
+            "physics-b.5-ldr"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q06",
+          "type": "match",
+          "prompt": "Match each item to its description.",
+          "pairs": [
+            {
+              "left": "Ideal ammeter",
+              "right": "Zero resistance, in series"
+            },
+            {
+              "left": "Ideal voltmeter",
+              "right": "Infinite resistance, in parallel"
+            },
+            {
+              "left": "Kirchhoff’s first law",
+              "right": "Current into a junction equals current out"
+            },
+            {
+              "left": "Kirchhoff’s second law",
+              "right": "Sum of e.m.f.s equals sum of p.d.s in a loop"
+            }
+          ],
+          "explanation": "Kirchhoff’s laws express conservation of charge and of energy.",
+          "terms": [
+            "physics-b.5-current",
+            "physics-b.5-pd"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q07",
+          "type": "fill",
+          "text": "The difference between a cell’s e.m.f. and its terminal p.d. is called the ___ volts.",
+          "answer": "lost",
+          "bank": [
+            "lost",
+            "gained",
+            "drift",
+            "peak"
+          ],
+          "explanation": "Lost volts = Ir, the energy per coulomb dissipated in the internal resistance.",
+          "terms": [
+            "physics-b.5-internal-resistance"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q08",
+          "type": "tf",
+          "statement": "Adding another resistor in parallel to a circuit increases the total resistance.",
+          "answer": false,
+          "explanation": "An extra parallel path lets more current flow, so the total resistance decreases.",
+          "terms": [
+            "physics-b.5-resistance"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q09",
+          "type": "mcq",
+          "prompt": "A graph of terminal p.d. (y) against current (x) for a cell is a straight line. What are its y-intercept and gradient?",
+          "options": [
+            "ε and −r",
+            "r and ε",
+            "0 and R",
+            "ε and +R"
+          ],
+          "answer": 0,
+          "explanation": "V = ε − Ir, so the intercept is the e.m.f. and the gradient is −r.",
+          "terms": [
+            "physics-b.5-internal-resistance",
+            "physics-b.5-emf"
+          ]
+        },
+        {
+          "id": "physics-B.5-2-q10",
+          "type": "mcq",
+          "prompt": "Three identical 6.0 Ω resistors: two in parallel, then in series with the third. What is the total resistance?",
+          "options": [
+            "18 Ω",
+            "9.0 Ω",
+            "4.0 Ω",
+            "2.0 Ω"
+          ],
+          "answer": 1,
+          "explanation": "Parallel pair = 3.0 Ω; plus 6.0 Ω in series gives 9.0 Ω.",
+          "terms": [
+            "physics-b.5-resistance"
+          ]
+        }
+      ]
+    }
+  ]
+}

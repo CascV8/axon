@@ -1,0 +1,420 @@
+{
+  "id": "physics-A.5",
+  "code": "A.5",
+  "unit": "A",
+  "title": "Galilean and special relativity",
+  "level": "HL",
+  "summary": "Reference frames, Galilean transformations, Einstein’s postulates, Lorentz transformations, time dilation, length contraction, relativity of simultaneity and spacetime diagrams.",
+  "keyterms": [
+    {
+      "id": "physics-a.5-inertial-frame",
+      "term": "Inertial reference frame",
+      "definition": "A frame moving at constant velocity, in which Newton’s first law holds.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-galilean-transformation",
+      "term": "Galilean transformation",
+      "definition": "Classical conversion between frames: x′ = x − vt, t′ = t, u′ = u − v.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-postulates",
+      "term": "Postulates of special relativity",
+      "definition": "The laws of physics are the same in all inertial frames; the speed of light in vacuum is the same for all inertial observers.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-lorentz-factor",
+      "term": "Lorentz factor",
+      "definition": "γ = 1/√(1 − v²/c²); always ≥ 1, becoming large as v approaches c.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-proper-time",
+      "term": "Proper time",
+      "definition": "Time interval between two events measured in the frame where they occur at the same place; the shortest measured interval.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-time-dilation",
+      "term": "Time dilation",
+      "definition": "A moving clock runs slow: Δt = γΔt₀, where Δt₀ is the proper time.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-proper-length",
+      "term": "Proper length",
+      "definition": "Length of an object measured in its own rest frame; the longest measured length.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-length-contraction",
+      "term": "Length contraction",
+      "definition": "A moving object is shorter along its motion: L = L₀/γ.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-simultaneity",
+      "term": "Relativity of simultaneity",
+      "definition": "Events simultaneous in one frame are generally not simultaneous in another if they occur at different places.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-spacetime-interval",
+      "term": "Spacetime interval",
+      "definition": "(Δs)² = (cΔt)² − (Δx)²; the same in every inertial frame.",
+      "hl": true
+    },
+    {
+      "id": "physics-a.5-worldline",
+      "term": "Worldline",
+      "definition": "The path of an object on a spacetime diagram; light worldlines are at 45° when ct and x use equal scales.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-A.5-1",
+      "title": "Frames, postulates and the Lorentz factor",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-A.5-1-q01",
+          "type": "mcq",
+          "prompt": "A train moves at 30 m s⁻¹. A passenger walks forward at 2 m s⁻¹ relative to the train. Using Galilean relativity, her speed relative to the ground is",
+          "options": [
+            "28 m s⁻¹",
+            "30 m s⁻¹",
+            "32 m s⁻¹",
+            "60 m s⁻¹"
+          ],
+          "answer": 2,
+          "explanation": "Galilean velocity addition: u = u′ + v = 2 + 30 = 32 m s⁻¹.",
+          "terms": [
+            "physics-a.5-galilean-transformation"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q02",
+          "type": "tf",
+          "statement": "According to Galilean relativity, light from a moving lamp would travel at c + v relative to the ground.",
+          "answer": true,
+          "explanation": "Galilean addition predicts c + v; experiments show light always travels at c, which is why special relativity was needed.",
+          "terms": [
+            "physics-a.5-galilean-transformation",
+            "physics-a.5-postulates"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q03",
+          "type": "fill",
+          "text": "In special relativity the speed of light in a vacuum is the ___ for all inertial observers.",
+          "answer": "same",
+          "bank": [
+            "same",
+            "different",
+            "zero",
+            "infinite"
+          ],
+          "explanation": "This is Einstein’s second postulate, consistent with Maxwell’s equations and experiment.",
+          "terms": [
+            "physics-a.5-postulates"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q04",
+          "type": "mcq",
+          "prompt": "What is the Lorentz factor for a speed of 0.60c?",
+          "options": [
+            "1.25",
+            "1.67",
+            "0.80",
+            "1.60"
+          ],
+          "answer": 0,
+          "explanation": "γ = 1/√(1 − 0.36) = 1/0.80 = 1.25.",
+          "terms": [
+            "physics-a.5-lorentz-factor"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q05",
+          "type": "mcq",
+          "prompt": "What is the Lorentz factor for a speed of 0.80c?",
+          "options": [
+            "1.25",
+            "0.60",
+            "1.67",
+            "2.0"
+          ],
+          "answer": 2,
+          "explanation": "γ = 1/√(1 − 0.64) = 1/0.60 ≈ 1.67.",
+          "terms": [
+            "physics-a.5-lorentz-factor"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q06",
+          "type": "tf",
+          "statement": "Newton’s first law is valid in an accelerating reference frame.",
+          "answer": false,
+          "explanation": "Newton’s laws hold only in inertial frames; accelerating frames need fictitious forces.",
+          "terms": [
+            "physics-a.5-inertial-frame"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q07",
+          "type": "match",
+          "prompt": "Match each equation to its name.",
+          "pairs": [
+            {
+              "left": "x′ = x − vt",
+              "right": "Galilean position transformation"
+            },
+            {
+              "left": "t′ = t",
+              "right": "Absolute time in Galilean relativity"
+            },
+            {
+              "left": "γ = 1/√(1 − v²/c²)",
+              "right": "Lorentz factor"
+            },
+            {
+              "left": "x′ = γ(x − vt)",
+              "right": "Lorentz position transformation"
+            }
+          ],
+          "explanation": "The Lorentz transformations reduce to the Galilean ones when v ≪ c (γ ≈ 1).",
+          "terms": [
+            "physics-a.5-galilean-transformation",
+            "physics-a.5-lorentz-factor"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q08",
+          "type": "fill",
+          "text": "Two spaceships approach each other, each at 0.50c relative to Earth. Relativistic addition gives their relative speed as ___ c.",
+          "answer": "0.80",
+          "accept": [
+            "0.8"
+          ],
+          "bank": [
+            "0.80",
+            "1.0",
+            "0.50",
+            "0.75"
+          ],
+          "explanation": "u = (0.50 + 0.50)/(1 + 0.25) = 1.0/1.25 = 0.80c, always less than c.",
+          "terms": [
+            "physics-a.5-postulates",
+            "physics-a.5-lorentz-factor"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q09",
+          "type": "mcq",
+          "prompt": "Which experiment’s null result supported the idea that light speed does not depend on the observer’s motion?",
+          "options": [
+            "Geiger–Marsden",
+            "Michelson–Morley",
+            "Millikan oil drop",
+            "Davisson–Germer"
+          ],
+          "answer": 1,
+          "explanation": "Michelson–Morley found no change in light speed due to Earth’s motion through a supposed ether.",
+          "terms": [
+            "physics-a.5-postulates"
+          ]
+        },
+        {
+          "id": "physics-A.5-1-q10",
+          "type": "mcq",
+          "prompt": "As v → c, the Lorentz factor",
+          "options": [
+            "approaches 1",
+            "approaches 0",
+            "increases without limit",
+            "approaches 2"
+          ],
+          "answer": 2,
+          "explanation": "1 − v²/c² → 0, so γ → ∞: no massive object can be accelerated to c.",
+          "terms": [
+            "physics-a.5-lorentz-factor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-A.5-2",
+      "title": "Time dilation, length contraction and spacetime",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-A.5-2-q01",
+          "type": "mcq",
+          "prompt": "A muon lives 2.2 µs in its rest frame and moves at 0.995c (γ = 10). Its lifetime measured from Earth is",
+          "options": [
+            "0.22 µs",
+            "2.2 µs",
+            "22 µs",
+            "220 µs"
+          ],
+          "answer": 2,
+          "explanation": "Δt = γΔt₀ = 10 × 2.2 µs = 22 µs, allowing muons from the upper atmosphere to reach the ground.",
+          "terms": [
+            "physics-a.5-time-dilation",
+            "physics-a.5-proper-time"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q02",
+          "type": "fill",
+          "text": "A spaceship has proper length 100 m. When it passes Earth at 0.60c (γ = 1.25), Earth observers measure its length as ___ m.",
+          "answer": "80",
+          "bank": [
+            "80",
+            "125",
+            "100",
+            "60"
+          ],
+          "explanation": "L = L₀/γ = 100/1.25 = 80 m.",
+          "terms": [
+            "physics-a.5-length-contraction",
+            "physics-a.5-proper-length"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q03",
+          "type": "tf",
+          "statement": "Proper time is measured by a clock that is present at both events.",
+          "answer": true,
+          "explanation": "If both events occur at the same place in a frame, a single clock there records the proper time.",
+          "terms": [
+            "physics-a.5-proper-time"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q04",
+          "type": "mcq",
+          "prompt": "In the muon’s own frame, why does it reach the ground before decaying?",
+          "options": [
+            "Its lifetime is dilated",
+            "The atmosphere’s thickness is length-contracted",
+            "It travels faster than light",
+            "It gains mass"
+          ],
+          "answer": 1,
+          "explanation": "In the muon frame it lives only 2.2 µs, but the atmosphere rushing past is contracted by γ, so the distance is short.",
+          "terms": [
+            "physics-a.5-length-contraction"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q05",
+          "type": "tf",
+          "statement": "Two events that are simultaneous in one inertial frame are simultaneous in all inertial frames.",
+          "answer": false,
+          "explanation": "Simultaneity is relative for events at different locations.",
+          "terms": [
+            "physics-a.5-simultaneity"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q06",
+          "type": "mcq",
+          "prompt": "On a spacetime diagram with ct vertical and x horizontal (equal scales), the worldline of a light pulse is at",
+          "options": [
+            "0° to the x-axis",
+            "45°",
+            "90°",
+            "an angle depending on the observer"
+          ],
+          "answer": 1,
+          "explanation": "Light covers Δx = cΔt, so its worldline has gradient 1, i.e. 45°, in every frame.",
+          "terms": [
+            "physics-a.5-worldline"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q07",
+          "type": "fill",
+          "text": "The quantity (cΔt)² − (Δx)², which all inertial observers agree on, is called the spacetime ___.",
+          "answer": "interval",
+          "bank": [
+            "interval",
+            "contraction",
+            "factor",
+            "dilation"
+          ],
+          "explanation": "The spacetime interval is invariant even though Δt and Δx individually differ between frames.",
+          "terms": [
+            "physics-a.5-spacetime-interval"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q08",
+          "type": "mcq",
+          "prompt": "For a moving frame S′ drawn on the spacetime diagram of S, the ct′ axis is",
+          "options": [
+            "tilted towards the light line by angle θ with tan θ = v/c",
+            "parallel to the ct axis",
+            "along the x-axis",
+            "at exactly 45°"
+          ],
+          "answer": 0,
+          "explanation": "The ct′ axis is the worldline of the S′ origin, tilted from ct by θ where tan θ = v/c; the x′ axis tilts by the same angle from x.",
+          "terms": [
+            "physics-a.5-worldline"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q09",
+          "type": "match",
+          "prompt": "Match each effect to its equation.",
+          "pairs": [
+            {
+              "left": "Time dilation",
+              "right": "Δt = γΔt₀"
+            },
+            {
+              "left": "Length contraction",
+              "right": "L = L₀/γ"
+            },
+            {
+              "left": "Invariant interval",
+              "right": "(ct)² − x²"
+            },
+            {
+              "left": "Velocity addition",
+              "right": "u′ = (u − v)/(1 − uv/c²)"
+            }
+          ],
+          "explanation": "All these follow from the Lorentz transformations.",
+          "terms": [
+            "physics-a.5-time-dilation",
+            "physics-a.5-length-contraction",
+            "physics-a.5-spacetime-interval"
+          ]
+        },
+        {
+          "id": "physics-A.5-2-q10",
+          "type": "order",
+          "prompt": "Order the steps in a time-dilation problem.",
+          "items": [
+            "Identify the two events",
+            "Find the frame where they occur at the same place",
+            "Call that time the proper time Δt₀",
+            "Calculate Δt = γΔt₀ for the other frame"
+          ],
+          "explanation": "Identifying the proper time first avoids applying γ the wrong way round.",
+          "terms": [
+            "physics-a.5-proper-time",
+            "physics-a.5-time-dilation"
+          ]
+        }
+      ]
+    }
+  ]
+}

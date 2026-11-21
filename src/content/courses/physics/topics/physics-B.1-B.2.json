@@ -1,0 +1,431 @@
+{
+  "id": "physics-B.1-B.2",
+  "code": "B.1–B.2",
+  "unit": "B",
+  "title": "Thermal energy transfers and the greenhouse effect",
+  "level": "SL",
+  "summary": "Temperature and internal energy, specific heat and latent heat, conduction, convection and radiation, black-body radiation laws, and Earth’s energy balance and the greenhouse effect.",
+  "keyterms": [
+    {
+      "id": "physics-b.1-b.2-internal-energy",
+      "term": "Internal energy",
+      "definition": "Total random kinetic energy plus intermolecular potential energy of the particles in a substance.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-temperature",
+      "term": "Temperature",
+      "definition": "A measure of the average random kinetic energy of particles; T(K) = θ(°C) + 273.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-specific-heat-capacity",
+      "term": "Specific heat capacity",
+      "definition": "Energy needed to raise the temperature of 1 kg of a substance by 1 K: Q = mcΔT.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-specific-latent-heat",
+      "term": "Specific latent heat",
+      "definition": "Energy needed to change the phase of 1 kg of a substance at constant temperature: Q = mL.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-conduction",
+      "term": "Conduction",
+      "definition": "Thermal energy transfer through a material by particle collisions (and free electrons in metals); rate = kAΔT/Δx.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-convection",
+      "term": "Convection",
+      "definition": "Thermal energy transfer by bulk movement of a fluid caused by density differences.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-black-body",
+      "term": "Black body",
+      "definition": "An ideal object that absorbs all radiation falling on it and emits the maximum possible radiation for its temperature.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-stefan-boltzmann",
+      "term": "Stefan–Boltzmann law",
+      "definition": "Power radiated by a black body: L = σAT⁴.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-wiens-law",
+      "term": "Wien’s displacement law",
+      "definition": "Peak emission wavelength is inversely proportional to temperature: λ_max T = 2.9 × 10⁻³ m K.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-emissivity",
+      "term": "Emissivity",
+      "definition": "Ratio of power emitted by a surface to that of a black body at the same temperature (0 to 1).",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-albedo",
+      "term": "Albedo",
+      "definition": "Fraction of incident radiation that a surface reflects; Earth’s mean albedo is about 0.3.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-greenhouse-effect",
+      "term": "Greenhouse effect",
+      "definition": "Warming of a planet’s surface because atmospheric gases absorb and re-emit outgoing infrared radiation, some back towards the surface.",
+      "hl": false
+    },
+    {
+      "id": "physics-b.1-b.2-solar-constant",
+      "term": "Solar constant",
+      "definition": "Intensity of the Sun’s radiation at Earth’s mean distance, about 1.36 × 10³ W m⁻², above the atmosphere.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-B.1-B.2-1",
+      "title": "Heating, phase change and energy transfer",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-B.1-B.2-1-q01",
+          "type": "mcq",
+          "prompt": "How much energy is needed to heat 2.0 kg of water from 20 °C to 70 °C? (c = 4200 J kg⁻¹ K⁻¹)",
+          "options": [
+            "168 kJ",
+            "420 kJ",
+            "84 kJ",
+            "588 kJ"
+          ],
+          "answer": 1,
+          "explanation": "Q = mcΔT = 2.0 × 4200 × 50 = 420 000 J = 420 kJ.",
+          "terms": [
+            "physics-b.1-b.2-specific-heat-capacity"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q02",
+          "type": "tf",
+          "statement": "While ice melts at 0 °C, its temperature stays constant even though energy is supplied.",
+          "answer": true,
+          "explanation": "The energy increases intermolecular potential energy (breaking bonds), not the mean kinetic energy, so temperature is constant.",
+          "terms": [
+            "physics-b.1-b.2-specific-latent-heat",
+            "physics-b.1-b.2-internal-energy"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q03",
+          "type": "fill",
+          "text": "The energy needed to melt 0.50 kg of ice at 0 °C (L_f = 3.3 × 10⁵ J kg⁻¹) is ___ kJ.",
+          "answer": "165",
+          "bank": [
+            "165",
+            "330",
+            "660",
+            "16.5"
+          ],
+          "explanation": "Q = mL = 0.50 × 3.3 × 10⁵ = 1.65 × 10⁵ J = 165 kJ.",
+          "terms": [
+            "physics-b.1-b.2-specific-latent-heat"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q04",
+          "type": "mcq",
+          "prompt": "Which quantity is directly related to the average kinetic energy of the particles in a gas?",
+          "options": [
+            "Internal energy",
+            "Absolute temperature",
+            "Heat",
+            "Specific latent heat"
+          ],
+          "answer": 1,
+          "explanation": "Temperature in kelvin is proportional to the mean random kinetic energy of the particles.",
+          "terms": [
+            "physics-b.1-b.2-temperature"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q05",
+          "type": "fill",
+          "text": "A temperature of 27 °C is equal to ___ K.",
+          "answer": "300",
+          "bank": [
+            "300",
+            "246",
+            "273",
+            "327"
+          ],
+          "explanation": "T(K) = θ(°C) + 273 = 27 + 273 = 300 K.",
+          "terms": [
+            "physics-b.1-b.2-temperature"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q06",
+          "type": "match",
+          "prompt": "Match each process to its mechanism.",
+          "pairs": [
+            {
+              "left": "Conduction",
+              "right": "Particle collisions and free electrons"
+            },
+            {
+              "left": "Convection",
+              "right": "Bulk fluid flow driven by density change"
+            },
+            {
+              "left": "Radiation",
+              "right": "Electromagnetic waves, works in a vacuum"
+            },
+            {
+              "left": "Evaporation",
+              "right": "Fastest particles escape a liquid surface"
+            }
+          ],
+          "explanation": "Each mechanism transfers thermal energy in a different way.",
+          "terms": [
+            "physics-b.1-b.2-conduction",
+            "physics-b.1-b.2-convection"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q07",
+          "type": "mcq",
+          "prompt": "The rate of conduction through a wall is given by kAΔT/Δx. Doubling the wall thickness, other factors unchanged, makes the rate",
+          "options": [
+            "double",
+            "halve",
+            "quarter",
+            "stay the same"
+          ],
+          "answer": 1,
+          "explanation": "Rate ∝ 1/Δx, so a wall twice as thick conducts at half the rate.",
+          "terms": [
+            "physics-b.1-b.2-conduction"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q08",
+          "type": "tf",
+          "statement": "Convection can occur in solids.",
+          "answer": false,
+          "explanation": "Convection needs bulk movement of the material, so it happens only in fluids (liquids and gases).",
+          "terms": [
+            "physics-b.1-b.2-convection"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q09",
+          "type": "mcq",
+          "prompt": "Equal masses of two liquids receive the same energy. Liquid X warms by 10 K, liquid Y by 5 K. Compared with Y, X has",
+          "options": [
+            "twice the specific heat capacity",
+            "half the specific heat capacity",
+            "the same specific heat capacity",
+            "a higher boiling point"
+          ],
+          "answer": 1,
+          "explanation": "c = Q/(mΔT); a larger ΔT for the same Q and m means a smaller c, here half.",
+          "terms": [
+            "physics-b.1-b.2-specific-heat-capacity"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-1-q10",
+          "type": "order",
+          "prompt": "Order the stages as a block of ice at −10 °C is heated steadily to steam at 100 °C.",
+          "items": [
+            "Ice warms to 0 °C",
+            "Ice melts at 0 °C",
+            "Water warms to 100 °C",
+            "Water boils at 100 °C"
+          ],
+          "explanation": "Temperature rises in single-phase stages and stays constant during each phase change.",
+          "terms": [
+            "physics-b.1-b.2-specific-latent-heat",
+            "physics-b.1-b.2-specific-heat-capacity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-B.1-B.2-2",
+      "title": "Radiation, black bodies and Earth’s energy balance",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-B.1-B.2-2-q01",
+          "type": "mcq",
+          "prompt": "The Sun’s surface temperature is about 5800 K. Using Wien’s law, its peak wavelength is about",
+          "options": [
+            "500 nm",
+            "5.0 µm",
+            "50 nm",
+            "2.9 mm"
+          ],
+          "answer": 0,
+          "explanation": "λ_max = 2.9 × 10⁻³ / 5800 = 5.0 × 10⁻⁷ m = 500 nm, in the visible region.",
+          "terms": [
+            "physics-b.1-b.2-wiens-law"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q02",
+          "type": "tf",
+          "statement": "If the absolute temperature of a black body doubles, the power it radiates increases by a factor of 16.",
+          "answer": true,
+          "explanation": "L = σAT⁴, so L ∝ T⁴ and 2⁴ = 16.",
+          "terms": [
+            "physics-b.1-b.2-stefan-boltzmann"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q03",
+          "type": "fill",
+          "text": "Earth’s surface (about 288 K) radiates most strongly in the ___ region of the spectrum.",
+          "answer": "infrared",
+          "bank": [
+            "infrared",
+            "visible",
+            "ultraviolet",
+            "microwave"
+          ],
+          "explanation": "λ_max = 2.9 × 10⁻³/288 ≈ 10 µm, which is infrared.",
+          "terms": [
+            "physics-b.1-b.2-wiens-law"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q04",
+          "type": "mcq",
+          "prompt": "A planet absorbs sunlight and has an albedo of 0.30. What fraction of the incident radiation does it absorb?",
+          "options": [
+            "0.30",
+            "0.70",
+            "1.0",
+            "0.09"
+          ],
+          "answer": 1,
+          "explanation": "Albedo is the reflected fraction, so 1 − 0.30 = 0.70 is absorbed.",
+          "terms": [
+            "physics-b.1-b.2-albedo"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q05",
+          "type": "mcq",
+          "prompt": "Why is the average intensity of sunlight absorbed over Earth’s whole surface about S/4 × (1 − albedo)?",
+          "options": [
+            "Earth intercepts sunlight over a disc of area πR² but radiates from a sphere of area 4πR²",
+            "The atmosphere absorbs three quarters",
+            "The Sun is four times further away at night",
+            "Only a quarter of the surface is land"
+          ],
+          "answer": 0,
+          "explanation": "Intercepted power = SπR²(1 − α); spreading it over 4πR² gives S(1 − α)/4.",
+          "terms": [
+            "physics-b.1-b.2-solar-constant",
+            "physics-b.1-b.2-albedo"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q06",
+          "type": "fill",
+          "text": "A body with emissivity e radiates power P = eσA___.",
+          "answer": "T⁴",
+          "accept": [
+            "T^4"
+          ],
+          "bank": [
+            "T⁴",
+            "T²",
+            "T",
+            "1/T"
+          ],
+          "explanation": "Real surfaces emit a fraction e of black-body power: P = eσAT⁴.",
+          "terms": [
+            "physics-b.1-b.2-emissivity",
+            "physics-b.1-b.2-stefan-boltzmann"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q07",
+          "type": "tf",
+          "statement": "Greenhouse gases absorb most of the incoming visible sunlight before it reaches the surface.",
+          "answer": false,
+          "explanation": "They are largely transparent to visible light but absorb outgoing infrared, re-emitting some back to the surface.",
+          "terms": [
+            "physics-b.1-b.2-greenhouse-effect"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q08",
+          "type": "mcq",
+          "prompt": "Why can molecules such as CO₂ and H₂O absorb infrared radiation?",
+          "options": [
+            "Infrared frequencies match the natural frequencies of their molecular vibrations",
+            "They are very dense",
+            "They are ionized by infrared",
+            "They reflect infrared"
+          ],
+          "answer": 0,
+          "explanation": "Resonance: infrared photons excite bending and stretching vibrations in these molecules.",
+          "terms": [
+            "physics-b.1-b.2-greenhouse-effect"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q09",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Albedo",
+              "right": "Fraction reflected"
+            },
+            {
+              "left": "Emissivity",
+              "right": "Emission compared with a black body"
+            },
+            {
+              "left": "Solar constant",
+              "right": "Intensity of sunlight at Earth’s distance"
+            },
+            {
+              "left": "Black body",
+              "right": "Perfect absorber and emitter"
+            }
+          ],
+          "explanation": "These quantities appear in simple energy-balance models of Earth.",
+          "terms": [
+            "physics-b.1-b.2-albedo",
+            "physics-b.1-b.2-emissivity",
+            "physics-b.1-b.2-solar-constant",
+            "physics-b.1-b.2-black-body"
+          ]
+        },
+        {
+          "id": "physics-B.1-B.2-2-q10",
+          "type": "order",
+          "prompt": "Order the stages of the greenhouse effect.",
+          "items": [
+            "Short-wavelength radiation from the Sun reaches the surface",
+            "The surface warms and emits infrared",
+            "Greenhouse gases absorb some of the infrared",
+            "The gases re-emit infrared in all directions, partly back to the surface"
+          ],
+          "explanation": "The returned infrared means the surface is warmer than it would be with no atmosphere.",
+          "terms": [
+            "physics-b.1-b.2-greenhouse-effect"
+          ]
+        }
+      ]
+    }
+  ]
+}

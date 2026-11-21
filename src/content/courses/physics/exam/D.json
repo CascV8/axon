@@ -1,0 +1,58 @@
+[
+  {
+    "id": "physics-X-D-01",
+    "unit": "D",
+    "topics": ["physics-D.1"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "An Earth-observation satellite",
+    "stem": "A satellite moves in a circular orbit 630 km above Earth’s surface. Earth’s mass is 5.97 × 10²⁴ kg and its radius is 6.37 × 10⁶ m. G = 6.67 × 10⁻¹¹ N m² kg⁻².",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the gravitational field strength at the satellite’s orbit.",
+        "marks": 2,
+        "numeric": { "value": 8.13, "tolerance": 0.05, "unit": "N kg⁻¹" },
+        "markscheme": [
+          "r = 6.37 × 10⁶ + 0.63 × 10⁶ = 7.00 × 10⁶ m",
+          "g = GM/r² = 6.67 × 10⁻¹¹ × 5.97 × 10²⁴ / (7.00 × 10⁶)² = 8.1 N kg⁻¹"
+        ],
+        "notes": "Using the height instead of the radius loses the first mark."
+      },
+      {
+        "label": "b",
+        "command": "Show that",
+        "prompt": "Show that the orbital speed of the satellite is about 7.5 km s⁻¹.",
+        "marks": 2,
+        "markscheme": [
+          "GMm/r² = mv²/r, so v = √(GM/r)",
+          "v = √(3.98 × 10¹⁴ / 7.00 × 10⁶) = 7.54 × 10³ m s⁻¹"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the orbital period of the satellite in minutes.",
+        "marks": 2,
+        "numeric": { "value": 97.2, "tolerance": 1, "unit": "min" },
+        "markscheme": [
+          "T = 2πr/v = 2π × 7.00 × 10⁶ / 7.54 × 10³ = 5.83 × 10³ s",
+          "= 97 min"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "An astronaut on a spacecraft in this orbit reports feeling weightless. Explain this, given that the field strength is not zero.",
+        "marks": 3,
+        "markscheme": [
+          "the astronaut and the spacecraft are both in free fall / both accelerate towards Earth at g",
+          "the gravitational force provides the centripetal force for both",
+          "so there is no (or negligible) normal/contact force between astronaut and spacecraft",
+          "the sensation of weight comes from the contact force, so they feel weightless"
+        ]
+      }
+    ]
+  }
+]

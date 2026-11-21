@@ -1,0 +1,115 @@
+[
+  {
+    "id": "physics-X-A-01",
+    "unit": "A",
+    "topics": ["physics-A.1"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "A kicked ball on level ground",
+    "stem": "A ball is kicked from level ground with a speed of 20 m s⁻¹ at 30° above the horizontal. Ignore air resistance unless stated, and take g = 9.8 m s⁻².",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the time of flight of the ball.",
+        "marks": 2,
+        "numeric": { "value": 2.04, "tolerance": 0.02, "unit": "s" },
+        "markscheme": [
+          "vertical component u_y = 20 sin 30° = 10 m s⁻¹",
+          "t = 2u_y/g = 2 × 10 / 9.8 = 2.0 s"
+        ],
+        "notes": "Allow use of s = u_y t − ½gt² with s = 0."
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the horizontal range of the ball.",
+        "marks": 2,
+        "numeric": { "value": 35.3, "tolerance": 0.5, "unit": "m" },
+        "markscheme": [
+          "horizontal component u_x = 20 cos 30° = 17.3 m s⁻¹",
+          "range = 17.3 × 2.04 = 35 m"
+        ],
+        "notes": "Allow ECF from (a)."
+      },
+      {
+        "label": "c",
+        "command": "Determine",
+        "prompt": "Determine the maximum height reached by the ball.",
+        "marks": 2,
+        "numeric": { "value": 5.1, "tolerance": 0.1, "unit": "m" },
+        "markscheme": [
+          "at the top v_y = 0 / use v² = u² − 2gh",
+          "h = 10² / (2 × 9.8) = 5.1 m"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Air resistance is now taken into account. Explain how the trajectory of the ball changes.",
+        "marks": 3,
+        "markscheme": [
+          "drag opposes the velocity / acts opposite to the direction of motion",
+          "horizontal velocity decreases during the flight (no longer constant)",
+          "upward deceleration is greater than g, so maximum height is lower",
+          "range is reduced",
+          "path is no longer symmetric / descent is steeper than ascent"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "physics-X-A-02",
+    "unit": "A",
+    "topics": ["physics-A.4"],
+    "paper": "P2",
+    "level": "HL",
+    "title": "Flywheel and clutch",
+    "stem": "A flywheel of moment of inertia 0.80 kg m² starts from rest. A constant net torque of 4.0 N m acts on it for 6.0 s and is then removed. The flywheel is then coupled to a second, initially stationary disc of moment of inertia 0.40 kg m² on the same axle, and they rotate together. Friction at the bearings can be neglected.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the angular velocity of the flywheel at the end of the 6.0 s.",
+        "marks": 2,
+        "numeric": { "value": 30, "tolerance": 0.5, "unit": "rad s⁻¹" },
+        "markscheme": [
+          "α = τ/I = 4.0/0.80 = 5.0 rad s⁻²",
+          "ω = αt = 5.0 × 6.0 = 30 rad s⁻¹"
+        ],
+        "notes": "Allow angular impulse method: τΔt = IΔω."
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the rotational kinetic energy of the flywheel at this time.",
+        "marks": 1,
+        "numeric": { "value": 360, "tolerance": 5, "unit": "J" },
+        "markscheme": ["E_k = ½Iω² = ½ × 0.80 × 30² = 360 J"]
+      },
+      {
+        "label": "c",
+        "command": "Determine",
+        "prompt": "Determine the common angular velocity after the second disc is coupled.",
+        "marks": 2,
+        "numeric": { "value": 20, "tolerance": 0.3, "unit": "rad s⁻¹" },
+        "markscheme": [
+          "angular momentum conserved / no external torque: 0.80 × 30 = 24 kg m² s⁻¹",
+          "ω = 24 / (0.80 + 0.40) = 20 rad s⁻¹"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Show that",
+        "prompt": "Show that rotational kinetic energy is not conserved during the coupling, and suggest where the energy goes.",
+        "marks": 3,
+        "markscheme": [
+          "final E_k = ½ × 1.20 × 20² = 240 J",
+          "240 J < 360 J, so 120 J of kinetic energy is lost",
+          "energy dissipated as internal/thermal energy (and sound) by friction in the clutch while the surfaces slip"
+        ],
+        "notes": "The coupling is the rotational analogue of a perfectly inelastic collision."
+      }
+    ]
+  }
+]

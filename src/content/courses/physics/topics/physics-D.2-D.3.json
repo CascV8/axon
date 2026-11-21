@@ -1,0 +1,587 @@
+{
+  "id": "physics-D.2-D.3",
+  "code": "D.2–D.3",
+  "unit": "D",
+  "title": "Electric and magnetic fields and motion in them",
+  "level": "SL",
+  "summary": "Charge and Coulomb’s law, electric field strength and uniform fields, magnetic field patterns, forces on moving charges and currents, motion of charged particles in fields, and (HL) electric potential and forces between parallel wires.",
+  "keyterms": [
+    {
+      "id": "physics-d.2-d.3-coulombs-law",
+      "term": "Coulomb’s law",
+      "definition": "Force between point charges: F = kq₁q₂/r², with k = 1/4πε₀ ≈ 8.99 × 10⁹ N m² C⁻².",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-electric-field",
+      "term": "Electric field strength",
+      "definition": "Force per unit positive test charge, E = F/q, in N C⁻¹ (or V m⁻¹).",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-uniform-field",
+      "term": "Uniform electric field",
+      "definition": "Field between parallel plates with constant strength E = V/d.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-elementary-charge",
+      "term": "Elementary charge",
+      "definition": "e = 1.60 × 10⁻¹⁹ C; charge is quantized in multiples of e.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-magnetic-field",
+      "term": "Magnetic field",
+      "definition": "Region where a moving charge or current experiences a force; field strength B measured in tesla.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-magnetic-force-charge",
+      "term": "Force on a moving charge",
+      "definition": "F = qvB sin θ, perpendicular to both v and B.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-motor-effect",
+      "term": "Force on a current",
+      "definition": "F = BIL sin θ on a current-carrying wire in a magnetic field.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-circular-path",
+      "term": "Circular path in B field",
+      "definition": "A charge moving perpendicular to uniform B moves in a circle of radius r = mv/qB.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-electronvolt",
+      "term": "Electronvolt",
+      "definition": "Energy gained by an electron accelerated through 1 V: 1 eV = 1.60 × 10⁻¹⁹ J.",
+      "hl": false
+    },
+    {
+      "id": "physics-d.2-d.3-electric-potential",
+      "term": "Electric potential",
+      "definition": "Work done per unit charge bringing a positive test charge from infinity: V_e = kQ/r.",
+      "hl": true
+    },
+    {
+      "id": "physics-d.2-d.3-parallel-wires",
+      "term": "Force between parallel wires",
+      "definition": "Force per unit length F/L = μ₀I₁I₂/2πr; attractive for currents in the same direction.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-D.2-D.3-1",
+      "title": "Electric fields",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-D.2-D.3-1-q01",
+          "type": "mcq",
+          "prompt": "Two point charges are 0.10 m apart and repel with a force F. The distance is halved. The new force is",
+          "options": [
+            "F/2",
+            "2F",
+            "4F",
+            "F/4"
+          ],
+          "answer": 2,
+          "explanation": "F ∝ 1/r²: halving r quadruples F.",
+          "terms": [
+            "physics-d.2-d.3-coulombs-law"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q02",
+          "type": "fill",
+          "text": "A charge of 2.0 µC experiences a force of 0.010 N in an electric field. The field strength is ___ N C⁻¹.",
+          "answer": "5000",
+          "accept": [
+            "5.0 × 10³",
+            "5 × 10³"
+          ],
+          "bank": [
+            "5000",
+            "0.005",
+            "2.0 × 10⁻⁸",
+            "200"
+          ],
+          "explanation": "E = F/q = 0.010/2.0 × 10⁻⁶ = 5.0 × 10³ N C⁻¹.",
+          "terms": [
+            "physics-d.2-d.3-electric-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q03",
+          "type": "tf",
+          "statement": "Electric field lines point in the direction of the force on a negative charge.",
+          "answer": false,
+          "explanation": "By convention they show the force on a positive test charge, so they point away from positive and towards negative charges.",
+          "terms": [
+            "physics-d.2-d.3-electric-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q04",
+          "type": "mcq",
+          "prompt": "Parallel plates 2.0 cm apart are connected to a 500 V supply. The field strength between them is",
+          "options": [
+            "25 000 V m⁻¹",
+            "250 V m⁻¹",
+            "10 V m⁻¹",
+            "1000 V m⁻¹"
+          ],
+          "answer": 0,
+          "explanation": "E = V/d = 500/0.020 = 2.5 × 10⁴ V m⁻¹, uniform away from the edges.",
+          "terms": [
+            "physics-d.2-d.3-uniform-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q05",
+          "type": "fill",
+          "text": "An electron accelerated through 200 V gains ___ eV of kinetic energy.",
+          "answer": "200",
+          "bank": [
+            "200",
+            "3.2 × 10⁻¹⁷",
+            "1.6 × 10⁻¹⁹",
+            "100"
+          ],
+          "explanation": "Energy = qV = e × 200 V = 200 eV (3.2 × 10⁻¹⁷ J).",
+          "terms": [
+            "physics-d.2-d.3-electronvolt"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q06",
+          "type": "match",
+          "prompt": "Match each feature to its description.",
+          "pairs": [
+            {
+              "left": "Point charge field",
+              "right": "Radial, strength ∝ 1/r²"
+            },
+            {
+              "left": "Parallel plates",
+              "right": "Uniform between the plates"
+            },
+            {
+              "left": "Field line spacing",
+              "right": "Shows field strength"
+            },
+            {
+              "left": "Field line direction",
+              "right": "Force on a positive charge"
+            }
+          ],
+          "explanation": "Field-line diagrams show both direction and relative strength.",
+          "terms": [
+            "physics-d.2-d.3-electric-field",
+            "physics-d.2-d.3-uniform-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q07",
+          "type": "mcq",
+          "prompt": "A charged oil drop is held stationary between horizontal plates. Which forces balance?",
+          "options": [
+            "Weight and electric force",
+            "Weight and magnetic force",
+            "Electric force and drag",
+            "Drag and weight"
+          ],
+          "answer": 0,
+          "explanation": "qE = mg; this was the basis of measuring the elementary charge.",
+          "terms": [
+            "physics-d.2-d.3-electric-field",
+            "physics-d.2-d.3-elementary-charge"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q08",
+          "type": "tf",
+          "statement": "Charge is conserved in all interactions.",
+          "answer": true,
+          "explanation": "The total charge of an isolated system never changes; charge can be transferred but not created or destroyed overall.",
+          "terms": [
+            "physics-d.2-d.3-elementary-charge"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q09",
+          "type": "mcq",
+          "prompt": "A small object carries a charge of −4.8 × 10⁻¹⁹ C. This means it has",
+          "options": [
+            "gained 3 electrons",
+            "lost 3 electrons",
+            "gained 4.8 electrons",
+            "lost 1 proton"
+          ],
+          "answer": 0,
+          "explanation": "4.8 × 10⁻¹⁹ / 1.6 × 10⁻¹⁹ = 3; negative charge means extra electrons.",
+          "terms": [
+            "physics-d.2-d.3-elementary-charge"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-1-q10",
+          "type": "order",
+          "prompt": "Order the steps of charging a neutral conductor by induction with a positive rod.",
+          "items": [
+            "Bring the positive rod near the conductor",
+            "Electrons in the conductor move towards the rod",
+            "Earth the far side so electrons flow in from earth",
+            "Remove the earth, then remove the rod"
+          ],
+          "explanation": "The conductor is left negatively charged without touching the rod.",
+          "terms": [
+            "physics-d.2-d.3-elementary-charge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-D.2-D.3-2",
+      "title": "Magnetic fields and motion of charges",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-D.2-D.3-2-q01",
+          "type": "mcq",
+          "prompt": "A wire carrying 3.0 A lies at 90° to a 0.20 T field. The length in the field is 0.50 m. The force on it is",
+          "options": [
+            "0.30 N",
+            "3.0 N",
+            "0.12 N",
+            "1.2 N"
+          ],
+          "answer": 0,
+          "explanation": "F = BIL sin θ = 0.20 × 3.0 × 0.50 × 1 = 0.30 N.",
+          "terms": [
+            "physics-d.2-d.3-motor-effect"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q02",
+          "type": "tf",
+          "statement": "A charge moving parallel to a magnetic field experiences no magnetic force.",
+          "answer": true,
+          "explanation": "F = qvB sin θ with θ = 0 gives F = 0.",
+          "terms": [
+            "physics-d.2-d.3-magnetic-force-charge"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q03",
+          "type": "fill",
+          "text": "The magnetic force on a moving charge does no work because it is always ___ to the velocity.",
+          "answer": "perpendicular",
+          "bank": [
+            "perpendicular",
+            "parallel",
+            "opposite",
+            "equal"
+          ],
+          "explanation": "With F ⊥ v, the speed and kinetic energy are unchanged; only direction changes.",
+          "terms": [
+            "physics-d.2-d.3-magnetic-force-charge",
+            "physics-d.2-d.3-circular-path"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q04",
+          "type": "mcq",
+          "prompt": "A proton moves perpendicular to a uniform magnetic field. Its path is",
+          "options": [
+            "a straight line",
+            "a parabola",
+            "a circle",
+            "a spiral outward"
+          ],
+          "answer": 2,
+          "explanation": "The constant-size force is always perpendicular to velocity, producing uniform circular motion.",
+          "terms": [
+            "physics-d.2-d.3-circular-path"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q05",
+          "type": "mcq",
+          "prompt": "A charged particle moves in a circle in a magnetic field. If its speed doubles, the radius",
+          "options": [
+            "halves",
+            "doubles",
+            "quadruples",
+            "stays the same"
+          ],
+          "answer": 1,
+          "explanation": "qvB = mv²/r gives r = mv/qB, so r ∝ v.",
+          "terms": [
+            "physics-d.2-d.3-circular-path"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q06",
+          "type": "match",
+          "prompt": "Match each situation to its equation.",
+          "pairs": [
+            {
+              "left": "Moving charge in B field",
+              "right": "F = qvB sin θ"
+            },
+            {
+              "left": "Current in B field",
+              "right": "F = BIL sin θ"
+            },
+            {
+              "left": "Charge in E field",
+              "right": "F = qE"
+            },
+            {
+              "left": "Radius in B field",
+              "right": "r = mv/qB"
+            }
+          ],
+          "explanation": "Magnetic forces act only on moving charges; electric forces act on all charges.",
+          "terms": [
+            "physics-d.2-d.3-magnetic-force-charge",
+            "physics-d.2-d.3-motor-effect",
+            "physics-d.2-d.3-circular-path"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q07",
+          "type": "mcq",
+          "prompt": "A charged particle passes undeflected through crossed electric and magnetic fields. Its speed is",
+          "options": [
+            "E/B",
+            "B/E",
+            "EB",
+            "qE/B"
+          ],
+          "answer": 0,
+          "explanation": "qE = qvB, so v = E/B; this is a velocity selector.",
+          "terms": [
+            "physics-d.2-d.3-magnetic-force-charge",
+            "physics-d.2-d.3-electric-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q08",
+          "type": "tf",
+          "statement": "The magnetic field lines around a long straight wire are concentric circles.",
+          "answer": true,
+          "explanation": "Field lines circle the wire, with direction given by the right-hand grip rule.",
+          "terms": [
+            "physics-d.2-d.3-magnetic-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q09",
+          "type": "fill",
+          "text": "An electron enters the uniform field between parallel plates at right angles to the field. Its path between the plates is a ___.",
+          "answer": "parabola",
+          "bank": [
+            "parabola",
+            "circle",
+            "straight line",
+            "helix"
+          ],
+          "explanation": "Constant force perpendicular to the initial velocity gives projectile-like motion.",
+          "terms": [
+            "physics-d.2-d.3-uniform-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-2-q10",
+          "type": "mcq",
+          "prompt": "What is the magnetic field pattern inside a long current-carrying solenoid?",
+          "options": [
+            "Radial",
+            "Uniform and parallel to the axis",
+            "Zero",
+            "Circular around the axis"
+          ],
+          "answer": 1,
+          "explanation": "Inside a long solenoid the field is strong and uniform along the axis, like a bar magnet outside.",
+          "terms": [
+            "physics-d.2-d.3-magnetic-field"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-D.2-D.3-3",
+      "title": "Electric potential and forces between currents",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-D.2-D.3-3-q01",
+          "type": "mcq",
+          "prompt": "What is the electric potential 0.10 m from a +2.0 nC point charge? (k = 8.99 × 10⁹ N m² C⁻²)",
+          "options": [
+            "180 V",
+            "1800 V",
+            "18 V",
+            "−180 V"
+          ],
+          "answer": 0,
+          "explanation": "V = kQ/r = 8.99 × 10⁹ × 2.0 × 10⁻⁹ / 0.10 ≈ 180 V.",
+          "terms": [
+            "physics-d.2-d.3-electric-potential"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q02",
+          "type": "tf",
+          "statement": "Electric potential is a vector quantity.",
+          "answer": false,
+          "explanation": "Potential is a scalar; potentials from several charges simply add algebraically.",
+          "terms": [
+            "physics-d.2-d.3-electric-potential"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q03",
+          "type": "fill",
+          "text": "The electric field strength equals minus the potential ___.",
+          "answer": "gradient",
+          "bank": [
+            "gradient",
+            "area",
+            "squared",
+            "energy"
+          ],
+          "explanation": "E = −ΔV/Δr: the field points from high to low potential.",
+          "terms": [
+            "physics-d.2-d.3-electric-potential",
+            "physics-d.2-d.3-electric-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q04",
+          "type": "mcq",
+          "prompt": "The electric potential energy of two charges +q and −q separated by r is",
+          "options": [
+            "positive",
+            "negative",
+            "zero",
+            "infinite"
+          ],
+          "answer": 1,
+          "explanation": "E_p = kq₁q₂/r is negative for opposite charges, reflecting attraction.",
+          "terms": [
+            "physics-d.2-d.3-electric-potential"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q05",
+          "type": "mcq",
+          "prompt": "Two long parallel wires carry currents in the same direction. They",
+          "options": [
+            "repel",
+            "attract",
+            "feel no force",
+            "rotate"
+          ],
+          "answer": 1,
+          "explanation": "Each wire sits in the other’s magnetic field; for parallel currents the forces are attractive.",
+          "terms": [
+            "physics-d.2-d.3-parallel-wires"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q06",
+          "type": "fill",
+          "text": "Doubling the current in both of two parallel wires multiplies the force between them by ___.",
+          "answer": "4",
+          "bank": [
+            "4",
+            "2",
+            "1",
+            "8"
+          ],
+          "explanation": "F/L = μ₀I₁I₂/2πr, so doubling both currents gives 2 × 2 = 4.",
+          "terms": [
+            "physics-d.2-d.3-parallel-wires"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q07",
+          "type": "match",
+          "prompt": "Match each feature to its description.",
+          "pairs": [
+            {
+              "left": "Equipotentials around a point charge",
+              "right": "Concentric spheres"
+            },
+            {
+              "left": "Equipotentials between parallel plates",
+              "right": "Equally spaced parallel planes"
+            },
+            {
+              "left": "Work along an equipotential",
+              "right": "Zero"
+            },
+            {
+              "left": "Field lines vs equipotentials",
+              "right": "Always perpendicular"
+            }
+          ],
+          "explanation": "Equipotentials and field lines together map an electric field.",
+          "terms": [
+            "physics-d.2-d.3-electric-potential",
+            "physics-d.2-d.3-uniform-field"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q08",
+          "type": "tf",
+          "statement": "A positive charge released from rest moves towards lower electric potential.",
+          "answer": true,
+          "explanation": "Its potential energy qV decreases as it gains kinetic energy.",
+          "terms": [
+            "physics-d.2-d.3-electric-potential"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q09",
+          "type": "mcq",
+          "prompt": "How much work is needed to move a +3.0 µC charge from a point at 100 V to a point at 500 V?",
+          "options": [
+            "1.2 mJ",
+            "0.3 mJ",
+            "1.5 mJ",
+            "400 J"
+          ],
+          "answer": 0,
+          "explanation": "W = qΔV = 3.0 × 10⁻⁶ × 400 = 1.2 × 10⁻³ J.",
+          "terms": [
+            "physics-d.2-d.3-electric-potential"
+          ]
+        },
+        {
+          "id": "physics-D.2-D.3-3-q10",
+          "type": "mcq",
+          "prompt": "Two parallel wires 0.10 m apart each carry 10 A. The force per metre between them is (μ₀ = 4π × 10⁻⁷ T m A⁻¹)",
+          "options": [
+            "2.0 × 10⁻⁴ N m⁻¹",
+            "2.0 × 10⁻⁵ N m⁻¹",
+            "6.3 × 10⁻⁴ N m⁻¹",
+            "1.0 × 10⁻³ N m⁻¹"
+          ],
+          "answer": 0,
+          "explanation": "F/L = 4π × 10⁻⁷ × 10 × 10 / (2π × 0.10) = 2.0 × 10⁻⁴ N m⁻¹.",
+          "terms": [
+            "physics-d.2-d.3-parallel-wires"
+          ]
+        }
+      ]
+    }
+  ]
+}

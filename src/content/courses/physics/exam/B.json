@@ -1,0 +1,113 @@
+[
+  {
+    "id": "physics-X-B-01",
+    "unit": "B",
+    "topics": ["physics-B.1-B.2"],
+    "paper": "P1B",
+    "level": "SL",
+    "title": "Specific heat capacity of an aluminium block",
+    "stem": "A student places a 12 V electric heater in a 1.00 kg aluminium block. The voltmeter reads 12.0 ± 0.1 V and the ammeter reads 4.0 ± 0.1 A. The temperature of the block is recorded every 120 s. The block is not insulated.",
+    "data": {
+      "caption": "Temperature of the block during heating",
+      "columns": ["Time / s", "Temperature / °C"],
+      "rows": [["0", "20.0"], ["120", "25.8"], ["240", "31.6"], ["360", "37.4"], ["480", "43.2"]]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the percentage uncertainty in the power supplied by the heater.",
+        "marks": 2,
+        "numeric": { "value": 3.3, "tolerance": 0.1, "unit": "%" },
+        "markscheme": [
+          "P = VI; percentage uncertainties add",
+          "0.1/12.0 × 100 + 0.1/4.0 × 100 = 0.83 % + 2.5 % = 3.3 %"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Determine",
+        "prompt": "Determine the rate of temperature rise of the block.",
+        "marks": 1,
+        "numeric": { "value": 0.0483, "tolerance": 0.001, "unit": "K s⁻¹" },
+        "markscheme": ["gradient = (43.2 − 20.0) / 480 = 0.048 K s⁻¹ / °C s⁻¹"]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the specific heat capacity of aluminium from these data.",
+        "marks": 2,
+        "numeric": { "value": 993, "tolerance": 15, "unit": "J kg⁻¹ K⁻¹" },
+        "markscheme": [
+          "P = mc(ΔT/Δt) so c = P / (m × gradient)",
+          "c = 48 / (1.00 × 0.0483) ≈ 990 J kg⁻¹ K⁻¹"
+        ],
+        "notes": "Allow ECF from (b)."
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "The accepted value for aluminium is about 900 J kg⁻¹ K⁻¹. Explain why the experimental value is larger, and suggest one improvement.",
+        "marks": 3,
+        "markscheme": [
+          "energy is lost to the surroundings / not all the heater’s energy heats the block",
+          "so the temperature rises more slowly than it should, making the calculated c too large (systematic error)",
+          "improvement: insulate the block (e.g. with foam/lagging) / use oil in the heater and thermometer holes for better thermal contact / start below room temperature and finish the same amount above it"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "physics-X-B-02",
+    "unit": "B",
+    "topics": ["physics-B.5"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Battery with internal resistance",
+    "stem": "A battery of e.m.f. 9.0 V and internal resistance 0.50 Ω is connected to a 4.0 Ω resistor and a 12.0 Ω resistor that are in parallel with each other.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Show that",
+        "prompt": "Show that the combined resistance of the external circuit is 3.0 Ω.",
+        "marks": 1,
+        "markscheme": ["1/R = 1/4.0 + 1/12.0 = 4/12, so R = 3.0 Ω"]
+      },
+      {
+        "label": "b",
+        "command": "Calculate",
+        "prompt": "Calculate the current in the battery.",
+        "marks": 2,
+        "numeric": { "value": 2.57, "tolerance": 0.03, "unit": "A" },
+        "markscheme": [
+          "I = ε / (R + r)",
+          "I = 9.0 / 3.5 = 2.6 A"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Calculate the power dissipated in the 12.0 Ω resistor.",
+        "marks": 2,
+        "numeric": { "value": 4.96, "tolerance": 0.08, "unit": "W" },
+        "markscheme": [
+          "terminal p.d. = 2.57 × 3.0 = 7.7 V / = 9.0 − 2.57 × 0.50",
+          "P = V²/R = 7.71² / 12.0 = 5.0 W"
+        ],
+        "notes": "Allow ECF from (b)."
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "The 12.0 Ω resistor is disconnected. Explain what happens to the terminal potential difference of the battery.",
+        "marks": 3,
+        "markscheme": [
+          "external resistance increases (to 4.0 Ω)",
+          "current falls (to 2.0 A)",
+          "so lost volts Ir decrease (to 1.0 V)",
+          "terminal p.d. increases (to 8.0 V)"
+        ]
+      }
+    ]
+  }
+]

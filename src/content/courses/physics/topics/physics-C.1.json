@@ -1,0 +1,428 @@
+{
+  "id": "physics-C.1",
+  "code": "C.1",
+  "unit": "C",
+  "title": "Simple harmonic motion",
+  "level": "SL",
+  "summary": "Oscillations where acceleration is proportional to displacement and directed towards equilibrium: period, frequency, the mass–spring system and simple pendulum, and (HL) phase, equations of motion and energy in SHM.",
+  "keyterms": [
+    {
+      "id": "physics-c.1-shm",
+      "term": "Simple harmonic motion",
+      "definition": "Oscillation in which acceleration is proportional to displacement from equilibrium and directed towards it: a = −ω²x.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.1-equilibrium-position",
+      "term": "Equilibrium position",
+      "definition": "The position where the resultant force on an oscillator is zero.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.1-amplitude",
+      "term": "Amplitude",
+      "definition": "The maximum displacement from the equilibrium position, x₀.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.1-period",
+      "term": "Period",
+      "definition": "Time for one complete oscillation, T = 1/f.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.1-frequency",
+      "term": "Frequency",
+      "definition": "Number of oscillations per unit time, in hertz.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.1-angular-frequency",
+      "term": "Angular frequency",
+      "definition": "ω = 2πf = 2π/T, in rad s⁻¹.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.1-isochronous",
+      "term": "Isochronous",
+      "definition": "Having a period that does not depend on the amplitude, a property of SHM.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.1-restoring-force",
+      "term": "Restoring force",
+      "definition": "A force that always acts towards the equilibrium position.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.1-phase-angle",
+      "term": "Phase angle",
+      "definition": "The angle φ in x = x₀ sin(ωt + φ) describing where an oscillator is in its cycle at t = 0.",
+      "hl": true
+    },
+    {
+      "id": "physics-c.1-energy-shm",
+      "term": "Energy in SHM",
+      "definition": "Total energy E_T = ½mω²x₀², constantly interchanged between kinetic and potential energy.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-C.1-1",
+      "title": "Conditions for SHM and the period",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-C.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which condition defines simple harmonic motion?",
+          "options": [
+            "Acceleration is constant",
+            "Acceleration is proportional to displacement and opposite in direction",
+            "Velocity is proportional to displacement",
+            "Force is proportional to velocity"
+          ],
+          "answer": 1,
+          "explanation": "SHM requires a = −ω²x: a restoring acceleration proportional to displacement.",
+          "terms": [
+            "physics-c.1-shm",
+            "physics-c.1-restoring-force"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q02",
+          "type": "fill",
+          "text": "An oscillator completes 20 oscillations in 8.0 s. Its period is ___ s.",
+          "answer": "0.40",
+          "accept": [
+            "0.4"
+          ],
+          "bank": [
+            "0.40",
+            "2.5",
+            "160",
+            "0.20"
+          ],
+          "explanation": "T = 8.0/20 = 0.40 s, so f = 2.5 Hz.",
+          "terms": [
+            "physics-c.1-period",
+            "physics-c.1-frequency"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q03",
+          "type": "tf",
+          "statement": "In SHM the speed is greatest at the equilibrium position.",
+          "answer": true,
+          "explanation": "All energy is kinetic at x = 0, so speed is maximum there; it is zero at the amplitude.",
+          "terms": [
+            "physics-c.1-shm",
+            "physics-c.1-equilibrium-position"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q04",
+          "type": "mcq",
+          "prompt": "Where is the magnitude of acceleration greatest for an object in SHM?",
+          "options": [
+            "At equilibrium",
+            "At maximum displacement",
+            "Halfway to the amplitude",
+            "It is constant"
+          ],
+          "answer": 1,
+          "explanation": "|a| = ω²|x| is largest when |x| = x₀.",
+          "terms": [
+            "physics-c.1-shm",
+            "physics-c.1-amplitude"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q05",
+          "type": "mcq",
+          "prompt": "A mass on a spring has period 1.0 s. The mass is replaced by one four times larger. The new period is",
+          "options": [
+            "0.25 s",
+            "0.50 s",
+            "2.0 s",
+            "4.0 s"
+          ],
+          "answer": 2,
+          "explanation": "T = 2π√(m/k), so T ∝ √m: four times the mass doubles the period.",
+          "terms": [
+            "physics-c.1-period"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q06",
+          "type": "fill",
+          "text": "A simple pendulum of length 2.45 m on Earth (g = 9.8 m s⁻²) has a period of about ___ s.",
+          "answer": "3.1",
+          "accept": [
+            "3.14"
+          ],
+          "bank": [
+            "3.1",
+            "1.6",
+            "0.5",
+            "6.3"
+          ],
+          "explanation": "T = 2π√(L/g) = 2π√0.25 = 2π × 0.5 ≈ 3.1 s.",
+          "terms": [
+            "physics-c.1-period"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q07",
+          "type": "match",
+          "prompt": "Match each quantity to its expression.",
+          "pairs": [
+            {
+              "left": "Mass–spring period",
+              "right": "2π√(m/k)"
+            },
+            {
+              "left": "Pendulum period",
+              "right": "2π√(L/g)"
+            },
+            {
+              "left": "Angular frequency",
+              "right": "2π/T"
+            },
+            {
+              "left": "Defining equation of SHM",
+              "right": "a = −ω²x"
+            }
+          ],
+          "explanation": "These SHM relations are in the data booklet; know when each applies.",
+          "terms": [
+            "physics-c.1-shm",
+            "physics-c.1-period",
+            "physics-c.1-angular-frequency"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q08",
+          "type": "tf",
+          "statement": "A pendulum’s period depends on the mass of the bob.",
+          "answer": false,
+          "explanation": "T = 2π√(L/g) contains no mass: a heavier bob needs more force but has proportionally more inertia.",
+          "terms": [
+            "physics-c.1-period"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q09",
+          "type": "mcq",
+          "prompt": "Why is the simple pendulum only approximately simple harmonic?",
+          "options": [
+            "Its restoring force is proportional to sin θ, not θ, so SHM holds only for small angles",
+            "Its mass changes",
+            "Gravity is not constant",
+            "The string stretches"
+          ],
+          "answer": 0,
+          "explanation": "For small angles sin θ ≈ θ (in radians), giving a ∝ −x.",
+          "terms": [
+            "physics-c.1-shm",
+            "physics-c.1-restoring-force",
+            "physics-c.1-isochronous"
+          ]
+        },
+        {
+          "id": "physics-C.1-1-q10",
+          "type": "order",
+          "prompt": "Order the positions of a pendulum bob starting from release at one extreme, over half a cycle.",
+          "items": [
+            "Maximum displacement, at rest",
+            "Speeding up towards equilibrium",
+            "Equilibrium, maximum speed",
+            "Slowing down",
+            "Maximum displacement on the other side"
+          ],
+          "explanation": "Kinetic and potential energy swap twice per full cycle.",
+          "terms": [
+            "physics-c.1-shm",
+            "physics-c.1-amplitude"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-C.1-2",
+      "title": "Phase, equations and energy in SHM",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-C.1-2-q01",
+          "type": "mcq",
+          "prompt": "For SHM with x = x₀ sin ωt, the velocity is",
+          "options": [
+            "ωx₀ cos ωt",
+            "−ωx₀ sin ωt",
+            "ω²x₀ sin ωt",
+            "x₀ cos ωt"
+          ],
+          "answer": 0,
+          "explanation": "Differentiating x = x₀ sin ωt gives v = ωx₀ cos ωt.",
+          "terms": [
+            "physics-c.1-shm",
+            "physics-c.1-phase-angle"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q02",
+          "type": "fill",
+          "text": "An oscillator with ω = 4.0 rad s⁻¹ and amplitude 0.050 m has maximum speed ___ m s⁻¹.",
+          "answer": "0.20",
+          "accept": [
+            "0.2"
+          ],
+          "bank": [
+            "0.20",
+            "0.80",
+            "0.0125",
+            "0.050"
+          ],
+          "explanation": "v_max = ωx₀ = 4.0 × 0.050 = 0.20 m s⁻¹.",
+          "terms": [
+            "physics-c.1-amplitude",
+            "physics-c.1-angular-frequency"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q03",
+          "type": "mcq",
+          "prompt": "An oscillator with ω = 5.0 rad s⁻¹ and amplitude 0.10 m is at x = 0.060 m. What is its speed?",
+          "options": [
+            "0.40 m s⁻¹",
+            "0.50 m s⁻¹",
+            "0.30 m s⁻¹",
+            "0.20 m s⁻¹"
+          ],
+          "answer": 0,
+          "explanation": "v = ω√(x₀² − x²) = 5.0 × √(0.010 − 0.0036) = 5.0 × 0.080 = 0.40 m s⁻¹.",
+          "terms": [
+            "physics-c.1-shm"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q04",
+          "type": "tf",
+          "statement": "Two oscillators with a phase difference of π rad move in opposite directions at every instant.",
+          "answer": true,
+          "explanation": "A phase difference of π (antiphase) means one is at +x when the other is at −x, with opposite velocities.",
+          "terms": [
+            "physics-c.1-phase-angle"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q05",
+          "type": "mcq",
+          "prompt": "If the amplitude of an SHM oscillator doubles (same ω and mass), its total energy",
+          "options": [
+            "doubles",
+            "is unchanged",
+            "is multiplied by 4",
+            "halves"
+          ],
+          "answer": 2,
+          "explanation": "E_T = ½mω²x₀², so E ∝ x₀².",
+          "terms": [
+            "physics-c.1-energy-shm"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q06",
+          "type": "fill",
+          "text": "A 0.20 kg mass oscillates with ω = 10 rad s⁻¹ and amplitude 0.10 m. Its total energy is ___ J.",
+          "answer": "0.10",
+          "accept": [
+            "0.1"
+          ],
+          "bank": [
+            "0.10",
+            "1.0",
+            "0.020",
+            "0.20"
+          ],
+          "explanation": "E_T = ½mω²x₀² = ½ × 0.20 × 100 × 0.010 = 0.10 J.",
+          "terms": [
+            "physics-c.1-energy-shm"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q07",
+          "type": "match",
+          "prompt": "Match each position to the energy statement.",
+          "pairs": [
+            {
+              "left": "x = 0",
+              "right": "Kinetic energy maximum"
+            },
+            {
+              "left": "x = ±x₀",
+              "right": "Potential energy maximum"
+            },
+            {
+              "left": "x = x₀/√2",
+              "right": "Kinetic and potential energy equal"
+            },
+            {
+              "left": "Any x",
+              "right": "Total energy constant (no damping)"
+            }
+          ],
+          "explanation": "E_p = ½mω²x², so E_p = ½E_T when x² = x₀²/2.",
+          "terms": [
+            "physics-c.1-energy-shm"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q08",
+          "type": "mcq",
+          "prompt": "An oscillator starts at its maximum positive displacement at t = 0. Which equation describes it?",
+          "options": [
+            "x = x₀ sin ωt",
+            "x = x₀ cos ωt",
+            "x = −x₀ cos ωt",
+            "x = x₀ sin(ωt + π)"
+          ],
+          "answer": 1,
+          "explanation": "cos 0 = 1, so x = x₀ at t = 0; equivalently x = x₀ sin(ωt + π/2).",
+          "terms": [
+            "physics-c.1-phase-angle"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q09",
+          "type": "tf",
+          "statement": "In SHM, velocity leads displacement by a phase of π/2.",
+          "answer": true,
+          "explanation": "If x = x₀ sin ωt then v = ωx₀ cos ωt = ωx₀ sin(ωt + π/2).",
+          "terms": [
+            "physics-c.1-phase-angle"
+          ]
+        },
+        {
+          "id": "physics-C.1-2-q10",
+          "type": "mcq",
+          "prompt": "On a graph of kinetic energy against time for an SHM oscillator of period T, the KE varies with period",
+          "options": [
+            "T",
+            "2T",
+            "T/2",
+            "T/4"
+          ],
+          "answer": 2,
+          "explanation": "KE is maximum each time the oscillator passes equilibrium, twice per cycle, so its period is T/2.",
+          "terms": [
+            "physics-c.1-energy-shm",
+            "physics-c.1-period"
+          ]
+        }
+      ]
+    }
+  ]
+}

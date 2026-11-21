@@ -1,0 +1,603 @@
+{
+  "id": "physics-C.2-C.3",
+  "code": "C.2–C.3",
+  "unit": "C",
+  "title": "Wave model and wave phenomena",
+  "level": "SL",
+  "summary": "Transverse and longitudinal waves, v = fλ, sound and the electromagnetic spectrum; reflection, refraction and Snell’s law, total internal reflection, diffraction, double-slit interference and (HL) single-slit diffraction and gratings.",
+  "keyterms": [
+    {
+      "id": "physics-c.2-c.3-transverse",
+      "term": "Transverse wave",
+      "definition": "A wave whose oscillations are perpendicular to the direction of energy transfer, e.g. light.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-longitudinal",
+      "term": "Longitudinal wave",
+      "definition": "A wave whose oscillations are parallel to the direction of energy transfer, e.g. sound.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-wavelength",
+      "term": "Wavelength",
+      "definition": "Distance between two adjacent points in phase on a wave, e.g. crest to crest.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-wave-speed",
+      "term": "Wave speed",
+      "definition": "Speed of energy transfer by the wave: v = fλ.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-em-spectrum",
+      "term": "Electromagnetic spectrum",
+      "definition": "The family of transverse EM waves, all travelling at c in vacuum, from radio to gamma.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-refractive-index",
+      "term": "Refractive index",
+      "definition": "n = c/v; Snell’s law: n₁ sin θ₁ = n₂ sin θ₂.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-critical-angle",
+      "term": "Critical angle",
+      "definition": "Angle of incidence giving a 90° refraction angle: sin θ_c = n₂/n₁, for light going into a less dense medium.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-diffraction",
+      "term": "Diffraction",
+      "definition": "Spreading of waves through a gap or around an obstacle; most noticeable when the gap ≈ λ.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-superposition",
+      "term": "Superposition",
+      "definition": "When waves overlap, the resultant displacement is the vector sum of the individual displacements.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-path-difference",
+      "term": "Path difference",
+      "definition": "Difference in distance from two sources; nλ gives constructive, (n + ½)λ destructive interference for in-phase sources.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-coherent",
+      "term": "Coherent sources",
+      "definition": "Sources with the same frequency and a constant phase difference.",
+      "hl": false
+    },
+    {
+      "id": "physics-c.2-c.3-grating",
+      "term": "Diffraction grating",
+      "definition": "Many equally spaced slits giving sharp bright maxima at nλ = d sin θ.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "physics-C.2-C.3-1",
+      "title": "Wave properties and the EM spectrum",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-C.2-C.3-1-q01",
+          "type": "mcq",
+          "prompt": "Which type of wave is sound in air?",
+          "options": [
+            "Transverse",
+            "Longitudinal",
+            "Electromagnetic",
+            "Stationary only"
+          ],
+          "answer": 1,
+          "explanation": "Air particles oscillate parallel to the direction of travel, producing compressions and rarefactions.",
+          "terms": [
+            "physics-c.2-c.3-longitudinal"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q02",
+          "type": "fill",
+          "text": "A wave has frequency 50 Hz and wavelength 4.0 m. Its speed is ___ m s⁻¹.",
+          "answer": "200",
+          "bank": [
+            "200",
+            "12.5",
+            "54",
+            "0.08"
+          ],
+          "explanation": "v = fλ = 50 × 4.0 = 200 m s⁻¹.",
+          "terms": [
+            "physics-c.2-c.3-wave-speed"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q03",
+          "type": "tf",
+          "statement": "Longitudinal waves can be polarized.",
+          "answer": false,
+          "explanation": "Polarization restricts oscillations to one plane perpendicular to travel, which is possible only for transverse waves.",
+          "terms": [
+            "physics-c.2-c.3-transverse",
+            "physics-c.2-c.3-longitudinal"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q04",
+          "type": "mcq",
+          "prompt": "A radio station broadcasts at 100 MHz. What is the wavelength? (c = 3.0 × 10⁸ m s⁻¹)",
+          "options": [
+            "3.0 m",
+            "0.33 m",
+            "30 m",
+            "300 m"
+          ],
+          "answer": 0,
+          "explanation": "λ = c/f = 3.0 × 10⁸ / 1.0 × 10⁸ = 3.0 m.",
+          "terms": [
+            "physics-c.2-c.3-wave-speed",
+            "physics-c.2-c.3-em-spectrum"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q05",
+          "type": "order",
+          "prompt": "Order these EM waves from longest to shortest wavelength.",
+          "items": [
+            "Radio waves",
+            "Microwaves",
+            "Infrared",
+            "Visible light",
+            "Ultraviolet",
+            "X-rays"
+          ],
+          "explanation": "Wavelength decreases and frequency (and photon energy) increases along the spectrum.",
+          "terms": [
+            "physics-c.2-c.3-em-spectrum"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q06",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Compression",
+              "right": "Region of high pressure in a sound wave"
+            },
+            {
+              "left": "Crest",
+              "right": "Maximum positive displacement of a transverse wave"
+            },
+            {
+              "left": "Amplitude",
+              "right": "Maximum displacement from equilibrium"
+            },
+            {
+              "left": "Period",
+              "right": "Time for one full oscillation"
+            }
+          ],
+          "explanation": "These terms describe features of wave motion.",
+          "terms": [
+            "physics-c.2-c.3-longitudinal",
+            "physics-c.2-c.3-transverse",
+            "physics-c.2-c.3-wavelength"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q07",
+          "type": "mcq",
+          "prompt": "When a wave passes from deep to shallow water, its speed decreases. Which quantity stays the same?",
+          "options": [
+            "Wavelength",
+            "Frequency",
+            "Speed",
+            "Direction"
+          ],
+          "answer": 1,
+          "explanation": "Frequency is set by the source; since v = fλ, the wavelength decreases with the speed.",
+          "terms": [
+            "physics-c.2-c.3-wave-speed"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q08",
+          "type": "tf",
+          "statement": "All electromagnetic waves travel at the same speed in a vacuum.",
+          "answer": true,
+          "explanation": "All EM waves travel at c ≈ 3.0 × 10⁸ m s⁻¹ in vacuum.",
+          "terms": [
+            "physics-c.2-c.3-em-spectrum"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q09",
+          "type": "fill",
+          "text": "On a displacement–distance graph, the distance between adjacent crests is the ___.",
+          "answer": "wavelength",
+          "bank": [
+            "wavelength",
+            "amplitude",
+            "period",
+            "frequency"
+          ],
+          "explanation": "A displacement–distance graph shows λ; a displacement–time graph shows the period T.",
+          "terms": [
+            "physics-c.2-c.3-wavelength"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-1-q10",
+          "type": "mcq",
+          "prompt": "Which wave intensity relation is correct for a point source radiating uniformly?",
+          "options": [
+            "I ∝ 1/r²",
+            "I ∝ 1/r",
+            "I ∝ r",
+            "I is constant"
+          ],
+          "answer": 0,
+          "explanation": "Power spreads over a sphere of area 4πr², so I = P/4πr². Also I ∝ amplitude².",
+          "terms": [
+            "physics-c.2-c.3-wave-speed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-C.2-C.3-2",
+      "title": "Refraction, diffraction and interference",
+      "hl": false,
+      "questions": [
+        {
+          "id": "physics-C.2-C.3-2-q01",
+          "type": "mcq",
+          "prompt": "Light passes from air into glass (n = 1.50) at 30° incidence. What is the angle of refraction?",
+          "options": [
+            "19.5°",
+            "30°",
+            "48.6°",
+            "45°"
+          ],
+          "answer": 0,
+          "explanation": "sin θ₂ = sin 30°/1.50 = 0.333, so θ₂ ≈ 19.5°: light bends towards the normal.",
+          "terms": [
+            "physics-c.2-c.3-refractive-index"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q02",
+          "type": "fill",
+          "text": "The critical angle for glass of refractive index 1.50 (into air) is about ___°.",
+          "answer": "42",
+          "accept": [
+            "41.8"
+          ],
+          "bank": [
+            "42",
+            "48",
+            "30",
+            "19"
+          ],
+          "explanation": "sin θ_c = 1/1.50 = 0.667, so θ_c ≈ 41.8° ≈ 42°.",
+          "terms": [
+            "physics-c.2-c.3-critical-angle"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q03",
+          "type": "tf",
+          "statement": "Total internal reflection can occur when light travels from air into water.",
+          "answer": false,
+          "explanation": "It requires light travelling into a medium with a lower refractive index, e.g. water to air.",
+          "terms": [
+            "physics-c.2-c.3-critical-angle"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q04",
+          "type": "mcq",
+          "prompt": "A water wave passes through a gap. Diffraction is most noticeable when",
+          "options": [
+            "the gap is much wider than the wavelength",
+            "the gap is about the same size as the wavelength",
+            "the wave has a large amplitude",
+            "the water is deep"
+          ],
+          "answer": 1,
+          "explanation": "Significant spreading happens when the aperture is comparable to λ.",
+          "terms": [
+            "physics-c.2-c.3-diffraction"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q05",
+          "type": "mcq",
+          "prompt": "Two coherent sources in phase produce waves that meet at a point with a path difference of 1.5λ. The result is",
+          "options": [
+            "constructive interference",
+            "destructive interference",
+            "no interference",
+            "a doubled frequency"
+          ],
+          "answer": 1,
+          "explanation": "A path difference of (n + ½)λ gives antiphase arrival and destructive interference.",
+          "terms": [
+            "physics-c.2-c.3-path-difference",
+            "physics-c.2-c.3-superposition"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q06",
+          "type": "fill",
+          "text": "In a double-slit experiment λ = 600 nm, slit separation d = 0.30 mm and screen distance D = 2.0 m. The fringe spacing is ___ mm.",
+          "answer": "4.0",
+          "accept": [
+            "4"
+          ],
+          "bank": [
+            "4.0",
+            "0.4",
+            "9.0",
+            "2.0"
+          ],
+          "explanation": "s = λD/d = 600 × 10⁻⁹ × 2.0 / 0.30 × 10⁻³ = 4.0 × 10⁻³ m = 4.0 mm.",
+          "terms": [
+            "physics-c.2-c.3-path-difference",
+            "physics-c.2-c.3-coherent"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q07",
+          "type": "match",
+          "prompt": "Match each wave phenomenon to its description.",
+          "pairs": [
+            {
+              "left": "Reflection",
+              "right": "Wave bounces off a boundary"
+            },
+            {
+              "left": "Refraction",
+              "right": "Change in direction due to speed change"
+            },
+            {
+              "left": "Diffraction",
+              "right": "Spreading through a gap"
+            },
+            {
+              "left": "Interference",
+              "right": "Superposition of coherent waves"
+            }
+          ],
+          "explanation": "These four phenomena are behaviour shared by all waves.",
+          "terms": [
+            "physics-c.2-c.3-refractive-index",
+            "physics-c.2-c.3-diffraction",
+            "physics-c.2-c.3-superposition"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q08",
+          "type": "tf",
+          "statement": "Two separate light bulbs do not produce a visible interference pattern because they are not coherent.",
+          "answer": true,
+          "explanation": "Their phase relationship changes randomly and rapidly, so fringes wash out.",
+          "terms": [
+            "physics-c.2-c.3-coherent"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q09",
+          "type": "mcq",
+          "prompt": "In the double-slit experiment, what happens to the fringe spacing if the slits are moved closer together?",
+          "options": [
+            "It increases",
+            "It decreases",
+            "It stays the same",
+            "The fringes disappear"
+          ],
+          "answer": 0,
+          "explanation": "s = λD/d, so a smaller d gives wider fringes.",
+          "terms": [
+            "physics-c.2-c.3-path-difference"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-2-q10",
+          "type": "order",
+          "prompt": "Order how an optical fibre transmits a signal.",
+          "items": [
+            "Light enters the core at one end",
+            "It strikes the core–cladding boundary above the critical angle",
+            "It is totally internally reflected",
+            "It repeats this along the fibre to the far end"
+          ],
+          "explanation": "The cladding has a lower refractive index than the core, allowing total internal reflection.",
+          "terms": [
+            "physics-c.2-c.3-critical-angle",
+            "physics-c.2-c.3-refractive-index"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-C.2-C.3-3",
+      "title": "Single-slit diffraction and gratings",
+      "hl": true,
+      "questions": [
+        {
+          "id": "physics-C.2-C.3-3-q01",
+          "type": "fill",
+          "text": "Light of wavelength 500 nm passes through a slit 0.10 mm wide. The angle to the first minimum is ___ × 10⁻³ rad.",
+          "answer": "5.0",
+          "accept": [
+            "5"
+          ],
+          "bank": [
+            "5.0",
+            "0.5",
+            "50",
+            "2.0"
+          ],
+          "explanation": "θ = λ/b = 500 × 10⁻⁹ / 1.0 × 10⁻⁴ = 5.0 × 10⁻³ rad.",
+          "terms": [
+            "physics-c.2-c.3-diffraction"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q02",
+          "type": "mcq",
+          "prompt": "In a single-slit diffraction pattern, the central maximum is",
+          "options": [
+            "the same width as the others",
+            "twice as wide as the other maxima",
+            "darker than the others",
+            "half the width of the others"
+          ],
+          "answer": 1,
+          "explanation": "The central maximum spans from −λ/b to +λ/b, twice the angular width of the subsidiary maxima.",
+          "terms": [
+            "physics-c.2-c.3-diffraction"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q03",
+          "type": "tf",
+          "statement": "Making a single slit narrower makes the diffraction pattern spread out more.",
+          "answer": true,
+          "explanation": "θ = λ/b: smaller b gives a larger angle to the first minimum.",
+          "terms": [
+            "physics-c.2-c.3-diffraction"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q04",
+          "type": "mcq",
+          "prompt": "A grating has 500 lines per mm and is lit with 600 nm light. What is the angle of the first-order maximum?",
+          "options": [
+            "17.5°",
+            "30°",
+            "8.6°",
+            "36.9°"
+          ],
+          "answer": 0,
+          "explanation": "d = 1/500 mm = 2.0 × 10⁻⁶ m; sin θ = λ/d = 0.30, so θ ≈ 17.5°.",
+          "terms": [
+            "physics-c.2-c.3-grating"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q05",
+          "type": "fill",
+          "text": "For the grating above (d = 2.0 µm, λ = 600 nm), the highest observable order is n = ___.",
+          "answer": "3",
+          "bank": [
+            "3",
+            "2",
+            "4",
+            "1"
+          ],
+          "explanation": "n ≤ d/λ = 3.33, so the highest whole order is 3.",
+          "terms": [
+            "physics-c.2-c.3-grating"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q06",
+          "type": "mcq",
+          "prompt": "Compared with a double slit, a diffraction grating produces maxima that are",
+          "options": [
+            "broader and dimmer",
+            "sharper and brighter",
+            "closer together for the same d",
+            "irregularly spaced"
+          ],
+          "answer": 1,
+          "explanation": "Many slits make the constructive condition very precise, giving narrow, bright maxima, ideal for spectroscopy.",
+          "terms": [
+            "physics-c.2-c.3-grating"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q07",
+          "type": "tf",
+          "statement": "In a real double-slit pattern, the intensity of the fringes is modulated by the single-slit diffraction envelope.",
+          "answer": true,
+          "explanation": "Each slit has finite width, so the two-slit fringes sit inside a single-slit envelope.",
+          "terms": [
+            "physics-c.2-c.3-diffraction",
+            "physics-c.2-c.3-superposition"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q08",
+          "type": "match",
+          "prompt": "Match each formula to its situation.",
+          "pairs": [
+            {
+              "left": "θ = λ/b",
+              "right": "First minimum of single slit"
+            },
+            {
+              "left": "nλ = d sin θ",
+              "right": "Grating maxima"
+            },
+            {
+              "left": "s = λD/d",
+              "right": "Double-slit fringe spacing"
+            },
+            {
+              "left": "v = fλ",
+              "right": "Wave speed"
+            }
+          ],
+          "explanation": "Each formula describes a different diffraction or interference arrangement.",
+          "terms": [
+            "physics-c.2-c.3-diffraction",
+            "physics-c.2-c.3-grating"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q09",
+          "type": "mcq",
+          "prompt": "White light passes through a grating. In each first-order spectrum, which colour is deviated most?",
+          "options": [
+            "Violet",
+            "Red",
+            "Green",
+            "All are deviated equally"
+          ],
+          "answer": 1,
+          "explanation": "sin θ = λ/d, so the longest wavelength (red) is diffracted through the largest angle.",
+          "terms": [
+            "physics-c.2-c.3-grating"
+          ]
+        },
+        {
+          "id": "physics-C.2-C.3-3-q10",
+          "type": "mcq",
+          "prompt": "Reflection of light from a medium of higher refractive index causes a phase change of",
+          "options": [
+            "0",
+            "π/2",
+            "π",
+            "2π"
+          ],
+          "answer": 2,
+          "explanation": "Reflection at a boundary with a denser medium introduces a phase shift of π, important in thin-film interference.",
+          "terms": [
+            "physics-c.2-c.3-superposition",
+            "physics-c.2-c.3-path-difference"
+          ]
+        }
+      ]
+    }
+  ]
+}
