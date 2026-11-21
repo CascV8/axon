@@ -1,0 +1,14 @@
+[
+  {
+    "id": "history-X-EU-01",
+    "unit": "EU",
+    "topics": ["history-EU12"],
+    "paper": "P3",
+    "level": "HL",
+    "title": "Why the Bolsheviks survived, 1917–1924",
+    "stem": "Paper 3 (History of Europe) essay practice. Plan for about 50 minutes.",
+    "parts": [
+      { "label": "a", "command": "Discuss", "prompt": "Discuss the reasons why the Bolsheviks were able to remain in power between 1917 and 1924.", "marks": 10, "markscheme": ["Introduction with a clear argument ranking the main reasons", "Popular early decrees: Decree on Peace and Decree on Land; Treaty of Brest-Litovsk (1918) ending the war at great cost", "Repression: the Cheka, Red Terror, dissolution of the Constituent Assembly (January 1918)", "Civil war victory: Trotsky's Red Army, conscription, use of former tsarist officers, control of the central heartland and railways", "White weaknesses: divided leaders (Kolchak, Denikin, Yudenich), scattered geography, association with landlords and foreign intervention", "War Communism securing resources for the army, despite its costs", "Pragmatic flexibility: NEP (1921) after Kronstadt and peasant revolts; ban on factions", "Lenin's leadership and party discipline; formation of the USSR (1922)", "Historiography (e.g. Pipes on coercion versus social historians on popular support)", "Conclusion weighing coercion against consent and flexibility"], "notes": "Real Paper 3 essays are marked out of 15 with markbands; this practice version uses a 10-point checklist. Expect more depth and precision than in Paper 2." }
+    ]
+  }
+]

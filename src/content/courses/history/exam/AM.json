@@ -1,0 +1,14 @@
+[
+  {
+    "id": "history-X-AM-01",
+    "unit": "AM",
+    "topics": ["history-AM11"],
+    "paper": "P3",
+    "level": "HL",
+    "title": "Cárdenas and the goals of the Mexican Revolution",
+    "stem": "Paper 3 (History of the Americas) essay practice. Plan for about 50 minutes.",
+    "parts": [
+      { "label": "a", "command": "To what extent", "prompt": "To what extent did the presidency of Lázaro Cárdenas (1934–1940) fulfil the aims of the 1917 Constitution?", "marks": 10, "markscheme": ["Introduction identifying the Constitution's key aims (Articles 3, 27, 123, 130) and a clear thesis", "Land (Article 27): large-scale redistribution as ejidos, far more than previous presidents", "Limitations of land reform: poor credit and productivity on many ejidos; private estates survived in some regions", "Subsoil rights (Article 27): oil expropriation, 18 March 1938, and creation of PEMEX", "Labour (Article 123): support for strikes and the CTM; but workers incorporated into the party", "Education (Article 3): expansion of rural and 'socialist' education, and its controversy", "Church (Article 130): Cárdenas eased conflict with the Church compared with Calles and the Cristero War", "Political change: exile of Calles (1936), PRM sectors (1938) building a corporatist one-party system rather than democracy", "Historiography: Cárdenas as fulfilment of the revolution versus revisionist view of state-building and control", "Conclusion with a judgement on the extent"], "notes": "Real Paper 3 essays are marked out of 15; this practice version uses a 10-point checklist. Use precise dates and figures." }
+    ]
+  }
+]

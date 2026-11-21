@@ -1,0 +1,14 @@
+[
+  {
+    "id": "history-X-WH11-01",
+    "unit": "WH11",
+    "topics": ["history-WH11.2"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Foreign intervention in the Spanish Civil War",
+    "stem": "Paper 2 essay practice on the causes and effects of 20th-century wars. Plan for about 45 minutes.",
+    "parts": [
+      { "label": "a", "command": "To what extent", "prompt": "To what extent was foreign intervention the main reason for the Nationalist victory in the Spanish Civil War?", "marks": 10, "markscheme": ["Introduction with a clear thesis weighing foreign intervention against other factors", "German aid: airlift of the Army of Africa (1936), Condor Legion, Guernica (1937), tactics and equipment", "Italian aid: tens of thousands of CTV troops, aircraft and supplies", "Non-Intervention Committee: Britain and France denied the Republic legal arms purchases", "Soviet aid to the Republic declined and was paid for with Spanish gold; International Brigades limited militarily", "Nationalist unity: Franco's single command and the 1937 unification of Falange and Carlists", "Republican divisions: anarchists, communists, POUM; May Days in Barcelona (1937)", "Military factors: professional officers and the Army of Africa versus militias; Battle of the Ebro (1938)", "Support from the Church, landowners and conservative regions", "Conclusion: reasoned judgement, e.g. intervention was decisive in 1936 but Republican disunity and Nationalist unity explain the outcome by 1939"], "notes": "Real essays are marked out of 15 with markbands; this practice version uses a 10-point checklist. Avoid narrative: every paragraph should weigh the factor's importance." }
+    ]
+  }
+]

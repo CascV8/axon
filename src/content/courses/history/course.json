@@ -1,0 +1,137 @@
+{
+  "id": "history",
+  "name": "History",
+  "short": "Hist",
+  "group": "Group 3: Individuals and Societies",
+  "icon": "📜",
+  "blurb": "Prescribed subjects, 20th-century world history and HL Europe and Americas depth studies",
+  "syllabus": "Subject guide first assessed May 2017 (last examined May 2027)",
+  "levels": ["SL", "HL"],
+  "units": [
+    { "id": "PS3", "title": "The move to global war", "blurb": "Paper 1: Japanese, Italian and German expansion and the international response, 1931–1941." },
+    { "id": "PS4", "title": "Rights and protest", "blurb": "Paper 1: the US civil rights movement (1954–1965) and protest against apartheid (1948–1964)." },
+    { "id": "WH10", "title": "Authoritarian states", "blurb": "Paper 2: how Hitler, Stalin and Mao emerged, consolidated and used power." },
+    { "id": "WH11", "title": "Causes and effects of 20th-century wars", "blurb": "Paper 2: the First World War and the Spanish Civil War." },
+    { "id": "WH12", "title": "The Cold War", "blurb": "Paper 2: superpower tensions and rivalries from 1945 to 1991." },
+    { "id": "EU", "title": "HL: History of Europe", "blurb": "Paper 3: Imperial Russia, revolution and the establishment of the Soviet Union (1855–1924)." },
+    { "id": "AM", "title": "HL: History of the Americas", "blurb": "Paper 3: the Mexican Revolution (1884–1940)." },
+    { "id": "SK", "title": "Historical skills", "blurb": "Source analysis, historiography, essay writing and the historical investigation." }
+  ],
+  "papers": {
+    "P1": "Paper 1 · source-based",
+    "P2": "Paper 2 · world history essays",
+    "P3": "Paper 3 · HL regional essays"
+  },
+  "mcqExam": null,
+  "assessment": {
+    "SL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Four source-based questions on one prescribed subject", "max": 24, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Two essays on two different world history topics", "max": 30, "group": "p2" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Historical investigation", "max": 25, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 30, "time": "1 h" },
+        "p2": { "name": "Paper 2", "weight": 45, "time": "1 h 30 min" },
+        "ia": { "name": "IA", "weight": 25, "time": "20 hours of class time" }
+      }
+    },
+    "HL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Four source-based questions on one prescribed subject", "max": 24, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Two essays on two different world history topics", "max": 30, "group": "p2" },
+        { "id": "p3", "name": "Paper 3", "detail": "Three essays on one regional option", "max": 45, "group": "p3" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Historical investigation", "max": 25, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 20, "time": "1 h" },
+        "p2": { "name": "Paper 2", "weight": 25, "time": "1 h 30 min" },
+        "p3": { "name": "Paper 3", "weight": 35, "time": "2 h 30 min" },
+        "ia": { "name": "IA", "weight": 20, "time": "20 hours of class time" }
+      }
+    }
+  },
+  "boundaries": {
+    "SL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 10, 22, 32, 47, 62, 77] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 11, 25, 35, 49, 63, 77] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 11, 25, 35, 49, 62, 75] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 14, 28, 38, 51, 63, 76] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 11, 25, 35, 49, 63, 77] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 13, 27, 37, 50, 63, 77] }
+    ],
+    "HL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 11, 24, 35, 48, 61, 74] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 12, 26, 36, 49, 61, 74] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 11, 25, 36, 49, 60, 73] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 14, 28, 37, 50, 61, 74] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 11, 25, 36, 49, 61, 74] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 11, 25, 35, 48, 61, 74] }
+    ]
+  },
+  "ia": {
+    "name": "Historical investigation",
+    "max": 25,
+    "weight": 25,
+    "limit": "2,200 words",
+    "criteria": [
+      {
+        "id": "a",
+        "name": "Identification and evaluation of sources",
+        "max": 6,
+        "look": [
+          "A clear, focused question that is appropriate for a historical investigation",
+          "Two relevant sources chosen and their relevance to the question explained",
+          "Detailed analysis of the value and limitations of each source with explicit reference to origin, purpose and content"
+        ]
+      },
+      {
+        "id": "b",
+        "name": "Investigation",
+        "max": 15,
+        "look": [
+          "A clearly organized, well-structured investigation that stays focused on the question",
+          "Effective use of a range of relevant sources as evidence",
+          "Critical analysis, with different perspectives considered and evaluated",
+          "A reasoned conclusion that follows from the analysis"
+        ]
+      },
+      {
+        "id": "c",
+        "name": "Reflection",
+        "max": 4,
+        "look": [
+          "Reflection on what the investigation revealed about the methods historians use",
+          "Awareness of the challenges and limitations of those methods",
+          "Clear links between the reflection and the rest of the investigation"
+        ]
+      }
+    ],
+    "checklist": [
+      "Question is narrow, answerable and phrased as a question (\"To what extent…\", \"Why…\")",
+      "Topic finished at least 10 years ago, as history rather than current affairs",
+      "Section 1 evaluates exactly two sources in depth, using their origin, purpose and content",
+      "Each evaluated source's relevance to the question is explained",
+      "Section 2 builds an argument; it is not a narrative of events",
+      "Several historians' or contemporaries' perspectives are weighed",
+      "Evidence is cited with consistent references (footnotes or in-text)",
+      "Conclusion answers the question directly and matches the argument",
+      "Section 3 reflects on historians' methods (evidence, bias, selection), linked to your investigation",
+      "Word count is within 2,200 (bibliography and footnotes excluded)",
+      "Bibliography is complete and consistently formatted"
+    ]
+  },
+  "examTips": [
+    "Answer the question set: underline the command term and the dates, and keep every paragraph linked back to them.",
+    "Make an argument, not a narrative: open each paragraph with an analytical claim, then support it with precise dates, names and figures.",
+    "In Paper 1 origin–purpose–content questions, explain WHY the origin or purpose makes the source valuable or limited; do not just list who wrote it.",
+    "In the Paper 1 comparison, run the links side by side (\"Both A and B…, whereas…\") instead of describing each source separately.",
+    "Use historiography to support your own judgement, never as a substitute for it, and finish with a conclusion that weighs the factors."
+  ],
+  "sources": [
+    { "label": "IB Diploma Programme History subject page (assessment structure)", "url": "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/history/" },
+    { "label": "Grade boundary collation, History SL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/history-sl" },
+    { "label": "Grade boundary collation, History HL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/history-hl" },
+    { "label": "IB HL sample Paper 3, History of the Americas (section titles)", "url": "https://ibo.org/globalassets/new-structure/university-admission/pdfs/subject-guides-documents/hl-sample-exam-paper-3--history-of-the-americas.pdf" }
+  ]
+}

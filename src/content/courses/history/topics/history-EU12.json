@@ -1,0 +1,57 @@
+{
+  "id": "history-EU12",
+  "code": "Europe 12",
+  "unit": "EU",
+  "title": "Imperial Russia, revolution and the Soviet state (1855–1924)",
+  "level": "HL",
+  "summary": "Reform and reaction under Alexander II, Alexander III and Nicholas II, the revolutions of 1905 and 1917, and how the Bolsheviks won the civil war and built the Soviet state.",
+  "keyterms": [
+    { "id": "history-eu12-emancipation", "term": "Emancipation of the serfs", "definition": "Alexander II's 1861 edict freeing about 23 million privately owned serfs, who then paid redemption payments for land.", "hl": true },
+    { "id": "history-eu12-zemstva", "term": "Zemstva", "definition": "Elected local councils created in 1864 to run schools, roads and health care, dominated by the gentry.", "hl": true },
+    { "id": "history-eu12-russification", "term": "Russification", "definition": "Policy, especially under Alexander III, of imposing Russian language, religion and culture on national minorities.", "hl": true },
+    { "id": "history-eu12-witte", "term": "Sergei Witte", "definition": "Finance minister (1892–1903) who drove rapid industrialisation through foreign loans, tariffs and railways such as the Trans-Siberian.", "hl": true },
+    { "id": "history-eu12-october-manifesto", "term": "October Manifesto", "definition": "Nicholas II's 1905 promise of civil liberties and an elected Duma, which split the opposition.", "hl": true },
+    { "id": "history-eu12-stolypin", "term": "Pyotr Stolypin", "definition": "Prime minister (1906–11) who combined harsh repression with land reforms creating independent peasant farmers.", "hl": true },
+    { "id": "history-eu12-dual-power", "term": "Dual power", "definition": "Uneasy sharing of authority in 1917 between the Provisional Government and the Petrograd Soviet.", "hl": true },
+    { "id": "history-eu12-april-theses", "term": "April Theses", "definition": "Lenin's April 1917 programme: no support for the Provisional Government, 'all power to the Soviets', peace and land.", "hl": true },
+    { "id": "history-eu12-war-communism", "term": "War Communism", "definition": "Bolshevik civil-war economy (1918–21): grain requisitioning, nationalisation and banning private trade.", "hl": true },
+    { "id": "history-eu12-nep", "term": "New Economic Policy", "definition": "1921 retreat allowing peasants to sell surplus grain and small private trade, after the Kronstadt revolt.", "hl": true },
+    { "id": "history-eu12-cheka", "term": "Cheka", "definition": "Bolshevik secret police founded in December 1917 under Felix Dzerzhinsky, central to the Red Terror.", "hl": true }
+  ],
+  "lessons": [
+    {
+      "id": "history-EU12-1",
+      "title": "Reform and reaction (1855–1914)",
+      "hl": true,
+      "questions": [
+        { "id": "history-EU12-1-q01", "type": "mcq", "prompt": "Which event most convinced Alexander II that reform was necessary?", "options": ["Defeat in the Crimean War", "The 1905 revolution", "The Russo-Japanese War", "The assassination of his father"], "answer": 0, "explanation": "Defeat (1853–56) exposed Russia's backward economy, army and serf-based society.", "terms": ["history-eu12-emancipation"] },
+        { "id": "history-EU12-1-q02", "type": "fill", "text": "The serfs were emancipated in ___.", "answer": "1861", "bank": ["1825", "1861", "1881", "1905"], "explanation": "Peasants gained personal freedom but often received poor land and paid redemption payments for 49 years.", "terms": ["history-eu12-emancipation"] },
+        { "id": "history-EU12-1-q03", "type": "tf", "statement": "Alexander II was assassinated in 1881 by members of the revolutionary group People's Will.", "answer": true, "explanation": "His death led Alexander III to reverse liberal reforms and rule through reaction.", "terms": ["history-eu12-russification"] },
+        { "id": "history-EU12-1-q04", "type": "match", "prompt": "Match each figure to their role.", "pairs": [{ "left": "Konstantin Pobedonostsev", "right": "Reactionary adviser to Alexander III" }, { "left": "Sergei Witte", "right": "Finance minister who promoted industry" }, { "left": "Father Gapon", "right": "Led the Bloody Sunday petition march" }, { "left": "Pyotr Stolypin", "right": "PM who reformed peasant landholding" }], "explanation": "Tsarist governments mixed modernisation with repression.", "terms": ["history-eu12-witte", "history-eu12-stolypin"] },
+        { "id": "history-EU12-1-q05", "type": "order", "prompt": "Put these events in chronological order.", "items": ["Emancipation edict", "Alexander II assassinated", "Trans-Siberian Railway begun", "Bloody Sunday", "Stolypin assassinated"], "explanation": "1861, 1881, 1891, January 1905, 1911.", "terms": ["history-eu12-emancipation", "history-eu12-witte", "history-eu12-stolypin"] },
+        { "id": "history-EU12-1-q06", "type": "mcq", "prompt": "Why did Nicholas II survive the 1905 revolution?", "options": ["The October Manifesto split liberals from radicals, and the army stayed loyal", "He abdicated temporarily", "Britain sent troops", "The Bolsheviks supported him"], "answer": 0, "explanation": "Concessions divided the opposition, peace with Japan freed troops, and repression crushed the Moscow rising.", "terms": ["history-eu12-october-manifesto"] },
+        { "id": "history-EU12-1-q07", "type": "fill", "text": "The 1905 promise of an elected Duma was the October ___.", "answer": "Manifesto", "bank": ["Manifesto", "Theses", "Decree", "Charter"], "explanation": "The Fundamental Laws of 1906 then reasserted the tsar's autocratic power.", "terms": ["history-eu12-october-manifesto"] },
+        { "id": "history-EU12-1-q08", "type": "tf", "statement": "Stolypin's land reforms aimed to create a class of prosperous, loyal peasant landowners.", "answer": true, "explanation": "His 'wager on the strong' let peasants leave the commune, but progress was slow before 1914.", "terms": ["history-eu12-stolypin"] },
+        { "id": "history-EU12-1-q09", "type": "mcq", "prompt": "Which national minority suffered particularly from pogroms and discriminatory laws under Alexander III?", "options": ["Jews", "Finns", "Germans", "Armenians"], "answer": 0, "explanation": "The May Laws of 1882 restricted Jewish settlement and occupations; many emigrated.", "terms": ["history-eu12-russification"] },
+        { "id": "history-EU12-1-q10", "type": "mcq", "prompt": "What was a major weakness of Witte's industrialisation?", "options": ["It relied on heavy taxes on peasants and foreign loans, and created a discontented urban working class", "It produced no growth", "It was opposed by foreign investors", "It ended railway building"], "answer": 0, "explanation": "Industrial growth was rapid in the 1890s but social tensions in the cities fed the 1905 revolution.", "terms": ["history-eu12-witte"] }
+      ]
+    },
+    {
+      "id": "history-EU12-2",
+      "title": "1917 and the Bolshevik state (1914–1924)",
+      "hl": true,
+      "questions": [
+        { "id": "history-EU12-2-q01", "type": "mcq", "prompt": "Why was Nicholas II's decision to take personal command of the army in 1915 a mistake?", "options": ["He was blamed for defeats and left government to the Empress and Rasputin", "It caused the Russo-Japanese War", "It ended the war too early", "It made him popular with workers"], "answer": 0, "explanation": "The tsarina's influence and Rasputin's reputation discredited the dynasty.", "terms": ["history-eu12-dual-power"] },
+        { "id": "history-EU12-2-q02", "type": "fill", "text": "Lenin's 1917 programme calling for 'all power to the Soviets' was the April ___.", "answer": "Theses", "bank": ["Theses", "Manifesto", "Decree", "Plan"], "explanation": "Its slogans of 'peace, land and bread' won support as the Provisional Government continued the war.", "terms": ["history-eu12-april-theses"] },
+        { "id": "history-EU12-2-q03", "type": "order", "prompt": "Put these events of 1917–18 in order.", "items": ["Nicholas II abdicates", "Lenin returns to Petrograd", "July Days", "Kornilov affair", "Bolshevik seizure of power", "Constituent Assembly dissolved"], "explanation": "March, April, July, August/September, October (November New Style) 1917, January 1918.", "terms": ["history-eu12-dual-power", "history-eu12-april-theses"] },
+        { "id": "history-EU12-2-q04", "type": "tf", "statement": "The Bolsheviks won a majority in the Constituent Assembly elections of November 1917.", "answer": false, "explanation": "The Socialist Revolutionaries won the most seats; Lenin closed the Assembly after one day in January 1918.", "terms": ["history-eu12-cheka"] },
+        { "id": "history-EU12-2-q05", "type": "mcq", "prompt": "How did the Kornilov affair help the Bolsheviks?", "options": ["Kerensky armed the Petrograd workers, including Bolshevik Red Guards, and Bolshevik support surged", "Kornilov joined the Bolsheviks", "It ended the war with Germany", "It led to Lenin's arrest"], "answer": 0, "explanation": "The Bolsheviks gained majorities in the Petrograd and Moscow soviets in September 1917.", "terms": ["history-eu12-dual-power"] },
+        { "id": "history-EU12-2-q06", "type": "match", "prompt": "Match each term to its description.", "pairs": [{ "left": "Brest-Litovsk", "right": "1918 peace with Germany giving up large territories" }, { "left": "Cheka", "right": "Secret police founded in December 1917" }, { "left": "War Communism", "right": "Grain requisitioning and nationalisation" }, { "left": "Kronstadt", "right": "1921 sailors' revolt against Bolshevik rule" }], "explanation": "These measures show how the Bolsheviks survived through force and pragmatism.", "terms": ["history-eu12-cheka", "history-eu12-war-communism"] },
+        { "id": "history-EU12-2-q07", "type": "mcq", "prompt": "Which was a key reason for Red victory in the civil war (1918–21)?", "options": ["Control of the central industrial heartland and railways, and Trotsky's leadership of the Red Army", "Large-scale help from Britain and France", "Unity among the White generals", "Peasant support for the restoration of the tsar"], "answer": 0, "explanation": "The Whites were divided, geographically scattered and associated with landlords and foreign intervention.", "terms": ["history-eu12-war-communism"] },
+        { "id": "history-EU12-2-q08", "type": "fill", "text": "In March 1921 Lenin introduced the ___ Economic Policy.", "answer": "New", "bank": ["New", "Soviet", "Socialist", "War"], "explanation": "NEP was a tactical retreat after Kronstadt and peasant revolts; the same congress banned factions in the party.", "terms": ["history-eu12-nep"] },
+        { "id": "history-EU12-2-q09", "type": "tf", "statement": "The Union of Soviet Socialist Republics was formally established in December 1922.", "answer": true, "explanation": "Lenin died in January 1924, leaving no clear successor.", "terms": ["history-eu12-nep"] },
+        { "id": "history-EU12-2-q10", "type": "mcq", "prompt": "Which historian is associated with seeing the October Revolution as a coup by a small party rather than a popular revolution?", "options": ["Richard Pipes", "E.H. Carr", "Sheila Fitzpatrick", "Christopher Hill"], "answer": 0, "explanation": "Pipes stressed Lenin's conspiracy; social historians such as Fitzpatrick and Alexander Rabinowitch highlight real popular radicalisation.", "terms": ["history-eu12-april-theses"] }
+      ]
+    }
+  ]
+}

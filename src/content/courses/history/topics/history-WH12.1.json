@@ -1,0 +1,57 @@
+{
+  "id": "history-WH12.1",
+  "code": "12 · Origins",
+  "unit": "WH12",
+  "title": "The Cold War: origins and early crises (1945–1962)",
+  "level": "SL",
+  "summary": "Why the wartime alliance broke down, how Europe was divided, and how the Cold War spread through Korea, Hungary, Berlin and the Cuban Missile Crisis.",
+  "keyterms": [
+    { "id": "history-wh12.1-yalta", "term": "Yalta Conference", "definition": "February 1945 meeting of Roosevelt, Churchill and Stalin on Germany, Poland, the UN and Soviet entry into war with Japan.", "hl": false },
+    { "id": "history-wh12.1-potsdam", "term": "Potsdam Conference", "definition": "July–August 1945 meeting of Truman, Stalin and Churchill (replaced by Attlee) where tensions over Germany and Poland grew.", "hl": false },
+    { "id": "history-wh12.1-containment", "term": "Containment", "definition": "US policy of preventing the spread of communism, outlined by George Kennan in 1946–47.", "hl": false },
+    { "id": "history-wh12.1-truman-doctrine", "term": "Truman Doctrine", "definition": "March 1947 pledge to support 'free peoples' resisting subjugation, starting with aid to Greece and Turkey.", "hl": false },
+    { "id": "history-wh12.1-marshall-plan", "term": "Marshall Plan", "definition": "US European Recovery Program (1948–52) of about $13 billion in aid to rebuild Western Europe.", "hl": false },
+    { "id": "history-wh12.1-berlin-blockade", "term": "Berlin Blockade", "definition": "Soviet closure of land routes to West Berlin (June 1948–May 1949), defeated by the Western airlift.", "hl": false },
+    { "id": "history-wh12.1-nato", "term": "NATO", "definition": "North Atlantic Treaty Organization, Western military alliance founded in April 1949.", "hl": false },
+    { "id": "history-wh12.1-warsaw-pact", "term": "Warsaw Pact", "definition": "Soviet-led military alliance of Eastern bloc states founded in May 1955.", "hl": false },
+    { "id": "history-wh12.1-brinkmanship", "term": "Brinkmanship", "definition": "Pushing a confrontation to the edge of war to force the other side to back down.", "hl": false },
+    { "id": "history-wh12.1-orthodox-revisionist", "term": "Orthodox and revisionist views", "definition": "Orthodox historians blame Soviet expansion for the Cold War; revisionists stress US economic and political ambitions.", "hl": false },
+    { "id": "history-wh12.1-post-revisionist", "term": "Post-revisionism", "definition": "Interpretation, associated with John Lewis Gaddis, that both sides' mistrust and miscalculation shared responsibility.", "hl": false }
+  ],
+  "lessons": [
+    {
+      "id": "history-WH12.1-1",
+      "title": "Breakdown of the Grand Alliance (1945–1949)",
+      "hl": false,
+      "questions": [
+        { "id": "history-WH12.1-1-q01", "type": "order", "prompt": "Put these events in chronological order.", "items": ["Yalta Conference", "Potsdam Conference", "Churchill's 'Iron Curtain' speech", "Truman Doctrine", "Berlin Blockade begins"], "explanation": "February 1945, July 1945, March 1946, March 1947, June 1948.", "terms": ["history-wh12.1-yalta", "history-wh12.1-potsdam", "history-wh12.1-truman-doctrine", "history-wh12.1-berlin-blockade"] },
+        { "id": "history-WH12.1-1-q02", "type": "mcq", "prompt": "Which issue caused the most disagreement at Yalta and Potsdam?", "options": ["The future of Poland and Germany", "The war in the Pacific", "Founding the UN", "Trade with Latin America"], "answer": 0, "explanation": "Stalin wanted a friendly Poland and reparations; the West wanted free elections and German recovery.", "terms": ["history-wh12.1-yalta", "history-wh12.1-potsdam"] },
+        { "id": "history-WH12.1-1-q03", "type": "fill", "text": "George Kennan's 1946 'Long ___' urged firm resistance to Soviet expansion.", "answer": "Telegram", "bank": ["Telegram", "Letter", "Memorandum", "Speech"], "explanation": "Kennan's analysis became the basis of containment.", "terms": ["history-wh12.1-containment"] },
+        { "id": "history-WH12.1-1-q04", "type": "tf", "statement": "The USSR allowed Eastern European states to accept Marshall Plan aid.", "answer": false, "explanation": "Stalin forbade it, seeing the plan as US economic imperialism; the Soviet response was the Molotov Plan and later Comecon (1949).", "terms": ["history-wh12.1-marshall-plan"] },
+        { "id": "history-WH12.1-1-q05", "type": "mcq", "prompt": "What triggered the Berlin Blockade in June 1948?", "options": ["Introduction of a new currency, the Deutschmark, in the Western zones", "The founding of NATO", "The death of Stalin", "The Korean War"], "answer": 0, "explanation": "Stalin feared a strong West German state; the airlift supplied West Berlin for nearly a year.", "terms": ["history-wh12.1-berlin-blockade"] },
+        { "id": "history-WH12.1-1-q06", "type": "match", "prompt": "Match each historian or school to its view.", "pairs": [{ "left": "Orthodox", "right": "Soviet expansionism caused the Cold War" }, { "left": "Revisionist (W.A. Williams)", "right": "US economic expansion provoked conflict" }, { "left": "Post-revisionist (Gaddis)", "right": "Mutual misperception on both sides" }, { "left": "Gaddis after 1991, 'We Now Know'", "right": "Renewed stress on Stalin's role" }], "explanation": "Soviet archives opened after 1991 shifted the debate again.", "terms": ["history-wh12.1-orthodox-revisionist", "history-wh12.1-post-revisionist"] },
+        { "id": "history-WH12.1-1-q07", "type": "fill", "text": "The Western military alliance founded in April 1949 is ___.", "answer": "NATO", "bank": ["NATO", "SEATO", "Comecon", "Cominform"], "explanation": "It committed members to treat an attack on one as an attack on all.", "terms": ["history-wh12.1-nato"] },
+        { "id": "history-WH12.1-1-q08", "type": "mcq", "prompt": "Which event in 1948 convinced many in the West that Stalin intended to dominate Eastern Europe completely?", "options": ["The communist takeover in Czechoslovakia", "The founding of the UN", "The Greek civil war ending", "Tito's alliance with Stalin"], "answer": 0, "explanation": "The February 1948 coup ended the last democratic government in the Soviet sphere and helped pass Marshall aid in Congress.", "terms": ["history-wh12.1-containment"] },
+        { "id": "history-WH12.1-1-q09", "type": "tf", "statement": "The USSR tested its first atomic bomb in 1949, ending the US monopoly.", "answer": true, "explanation": "Together with the communist victory in China (1949), it prompted NSC-68's call for massive rearmament.", "terms": ["history-wh12.1-containment"] },
+        { "id": "history-WH12.1-1-q10", "type": "mcq", "prompt": "What did the Truman Doctrine first provide?", "options": ["Aid to Greece and Turkey", "Troops for Korea", "Loans to the USSR", "An airlift to Berlin"], "answer": 0, "explanation": "Britain could no longer afford to support Greece; Truman asked Congress for $400 million.", "terms": ["history-wh12.1-truman-doctrine"] }
+      ]
+    },
+    {
+      "id": "history-WH12.1-2",
+      "title": "Global spread and crises (1950–1962)",
+      "hl": false,
+      "questions": [
+        { "id": "history-WH12.1-2-q01", "type": "mcq", "prompt": "Why was the UN able to send forces to Korea in 1950?", "options": ["The USSR was boycotting the Security Council and could not veto", "China voted in favour", "Korea was a UN member", "The USSR supported the resolution"], "answer": 0, "explanation": "The Soviets were protesting that Nationalist China, not the PRC, held China's seat.", "terms": ["history-wh12.1-containment"] },
+        { "id": "history-WH12.1-2-q02", "type": "order", "prompt": "Put these Korean War events in order.", "items": ["North Korea invades the South", "Inchon landing", "Chinese forces enter the war", "MacArthur dismissed", "Armistice signed"], "explanation": "June 1950, September 1950, October 1950, April 1951, July 1953.", "terms": ["history-wh12.1-containment"] },
+        { "id": "history-WH12.1-2-q03", "type": "tf", "statement": "The Korean War ended in a peace treaty reuniting Korea.", "answer": false, "explanation": "An armistice signed at Panmunjom in July 1953 left Korea divided near the 38th parallel; no peace treaty was signed.", "terms": ["history-wh12.1-containment"] },
+        { "id": "history-WH12.1-2-q04", "type": "fill", "text": "The Soviet-led military alliance founded in 1955 was the ___ Pact.", "answer": "Warsaw", "bank": ["Warsaw", "Baghdad", "Rio", "Molotov"], "explanation": "It was formed days after West Germany joined NATO.", "terms": ["history-wh12.1-warsaw-pact"] },
+        { "id": "history-WH12.1-2-q05", "type": "mcq", "prompt": "Why did the USSR invade Hungary in November 1956?", "options": ["Imre Nagy announced Hungary would leave the Warsaw Pact", "Hungary attacked Austria", "Hungary joined NATO", "Hungary refused to join the UN"], "answer": 0, "explanation": "Khrushchev tolerated some reform but not withdrawal from the bloc; the West did not intervene.", "terms": ["history-wh12.1-warsaw-pact"] },
+        { "id": "history-WH12.1-2-q06", "type": "match", "prompt": "Match each event to its year.", "pairs": [{ "left": "Khrushchev's Secret Speech", "right": "1956" }, { "left": "Sputnik launched", "right": "1957" }, { "left": "U-2 incident", "right": "1960" }, { "left": "Berlin Wall built", "right": "1961" }], "explanation": "Khrushchev's era mixed de-Stalinisation and 'peaceful coexistence' with dangerous crises.", "terms": ["history-wh12.1-brinkmanship"] },
+        { "id": "history-WH12.1-2-q07", "type": "mcq", "prompt": "Why was the Berlin Wall built in August 1961?", "options": ["To stop the mass flight of East Germans to the West", "To keep NATO troops out of East Berlin", "As part of the Potsdam agreement", "To protect West Berlin"], "answer": 0, "explanation": "Around 2.7 million had left East Germany since 1949, many of them skilled workers.", "terms": ["history-wh12.1-berlin-blockade"] },
+        { "id": "history-WH12.1-2-q08", "type": "fill", "text": "Kennedy responded to Soviet missiles in Cuba with a naval ___ in October 1962.", "answer": "quarantine", "accept": ["blockade"], "bank": ["quarantine", "invasion", "airlift", "embargo"], "explanation": "Calling it a quarantine avoided the legal implication of a blockade, which is an act of war.", "terms": ["history-wh12.1-brinkmanship"] },
+        { "id": "history-WH12.1-2-q09", "type": "tf", "statement": "As part of the Cuban Missile Crisis settlement, the USA secretly agreed to remove its missiles from Turkey.", "answer": true, "explanation": "Publicly, the USA pledged not to invade Cuba; the Turkish deal was kept secret for years.", "terms": ["history-wh12.1-brinkmanship"] },
+        { "id": "history-WH12.1-2-q10", "type": "mcq", "prompt": "Which was a consequence of the Cuban Missile Crisis?", "options": ["A Moscow–Washington hotline (1963) and the Partial Test Ban Treaty", "The immediate end of the Cold War", "Soviet troops leaving East Germany", "A US invasion of Cuba"], "answer": 0, "explanation": "Both leaders sought to reduce the risk of accidental nuclear war, an early step towards détente.", "terms": ["history-wh12.1-brinkmanship"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "history-X-WH12-01",
+    "unit": "WH12",
+    "topics": ["history-WH12.1"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Responsibility for the origins of the Cold War",
+    "stem": "Paper 2 essay practice on the Cold War. Plan for about 45 minutes.",
+    "parts": [
+      { "label": "a", "command": "Evaluate", "prompt": "Evaluate the claim that the USA was mainly responsible for the breakdown of relations with the USSR between 1945 and 1949.", "marks": 10, "markscheme": ["Introduction with a clear thesis on responsibility and definition of the period", "Case for US responsibility: Truman's tougher stance, atomic monopoly, ending of Lend-Lease", "Truman Doctrine (1947) and Marshall Plan seen by Moscow as economic and political expansion; revisionist view (W.A. Williams, Kolko)", "Western currency reform in Germany (1948) provoking the Berlin Blockade; formation of NATO (1949)", "Case for Soviet responsibility: domination of Eastern Europe, rigged Polish elections, Czech coup (1948); orthodox view", "Stalin's blockade of Berlin and refusal of Marshall aid; Cominform (1947)", "Mutual misperception and security dilemma; post-revisionist view (Gaddis)", "Post-1991 archival evidence and Gaddis' 'We Now Know' renewing emphasis on Stalin", "Precise evidence and dates used to support analysis", "Conclusion that evaluates the claim and reaches a supported judgement"], "notes": "Real essays are marked out of 15; this practice version uses a 10-point checklist. Historiography should support, not replace, your own argument." }
+    ]
+  }
+]

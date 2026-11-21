@@ -125,7 +125,7 @@ Languages: questions may be in the target language (vocabulary, grammar, compreh
 
 - `id`: `<courseId>-X-<unitId>-NN`. `paper` must be a key of course.papers. `topics` must be topic ids of this course.
 - `data` is optional: a table whose rows are the same length as the columns.
-- Parts are labelled a, b, c… `command` is an IB command term (see the validator list). `marks` 1–10. `markscheme` lists at least `marks` points (IB style: "/" for alternatives, OWTTE, Allow, Reject).
+- Parts are labelled a, b, c… `command` is an IB command term (see the validator list). `marks` 1–15 (a full extended-response essay can be one 15-mark part). `markscheme` lists at least `marks` points (IB style: "/" for alternatives, OWTTE, Allow, Reject).
 - `numeric` (optional, for calculation parts) must be correct; double-check it.
 - Languages and English A: the stem can be a short ORIGINAL text with comprehension or analysis parts, or a writing task whose markscheme lists the criteria points an answer should hit.
 - Quantity: 8–12 items per course in total, spread across the units and the course's papers.

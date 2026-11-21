@@ -1,0 +1,56 @@
+{
+  "id": "history-AM11",
+  "code": "Americas 11",
+  "unit": "AM",
+  "title": "The Mexican Revolution (1884–1940)",
+  "level": "HL",
+  "summary": "The Porfiriato and its discontents, the armed revolution of 1910–1920, the 1917 Constitution and how Calles and Cárdenas rebuilt the Mexican state.",
+  "keyterms": [
+    { "id": "history-am11-porfiriato", "term": "Porfiriato", "definition": "The rule of Porfirio Díaz (1876–1880, 1884–1911), marked by order, foreign investment and growing inequality.", "hl": true },
+    { "id": "history-am11-cientificos", "term": "Científicos", "definition": "Technocratic advisers to Díaz who promoted positivist, 'scientific' modernisation.", "hl": true },
+    { "id": "history-am11-plan-san-luis-potosi", "term": "Plan of San Luis Potosí", "definition": "Francisco Madero's 1910 call to revolt against Díaz under the slogan 'effective suffrage, no re-election'.", "hl": true },
+    { "id": "history-am11-plan-ayala", "term": "Plan of Ayala", "definition": "Emiliano Zapata's 1911 programme demanding the return of land to villages, issued in rebellion against Madero.", "hl": true },
+    { "id": "history-am11-constitutionalists", "term": "Constitutionalists", "definition": "Forces led by Venustiano Carranza from 1913 against Huerta, including Obregón and (until 1914) Villa.", "hl": true },
+    { "id": "history-am11-constitution-1917", "term": "Constitution of 1917", "definition": "Revolutionary constitution with articles on secular education (3), land and subsoil rights (27), labour (123) and the Church (130).", "hl": true },
+    { "id": "history-am11-ejido", "term": "Ejido", "definition": "Communal landholding granted to villages; expanded greatly under Cárdenas.", "hl": true },
+    { "id": "history-am11-cristero-war", "term": "Cristero War", "definition": "1926–29 Catholic rebellion against Calles' enforcement of anticlerical laws.", "hl": true },
+    { "id": "history-am11-pnr", "term": "PNR", "definition": "National Revolutionary Party founded by Calles in 1929, ancestor of the PRI, which ruled Mexico for most of the century.", "hl": true },
+    { "id": "history-am11-oil-expropriation", "term": "Oil expropriation", "definition": "Cárdenas' nationalisation of foreign oil companies on 18 March 1938, creating PEMEX.", "hl": true }
+  ],
+  "lessons": [
+    {
+      "id": "history-AM11-1",
+      "title": "Díaz and the armed revolution (1884–1920)",
+      "hl": true,
+      "questions": [
+        { "id": "history-AM11-1-q01", "type": "mcq", "prompt": "Which was a major source of discontent under the Porfiriato?", "options": ["Concentration of land in haciendas and foreign ownership of resources", "Too much democracy", "Lack of foreign investment", "Rapid land redistribution to villages"], "answer": 0, "explanation": "Villages lost communal land, while foreign companies controlled railways, mines and oil.", "terms": ["history-am11-porfiriato"] },
+        { "id": "history-AM11-1-q02", "type": "fill", "text": "Díaz's technocratic advisers were known as the ___.", "answer": "científicos", "bank": ["científicos", "rurales", "cristeros", "villistas"], "explanation": "The rurales were his rural police; the científicos shaped economic policy.", "terms": ["history-am11-cientificos"] },
+        { "id": "history-AM11-1-q03", "type": "tf", "statement": "In a 1908 interview with journalist James Creelman, Díaz suggested Mexico was ready for democracy.", "answer": true, "explanation": "The interview encouraged opposition such as Madero's anti-re-electionist campaign, though Díaz then ran again in 1910.", "terms": ["history-am11-porfiriato"] },
+        { "id": "history-AM11-1-q04", "type": "order", "prompt": "Put these events in chronological order.", "items": ["Plan of San Luis Potosí", "Díaz resigns", "Plan of Ayala", "Madero overthrown and murdered", "Constitution promulgated"], "explanation": "1910, May 1911, November 1911, February 1913, February 1917.", "terms": ["history-am11-plan-san-luis-potosi", "history-am11-plan-ayala", "history-am11-constitution-1917"] },
+        { "id": "history-AM11-1-q05", "type": "match", "prompt": "Match each revolutionary to their base or role.", "pairs": [{ "left": "Emiliano Zapata", "right": "Peasant leader from Morelos" }, { "left": "Pancho Villa", "right": "Commander of the Division of the North" }, { "left": "Venustiano Carranza", "right": "First Chief of the Constitutionalists" }, { "left": "Victoriano Huerta", "right": "General who seized power in 1913" }], "explanation": "The revolutionaries united against Huerta but then fought each other.", "terms": ["history-am11-constitutionalists", "history-am11-plan-ayala"] },
+        { "id": "history-AM11-1-q06", "type": "mcq", "prompt": "Why did Zapata turn against Madero in 1911?", "options": ["Madero failed to return land to the villages quickly", "Madero restored Díaz", "Madero invited US troops", "Madero abolished the Church"], "answer": 0, "explanation": "Madero was a liberal landowner focused on political reform, not land redistribution.", "terms": ["history-am11-plan-ayala"] },
+        { "id": "history-AM11-1-q07", "type": "fill", "text": "Obregón defeated Villa decisively at the battles of ___ in 1915.", "answer": "Celaya", "bank": ["Celaya", "Veracruz", "Torreón", "Columbus"], "explanation": "Obregón used trenches and machine guns, lessons from the European war, against Villa's cavalry.", "terms": ["history-am11-constitutionalists"] },
+        { "id": "history-AM11-1-q08", "type": "tf", "statement": "US forces occupied Veracruz in 1914 and launched a punitive expedition after Villa raided Columbus, New Mexico, in 1916.", "answer": true, "explanation": "General Pershing's expedition failed to catch Villa and was withdrawn in early 1917.", "terms": ["history-am11-constitutionalists"] },
+        { "id": "history-AM11-1-q09", "type": "mcq", "prompt": "Which article of the 1917 Constitution gave the nation ownership of land and subsoil resources?", "options": ["Article 27", "Article 3", "Article 123", "Article 130"], "answer": 0, "explanation": "Article 27 was the legal basis for land reform and the later oil expropriation.", "terms": ["history-am11-constitution-1917"] },
+        { "id": "history-AM11-1-q10", "type": "mcq", "prompt": "What happened to Zapata in 1919 and Carranza in 1920?", "options": ["Both were assassinated", "Both became presidents", "Both went into exile in the USA", "Both signed the Constitution in 1920"], "answer": 0, "explanation": "Zapata was ambushed by Carranza's forces; Carranza was killed fleeing Obregón's revolt.", "terms": ["history-am11-constitutionalists"] }
+      ]
+    },
+    {
+      "id": "history-AM11-2",
+      "title": "Rebuilding the state: Obregón to Cárdenas (1920–1940)",
+      "hl": true,
+      "questions": [
+        { "id": "history-AM11-2-q01", "type": "mcq", "prompt": "Which cultural programme flourished under Obregón's education minister José Vasconcelos?", "options": ["Rural schools and public murals by artists such as Diego Rivera", "Bans on indigenous languages", "Closure of universities", "Censorship of all art"], "answer": 0, "explanation": "Muralism promoted a nationalist, revolutionary identity celebrating Mexico's indigenous past.", "terms": ["history-am11-constitution-1917"] },
+        { "id": "history-AM11-2-q02", "type": "fill", "text": "The 1926–29 Catholic rebellion against Calles is called the ___ War.", "answer": "Cristero", "bank": ["Cristero", "Yaqui", "Caste", "Reform"], "explanation": "It ended with a US-mediated compromise in 1929.", "terms": ["history-am11-cristero-war"] },
+        { "id": "history-AM11-2-q03", "type": "tf", "statement": "The period 1928–1934, when Calles dominated presidents from behind the scenes, is called the Maximato.", "answer": true, "explanation": "Calles was known as the 'Jefe Máximo'; he founded the PNR in 1929.", "terms": ["history-am11-pnr"] },
+        { "id": "history-AM11-2-q04", "type": "order", "prompt": "Put these events in chronological order.", "items": ["Obregón becomes president", "Cristero War begins", "PNR founded", "Cárdenas becomes president", "Oil expropriation"], "explanation": "1920, 1926, 1929, 1934, 1938.", "terms": ["history-am11-cristero-war", "history-am11-pnr", "history-am11-oil-expropriation"] },
+        { "id": "history-AM11-2-q05", "type": "mcq", "prompt": "How did Cárdenas break Calles' influence?", "options": ["He built support among workers and peasants and exiled Calles in 1936", "He invited the US Army", "He resigned and returned later", "He restored the Porfiriato"], "answer": 0, "explanation": "Cárdenas backed strikes, the new CTM labour confederation and land reform to build his own base.", "terms": ["history-am11-pnr"] },
+        { "id": "history-AM11-2-q06", "type": "fill", "text": "Cárdenas distributed land mainly as communal ___.", "answer": "ejidos", "bank": ["ejidos", "haciendas", "kolkhozes", "encomiendas"], "explanation": "He redistributed more land than all previous revolutionary presidents combined.", "terms": ["history-am11-ejido"] },
+        { "id": "history-AM11-2-q07", "type": "match", "prompt": "Match each president to a key action.", "pairs": [{ "left": "Álvaro Obregón", "right": "Secured US recognition (Bucareli Agreements)" }, { "left": "Plutarco Elías Calles", "right": "Enforced anticlerical laws" }, { "left": "Lázaro Cárdenas", "right": "Nationalised foreign oil companies" }, { "left": "Francisco Madero", "right": "'Effective suffrage, no re-election'" }], "explanation": "Each leader shaped the revolution's legacy differently.", "terms": ["history-am11-oil-expropriation", "history-am11-cristero-war"] },
+        { "id": "history-AM11-2-q08", "type": "tf", "statement": "The USA invaded Mexico in response to the 1938 oil expropriation.", "answer": false, "explanation": "Roosevelt's Good Neighbor Policy and fears of war in Europe led to negotiated compensation instead.", "terms": ["history-am11-oil-expropriation"] },
+        { "id": "history-AM11-2-q09", "type": "mcq", "prompt": "What did Cárdenas' 1938 reorganisation of the ruling party (as the PRM) do?", "options": ["Organised it into sectors representing workers, peasants, the military and the popular classes", "Abolished the party", "Allowed free multi-party elections", "Gave power back to the Church"], "answer": 0, "explanation": "This corporatist structure helped the party control Mexican politics for decades.", "terms": ["history-am11-pnr"] },
+        { "id": "history-AM11-2-q10", "type": "mcq", "prompt": "Which is a common historiographical question about the Mexican Revolution?", "options": ["Whether it was a genuine social revolution or a change of elites that rebuilt a strong state", "Whether it happened in the 19th century", "Whether Díaz won it", "Whether it was led by the Church"], "answer": 0, "explanation": "Revisionists stress continuity with the Porfiriato; others, like Alan Knight, emphasise popular, agrarian forces.", "terms": ["history-am11-constitution-1917"] }
+      ]
+    }
+  ]
+}

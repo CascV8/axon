@@ -1,0 +1,14 @@
+[
+  {
+    "id": "history-X-WH10-01",
+    "unit": "WH10",
+    "topics": ["history-WH10.1", "history-WH10.2"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Consolidation of power in two authoritarian states",
+    "stem": "Paper 2 essay practice. Answer with reference to two authoritarian states, each chosen from a different region where the question requires it. Plan for about 45 minutes.",
+    "parts": [
+      { "label": "a", "command": "Compare and contrast", "prompt": "Compare and contrast the methods used by two authoritarian leaders to consolidate their power.", "marks": 10, "markscheme": ["Introduction: names two states (e.g. Hitler's Germany and Stalin's USSR), defines consolidation and states a comparative thesis", "Structure is thematic and comparative (e.g. legal methods, terror, propaganda, removal of rivals), not two separate narratives", "Legal/constitutional methods: Enabling Act and Gleichschaltung (1933) versus Stalin's use of party posts and congress votes as General Secretary", "Removal of rivals: Night of the Long Knives (1934) versus defeat of Trotsky, Zinoviev, Kamenev and Bukharin (1924–29), later show trials", "Terror: Gestapo, SS and camps versus NKVD, Great Terror (1936–38) and Gulag; difference in scale and timing", "Propaganda and cult of personality: Goebbels and the Führer myth versus Stalin's cult and rewriting of history", "Economic policy as a tool: rearmament and falling unemployment versus Five-Year Plans and collectivisation", "Role of the army and elites: Hitler's need for army and business support versus Stalin's control through the party and purging the Red Army", "Historiography used to support analysis (e.g. Kershaw 'working towards the Führer'; Conquest versus Getty on the terror)", "Conclusion: reasoned judgement on the most significant similarities and differences"], "notes": "Real Paper 2 essays are marked out of 15 using markbands; this practice version uses a 10-point checklist. Top answers keep a comparative focus in every paragraph." }
+    ]
+  }
+]

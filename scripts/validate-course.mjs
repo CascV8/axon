@@ -210,7 +210,7 @@ function validateCourse(cid) {
         if (p.label !== String.fromCharCode(97 + i)) pe('labels must be a, b, c…');
         if (!COMMANDS.has(p.command)) pe(`unknown command term "${p.command}"`);
         if (!isStr(p.prompt)) pe('prompt required');
-        if (!Number.isInteger(p.marks) || p.marks < 1 || p.marks > 10) pe('marks must be 1–10');
+        if (!Number.isInteger(p.marks) || p.marks < 1 || p.marks > 15) pe('marks must be 1–15');
         if (!Array.isArray(p.markscheme) || p.markscheme.length < Math.min(p.marks, 8) || !p.markscheme.every(isStr)) pe('markscheme needs ≥ marks points');
         if (p.numeric && (typeof p.numeric.value !== 'number' || typeof p.numeric.tolerance !== 'number' || typeof p.numeric.unit !== 'string')) pe('numeric needs value, tolerance, unit');
       });

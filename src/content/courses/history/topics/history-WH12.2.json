@@ -1,0 +1,56 @@
+{
+  "id": "history-WH12.2",
+  "code": "12 · Détente to 1991",
+  "unit": "WH12",
+  "title": "The Cold War: détente, renewed tension and the end (1963–1991)",
+  "level": "SL",
+  "summary": "Vietnam and the Prague Spring, the rise and fall of détente, the 'Second Cold War' of the early 1980s and why the Cold War ended under Gorbachev.",
+  "keyterms": [
+    { "id": "history-wh12.2-detente", "term": "Détente", "definition": "Easing of Cold War tension in the late 1960s and 1970s through arms control, trade and summits.", "hl": false },
+    { "id": "history-wh12.2-brezhnev-doctrine", "term": "Brezhnev Doctrine", "definition": "1968 Soviet claim of the right to intervene in any socialist state where socialism was threatened, used to justify crushing the Prague Spring.", "hl": false },
+    { "id": "history-wh12.2-ostpolitik", "term": "Ostpolitik", "definition": "West German Chancellor Willy Brandt's policy of improving relations with East Germany and the Soviet bloc from 1969.", "hl": false },
+    { "id": "history-wh12.2-salt", "term": "SALT I", "definition": "1972 Strategic Arms Limitation agreement freezing numbers of strategic missile launchers, signed with the ABM Treaty.", "hl": false },
+    { "id": "history-wh12.2-helsinki", "term": "Helsinki Final Act", "definition": "1975 agreement accepting Europe's post-war borders, with human-rights commitments later used by Eastern bloc dissidents.", "hl": false },
+    { "id": "history-wh12.2-sdi", "term": "SDI", "definition": "Strategic Defense Initiative ('Star Wars'), Reagan's 1983 plan for a space-based missile shield.", "hl": false },
+    { "id": "history-wh12.2-glasnost", "term": "Glasnost", "definition": "'Openness': Gorbachev's policy allowing more freedom of speech and criticism.", "hl": false },
+    { "id": "history-wh12.2-perestroika", "term": "Perestroika", "definition": "'Restructuring': Gorbachev's attempt to reform the Soviet economy and political system.", "hl": false },
+    { "id": "history-wh12.2-inf-treaty", "term": "INF Treaty", "definition": "1987 US–Soviet treaty eliminating all intermediate-range nuclear missiles, the first to abolish a whole class of weapons.", "hl": false },
+    { "id": "history-wh12.2-sinatra-doctrine", "term": "Sinatra Doctrine", "definition": "Nickname for Gorbachev's policy of letting Eastern European states choose their own path ('my way'), replacing the Brezhnev Doctrine.", "hl": false }
+  ],
+  "lessons": [
+    {
+      "id": "history-WH12.2-1",
+      "title": "From Prague to détente (1963–1979)",
+      "hl": false,
+      "questions": [
+        { "id": "history-WH12.2-1-q01", "type": "mcq", "prompt": "Who led the 1968 reform movement known as the Prague Spring?", "options": ["Alexander Dubček", "Imre Nagy", "Lech Wałęsa", "Václav Havel"], "answer": 0, "explanation": "Dubček promised 'socialism with a human face'; Warsaw Pact forces invaded on 20–21 August 1968.", "terms": ["history-wh12.2-brezhnev-doctrine"] },
+        { "id": "history-WH12.2-1-q02", "type": "fill", "text": "The Soviet claim to intervene wherever socialism was threatened is the ___ Doctrine.", "answer": "Brezhnev", "bank": ["Brezhnev", "Truman", "Sinatra", "Monroe"], "explanation": "It was announced after the invasion of Czechoslovakia.", "terms": ["history-wh12.2-brezhnev-doctrine"] },
+        { "id": "history-WH12.2-1-q03", "type": "tf", "statement": "President Nixon visited the People's Republic of China in February 1972.", "answer": true, "explanation": "Exploiting the Sino-Soviet split, Nixon and Kissinger used 'triangular diplomacy' to pressure the USSR.", "terms": ["history-wh12.2-detente"] },
+        { "id": "history-WH12.2-1-q04", "type": "mcq", "prompt": "Which factor encouraged the USA to seek détente around 1969–72?", "options": ["The cost and unpopularity of the Vietnam War", "US nuclear superiority growing rapidly", "The collapse of the USSR", "Soviet withdrawal from Eastern Europe"], "answer": 0, "explanation": "Vietnam strained the US economy and public support; the USSR had reached approximate nuclear parity.", "terms": ["history-wh12.2-detente"] },
+        { "id": "history-WH12.2-1-q05", "type": "match", "prompt": "Match each agreement to its content.", "pairs": [{ "left": "Partial Test Ban Treaty (1963)", "right": "Banned nuclear tests in the atmosphere" }, { "left": "Non-Proliferation Treaty (1968)", "right": "Aimed to stop the spread of nuclear weapons" }, { "left": "SALT I (1972)", "right": "Froze numbers of strategic missile launchers" }, { "left": "Helsinki Final Act (1975)", "right": "Recognised borders and pledged human rights" }], "explanation": "Arms control was the core of détente.", "terms": ["history-wh12.2-salt", "history-wh12.2-helsinki"] },
+        { "id": "history-WH12.2-1-q06", "type": "order", "prompt": "Put these events in chronological order.", "items": ["Gulf of Tonkin Resolution", "Prague Spring crushed", "Nixon visits China", "Helsinki Final Act", "Soviet invasion of Afghanistan"], "explanation": "1964, 1968, 1972, 1975, December 1979.", "terms": ["history-wh12.2-detente", "history-wh12.2-helsinki"] },
+        { "id": "history-WH12.2-1-q07", "type": "fill", "text": "Willy Brandt's policy of engagement with the East was called ___.", "answer": "Ostpolitik", "bank": ["Ostpolitik", "Realpolitik", "Glasnost", "Lebensraum"], "explanation": "It led to the 1972 Basic Treaty between the two German states.", "terms": ["history-wh12.2-ostpolitik"] },
+        { "id": "history-WH12.2-1-q08", "type": "tf", "statement": "The Helsinki Final Act's human-rights clauses ended up helping dissidents in the Eastern bloc.", "answer": true, "explanation": "Groups such as Charter 77 in Czechoslovakia cited Helsinki commitments to criticise their governments.", "terms": ["history-wh12.2-helsinki"] },
+        { "id": "history-WH12.2-1-q09", "type": "mcq", "prompt": "Which event is usually seen as ending détente?", "options": ["The Soviet invasion of Afghanistan in December 1979", "The signing of SALT I", "Nixon's visit to Moscow", "The Helsinki Final Act"], "answer": 0, "explanation": "Carter withdrew SALT II from the Senate, imposed a grain embargo and led a boycott of the 1980 Moscow Olympics.", "terms": ["history-wh12.2-detente"] },
+        { "id": "history-WH12.2-1-q10", "type": "mcq", "prompt": "What was the Sino-Soviet split?", "options": ["The breakdown of relations between China and the USSR from the late 1950s", "A 1949 alliance", "The division of Korea", "A border agreement in 1945"], "answer": 0, "explanation": "Ideological and national rivalry led to Soviet advisers being withdrawn in 1960 and border clashes in 1969.", "terms": ["history-wh12.2-detente"] }
+      ]
+    },
+    {
+      "id": "history-WH12.2-2",
+      "title": "Second Cold War and the end (1979–1991)",
+      "hl": false,
+      "questions": [
+        { "id": "history-WH12.2-2-q01", "type": "mcq", "prompt": "Which Reagan initiative alarmed Soviet leaders in 1983?", "options": ["The Strategic Defense Initiative", "The Marshall Plan", "The Alliance for Progress", "Ostpolitik"], "answer": 0, "explanation": "SDI threatened to undermine deterrence and drew the USSR into an arms race it could not afford.", "terms": ["history-wh12.2-sdi"] },
+        { "id": "history-WH12.2-2-q02", "type": "fill", "text": "Gorbachev's policy of 'openness' was called ___.", "answer": "glasnost", "bank": ["glasnost", "perestroika", "détente", "uskoreniye"], "explanation": "Glasnost allowed criticism that exposed the system's failures, such as the Chernobyl disaster (1986).", "terms": ["history-wh12.2-glasnost"] },
+        { "id": "history-WH12.2-2-q03", "type": "order", "prompt": "Put these events in chronological order.", "items": ["Gorbachev becomes Soviet leader", "Reykjavik summit", "INF Treaty signed", "Fall of the Berlin Wall", "Dissolution of the USSR"], "explanation": "March 1985, October 1986, December 1987, November 1989, December 1991.", "terms": ["history-wh12.2-glasnost", "history-wh12.2-inf-treaty"] },
+        { "id": "history-WH12.2-2-q04", "type": "tf", "statement": "The INF Treaty eliminated an entire category of nuclear weapons.", "answer": true, "explanation": "It removed all US and Soviet ground-launched missiles with ranges of 500–5,500 km.", "terms": ["history-wh12.2-inf-treaty"] },
+        { "id": "history-WH12.2-2-q05", "type": "mcq", "prompt": "Which explanation for the end of the Cold War emphasises internal Soviet problems?", "options": ["Economic stagnation, the burden of Afghanistan and the arms race made reform unavoidable", "Reagan's speeches alone forced Soviet surrender", "NATO invaded Eastern Europe", "China defeated the USSR"], "answer": 0, "explanation": "Historians debate the weight of Reagan's pressure, Gorbachev's choices and long-term Soviet decline.", "terms": ["history-wh12.2-perestroika"] },
+        { "id": "history-WH12.2-2-q06", "type": "match", "prompt": "Match each person to their role.", "pairs": [{ "left": "Mikhail Gorbachev", "right": "Soviet leader who introduced perestroika" }, { "left": "Ronald Reagan", "right": "US president who launched SDI" }, { "left": "Lech Wałęsa", "right": "Leader of Poland's Solidarity union" }, { "left": "Boris Yeltsin", "right": "Russian president who resisted the 1991 coup" }], "explanation": "Pressure from below in Eastern Europe mattered alongside superpower diplomacy.", "terms": ["history-wh12.2-perestroika", "history-wh12.2-sdi"] },
+        { "id": "history-WH12.2-2-q07", "type": "fill", "text": "Gorbachev's acceptance that Eastern European states could go their own way was nicknamed the ___ Doctrine.", "answer": "Sinatra", "bank": ["Sinatra", "Brezhnev", "Truman", "Reagan"], "explanation": "The refusal to use force allowed the revolutions of 1989 to succeed peacefully in most of the bloc.", "terms": ["history-wh12.2-sinatra-doctrine"] },
+        { "id": "history-WH12.2-2-q08", "type": "tf", "statement": "Germany was reunified in October 1990, before the Soviet Union dissolved.", "answer": true, "explanation": "Reunification took place on 3 October 1990; the USSR dissolved in December 1991.", "terms": ["history-wh12.2-sinatra-doctrine"] },
+        { "id": "history-WH12.2-2-q09", "type": "mcq", "prompt": "What was the effect of the failed August 1991 coup by Soviet hardliners?", "options": ["It weakened Gorbachev, strengthened Yeltsin and sped up the collapse of the USSR", "It restored the Brezhnev Doctrine", "It led to a new Warsaw Pact", "It ended glasnost permanently"], "answer": 0, "explanation": "Republics declared independence and Gorbachev resigned on 25 December 1991.", "terms": ["history-wh12.2-perestroika"] },
+        { "id": "history-WH12.2-2-q10", "type": "mcq", "prompt": "When did Soviet forces complete their withdrawal from Afghanistan?", "options": ["February 1989", "December 1979", "August 1991", "May 1985"], "answer": 0, "explanation": "Gorbachev called Afghanistan a 'bleeding wound'; the withdrawal signalled the end of Soviet expansionism.", "terms": ["history-wh12.2-perestroika"] }
+      ]
+    }
+  ]
+}
