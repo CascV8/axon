@@ -1,0 +1,143 @@
+{
+  "id": "english-ll",
+  "name": "English A: Language & Literature",
+  "short": "EngLL",
+  "group": "Group 1: Studies in language and literature",
+  "icon": "📖",
+  "blurb": "Areas of exploration, literary and rhetorical devices, text types, and Paper 1, Paper 2, oral and HL essay skills",
+  "syllabus": "Language A: language and literature guide, first assessed May 2021",
+  "levels": ["SL", "HL"],
+  "units": [
+    { "id": "RWT", "title": "Readers, writers and texts", "blurb": "How texts are made, how they reach audiences and how readers build meaning." },
+    { "id": "TAS", "title": "Time and space", "blurb": "How contexts of production and reception, culture and power shape texts." },
+    { "id": "INT", "title": "Intertextuality: connecting texts", "blurb": "Allusion, genre, transformation and comparison across texts and works." },
+    { "id": "LIT", "title": "Literary and rhetorical devices", "blurb": "Figurative language, sound and form, narrative and dramatic technique, rhetoric." },
+    { "id": "NLT", "title": "Non-literary text types", "blurb": "Advertising, visual and digital texts, journalism, speeches, letters and life writing." },
+    { "id": "ASK", "title": "Assessment skills", "blurb": "Paper 1 guided analysis, Paper 2 comparative essay, individual oral and HL essay." }
+  ],
+  "papers": {
+    "P1": "Paper 1 · guided textual analysis",
+    "P2": "Paper 2 · comparative essay",
+    "IO": "Individual oral",
+    "HLE": "HL essay"
+  },
+  "mcqExam": null,
+  "assessment": {
+    "SL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Guided analysis of one of two unseen non-literary passages", "max": 20, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Comparative essay on two literary works studied (one of four questions)", "max": 30, "group": "p2" },
+        { "id": "io", "name": "Individual oral", "detail": "Global issue explored through a literary work and a non-literary body of work", "max": 40, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 35, "time": "1 h 15 min" },
+        "p2": { "name": "Paper 2", "weight": 35, "time": "1 h 45 min" },
+        "ia": { "name": "Individual oral (IA)", "weight": 30, "time": "15 min (10 + 5 questions)" }
+      }
+    },
+    "HL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Guided analysis of both of two unseen non-literary passages (20 marks each)", "max": 40, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Comparative essay on two literary works studied (one of four questions)", "max": 30, "group": "p2" },
+        { "id": "hle", "name": "HL essay", "detail": "Formal essay on a line of inquiry into a text or work studied", "max": 20, "group": "hle" },
+        { "id": "io", "name": "Individual oral", "detail": "Global issue explored through a literary work and a non-literary body of work", "max": 40, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 35, "time": "2 h 15 min" },
+        "p2": { "name": "Paper 2", "weight": 25, "time": "1 h 45 min" },
+        "hle": { "name": "HL essay", "weight": 20, "time": "1,200–1,500 words, coursework" },
+        "ia": { "name": "Individual oral (IA)", "weight": 20, "time": "15 min (10 + 5 questions)" }
+      }
+    }
+  },
+  "boundaries": {
+    "SL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 12, 24, 37, 51, 66, 80] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 13, 27, 41, 53, 67, 79] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 12, 26, 38, 53, 66, 80] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 14, 30, 43, 55, 70, 82] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 11, 22, 34, 49, 63, 78] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 11, 25, 38, 53, 65, 78] }
+    ],
+    "HL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 12, 25, 40, 54, 68, 81] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 14, 29, 43, 55, 68, 80] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 14, 28, 43, 56, 68, 81] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 15, 29, 43, 55, 68, 81] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 13, 25, 38, 52, 65, 78] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 12, 25, 41, 53, 66, 79] }
+    ]
+  },
+  "ia": {
+    "name": "Individual oral",
+    "max": 40,
+    "weight": 30,
+    "limit": "15 minutes: 10 min prepared response + 5 min teacher questions (30% SL, 20% HL)",
+    "criteria": [
+      {
+        "id": "a",
+        "name": "Knowledge, understanding and interpretation",
+        "max": 10,
+        "look": [
+          "Shows secure knowledge of both extracts and the whole works or body of work they come from",
+          "Makes interpretations that are clearly tied to the chosen global issue",
+          "Supports every claim with precise, well-chosen references to the extracts and wider works"
+        ]
+      },
+      {
+        "id": "b",
+        "name": "Analysis and evaluation",
+        "max": 10,
+        "look": [
+          "Explains how specific authorial choices (language, structure, form, visual features) present the global issue",
+          "Evaluates how effective those choices are, rather than just naming techniques",
+          "Treats the literary and non-literary texts with balanced depth"
+        ]
+      },
+      {
+        "id": "c",
+        "name": "Focus and organization",
+        "max": 10,
+        "look": [
+          "Keeps the global issue at the centre of the whole 10 minutes",
+          "Follows a clear, balanced structure with signposted movement between the two texts",
+          "Ideas build on each other and connect the extracts to their wider works"
+        ]
+      },
+      {
+        "id": "d",
+        "name": "Language",
+        "max": 10,
+        "look": [
+          "Speaks clearly and accurately with a confident, appropriate register",
+          "Uses precise literary and analytical vocabulary naturally",
+          "Varies sentence structure and avoids reading from a script"
+        ]
+      }
+    ],
+    "checklist": [
+      "My global issue is specific, has real-world significance and is visible in both texts",
+      "One text is a literary work and the other a non-literary body of work, both studied in class",
+      "Each extract is no longer than about 40 lines (or a comparable portion of a visual text)",
+      "I bring clean copies of both extracts and an outline of no more than 10 bullet points",
+      "My introduction names the global issue and both texts and explains why they are paired",
+      "I spend roughly equal time on each text and link each extract to its whole work or body of work",
+      "Every point analyses an authorial choice and its effect, with a quoted or located reference",
+      "I have timed a rehearsal at close to 10 minutes without reading from a script",
+      "I have prepared for follow-up questions that push me to extend or justify my points",
+      "I have not used either text for my HL essay or for Paper 2 works"
+    ]
+  },
+  "examTips": [
+    "In Paper 1, answer the guiding question but go beyond it: build a clear thesis about purpose and effect, then analyse how specific features create that effect.",
+    "Name the text type and its conventions early (e.g. op-ed, infographic, charity appeal) and show how the writer uses or breaks them for a particular audience.",
+    "In Paper 2, compare throughout. Organise by ideas, not by work, and make every paragraph link both works to the question with precise textual references.",
+    "Technique spotting earns little: for every device, quote it, explain its effect on the reader and tie it back to the writer's purpose or the question.",
+    "Plan before you write. Five to ten minutes spent on a thesis and paragraph order usually improves focus and organization, which is worth up to a quarter of the marks."
+  ],
+  "sources": [
+    { "label": "Grade boundaries, English A: Language and Literature SL (ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/english-a-language-and-literature-sl" },
+    { "label": "Grade boundaries, English A: Language and Literature HL (ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/english-a-language-and-literature-hl" },
+    { "label": "IB Language A: language and literature subject overview", "url": "https://www.ibo.org/programmes/diploma-programme/curriculum/language-and-literature/language-a-language-and-literature/" }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "id": "english-ll-NLT.1",
+  "code": "NLT.1",
+  "unit": "NLT",
+  "title": "Advertising, visual and digital texts",
+  "level": "SL",
+  "summary": "Read images, layout and typography as carefully as words: the conventions of adverts, posters, infographics, websites, social media and comics.",
+  "keyterms": [
+    {
+      "id": "english-ll-nlt.1-slogan",
+      "term": "Slogan",
+      "definition": "A short, memorable phrase associated with a brand or campaign.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-layout",
+      "term": "Layout",
+      "definition": "The arrangement of text and images on a page or screen, guiding the reader's eye.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-typography",
+      "term": "Typography",
+      "definition": "The choice and style of fonts, sizes and weights, which carry connotations.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-colour-symbolism",
+      "term": "Colour symbolism",
+      "definition": "The associations colours carry, e.g. green with nature or red with danger or passion, which vary by culture.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-gaze",
+      "term": "Gaze",
+      "definition": "The direction of a figure's look: a direct gaze at the viewer demands engagement; an indirect one invites observation.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-vector",
+      "term": "Vector",
+      "definition": "A line, real or implied (such as a gaze or arm), that leads the viewer's eye through an image.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-salience",
+      "term": "Salience",
+      "definition": "How much an element stands out through size, colour, position or contrast.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-anchorage",
+      "term": "Anchorage",
+      "definition": "Text (such as a caption) that fixes the meaning of an image.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-call-to-action",
+      "term": "Call to action",
+      "definition": "An instruction prompting the audience to do something, such as 'Shop now' or 'Donate today'.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-infographic",
+      "term": "Infographic",
+      "definition": "A text that presents data or information visually through charts, icons and short text.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-camera-angle",
+      "term": "Camera angle",
+      "definition": "The viewpoint of an image: low angles make subjects powerful, high angles vulnerable.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.1-multimodal",
+      "term": "Multimodal",
+      "definition": "Combining more than one mode, such as words, images, sound and layout, to make meaning.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-NLT.1-1",
+      "title": "Reading images and layout",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-NLT.1-1-q01",
+          "type": "mcq",
+          "prompt": "A charity poster shows a child looking straight at the viewer. What is the effect of this direct gaze?",
+          "options": [
+            "It makes the viewer feel addressed and personally responsible",
+            "It hides the child's identity",
+            "It shows the child is unaware of the camera",
+            "It makes the image humorous"
+          ],
+          "answer": 0,
+          "explanation": "A direct gaze creates a 'demand', making the viewer feel personally implicated.",
+          "terms": [
+            "english-ll-nlt.1-gaze"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q02",
+          "type": "fill",
+          "text": "A caption that fixes how we interpret an image provides ___.",
+          "answer": "anchorage",
+          "bank": [
+            "anchorage",
+            "salience",
+            "layout",
+            "kairos"
+          ],
+          "explanation": "The same photo can be read very differently depending on its caption.",
+          "terms": [
+            "english-ll-nlt.1-anchorage"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q03",
+          "type": "mcq",
+          "prompt": "A sports advert photographs an athlete from below against the sky. What does the low camera angle suggest?",
+          "options": [
+            "Weakness",
+            "Power and heroic status",
+            "Distance and coldness",
+            "Humour"
+          ],
+          "answer": 1,
+          "explanation": "Low angles make subjects loom over the viewer, suggesting dominance and aspiration.",
+          "terms": [
+            "english-ll-nlt.1-camera-angle"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q04",
+          "type": "tf",
+          "statement": "The largest, brightest element in an advert usually has the highest salience.",
+          "answer": true,
+          "explanation": "Size, colour, contrast and position determine what the eye notices first.",
+          "terms": [
+            "english-ll-nlt.1-salience"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q05",
+          "type": "match",
+          "prompt": "Match the visual feature to a likely effect.",
+          "pairs": [
+            {
+              "left": "Handwritten-style font",
+              "right": "Personal, authentic feel"
+            },
+            {
+              "left": "Bold capitals",
+              "right": "Urgency and authority"
+            },
+            {
+              "left": "Lots of white space",
+              "right": "Luxury and calm"
+            },
+            {
+              "left": "Muted greys",
+              "right": "Sombre, serious mood"
+            }
+          ],
+          "explanation": "Typography and design choices carry connotations just as words do.",
+          "terms": [
+            "english-ll-nlt.1-typography",
+            "english-ll-nlt.1-layout"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q06",
+          "type": "mcq",
+          "prompt": "In a poster, a model's outstretched arm points towards the product. What is the arm acting as?",
+          "options": [
+            "A vector guiding the eye",
+            "Anchorage",
+            "A slogan",
+            "A call to action"
+          ],
+          "answer": 0,
+          "explanation": "Vectors are lines that direct attention through the composition.",
+          "terms": [
+            "english-ll-nlt.1-vector"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q07",
+          "type": "fill",
+          "text": "The choice and style of fonts in a text is its ___.",
+          "answer": "typography",
+          "bank": [
+            "typography",
+            "topography",
+            "imagery",
+            "syntax"
+          ],
+          "explanation": "Serif fonts may feel traditional; rounded sans-serif fonts friendly and modern.",
+          "terms": [
+            "english-ll-nlt.1-typography"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q08",
+          "type": "tf",
+          "statement": "Colour symbolism is identical in every culture.",
+          "answer": false,
+          "explanation": "White, for example, can connote purity in some cultures and mourning in others.",
+          "terms": [
+            "english-ll-nlt.1-colour-symbolism"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q09",
+          "type": "mcq",
+          "prompt": "In many left-to-right reading cultures, why might an advert place the problem on the left and the product on the right?",
+          "options": [
+            "The eye reads from left to right, so the layout suggests a journey from problem to solution",
+            "It is a printing accident",
+            "Products must always be on the right by law",
+            "To confuse the viewer"
+          ],
+          "answer": 0,
+          "explanation": "Layout can create a narrative of 'before' and 'after' following reading direction.",
+          "terms": [
+            "english-ll-nlt.1-layout"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-1-q10",
+          "type": "order",
+          "prompt": "Order a typical viewing path through a print advert.",
+          "items": [
+            "Most salient image catches the eye",
+            "Headline or slogan is read",
+            "Body copy explains or persuades",
+            "Logo and call to action close the advert"
+          ],
+          "explanation": "Adverts are designed to steer attention from hook to action.",
+          "terms": [
+            "english-ll-nlt.1-salience",
+            "english-ll-nlt.1-call-to-action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-NLT.1-2",
+      "title": "Persuasive and digital texts",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-NLT.1-2-q01",
+          "type": "mcq",
+          "prompt": "\"Taste the sunshine.\" What makes this slogan effective?",
+          "options": [
+            "Synaesthetic metaphor links the drink to warmth and happiness",
+            "It gives a precise price",
+            "It uses a statistic",
+            "It contains a rhetorical question"
+          ],
+          "answer": 0,
+          "explanation": "Mixing senses (tasting sunshine) creates an appealing, memorable association.",
+          "terms": [
+            "english-ll-nlt.1-slogan"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q02",
+          "type": "fill",
+          "text": "\"Download the app today\" at the end of an advert is a call to ___.",
+          "answer": "action",
+          "bank": [
+            "action",
+            "arms",
+            "order",
+            "account"
+          ],
+          "explanation": "Calls to action convert interest into behaviour; they are usually imperatives.",
+          "terms": [
+            "english-ll-nlt.1-call-to-action"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q03",
+          "type": "mcq",
+          "prompt": "An infographic on plastic waste uses a single large bottle icon beside tiny human icons. What is the effect?",
+          "options": [
+            "Visual scale dramatises the problem's size",
+            "It makes the data impossible to read",
+            "It hides the source",
+            "It entertains without informing"
+          ],
+          "answer": 0,
+          "explanation": "Infographics persuade through visual emphasis, not just data.",
+          "terms": [
+            "english-ll-nlt.1-infographic",
+            "english-ll-nlt.1-salience"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q04",
+          "type": "tf",
+          "statement": "Infographics are always neutral because they present data.",
+          "answer": false,
+          "explanation": "Choices of data, scale, colour and icons frame information and can be highly persuasive.",
+          "terms": [
+            "english-ll-nlt.1-infographic"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q05",
+          "type": "match",
+          "prompt": "Match the digital feature to its function.",
+          "pairs": [
+            {
+              "left": "Hashtag",
+              "right": "Links posts to a shared conversation"
+            },
+            {
+              "left": "Hyperlink",
+              "right": "Connects to other texts or sources"
+            },
+            {
+              "left": "Comment section",
+              "right": "Lets audiences respond publicly"
+            },
+            {
+              "left": "Emoji",
+              "right": "Adds tone and emotion to short text"
+            }
+          ],
+          "explanation": "Digital texts are interactive; audiences participate in meaning-making.",
+          "terms": [
+            "english-ll-nlt.1-multimodal"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q06",
+          "type": "mcq",
+          "prompt": "Why is a social media post described as multimodal?",
+          "options": [
+            "It combines words, images, video, emoji and layout to make meaning",
+            "It is written in many languages",
+            "It has many authors",
+            "It uses only text"
+          ],
+          "answer": 0,
+          "explanation": "Multimodal texts make meaning through several modes at once, so analyse their interaction.",
+          "terms": [
+            "english-ll-nlt.1-multimodal"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q07",
+          "type": "fill",
+          "text": "A short, memorable phrase linked to a brand is a ___.",
+          "answer": "slogan",
+          "bank": [
+            "slogan",
+            "caption",
+            "headline",
+            "logo"
+          ],
+          "explanation": "Slogans rely on brevity and sound patterns such as alliteration and rhyme.",
+          "terms": [
+            "english-ll-nlt.1-slogan"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q08",
+          "type": "mcq",
+          "prompt": "In a comic, a panel with no border that bleeds to the edge of the page often suggests:",
+          "options": [
+            "Expansiveness or a moment outside normal time",
+            "A printing error",
+            "The end of the story",
+            "Dialogue between characters"
+          ],
+          "answer": 0,
+          "explanation": "Panel size and borders control pacing and emphasis in graphic texts.",
+          "terms": [
+            "english-ll-nlt.1-layout",
+            "english-ll-nlt.1-multimodal"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q09",
+          "type": "tf",
+          "statement": "An influencer's casual 'unboxing' video can be analysed as a persuasive advertising text.",
+          "answer": true,
+          "explanation": "Sponsored content uses an authentic-seeming persona and ethos to sell; recognising this is critical media literacy.",
+          "terms": [
+            "english-ll-nlt.1-call-to-action"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.1-2-q10",
+          "type": "mcq",
+          "prompt": "A perfume advert uses deep red, dim lighting and a woman glancing sideways out of frame. Which reading is best supported?",
+          "options": [
+            "Mystery and seduction are linked to the product",
+            "The product is cheap and practical",
+            "The advert targets young children",
+            "The advert gives scientific data"
+          ],
+          "answer": 0,
+          "explanation": "Colour symbolism, lighting and an indirect gaze build an aura of allure around the product.",
+          "terms": [
+            "english-ll-nlt.1-colour-symbolism",
+            "english-ll-nlt.1-gaze"
+          ]
+        }
+      ]
+    }
+  ]
+}

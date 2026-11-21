@@ -1,0 +1,414 @@
+{
+  "id": "english-ll-INT.2",
+  "code": "INT.2",
+  "unit": "INT",
+  "title": "Genre, conventions and comparison",
+  "level": "SL",
+  "summary": "Genres are sets of expectations that writers follow, bend or break. Understanding conventions lets you compare texts and works meaningfully.",
+  "keyterms": [
+    {
+      "id": "english-ll-int.2-genre",
+      "term": "Genre",
+      "definition": "A category of texts sharing conventions of form, content and purpose, e.g. tragedy, sonnet, editorial, advert.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-convention",
+      "term": "Convention",
+      "definition": "An expected feature of a genre or text type, such as a headline in a news report or a volta in a sonnet.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-subversion",
+      "term": "Subversion",
+      "definition": "Deliberately breaking or overturning a convention or expectation to create meaning.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-hybrid-text",
+      "term": "Hybrid text",
+      "definition": "A text that blends the conventions of two or more genres or text types.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-form",
+      "term": "Form",
+      "definition": "The shape and structure of a text, such as sonnet, free verse, letter or graphic novel.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-comparison",
+      "term": "Comparison",
+      "definition": "Analysing similarities and differences between texts to show how each creates meaning.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-point-of-comparison",
+      "term": "Point of comparison",
+      "definition": "A specific shared idea, technique or feature used to organise a comparative argument.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-tragedy",
+      "term": "Tragedy",
+      "definition": "A dramatic genre in which a protagonist's downfall, often linked to a flaw, arouses pity and fear.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-bildungsroman",
+      "term": "Bildungsroman",
+      "definition": "A novel of formation that follows a protagonist's growth from youth to maturity.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.2-dystopia",
+      "term": "Dystopia",
+      "definition": "A genre imagining an oppressive society, used to warn about present tendencies.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-INT.2-1",
+      "title": "Genre and convention",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-INT.2-1-q01",
+          "type": "mcq",
+          "prompt": "Which is a convention of a hard news report?",
+          "options": [
+            "A rhyming couplet ending",
+            "The most important facts in the opening paragraph",
+            "Stage directions",
+            "A first-person diary entry"
+          ],
+          "answer": 1,
+          "explanation": "News reports typically front-load key facts (the inverted pyramid) so readers grasp the story quickly.",
+          "terms": [
+            "english-ll-int.2-convention",
+            "english-ll-int.2-genre"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q02",
+          "type": "fill",
+          "text": "Deliberately breaking a genre's expected features to create meaning is called ___.",
+          "answer": "subversion",
+          "bank": [
+            "subversion",
+            "convention",
+            "adaptation",
+            "allusion"
+          ],
+          "explanation": "Subversion works only because readers know the convention being broken.",
+          "terms": [
+            "english-ll-int.2-subversion"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q03",
+          "type": "match",
+          "prompt": "Match the genre to a typical convention.",
+          "pairs": [
+            {
+              "left": "Tragedy",
+              "right": "A protagonist's downfall"
+            },
+            {
+              "left": "Bildungsroman",
+              "right": "Growth from youth to maturity"
+            },
+            {
+              "left": "Dystopia",
+              "right": "An oppressive imagined society"
+            },
+            {
+              "left": "Sonnet",
+              "right": "Fourteen lines"
+            }
+          ],
+          "explanation": "Knowing conventions helps you spot where a text conforms or deviates.",
+          "terms": [
+            "english-ll-int.2-tragedy",
+            "english-ll-int.2-bildungsroman",
+            "english-ll-int.2-dystopia",
+            "english-ll-int.2-convention"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q04",
+          "type": "tf",
+          "statement": "A charity advert that looks like a luxury fashion advert until you read the small print is an example of a hybrid or subversive text.",
+          "answer": true,
+          "explanation": "Borrowing and then overturning a genre's conventions creates surprise and sharpens the message.",
+          "terms": [
+            "english-ll-int.2-hybrid-text",
+            "english-ll-int.2-subversion"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q05",
+          "type": "mcq",
+          "prompt": "A recipe written as a love poem is best described as:",
+          "options": [
+            "A hybrid text",
+            "A news report",
+            "An encyclopedia entry",
+            "A tragedy"
+          ],
+          "answer": 0,
+          "explanation": "It blends the conventions of instructions and lyric poetry; ask what the blend achieves.",
+          "terms": [
+            "english-ll-int.2-hybrid-text"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q06",
+          "type": "fill",
+          "text": "The shape and structure of a text, such as free verse or a letter, is its ___.",
+          "answer": "form",
+          "bank": [
+            "form",
+            "tone",
+            "theme",
+            "context"
+          ],
+          "explanation": "Form shapes meaning: a poem in the form of a list feels different from one in sonnet form.",
+          "terms": [
+            "english-ll-int.2-form"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q07",
+          "type": "mcq",
+          "prompt": "A dystopian novel shows citizens rated on their every purchase. What is its likely purpose?",
+          "options": [
+            "To celebrate shopping",
+            "To warn about trends in present-day society",
+            "To give historical facts",
+            "To teach accounting"
+          ],
+          "answer": 1,
+          "explanation": "Dystopias exaggerate present tendencies to make readers question them.",
+          "terms": [
+            "english-ll-int.2-dystopia",
+            "english-ll-int.2-genre"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q08",
+          "type": "tf",
+          "statement": "Genres are fixed and never change over time.",
+          "answer": false,
+          "explanation": "Genres evolve as writers innovate and as media change (e.g. the blog, the podcast, the tweet thread).",
+          "terms": [
+            "english-ll-int.2-genre"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q09",
+          "type": "mcq",
+          "prompt": "Why is naming the genre of an unseen text useful in Paper 1?",
+          "options": [
+            "It earns a mark on its own",
+            "It lets you discuss how the text uses or departs from expected conventions for its audience",
+            "It replaces analysis",
+            "It tells you the author's name"
+          ],
+          "answer": 1,
+          "explanation": "Genre awareness is useful only when linked to how conventions create effects.",
+          "terms": [
+            "english-ll-int.2-genre",
+            "english-ll-int.2-convention"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-1-q10",
+          "type": "order",
+          "prompt": "Order the stages of the inverted-pyramid news structure, top to bottom.",
+          "items": [
+            "Headline",
+            "Lead paragraph with who, what, when, where",
+            "Supporting detail and quotes",
+            "Background and least essential information"
+          ],
+          "explanation": "Editors can cut from the bottom without losing the core story.",
+          "terms": [
+            "english-ll-int.2-convention"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-INT.2-2",
+      "title": "Comparing texts and works",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-INT.2-2-q01",
+          "type": "mcq",
+          "prompt": "Which essay structure is usually strongest for comparison?",
+          "options": [
+            "All of work A, then all of work B",
+            "Paragraphs organised by points of comparison, discussing both works in each",
+            "Only discussing the more interesting work",
+            "A list of quotations"
+          ],
+          "answer": 1,
+          "explanation": "Integrated comparison keeps both works in dialogue and sustains focus on the question.",
+          "terms": [
+            "english-ll-int.2-comparison",
+            "english-ll-int.2-point-of-comparison"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q02",
+          "type": "fill",
+          "text": "A shared idea or technique used to organise a comparative paragraph is a point of ___.",
+          "answer": "comparison",
+          "bank": [
+            "comparison",
+            "view",
+            "order",
+            "reference"
+          ],
+          "explanation": "Good points of comparison allow both similarities and differences to emerge.",
+          "terms": [
+            "english-ll-int.2-point-of-comparison"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q03",
+          "type": "match",
+          "prompt": "Match the connective to its comparative function.",
+          "pairs": [
+            {
+              "left": "Similarly",
+              "right": "Shows likeness"
+            },
+            {
+              "left": "Whereas",
+              "right": "Introduces contrast within a sentence"
+            },
+            {
+              "left": "Conversely",
+              "right": "Signals the opposite approach"
+            },
+            {
+              "left": "Both",
+              "right": "Introduces a shared feature"
+            }
+          ],
+          "explanation": "Precise connectives make comparative thinking visible to the examiner.",
+          "terms": [
+            "english-ll-int.2-comparison"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q04",
+          "type": "tf",
+          "statement": "Good comparison discusses differences as well as similarities.",
+          "answer": true,
+          "explanation": "Differences in method or perspective often produce the most insightful comparisons.",
+          "terms": [
+            "english-ll-int.2-comparison"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q05",
+          "type": "mcq",
+          "prompt": "Two novels both explore exile: one through a single narrator's memories, the other through alternating voices. What is the most productive comparison?",
+          "options": [
+            "Both books have covers",
+            "How narrative structure shapes each work's sense of exile as private or collective",
+            "Which book is longer",
+            "Which author is more famous"
+          ],
+          "answer": 1,
+          "explanation": "Comparing how form shapes meaning addresses both what and how, which examiners reward.",
+          "terms": [
+            "english-ll-int.2-comparison",
+            "english-ll-int.2-form"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q06",
+          "type": "mcq",
+          "prompt": "Which sentence compares most effectively?",
+          "options": [
+            "Text A uses imagery. Text B uses imagery too.",
+            "While both texts use storm imagery, Text A makes it a threat to the community, whereas Text B treats it as cleansing renewal.",
+            "Text A is better than Text B.",
+            "I will now talk about Text B."
+          ],
+          "answer": 1,
+          "explanation": "It identifies a shared feature and then sharpens the difference in effect.",
+          "terms": [
+            "english-ll-int.2-comparison",
+            "english-ll-int.2-point-of-comparison"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q07",
+          "type": "fill",
+          "text": "A novel tracing a young protagonist's growth to maturity is a ___.",
+          "answer": "bildungsroman",
+          "bank": [
+            "bildungsroman",
+            "dystopia",
+            "tragedy",
+            "pastiche"
+          ],
+          "explanation": "Coming-of-age novels often explore identity, which makes them good comparison partners.",
+          "terms": [
+            "english-ll-int.2-bildungsroman"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q08",
+          "type": "tf",
+          "statement": "In a comparison, the two works must be from the same genre.",
+          "answer": false,
+          "explanation": "Works in different genres can be compared fruitfully; differences in form can be a point of comparison.",
+          "terms": [
+            "english-ll-int.2-comparison",
+            "english-ll-int.2-genre"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q09",
+          "type": "mcq",
+          "prompt": "What should a comparative conclusion do?",
+          "options": [
+            "Introduce a new third work",
+            "Repeat each paragraph word for word",
+            "Synthesise how the two works answer the question differently and why that matters",
+            "Apologise for running out of time"
+          ],
+          "answer": 2,
+          "explanation": "A strong conclusion draws the comparison together into a final judgement.",
+          "terms": [
+            "english-ll-int.2-comparison"
+          ]
+        },
+        {
+          "id": "english-ll-INT.2-2-q10",
+          "type": "mcq",
+          "prompt": "In a tragedy, what does the protagonist's downfall typically arouse in the audience?",
+          "options": [
+            "Boredom and indifference",
+            "Pity and fear",
+            "Laughter only",
+            "Confusion about the plot"
+          ],
+          "answer": 1,
+          "explanation": "Since Aristotle, tragedy has been associated with pity and fear and the release of catharsis.",
+          "terms": [
+            "english-ll-int.2-tragedy"
+          ]
+        }
+      ]
+    }
+  ]
+}

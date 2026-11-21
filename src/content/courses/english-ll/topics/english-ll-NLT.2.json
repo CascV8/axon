@@ -1,0 +1,423 @@
+{
+  "id": "english-ll-NLT.2",
+  "code": "NLT.2",
+  "unit": "NLT",
+  "title": "Journalism, speeches, letters and life writing",
+  "level": "SL",
+  "summary": "The conventions of news reports, opinion pieces, features, speeches, open letters, blogs and memoirs, and how writers use or bend them.",
+  "keyterms": [
+    {
+      "id": "english-ll-nlt.2-headline",
+      "term": "Headline",
+      "definition": "The title of a news or feature article, designed to grab attention and frame the story.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-lead",
+      "term": "Lead",
+      "definition": "The opening paragraph of a news story, summarising the key facts.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-op-ed",
+      "term": "Op-ed",
+      "definition": "An opinion article by a named writer, arguing a personal position on an issue.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-editorial",
+      "term": "Editorial",
+      "definition": "An unsigned opinion piece expressing a publication's official view.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-feature-article",
+      "term": "Feature article",
+      "definition": "A longer, in-depth article that explores a topic with description, interviews and a more personal style.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-pull-quote",
+      "term": "Pull quote",
+      "definition": "A striking quotation enlarged within an article's layout to draw readers in.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-open-letter",
+      "term": "Open letter",
+      "definition": "A letter addressed to a person or group but published for a wide audience, usually to make a public argument.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-memoir",
+      "term": "Memoir",
+      "definition": "A non-fiction account of part of the writer's life, shaped and selected like a story.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-blog",
+      "term": "Blog",
+      "definition": "An online text, usually informal and personal, published in regular posts that invite reader interaction.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-attribution",
+      "term": "Attribution",
+      "definition": "Identifying the source of a quotation or claim, e.g. 'according to police', which affects credibility.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-byline",
+      "term": "Byline",
+      "definition": "The line naming the writer of an article.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-nlt.2-counter-argument",
+      "term": "Counter-argument",
+      "definition": "An opposing view a writer raises in order to refute it, strengthening their own position.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-NLT.2-1",
+      "title": "Journalism",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-NLT.2-1-q01",
+          "type": "mcq",
+          "prompt": "Which is the key difference between an editorial and an op-ed?",
+          "options": [
+            "An editorial gives the publication's unsigned view; an op-ed is signed by an individual writer",
+            "An editorial is always fictional",
+            "An op-ed never expresses opinions",
+            "There is no difference"
+          ],
+          "answer": 0,
+          "explanation": "Authorship affects ethos: institutional authority versus personal voice.",
+          "terms": [
+            "english-ll-nlt.2-editorial",
+            "english-ll-nlt.2-op-ed"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q02",
+          "type": "fill",
+          "text": "The opening paragraph of a news story that summarises key facts is the ___.",
+          "answer": "lead",
+          "bank": [
+            "lead",
+            "byline",
+            "headline",
+            "pull quote"
+          ],
+          "explanation": "The lead (or lede) answers who, what, when and where as quickly as possible.",
+          "terms": [
+            "english-ll-nlt.2-lead"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q03",
+          "type": "mcq",
+          "prompt": "Headline: \"MOTHER'S AGONY AS HOSPITAL TURNS HER AWAY\". Which feature makes it sensational?",
+          "options": [
+            "Emotive noun 'agony' and capitalised urgency",
+            "Neutral factual phrasing",
+            "A statistic",
+            "Passive voice"
+          ],
+          "answer": 0,
+          "explanation": "Emotive vocabulary and a human-interest frame make the headline dramatic and sympathetic.",
+          "terms": [
+            "english-ll-nlt.2-headline"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q04",
+          "type": "tf",
+          "statement": "\"Protesters were injured\" and \"Police injured protesters\" give different impressions of responsibility.",
+          "answer": true,
+          "explanation": "The passive voice can hide who acted; choice of voice frames blame.",
+          "terms": [
+            "english-ll-nlt.2-headline"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q05",
+          "type": "match",
+          "prompt": "Match the journalistic feature to its function.",
+          "pairs": [
+            {
+              "left": "Byline",
+              "right": "Names the writer"
+            },
+            {
+              "left": "Pull quote",
+              "right": "Highlights a striking quotation"
+            },
+            {
+              "left": "Attribution",
+              "right": "Identifies a claim's source"
+            },
+            {
+              "left": "Headline",
+              "right": "Grabs attention and frames the story"
+            }
+          ],
+          "explanation": "Each feature shapes credibility, attention or framing.",
+          "terms": [
+            "english-ll-nlt.2-byline",
+            "english-ll-nlt.2-pull-quote",
+            "english-ll-nlt.2-attribution",
+            "english-ll-nlt.2-headline"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q06",
+          "type": "mcq",
+          "prompt": "An op-ed writer says: \"Some will argue the tax hurts small businesses. But the evidence from three cities shows the opposite.\" What technique is this?",
+          "options": [
+            "Raising and refuting a counter-argument",
+            "Free indirect discourse",
+            "Foreshadowing",
+            "Euphemism"
+          ],
+          "answer": 0,
+          "explanation": "Anticipating objections and rebutting them makes the writer seem fair and confident.",
+          "terms": [
+            "english-ll-nlt.2-counter-argument",
+            "english-ll-nlt.2-op-ed"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q07",
+          "type": "fill",
+          "text": "A longer, in-depth article with interviews and descriptive scene-setting is a ___ article.",
+          "answer": "feature",
+          "bank": [
+            "feature",
+            "news",
+            "editorial",
+            "obituary"
+          ],
+          "explanation": "Features use narrative techniques more than hard news does.",
+          "terms": [
+            "english-ll-nlt.2-feature-article"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q08",
+          "type": "tf",
+          "statement": "Attribution such as \"sources suggest\" is as strong as naming a specific expert.",
+          "answer": false,
+          "explanation": "Vague attribution weakens credibility; named, qualified sources strengthen ethos.",
+          "terms": [
+            "english-ll-nlt.2-attribution"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q09",
+          "type": "mcq",
+          "prompt": "A feature article opens with a vivid scene of a fisherman mending nets at dawn before discussing overfishing. Why?",
+          "options": [
+            "To humanise a large issue and draw readers in",
+            "To give the main statistics first",
+            "To follow the inverted-pyramid rule",
+            "To hide the topic"
+          ],
+          "answer": 0,
+          "explanation": "Scene-setting openings are a feature convention that builds engagement before argument.",
+          "terms": [
+            "english-ll-nlt.2-feature-article"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-1-q10",
+          "type": "order",
+          "prompt": "Order the typical structure of an op-ed.",
+          "items": [
+            "Attention-grabbing hook",
+            "Clear statement of position",
+            "Supporting arguments and evidence",
+            "Counter-argument and rebuttal",
+            "Memorable conclusion or call to action"
+          ],
+          "explanation": "This structure balances engagement, reasoning and persuasion.",
+          "terms": [
+            "english-ll-nlt.2-op-ed",
+            "english-ll-nlt.2-counter-argument"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-NLT.2-2",
+      "title": "Speeches, letters and life writing",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-NLT.2-2-q01",
+          "type": "mcq",
+          "prompt": "Why might an activist publish an open letter to a CEO rather than send a private one?",
+          "options": [
+            "To build public pressure and reach supporters as well as the addressee",
+            "Because private letters are illegal",
+            "To keep the issue secret",
+            "To avoid using persuasion"
+          ],
+          "answer": 0,
+          "explanation": "An open letter has a dual audience: the named addressee and the public watching.",
+          "terms": [
+            "english-ll-nlt.2-open-letter"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q02",
+          "type": "fill",
+          "text": "A non-fiction account of part of the writer's own life is a ___.",
+          "answer": "memoir",
+          "bank": [
+            "memoir",
+            "biography",
+            "editorial",
+            "novel"
+          ],
+          "explanation": "Memoirs select and shape experience; they are constructed like stories.",
+          "terms": [
+            "english-ll-nlt.2-memoir"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q03",
+          "type": "tf",
+          "statement": "Because a memoir is non-fiction, it involves no choices about selection or narrative structure.",
+          "answer": false,
+          "explanation": "Memoirists choose what to include, how to order it and how to present their past selves, so analyse them as crafted texts.",
+          "terms": [
+            "english-ll-nlt.2-memoir"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q04",
+          "type": "mcq",
+          "prompt": "A blog post ends: \"What do you think? Tell me in the comments!\" What does this reflect?",
+          "options": [
+            "The interactive, community-building conventions of blogs",
+            "The formality of an editorial",
+            "A news report's objectivity",
+            "A stage direction"
+          ],
+          "answer": 0,
+          "explanation": "Blogs invite participation, building a relationship between writer and readers.",
+          "terms": [
+            "english-ll-nlt.2-blog"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q05",
+          "type": "match",
+          "prompt": "Match the text type to its typical register.",
+          "pairs": [
+            {
+              "left": "Personal blog",
+              "right": "Informal, conversational"
+            },
+            {
+              "left": "Open letter from scientists",
+              "right": "Formal, authoritative"
+            },
+            {
+              "left": "Wedding speech",
+              "right": "Warm, humorous, personal"
+            },
+            {
+              "left": "Hard news report",
+              "right": "Neutral, factual"
+            }
+          ],
+          "explanation": "Register follows audience and purpose; deviations are worth analysing.",
+          "terms": [
+            "english-ll-nlt.2-blog",
+            "english-ll-nlt.2-open-letter"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q06",
+          "type": "mcq",
+          "prompt": "A memoir is written in present tense: \"I am seven. The house smells of smoke.\" What is the effect?",
+          "options": [
+            "It immerses the reader in the child's experience as if it is happening now",
+            "It shows the writer forgot grammar",
+            "It distances the reader",
+            "It makes the text an advert"
+          ],
+          "answer": 0,
+          "explanation": "Present tense creates immediacy and restricts the view to the child's perspective.",
+          "terms": [
+            "english-ll-nlt.2-memoir"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q07",
+          "type": "fill",
+          "text": "A letter addressed to someone but published for the wider public is an ___ letter.",
+          "answer": "open",
+          "bank": [
+            "open",
+            "formal",
+            "cover",
+            "chain"
+          ],
+          "explanation": "Open letters use the letter form as a public platform.",
+          "terms": [
+            "english-ll-nlt.2-open-letter"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q08",
+          "type": "mcq",
+          "prompt": "In a graduation speech, a principal tells a story about failing her own first exam. What is the main purpose of this anecdote?",
+          "options": [
+            "To build connection and encourage resilience",
+            "To confess to cheating",
+            "To provide statistics",
+            "To criticise the students"
+          ],
+          "answer": 0,
+          "explanation": "Self-deprecating anecdotes humanise speakers and model the message.",
+          "terms": [
+            "english-ll-nlt.2-memoir"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q09",
+          "type": "tf",
+          "statement": "Speeches are written to be heard, so features like repetition, direct address and short sentences are especially important.",
+          "answer": true,
+          "explanation": "Oral delivery shapes the conventions of the speech as a text type.",
+          "terms": [
+            "english-ll-nlt.2-counter-argument"
+          ]
+        },
+        {
+          "id": "english-ll-NLT.2-2-q10",
+          "type": "mcq",
+          "prompt": "A travel blogger lists \"5 hidden beaches you NEED to visit\". What does the listicle form suggest about audience?",
+          "options": [
+            "Skimming online readers who want quick, shareable content",
+            "Academic specialists",
+            "Readers who want a long novel",
+            "A legal audience"
+          ],
+          "answer": 0,
+          "explanation": "Numbered lists, bold claims and capitals suit fast online reading and sharing.",
+          "terms": [
+            "english-ll-nlt.2-blog"
+          ]
+        }
+      ]
+    }
+  ]
+}

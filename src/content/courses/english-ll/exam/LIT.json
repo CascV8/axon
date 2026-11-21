@@ -1,0 +1,16 @@
+[
+  {
+    "id": "english-ll-X-LIT-01",
+    "unit": "LIT",
+    "topics": ["english-ll-LIT.4", "english-ll-LIT.1"],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Speech excerpt: a mayor after a flood",
+    "stem": "Extract from a speech given by a town mayor at a community meeting one week after a river flood.\n\nFriends, neighbours, fellow residents of Ashby Vale.\n\nSeven days ago, the river came into our kitchens. It took our photographs, our furniture, our first-floor bedrooms. It took the bakery that has fed this street since before most of us were born. It did not take us.\n\nI have stood in your hallways in borrowed boots. I have seen the tide line on your walls, a brown signature at the height of a child's shoulder. And I have seen something else: a retired teacher ferrying strangers in a canoe; teenagers carrying sandbags until midnight; a café owner who lost everything handing out soup on the pavement.\n\nThe river has had its say. Now we will have ours.\n\nI will not promise you that it will be quick. I will not promise you that it will be cheap. I will promise you this: not one family in Ashby Vale will face the clean-up alone.",
+    "parts": [
+      { "label": "a", "command": "Analyse", "prompt": "Analyse how the speaker uses rhetorical patterns to build a sense of collective resilience.", "marks": 6, "markscheme": ["opening tricolon of address 'Friends, neighbours, fellow residents' builds inclusion and warmth", "anaphora 'It took… It took…' accumulates loss before the antithetical turn 'It did not take us'", "inclusive pronouns 'our', 'us', 'we' construct a shared identity", "antithesis 'The river has had its say. Now we will have ours.' reframes victims as agents", "anaphora 'I will not promise… I will not promise… I will promise' builds trust through honesty before the commitment", "list of community heroes (asyndeton/tricolon) gives concrete proof of resilience"] },
+      { "label": "b", "command": "Examine", "prompt": "Examine the effect of the figurative language and imagery in the second paragraph.", "marks": 4, "markscheme": ["'borrowed boots' (alliteration, concrete detail) builds ethos: the mayor was present and humble", "metaphor 'a brown signature' personifies the river as an author leaving its mark, making damage feel deliberate/permanent", "'at the height of a child's shoulder' gives a human scale that heightens pathos", "contrast of damage imagery with images of helpers shifts tone from loss to hope"] },
+      { "label": "c", "command": "To what extent", "prompt": "To what extent does the speech balance emotional appeal with credibility?", "marks": 4, "markscheme": ["pathos: personified river, imagery of lost photographs and bakery", "ethos: first-hand witness, honest refusal to over-promise", "logos is limited: no figures or concrete plans, which could weaken credibility for some listeners", "reasoned judgement on the balance, linked to the occasion (kairos: one week after the flood)"] }
+    ]
+  }
+]

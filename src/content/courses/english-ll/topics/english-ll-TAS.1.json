@@ -1,0 +1,409 @@
+{
+  "id": "english-ll-TAS.1",
+  "code": "TAS.1",
+  "unit": "TAS",
+  "title": "Contexts of production and reception",
+  "level": "SL",
+  "summary": "Every text is shaped by when, where and why it was made, and read differently in different times and places. Learn to use context to sharpen analysis, not replace it.",
+  "keyterms": [
+    {
+      "id": "english-ll-tas.1-context",
+      "term": "Context",
+      "definition": "The circumstances surrounding a text, including historical, social, cultural, political and personal factors.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-context-of-production",
+      "term": "Context of production",
+      "definition": "The circumstances in which a text was created: its time, place, culture, medium and the writer's situation.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-context-of-reception",
+      "term": "Context of reception",
+      "definition": "The circumstances in which a text is read or viewed, which can change its meaning over time.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-historical-context",
+      "term": "Historical context",
+      "definition": "Events, values and conditions of the period in which a text was made or is set.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-medium",
+      "term": "Medium",
+      "definition": "The channel through which a text reaches its audience, e.g. print, radio, film, social media.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-anachronism",
+      "term": "Anachronism",
+      "definition": "Something placed in a time where it does not belong, sometimes used deliberately for effect.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-zeitgeist",
+      "term": "Zeitgeist",
+      "definition": "The dominant spirit, mood or set of ideas of a particular period.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-canon",
+      "term": "Canon",
+      "definition": "The body of works traditionally regarded as the most important in a literature; its membership is contested.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-censorship",
+      "term": "Censorship",
+      "definition": "The suppression or control of texts or speech, which can shape what writers say and how indirectly they say it.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.1-reappropriation",
+      "term": "Reappropriation",
+      "definition": "Reclaiming a word, image or text by a group and giving it new meaning, often in a new context.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-TAS.1-1",
+      "title": "Where texts come from",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-TAS.1-1-q01",
+          "type": "mcq",
+          "prompt": "A wartime poster urges: \"Waste not, want not: every crust counts.\" Which context best explains its message?",
+          "options": [
+            "Food rationing and shortages",
+            "A boom in luxury restaurants",
+            "A celebrity diet trend",
+            "The invention of the internet"
+          ],
+          "answer": 0,
+          "explanation": "Thrift messages make sense in a context of scarcity; context explains why the appeal would resonate.",
+          "terms": [
+            "english-ll-tas.1-context-of-production",
+            "english-ll-tas.1-historical-context"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q02",
+          "type": "fill",
+          "text": "The circumstances in which a text is read, rather than written, are its context of ___.",
+          "answer": "reception",
+          "bank": [
+            "reception",
+            "production",
+            "publication",
+            "composition"
+          ],
+          "explanation": "Reception context changes as audiences, values and media change.",
+          "terms": [
+            "english-ll-tas.1-context-of-reception"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q03",
+          "type": "tf",
+          "statement": "In Paper 1, long paragraphs of historical background earn credit even if they are not linked to the text's features.",
+          "answer": false,
+          "explanation": "Context should illuminate specific choices in the text; unlinked background is padding.",
+          "terms": [
+            "english-ll-tas.1-context"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q04",
+          "type": "mcq",
+          "prompt": "A 1950s advert shows a smiling housewife thrilled by a new vacuum cleaner. How might a reader today respond differently from its original audience?",
+          "options": [
+            "Identically, since meaning never changes",
+            "By noticing and questioning its gender stereotypes",
+            "By ignoring the image",
+            "By assuming it is a parody of a modern advert"
+          ],
+          "answer": 1,
+          "explanation": "Shifting values in the context of reception lead modern readers to see stereotypes that the original audience may have taken for granted.",
+          "terms": [
+            "english-ll-tas.1-context-of-reception",
+            "english-ll-tas.1-historical-context"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q05",
+          "type": "match",
+          "prompt": "Match the medium to a typical feature it allows.",
+          "pairs": [
+            {
+              "left": "Radio",
+              "right": "Sound effects and tone of voice"
+            },
+            {
+              "left": "Print newspaper",
+              "right": "Headlines and column layout"
+            },
+            {
+              "left": "Social media",
+              "right": "Hashtags and instant sharing"
+            },
+            {
+              "left": "Film",
+              "right": "Camera angles and editing"
+            }
+          ],
+          "explanation": "The medium shapes what a text can do; analysis should consider its affordances.",
+          "terms": [
+            "english-ll-tas.1-medium"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q06",
+          "type": "mcq",
+          "prompt": "A writer living under a strict regime tells a fable about a lion who silences other animals. Why might she choose allegory?",
+          "options": [
+            "Because fables are shorter",
+            "To criticise power indirectly and avoid censorship",
+            "To write for very young children only",
+            "Because allegory has no meaning"
+          ],
+          "answer": 1,
+          "explanation": "Indirect forms like allegory allow critique where direct criticism would be dangerous.",
+          "terms": [
+            "english-ll-tas.1-censorship",
+            "english-ll-tas.1-context-of-production"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q07",
+          "type": "fill",
+          "text": "The channel through which a text reaches its audience, such as print or podcast, is its ___.",
+          "answer": "medium",
+          "bank": [
+            "medium",
+            "genre",
+            "register",
+            "canon"
+          ],
+          "explanation": "Medium and genre differ: an opinion piece (genre) can appear in print or online (medium).",
+          "terms": [
+            "english-ll-tas.1-medium"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q08",
+          "type": "tf",
+          "statement": "The same speech can gain new meanings when it is quoted decades later in a different struggle.",
+          "answer": true,
+          "explanation": "Reception changes meaning: words are re-read through the concerns of new audiences.",
+          "terms": [
+            "english-ll-tas.1-context-of-reception"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which sentence uses context most effectively in analysis?",
+          "options": [
+            "The poem was written in 1919.",
+            "The war ended in 1918, which was a very important event.",
+            "Written months after the war, the poem's broken lines echo a generation's shattered certainty.",
+            "The poet was born in a small town."
+          ],
+          "answer": 2,
+          "explanation": "Effective use links context directly to a textual feature and its effect.",
+          "terms": [
+            "english-ll-tas.1-context",
+            "english-ll-tas.1-historical-context"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-1-q10",
+          "type": "order",
+          "prompt": "Order these media by when they first became mass media, earliest first.",
+          "items": [
+            "Printed newspaper",
+            "Radio broadcast",
+            "Television",
+            "Social media"
+          ],
+          "explanation": "Each new medium changed how texts reach audiences and how audiences talk back.",
+          "terms": [
+            "english-ll-tas.1-medium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-TAS.1-2",
+      "title": "Changing readings over time",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-TAS.1-2-q01",
+          "type": "mcq",
+          "prompt": "What is the literary canon?",
+          "options": [
+            "A fixed list approved by the IB",
+            "A contested body of works traditionally seen as most important",
+            "Any book sold in an airport",
+            "A type of rhyme scheme"
+          ],
+          "answer": 1,
+          "explanation": "The canon is shaped by power and taste and has been challenged for excluding many voices.",
+          "terms": [
+            "english-ll-tas.1-canon"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q02",
+          "type": "tf",
+          "statement": "Debates about the canon are relevant to this course, which asks students to study works from different places, periods and translations.",
+          "answer": true,
+          "explanation": "The course encourages a range of works and critical thinking about whose writing counts as literature.",
+          "terms": [
+            "english-ll-tas.1-canon"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q03",
+          "type": "fill",
+          "text": "The dominant spirit or mood of a period is its ___.",
+          "answer": "zeitgeist",
+          "bank": [
+            "zeitgeist",
+            "canon",
+            "medium",
+            "motif"
+          ],
+          "explanation": "Texts often capture or react against the zeitgeist of their time.",
+          "terms": [
+            "english-ll-tas.1-zeitgeist"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q04",
+          "type": "mcq",
+          "prompt": "A community reclaims a slur once used against it and uses it with pride in song lyrics. What is this?",
+          "options": [
+            "Censorship",
+            "Reappropriation",
+            "Anachronism",
+            "Denotation"
+          ],
+          "answer": 1,
+          "explanation": "Reappropriation transforms meaning by changing who uses a word and in what context.",
+          "terms": [
+            "english-ll-tas.1-reappropriation"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q05",
+          "type": "mcq",
+          "prompt": "A modern film of a classic play has characters texting on smartphones. What is this choice?",
+          "options": [
+            "An error",
+            "A deliberate anachronism to make the story feel contemporary",
+            "A stereotype",
+            "An example of censorship"
+          ],
+          "answer": 1,
+          "explanation": "Deliberate anachronism bridges contexts and suggests the story's concerns are timeless.",
+          "terms": [
+            "english-ll-tas.1-anachronism",
+            "english-ll-tas.1-context-of-reception"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q06",
+          "type": "match",
+          "prompt": "Match the context type to an example.",
+          "pairs": [
+            {
+              "left": "Historical",
+              "right": "A recession is under way"
+            },
+            {
+              "left": "Cultural",
+              "right": "Shared religious festivals"
+            },
+            {
+              "left": "Personal",
+              "right": "The writer recently lost a parent"
+            },
+            {
+              "left": "Political",
+              "right": "An election campaign"
+            }
+          ],
+          "explanation": "Naming the precise kind of context makes analysis sharper.",
+          "terms": [
+            "english-ll-tas.1-context"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q07",
+          "type": "tf",
+          "statement": "A text's meaning is fixed at the moment it is written and never changes.",
+          "answer": false,
+          "explanation": "Meaning shifts with readers and contexts of reception; this is central to the time and space area of exploration.",
+          "terms": [
+            "english-ll-tas.1-context-of-reception"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q08",
+          "type": "mcq",
+          "prompt": "A 1970s magazine article confidently predicts flying cars by 2000. How does reading it now affect its tone?",
+          "options": [
+            "It becomes unintentionally ironic",
+            "It becomes more persuasive",
+            "It loses all meaning",
+            "It turns into poetry"
+          ],
+          "answer": 0,
+          "explanation": "Hindsight in the context of reception can make earnest texts seem ironic or naïve.",
+          "terms": [
+            "english-ll-tas.1-context-of-reception"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q09",
+          "type": "fill",
+          "text": "The suppression or control of texts by authorities is called ___.",
+          "answer": "censorship",
+          "bank": [
+            "censorship",
+            "framing",
+            "reappropriation",
+            "omission"
+          ],
+          "explanation": "Censorship shapes both what is published and how writers encode meaning.",
+          "terms": [
+            "english-ll-tas.1-censorship"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.1-2-q10",
+          "type": "mcq",
+          "prompt": "Why is it useful to know that a speech was first broadcast on radio?",
+          "options": [
+            "It explains the reliance on sound, rhythm and repetition rather than visuals",
+            "It tells us the speaker's age",
+            "It proves the speech was fictional",
+            "It is not useful at all"
+          ],
+          "answer": 0,
+          "explanation": "Medium is part of the context of production and shapes technique: radio rewards memorable sound patterns.",
+          "terms": [
+            "english-ll-tas.1-medium",
+            "english-ll-tas.1-context-of-production"
+          ]
+        }
+      ]
+    }
+  ]
+}

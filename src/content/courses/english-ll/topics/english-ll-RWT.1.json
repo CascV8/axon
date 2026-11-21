@@ -1,0 +1,410 @@
+{
+  "id": "english-ll-RWT.1",
+  "code": "RWT.1",
+  "unit": "RWT",
+  "title": "Texts, audience and purpose",
+  "level": "SL",
+  "summary": "What counts as a text, who it is for and what it is trying to do: the starting point for every analysis in this course.",
+  "keyterms": [
+    {
+      "id": "english-ll-rwt.1-text",
+      "term": "Text",
+      "definition": "Any crafted piece of communication that can be analysed, from a novel or poem to an advert, tweet, photograph or speech.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-audience",
+      "term": "Audience",
+      "definition": "The readers, viewers or listeners a text is aimed at; the intended audience shapes vocabulary, tone, content and form.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-purpose",
+      "term": "Purpose",
+      "definition": "What a text aims to achieve, such as to persuade, inform, entertain, provoke, commemorate or sell.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-register",
+      "term": "Register",
+      "definition": "The level of formality in language, chosen to suit the audience, purpose and situation.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-tone",
+      "term": "Tone",
+      "definition": "The attitude a text conveys towards its subject or audience, e.g. urgent, ironic, warm or detached.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-mode-of-address",
+      "term": "Mode of address",
+      "definition": "How a text speaks to its audience, e.g. directly with 'you', inclusively with 'we', or impersonally.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-literary-text",
+      "term": "Literary text",
+      "definition": "A text valued for its artistic use of language and form, such as a poem, novel, short story or play.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-non-literary-text",
+      "term": "Non-literary text",
+      "definition": "A text mainly designed for a practical, social or commercial function, such as an advert, article, speech or infographic.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-implied-reader",
+      "term": "Implied reader",
+      "definition": "The kind of reader a text seems to assume, revealed by what it explains, takes for granted or values.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.1-target-audience",
+      "term": "Target audience",
+      "definition": "A specific group a text is designed to reach, often defined by age, interests, values or needs.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-RWT.1-1",
+      "title": "Who is it for and why?",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-RWT.1-1-q01",
+          "type": "mcq",
+          "prompt": "A leaflet says: \"Got a spare hour on Saturdays? Help us turn the old car park into a garden everyone can enjoy.\" What is its main purpose?",
+          "options": [
+            "To inform readers about the history of the car park",
+            "To persuade local residents to volunteer",
+            "To entertain readers with a story",
+            "To criticise the council for neglect"
+          ],
+          "answer": 1,
+          "explanation": "The direct question and the invitation to 'help us' show a persuasive purpose aimed at recruiting volunteers.",
+          "terms": [
+            "english-ll-rwt.1-purpose"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q02",
+          "type": "tf",
+          "statement": "In this course, a photograph, a cereal box and a tweet can all be treated as texts.",
+          "answer": true,
+          "explanation": "Language and literature uses a broad definition of 'text': any crafted communication whose choices can be analysed.",
+          "terms": [
+            "english-ll-rwt.1-text"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q03",
+          "type": "fill",
+          "text": "The level of formality a writer chooses, such as formal or colloquial, is called ___.",
+          "answer": "register",
+          "bank": [
+            "register",
+            "tone",
+            "genre",
+            "syntax"
+          ],
+          "explanation": "Register describes formality. Tone is the attitude expressed; the two often work together.",
+          "terms": [
+            "english-ll-rwt.1-register"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q04",
+          "type": "mcq",
+          "prompt": "\"Yo! Grab your mates and smash the summer with our NEW fizz!\" Which audience is most likely targeted?",
+          "options": [
+            "Retired professionals",
+            "Teenagers and young adults",
+            "Company shareholders",
+            "Medical researchers"
+          ],
+          "answer": 1,
+          "explanation": "Slang ('Yo', 'mates', 'smash'), exclamations and a focus on socialising suggest a young target audience.",
+          "terms": [
+            "english-ll-rwt.1-target-audience",
+            "english-ll-rwt.1-register"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q05",
+          "type": "match",
+          "prompt": "Match each text to its most likely main purpose.",
+          "pairs": [
+            {
+              "left": "Train timetable",
+              "right": "To inform"
+            },
+            {
+              "left": "Charity appeal",
+              "right": "To persuade"
+            },
+            {
+              "left": "Stand-up comedy routine",
+              "right": "To entertain"
+            },
+            {
+              "left": "Eulogy at a funeral",
+              "right": "To commemorate"
+            }
+          ],
+          "explanation": "Most texts have a primary purpose, though many combine several (an advert may entertain in order to persuade).",
+          "terms": [
+            "english-ll-rwt.1-purpose"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q06",
+          "type": "mcq",
+          "prompt": "A sentence reads: \"We all know that feeling when the alarm goes off on a Monday.\" What mode of address is used?",
+          "options": [
+            "Impersonal and detached",
+            "Inclusive first-person plural",
+            "Second-person command",
+            "Third-person narration"
+          ],
+          "answer": 1,
+          "explanation": "'We all know' creates an inclusive mode of address, building shared experience and rapport with the reader.",
+          "terms": [
+            "english-ll-rwt.1-mode-of-address"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q07",
+          "type": "tf",
+          "statement": "A text can only ever have one purpose.",
+          "answer": false,
+          "explanation": "Texts often have layered purposes: a public health advert may inform, shock and persuade at the same time.",
+          "terms": [
+            "english-ll-rwt.1-purpose"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q08",
+          "type": "fill",
+          "text": "The attitude a text conveys, for example bitter, playful or reverent, is its ___.",
+          "answer": "tone",
+          "bank": [
+            "tone",
+            "register",
+            "form",
+            "audience"
+          ],
+          "explanation": "Tone is the attitude or feeling conveyed; analyse which word choices create it.",
+          "terms": [
+            "english-ll-rwt.1-tone"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q09",
+          "type": "mcq",
+          "prompt": "Which feature most clearly marks a text as literary rather than non-literary?",
+          "options": [
+            "It contains facts and figures",
+            "It is printed on paper",
+            "Its main value lies in its artistic use of language and form",
+            "It was written by a famous person"
+          ],
+          "answer": 2,
+          "explanation": "Literary texts are valued chiefly for their aesthetic, imaginative use of language. The boundary is blurry and itself worth discussing.",
+          "terms": [
+            "english-ll-rwt.1-literary-text",
+            "english-ll-rwt.1-non-literary-text"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-1-q10",
+          "type": "order",
+          "prompt": "Put these first steps for approaching an unseen text in a sensible order.",
+          "items": [
+            "Identify the text type",
+            "Work out the audience and purpose",
+            "Note key features of language and structure",
+            "Explain how those features achieve the purpose"
+          ],
+          "explanation": "Moving from what the text is, to whom and why, to how, keeps analysis focused on effect.",
+          "terms": [
+            "english-ll-rwt.1-audience",
+            "english-ll-rwt.1-purpose"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-RWT.1-2",
+      "title": "Reading the implied reader",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-RWT.1-2-q01",
+          "type": "mcq",
+          "prompt": "A travel article says: \"Skip the tourist traps; you've seen the Eiffel Tower on a thousand postcards.\" What does this suggest about the implied reader?",
+          "options": [
+            "They have never travelled before",
+            "They see themselves as an experienced, independent traveller",
+            "They are a child",
+            "They work in the tourism industry"
+          ],
+          "answer": 1,
+          "explanation": "The text assumes the reader already knows famous sights and wants something more authentic, flattering a self-image of the savvy traveller.",
+          "terms": [
+            "english-ll-rwt.1-implied-reader"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q02",
+          "type": "tf",
+          "statement": "The implied reader is always the same person as the actual reader.",
+          "answer": false,
+          "explanation": "The implied reader is constructed by the text. Real readers may resist or fall outside that role, which can produce critical readings.",
+          "terms": [
+            "english-ll-rwt.1-implied-reader"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q03",
+          "type": "fill",
+          "text": "Using the pronoun \"you\" to speak to the reader directly is called direct ___.",
+          "answer": "address",
+          "bank": [
+            "address",
+            "speech",
+            "object",
+            "tone"
+          ],
+          "explanation": "Direct address involves the reader personally and is common in advertising and speeches.",
+          "terms": [
+            "english-ll-rwt.1-mode-of-address"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q04",
+          "type": "mcq",
+          "prompt": "A bank's website explains: \"An ISA is a tax-free savings account.\" What does the definition reveal about the target audience?",
+          "options": [
+            "They are financial experts",
+            "They may be new to saving or investing",
+            "They are children",
+            "They are bank employees"
+          ],
+          "answer": 1,
+          "explanation": "Explaining basic terms implies readers who might not know them, so the text targets newcomers.",
+          "terms": [
+            "english-ll-rwt.1-target-audience",
+            "english-ll-rwt.1-implied-reader"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q05",
+          "type": "mcq",
+          "prompt": "Which register best suits a letter of complaint to an airline?",
+          "options": [
+            "Formal and measured",
+            "Slang-heavy and casual",
+            "Poetic and figurative",
+            "Childlike and simple"
+          ],
+          "answer": 0,
+          "explanation": "A formal, measured register signals seriousness and makes the complaint more likely to be taken seriously.",
+          "terms": [
+            "english-ll-rwt.1-register"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q06",
+          "type": "match",
+          "prompt": "Match the mode of address to its example.",
+          "pairs": [
+            {
+              "left": "Imperative",
+              "right": "Book your tickets today."
+            },
+            {
+              "left": "Inclusive 'we'",
+              "right": "Together we can end this."
+            },
+            {
+              "left": "Impersonal",
+              "right": "Applications must be received by Friday."
+            },
+            {
+              "left": "Rhetorical question",
+              "right": "Isn't it time you treated yourself?"
+            }
+          ],
+          "explanation": "Each mode positions the reader differently: commanded, included, kept at a distance or invited to agree.",
+          "terms": [
+            "english-ll-rwt.1-mode-of-address"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q07",
+          "type": "tf",
+          "statement": "Shifts in tone within a text are worth analysing because they often mark a change in purpose or argument.",
+          "answer": true,
+          "explanation": "A move from humour to seriousness, for instance, often signals the key message. Track tone shifts across the structure.",
+          "terms": [
+            "english-ll-rwt.1-tone",
+            "english-ll-rwt.1-purpose"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q08",
+          "type": "fill",
+          "text": "A specific group a text is designed to reach, such as new parents or gamers, is its ___ audience.",
+          "answer": "target",
+          "bank": [
+            "target",
+            "implied",
+            "general",
+            "primary"
+          ],
+          "explanation": "Defining the target audience precisely helps explain the writer's choices.",
+          "terms": [
+            "english-ll-rwt.1-target-audience"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q09",
+          "type": "mcq",
+          "prompt": "Why is \"the audience is everyone\" a weak claim in a Paper 1 answer?",
+          "options": [
+            "Because texts never have audiences",
+            "Because it does not explain any specific choice the writer has made",
+            "Because examiners prefer one-word answers",
+            "Because only literary texts have audiences"
+          ],
+          "answer": 1,
+          "explanation": "Strong answers define the audience precisely and use that to explain particular choices of language, image and structure.",
+          "terms": [
+            "english-ll-rwt.1-audience",
+            "english-ll-rwt.1-target-audience"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.1-2-q10",
+          "type": "mcq",
+          "prompt": "A recipe blog opens with a long personal story before the recipe. Which purpose does the story mainly serve?",
+          "options": [
+            "To give exact measurements",
+            "To build a relationship with readers and a personal brand",
+            "To meet a legal requirement",
+            "To criticise other cooks"
+          ],
+          "answer": 1,
+          "explanation": "Personal anecdote builds trust and a sense of community, keeping readers returning; the blog form rewards personality.",
+          "terms": [
+            "english-ll-rwt.1-purpose",
+            "english-ll-rwt.1-audience"
+          ]
+        }
+      ]
+    }
+  ]
+}

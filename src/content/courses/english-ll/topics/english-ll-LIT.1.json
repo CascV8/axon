@@ -1,0 +1,424 @@
+{
+  "id": "english-ll-LIT.1",
+  "code": "LIT.1",
+  "unit": "LIT",
+  "title": "Figurative language and imagery",
+  "level": "SL",
+  "summary": "Spot and analyse metaphor, simile, personification, symbolism, irony and other figures in short original examples, always explaining their effect.",
+  "keyterms": [
+    {
+      "id": "english-ll-lit.1-metaphor",
+      "term": "Metaphor",
+      "definition": "A figure that describes one thing as if it were another, without 'like' or 'as', transferring associations.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-simile",
+      "term": "Simile",
+      "definition": "A comparison using 'like' or 'as'.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-personification",
+      "term": "Personification",
+      "definition": "Giving human qualities or actions to non-human things or ideas.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-imagery",
+      "term": "Imagery",
+      "definition": "Language that appeals to the senses to create vivid mental pictures, sounds, textures, tastes or smells.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-symbol",
+      "term": "Symbol",
+      "definition": "An object, colour or action that represents an idea beyond its literal meaning.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-hyperbole",
+      "term": "Hyperbole",
+      "definition": "Deliberate exaggeration for emphasis or effect.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-irony",
+      "term": "Irony",
+      "definition": "A gap between what is said and meant (verbal), expected and what happens (situational), or what characters and audience know (dramatic).",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-oxymoron",
+      "term": "Oxymoron",
+      "definition": "Two contradictory words placed together, e.g. 'deafening silence'.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-metonymy",
+      "term": "Metonymy",
+      "definition": "Referring to something by a closely associated thing, e.g. 'the Crown' for the monarchy.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-synecdoche",
+      "term": "Synecdoche",
+      "definition": "Using a part to stand for the whole or the whole for a part, e.g. 'all hands on deck'.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-extended-metaphor",
+      "term": "Extended metaphor",
+      "definition": "A metaphor developed across several lines or a whole text.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.1-euphemism",
+      "term": "Euphemism",
+      "definition": "A mild or indirect expression used in place of something harsh or unpleasant.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-LIT.1-1",
+      "title": "Comparison and imagery",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-LIT.1-1-q01",
+          "type": "mcq",
+          "prompt": "\"The city was a beast that never slept.\" Which device is used?",
+          "options": [
+            "Simile",
+            "Metaphor",
+            "Onomatopoeia",
+            "Euphemism"
+          ],
+          "answer": 1,
+          "explanation": "The city is described as a beast without 'like' or 'as', suggesting restless, perhaps dangerous energy.",
+          "terms": [
+            "english-ll-lit.1-metaphor"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q02",
+          "type": "mcq",
+          "prompt": "\"Her laugh scattered like startled pigeons.\" What is the effect of the simile?",
+          "options": [
+            "It makes the laugh sound sudden, light and bursting outward",
+            "It shows she dislikes birds",
+            "It slows the pace of the sentence",
+            "It suggests she is silent"
+          ],
+          "answer": 0,
+          "explanation": "Startled pigeons burst upward unpredictably, so the laugh seems spontaneous and uncontained.",
+          "terms": [
+            "english-ll-lit.1-simile"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q03",
+          "type": "fill",
+          "text": "\"The wind whispered secrets through the reeds\" is an example of ___.",
+          "answer": "personification",
+          "bank": [
+            "personification",
+            "hyperbole",
+            "metonymy",
+            "oxymoron"
+          ],
+          "explanation": "Whispering secrets is a human action, making the wind seem intimate and mysterious.",
+          "terms": [
+            "english-ll-lit.1-personification"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q04",
+          "type": "tf",
+          "statement": "\"The bread was warm, its crust crackling under my thumb, its smell of yeast filling the kitchen\" uses tactile, auditory and olfactory imagery.",
+          "answer": true,
+          "explanation": "Warmth (touch), crackling (sound) and smell combine into multi-sensory imagery that evokes comfort.",
+          "terms": [
+            "english-ll-lit.1-imagery"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q05",
+          "type": "match",
+          "prompt": "Match the example to the device.",
+          "pairs": [
+            {
+              "left": "I've told you a million times",
+              "right": "Hyperbole"
+            },
+            {
+              "left": "A bittersweet farewell",
+              "right": "Oxymoron"
+            },
+            {
+              "left": "The pen is mightier than the sword",
+              "right": "Metonymy"
+            },
+            {
+              "left": "Brave as a lion",
+              "right": "Simile"
+            }
+          ],
+          "explanation": "'Pen' and 'sword' stand for writing and military force: associated objects standing for ideas.",
+          "terms": [
+            "english-ll-lit.1-hyperbole",
+            "english-ll-lit.1-oxymoron",
+            "english-ll-lit.1-metonymy",
+            "english-ll-lit.1-simile"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q06",
+          "type": "mcq",
+          "prompt": "In a story, a caged canary appears in the room of a woman trapped in an unhappy marriage. What is the canary most likely to be?",
+          "options": [
+            "A symbol of her confinement",
+            "An example of onomatopoeia",
+            "A euphemism",
+            "A piece of hyperbole"
+          ],
+          "answer": 0,
+          "explanation": "The caged bird mirrors her situation, symbolising beauty and voice kept captive.",
+          "terms": [
+            "english-ll-lit.1-symbol"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q07",
+          "type": "fill",
+          "text": "\"We need more boots on the ground\" uses ___, as boots (a part) stand for soldiers.",
+          "answer": "synecdoche",
+          "bank": [
+            "synecdoche",
+            "simile",
+            "personification",
+            "irony"
+          ],
+          "explanation": "Synecdoche uses a part for the whole; here it also depersonalises the soldiers.",
+          "terms": [
+            "english-ll-lit.1-synecdoche"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q08",
+          "type": "mcq",
+          "prompt": "A poem describes love as a garden in every stanza: planting, weeding, drought, harvest. What is this?",
+          "options": [
+            "Extended metaphor",
+            "A single simile",
+            "Onomatopoeia",
+            "Dramatic irony"
+          ],
+          "answer": 0,
+          "explanation": "An extended metaphor develops one comparison across the poem, letting each stage suggest a phase of the relationship.",
+          "terms": [
+            "english-ll-lit.1-extended-metaphor",
+            "english-ll-lit.1-metaphor"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q09",
+          "type": "tf",
+          "statement": "Naming a device such as 'metaphor' is enough to gain high marks for analysis.",
+          "answer": false,
+          "explanation": "Examiners reward explaining the effect of a device and how it serves the text's purpose, not just labelling it.",
+          "terms": [
+            "english-ll-lit.1-metaphor",
+            "english-ll-lit.1-imagery"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-1-q10",
+          "type": "order",
+          "prompt": "Order this analysis of \"Grief was a tide that came in without warning.\"",
+          "items": [
+            "Identify the metaphor of grief as a tide",
+            "Explore connotations: vast, uncontrollable, recurring",
+            "Link 'without warning' to helplessness",
+            "Connect to the text's wider presentation of loss"
+          ],
+          "explanation": "Moving from device to connotations to detail to wider meaning builds layered analysis.",
+          "terms": [
+            "english-ll-lit.1-metaphor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-LIT.1-2",
+      "title": "Irony, understatement and indirect language",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-LIT.1-2-q01",
+          "type": "mcq",
+          "prompt": "A fire station burns down. Which type of irony is this?",
+          "options": [
+            "Verbal",
+            "Situational",
+            "Dramatic",
+            "Romantic"
+          ],
+          "answer": 1,
+          "explanation": "Situational irony is a gap between what we expect and what happens.",
+          "terms": [
+            "english-ll-lit.1-irony"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q02",
+          "type": "mcq",
+          "prompt": "The audience knows the letter has been forged, but the hero trusts it completely. Which irony is this?",
+          "options": [
+            "Verbal",
+            "Situational",
+            "Dramatic",
+            "Cosmic"
+          ],
+          "answer": 2,
+          "explanation": "Dramatic irony occurs when the audience knows more than a character, creating tension.",
+          "terms": [
+            "english-ll-lit.1-irony"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q03",
+          "type": "fill",
+          "text": "Saying someone \"passed away\" instead of \"died\" is a ___.",
+          "answer": "euphemism",
+          "bank": [
+            "euphemism",
+            "hyperbole",
+            "oxymoron",
+            "synecdoche"
+          ],
+          "explanation": "Euphemisms soften harsh realities; in political texts they can also hide them, e.g. 'collateral damage'.",
+          "terms": [
+            "english-ll-lit.1-euphemism"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q04",
+          "type": "tf",
+          "statement": "\"Collateral damage\" for civilian deaths is a euphemism that can distance readers from the reality of harm.",
+          "answer": true,
+          "explanation": "Abstract, technical phrasing removes the human image, which is why critics analyse such euphemisms.",
+          "terms": [
+            "english-ll-lit.1-euphemism"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q05",
+          "type": "mcq",
+          "prompt": "\"Oh great, another Monday,\" she groaned. What device is used?",
+          "options": [
+            "Verbal irony",
+            "Personification",
+            "Simile",
+            "Synecdoche"
+          ],
+          "answer": 0,
+          "explanation": "She says 'great' but means the opposite, which is verbal irony (here sarcasm).",
+          "terms": [
+            "english-ll-lit.1-irony"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q06",
+          "type": "match",
+          "prompt": "Match the phrase to the device.",
+          "pairs": [
+            {
+              "left": "Living death",
+              "right": "Oxymoron"
+            },
+            {
+              "left": "The White House announced…",
+              "right": "Metonymy"
+            },
+            {
+              "left": "Between jobs",
+              "right": "Euphemism"
+            },
+            {
+              "left": "The storm swallowed the town",
+              "right": "Personification"
+            }
+          ],
+          "explanation": "Each device makes the reader work differently: resolving a paradox, decoding an association or seeing past a softened phrase.",
+          "terms": [
+            "english-ll-lit.1-oxymoron",
+            "english-ll-lit.1-metonymy",
+            "english-ll-lit.1-euphemism",
+            "english-ll-lit.1-personification"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q07",
+          "type": "fill",
+          "text": "Deliberate exaggeration for emphasis is called ___.",
+          "answer": "hyperbole",
+          "bank": [
+            "hyperbole",
+            "litotes",
+            "irony",
+            "euphemism"
+          ],
+          "explanation": "Hyperbole can be comic, emotional or persuasive; ask what it emphasises.",
+          "terms": [
+            "english-ll-lit.1-hyperbole"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q08",
+          "type": "mcq",
+          "prompt": "Why might a war poet use the oxymoron \"glorious slaughter\"?",
+          "options": [
+            "To praise war sincerely",
+            "To expose the contradiction between heroic rhetoric and brutal reality",
+            "To describe a sunset",
+            "To create rhyme"
+          ],
+          "answer": 1,
+          "explanation": "The clash between 'glorious' and 'slaughter' undermines the propaganda language of heroism.",
+          "terms": [
+            "english-ll-lit.1-oxymoron",
+            "english-ll-lit.1-irony"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q09",
+          "type": "tf",
+          "statement": "A symbol's meaning can change and develop over the course of a novel.",
+          "answer": true,
+          "explanation": "Recurring symbols often gather or shift meaning; tracking that development makes strong analysis.",
+          "terms": [
+            "english-ll-lit.1-symbol"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.1-2-q10",
+          "type": "mcq",
+          "prompt": "\"Downing Street refused to comment.\" What does \"Downing Street\" represent?",
+          "options": [
+            "A literal road speaking",
+            "The UK Prime Minister's office, by metonymy",
+            "A simile for silence",
+            "An oxymoron"
+          ],
+          "answer": 1,
+          "explanation": "Metonymy uses an associated place to stand for an institution, giving an impersonal, authoritative effect.",
+          "terms": [
+            "english-ll-lit.1-metonymy"
+          ]
+        }
+      ]
+    }
+  ]
+}

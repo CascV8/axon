@@ -1,0 +1,397 @@
+{
+  "id": "english-ll-ASK.3",
+  "code": "ASK.3",
+  "unit": "ASK",
+  "title": "The HL essay",
+  "level": "HL",
+  "summary": "The HL-only formal essay: choosing a text and a line of inquiry, building an argument in 1,200–1,500 words, and meeting the four criteria.",
+  "keyterms": [
+    {
+      "id": "english-ll-ask.3-hl-essay",
+      "term": "HL essay",
+      "definition": "A formal coursework essay of 1,200–1,500 words on one literary or non-literary text or work studied, worth 20% at HL.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.3-line-of-inquiry",
+      "term": "Line of inquiry",
+      "definition": "The focused question that drives the HL essay, often developed from the learner portfolio.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.3-learner-portfolio",
+      "term": "Learner portfolio",
+      "definition": "A student's collection of responses and reflections across the course, used to develop ideas for assessments.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.3-academic-honesty",
+      "term": "Academic honesty",
+      "definition": "Acknowledging all sources accurately and submitting only your own work.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.3-secondary-source",
+      "term": "Secondary source",
+      "definition": "Criticism or commentary about a text; optional in the HL essay and must be cited.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.3-citation",
+      "term": "Citation",
+      "definition": "A reference identifying the source of a quotation or idea.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.3-development",
+      "term": "Development",
+      "definition": "How an argument grows logically from paragraph to paragraph rather than repeating points.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.3-hl-criterion-c",
+      "term": "Focus, organization and development",
+      "definition": "HL essay criterion C (5 marks): a coherent, well-developed argument that stays on the line of inquiry.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-ASK.3-1",
+      "title": "Planning the HL essay",
+      "hl": true,
+      "questions": [
+        {
+          "id": "english-ll-ASK.3-1-q01",
+          "type": "mcq",
+          "prompt": "What is the word count for the HL essay?",
+          "options": [
+            "1,200–1,500 words",
+            "500–800 words",
+            "2,500–4,000 words",
+            "No limit"
+          ],
+          "answer": 0,
+          "explanation": "Examiners stop reading beyond the upper limit, so stay within it.",
+          "terms": [
+            "english-ll-ask.3-hl-essay"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q02",
+          "type": "tf",
+          "statement": "The HL essay may be written on a literary work or a non-literary text or body of work studied in the course.",
+          "answer": true,
+          "explanation": "You choose one text or work, but it cannot be one used in the individual oral or for Paper 2.",
+          "terms": [
+            "english-ll-ask.3-hl-essay"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q03",
+          "type": "fill",
+          "text": "The focused question that drives the HL essay is called the line of ___.",
+          "answer": "inquiry",
+          "bank": [
+            "inquiry",
+            "argument",
+            "reasoning",
+            "thought"
+          ],
+          "explanation": "A precise line of inquiry keeps the essay focused and analytical.",
+          "terms": [
+            "english-ll-ask.3-line-of-inquiry"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q04",
+          "type": "mcq",
+          "prompt": "Which is the strongest line of inquiry?",
+          "options": [
+            "Is this novel good?",
+            "Gender",
+            "How does the novel's shifting narrative voice expose the limits of the narrator's self-knowledge?",
+            "The life of the author"
+          ],
+          "answer": 2,
+          "explanation": "It is specific, focused on authorial choice and arguable within the word limit.",
+          "terms": [
+            "english-ll-ask.3-line-of-inquiry"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q05",
+          "type": "match",
+          "prompt": "Match the HL essay criterion to its focus (5 marks each).",
+          "pairs": [
+            {
+              "left": "A",
+              "right": "Knowledge, understanding and interpretation"
+            },
+            {
+              "left": "B",
+              "right": "Analysis and evaluation"
+            },
+            {
+              "left": "C",
+              "right": "Focus, organization and development"
+            },
+            {
+              "left": "D",
+              "right": "Language"
+            }
+          ],
+          "explanation": "Four criteria of 5 marks give the essay's 20 marks.",
+          "terms": [
+            "english-ll-ask.3-hl-essay",
+            "english-ll-ask.3-hl-criterion-c"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q06",
+          "type": "mcq",
+          "prompt": "How can the learner portfolio help with the HL essay?",
+          "options": [
+            "It stores reflections and explorations from which a line of inquiry can grow",
+            "It is submitted instead of the essay",
+            "It is marked as Paper 3",
+            "It is not related"
+          ],
+          "answer": 0,
+          "explanation": "The portfolio is a record of thinking that feeds all assessments; it is not itself marked.",
+          "terms": [
+            "english-ll-ask.3-learner-portfolio"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q07",
+          "type": "tf",
+          "statement": "Using secondary sources is compulsory in the HL essay.",
+          "answer": false,
+          "explanation": "Secondary sources are optional; if used, they must support your argument and be properly cited.",
+          "terms": [
+            "english-ll-ask.3-secondary-source"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q08",
+          "type": "fill",
+          "text": "Acknowledging all sources and submitting your own work is part of academic ___.",
+          "answer": "honesty",
+          "bank": [
+            "honesty",
+            "integrity rules",
+            "freedom",
+            "writing"
+          ],
+          "explanation": "Any quotation or borrowed idea must be referenced.",
+          "terms": [
+            "english-ll-ask.3-academic-honesty",
+            "english-ll-ask.3-citation"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q09",
+          "type": "mcq",
+          "prompt": "Why should you avoid a line of inquiry that is mainly about the author's biography?",
+          "options": [
+            "The essay rewards analysis of the text and its choices, not biography",
+            "Biographies are banned",
+            "It makes the essay too short",
+            "It is always plagiarism"
+          ],
+          "answer": 0,
+          "explanation": "Context can support analysis, but the focus must be the text.",
+          "terms": [
+            "english-ll-ask.3-line-of-inquiry"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-1-q10",
+          "type": "order",
+          "prompt": "Order the HL essay process.",
+          "items": [
+            "Review the learner portfolio for ideas",
+            "Choose a text and draft a line of inquiry",
+            "Gather evidence and plan the argument",
+            "Write a draft and receive teacher feedback",
+            "Revise and submit the final essay"
+          ],
+          "explanation": "Teachers may give one round of written feedback on a draft.",
+          "terms": [
+            "english-ll-ask.3-learner-portfolio",
+            "english-ll-ask.3-line-of-inquiry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-ASK.3-2",
+      "title": "Writing and developing the argument",
+      "hl": true,
+      "questions": [
+        {
+          "id": "english-ll-ASK.3-2-q01",
+          "type": "mcq",
+          "prompt": "What does \"development\" mean in criterion C?",
+          "options": [
+            "Each paragraph advances the argument, building towards a fuller answer",
+            "Writing more words",
+            "Adding many quotations",
+            "Retelling the plot in order"
+          ],
+          "answer": 0,
+          "explanation": "Development means ideas grow and deepen rather than circling the same point.",
+          "terms": [
+            "english-ll-ask.3-development",
+            "english-ll-ask.3-hl-criterion-c"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q02",
+          "type": "tf",
+          "statement": "Quotations in the HL essay should be cited so the examiner can locate them.",
+          "answer": true,
+          "explanation": "Consistent citation of primary and any secondary sources is required.",
+          "terms": [
+            "english-ll-ask.3-citation"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q03",
+          "type": "fill",
+          "text": "Criticism or commentary written about a text is a ___ source.",
+          "answer": "secondary",
+          "bank": [
+            "secondary",
+            "primary",
+            "tertiary",
+            "fictional"
+          ],
+          "explanation": "The text itself is the primary source.",
+          "terms": [
+            "english-ll-ask.3-secondary-source"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q04",
+          "type": "mcq",
+          "prompt": "Which paragraph opening best shows development?",
+          "options": [
+            "Another technique is imagery.",
+            "If the narrator's early confidence masks his doubts, the fractured syntax of the final chapter shows that mask finally slipping.",
+            "Also, the book is good.",
+            "Next I will talk about chapter 4."
+          ],
+          "answer": 1,
+          "explanation": "It builds explicitly on a previous point, moving the argument forward.",
+          "terms": [
+            "english-ll-ask.3-development"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q05",
+          "type": "match",
+          "prompt": "Match the essay part to its job.",
+          "pairs": [
+            {
+              "left": "Introduction",
+              "right": "Presents the line of inquiry and thesis"
+            },
+            {
+              "left": "Body paragraph",
+              "right": "Develops one step of the argument"
+            },
+            {
+              "left": "Conclusion",
+              "right": "Synthesises findings and their significance"
+            },
+            {
+              "left": "Works cited",
+              "right": "Lists sources used"
+            }
+          ],
+          "explanation": "A formal essay structure supports focus and academic honesty.",
+          "terms": [
+            "english-ll-ask.3-hl-essay",
+            "english-ll-ask.3-citation"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q06",
+          "type": "mcq",
+          "prompt": "What register is appropriate for the HL essay?",
+          "options": [
+            "Formal academic register",
+            "Text-message style",
+            "Highly informal spoken style",
+            "Poetic verse"
+          ],
+          "answer": 0,
+          "explanation": "Criterion D rewards clear, precise, formal academic language.",
+          "terms": [
+            "english-ll-ask.3-hl-essay"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q07",
+          "type": "tf",
+          "statement": "A conclusion should introduce a brand-new argument not mentioned in the essay.",
+          "answer": false,
+          "explanation": "Conclusions synthesise; they may suggest wider significance but should not open new arguments.",
+          "terms": [
+            "english-ll-ask.3-development"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q08",
+          "type": "mcq",
+          "prompt": "What should you do if your draft is 1,800 words?",
+          "options": [
+            "Cut summary, repetition and weaker points to fit the limit",
+            "Submit it anyway",
+            "Remove all quotations",
+            "Delete the conclusion"
+          ],
+          "answer": 0,
+          "explanation": "Material beyond the limit is not assessed, and cutting usually sharpens focus.",
+          "terms": [
+            "english-ll-ask.3-hl-essay"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q09",
+          "type": "fill",
+          "text": "HL essay criterion C is called focus, organization and ___.",
+          "answer": "development",
+          "bank": [
+            "development",
+            "language",
+            "evaluation",
+            "knowledge"
+          ],
+          "explanation": "Unlike Paper 1, the HL essay criterion C explicitly rewards development.",
+          "terms": [
+            "english-ll-ask.3-hl-criterion-c"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.3-2-q10",
+          "type": "mcq",
+          "prompt": "Which statement about the HL essay is accurate?",
+          "options": [
+            "It is externally assessed coursework worth 20% at HL",
+            "It is an internal assessment marked only by teachers",
+            "It is taken under exam conditions",
+            "It is worth 50%"
+          ],
+          "answer": 0,
+          "explanation": "It is written over time but marked by IB examiners.",
+          "terms": [
+            "english-ll-ask.3-hl-essay"
+          ]
+        }
+      ]
+    }
+  ]
+}

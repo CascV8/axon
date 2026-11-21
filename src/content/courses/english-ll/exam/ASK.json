@@ -1,0 +1,29 @@
+[
+  {
+    "id": "english-ll-X-ASK-01",
+    "unit": "ASK",
+    "topics": ["english-ll-ASK.2", "english-ll-TAS.2"],
+    "paper": "IO",
+    "level": "SL",
+    "title": "Planning an individual oral",
+    "stem": "A student plans an individual oral on the global issue: \"how the pressure to appear successful damages mental health\". The literary work is a novel about a family hiding financial ruin from their neighbours; the extract (38 lines) shows the father rehearsing a cheerful speech for a dinner party. The non-literary body of work is a series of five social media posts by a fitness influencer; the chosen post shows a glossy photo captioned \"Never had a bad day in my life ✨ #grindset\".",
+    "parts": [
+      { "label": "a", "command": "Evaluate", "prompt": "Evaluate the student's choice of global issue and texts.", "marks": 4, "markscheme": ["the global issue is specific, transnational and evident in everyday contexts", "both texts clearly connect to the issue (performance of success masking distress)", "pairing a literary work with a non-literary body of work meets requirements", "possible risk: the issue must be analysed through authorial choices, not discussed as a general social topic"] },
+      { "label": "b", "command": "Outline", "prompt": "Outline four authorial choices the student could analyse, two from each extract.", "marks": 4, "markscheme": ["novel: dramatic irony / gap between rehearsed cheerful speech and the family's secret", "novel: stage-like rehearsal or repetition revealing anxiety; narrative perspective", "post: hyperbole and absolute claim 'Never had a bad day' constructs an impossible ideal", "post: visual gloss/filter, emoji and hashtag '#grindset' signal a curated persona and community norms"] },
+      { "label": "c", "command": "Explain", "prompt": "Explain how the student should connect each extract to its whole work or body of work.", "marks": 4, "markscheme": ["show where the dinner-party extract sits in the novel's arc, e.g. before the deception collapses", "refer to other moments in the novel that develop the global issue", "refer to the other influencer posts to show a pattern across the body of work", "keep links brief and analytical, serving the global issue rather than summarising"] }
+    ]
+  },
+  {
+    "id": "english-ll-X-ASK-02",
+    "unit": "ASK",
+    "topics": ["english-ll-ASK.3", "english-ll-LIT.3"],
+    "paper": "HLE",
+    "level": "HL",
+    "title": "Refining an HL essay line of inquiry",
+    "stem": "A student's first idea for the HL essay is: \"The novel is about loneliness.\" The novel, studied in class, is narrated in the first person by an elderly widower who repeatedly insists he is 'perfectly content' while describing days in which he speaks to no one. The student's draft is 1,750 words, opens with a page about the author's life and quotes no criticism.",
+    "parts": [
+      { "label": "a", "command": "Explain", "prompt": "Explain why the initial idea is a weak line of inquiry and propose a stronger one.", "marks": 4, "markscheme": ["the idea is a topic/statement, not an arguable question", "it does not focus on how authorial choices create meaning", "a stronger inquiry, e.g. 'How does the first-person narrator's insistence on contentment expose the loneliness he refuses to name?'", "the improved inquiry is focused, specific and manageable within 1,200–1,500 words"] },
+      { "label": "b", "command": "Discuss", "prompt": "Discuss three revisions the student should make to the draft before submission.", "marks": 6, "markscheme": ["cut to within 1,500 words, since material beyond the limit is not assessed", "reduce biography to brief, relevant context so the essay focuses on the text", "make every paragraph advance the argument (criterion C development)", "analyse the unreliable narration: the gap between 'perfectly content' and the described silence (dramatic/verbal irony)", "note that secondary sources are optional; if any are used they must be cited", "ensure formal academic register and consistent citation of quotations"] }
+    ]
+  }
+]

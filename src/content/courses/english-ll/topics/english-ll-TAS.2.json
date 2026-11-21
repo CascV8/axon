@@ -1,0 +1,413 @@
+{
+  "id": "english-ll-TAS.2",
+  "code": "TAS.2",
+  "unit": "TAS",
+  "title": "Culture, identity, power and global issues",
+  "level": "SL",
+  "summary": "How texts express and contest culture, identity and power, how language itself carries ideology, and how to frame global issues for the individual oral.",
+  "keyterms": [
+    {
+      "id": "english-ll-tas.2-culture",
+      "term": "Culture",
+      "definition": "The shared beliefs, practices, values and language of a group; a key concept of the course.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-identity",
+      "term": "Identity",
+      "definition": "How individuals and groups define themselves and are defined by others; a key concept of the course.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-ideology",
+      "term": "Ideology",
+      "definition": "A system of beliefs and values, often presented as natural or common sense, that texts can reinforce or challenge.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-power",
+      "term": "Power",
+      "definition": "The capacity to influence or control others; texts both reflect and exercise it, e.g. through who gets to speak.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-hegemony",
+      "term": "Hegemony",
+      "definition": "Dominance of one group's values so complete that they seem normal and go unquestioned.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-dialect",
+      "term": "Dialect",
+      "definition": "A regional or social variety of a language with its own vocabulary, grammar and pronunciation.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-code-switching",
+      "term": "Code-switching",
+      "definition": "Moving between languages or language varieties depending on audience and situation.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-global-issue",
+      "term": "Global issue",
+      "definition": "An issue of wide significance that is transnational and visible in everyday local contexts; the focus of the individual oral.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-postcolonial",
+      "term": "Postcolonial",
+      "definition": "Relating to texts and readings that examine the legacy of colonialism, often giving voice to colonised peoples.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-tas.2-translation",
+      "term": "Translation",
+      "definition": "Rendering a text in another language; translators make choices that shape meaning, and works in translation are part of the course.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-TAS.2-1",
+      "title": "Language, culture and power",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-TAS.2-1-q01",
+          "type": "mcq",
+          "prompt": "A novel's narrator writes dialogue in standard English but renders a farmworker's speech in heavy dialect spelling. What might a critical reader notice?",
+          "options": [
+            "The narrator is unreliable about the weather",
+            "The contrast may position the farmworker as less educated or less authoritative",
+            "Dialect has no effect on readers",
+            "The book must be non-literary"
+          ],
+          "answer": 1,
+          "explanation": "How speech is represented on the page can reflect and reinforce hierarchies of class, region or race.",
+          "terms": [
+            "english-ll-tas.2-dialect",
+            "english-ll-tas.2-power"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q02",
+          "type": "fill",
+          "text": "Moving between languages or varieties depending on who you are talking to is called ___.",
+          "answer": "code-switching",
+          "bank": [
+            "code-switching",
+            "translation",
+            "hegemony",
+            "framing"
+          ],
+          "explanation": "Code-switching in texts often signals shifting identities or audiences.",
+          "terms": [
+            "english-ll-tas.2-code-switching"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q03",
+          "type": "tf",
+          "statement": "An ideology is most powerful when it seems like plain common sense.",
+          "answer": true,
+          "explanation": "Ideas that feel natural go unquestioned; critical reading exposes the values hidden in 'common sense'.",
+          "terms": [
+            "english-ll-tas.2-ideology",
+            "english-ll-tas.2-hegemony"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q04",
+          "type": "mcq",
+          "prompt": "A memoir switches between English and Tagalog without translating the Tagalog. What is a likely effect?",
+          "options": [
+            "It excludes all readers",
+            "It asserts the speaker's bilingual identity and refuses to centre the monolingual reader",
+            "It shows the writer forgot the English words",
+            "It makes the text a news report"
+          ],
+          "answer": 1,
+          "explanation": "Untranslated words can assert cultural identity and remind some readers that they are outsiders.",
+          "terms": [
+            "english-ll-tas.2-code-switching",
+            "english-ll-tas.2-identity"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q05",
+          "type": "match",
+          "prompt": "Match the concept to the example.",
+          "pairs": [
+            {
+              "left": "Hegemony",
+              "right": "One beauty ideal dominates every billboard"
+            },
+            {
+              "left": "Postcolonial",
+              "right": "A novel retells empire from the colonised side"
+            },
+            {
+              "left": "Dialect",
+              "right": "A regional word for 'small' in dialogue"
+            },
+            {
+              "left": "Translation",
+              "right": "A poem rendered from Arabic into English"
+            }
+          ],
+          "explanation": "These concepts help explain how texts relate to culture and power.",
+          "terms": [
+            "english-ll-tas.2-hegemony",
+            "english-ll-tas.2-postcolonial",
+            "english-ll-tas.2-dialect",
+            "english-ll-tas.2-translation"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q06",
+          "type": "mcq",
+          "prompt": "Why can a translated poem be analysed in this course?",
+          "options": [
+            "It cannot; only original-language texts count",
+            "Works in translation are a required part of the course, and translators' choices are part of the text",
+            "Because translation removes all meaning",
+            "Only if the translator is famous"
+          ],
+          "answer": 1,
+          "explanation": "The course requires works in translation, and discussing translation choices can be a strength.",
+          "terms": [
+            "english-ll-tas.2-translation"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q07",
+          "type": "fill",
+          "text": "A system of beliefs and values that texts can reinforce or challenge is an ___.",
+          "answer": "ideology",
+          "bank": [
+            "ideology",
+            "identity",
+            "allegory",
+            "anecdote"
+          ],
+          "explanation": "Asking which ideology a text supports reveals its underlying values.",
+          "terms": [
+            "english-ll-tas.2-ideology"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q08",
+          "type": "tf",
+          "statement": "A text that criticises a powerful group cannot itself exercise power.",
+          "answer": false,
+          "explanation": "Protest texts exercise power too: they mobilise, define enemies and shape public narratives.",
+          "terms": [
+            "english-ll-tas.2-power"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q09",
+          "type": "mcq",
+          "prompt": "Which question most directly examines power in a text?",
+          "options": [
+            "How long is the text?",
+            "Who gets to speak, and who is spoken about?",
+            "What colour is the cover?",
+            "Is the text in the past tense?"
+          ],
+          "answer": 1,
+          "explanation": "Control over speech and representation is a central marker of power in texts.",
+          "terms": [
+            "english-ll-tas.2-power"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-1-q10",
+          "type": "order",
+          "prompt": "Order these steps for analysing ideology in an advert.",
+          "items": [
+            "Describe what the advert shows",
+            "Identify the values it treats as desirable",
+            "Ask whose interests those values serve",
+            "Evaluate whether the advert reinforces or challenges them"
+          ],
+          "explanation": "Moving from description to values to interests to evaluation builds a critical argument.",
+          "terms": [
+            "english-ll-tas.2-ideology"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-TAS.2-2",
+      "title": "Identity and global issues",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-TAS.2-2-q01",
+          "type": "mcq",
+          "prompt": "Which is the best-formulated global issue for an individual oral?",
+          "options": [
+            "Love",
+            "Poetry",
+            "How the pressure to conform to gender norms limits personal freedom",
+            "My favourite book"
+          ],
+          "answer": 2,
+          "explanation": "A good global issue is specific, transnational in significance and visible in both chosen texts; single-word topics are too vague.",
+          "terms": [
+            "english-ll-tas.2-global-issue"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q02",
+          "type": "tf",
+          "statement": "A global issue must be significant on a wide scale, transnational, and its impact felt in everyday local contexts.",
+          "answer": true,
+          "explanation": "These three qualities define a global issue in the course; it should not be a purely local matter.",
+          "terms": [
+            "english-ll-tas.2-global-issue"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q03",
+          "type": "match",
+          "prompt": "Match each global issue to a suitable field of inquiry.",
+          "pairs": [
+            {
+              "left": "Erosion of indigenous languages",
+              "right": "Culture, identity and community"
+            },
+            {
+              "left": "Surveillance and privacy online",
+              "right": "Science, technology and the environment"
+            },
+            {
+              "left": "Who decides what art is valuable",
+              "right": "Art, creativity and the imagination"
+            },
+            {
+              "left": "Unequal access to justice",
+              "right": "Politics, power and justice"
+            }
+          ],
+          "explanation": "The course suggests five fields of inquiry; the fifth is beliefs, values and education.",
+          "terms": [
+            "english-ll-tas.2-global-issue"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q04",
+          "type": "fill",
+          "text": "How individuals and groups define themselves, and are defined by others, is their ___.",
+          "answer": "identity",
+          "bank": [
+            "identity",
+            "ideology",
+            "dialect",
+            "zeitgeist"
+          ],
+          "explanation": "Identity is one of the seven key concepts: identity, culture, creativity, communication, perspective, transformation and representation.",
+          "terms": [
+            "english-ll-tas.2-identity"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q05",
+          "type": "mcq",
+          "prompt": "A poem's speaker says: \"At school I am Anna; at home my grandmother calls me Anh.\" What does this line most suggest?",
+          "options": [
+            "The speaker dislikes her grandmother",
+            "A divided or dual identity across cultural spaces",
+            "A spelling mistake",
+            "That the poem is a recipe"
+          ],
+          "answer": 1,
+          "explanation": "Two names for two spaces suggest identity negotiated between cultures.",
+          "terms": [
+            "english-ll-tas.2-identity",
+            "english-ll-tas.2-culture"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q06",
+          "type": "mcq",
+          "prompt": "Which is NOT one of the seven key concepts of the course?",
+          "options": [
+            "Transformation",
+            "Representation",
+            "Creativity",
+            "Grammar"
+          ],
+          "answer": 3,
+          "explanation": "The seven concepts are identity, culture, creativity, communication, perspective, transformation and representation.",
+          "terms": [
+            "english-ll-tas.2-identity",
+            "english-ll-tas.2-culture"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q07",
+          "type": "tf",
+          "statement": "Postcolonial readings can be applied to texts written before decolonisation, for example to expose imperial assumptions.",
+          "answer": true,
+          "explanation": "A postcolonial lens is a way of reading; it can reveal colonial ideology in older texts.",
+          "terms": [
+            "english-ll-tas.2-postcolonial",
+            "english-ll-tas.2-ideology"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q08",
+          "type": "fill",
+          "text": "In the individual oral, both texts are explored through the lens of a shared ___ issue.",
+          "answer": "global",
+          "bank": [
+            "global",
+            "local",
+            "personal",
+            "historical"
+          ],
+          "explanation": "The global issue unites the literary extract and the non-literary extract.",
+          "terms": [
+            "english-ll-tas.2-global-issue"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q09",
+          "type": "mcq",
+          "prompt": "A tourism advert presents an island's people only as smiling hosts in traditional dress. Which lens most usefully critiques this?",
+          "options": [
+            "Postcolonial",
+            "Metrical",
+            "Chronological",
+            "Grammatical"
+          ],
+          "answer": 0,
+          "explanation": "A postcolonial lens questions exoticised representations that serve outsiders' fantasies.",
+          "terms": [
+            "english-ll-tas.2-postcolonial",
+            "english-ll-tas.2-culture"
+          ]
+        },
+        {
+          "id": "english-ll-TAS.2-2-q10",
+          "type": "mcq",
+          "prompt": "Why does culture matter when analysing humour in a text?",
+          "options": [
+            "Humour is identical everywhere",
+            "Jokes often rely on shared cultural knowledge that some readers may lack",
+            "Humour is never used in non-literary texts",
+            "Culture only affects poetry"
+          ],
+          "answer": 1,
+          "explanation": "Humour, idiom and allusion depend on shared culture, so audiences may respond differently.",
+          "terms": [
+            "english-ll-tas.2-culture"
+          ]
+        }
+      ]
+    }
+  ]
+}

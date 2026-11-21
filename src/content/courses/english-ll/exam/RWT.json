@@ -1,0 +1,15 @@
+[
+  {
+    "id": "english-ll-X-RWT-01",
+    "unit": "RWT",
+    "topics": ["english-ll-RWT.3", "english-ll-NLT.2"],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Two news openings: the same protest",
+    "stem": "Two openings of news reports about the same event, from two different (fictional) outlets.\n\nTEXT A — The Daily Standard\nCHAOS AS MOB BRINGS CITY TO STANDSTILL\nThousands of commuters were left stranded yesterday after a mob of activists blocked Westbridge for six hours. Furious workers missed shifts and hospital appointments as police struggled to contain the unruly crowd. 'It's a disgrace,' said one taxi driver.\n\nTEXT B — The Westbridge Voice\nYOUNG RESIDENTS MARCH FOR CLEAN AIR\nAround 3,000 people, many of them students, marched peacefully across Westbridge yesterday to demand action on the city's air pollution, which a council report links to 140 early deaths a year. 'We're marching for our lungs,' said Priya, 17, holding a hand-painted placard.",
+    "parts": [
+      { "label": "a", "command": "Compare", "prompt": "Compare how the two headlines and opening sentences represent the protesters.", "marks": 6, "markscheme": ["Text A: 'mob' and 'unruly crowd' connote disorder and threat; Text B: 'residents', 'students', 'marched peacefully' connote legitimacy", "Text A 'CHAOS' and 'STANDSTILL': capitalised, emotive framing on disruption; Text B frames the purpose ('for clean air')", "Text A focuses on victims (commuters, workers, patients) – the protesters' cause is omitted", "Text B omits disruption to commuters entirely – both texts select and omit", "numbers: A's vague 'thousands' vs B's 'around 3,000' and attributed statistic – different ethos", "voices quoted: anonymous angry taxi driver vs named, young protester – shapes sympathy"] },
+      { "label": "b", "command": "Discuss", "prompt": "Discuss what each text's choices suggest about its implied reader and values.", "marks": 4, "markscheme": ["Text A implies a reader who values order, work and convenience, possibly sceptical of activism", "Text B implies a local reader concerned with health and sympathetic to young people's activism", "both outlets' framing reflects ideology/bias rather than neutral reporting", "recognises that readers can resist the implied position"] }
+    ]
+  }
+]

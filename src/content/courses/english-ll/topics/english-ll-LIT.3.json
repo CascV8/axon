@@ -1,0 +1,420 @@
+{
+  "id": "english-ll-LIT.3",
+  "code": "LIT.3",
+  "unit": "LIT",
+  "title": "Narrative and dramatic techniques",
+  "level": "SL",
+  "summary": "How prose fiction and drama create meaning through narration, point of view, characterisation, structure, dialogue and staging.",
+  "keyterms": [
+    {
+      "id": "english-ll-lit.3-narrator",
+      "term": "Narrator",
+      "definition": "The voice that tells a story; not the same as the author.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-first-person",
+      "term": "First-person narration",
+      "definition": "Narration by an 'I' who is part of the story, giving intimacy but a limited view.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-third-person-omniscient",
+      "term": "Third-person omniscient",
+      "definition": "Narration by an all-knowing voice with access to many characters' thoughts.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-unreliable-narrator",
+      "term": "Unreliable narrator",
+      "definition": "A narrator whose account cannot be fully trusted because of bias, ignorance or deception.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-free-indirect-discourse",
+      "term": "Free indirect discourse",
+      "definition": "Third-person narration that slips into a character's thoughts and idiom without quotation marks.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-characterisation",
+      "term": "Characterisation",
+      "definition": "The methods used to create and reveal character: action, speech, description, others' reactions.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-foreshadowing",
+      "term": "Foreshadowing",
+      "definition": "Hints of later events that build anticipation or tension.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-flashback",
+      "term": "Flashback",
+      "definition": "A scene that moves back in time from the main narrative.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-stage-directions",
+      "term": "Stage directions",
+      "definition": "Instructions in a play script about movement, setting, sound and delivery.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-soliloquy",
+      "term": "Soliloquy",
+      "definition": "A speech in which a character alone on stage voices their thoughts to the audience.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-motif",
+      "term": "Motif",
+      "definition": "A recurring image, idea or object that develops a theme.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.3-in-medias-res",
+      "term": "In medias res",
+      "definition": "Beginning a narrative in the middle of the action.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-LIT.3-1",
+      "title": "Narration and point of view",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-LIT.3-1-q01",
+          "type": "mcq",
+          "prompt": "\"I'm the most honest person you'll ever meet, so believe me when I say the money just vanished.\" What kind of narrator is this most likely to be?",
+          "options": [
+            "Omniscient",
+            "Unreliable",
+            "Objective",
+            "Second person"
+          ],
+          "answer": 1,
+          "explanation": "Insisting on honesty while giving a suspicious account invites readers to doubt the narrator.",
+          "terms": [
+            "english-ll-lit.3-unreliable-narrator"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q02",
+          "type": "fill",
+          "text": "An all-knowing narrator who can enter many characters' minds is third-person ___.",
+          "answer": "omniscient",
+          "bank": [
+            "omniscient",
+            "limited",
+            "objective",
+            "reliable"
+          ],
+          "explanation": "Omniscience allows wide perspective and dramatic irony between characters.",
+          "terms": [
+            "english-ll-lit.3-third-person-omniscient"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q03",
+          "type": "mcq",
+          "prompt": "\"She looked at the invitation. Another dinner with those people. Wonderful.\" What technique is this?",
+          "options": [
+            "Free indirect discourse",
+            "Stage direction",
+            "Soliloquy",
+            "First-person narration"
+          ],
+          "answer": 0,
+          "explanation": "Third-person narration slides into the character's sarcastic thoughts ('Wonderful') without quotation marks.",
+          "terms": [
+            "english-ll-lit.3-free-indirect-discourse"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q04",
+          "type": "tf",
+          "statement": "The narrator of a novel should always be treated as identical to its author.",
+          "answer": false,
+          "explanation": "The narrator is a constructed voice; distinguishing narrator from author is essential to analysis.",
+          "terms": [
+            "english-ll-lit.3-narrator"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q05",
+          "type": "match",
+          "prompt": "Match the narrative choice to its typical effect.",
+          "pairs": [
+            {
+              "left": "First-person",
+              "right": "Intimacy but a limited view"
+            },
+            {
+              "left": "Omniscient",
+              "right": "Broad overview of many minds"
+            },
+            {
+              "left": "Unreliable narrator",
+              "right": "Reader suspicion and active reading"
+            },
+            {
+              "left": "Free indirect discourse",
+              "right": "Blends narrator and character voice"
+            }
+          ],
+          "explanation": "Point of view controls what readers know and whom they sympathise with.",
+          "terms": [
+            "english-ll-lit.3-first-person",
+            "english-ll-lit.3-third-person-omniscient",
+            "english-ll-lit.3-unreliable-narrator",
+            "english-ll-lit.3-free-indirect-discourse"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q06",
+          "type": "mcq",
+          "prompt": "A story opens: \"The gun was still warm when the door burst open.\" What structural technique is used?",
+          "options": [
+            "In medias res",
+            "Flashback",
+            "Epilogue",
+            "Soliloquy"
+          ],
+          "answer": 0,
+          "explanation": "Starting mid-action hooks the reader and withholds context, building suspense.",
+          "terms": [
+            "english-ll-lit.3-in-medias-res"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q07",
+          "type": "fill",
+          "text": "A scene that moves back in time from the main story is a ___.",
+          "answer": "flashback",
+          "bank": [
+            "flashback",
+            "foreshadowing",
+            "motif",
+            "prologue"
+          ],
+          "explanation": "Flashbacks reveal backstory and can explain present behaviour.",
+          "terms": [
+            "english-ll-lit.3-flashback"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q08",
+          "type": "mcq",
+          "prompt": "Early in a novel, a character casually mentions the river \"has taken three children this century.\" Later a child drowns. The early line is:",
+          "options": [
+            "Foreshadowing",
+            "A flashback",
+            "Free indirect discourse",
+            "A soliloquy"
+          ],
+          "answer": 0,
+          "explanation": "The casual mention plants tension and makes the later tragedy feel inevitable.",
+          "terms": [
+            "english-ll-lit.3-foreshadowing"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q09",
+          "type": "tf",
+          "statement": "Characterisation can be indirect, revealed through what a character does and how others react to them.",
+          "answer": true,
+          "explanation": "Show-don't-tell characterisation lets readers infer traits from action and reaction.",
+          "terms": [
+            "english-ll-lit.3-characterisation"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-1-q10",
+          "type": "order",
+          "prompt": "Order the events as they are told in this plot: a novel opens at a funeral, flashes back to the friendship's beginning, then returns to the funeral.",
+          "items": [
+            "Funeral scene",
+            "Flashback to how the friends met",
+            "Flashback to the friendship's breakdown",
+            "Return to the funeral"
+          ],
+          "explanation": "Non-linear structure lets the ending shape how we read everything before it.",
+          "terms": [
+            "english-ll-lit.3-flashback"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-LIT.3-2",
+      "title": "Drama and recurring patterns",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-LIT.3-2-q01",
+          "type": "mcq",
+          "prompt": "A character alone on stage reveals her plan to betray her brother. What is this speech?",
+          "options": [
+            "A soliloquy",
+            "A chorus",
+            "A stage direction",
+            "An aside to another character"
+          ],
+          "answer": 0,
+          "explanation": "A soliloquy gives the audience privileged access to a character's thoughts, often creating dramatic irony.",
+          "terms": [
+            "english-ll-lit.3-soliloquy"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q02",
+          "type": "fill",
+          "text": "Script instructions such as \"(She slams the door. Silence.)\" are ___ directions.",
+          "answer": "stage",
+          "bank": [
+            "stage",
+            "plot",
+            "camera",
+            "narrative"
+          ],
+          "explanation": "Stage directions control movement, sound and pace; silence can be as meaningful as speech.",
+          "terms": [
+            "english-ll-lit.3-stage-directions"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q03",
+          "type": "mcq",
+          "prompt": "In a play, the stage direction says the lights dim slightly every time the father enters. What is the likely effect?",
+          "options": [
+            "It is purely practical",
+            "It visually associates the father with gloom or threat",
+            "It shows the theatre has a fault",
+            "It signals comedy"
+          ],
+          "answer": 1,
+          "explanation": "Lighting is a dramatic technique that shapes mood and audience attitudes to characters.",
+          "terms": [
+            "english-ll-lit.3-stage-directions",
+            "english-ll-lit.3-characterisation"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q04",
+          "type": "tf",
+          "statement": "A motif is a recurring element, like broken glass or birds, that develops a theme across a text.",
+          "answer": true,
+          "explanation": "Tracking a motif's appearances shows how the text builds meaning.",
+          "terms": [
+            "english-ll-lit.3-motif"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q05",
+          "type": "match",
+          "prompt": "Match the dramatic element to its function.",
+          "pairs": [
+            {
+              "left": "Soliloquy",
+              "right": "Reveals private thoughts"
+            },
+            {
+              "left": "Stage directions",
+              "right": "Guide performance and setting"
+            },
+            {
+              "left": "Dramatic irony",
+              "right": "Audience knows more than characters"
+            },
+            {
+              "left": "Dialogue",
+              "right": "Characters reveal themselves through speech"
+            }
+          ],
+          "explanation": "Drama is written to be performed; analyse it as both text and performance.",
+          "terms": [
+            "english-ll-lit.3-soliloquy",
+            "english-ll-lit.3-stage-directions"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q06",
+          "type": "mcq",
+          "prompt": "In a novel, clocks appear stopped at moments of trauma. What is this?",
+          "options": [
+            "A motif suggesting time frozen by grief",
+            "A flashback",
+            "An unreliable narrator",
+            "In medias res"
+          ],
+          "answer": 0,
+          "explanation": "The recurring stopped clocks form a motif linking trauma with an inability to move on.",
+          "terms": [
+            "english-ll-lit.3-motif"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q07",
+          "type": "fill",
+          "text": "The methods used to create and reveal a character are called ___.",
+          "answer": "characterisation",
+          "bank": [
+            "characterisation",
+            "foreshadowing",
+            "narration",
+            "setting"
+          ],
+          "explanation": "Discuss characterisation through speech, action, description and others' responses.",
+          "terms": [
+            "english-ll-lit.3-characterisation"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q08",
+          "type": "mcq",
+          "prompt": "Dialogue: \"MAYA: Fine. FINE. Do whatever you want.\" What does the repetition and capitalisation suggest?",
+          "options": [
+            "Calm agreement",
+            "Rising frustration beneath apparent acceptance",
+            "Joy",
+            "Confusion about the plot"
+          ],
+          "answer": 1,
+          "explanation": "Her words say 'fine' but the delivery shows anger; subtext lies in performance cues.",
+          "terms": [
+            "english-ll-lit.3-characterisation"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q09",
+          "type": "tf",
+          "statement": "Stage directions are not worth analysing because the audience never reads them.",
+          "answer": false,
+          "explanation": "Stage directions shape what the audience sees and hears, and reveal the playwright's intentions for performance.",
+          "terms": [
+            "english-ll-lit.3-stage-directions"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.3-2-q10",
+          "type": "mcq",
+          "prompt": "Why does an analysis of a play benefit from imagining performance?",
+          "options": [
+            "Because plays are designed to be staged, with gesture, space, sound and silence creating meaning",
+            "Because plays have no written text",
+            "Because examiners prefer film",
+            "Because it avoids quoting"
+          ],
+          "answer": 0,
+          "explanation": "Discussing how a scene would work on stage shows awareness of drama as a form.",
+          "terms": [
+            "english-ll-lit.3-stage-directions"
+          ]
+        }
+      ]
+    }
+  ]
+}

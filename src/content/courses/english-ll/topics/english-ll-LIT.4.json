@@ -1,0 +1,430 @@
+{
+  "id": "english-ll-LIT.4",
+  "code": "LIT.4",
+  "unit": "LIT",
+  "title": "Rhetoric and persuasion",
+  "level": "SL",
+  "summary": "The persuasive toolkit of speeches, adverts and opinion writing: appeals to ethos, pathos and logos, and patterned devices such as anaphora, tricolon and antithesis.",
+  "keyterms": [
+    {
+      "id": "english-ll-lit.4-ethos",
+      "term": "Ethos",
+      "definition": "Persuasion through the speaker's credibility, character or authority.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-pathos",
+      "term": "Pathos",
+      "definition": "Persuasion through appeals to the audience's emotions.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-logos",
+      "term": "Logos",
+      "definition": "Persuasion through logic, evidence, statistics and reasoning.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-anaphora",
+      "term": "Anaphora",
+      "definition": "Repetition of the same word or phrase at the start of successive clauses or sentences.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-tricolon",
+      "term": "Tricolon",
+      "definition": "A group of three parallel words, phrases or clauses, also called the rule of three.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-antithesis",
+      "term": "Antithesis",
+      "definition": "Placing contrasting ideas in parallel structures, e.g. 'not a burden but a gift'.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-rhetorical-question",
+      "term": "Rhetorical question",
+      "definition": "A question asked for effect rather than to get an answer, guiding the audience to a conclusion.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-inclusive-pronoun",
+      "term": "Inclusive pronoun",
+      "definition": "Words like 'we', 'us' and 'our' that bind speaker and audience together.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-imperative",
+      "term": "Imperative",
+      "definition": "A command form of the verb, e.g. 'Act now', urging the audience to act.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-anecdote",
+      "term": "Anecdote",
+      "definition": "A short personal story used to illustrate a point and build connection.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-kairos",
+      "term": "Kairos",
+      "definition": "Choosing the right moment or occasion for a persuasive message, linking it to timely events.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.4-parallelism",
+      "term": "Parallelism",
+      "definition": "Repeating a grammatical structure across phrases or sentences for rhythm and emphasis.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-LIT.4-1",
+      "title": "The three appeals",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-LIT.4-1-q01",
+          "type": "mcq",
+          "prompt": "\"As a nurse who has worked night shifts for twenty years, I can tell you this policy will fail.\" Which appeal dominates?",
+          "options": [
+            "Ethos",
+            "Pathos",
+            "Logos",
+            "Kairos"
+          ],
+          "answer": 0,
+          "explanation": "The speaker establishes credibility through professional experience, which is ethos.",
+          "terms": [
+            "english-ll-lit.4-ethos"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q02",
+          "type": "mcq",
+          "prompt": "\"Four out of five households now spend more on energy than on food.\" Which appeal is this?",
+          "options": [
+            "Pathos",
+            "Logos",
+            "Ethos",
+            "Antithesis"
+          ],
+          "answer": 1,
+          "explanation": "Statistics appeal to reason (logos), though numbers can also be chosen to provoke emotion.",
+          "terms": [
+            "english-ll-lit.4-logos"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q03",
+          "type": "fill",
+          "text": "An appeal to the audience's emotions is called ___.",
+          "answer": "pathos",
+          "bank": [
+            "pathos",
+            "ethos",
+            "logos",
+            "kairos"
+          ],
+          "explanation": "Pathos uses emotive language, images and anecdotes to make audiences feel.",
+          "terms": [
+            "english-ll-lit.4-pathos"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q04",
+          "type": "tf",
+          "statement": "A single sentence can combine ethos, pathos and logos.",
+          "answer": true,
+          "explanation": "Skilled persuaders blend appeals; analysis should explain how they reinforce each other.",
+          "terms": [
+            "english-ll-lit.4-ethos",
+            "english-ll-lit.4-pathos",
+            "english-ll-lit.4-logos"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q05",
+          "type": "mcq",
+          "prompt": "A charity appeal opens: \"Last winter, eight-year-old Sami did his homework by candlelight, wrapped in his coat.\" Which techniques are used?",
+          "options": [
+            "Anecdote and pathos",
+            "Statistics and logos",
+            "Antithesis and ethos",
+            "Imperative and kairos"
+          ],
+          "answer": 0,
+          "explanation": "A named child's story personalises the issue and triggers sympathy.",
+          "terms": [
+            "english-ll-lit.4-anecdote",
+            "english-ll-lit.4-pathos"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q06",
+          "type": "match",
+          "prompt": "Match the appeal to the example.",
+          "pairs": [
+            {
+              "left": "Ethos",
+              "right": "Recommended by 9 in 10 dentists"
+            },
+            {
+              "left": "Logos",
+              "right": "It costs less than a coffee a day"
+            },
+            {
+              "left": "Pathos",
+              "right": "Don't let her face this alone"
+            },
+            {
+              "left": "Kairos",
+              "right": "With the election only days away…"
+            }
+          ],
+          "explanation": "Kairos ties the message to a timely moment, adding urgency.",
+          "terms": [
+            "english-ll-lit.4-ethos",
+            "english-ll-lit.4-logos",
+            "english-ll-lit.4-pathos",
+            "english-ll-lit.4-kairos"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q07",
+          "type": "fill",
+          "text": "Linking a persuasive message to the right moment or occasion is called ___.",
+          "answer": "kairos",
+          "bank": [
+            "kairos",
+            "ethos",
+            "anaphora",
+            "logos"
+          ],
+          "explanation": "Speeches often gain power from timing: anniversaries, crises or elections.",
+          "terms": [
+            "english-ll-lit.4-kairos"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q08",
+          "type": "mcq",
+          "prompt": "\"We will not stand by while our children inherit a poisoned planet.\" What does 'we' and 'our' achieve?",
+          "options": [
+            "They distance the speaker from the audience",
+            "They create unity and shared responsibility",
+            "They make the sentence a question",
+            "They add statistical evidence"
+          ],
+          "answer": 1,
+          "explanation": "Inclusive pronouns build a collective identity between speaker and audience.",
+          "terms": [
+            "english-ll-lit.4-inclusive-pronoun"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q09",
+          "type": "tf",
+          "statement": "Logos is always more honest than pathos.",
+          "answer": false,
+          "explanation": "Statistics can be selective or misleading; any appeal can be used manipulatively or ethically.",
+          "terms": [
+            "english-ll-lit.4-logos",
+            "english-ll-lit.4-pathos"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-1-q10",
+          "type": "order",
+          "prompt": "Order the stages of a classic persuasive speech structure.",
+          "items": [
+            "Hook the audience",
+            "Establish credibility and the problem",
+            "Present arguments and evidence",
+            "Rebut counter-arguments",
+            "Call to action"
+          ],
+          "explanation": "Many speeches follow this arc, building from attention to action.",
+          "terms": [
+            "english-ll-lit.4-ethos",
+            "english-ll-lit.4-imperative"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-LIT.4-2",
+      "title": "Patterns of persuasion",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-LIT.4-2-q01",
+          "type": "mcq",
+          "prompt": "\"We will rebuild. We will recover. We will rise.\" Identify the main device.",
+          "options": [
+            "Anaphora",
+            "Oxymoron",
+            "Euphemism",
+            "Synecdoche"
+          ],
+          "answer": 0,
+          "explanation": "Repeating 'We will' at the start of each sentence creates momentum and determination (it is also a tricolon).",
+          "terms": [
+            "english-ll-lit.4-anaphora",
+            "english-ll-lit.4-tricolon"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q02",
+          "type": "fill",
+          "text": "A group of three parallel phrases, such as \"faster, cleaner, cheaper\", is a ___.",
+          "answer": "tricolon",
+          "bank": [
+            "tricolon",
+            "couplet",
+            "caesura",
+            "chiasmus"
+          ],
+          "explanation": "Three items feel complete and memorable, so the pattern is common in slogans and speeches.",
+          "terms": [
+            "english-ll-lit.4-tricolon"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q03",
+          "type": "mcq",
+          "prompt": "\"This is not the end of our story; it is the beginning.\" What device structures this sentence?",
+          "options": [
+            "Antithesis",
+            "Alliteration",
+            "Onomatopoeia",
+            "Flashback"
+          ],
+          "answer": 0,
+          "explanation": "Contrasting 'end' and 'beginning' in parallel clauses sharpens the reframing.",
+          "terms": [
+            "english-ll-lit.4-antithesis"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q04",
+          "type": "tf",
+          "statement": "\"Can we really afford to wait any longer?\" is a rhetorical question that steers the audience towards answering 'no'.",
+          "answer": true,
+          "explanation": "Rhetorical questions position the audience to agree without the speaker stating the claim directly.",
+          "terms": [
+            "english-ll-lit.4-rhetorical-question"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q05",
+          "type": "match",
+          "prompt": "Match the device to the example.",
+          "pairs": [
+            {
+              "left": "Imperative",
+              "right": "Sign the petition today."
+            },
+            {
+              "left": "Rhetorical question",
+              "right": "Who among us has not felt afraid?"
+            },
+            {
+              "left": "Antithesis",
+              "right": "Many promises, few results"
+            },
+            {
+              "left": "Anaphora",
+              "right": "Every child, every school, every day"
+            }
+          ],
+          "explanation": "Identifying the device is a start; explain how it moves the audience.",
+          "terms": [
+            "english-ll-lit.4-imperative",
+            "english-ll-lit.4-rhetorical-question",
+            "english-ll-lit.4-antithesis",
+            "english-ll-lit.4-anaphora"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q06",
+          "type": "fill",
+          "text": "A command such as \"Join us now\" uses the ___ mood.",
+          "answer": "imperative",
+          "bank": [
+            "imperative",
+            "interrogative",
+            "conditional",
+            "passive"
+          ],
+          "explanation": "Imperatives create urgency and direct the audience to act.",
+          "terms": [
+            "english-ll-lit.4-imperative"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q07",
+          "type": "mcq",
+          "prompt": "Why are patterned devices such as anaphora and tricolon especially common in speeches?",
+          "options": [
+            "Listeners cannot reread, so rhythm and repetition aid memory and impact",
+            "They make speeches shorter",
+            "They are required by law",
+            "They avoid emotion"
+          ],
+          "answer": 0,
+          "explanation": "Spoken texts depend on the ear; repetition structures ideas and invites applause.",
+          "terms": [
+            "english-ll-lit.4-anaphora",
+            "english-ll-lit.4-parallelism"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q08",
+          "type": "tf",
+          "statement": "Parallelism means using contradictory words together.",
+          "answer": false,
+          "explanation": "Parallelism repeats a grammatical structure; contradictory words together form an oxymoron.",
+          "terms": [
+            "english-ll-lit.4-parallelism"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q09",
+          "type": "mcq",
+          "prompt": "\"They called us dreamers. They called us naïve. They called us too young to matter.\" What is the cumulative effect?",
+          "options": [
+            "It builds a sense of defiance against repeated dismissal",
+            "It shows the speaker agrees with critics",
+            "It creates a calm, neutral tone",
+            "It introduces statistics"
+          ],
+          "answer": 0,
+          "explanation": "Anaphora with escalating insults sets up a turn in which the speaker can refute them.",
+          "terms": [
+            "english-ll-lit.4-anaphora",
+            "english-ll-lit.4-parallelism"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.4-2-q10",
+          "type": "mcq",
+          "prompt": "Which is the best analytical sentence about a tricolon?",
+          "options": [
+            "There is a tricolon.",
+            "The speaker uses a list.",
+            "The tricolon \"safer, fairer, greener\" builds a rhythmic, complete vision, making the policy sound comprehensive and hard to oppose.",
+            "Tricolons are in many speeches."
+          ],
+          "answer": 2,
+          "explanation": "It quotes the device, names it and explains its effect in relation to purpose.",
+          "terms": [
+            "english-ll-lit.4-tricolon"
+          ]
+        }
+      ]
+    }
+  ]
+}

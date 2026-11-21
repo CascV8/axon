@@ -1,0 +1,407 @@
+{
+  "id": "english-ll-ASK.2",
+  "code": "ASK.2",
+  "unit": "ASK",
+  "title": "Paper 2 comparative essay and the individual oral",
+  "level": "SL",
+  "summary": "How to write a comparative essay on two literary works under exam conditions, and how to plan and deliver the 15-minute individual oral on a global issue.",
+  "keyterms": [
+    {
+      "id": "english-ll-ask.2-paper-2",
+      "term": "Paper 2",
+      "definition": "A comparative essay on two literary works studied, answering one of four general questions in 1 h 45 min (30 marks).",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-individual-oral",
+      "term": "Individual oral",
+      "definition": "The internal assessment: a 10-minute prepared response plus 5 minutes of teacher questions, on a global issue in two extracts.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-extract",
+      "term": "Extract",
+      "definition": "A passage of up to about 40 lines chosen from a work or body of work for the individual oral.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-body-of-work",
+      "term": "Body of work",
+      "definition": "A collection of non-literary texts by one author or creator, such as a series of adverts or a photographer's portfolio.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-outline",
+      "term": "Outline",
+      "definition": "The single page of up to 10 bullet points you may bring into the individual oral.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-p2-criterion-a",
+      "term": "Knowledge, understanding and interpretation",
+      "definition": "Paper 2 criterion A (10 marks): knowledge of both works and interpretation relevant to the question.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-p2-criterion-b",
+      "term": "Analysis and evaluation (P2)",
+      "definition": "Paper 2 criterion B (10 marks): analysis of authorial choices and comparison of how the works create meaning.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-general-question",
+      "term": "General question",
+      "definition": "A Paper 2 question not tied to particular works, which you apply to two works you studied.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-signposting",
+      "term": "Signposting",
+      "definition": "Phrases that tell the listener or reader where an argument is going, e.g. 'Turning now to the advert…'.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-ask.2-whole-work",
+      "term": "Whole work",
+      "definition": "The complete text an extract comes from; the oral must connect the extract to it.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-ASK.2-1",
+      "title": "Paper 2: the comparative essay",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-ASK.2-1-q01",
+          "type": "mcq",
+          "prompt": "Which texts can you write about in Paper 2?",
+          "options": [
+            "Two literary works you studied in class",
+            "Two unseen passages",
+            "Any film you have seen",
+            "One non-literary body of work and one poem from the exam paper"
+          ],
+          "answer": 0,
+          "explanation": "Paper 2 requires two literary works studied in the course, not the works used in your oral or HL essay.",
+          "terms": [
+            "english-ll-ask.2-paper-2"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q02",
+          "type": "tf",
+          "statement": "Paper 2 is worth 35% at SL and 25% at HL.",
+          "answer": true,
+          "explanation": "The paper is the same at both levels, but HL weighting is lower because HL also has the HL essay.",
+          "terms": [
+            "english-ll-ask.2-paper-2"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q03",
+          "type": "fill",
+          "text": "Paper 2 questions are ___ questions, not tied to specific works.",
+          "answer": "general",
+          "bank": [
+            "general",
+            "guided",
+            "specific",
+            "unseen"
+          ],
+          "explanation": "You must apply a general question about literature to two works you know well.",
+          "terms": [
+            "english-ll-ask.2-general-question"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q04",
+          "type": "mcq",
+          "prompt": "Question: \"How do two works you have studied present the tension between duty and desire?\" What should your thesis do?",
+          "options": [
+            "Retell both plots",
+            "Make a comparative claim about how and why each work presents that tension",
+            "Define 'duty' only",
+            "Discuss a third work"
+          ],
+          "answer": 1,
+          "explanation": "A comparative thesis answers the question for both works and signals similarities and differences.",
+          "terms": [
+            "english-ll-ask.2-general-question",
+            "english-ll-ask.2-p2-criterion-a"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q05",
+          "type": "match",
+          "prompt": "Match each Paper 2 criterion to its focus and maximum mark.",
+          "pairs": [
+            {
+              "left": "A",
+              "right": "Knowledge, understanding and interpretation (10)"
+            },
+            {
+              "left": "B",
+              "right": "Analysis and evaluation (10)"
+            },
+            {
+              "left": "C",
+              "right": "Focus and organization (5)"
+            },
+            {
+              "left": "D",
+              "right": "Language (5)"
+            }
+          ],
+          "explanation": "Criteria A and B carry most of the 30 marks, so knowledge and analysis are essential.",
+          "terms": [
+            "english-ll-ask.2-p2-criterion-a",
+            "english-ll-ask.2-p2-criterion-b"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q06",
+          "type": "tf",
+          "statement": "You can bring copies of your works into the Paper 2 exam.",
+          "answer": false,
+          "explanation": "Paper 2 is closed-book, so learn key quotations and precise references.",
+          "terms": [
+            "english-ll-ask.2-paper-2"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q07",
+          "type": "mcq",
+          "prompt": "What is the best preparation for Paper 2?",
+          "options": [
+            "Memorise a whole pre-written essay",
+            "Learn key quotations and practise applying both works to many different questions",
+            "Only read summaries",
+            "Study only one work"
+          ],
+          "answer": 1,
+          "explanation": "Flexible knowledge lets you shape material to whatever question appears.",
+          "terms": [
+            "english-ll-ask.2-paper-2"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q08",
+          "type": "fill",
+          "text": "Paper 2 criterion B rewards analysis of authorial choices and how the works are ___.",
+          "answer": "compared",
+          "bank": [
+            "compared",
+            "summarised",
+            "translated",
+            "memorised"
+          ],
+          "explanation": "Comparison of how meaning is created must run through the essay.",
+          "terms": [
+            "english-ll-ask.2-p2-criterion-b"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q09",
+          "type": "mcq",
+          "prompt": "A Paper 2 paragraph discusses only one work. What is the main risk?",
+          "options": [
+            "It weakens comparison, which is central to the task",
+            "It is too analytical",
+            "It uses too many quotations",
+            "None"
+          ],
+          "answer": 0,
+          "explanation": "Some single-work focus is fine, but each paragraph should feed a comparative argument.",
+          "terms": [
+            "english-ll-ask.2-p2-criterion-b"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-1-q10",
+          "type": "order",
+          "prompt": "Order the first 15 minutes of Paper 2.",
+          "items": [
+            "Read all four questions",
+            "Choose the question that best fits your two works",
+            "Brainstorm evidence from both works",
+            "Write a comparative thesis and paragraph plan"
+          ],
+          "explanation": "Choosing carefully and planning comparatively saves time later.",
+          "terms": [
+            "english-ll-ask.2-general-question"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-ASK.2-2",
+      "title": "The individual oral",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-ASK.2-2-q01",
+          "type": "mcq",
+          "prompt": "What does the individual oral consist of?",
+          "options": [
+            "10 minutes of prepared response and 5 minutes of teacher questions",
+            "A 30-minute debate",
+            "A written essay read aloud",
+            "An unseen poem analysis"
+          ],
+          "answer": 0,
+          "explanation": "Fifteen minutes in total: a 10-minute response then 5 minutes of questions.",
+          "terms": [
+            "english-ll-ask.2-individual-oral"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q02",
+          "type": "fill",
+          "text": "In the oral, one text is a literary work and the other is a non-literary ___ of work.",
+          "answer": "body",
+          "bank": [
+            "body",
+            "set",
+            "piece",
+            "series"
+          ],
+          "explanation": "A body of work is a collection of non-literary texts by the same creator.",
+          "terms": [
+            "english-ll-ask.2-body-of-work"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q03",
+          "type": "tf",
+          "statement": "You may bring an outline of up to 10 bullet points into the oral.",
+          "answer": true,
+          "explanation": "The outline supports memory but must not be a script.",
+          "terms": [
+            "english-ll-ask.2-outline"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q04",
+          "type": "mcq",
+          "prompt": "Approximately how long may each extract be?",
+          "options": [
+            "Up to about 40 lines",
+            "Exactly one word",
+            "At least 10 pages",
+            "Unlimited"
+          ],
+          "answer": 0,
+          "explanation": "Short extracts allow close analysis within 10 minutes.",
+          "terms": [
+            "english-ll-ask.2-extract"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q05",
+          "type": "match",
+          "prompt": "Match the oral criterion to its focus.",
+          "pairs": [
+            {
+              "left": "A",
+              "right": "Knowledge, understanding and interpretation"
+            },
+            {
+              "left": "B",
+              "right": "Analysis and evaluation"
+            },
+            {
+              "left": "C",
+              "right": "Focus and organization"
+            },
+            {
+              "left": "D",
+              "right": "Language"
+            }
+          ],
+          "explanation": "Each oral criterion is worth 10 marks, giving 40.",
+          "terms": [
+            "english-ll-ask.2-individual-oral"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q06",
+          "type": "tf",
+          "statement": "It is enough to discuss only the two extracts without mentioning the works they come from.",
+          "answer": false,
+          "explanation": "You must connect each extract to its whole work or body of work.",
+          "terms": [
+            "english-ll-ask.2-whole-work",
+            "english-ll-ask.2-extract"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q07",
+          "type": "mcq",
+          "prompt": "Which opening best sets up an oral?",
+          "options": [
+            "Today I will talk about two texts.",
+            "My global issue is how economic pressure erodes family bonds, explored through a domestic drama and a bank's advertising campaign.",
+            "I like these texts a lot.",
+            "First, the author was born in 1960."
+          ],
+          "answer": 1,
+          "explanation": "It states a precise global issue and names both texts and their roles.",
+          "terms": [
+            "english-ll-ask.2-individual-oral"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q08",
+          "type": "fill",
+          "text": "Phrases like \"Moving now to the campaign…\" that guide the listener are called ___.",
+          "answer": "signposting",
+          "bank": [
+            "signposting",
+            "framing",
+            "anchorage",
+            "paraphrase"
+          ],
+          "explanation": "Signposting helps with focus and organization in spoken work.",
+          "terms": [
+            "english-ll-ask.2-signposting"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q09",
+          "type": "mcq",
+          "prompt": "How should time be divided between the two texts?",
+          "options": [
+            "Roughly equally",
+            "All on the literary work",
+            "All on the non-literary body of work",
+            "Ninety per cent on context"
+          ],
+          "answer": 0,
+          "explanation": "Balance is part of focus and organization; both texts must be analysed.",
+          "terms": [
+            "english-ll-ask.2-individual-oral"
+          ]
+        },
+        {
+          "id": "english-ll-ASK.2-2-q10",
+          "type": "order",
+          "prompt": "Order a typical oral structure.",
+          "items": [
+            "Introduce the global issue and both texts",
+            "Analyse the first extract and link to its whole work",
+            "Analyse the second extract and link to its body of work",
+            "Conclude by drawing the texts together",
+            "Answer the teacher's questions"
+          ],
+          "explanation": "A clear arc supports a coherent response; some students integrate both texts throughout instead.",
+          "terms": [
+            "english-ll-ask.2-individual-oral",
+            "english-ll-ask.2-whole-work"
+          ]
+        }
+      ]
+    }
+  ]
+}

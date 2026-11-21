@@ -1,0 +1,413 @@
+{
+  "id": "english-ll-RWT.2",
+  "code": "RWT.2",
+  "unit": "RWT",
+  "title": "Meaning, interpretation and the reader",
+  "level": "SL",
+  "summary": "How meaning is made between writer, text and reader, why texts support more than one reading, and how to build a defensible interpretation.",
+  "keyterms": [
+    {
+      "id": "english-ll-rwt.2-interpretation",
+      "term": "Interpretation",
+      "definition": "A reasoned reading of what a text means, supported by evidence from the text.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-denotation",
+      "term": "Denotation",
+      "definition": "The literal, dictionary meaning of a word.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-connotation",
+      "term": "Connotation",
+      "definition": "The associations and feelings a word carries beyond its literal meaning.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-ambiguity",
+      "term": "Ambiguity",
+      "definition": "The quality of being open to more than one meaning; often deliberate in literary texts.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-authorial-intention",
+      "term": "Authorial intention",
+      "definition": "What a writer appears to have meant to achieve; useful but never fully knowable, so phrase it tentatively.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-reader-response",
+      "term": "Reader response",
+      "definition": "The idea that meaning is partly created by readers, whose experiences and contexts shape their reading.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-subtext",
+      "term": "Subtext",
+      "definition": "Meaning implied beneath the surface of what is directly stated.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-inference",
+      "term": "Inference",
+      "definition": "A conclusion a reader draws from clues in the text rather than from explicit statement.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-theme",
+      "term": "Theme",
+      "definition": "A central idea or concern a text explores, such as power, belonging or loss, expressed as a statement rather than a single word.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.2-thesis",
+      "term": "Thesis",
+      "definition": "The central argument of an analytical response, stating what a text does and how.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-RWT.2-1",
+      "title": "Words and what they suggest",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-RWT.2-1-q01",
+          "type": "mcq",
+          "prompt": "An estate agent describes a tiny flat as \"cosy\". Which concept explains why this word is chosen?",
+          "options": [
+            "Denotation",
+            "Connotation",
+            "Alliteration",
+            "Syntax"
+          ],
+          "answer": 1,
+          "explanation": "'Cosy' and 'cramped' denote similar size, but 'cosy' connotes warmth and comfort, presenting the flat positively.",
+          "terms": [
+            "english-ll-rwt.2-connotation",
+            "english-ll-rwt.2-denotation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q02",
+          "type": "fill",
+          "text": "The literal dictionary meaning of a word is its ___.",
+          "answer": "denotation",
+          "bank": [
+            "denotation",
+            "connotation",
+            "inference",
+            "subtext"
+          ],
+          "explanation": "Denotation is literal meaning; connotation is the cloud of associations around it.",
+          "terms": [
+            "english-ll-rwt.2-denotation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q03",
+          "type": "tf",
+          "statement": "\"Home\" and \"house\" have similar denotations but different connotations.",
+          "answer": true,
+          "explanation": "Both name a dwelling, but 'home' connotes belonging, safety and family, which writers exploit for emotional effect.",
+          "terms": [
+            "english-ll-rwt.2-connotation",
+            "english-ll-rwt.2-denotation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q04",
+          "type": "mcq",
+          "prompt": "A character says \"Lovely weather\" while staring at a storm, then slams the door. What must the reader use to understand her mood?",
+          "options": [
+            "Denotation only",
+            "Inference from subtext",
+            "A dictionary",
+            "The author's biography"
+          ],
+          "answer": 1,
+          "explanation": "Her action contradicts her words, so readers infer frustration from the subtext.",
+          "terms": [
+            "english-ll-rwt.2-inference",
+            "english-ll-rwt.2-subtext"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q05",
+          "type": "match",
+          "prompt": "Match each word to its most likely connotation.",
+          "pairs": [
+            {
+              "left": "Slender",
+              "right": "Attractive, graceful thinness"
+            },
+            {
+              "left": "Skinny",
+              "right": "Possibly unhealthy thinness"
+            },
+            {
+              "left": "Stubborn",
+              "right": "Unreasonable refusal to change"
+            },
+            {
+              "left": "Determined",
+              "right": "Admirable persistence"
+            }
+          ],
+          "explanation": "Near-synonyms carry different evaluations; word choice positions the reader to judge.",
+          "terms": [
+            "english-ll-rwt.2-connotation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q06",
+          "type": "mcq",
+          "prompt": "Which is the best statement of a theme?",
+          "options": [
+            "Family",
+            "The story is about a family",
+            "Family loyalty can become a trap when it silences individual needs",
+            "There are four family members"
+          ],
+          "answer": 2,
+          "explanation": "A theme is best expressed as an idea or claim, not a single topic word or plot summary.",
+          "terms": [
+            "english-ll-rwt.2-theme"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q07",
+          "type": "fill",
+          "text": "Meaning implied beneath what is directly stated is called ___.",
+          "answer": "subtext",
+          "bank": [
+            "subtext",
+            "context",
+            "denotation",
+            "register"
+          ],
+          "explanation": "Subtext is what is suggested but not said, common in dialogue and in advertising.",
+          "terms": [
+            "english-ll-rwt.2-subtext"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q08",
+          "type": "tf",
+          "statement": "Ambiguity in a literary text is always a weakness that the writer failed to fix.",
+          "answer": false,
+          "explanation": "Writers often use ambiguity deliberately to invite multiple readings or to mirror uncertainty in the text's world.",
+          "terms": [
+            "english-ll-rwt.2-ambiguity"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q09",
+          "type": "mcq",
+          "prompt": "\"The minister's statement was economical.\" Why might this sentence be ambiguous?",
+          "options": [
+            "It could mean brief and efficient, or sparing with the truth",
+            "It contains a spelling error",
+            "It has no verb",
+            "It uses the passive voice"
+          ],
+          "answer": 0,
+          "explanation": "'Economical' could praise brevity or hint at evasion, so readers must decide which reading the context supports.",
+          "terms": [
+            "english-ll-rwt.2-ambiguity",
+            "english-ll-rwt.2-connotation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-1-q10",
+          "type": "order",
+          "prompt": "Order the steps for analysing a single word choice.",
+          "items": [
+            "Quote the word precisely",
+            "Identify its denotation",
+            "Explore its connotations",
+            "Explain the effect on the reader in context"
+          ],
+          "explanation": "Moving from literal meaning to associations to effect produces precise, developed analysis.",
+          "terms": [
+            "english-ll-rwt.2-denotation",
+            "english-ll-rwt.2-connotation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-RWT.2-2",
+      "title": "Building a defensible reading",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-RWT.2-2-q01",
+          "type": "mcq",
+          "prompt": "Which phrasing handles authorial intention most appropriately?",
+          "options": [
+            "The writer definitely wanted readers to cry",
+            "The writer seems to invite sympathy here",
+            "The writer had no idea what she was doing",
+            "The writer told me what this means"
+          ],
+          "answer": 1,
+          "explanation": "Tentative phrasing ('seems to', 'invites', 'suggests') acknowledges that intention is inferred from the text, not known for certain.",
+          "terms": [
+            "english-ll-rwt.2-authorial-intention"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q02",
+          "type": "tf",
+          "statement": "Reader-response approaches suggest that a reader's age, culture and experience can shape the meaning they find in a text.",
+          "answer": true,
+          "explanation": "Meaning is negotiated between text and reader; different readers can legitimately produce different readings.",
+          "terms": [
+            "english-ll-rwt.2-reader-response"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q03",
+          "type": "fill",
+          "text": "The central argument of an essay, stating what a text does and how, is its ___.",
+          "answer": "thesis",
+          "bank": [
+            "thesis",
+            "theme",
+            "topic",
+            "conclusion"
+          ],
+          "explanation": "A clear thesis gives the whole response focus and direction.",
+          "terms": [
+            "english-ll-rwt.2-thesis"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q04",
+          "type": "mcq",
+          "prompt": "Which thesis is strongest for an analysis of a charity advert?",
+          "options": [
+            "This advert uses many techniques",
+            "This advert is about hunger",
+            "Through a child's direct gaze and stark, minimal text, the advert makes viewers feel personally responsible for acting",
+            "I liked this advert a lot"
+          ],
+          "answer": 2,
+          "explanation": "A strong thesis is arguable and names both the effect and the methods that create it.",
+          "terms": [
+            "english-ll-rwt.2-thesis",
+            "english-ll-rwt.2-interpretation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q05",
+          "type": "mcq",
+          "prompt": "What makes an interpretation valid in IB terms?",
+          "options": [
+            "It matches the teacher's view",
+            "It is supported by close reference to the text",
+            "It is the most unusual reading possible",
+            "It is based on the author's biography alone"
+          ],
+          "answer": 1,
+          "explanation": "Any interpretation can earn credit if it is persuasive and grounded in textual evidence.",
+          "terms": [
+            "english-ll-rwt.2-interpretation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q06",
+          "type": "match",
+          "prompt": "Match the term to its definition.",
+          "pairs": [
+            {
+              "left": "Inference",
+              "right": "A conclusion drawn from clues"
+            },
+            {
+              "left": "Ambiguity",
+              "right": "Openness to more than one meaning"
+            },
+            {
+              "left": "Theme",
+              "right": "A central idea the text explores"
+            },
+            {
+              "left": "Thesis",
+              "right": "The argument of your response"
+            }
+          ],
+          "explanation": "Keep these distinct: themes belong to the text, a thesis belongs to your essay.",
+          "terms": [
+            "english-ll-rwt.2-inference",
+            "english-ll-rwt.2-ambiguity",
+            "english-ll-rwt.2-theme",
+            "english-ll-rwt.2-thesis"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q07",
+          "type": "tf",
+          "statement": "Acknowledging an alternative reading can strengthen an essay if you then show why your reading is more convincing.",
+          "answer": true,
+          "explanation": "Weighing interpretations shows evaluative thinking, which is rewarded under analysis and evaluation.",
+          "terms": [
+            "english-ll-rwt.2-interpretation",
+            "english-ll-rwt.2-reader-response"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q08",
+          "type": "fill",
+          "text": "Reading between the lines to reach a conclusion is called making an ___.",
+          "answer": "inference",
+          "bank": [
+            "inference",
+            "allusion",
+            "assumption",
+            "argument"
+          ],
+          "explanation": "Inferences must be traceable to specific clues in the text.",
+          "terms": [
+            "english-ll-rwt.2-inference"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q09",
+          "type": "mcq",
+          "prompt": "A poem ends: \"and the door, at last, was open.\" One reader sees hope, another sees threat. What does this show?",
+          "options": [
+            "One reader is wrong",
+            "The line's ambiguity supports more than one reading",
+            "The poem is badly written",
+            "Poems have no meaning"
+          ],
+          "answer": 1,
+          "explanation": "An open door can signal freedom or exposure; ambiguity lets both readings coexist, and good essays explore that tension.",
+          "terms": [
+            "english-ll-rwt.2-ambiguity",
+            "english-ll-rwt.2-reader-response"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.2-2-q10",
+          "type": "order",
+          "prompt": "Order the parts of a well-built analytical paragraph.",
+          "items": [
+            "Topic sentence linked to the thesis",
+            "Embedded quotation",
+            "Analysis of technique and effect",
+            "Link back to purpose or the question"
+          ],
+          "explanation": "This point–evidence–analysis–link pattern keeps paragraphs focused, though it should feel natural rather than mechanical.",
+          "terms": [
+            "english-ll-rwt.2-thesis"
+          ]
+        }
+      ]
+    }
+  ]
+}

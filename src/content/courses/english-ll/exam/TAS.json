@@ -1,0 +1,15 @@
+[
+  {
+    "id": "english-ll-X-TAS-01",
+    "unit": "TAS",
+    "topics": ["english-ll-TAS.1", "english-ll-NLT.2"],
+    "paper": "P1",
+    "level": "HL",
+    "title": "Open letter: a library's centenary",
+    "stem": "An open letter published in a regional newspaper on the hundredth anniversary of a public library, written by its current head librarian.\n\nTo the people who built this library, a hundred years ago today,\n\nYou will not know me. When you laid the foundation stone in 1926, you could not have imagined a woman holding my job, or a building where children borrow laptops alongside picture books, or a queue on winter mornings of people who come simply because it is warm.\n\nYou carved four words above the door: KNOWLEDGE FREELY GIVEN HERE. Some of my colleagues call that old-fashioned. I disagree. In an age when answers are sold by the click and attention by the second, those four words read less like a motto and more like a dare.\n\nOur budget is a third of what it was fifteen years ago. Our opening hours have shrunk. And still, last year, 212,000 people walked through your door.\n\nSo I am writing to you, who cannot answer, because the people who can answer need to hear it: the promise you carved is still being kept. For now.\n\nWith respect and gratitude,\nThe Head Librarian",
+    "parts": [
+      { "label": "a", "command": "Analyse", "prompt": "Analyse how the writer uses the letter form and its unusual addressee to achieve her purpose.", "marks": 6, "markscheme": ["addressing the long-dead founders is an apostrophe that creates dignity and a sense of history", "dual audience: ostensibly the founders, actually readers and decision-makers ('the people who can answer')", "respectful formal register and sign-off build ethos", "reveals purpose indirectly: a plea against funding cuts framed as gratitude", "final minor sentence 'For now.' creates an ominous twist and urgency", "open-letter publication turns private address into public argument"] },
+      { "label": "b", "command": "Examine", "prompt": "Examine how the letter uses the contrast between past and present contexts.", "marks": 6, "markscheme": ["contrast of 1926 expectations with present (woman librarian, laptops) shows social change and progress", "the carved motto reread in a new context of reception: from 'old-fashioned' to 'a dare'", "critique of the digital attention economy ('sold by the click') contrasts with the free civic ideal", "statistics (a third of the budget, 212,000 visitors) set decline in funding against continued need – logos", "people coming 'because it is warm' hints at contemporary poverty, widening the library's social role", "the past is used as moral authority to judge present decisions"] }
+    ]
+  }
+]

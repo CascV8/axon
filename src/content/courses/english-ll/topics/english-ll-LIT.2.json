@@ -1,0 +1,418 @@
+{
+  "id": "english-ll-LIT.2",
+  "code": "LIT.2",
+  "unit": "LIT",
+  "title": "Sound, structure and poetic form",
+  "level": "SL",
+  "summary": "How poets use sound patterns, line breaks, stanza shape, metre and form to create meaning, illustrated with short original lines.",
+  "keyterms": [
+    {
+      "id": "english-ll-lit.2-alliteration",
+      "term": "Alliteration",
+      "definition": "Repetition of the same initial consonant sound in nearby words.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-assonance",
+      "term": "Assonance",
+      "definition": "Repetition of vowel sounds in nearby words, often creating a musical or mournful effect.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-sibilance",
+      "term": "Sibilance",
+      "definition": "Repetition of hissing 's', 'sh' or 'z' sounds, which can suggest softness, secrecy or menace.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-onomatopoeia",
+      "term": "Onomatopoeia",
+      "definition": "Words that imitate the sounds they describe, e.g. 'crackle', 'hiss'.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-enjambment",
+      "term": "Enjambment",
+      "definition": "When a sentence runs on from one line of poetry to the next without a pause.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-caesura",
+      "term": "Caesura",
+      "definition": "A strong pause within a line of poetry, usually marked by punctuation.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-volta",
+      "term": "Volta",
+      "definition": "A turn in thought or argument in a poem, traditionally in a sonnet.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-iambic-pentameter",
+      "term": "Iambic pentameter",
+      "definition": "A line of ten syllables in five unstressed–stressed pairs, close to natural English speech rhythm.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-free-verse",
+      "term": "Free verse",
+      "definition": "Poetry without regular metre or rhyme scheme.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-rhyme-scheme",
+      "term": "Rhyme scheme",
+      "definition": "The pattern of end rhymes in a poem, labelled with letters such as ABAB.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-stanza",
+      "term": "Stanza",
+      "definition": "A group of lines forming a unit in a poem, like a paragraph in prose.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-lit.2-juxtaposition",
+      "term": "Juxtaposition",
+      "definition": "Placing contrasting ideas or images side by side to highlight their differences.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-LIT.2-1",
+      "title": "Sound patterns",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-LIT.2-1-q01",
+          "type": "mcq",
+          "prompt": "\"Bitter brambles bit my bleeding hands.\" Which device dominates?",
+          "options": [
+            "Assonance",
+            "Alliteration",
+            "Sibilance",
+            "Caesura"
+          ],
+          "answer": 1,
+          "explanation": "The repeated harsh 'b' sound is alliteration, its plosive force mimicking pain.",
+          "terms": [
+            "english-ll-lit.2-alliteration"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q02",
+          "type": "fill",
+          "text": "\"The snake slid silently across the sand\" is an example of ___.",
+          "answer": "sibilance",
+          "bank": [
+            "sibilance",
+            "onomatopoeia",
+            "assonance",
+            "enjambment"
+          ],
+          "explanation": "Repeated 's' sounds echo the hiss and smooth movement of the snake.",
+          "terms": [
+            "english-ll-lit.2-sibilance"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q03",
+          "type": "mcq",
+          "prompt": "\"Slow, low moans of the old road home.\" What is the effect of the repeated 'o' sounds?",
+          "options": [
+            "They speed up the line",
+            "Long vowel assonance slows the line and creates a mournful tone",
+            "They create comic effect",
+            "They show the speaker is angry"
+          ],
+          "answer": 1,
+          "explanation": "Long open vowels repeated as assonance lengthen the line and sound like a lament.",
+          "terms": [
+            "english-ll-lit.2-assonance"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q04",
+          "type": "tf",
+          "statement": "\"Sizzle\", \"thud\" and \"crunch\" are examples of onomatopoeia.",
+          "answer": true,
+          "explanation": "These words imitate the sounds they name, making description more immediate.",
+          "terms": [
+            "english-ll-lit.2-onomatopoeia"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q05",
+          "type": "match",
+          "prompt": "Match the sound device to an example.",
+          "pairs": [
+            {
+              "left": "Alliteration",
+              "right": "Cold, cruel cliffs"
+            },
+            {
+              "left": "Assonance",
+              "right": "The rain in Spain stays mainly"
+            },
+            {
+              "left": "Onomatopoeia",
+              "right": "The kettle hissed"
+            },
+            {
+              "left": "Sibilance",
+              "right": "Soft sighs of summer seas"
+            }
+          ],
+          "explanation": "Sound devices are only worth naming if you explain how the sound supports meaning or mood.",
+          "terms": [
+            "english-ll-lit.2-alliteration",
+            "english-ll-lit.2-assonance",
+            "english-ll-lit.2-onomatopoeia",
+            "english-ll-lit.2-sibilance"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q06",
+          "type": "mcq",
+          "prompt": "An advert slogan reads: \"Crisp. Clean. Cool.\" Why use alliteration here?",
+          "options": [
+            "To make the slogan memorable and link three positive qualities",
+            "To create a mournful tone",
+            "To show dramatic irony",
+            "To hide information"
+          ],
+          "answer": 0,
+          "explanation": "Sound patterns make slogans catchy and bind adjectives into a single brand identity.",
+          "terms": [
+            "english-ll-lit.2-alliteration"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q07",
+          "type": "fill",
+          "text": "The pattern of end rhymes in a poem, such as ABAB, is its rhyme ___.",
+          "answer": "scheme",
+          "bank": [
+            "scheme",
+            "metre",
+            "stanza",
+            "volta"
+          ],
+          "explanation": "A broken rhyme scheme can signal disruption in the speaker's world.",
+          "terms": [
+            "english-ll-lit.2-rhyme-scheme"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q08",
+          "type": "tf",
+          "statement": "Harsh plosive sounds (b, p, t, d, k) tend to create a soft, soothing effect.",
+          "answer": false,
+          "explanation": "Plosives are abrupt and often suggest violence or anger; softer effects come from sibilants, 'l', 'm' and long vowels.",
+          "terms": [
+            "english-ll-lit.2-alliteration"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q09",
+          "type": "mcq",
+          "prompt": "A poem's rhyme scheme is perfectly regular until the final stanza, where it breaks down. What might this suggest?",
+          "options": [
+            "The poet ran out of rhymes",
+            "The speaker's control or stability collapses at the end",
+            "The poem is free verse throughout",
+            "Nothing at all"
+          ],
+          "answer": 1,
+          "explanation": "Breaking an established pattern is a structural signal; link it to the poem's emotional turn.",
+          "terms": [
+            "english-ll-lit.2-rhyme-scheme"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-1-q10",
+          "type": "order",
+          "prompt": "Order the syllables of 'remember' when marked for stress pattern (unstressed–stressed–unstressed) from first to last.",
+          "items": [
+            "re (unstressed)",
+            "MEM (stressed)",
+            "ber (unstressed)"
+          ],
+          "explanation": "Hearing word stress is the first step to identifying metre such as iambic pentameter.",
+          "terms": [
+            "english-ll-lit.2-iambic-pentameter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-LIT.2-2",
+      "title": "Lines, stanzas and form",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-LIT.2-2-q01",
+          "type": "mcq",
+          "prompt": "\"I waited all night for the phone / to ring. It never did.\" The run-on after 'phone' is:",
+          "options": [
+            "Caesura",
+            "Enjambment",
+            "Volta",
+            "Assonance"
+          ],
+          "answer": 1,
+          "explanation": "Enjambment carries the sentence over the line break, creating a brief suspense that mirrors waiting.",
+          "terms": [
+            "english-ll-lit.2-enjambment"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q02",
+          "type": "mcq",
+          "prompt": "In \"to ring. It never did.\" the full stop mid-line creates:",
+          "options": [
+            "Caesura",
+            "Enjambment",
+            "Rhyme",
+            "Onomatopoeia"
+          ],
+          "answer": 0,
+          "explanation": "A caesura is a mid-line pause; here it makes the disappointment abrupt and final.",
+          "terms": [
+            "english-ll-lit.2-caesura"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q03",
+          "type": "fill",
+          "text": "The turn in thought in a sonnet is called the ___.",
+          "answer": "volta",
+          "bank": [
+            "volta",
+            "caesura",
+            "couplet",
+            "refrain"
+          ],
+          "explanation": "In a Petrarchan sonnet it usually falls at line 9; in a Shakespearean sonnet it often comes in the final couplet.",
+          "terms": [
+            "english-ll-lit.2-volta"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q04",
+          "type": "tf",
+          "statement": "Free verse has no regular metre or rhyme scheme, but it can still use rhythm, repetition and line breaks deliberately.",
+          "answer": true,
+          "explanation": "Free verse is not formless; its structure is chosen line by line.",
+          "terms": [
+            "english-ll-lit.2-free-verse"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q05",
+          "type": "match",
+          "prompt": "Match the form to its feature.",
+          "pairs": [
+            {
+              "left": "Sonnet",
+              "right": "Fourteen lines, often with a volta"
+            },
+            {
+              "left": "Haiku",
+              "right": "Three short lines, often about nature"
+            },
+            {
+              "left": "Free verse",
+              "right": "No fixed metre or rhyme"
+            },
+            {
+              "left": "Elegy",
+              "right": "A poem of mourning"
+            }
+          ],
+          "explanation": "Recognising form lets you discuss how a poem uses or breaks expectations.",
+          "terms": [
+            "english-ll-lit.2-free-verse",
+            "english-ll-lit.2-volta"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q06",
+          "type": "mcq",
+          "prompt": "\"Her wedding dress, white as snow; / the hospital sheet, white as snow.\" What is the main structural device?",
+          "options": [
+            "Juxtaposition through parallel lines",
+            "Onomatopoeia",
+            "Euphemism",
+            "Iambic pentameter"
+          ],
+          "answer": 0,
+          "explanation": "Placing two contrasting moments side by side with the same simile collapses joy and loss together.",
+          "terms": [
+            "english-ll-lit.2-juxtaposition"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q07",
+          "type": "fill",
+          "text": "A group of lines forming a unit in a poem is a ___.",
+          "answer": "stanza",
+          "bank": [
+            "stanza",
+            "verse",
+            "canto",
+            "paragraph"
+          ],
+          "explanation": "Changes in stanza length or shape can mirror shifts in the speaker's state.",
+          "terms": [
+            "english-ll-lit.2-stanza"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q08",
+          "type": "mcq",
+          "prompt": "Which line is in iambic pentameter?",
+          "options": [
+            "The sun goes down behind the silent hill",
+            "Run, run, run away",
+            "Beautiful, beautiful, beautiful night",
+            "Oh"
+          ],
+          "answer": 0,
+          "explanation": "'the SUN goes DOWN be-HIND the SI-lent HILL' has ten syllables in five unstressed–stressed pairs.",
+          "terms": [
+            "english-ll-lit.2-iambic-pentameter"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q09",
+          "type": "tf",
+          "statement": "A single-line stanza after several long stanzas can isolate and emphasise an idea.",
+          "answer": true,
+          "explanation": "Visual and structural isolation on the page draws attention and often marks a climax or turn.",
+          "terms": [
+            "english-ll-lit.2-stanza"
+          ]
+        },
+        {
+          "id": "english-ll-LIT.2-2-q10",
+          "type": "order",
+          "prompt": "Order these analysis steps for a poem's structure.",
+          "items": [
+            "Notice the overall form and stanza pattern",
+            "Identify where the pattern shifts or breaks",
+            "Link the shift to a change in tone or idea",
+            "Explain how form reinforces the poem's meaning"
+          ],
+          "explanation": "Structure analysis should move from noticing pattern to explaining what disruption means.",
+          "terms": [
+            "english-ll-lit.2-stanza",
+            "english-ll-lit.2-volta"
+          ]
+        }
+      ]
+    }
+  ]
+}

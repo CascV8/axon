@@ -1,0 +1,15 @@
+[
+  {
+    "id": "english-ll-X-INT-01",
+    "unit": "INT",
+    "topics": ["english-ll-INT.2", "english-ll-LIT.2", "english-ll-TAS.2"],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Comparative practice: two poems about leaving home",
+    "stem": "Paper 2 is written on two literary works you have studied. To practise comparative thinking, compare these two short original poems.\n\nPOEM 1 — Suitcase\nMy mother packed the kitchen in a case:\nthe cardamom, the ladle, Sunday's taste.\nShe folded up our language with the sheets\nand smoothed it flat, as if it might not keep.\n\nPOEM 2 — Arrivals\nnobody here\nsays my name right\nso I say it\nlouder\n\nat the airport my father\nlooked at the signs\nlike a man reading\nhis own sentence",
+    "parts": [
+      { "label": "a", "command": "Compare", "prompt": "Compare how the two poems use form and structure to present the experience of migration.", "marks": 8, "markscheme": ["Poem 1: regular quatrain with rhyming couplets (case/taste, sheets/keep half-rhyme) suggests order, care and the attempt to contain loss", "Poem 2: free verse, short lines, no punctuation or capitals suggest fragmentation and uncertainty", "Poem 2 isolates 'louder' on its own line: assertion of identity as defiance", "Poem 1's metaphor of 'folding' language like sheets presents culture as something portable but fragile", "Poem 2's ambiguity in 'sentence' (grammar/judicial punishment) presents arrival as a trial", "comparative point: Poem 1 focuses on preserving heritage before departure; Poem 2 on struggling for recognition after arrival", "both use family figures (mother, father) to channel collective experience", "comparison is integrated with precise references to both poems"] },
+      { "label": "b", "command": "Discuss", "prompt": "Discuss which poem presents identity as more under threat, with reference to both texts.", "marks": 6, "markscheme": ["Poem 1: 'as if it might not keep' – fear that language will spoil/be lost", "half-rhyme sheets/keep enacts imperfect preservation", "Poem 2: mispronounced name shows identity misrecognised by others", "father's 'sentence' suggests powerlessness before an unfamiliar system", "Poem 2's speaker responds with agency ('say it / louder'), complicating the threat", "reaches a reasoned judgement that weighs both poems"] }
+    ]
+  }
+]

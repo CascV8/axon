@@ -1,0 +1,420 @@
+{
+  "id": "english-ll-RWT.3",
+  "code": "RWT.3",
+  "unit": "RWT",
+  "title": "Representation, perspective and voice",
+  "level": "SL",
+  "summary": "Texts never simply mirror reality: they select, frame and construct it. Learn to analyse whose perspective is shown, whose is missing, and how voice shapes our response.",
+  "keyterms": [
+    {
+      "id": "english-ll-rwt.3-representation",
+      "term": "Representation",
+      "definition": "The way a text constructs an image of people, places, groups or ideas through selection and framing; one of the course's seven key concepts.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-perspective",
+      "term": "Perspective",
+      "definition": "The point of view or set of values from which a text presents its subject; a key concept of the course.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-voice",
+      "term": "Voice",
+      "definition": "The distinctive personality, attitude and style of a speaker or narrator as heard through the language.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-bias",
+      "term": "Bias",
+      "definition": "A one-sided presentation that favours one view, often through selection, omission or loaded language.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-stereotype",
+      "term": "Stereotype",
+      "definition": "An oversimplified, generalised representation of a group, often reinforcing prejudice.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-framing",
+      "term": "Framing",
+      "definition": "How a text selects and emphasises aspects of an issue to guide interpretation, e.g. a headline framing protest as 'chaos'.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-omission",
+      "term": "Omission",
+      "definition": "What a text leaves out; absences can be as revealing as what is shown.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-persona",
+      "term": "Persona",
+      "definition": "A constructed speaking identity adopted by a writer, such as the 'I' in a poem or a brand's voice.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-loaded-language",
+      "term": "Loaded language",
+      "definition": "Words with strong emotional connotations used to influence the reader's attitude.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-rwt.3-marginalised-voice",
+      "term": "Marginalised voice",
+      "definition": "A perspective that is pushed to the edges or excluded by dominant texts and discourses.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-RWT.3-1",
+      "title": "Constructing reality",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-RWT.3-1-q01",
+          "type": "mcq",
+          "prompt": "Headline A: \"Youths rampage through city centre.\" Headline B: \"Students march for climate action.\" What does the contrast best show?",
+          "options": [
+            "Both are neutral",
+            "The same event can be represented very differently through word choice",
+            "Headline B contains no verbs",
+            "Headlines never influence readers"
+          ],
+          "answer": 1,
+          "explanation": "'Youths rampage' frames the group as threatening; 'students march' frames them as purposeful citizens.",
+          "terms": [
+            "english-ll-rwt.3-representation",
+            "english-ll-rwt.3-framing",
+            "english-ll-rwt.3-loaded-language"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q02",
+          "type": "tf",
+          "statement": "A documentary photograph is a neutral, unmediated record of reality.",
+          "answer": false,
+          "explanation": "Photographers select subject, angle, moment and crop, and editors choose captions. All of these construct a representation.",
+          "terms": [
+            "english-ll-rwt.3-representation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q03",
+          "type": "fill",
+          "text": "An oversimplified, generalised image of a group is a ___.",
+          "answer": "stereotype",
+          "bank": [
+            "stereotype",
+            "persona",
+            "metaphor",
+            "frame"
+          ],
+          "explanation": "Analysing stereotypes means asking what they simplify and whom they serve.",
+          "terms": [
+            "english-ll-rwt.3-stereotype"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q04",
+          "type": "mcq",
+          "prompt": "An article on a factory closure quotes three managers but no workers. What should an analyst note?",
+          "options": [
+            "Its use of rhyme",
+            "The omission of workers' perspectives",
+            "Its excessive use of statistics",
+            "Its fictional narrator"
+          ],
+          "answer": 1,
+          "explanation": "Whose voices are included and excluded is a key part of how a text represents an issue.",
+          "terms": [
+            "english-ll-rwt.3-omission",
+            "english-ll-rwt.3-perspective",
+            "english-ll-rwt.3-marginalised-voice"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q05",
+          "type": "match",
+          "prompt": "Match the word to how it frames a person who crosses a border.",
+          "pairs": [
+            {
+              "left": "Illegal",
+              "right": "Criminal wrongdoing"
+            },
+            {
+              "left": "Refugee",
+              "right": "Someone fleeing danger"
+            },
+            {
+              "left": "Expat",
+              "right": "Privileged, voluntary mobility"
+            },
+            {
+              "left": "Newcomer",
+              "right": "Neutral, welcoming arrival"
+            }
+          ],
+          "explanation": "Labels carry connotations that frame identity and invite particular judgements.",
+          "terms": [
+            "english-ll-rwt.3-framing",
+            "english-ll-rwt.3-loaded-language"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q06",
+          "type": "mcq",
+          "prompt": "\"Bureaucrats in Brussels have once again meddled in our affairs.\" Which words are most loaded?",
+          "options": [
+            "'once again' and 'our'",
+            "'Bureaucrats' and 'meddled'",
+            "'in' and 'have'",
+            "'Brussels' and 'affairs'"
+          ],
+          "answer": 1,
+          "explanation": "'Bureaucrats' connotes faceless red tape and 'meddled' connotes unwelcome interference; together they create hostility.",
+          "terms": [
+            "english-ll-rwt.3-loaded-language",
+            "english-ll-rwt.3-bias"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q07",
+          "type": "tf",
+          "statement": "Bias can be created by selection and placement of information, not only by opinionated words.",
+          "answer": true,
+          "explanation": "Putting one side first, giving it more space or omitting counter-evidence can all create bias in apparently neutral language.",
+          "terms": [
+            "english-ll-rwt.3-bias",
+            "english-ll-rwt.3-omission"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q08",
+          "type": "fill",
+          "text": "How a text selects and emphasises aspects of an issue to guide interpretation is called ___.",
+          "answer": "framing",
+          "bank": [
+            "framing",
+            "foreshadowing",
+            "denotation",
+            "pacing"
+          ],
+          "explanation": "Framing works through headlines, images, order and vocabulary.",
+          "terms": [
+            "english-ll-rwt.3-framing"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q09",
+          "type": "mcq",
+          "prompt": "Which question best probes representation in an advert for a family car?",
+          "options": [
+            "How many words does it use?",
+            "What kind of family is shown, and who is left out?",
+            "What font size is used for the price?",
+            "When was the car designed?"
+          ],
+          "answer": 1,
+          "explanation": "Asking who is shown, how, and who is absent reveals the ideals and assumptions the advert constructs.",
+          "terms": [
+            "english-ll-rwt.3-representation",
+            "english-ll-rwt.3-omission"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-1-q10",
+          "type": "order",
+          "prompt": "Order these questions for analysing representation.",
+          "items": [
+            "Who or what is being represented?",
+            "Which choices construct the representation?",
+            "Whose perspective does it reflect?",
+            "What are the effects and implications?"
+          ],
+          "explanation": "Moving from subject to method to perspective to consequences builds a critical reading.",
+          "terms": [
+            "english-ll-rwt.3-representation",
+            "english-ll-rwt.3-perspective"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-RWT.3-2",
+      "title": "Voice, persona and point of view",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-RWT.3-2-q01",
+          "type": "mcq",
+          "prompt": "A clothing brand tweets: \"ngl our new hoodies are kinda iconic 🔥\". What has the brand created?",
+          "options": [
+            "A formal corporate voice",
+            "A youthful online persona",
+            "A neutral report",
+            "An omniscient narrator"
+          ],
+          "answer": 1,
+          "explanation": "Slang, abbreviation and emoji construct a casual, peer-like persona to make the brand feel like a friend.",
+          "terms": [
+            "english-ll-rwt.3-persona",
+            "english-ll-rwt.3-voice"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q02",
+          "type": "fill",
+          "text": "A constructed speaking identity adopted by a writer is a ___.",
+          "answer": "persona",
+          "bank": [
+            "persona",
+            "protagonist",
+            "stereotype",
+            "motif"
+          ],
+          "explanation": "The speaker of a poem or the 'I' of a column is a persona, not simply the writer themselves.",
+          "terms": [
+            "english-ll-rwt.3-persona"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q03",
+          "type": "tf",
+          "statement": "The speaker of a first-person poem should always be assumed to be the poet.",
+          "answer": false,
+          "explanation": "Poets often adopt personas, so refer to 'the speaker' unless the text is clearly autobiographical.",
+          "terms": [
+            "english-ll-rwt.3-persona",
+            "english-ll-rwt.3-voice"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q04",
+          "type": "mcq",
+          "prompt": "A short story is told by a grieving teenager who keeps changing the subject. What does this voice most likely suggest?",
+          "options": [
+            "She has no feelings",
+            "She is avoiding pain she cannot yet face",
+            "The author made mistakes",
+            "The story is a news report"
+          ],
+          "answer": 1,
+          "explanation": "Deflection and evasion in a narrating voice can reveal emotion indirectly.",
+          "terms": [
+            "english-ll-rwt.3-voice",
+            "english-ll-rwt.3-perspective"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q05",
+          "type": "match",
+          "prompt": "Match the concept to the question it answers.",
+          "pairs": [
+            {
+              "left": "Perspective",
+              "right": "From whose viewpoint is this seen?"
+            },
+            {
+              "left": "Voice",
+              "right": "What personality do we hear?"
+            },
+            {
+              "left": "Omission",
+              "right": "What has been left out?"
+            },
+            {
+              "left": "Framing",
+              "right": "What is emphasised to guide us?"
+            }
+          ],
+          "explanation": "These concepts overlap but each opens a different line of analysis.",
+          "terms": [
+            "english-ll-rwt.3-perspective",
+            "english-ll-rwt.3-voice",
+            "english-ll-rwt.3-omission",
+            "english-ll-rwt.3-framing"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q06",
+          "type": "mcq",
+          "prompt": "Why might a novelist tell a story from the viewpoint of a domestic worker in a wealthy household?",
+          "options": [
+            "To avoid describing any characters",
+            "To give voice to a marginalised perspective and expose the family from below",
+            "Because servants are always unreliable",
+            "To make the book shorter"
+          ],
+          "answer": 1,
+          "explanation": "Shifting perspective to someone usually unheard can critique power and privilege.",
+          "terms": [
+            "english-ll-rwt.3-marginalised-voice",
+            "english-ll-rwt.3-perspective"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q07",
+          "type": "tf",
+          "statement": "Texts can challenge stereotypes as well as reinforce them.",
+          "answer": true,
+          "explanation": "Writers may subvert expectations to expose and question stereotypes; analyse which a text does.",
+          "terms": [
+            "english-ll-rwt.3-stereotype",
+            "english-ll-rwt.3-representation"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q08",
+          "type": "fill",
+          "text": "A one-sided presentation that favours a particular view shows ___.",
+          "answer": "bias",
+          "bank": [
+            "bias",
+            "irony",
+            "balance",
+            "voice"
+          ],
+          "explanation": "Identify how bias is produced: word choice, selection, omission or structure.",
+          "terms": [
+            "english-ll-rwt.3-bias"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q09",
+          "type": "mcq",
+          "prompt": "An infographic about a city uses only photos of glass towers and luxury restaurants. What is the clearest effect?",
+          "options": [
+            "It represents the city as uniformly wealthy and modern, omitting other realities",
+            "It gives a balanced picture",
+            "It focuses on the city's history",
+            "It targets the city's poorest residents"
+          ],
+          "answer": 0,
+          "explanation": "Selective imagery constructs an aspirational representation, likely for investors or tourists.",
+          "terms": [
+            "english-ll-rwt.3-representation",
+            "english-ll-rwt.3-omission"
+          ]
+        },
+        {
+          "id": "english-ll-RWT.3-2-q10",
+          "type": "order",
+          "prompt": "Order these phrases from most neutral to most loaded.",
+          "items": [
+            "The council changed the policy",
+            "The council scrapped the policy",
+            "The council scrapped the policy without warning",
+            "The council betrayed residents by axing the policy"
+          ],
+          "explanation": "Verbs like 'scrapped' and 'axing' and accusations like 'betrayed' progressively add judgement.",
+          "terms": [
+            "english-ll-rwt.3-loaded-language"
+          ]
+        }
+      ]
+    }
+  ]
+}

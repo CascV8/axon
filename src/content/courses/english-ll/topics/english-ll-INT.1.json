@@ -1,0 +1,413 @@
+{
+  "id": "english-ll-INT.1",
+  "code": "INT.1",
+  "unit": "INT",
+  "title": "Allusion, parody and transformation",
+  "level": "SL",
+  "summary": "Texts talk to other texts. Learn the main kinds of intertextual connection and how borrowing, imitating and transforming earlier texts creates meaning.",
+  "keyterms": [
+    {
+      "id": "english-ll-int.1-intertextuality",
+      "term": "Intertextuality",
+      "definition": "The ways texts relate to, borrow from or respond to other texts, shaping meaning for readers who recognise the links.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-allusion",
+      "term": "Allusion",
+      "definition": "A brief, indirect reference to another text, person, event or myth, relying on the reader's recognition.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-parody",
+      "term": "Parody",
+      "definition": "An imitation of a text or style that exaggerates its features for comic or critical effect.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-pastiche",
+      "term": "Pastiche",
+      "definition": "An imitation of a style, often affectionate, without the mocking intent of parody.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-satire",
+      "term": "Satire",
+      "definition": "Use of humour, irony or exaggeration to expose and criticise folly or vice, often in politics or society.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-adaptation",
+      "term": "Adaptation",
+      "definition": "A reworking of a text into a new form or medium, such as a novel turned into a film.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-transformation",
+      "term": "Transformation",
+      "definition": "Changing a text or form to create new meaning; also a key concept of the course.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-homage",
+      "term": "Homage",
+      "definition": "A respectful tribute to another work or creator through reference or imitation.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-epigraph",
+      "term": "Epigraph",
+      "definition": "A quotation placed at the start of a text that frames its themes.",
+      "hl": false
+    },
+    {
+      "id": "english-ll-int.1-retelling",
+      "term": "Retelling",
+      "definition": "A new version of an existing story, often from a different perspective or setting, that reinterprets it.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-ll-INT.1-1",
+      "title": "Kinds of connection",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-INT.1-1-q01",
+          "type": "mcq",
+          "prompt": "A headline reads: \"To Brexit or not to Brexit.\" What technique is used?",
+          "options": [
+            "Allusion",
+            "Onomatopoeia",
+            "Euphemism",
+            "Litotes"
+          ],
+          "answer": 0,
+          "explanation": "It alludes to Hamlet's 'To be or not to be', lending the political question a sense of existential crisis.",
+          "terms": [
+            "english-ll-int.1-allusion",
+            "english-ll-int.1-intertextuality"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q02",
+          "type": "fill",
+          "text": "An imitation that exaggerates a style for comic or critical effect is a ___.",
+          "answer": "parody",
+          "bank": [
+            "parody",
+            "pastiche",
+            "homage",
+            "epigraph"
+          ],
+          "explanation": "Parody mocks or critiques; pastiche and homage imitate without that edge.",
+          "terms": [
+            "english-ll-int.1-parody"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q03",
+          "type": "match",
+          "prompt": "Match the term to its description.",
+          "pairs": [
+            {
+              "left": "Parody",
+              "right": "Mocking imitation"
+            },
+            {
+              "left": "Pastiche",
+              "right": "Affectionate imitation of a style"
+            },
+            {
+              "left": "Homage",
+              "right": "Respectful tribute"
+            },
+            {
+              "left": "Epigraph",
+              "right": "Opening quotation that frames a text"
+            }
+          ],
+          "explanation": "The difference lies in attitude: critical, playful or reverent.",
+          "terms": [
+            "english-ll-int.1-parody",
+            "english-ll-int.1-pastiche",
+            "english-ll-int.1-homage",
+            "english-ll-int.1-epigraph"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q04",
+          "type": "tf",
+          "statement": "An allusion only works fully if the reader recognises the source.",
+          "answer": true,
+          "explanation": "Allusions rely on shared knowledge, so they can include some readers and exclude others.",
+          "terms": [
+            "english-ll-int.1-allusion"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q05",
+          "type": "mcq",
+          "prompt": "A novel retells a fairy tale from the wolf's point of view. What is this?",
+          "options": [
+            "A retelling that transforms perspective",
+            "A news report",
+            "An epigraph",
+            "An anachronism"
+          ],
+          "answer": 0,
+          "explanation": "Retellings often give voice to marginal or villainised characters to question the original's values.",
+          "terms": [
+            "english-ll-int.1-retelling",
+            "english-ll-int.1-transformation"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q06",
+          "type": "mcq",
+          "prompt": "A comedy website publishes a fake news article: \"Local man heroically survives entire afternoon without phone.\" What genre is it?",
+          "options": [
+            "Hard news",
+            "Satire",
+            "Obituary",
+            "Encyclopedia entry"
+          ],
+          "answer": 1,
+          "explanation": "It imitates news conventions to satirise phone dependence through exaggeration.",
+          "terms": [
+            "english-ll-int.1-satire",
+            "english-ll-int.1-parody"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q07",
+          "type": "fill",
+          "text": "Turning a novel into a graphic novel or film is an example of ___.",
+          "answer": "adaptation",
+          "bank": [
+            "adaptation",
+            "allusion",
+            "translation",
+            "parody"
+          ],
+          "explanation": "Adaptations must transform content to fit the new medium's conventions.",
+          "terms": [
+            "english-ll-int.1-adaptation"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q08",
+          "type": "tf",
+          "statement": "Intertextuality applies only to literary texts.",
+          "answer": false,
+          "explanation": "Adverts, memes and speeches constantly borrow from other texts; intertextuality is everywhere.",
+          "terms": [
+            "english-ll-int.1-intertextuality"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q09",
+          "type": "mcq",
+          "prompt": "A perfume advert shows a woman biting an apple in a lush garden. Which allusion is most likely?",
+          "options": [
+            "The Garden of Eden and temptation",
+            "A cookery show",
+            "A scientific experiment",
+            "A sports final"
+          ],
+          "answer": 0,
+          "explanation": "The apple and garden evoke the Eden story, associating the perfume with irresistible temptation.",
+          "terms": [
+            "english-ll-int.1-allusion"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-1-q10",
+          "type": "order",
+          "prompt": "Order the steps for analysing an allusion.",
+          "items": [
+            "Identify the source",
+            "Recall what it means in the original",
+            "Note how the new text changes or uses it",
+            "Explain the effect on meaning and audience"
+          ],
+          "explanation": "Naming the source is only the start; the point is what the borrowing does in its new context.",
+          "terms": [
+            "english-ll-int.1-allusion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-ll-INT.1-2",
+      "title": "Why transform texts?",
+      "hl": false,
+      "questions": [
+        {
+          "id": "english-ll-INT.1-2-q01",
+          "type": "mcq",
+          "prompt": "Why might a contemporary poet rewrite a famous love sonnet in the language of dating apps?",
+          "options": [
+            "To show she cannot write originally",
+            "To compare ideals of romance across time and comment on modern love",
+            "Because sonnets are banned",
+            "To make the poem longer"
+          ],
+          "answer": 1,
+          "explanation": "Transformation invites comparison between contexts, revealing what has changed and what endures.",
+          "terms": [
+            "english-ll-int.1-transformation",
+            "english-ll-int.1-parody"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q02",
+          "type": "tf",
+          "statement": "Transformation is one of the seven key concepts of the course.",
+          "answer": true,
+          "explanation": "Transformation covers both how texts transform other texts and how they can transform readers.",
+          "terms": [
+            "english-ll-int.1-transformation"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q03",
+          "type": "fill",
+          "text": "A quotation placed at the beginning of a novel to frame its themes is an ___.",
+          "answer": "epigraph",
+          "bank": [
+            "epigraph",
+            "epitaph",
+            "epilogue",
+            "epithet"
+          ],
+          "explanation": "An epigraph sets up an intertextual conversation before the story begins. Do not confuse it with an epitaph on a grave.",
+          "terms": [
+            "english-ll-int.1-epigraph"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q04",
+          "type": "mcq",
+          "prompt": "What separates satire from simple parody?",
+          "options": [
+            "Satire always rhymes",
+            "Satire aims to criticise wider social or political targets, not just a text or style",
+            "Parody is always serious",
+            "There is no difference"
+          ],
+          "answer": 1,
+          "explanation": "Parody imitates a text or style; satire uses tools like parody to attack real-world vice or folly.",
+          "terms": [
+            "english-ll-int.1-satire",
+            "english-ll-int.1-parody"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q05",
+          "type": "match",
+          "prompt": "Match the borrowing to its likely effect.",
+          "pairs": [
+            {
+              "left": "Biblical cadence in a speech",
+              "right": "Moral authority and gravitas"
+            },
+            {
+              "left": "Fairy-tale opening in an advert",
+              "right": "Fantasy and wish-fulfilment"
+            },
+            {
+              "left": "Movie-trailer voice in a campaign",
+              "right": "Drama and excitement"
+            },
+            {
+              "left": "Mock-heroic style for a cat",
+              "right": "Comic deflation"
+            }
+          ],
+          "explanation": "Borrowed styles carry associations that transfer to the new text.",
+          "terms": [
+            "english-ll-int.1-intertextuality",
+            "english-ll-int.1-allusion"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q06",
+          "type": "mcq",
+          "prompt": "A film adaptation cuts a novel's first-person narration. What is most likely lost or changed?",
+          "options": [
+            "The plot entirely",
+            "Direct access to the narrator's thoughts, which must be conveyed by acting, voice-over or camera",
+            "The characters' names",
+            "Nothing at all"
+          ],
+          "answer": 1,
+          "explanation": "Each medium has different resources; adaptations translate techniques rather than copy them.",
+          "terms": [
+            "english-ll-int.1-adaptation"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q07",
+          "type": "tf",
+          "statement": "A homage usually aims to ridicule the earlier work.",
+          "answer": false,
+          "explanation": "Homage is respectful. Ridicule is the territory of parody and satire.",
+          "terms": [
+            "english-ll-int.1-homage"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q08",
+          "type": "fill",
+          "text": "Using humour and exaggeration to expose folly or vice in society is called ___.",
+          "answer": "satire",
+          "bank": [
+            "satire",
+            "homage",
+            "elegy",
+            "pastiche"
+          ],
+          "explanation": "Satire has a corrective purpose behind its comedy.",
+          "terms": [
+            "english-ll-int.1-satire"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q09",
+          "type": "mcq",
+          "prompt": "Which statement best describes intertextuality as an area of exploration?",
+          "options": [
+            "Studying one text in isolation",
+            "Exploring how texts connect through genre, allusion, theme and form, and comparing them",
+            "Learning grammar rules",
+            "Memorising authors' dates of birth"
+          ],
+          "answer": 1,
+          "explanation": "The area asks how meaning is shaped by connections between texts, which also underpins Paper 2 comparison.",
+          "terms": [
+            "english-ll-int.1-intertextuality"
+          ]
+        },
+        {
+          "id": "english-ll-INT.1-2-q10",
+          "type": "mcq",
+          "prompt": "A meme pairs a famous painting with a caption about exam stress. What intertextual technique is at work?",
+          "options": [
+            "Repurposing a familiar image for comic juxtaposition",
+            "Censorship",
+            "Literal translation",
+            "Epigraph"
+          ],
+          "answer": 0,
+          "explanation": "Memes transform recognisable images, and the gap between source and caption creates humour.",
+          "terms": [
+            "english-ll-int.1-transformation",
+            "english-ll-int.1-intertextuality"
+          ]
+        }
+      ]
+    }
+  ]
+}
