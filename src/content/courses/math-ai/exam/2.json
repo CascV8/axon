@@ -1,0 +1,76 @@
+[
+  {
+    "id": "math-ai-X-2-01",
+    "unit": "2",
+    "topics": [
+      "math-ai-2.5"
+    ],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Cooling soup",
+    "stem": "A bowl of soup is placed in a room. Its temperature, T °C, t minutes later is modelled by T(t) = 20 + k e^(−mt), where k and m are positive constants. The initial temperature is 85 °C and after 5 minutes the temperature is 60 °C.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Find",
+        "prompt": "Find the value of k.",
+        "marks": 2,
+        "numeric": {
+          "value": 65,
+          "tolerance": 0,
+          "unit": ""
+        },
+        "markscheme": [
+          "85 = 20 + k e⁰",
+          "k = 65"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Find",
+        "prompt": "Find the value of m.",
+        "marks": 3,
+        "numeric": {
+          "value": 0.0971,
+          "tolerance": 0.0002,
+          "unit": ""
+        },
+        "markscheme": [
+          "60 = 20 + 65e^(−5m)",
+          "e^(−5m) = 40/65 / use of ln or GDC solver",
+          "m = 0.0971 (0.0971015…)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Find",
+        "prompt": "Find the time taken for the soup to cool to 30 °C.",
+        "marks": 2,
+        "numeric": {
+          "value": 19.3,
+          "tolerance": 0.1,
+          "unit": "min"
+        },
+        "markscheme": [
+          "30 = 20 + 65e^(−0.0971t)",
+          "t = 19.3 minutes"
+        ],
+        "notes": "Follow through from their m."
+      },
+      {
+        "label": "d",
+        "command": "State",
+        "prompt": "State the temperature of the room, according to the model.",
+        "marks": 1,
+        "numeric": {
+          "value": 20,
+          "tolerance": 0,
+          "unit": "°C"
+        },
+        "markscheme": [
+          "20 °C (the horizontal asymptote)"
+        ]
+      }
+    ]
+  }
+]

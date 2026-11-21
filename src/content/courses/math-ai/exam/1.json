@@ -1,0 +1,144 @@
+[
+  {
+    "id": "math-ai-X-1-01",
+    "unit": "1",
+    "topics": [
+      "math-ai-1.4"
+    ],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Savings and a car loan",
+    "stem": "Maya invests $8000 in a savings account paying a nominal annual interest rate of 3.6%, compounded monthly. No further deposits or withdrawals are made.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Calculate",
+        "prompt": "Calculate the value of the investment after 5 years, to the nearest cent.",
+        "marks": 3,
+        "numeric": {
+          "value": 9575.16,
+          "tolerance": 0.02,
+          "unit": "$"
+        },
+        "markscheme": [
+          "attempt to use compound interest formula or TVM solver",
+          "8000(1 + 3.6/1200)^(12 × 5) / N = 60, I% = 3.6, PV = −8000, P/Y = C/Y = 12",
+          "$9575.16"
+        ],
+        "notes": "Accept a positive or negative sign on PV/FV if consistent."
+      },
+      {
+        "label": "b",
+        "command": "Find",
+        "prompt": "Find the number of complete years before the value of the investment first exceeds $12 000.",
+        "marks": 3,
+        "numeric": {
+          "value": 12,
+          "tolerance": 0,
+          "unit": "years"
+        },
+        "markscheme": [
+          "8000(1.003)^(12n) > 12 000 or TVM with FV = 12 000",
+          "n = 11.28… years / value after 11 years = 11 879.91 and after 12 years = 12 314.71",
+          "12 years"
+        ],
+        "notes": "Do not accept 11; the value has not yet reached $12 000 after 11 years."
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Maya then borrows $15 000 to buy a car. The loan has a nominal annual rate of 6.5% compounded monthly and is repaid with equal monthly payments over 4 years. Calculate the monthly payment.",
+        "marks": 3,
+        "numeric": {
+          "value": 355.72,
+          "tolerance": 0.02,
+          "unit": "$"
+        },
+        "markscheme": [
+          "N = 48",
+          "I% = 6.5, PV = 15 000, FV = 0, P/Y = C/Y = 12",
+          "$355.72"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Calculate",
+        "prompt": "Calculate the total interest Maya pays on the loan.",
+        "marks": 2,
+        "numeric": {
+          "value": 2074.77,
+          "tolerance": 0.5,
+          "unit": "$"
+        },
+        "markscheme": [
+          "48 × 355.72 − 15 000",
+          "$2074.77 (accept $2074.56 from rounded payment)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-ai-X-1-02",
+    "unit": "1",
+    "topics": [
+      "math-ai-1.12"
+    ],
+    "paper": "P2",
+    "level": "HL",
+    "title": "Adding two alternating voltages",
+    "stem": "Two alternating voltages of the same frequency are applied in series: V₁ = 10 sin(ωt) and V₂ = 6 sin(ωt + π/3). Each voltage can be represented by a complex number (phasor) whose modulus is the amplitude and whose argument is the phase, so V₁ ↔ 10 and V₂ ↔ 6e^(iπ/3).",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Write",
+        "prompt": "Write the phasor for V₂ in the form a + bi, giving exact values.",
+        "marks": 2,
+        "markscheme": [
+          "6(cos(π/3) + i sin(π/3))",
+          "3 + 3√3 i"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Find",
+        "prompt": "Find the modulus of the phasor for the total voltage V₁ + V₂.",
+        "marks": 3,
+        "numeric": {
+          "value": 14,
+          "tolerance": 0.01,
+          "unit": "V"
+        },
+        "markscheme": [
+          "10 + 3 + 3√3 i = 13 + 3√3 i",
+          "√(13² + (3√3)²) = √(169 + 27)",
+          "√196 = 14"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Find",
+        "prompt": "Find the argument of the total phasor, in radians.",
+        "marks": 2,
+        "numeric": {
+          "value": 0.38,
+          "tolerance": 0.001,
+          "unit": "rad"
+        },
+        "markscheme": [
+          "arctan(3√3 / 13)",
+          "0.380 (rad)"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Hence",
+        "prompt": "Hence write the total voltage in the form A sin(ωt + φ).",
+        "marks": 1,
+        "markscheme": [
+          "14 sin(ωt + 0.380)"
+        ],
+        "notes": "Follow through from parts (b) and (c)."
+      }
+    ]
+  }
+]

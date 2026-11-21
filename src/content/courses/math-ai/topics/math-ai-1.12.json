@@ -1,0 +1,418 @@
+{
+  "id": "math-ai-1.12",
+  "code": "AHL 1.12–1.13",
+  "unit": "1",
+  "title": "Complex numbers",
+  "level": "HL",
+  "summary": "Complex numbers in Cartesian, polar and exponential (Euler) form, their geometry on an Argand diagram and an application to adding alternating currents or voltages.",
+  "keyterms": [
+    {
+      "id": "math-ai-1.12-imaginary-unit",
+      "term": "Imaginary unit",
+      "definition": "i, defined by i² = −1.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-complex-number",
+      "term": "Complex number",
+      "definition": "A number z = a + bi with a, b real; the Cartesian form.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-real-part",
+      "term": "Real part",
+      "definition": "Re(z) = a for z = a + bi.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-imaginary-part",
+      "term": "Imaginary part",
+      "definition": "Im(z) = b for z = a + bi (a real number).",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-conjugate",
+      "term": "Complex conjugate",
+      "definition": "z* = a − bi for z = a + bi; z·z* = a² + b² is real.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-argand-diagram",
+      "term": "Argand diagram",
+      "definition": "A plane with real part on the horizontal axis and imaginary part on the vertical axis.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-modulus",
+      "term": "Modulus",
+      "definition": "|z| = √(a² + b²), the distance of z from the origin on an Argand diagram.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-argument",
+      "term": "Argument",
+      "definition": "arg z = θ, the angle from the positive real axis to z, usually in radians.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-polar-form",
+      "term": "Polar form",
+      "definition": "z = r(cos θ + i sin θ) = r cis θ, with r = |z| and θ = arg z.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-euler-form",
+      "term": "Exponential (Euler) form",
+      "definition": "z = re^(iθ), equivalent to r cis θ.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.12-phasor",
+      "term": "Phasor",
+      "definition": "A complex number representing a sinusoid’s amplitude (modulus) and phase (argument), used for AC circuits.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-1.12-1",
+      "title": "Cartesian form",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-1.12-1-q01",
+          "type": "fill",
+          "text": "i² = ___",
+          "answer": "−1",
+          "bank": [
+            "1",
+            "−1",
+            "i",
+            "0"
+          ],
+          "explanation": "The imaginary unit is defined by i² = −1.",
+          "terms": [
+            "math-ai-1.12-imaginary-unit"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q02",
+          "type": "mcq",
+          "prompt": "Simplify (3 + 2i) + (1 − 5i).",
+          "options": [
+            "4 − 3i",
+            "4 + 7i",
+            "2 + 7i",
+            "3 − 10i"
+          ],
+          "answer": 0,
+          "explanation": "Add real parts (3 + 1) and imaginary parts (2 − 5).",
+          "terms": [
+            "math-ai-1.12-complex-number"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q03",
+          "type": "mcq",
+          "prompt": "Expand (2 + i)(3 − i).",
+          "options": [
+            "5 + i",
+            "7 − i",
+            "6 − i",
+            "7 + i"
+          ],
+          "answer": 3,
+          "explanation": "6 − 2i + 3i − i² = 6 + i + 1 = 7 + i.",
+          "terms": [
+            "math-ai-1.12-complex-number",
+            "math-ai-1.12-imaginary-unit"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q04",
+          "type": "tf",
+          "statement": "The conjugate of 4 − 7i is −4 + 7i.",
+          "answer": false,
+          "explanation": "Only the sign of the imaginary part changes: (4 − 7i)* = 4 + 7i.",
+          "terms": [
+            "math-ai-1.12-conjugate"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q05",
+          "type": "mcq",
+          "prompt": "Find |5 − 12i|.",
+          "options": [
+            "17",
+            "13",
+            "7",
+            "√119"
+          ],
+          "answer": 1,
+          "explanation": "|z| = √(5² + 12²) = √169 = 13.",
+          "terms": [
+            "math-ai-1.12-modulus"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q06",
+          "type": "mcq",
+          "prompt": "Simplify (1 + i)/(1 − i).",
+          "options": [
+            "i",
+            "1",
+            "−i",
+            "1 + i"
+          ],
+          "answer": 0,
+          "explanation": "Multiply top and bottom by 1 + i: (1 + i)²/2 = 2i/2 = i.",
+          "terms": [
+            "math-ai-1.12-conjugate"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q07",
+          "type": "match",
+          "prompt": "For z = 3 + 4i, match each quantity to its value.",
+          "pairs": [
+            {
+              "left": "Re(z)",
+              "right": "3"
+            },
+            {
+              "left": "Im(z)",
+              "right": "4"
+            },
+            {
+              "left": "|z|",
+              "right": "5"
+            },
+            {
+              "left": "z*",
+              "right": "3 − 4i"
+            }
+          ],
+          "explanation": "The imaginary part is the real number 4, not 4i.",
+          "terms": [
+            "math-ai-1.12-real-part",
+            "math-ai-1.12-imaginary-part",
+            "math-ai-1.12-modulus",
+            "math-ai-1.12-conjugate"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q08",
+          "type": "fill",
+          "text": "On an Argand diagram, the imaginary part is plotted on the ___ axis.",
+          "answer": "vertical",
+          "bank": [
+            "horizontal",
+            "diagonal",
+            "vertical",
+            "third"
+          ],
+          "explanation": "z = a + bi is plotted at the point (a, b).",
+          "terms": [
+            "math-ai-1.12-argand-diagram"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q09",
+          "type": "tf",
+          "statement": "z·z* is always a real number.",
+          "answer": true,
+          "explanation": "(a + bi)(a − bi) = a² + b², which is real and equals |z|².",
+          "terms": [
+            "math-ai-1.12-conjugate",
+            "math-ai-1.12-modulus"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-1-q10",
+          "type": "mcq",
+          "prompt": "Solve x² + 4x + 13 = 0.",
+          "options": [
+            "x = −2 ± 3i",
+            "x = 2 ± 3i",
+            "x = −2 ± 9i",
+            "x = −4 ± 3i"
+          ],
+          "answer": 0,
+          "explanation": "x = (−4 ± √(16 − 52))/2 = (−4 ± 6i)/2 = −2 ± 3i.",
+          "terms": [
+            "math-ai-1.12-complex-number"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-1.12-2",
+      "title": "Polar and Euler forms",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-1.12-2-q01",
+          "type": "mcq",
+          "prompt": "Find arg(1 + i).",
+          "options": [
+            "π/4",
+            "π/2",
+            "1",
+            "√2"
+          ],
+          "answer": 0,
+          "explanation": "1 + i lies on the line at 45° to the real axis, which is π/4 radians.",
+          "terms": [
+            "math-ai-1.12-argument"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q02",
+          "type": "fill",
+          "text": "z = r cis θ means z = r(cos θ + i ___ θ).",
+          "answer": "sin",
+          "bank": [
+            "tan",
+            "sin",
+            "cos",
+            "sec"
+          ],
+          "explanation": "cis is shorthand for cos + i sin.",
+          "terms": [
+            "math-ai-1.12-polar-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q03",
+          "type": "mcq",
+          "prompt": "Write −2 in exponential form.",
+          "options": [
+            "2e^(i0)",
+            "−2e^(iπ)",
+            "2e^(iπ)",
+            "2e^(iπ/2)"
+          ],
+          "answer": 2,
+          "explanation": "−2 has modulus 2 and lies on the negative real axis, so its argument is π.",
+          "terms": [
+            "math-ai-1.12-euler-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q04",
+          "type": "tf",
+          "statement": "To multiply complex numbers in polar form, multiply the moduli and add the arguments.",
+          "answer": true,
+          "explanation": "r₁e^(iθ₁) × r₂e^(iθ₂) = r₁r₂e^(i(θ₁ + θ₂)).",
+          "terms": [
+            "math-ai-1.12-polar-form",
+            "math-ai-1.12-euler-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q05",
+          "type": "mcq",
+          "prompt": "z₁ = 3e^(iπ/6) and z₂ = 2e^(iπ/3). Find z₁z₂.",
+          "options": [
+            "6i",
+            "5e^(iπ/2)",
+            "6e^(iπ/18)",
+            "6"
+          ],
+          "answer": 0,
+          "explanation": "3 × 2 = 6 and π/6 + π/3 = π/2, so 6e^(iπ/2) = 6i.",
+          "terms": [
+            "math-ai-1.12-euler-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q06",
+          "type": "mcq",
+          "prompt": "For the same z₁ and z₂, find z₁/z₂.",
+          "options": [
+            "1.5e^(iπ/6)",
+            "1.5e^(iπ/2)",
+            "e^(−iπ/6)",
+            "1.5e^(−iπ/6)"
+          ],
+          "answer": 3,
+          "explanation": "Divide the moduli (3/2) and subtract the arguments (π/6 − π/3 = −π/6).",
+          "terms": [
+            "math-ai-1.12-euler-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q07",
+          "type": "tf",
+          "statement": "Multiplying by i rotates a point on the Argand diagram 90° anticlockwise about the origin.",
+          "answer": true,
+          "explanation": "i = e^(iπ/2), so multiplying adds π/2 to the argument and keeps the modulus.",
+          "terms": [
+            "math-ai-1.12-argand-diagram",
+            "math-ai-1.12-argument"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q08",
+          "type": "match",
+          "prompt": "Match each Cartesian form to its polar form.",
+          "pairs": [
+            {
+              "left": "2i",
+              "right": "2 cis(π/2)"
+            },
+            {
+              "left": "−3",
+              "right": "3 cis π"
+            },
+            {
+              "left": "1 + i√3",
+              "right": "2 cis(π/3)"
+            },
+            {
+              "left": "1 − i",
+              "right": "√2 cis(−π/4)"
+            }
+          ],
+          "explanation": "Find r with Pythagoras and θ from the position on the Argand diagram.",
+          "terms": [
+            "math-ai-1.12-polar-form",
+            "math-ai-1.12-modulus",
+            "math-ai-1.12-argument"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q09",
+          "type": "order",
+          "prompt": "Put the steps for adding two voltages of the same frequency using phasors in order.",
+          "items": [
+            "Write each voltage as a complex number in Cartesian form",
+            "Add the real parts and the imaginary parts",
+            "Convert the sum to modulus–argument form",
+            "Read off the amplitude (modulus) and phase (argument)"
+          ],
+          "explanation": "Addition is easiest in Cartesian form; amplitude and phase come from polar form.",
+          "terms": [
+            "math-ai-1.12-phasor"
+          ]
+        },
+        {
+          "id": "math-ai-1.12-2-q10",
+          "type": "fill",
+          "text": "|z₁z₂| = |z₁| × ___",
+          "answer": "|z₂|",
+          "bank": [
+            "arg z₂",
+            "|z₂|",
+            "|z₁|",
+            "z₂*"
+          ],
+          "explanation": "The modulus of a product is the product of the moduli.",
+          "terms": [
+            "math-ai-1.12-modulus"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "id": "math-ai-2.1",
+  "code": "SL 2.1–2.4",
+  "unit": "2",
+  "title": "Lines, functions and graphs",
+  "level": "SL",
+  "summary": "Equations of straight lines, function notation, domain and range, inverse functions as reflections, and using a GDC to find key features and intersections of graphs.",
+  "keyterms": [
+    {
+      "id": "math-ai-2.1-gradient",
+      "term": "Gradient",
+      "definition": "The steepness of a line: m = (y₂ − y₁)/(x₂ − x₁), the change in y per unit increase in x.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-y-intercept",
+      "term": "y-intercept",
+      "definition": "The point where a graph crosses the y-axis (x = 0); c in y = mx + c.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-gradient-intercept-form",
+      "term": "Gradient–intercept form",
+      "definition": "y = mx + c, showing the gradient m and y-intercept c.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-general-form",
+      "term": "General form",
+      "definition": "ax + by + d = 0, a form of the equation of a straight line.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-parallel-lines",
+      "term": "Parallel lines",
+      "definition": "Lines with equal gradients, m₁ = m₂.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-perpendicular-lines",
+      "term": "Perpendicular lines",
+      "definition": "Lines meeting at a right angle; their gradients satisfy m₁ × m₂ = −1.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-function",
+      "term": "Function",
+      "definition": "A relation that assigns exactly one output f(x) to each input x in its domain.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-domain",
+      "term": "Domain",
+      "definition": "The set of input values (x-values) for which a function is defined.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-range",
+      "term": "Range",
+      "definition": "The set of output values (y-values) a function takes.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-inverse-function",
+      "term": "Inverse function",
+      "definition": "f⁻¹ reverses f; its graph is the reflection of y = f(x) in the line y = x.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-asymptote",
+      "term": "Asymptote",
+      "definition": "A line that a graph approaches more and more closely but does not reach.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.1-vertex",
+      "term": "Vertex",
+      "definition": "The turning point of a parabola: its maximum or minimum point.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-2.1-1",
+      "title": "Equations of straight lines",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-2.1-1-q01",
+          "type": "mcq",
+          "prompt": "Find the gradient of the line through (2, 5) and (6, 13).",
+          "options": [
+            "0.5",
+            "4",
+            "8",
+            "2"
+          ],
+          "answer": 3,
+          "explanation": "m = (13 − 5)/(6 − 2) = 8/4 = 2.",
+          "terms": [
+            "math-ai-2.1-gradient"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q02",
+          "type": "fill",
+          "text": "The line y = 3x − 4 has y-intercept ___.",
+          "answer": "−4",
+          "bank": [
+            "3",
+            "4",
+            "−4",
+            "4/3"
+          ],
+          "explanation": "In y = mx + c, the y-intercept is c = −4.",
+          "terms": [
+            "math-ai-2.1-y-intercept",
+            "math-ai-2.1-gradient-intercept-form"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q03",
+          "type": "tf",
+          "statement": "The gradients of two perpendicular lines multiply to give −1.",
+          "answer": true,
+          "explanation": "m₁m₂ = −1, e.g. 2 and −½.",
+          "terms": [
+            "math-ai-2.1-perpendicular-lines"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q04",
+          "type": "mcq",
+          "prompt": "Find the line parallel to y = 2x + 1 that passes through (3, 4).",
+          "options": [
+            "y = 2x − 2",
+            "y = −½x + 5.5",
+            "y = 2x + 4",
+            "y = 2x + 1"
+          ],
+          "answer": 0,
+          "explanation": "Parallel means m = 2: y − 4 = 2(x − 3), so y = 2x − 2.",
+          "terms": [
+            "math-ai-2.1-parallel-lines"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q05",
+          "type": "mcq",
+          "prompt": "Find the line perpendicular to y = 2x + 1 that passes through (2, 3).",
+          "options": [
+            "y = 2x − 1",
+            "y = −2x + 7",
+            "y = ½x + 2",
+            "y = −½x + 4"
+          ],
+          "answer": 3,
+          "explanation": "Perpendicular gradient is −½: y − 3 = −½(x − 2), so y = −½x + 4.",
+          "terms": [
+            "math-ai-2.1-perpendicular-lines"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q06",
+          "type": "mcq",
+          "prompt": "Write 2x + 3y − 12 = 0 in gradient–intercept form.",
+          "options": [
+            "y = ⅔x + 4",
+            "y = −2x + 12",
+            "y = −⅔x + 4",
+            "y = −⅔x − 4"
+          ],
+          "answer": 2,
+          "explanation": "3y = −2x + 12, so y = −⅔x + 4.",
+          "terms": [
+            "math-ai-2.1-general-form",
+            "math-ai-2.1-gradient-intercept-form"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q07",
+          "type": "tf",
+          "statement": "The line y = 5 has gradient 5.",
+          "answer": false,
+          "explanation": "y = 5 is horizontal, so its gradient is 0.",
+          "terms": [
+            "math-ai-2.1-gradient"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q08",
+          "type": "match",
+          "prompt": "Match each equation to its description.",
+          "pairs": [
+            {
+              "left": "y = mx + c",
+              "right": "gradient–intercept form"
+            },
+            {
+              "left": "ax + by + d = 0",
+              "right": "general form"
+            },
+            {
+              "left": "y − y₁ = m(x − x₁)",
+              "right": "point–gradient form"
+            },
+            {
+              "left": "x = 4",
+              "right": "vertical line, undefined gradient"
+            }
+          ],
+          "explanation": "All three forms describe the same kinds of line; choose the most convenient.",
+          "terms": [
+            "math-ai-2.1-gradient-intercept-form",
+            "math-ai-2.1-general-form"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q09",
+          "type": "fill",
+          "text": "A taxi fare is C = 2.5d + 4, where d is distance in km. The fixed charge is $___.",
+          "answer": "4",
+          "bank": [
+            "2.5",
+            "6.5",
+            "0",
+            "4"
+          ],
+          "explanation": "The constant term is the cost when d = 0; 2.5 is the cost per km (the gradient).",
+          "terms": [
+            "math-ai-2.1-y-intercept",
+            "math-ai-2.1-gradient"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-1-q10",
+          "type": "order",
+          "prompt": "Put the steps for finding the equation of a line through two points in order.",
+          "items": [
+            "Calculate the gradient",
+            "Substitute one point into y − y₁ = m(x − x₁)",
+            "Rearrange into the required form",
+            "Check that the second point satisfies the equation"
+          ],
+          "explanation": "Checking with the second point catches arithmetic slips.",
+          "terms": [
+            "math-ai-2.1-gradient"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-2.1-2",
+      "title": "Functions and their graphs",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-2.1-2-q01",
+          "type": "mcq",
+          "prompt": "f(x) = 3x² − 2. Find f(−2).",
+          "options": [
+            "−14",
+            "34",
+            "10",
+            "16"
+          ],
+          "answer": 2,
+          "explanation": "3 × (−2)² − 2 = 12 − 2 = 10. Square before multiplying.",
+          "terms": [
+            "math-ai-2.1-function"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q02",
+          "type": "fill",
+          "text": "The set of possible input values of a function is its ___.",
+          "answer": "domain",
+          "bank": [
+            "range",
+            "gradient",
+            "inverse",
+            "domain"
+          ],
+          "explanation": "Inputs form the domain; outputs form the range.",
+          "terms": [
+            "math-ai-2.1-domain"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q03",
+          "type": "tf",
+          "statement": "The graph of y = f⁻¹(x) is the reflection of y = f(x) in the line y = x.",
+          "answer": true,
+          "explanation": "Inverting swaps x and y, which reflects the graph in y = x.",
+          "terms": [
+            "math-ai-2.1-inverse-function"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q04",
+          "type": "mcq",
+          "prompt": "Find the range of f(x) = x² + 3, x ∈ ℝ.",
+          "options": [
+            "f(x) > 3",
+            "f(x) ∈ ℝ",
+            "f(x) ≥ 0",
+            "f(x) ≥ 3"
+          ],
+          "answer": 3,
+          "explanation": "x² ≥ 0, so the smallest output is 3, reached at x = 0.",
+          "terms": [
+            "math-ai-2.1-range"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q05",
+          "type": "mcq",
+          "prompt": "f(x) = 2x + 6. Find f⁻¹(x).",
+          "options": [
+            "(x + 6)/2",
+            "2x − 6",
+            "(x − 6)/2",
+            "1/(2x + 6)"
+          ],
+          "answer": 2,
+          "explanation": "Swap x and y in y = 2x + 6 and solve: x = 2y + 6 gives y = (x − 6)/2.",
+          "terms": [
+            "math-ai-2.1-inverse-function"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q06",
+          "type": "mcq",
+          "prompt": "State the horizontal asymptote of y = 1/(x − 2) + 1.",
+          "options": [
+            "y = 2",
+            "y = 1",
+            "x = 2",
+            "y = 0"
+          ],
+          "answer": 1,
+          "explanation": "As x → ±∞, 1/(x − 2) → 0, so y → 1. x = 2 is the vertical asymptote.",
+          "terms": [
+            "math-ai-2.1-asymptote"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q07",
+          "type": "tf",
+          "statement": "A vertical line can cross the graph of a function more than once.",
+          "answer": false,
+          "explanation": "Each input has exactly one output, so a vertical line meets the graph at most once.",
+          "terms": [
+            "math-ai-2.1-function"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q08",
+          "type": "match",
+          "prompt": "For y = (x − 1)² + 4, match each feature to its value.",
+          "pairs": [
+            {
+              "left": "Vertex",
+              "right": "(1, 4)"
+            },
+            {
+              "left": "y-intercept",
+              "right": "(0, 5)"
+            },
+            {
+              "left": "Axis of symmetry",
+              "right": "x = 1"
+            },
+            {
+              "left": "Real zeros",
+              "right": "none"
+            }
+          ],
+          "explanation": "The minimum value is 4 > 0, so the graph never meets the x-axis.",
+          "terms": [
+            "math-ai-2.1-vertex",
+            "math-ai-2.1-y-intercept"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q09",
+          "type": "fill",
+          "text": "y = x² and y = x + 2 intersect where x² = x + 2. For x > 0 the intersection is at x = ___.",
+          "answer": "2",
+          "bank": [
+            "2",
+            "1",
+            "−1",
+            "4"
+          ],
+          "explanation": "x² − x − 2 = (x − 2)(x + 1) = 0; a GDC intersect tool gives the same.",
+          "terms": [
+            "math-ai-2.1-function"
+          ]
+        },
+        {
+          "id": "math-ai-2.1-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for sketching a graph from a GDC in order.",
+          "items": [
+            "Choose a suitable viewing window",
+            "Plot the graph",
+            "Find key features such as intercepts, turning points and asymptotes",
+            "Copy onto paper with labelled axes and key points"
+          ],
+          "explanation": "A sketch shows shape and labelled key features, not every point.",
+          "terms": [
+            "math-ai-2.1-vertex",
+            "math-ai-2.1-asymptote"
+          ]
+        }
+      ]
+    }
+  ]
+}

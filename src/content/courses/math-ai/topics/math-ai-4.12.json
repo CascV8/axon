@@ -1,0 +1,589 @@
+{
+  "id": "math-ai-4.12",
+  "code": "AHL 4.12–4.19",
+  "unit": "4",
+  "title": "Further statistics: estimation, Poisson and Markov chains",
+  "level": "HL",
+  "summary": "Designing reliable data collection, non-linear regression, linear combinations of random variables, the central limit theorem, confidence intervals, the Poisson distribution, further hypothesis tests and Markov chains.",
+  "keyterms": [
+    {
+      "id": "math-ai-4.12-reliability",
+      "term": "Reliability",
+      "definition": "A measurement is reliable if it gives consistent results when repeated.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-validity",
+      "term": "Validity",
+      "definition": "A measurement is valid if it measures what it is intended to measure.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-coefficient-of-determination",
+      "term": "Coefficient of determination",
+      "definition": "R²: the proportion of variation in y explained by the model.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-sum-squared-residuals",
+      "term": "Sum of squared residuals",
+      "definition": "SSres = Σ(observed − predicted)²; least-squares regression minimises it.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-unbiased-estimate",
+      "term": "Unbiased estimate",
+      "definition": "A sample statistic whose expected value equals the population parameter, e.g. s²ₙ₋₁.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-central-limit-theorem",
+      "term": "Central limit theorem",
+      "definition": "For large n (n ≥ 30), the sample mean is approximately N(μ, σ²/n) whatever the population.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-confidence-interval",
+      "term": "Confidence interval",
+      "definition": "A range of values likely to contain a population parameter, at a stated confidence level.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-poisson",
+      "term": "Poisson distribution",
+      "definition": "X ~ Po(m): number of events in a fixed interval at a constant mean rate m; mean = variance = m.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-type-i-error",
+      "term": "Type I error",
+      "definition": "Rejecting H₀ when it is true.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-type-ii-error",
+      "term": "Type II error",
+      "definition": "Not rejecting H₀ when it is false.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-transition-matrix",
+      "term": "Transition matrix",
+      "definition": "A matrix of probabilities of moving between states; each column sums to 1.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-4.12-steady-state",
+      "term": "Steady state",
+      "definition": "The long-term state vector s with Ts = s.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-4.12-1",
+      "title": "Data design and non-linear regression",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-4.12-1-q01",
+          "type": "mcq",
+          "prompt": "A test that gives the same results when repeated under the same conditions is:",
+          "options": [
+            "valid",
+            "reliable",
+            "unbiased",
+            "significant"
+          ],
+          "answer": 1,
+          "explanation": "Reliability is about consistency; validity is about measuring the right thing.",
+          "terms": [
+            "math-ai-4.12-reliability"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q02",
+          "type": "tf",
+          "statement": "The test–retest method checks reliability.",
+          "answer": true,
+          "explanation": "Repeat the test and compare the two sets of results.",
+          "terms": [
+            "math-ai-4.12-reliability"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q03",
+          "type": "fill",
+          "text": "R² = 0.81 means 81% of the variation in y is ___ by the model.",
+          "answer": "explained",
+          "bank": [
+            "caused",
+            "removed",
+            "measured",
+            "explained"
+          ],
+          "explanation": "R² describes fit, not causation.",
+          "terms": [
+            "math-ai-4.12-coefficient-of-determination"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q04",
+          "type": "mcq",
+          "prompt": "A least-squares regression model minimises:",
+          "options": [
+            "the sum of residuals",
+            "the correlation coefficient",
+            "the sum of squared residuals",
+            "the number of outliers"
+          ],
+          "answer": 2,
+          "explanation": "Squaring stops positive and negative residuals cancelling.",
+          "terms": [
+            "math-ai-4.12-sum-squared-residuals"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q05",
+          "type": "mcq",
+          "prompt": "An observed value is 12 and the model predicts 10.5. Find the residual.",
+          "options": [
+            "−1.5",
+            "1.5",
+            "2.25",
+            "22.5"
+          ],
+          "answer": 1,
+          "explanation": "Residual = observed − predicted.",
+          "terms": [
+            "math-ai-4.12-sum-squared-residuals"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q06",
+          "type": "tf",
+          "statement": "For a linear model, R² equals r².",
+          "answer": true,
+          "explanation": "For non-linear models, use the R² from the GDC.",
+          "terms": [
+            "math-ai-4.12-coefficient-of-determination"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q07",
+          "type": "mcq",
+          "prompt": "Two models fitted to the same data have SSres = 4.2 and SSres = 9.8. Which fits better?",
+          "options": [
+            "The model with SSres = 9.8",
+            "They fit equally well",
+            "It cannot be decided",
+            "The model with SSres = 4.2"
+          ],
+          "answer": 3,
+          "explanation": "A smaller sum of squared residuals means the points are closer to the model.",
+          "terms": [
+            "math-ai-4.12-sum-squared-residuals"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q08",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "Validity",
+              "right": "measures what it claims to measure"
+            },
+            {
+              "left": "Reliability",
+              "right": "gives consistent results"
+            },
+            {
+              "left": "Criterion-related validity",
+              "right": "agrees with an accepted measure"
+            },
+            {
+              "left": "Parallel forms",
+              "right": "two equivalent versions give similar results"
+            }
+          ],
+          "explanation": "Parallel forms is a reliability check; criterion-related validity is a validity check.",
+          "terms": [
+            "math-ai-4.12-validity",
+            "math-ai-4.12-reliability"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q09",
+          "type": "order",
+          "prompt": "Put the steps for choosing a regression model in order.",
+          "items": [
+            "Plot a scatter diagram",
+            "Choose candidate models from its shape and the context",
+            "Fit each model with the GDC",
+            "Compare R² or SSres and the context",
+            "Check predictions are sensible"
+          ],
+          "explanation": "The best model fits well and makes sense in context.",
+          "terms": [
+            "math-ai-4.12-coefficient-of-determination"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-1-q10",
+          "type": "mcq",
+          "prompt": "Exponential regression gives y = 3.1 × 1.2ˣ. Predict y when x = 5.",
+          "options": [
+            "7.71",
+            "18.6",
+            "6.20",
+            "3.72"
+          ],
+          "answer": 0,
+          "explanation": "3.1 × 1.2⁵ = 3.1 × 2.48832 ≈ 7.71.",
+          "terms": [
+            "math-ai-4.12-coefficient-of-determination"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-4.12-2",
+      "title": "Linear combinations, CLT and confidence intervals",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-4.12-2-q01",
+          "type": "mcq",
+          "prompt": "E(X) = 5. Find E(3X − 2).",
+          "options": [
+            "13",
+            "15",
+            "3",
+            "17"
+          ],
+          "answer": 0,
+          "explanation": "E(aX + b) = aE(X) + b = 15 − 2.",
+          "terms": [
+            "math-ai-4.12-unbiased-estimate"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q02",
+          "type": "mcq",
+          "prompt": "Var(X) = 4. Find Var(3X − 2).",
+          "options": [
+            "12",
+            "10",
+            "34",
+            "36"
+          ],
+          "answer": 3,
+          "explanation": "Var(aX + b) = a²Var(X); adding a constant does not change spread.",
+          "terms": [
+            "math-ai-4.12-unbiased-estimate"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q03",
+          "type": "fill",
+          "text": "A sample of n = 10 has variance s²ₙ = 9. The unbiased estimate of the population variance is ___.",
+          "answer": "10",
+          "bank": [
+            "10",
+            "9",
+            "8.1",
+            "90"
+          ],
+          "explanation": "s²ₙ₋₁ = n/(n − 1) × s²ₙ = 10/9 × 9 = 10.",
+          "terms": [
+            "math-ai-4.12-unbiased-estimate"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q04",
+          "type": "tf",
+          "statement": "By the central limit theorem, the mean of a large sample is approximately normal even if the population is not.",
+          "answer": true,
+          "explanation": "A guideline is n ≥ 30.",
+          "terms": [
+            "math-ai-4.12-central-limit-theorem"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q05",
+          "type": "mcq",
+          "prompt": "A population has σ = 12. Find the standard deviation of the mean of samples of size 36.",
+          "options": [
+            "2",
+            "12",
+            "0.33",
+            "6"
+          ],
+          "answer": 0,
+          "explanation": "σ/√n = 12/6 = 2.",
+          "terms": [
+            "math-ai-4.12-central-limit-theorem"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q06",
+          "type": "mcq",
+          "prompt": "x̄ = 50, σ = 10 and n = 25. Find a 95% confidence interval for μ.",
+          "options": [
+            "30.4 < μ < 69.6",
+            "48.04 < μ < 51.96",
+            "45 < μ < 55",
+            "46.08 < μ < 53.92"
+          ],
+          "answer": 3,
+          "explanation": "50 ± 1.96 × 10/√25 = 50 ± 3.92.",
+          "terms": [
+            "math-ai-4.12-confidence-interval"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q07",
+          "type": "mcq",
+          "prompt": "Raising the confidence level from 90% to 99% makes the interval:",
+          "options": [
+            "narrower",
+            "the same width",
+            "wider",
+            "centred elsewhere"
+          ],
+          "answer": 2,
+          "explanation": "More confidence needs a wider range.",
+          "terms": [
+            "math-ai-4.12-confidence-interval"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q08",
+          "type": "match",
+          "prompt": "For independent X and Y, match each quantity.",
+          "pairs": [
+            {
+              "left": "E(X − Y)",
+              "right": "E(X) − E(Y)"
+            },
+            {
+              "left": "Var(X − Y)",
+              "right": "Var(X) + Var(Y)"
+            },
+            {
+              "left": "Var(2X)",
+              "right": "4Var(X)"
+            },
+            {
+              "left": "E(2X)",
+              "right": "2E(X)"
+            }
+          ],
+          "explanation": "Variances add even when the variables are subtracted.",
+          "terms": [
+            "math-ai-4.12-unbiased-estimate"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q09",
+          "type": "mcq",
+          "prompt": "If σ is unknown and the sample is small, a confidence interval for μ uses:",
+          "options": [
+            "the t-distribution",
+            "the Poisson distribution",
+            "the binomial distribution",
+            "χ²"
+          ],
+          "answer": 0,
+          "explanation": "The t-distribution allows for estimating σ from the sample.",
+          "terms": [
+            "math-ai-4.12-confidence-interval"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for finding a confidence interval in order.",
+          "items": [
+            "Check the conditions (normal population or large n)",
+            "Find the sample mean and standard deviation",
+            "Choose the confidence level",
+            "Use the GDC interval function",
+            "Interpret the interval in context"
+          ],
+          "explanation": "Interpret it as a range of plausible values for μ.",
+          "terms": [
+            "math-ai-4.12-confidence-interval"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-4.12-3",
+      "title": "Poisson, further tests and Markov chains",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-4.12-3-q01",
+          "type": "mcq",
+          "prompt": "X ~ Po(3). Find P(X = 0).",
+          "options": [
+            "0.149",
+            "0.224",
+            "0",
+            "0.0498"
+          ],
+          "answer": 3,
+          "explanation": "P(X = 0) = e⁻³ ≈ 0.0498.",
+          "terms": [
+            "math-ai-4.12-poisson"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q02",
+          "type": "fill",
+          "text": "For X ~ Po(m), the mean and the variance both equal ___.",
+          "answer": "m",
+          "bank": [
+            "m²",
+            "√m",
+            "m",
+            "1/m"
+          ],
+          "explanation": "Mean ≈ variance in data suggests a Poisson model.",
+          "terms": [
+            "math-ai-4.12-poisson"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q03",
+          "type": "mcq",
+          "prompt": "Calls arrive at a mean rate of 3 per hour. Find P(at most 4 calls in 2 hours).",
+          "options": [
+            "0.815",
+            "0.285",
+            "0.134",
+            "0.715"
+          ],
+          "answer": 1,
+          "explanation": "Scale the rate: X ~ Po(6), so poissoncdf(6, 4) ≈ 0.285.",
+          "terms": [
+            "math-ai-4.12-poisson"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q04",
+          "type": "tf",
+          "statement": "The sum of two independent Poisson variables is also Poisson.",
+          "answer": true,
+          "explanation": "Po(a) + Po(b) = Po(a + b).",
+          "terms": [
+            "math-ai-4.12-poisson"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q05",
+          "type": "mcq",
+          "prompt": "A Type I error is:",
+          "options": [
+            "not rejecting H₀ when it is false",
+            "using the wrong test",
+            "a calculation mistake",
+            "rejecting H₀ when it is true"
+          ],
+          "answer": 3,
+          "explanation": "P(Type I error) equals the significance level for a continuous test statistic.",
+          "terms": [
+            "math-ai-4.12-type-i-error"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q06",
+          "type": "mcq",
+          "prompt": "A Type II error is:",
+          "options": [
+            "rejecting H₀ when it is true",
+            "choosing a one-tailed test",
+            "not rejecting H₀ when it is false",
+            "rejecting H₁"
+          ],
+          "answer": 2,
+          "explanation": "It is a missed real effect.",
+          "terms": [
+            "math-ai-4.12-type-ii-error"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q07",
+          "type": "mcq",
+          "prompt": "T = [0.8 0.3; 0.2 0.7] (columns sum to 1) for states A, B. Find the steady state.",
+          "options": [
+            "(0.5, 0.5)",
+            "(0.6, 0.4)",
+            "(0.4, 0.6)",
+            "(0.8, 0.2)"
+          ],
+          "answer": 1,
+          "explanation": "Solve Ts = s: 0.2a = 0.3b with a + b = 1, so a = 0.6.",
+          "terms": [
+            "math-ai-4.12-steady-state",
+            "math-ai-4.12-transition-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q08",
+          "type": "match",
+          "prompt": "Match each test to its null hypothesis.",
+          "pairs": [
+            {
+              "left": "Pearson correlation test",
+              "right": "ρ = 0"
+            },
+            {
+              "left": "Binomial test for a proportion",
+              "right": "p = p₀"
+            },
+            {
+              "left": "Poisson test for a mean rate",
+              "right": "m = m₀"
+            },
+            {
+              "left": "t-test for one mean",
+              "right": "μ = μ₀"
+            }
+          ],
+          "explanation": "H₀ always states a specific value of the parameter.",
+          "terms": [
+            "math-ai-4.12-type-i-error"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q09",
+          "type": "order",
+          "prompt": "Put the steps for predicting with a Markov chain in order.",
+          "items": [
+            "Write the transition matrix (columns sum to 1)",
+            "Write the initial state vector s₀",
+            "Calculate Tⁿs₀",
+            "Interpret the proportions in context"
+          ],
+          "explanation": "Tⁿs₀ gives the state after n steps.",
+          "terms": [
+            "math-ai-4.12-transition-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-4.12-3-q10",
+          "type": "tf",
+          "statement": "In a transition matrix written with columns as “from” states, each column sums to 1.",
+          "answer": true,
+          "explanation": "From any state, the system must go somewhere.",
+          "terms": [
+            "math-ai-4.12-transition-matrix"
+          ]
+        }
+      ]
+    }
+  ]
+}

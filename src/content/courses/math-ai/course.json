@@ -1,0 +1,164 @@
+{
+  "id": "math-ai",
+  "name": "Maths: Applications & Interpretation",
+  "short": "AI",
+  "group": "Group 5: Mathematics",
+  "icon": "📊",
+  "blurb": "Number, functions, geometry, statistics and calculus for modelling the real world, with technology",
+  "syllabus": "Subject guide first assessed May 2021",
+  "levels": ["SL", "HL"],
+  "units": [
+    { "id": "1", "title": "Number and algebra", "blurb": "Standard form, sequences, finance, logarithms; HL: complex numbers and matrices." },
+    { "id": "2", "title": "Functions", "blurb": "Lines, functions and modelling; HL: transformations, further models and linearising data." },
+    { "id": "3", "title": "Geometry and trigonometry", "blurb": "3D shapes, triangle trigonometry and Voronoi diagrams; HL: vectors, matrix transformations and graph theory." },
+    { "id": "4", "title": "Statistics and probability", "blurb": "Data, regression, probability distributions and hypothesis tests; HL: confidence intervals, Poisson and Markov chains." },
+    { "id": "5", "title": "Calculus", "blurb": "Derivatives, optimisation and integration; HL: further calculus, kinematics and differential equations." }
+  ],
+  "papers": {
+    "P1": "Paper 1 · short response",
+    "P2": "Paper 2 · extended response",
+    "P3": "Paper 3 · HL problem solving"
+  },
+  "mcqExam": null,
+  "assessment": {
+    "SL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Compulsory short-response questions, technology required", "max": 80, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Compulsory extended-response questions, technology required", "max": 80, "group": "p2" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Mathematical exploration", "max": 20, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 40, "time": "1 h 30 min" },
+        "p2": { "name": "Paper 2", "weight": 40, "time": "1 h 30 min" },
+        "ia": { "name": "IA", "weight": 20, "time": "15 hours of class time" }
+      }
+    },
+    "HL": {
+      "components": [
+        { "id": "p1", "name": "Paper 1", "detail": "Compulsory short-response questions, technology required", "max": 110, "group": "p1" },
+        { "id": "p2", "name": "Paper 2", "detail": "Compulsory extended-response questions, technology required", "max": 110, "group": "p2" },
+        { "id": "p3", "name": "Paper 3", "detail": "Two compulsory extended problem-solving questions, technology required", "max": 55, "group": "p3" },
+        { "id": "ia", "name": "Internal assessment", "detail": "Mathematical exploration", "max": 20, "group": "ia" }
+      ],
+      "groups": {
+        "p1": { "name": "Paper 1", "weight": 30, "time": "2 h" },
+        "p2": { "name": "Paper 2", "weight": 30, "time": "2 h" },
+        "p3": { "name": "Paper 3", "weight": 20, "time": "1 h" },
+        "ia": { "name": "IA", "weight": 20, "time": "15 hours of class time" }
+      }
+    }
+  },
+  "boundaries": {
+    "SL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 10, 21, 32, 48, 63, 79] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 10, 21, 30, 43, 58, 71] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 12, 24, 37, 50, 63, 76] },
+      { "session": "Nov 2025", "tz": "TZ1", "min": [0, 13, 26, 39, 53, 67, 80] },
+      { "session": "Nov 2025", "tz": "TZ3", "min": [0, 13, 28, 45, 58, 70, 83] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 10, 20, 29, 42, 55, 70] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 9, 18, 27, 40, 53, 66] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 11, 22, 35, 49, 63, 77] },
+      { "session": "May 2024", "tz": "TZ1", "min": [0, 13, 25, 38, 51, 65, 77] },
+      { "session": "May 2024", "tz": "TZ2", "min": [0, 12, 24, 34, 47, 61, 76] }
+    ],
+    "HL": [
+      { "session": "May 2026", "tz": "TZ1", "min": [0, 12, 24, 34, 46, 59, 70] },
+      { "session": "May 2026", "tz": "TZ2", "min": [0, 11, 22, 32, 45, 57, 69] },
+      { "session": "May 2026", "tz": "TZ3", "min": [0, 13, 26, 37, 49, 62, 74] },
+      { "session": "Nov 2025", "tz": "All", "min": [0, 14, 29, 40, 52, 64, 76] },
+      { "session": "May 2025", "tz": "TZ1", "min": [0, 11, 23, 32, 44, 55, 66] },
+      { "session": "May 2025", "tz": "TZ2", "min": [0, 12, 24, 33, 45, 56, 66] },
+      { "session": "May 2025", "tz": "TZ3", "min": [0, 13, 26, 38, 52, 65, 77] },
+      { "session": "May 2024", "tz": "TZ1", "min": [0, 13, 26, 37, 51, 63, 74] },
+      { "session": "May 2024", "tz": "TZ2", "min": [0, 13, 25, 35, 48, 62, 74] }
+    ]
+  },
+  "ia": {
+    "name": "Mathematical exploration",
+    "max": 20,
+    "weight": 20,
+    "limit": "12–20 pages (double-spaced, 12-point)",
+    "criteria": [
+      {
+        "id": "a",
+        "name": "Presentation",
+        "max": 4,
+        "look": [
+          "A clear aim stated early and a rationale for why the topic was chosen",
+          "A logical structure: introduction, body developed in coherent steps, conclusion that returns to the aim",
+          "Concise writing that a peer could follow without re-reading; no padding or irrelevant material",
+          "Graphs, tables and diagrams placed where they are discussed, not dumped in an appendix"
+        ]
+      },
+      {
+        "id": "b",
+        "name": "Mathematical communication",
+        "max": 4,
+        "look": [
+          "Correct notation, symbols and terminology throughout (no calculator syntax such as x^2 or *)",
+          "Key variables and terms defined before they are used",
+          "Multiple forms of representation (formulae, graphs, tables, diagrams) chosen to suit the mathematics",
+          "Graphs with labelled axes, scales and units; tables with headings"
+        ]
+      },
+      {
+        "id": "c",
+        "name": "Personal engagement",
+        "max": 3,
+        "look": [
+          "Evidence that you drove the exploration: your own question, data, model or approach",
+          "Thinking independently or creatively rather than reproducing a textbook example",
+          "Asking your own follow-up questions and testing your own ideas"
+        ]
+      },
+      {
+        "id": "d",
+        "name": "Reflection",
+        "max": 3,
+        "look": [
+          "Critical reflection throughout, not just a paragraph at the end",
+          "Discussion of the meaning, limitations and implications of each result",
+          "Considering the reasonableness of assumptions and how results could be improved or extended"
+        ]
+      },
+      {
+        "id": "e",
+        "name": "Use of mathematics",
+        "max": 6,
+        "look": [
+          "Mathematics relevant to the aim and at a level commensurate with the course (SL or HL)",
+          "Correct mathematics: calculations, algebra and technology output are accurate",
+          "Thorough understanding shown by explaining why methods work, not only applying them",
+          "HL only: sophistication and rigour in the mathematics used"
+        ]
+      }
+    ],
+    "checklist": [
+      "The aim is stated in the introduction and answered in the conclusion",
+      "Length is within 12–20 pages, with no appendix holding essential work",
+      "Every variable is defined, with units, before it is used",
+      "No calculator notation: x², not x^2; ×, not *",
+      "Every graph has a title, labelled axes, scales and units",
+      "Technology output is interpreted in words, not just pasted in",
+      "At least one calculation per method is shown by hand or explained step by step",
+      "Assumptions of each model are stated and their effect discussed",
+      "Reflection appears throughout, including limitations and possible extensions",
+      "Data sources and all references are cited consistently",
+      "The mathematics is at least at the level of your course (SL or HL)",
+      "A classmate could read it and follow the argument without your help"
+    ]
+  },
+  "examTips": [
+    "Give final answers to 3 significant figures unless told otherwise, and keep full calculator accuracy in intermediate steps.",
+    "Write down what you enter into your GDC (e.g. the equation solved or the regression type chosen); a bare answer that is wrong earns no method marks.",
+    "Interpret answers in context with units: \"the model predicts 4.2 thousand users after 6 months\" beats \"y = 4.2\".",
+    "For hypothesis tests, state H₀ and H₁ in context, quote the p-value or test statistic, compare with the significance level, and conclude in words.",
+    "Comment on validity: extrapolating a regression line or model far outside the data range is unreliable, and examiners reward saying so."
+  ],
+  "sources": [
+    { "label": "IB Mathematics: applications and interpretation (subject page)", "url": "https://www.ibo.org/programmes/diploma-programme/curriculum/mathematics/" },
+    { "label": "Grade boundary collation, AI SL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/applications-and-interpretation-sl" },
+    { "label": "Grade boundary collation, AI HL (third party, ibcalculator.com)", "url": "https://www.ibcalculator.com/resources/boundaries/applications-and-interpretation-hl" },
+    { "label": "IB DP passing criteria", "url": "https://www.ibo.org/about-the-ib/what-it-means-to-be-an-ib-student/recognizing-student-achievement/about-assessment/dp-passing-criteria/" }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "math-ai-X-5-01",
+    "unit": "5",
+    "topics": [
+      "math-ai-5.1"
+    ],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Designing a drinks can",
+    "stem": "A closed cylindrical can has radius r cm and height h cm. It must hold 500 cm³ of drink. The manufacturer wants to use as little metal as possible.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Write",
+        "prompt": "Write down an expression for h in terms of r.",
+        "marks": 1,
+        "markscheme": [
+          "h = 500/(πr²)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Show that",
+        "prompt": "Show that the total surface area is A = 2πr² + 1000/r.",
+        "marks": 2,
+        "markscheme": [
+          "A = 2πr² + 2πrh",
+          "substitution of h: 2πr × 500/(πr²) = 1000/r"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Find",
+        "prompt": "Find dA/dr.",
+        "marks": 2,
+        "markscheme": [
+          "4πr",
+          "− 1000/r² (or −1000r⁻²)"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Find",
+        "prompt": "Find the value of r that minimises the surface area.",
+        "marks": 2,
+        "numeric": {
+          "value": 4.3,
+          "tolerance": 0.01,
+          "unit": "cm"
+        },
+        "markscheme": [
+          "4πr − 1000/r² = 0 / r³ = 250/π",
+          "r = 4.30 cm (4.3012…)"
+        ]
+      },
+      {
+        "label": "e",
+        "command": "Calculate",
+        "prompt": "Calculate the minimum surface area.",
+        "marks": 2,
+        "numeric": {
+          "value": 349,
+          "tolerance": 0.5,
+          "unit": "cm²"
+        },
+        "markscheme": [
+          "substitute their r into A",
+          "349 cm² (348.73…)"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,404 @@
+{
+  "id": "math-ai-5.1",
+  "code": "SL 5.1–5.4, 5.6–5.7",
+  "unit": "5",
+  "title": "Differentiation and optimisation",
+  "level": "SL",
+  "summary": "The derivative as a gradient and rate of change, differentiating axⁿ, tangents and normals, increasing and decreasing functions, stationary points and optimisation problems.",
+  "keyterms": [
+    {
+      "id": "math-ai-5.1-derivative",
+      "term": "Derivative",
+      "definition": "f′(x) or dy/dx: the gradient function, giving the rate of change of y with respect to x.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-limit",
+      "term": "Limit",
+      "definition": "The value approached as h → 0 in the gradient of a chord; it defines the derivative.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-power-rule",
+      "term": "Power rule",
+      "definition": "If f(x) = axⁿ then f′(x) = anxⁿ⁻¹ (n an integer).",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-tangent",
+      "term": "Tangent",
+      "definition": "A line touching a curve at a point, with gradient equal to f′(x) there.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-normal",
+      "term": "Normal",
+      "definition": "The line perpendicular to the tangent at a point; gradient −1/f′(x).",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-increasing-decreasing",
+      "term": "Increasing / decreasing",
+      "definition": "f is increasing where f′(x) > 0 and decreasing where f′(x) < 0.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-stationary-point",
+      "term": "Stationary point",
+      "definition": "A point where f′(x) = 0.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-local-maximum",
+      "term": "Local maximum",
+      "definition": "A stationary point where f′ changes from positive to negative.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-local-minimum",
+      "term": "Local minimum",
+      "definition": "A stationary point where f′ changes from negative to positive.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.1-optimisation",
+      "term": "Optimisation",
+      "definition": "Finding the maximum or minimum value of a quantity, e.g. by solving f′(x) = 0.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-5.1-1",
+      "title": "Derivatives, tangents and normals",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-5.1-1-q01",
+          "type": "mcq",
+          "prompt": "Differentiate 4x³.",
+          "options": [
+            "4x²",
+            "12x³",
+            "12x²",
+            "x⁴"
+          ],
+          "answer": 2,
+          "explanation": "Multiply by the power and reduce the power by 1.",
+          "terms": [
+            "math-ai-5.1-power-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q02",
+          "type": "fill",
+          "text": "f(x) = 5x² − 3x + 7, so f′(x) = 10x − ___.",
+          "answer": "3",
+          "bank": [
+            "7",
+            "3",
+            "5",
+            "0"
+          ],
+          "explanation": "The constant 7 differentiates to 0.",
+          "terms": [
+            "math-ai-5.1-power-rule",
+            "math-ai-5.1-derivative"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q03",
+          "type": "tf",
+          "statement": "dy/dx at a point gives the gradient of the tangent to the curve there.",
+          "answer": true,
+          "explanation": "The derivative is the instantaneous rate of change.",
+          "terms": [
+            "math-ai-5.1-derivative",
+            "math-ai-5.1-tangent"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q04",
+          "type": "mcq",
+          "prompt": "Differentiate f(x) = 2/x.",
+          "options": [
+            "2x⁻²",
+            "−2x⁻¹",
+            "2",
+            "−2x⁻²"
+          ],
+          "answer": 3,
+          "explanation": "Write 2/x as 2x⁻¹, then the power rule gives −2x⁻².",
+          "terms": [
+            "math-ai-5.1-power-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q05",
+          "type": "mcq",
+          "prompt": "Find the gradient of y = x² − 4x at x = 5.",
+          "options": [
+            "5",
+            "10",
+            "6",
+            "−4"
+          ],
+          "answer": 2,
+          "explanation": "dy/dx = 2x − 4 = 6 at x = 5.",
+          "terms": [
+            "math-ai-5.1-derivative"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q06",
+          "type": "mcq",
+          "prompt": "Find the equation of the tangent to y = x² at (3, 9).",
+          "options": [
+            "y = 6x + 9",
+            "y = 6x − 9",
+            "y = 3x",
+            "y = −x/6 + 9.5"
+          ],
+          "answer": 1,
+          "explanation": "Gradient 2 × 3 = 6: y − 9 = 6(x − 3).",
+          "terms": [
+            "math-ai-5.1-tangent"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q07",
+          "type": "mcq",
+          "prompt": "Find the equation of the normal to y = x² at (3, 9).",
+          "options": [
+            "y = −x/6 + 9.5",
+            "y = 6x − 9",
+            "y = −6x + 27",
+            "y = x/6 + 8.5"
+          ],
+          "answer": 0,
+          "explanation": "Normal gradient −1/6: y − 9 = −(1/6)(x − 3).",
+          "terms": [
+            "math-ai-5.1-normal"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q08",
+          "type": "tf",
+          "statement": "f is increasing where f′(x) > 0.",
+          "answer": true,
+          "explanation": "A positive gradient means y increases as x increases.",
+          "terms": [
+            "math-ai-5.1-increasing-decreasing"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q09",
+          "type": "match",
+          "prompt": "Match each statement to its meaning.",
+          "pairs": [
+            {
+              "left": "dy/dx",
+              "right": "rate of change of y with respect to x"
+            },
+            {
+              "left": "f′(2)",
+              "right": "gradient of f at x = 2"
+            },
+            {
+              "left": "f′(x) < 0",
+              "right": "f is decreasing"
+            },
+            {
+              "left": "f′(x) = 0",
+              "right": "stationary point"
+            }
+          ],
+          "explanation": "The sign of f′ describes the shape of the graph.",
+          "terms": [
+            "math-ai-5.1-derivative",
+            "math-ai-5.1-increasing-decreasing",
+            "math-ai-5.1-stationary-point"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-1-q10",
+          "type": "order",
+          "prompt": "Put the steps for finding a tangent in order.",
+          "items": [
+            "Differentiate f",
+            "Substitute x to find the gradient",
+            "Find the y-coordinate of the point",
+            "Use y − y₁ = m(x − x₁)"
+          ],
+          "explanation": "A GDC can find the gradient at a point directly.",
+          "terms": [
+            "math-ai-5.1-tangent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-5.1-2",
+      "title": "Stationary points and optimisation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-5.1-2-q01",
+          "type": "mcq",
+          "prompt": "Find the stationary point of y = x² − 6x + 2.",
+          "options": [
+            "(−3, 29)",
+            "(3, −7)",
+            "(6, 2)",
+            "(3, 2)"
+          ],
+          "answer": 1,
+          "explanation": "2x − 6 = 0 gives x = 3, and y = 9 − 18 + 2 = −7.",
+          "terms": [
+            "math-ai-5.1-stationary-point"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q02",
+          "type": "fill",
+          "text": "At a stationary point, f′(x) = ___.",
+          "answer": "0",
+          "bank": [
+            "1",
+            "f(x)",
+            "0",
+            "−1"
+          ],
+          "explanation": "The tangent is horizontal.",
+          "terms": [
+            "math-ai-5.1-stationary-point"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q03",
+          "type": "mcq",
+          "prompt": "Find the local maximum of f(x) = x³ − 12x.",
+          "options": [
+            "(2, −16)",
+            "(0, 0)",
+            "(2, 16)",
+            "(−2, 16)"
+          ],
+          "answer": 3,
+          "explanation": "f′(x) = 3x² − 12 = 0 at x = ±2; f′ goes + to − at x = −2, where f = 16.",
+          "terms": [
+            "math-ai-5.1-local-maximum"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q04",
+          "type": "tf",
+          "statement": "A local maximum is always the largest value of the function on its whole domain.",
+          "answer": false,
+          "explanation": "It is only highest nearby; the end points of the domain may be higher.",
+          "terms": [
+            "math-ai-5.1-local-maximum"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q05",
+          "type": "mcq",
+          "prompt": "A rectangle has perimeter 40 cm. Find its maximum area.",
+          "options": [
+            "400 cm²",
+            "100 cm²",
+            "96 cm²",
+            "200 cm²"
+          ],
+          "answer": 1,
+          "explanation": "A = x(20 − x); A′ = 20 − 2x = 0 at x = 10, giving a 10 × 10 square.",
+          "terms": [
+            "math-ai-5.1-optimisation"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q06",
+          "type": "mcq",
+          "prompt": "An open box has V = x(30 − 2x)(20 − 2x) cm³. Find the maximum volume.",
+          "options": [
+            "1056 cm³",
+            "1000 cm³",
+            "1200 cm³",
+            "3.92 cm³"
+          ],
+          "answer": 0,
+          "explanation": "V′ = 0 at x ≈ 3.92, giving V ≈ 1056 cm³. 3.92 is the value of x, not V.",
+          "terms": [
+            "math-ai-5.1-optimisation"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q07",
+          "type": "tf",
+          "statement": "At a local maximum, f′ changes from positive to negative.",
+          "answer": true,
+          "explanation": "The graph rises then falls.",
+          "terms": [
+            "math-ai-5.1-local-maximum"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q08",
+          "type": "match",
+          "prompt": "Match the sign change of f′ to the stationary point.",
+          "pairs": [
+            {
+              "left": "+ to −",
+              "right": "local maximum"
+            },
+            {
+              "left": "− to +",
+              "right": "local minimum"
+            },
+            {
+              "left": "+ to + (or − to −)",
+              "right": "neither a maximum nor a minimum"
+            }
+          ],
+          "explanation": "Check the gradient either side of the point.",
+          "terms": [
+            "math-ai-5.1-local-maximum",
+            "math-ai-5.1-local-minimum"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q09",
+          "type": "order",
+          "prompt": "Put the steps for solving an optimisation problem in order.",
+          "items": [
+            "Write the quantity in terms of one variable",
+            "Differentiate",
+            "Solve derivative = 0",
+            "Check it is a maximum or minimum",
+            "Answer in context"
+          ],
+          "explanation": "Use a constraint to remove the second variable first.",
+          "terms": [
+            "math-ai-5.1-optimisation"
+          ]
+        },
+        {
+          "id": "math-ai-5.1-2-q10",
+          "type": "mcq",
+          "prompt": "Profit is P(x) = −2x² + 120x − 500. Find the maximum profit.",
+          "options": [
+            "1300",
+            "30",
+            "1800",
+            "7300"
+          ],
+          "answer": 0,
+          "explanation": "P′ = −4x + 120 = 0 at x = 30; P(30) = −1800 + 3600 − 500 = 1300.",
+          "terms": [
+            "math-ai-5.1-optimisation"
+          ]
+        }
+      ]
+    }
+  ]
+}

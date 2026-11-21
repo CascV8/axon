@@ -1,0 +1,423 @@
+{
+  "id": "math-ai-4.11",
+  "code": "SL 4.11",
+  "unit": "4",
+  "title": "Hypothesis testing: χ² and t-tests",
+  "level": "SL",
+  "summary": "Writing null and alternative hypotheses, χ² tests for independence and goodness of fit, and t-tests to compare two means, using p-values and significance levels.",
+  "keyterms": [
+    {
+      "id": "math-ai-4.11-null-hypothesis",
+      "term": "Null hypothesis",
+      "definition": "H₀: the default claim of no effect, no difference or independence.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-alternative-hypothesis",
+      "term": "Alternative hypothesis",
+      "definition": "H₁: the claim tested for, e.g. the variables are not independent.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-significance-level",
+      "term": "Significance level",
+      "definition": "The threshold probability (e.g. 5%) below which H₀ is rejected.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-p-value",
+      "term": "p-value",
+      "definition": "The probability of a result at least as extreme as observed, assuming H₀ is true.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-chi-squared-independence",
+      "term": "χ² test for independence",
+      "definition": "Tests whether two categorical variables in a contingency table are independent.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-goodness-of-fit",
+      "term": "χ² goodness of fit test",
+      "definition": "Tests whether observed frequencies fit a stated distribution.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-expected-frequency",
+      "term": "Expected frequency",
+      "definition": "For a contingency table: row total × column total ÷ grand total.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-degrees-of-freedom",
+      "term": "Degrees of freedom",
+      "definition": "For an r × c table, (r − 1)(c − 1); for goodness of fit, categories − 1 (minus parameters estimated).",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-critical-value",
+      "term": "Critical value",
+      "definition": "The boundary of the rejection region for a test statistic.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-t-test",
+      "term": "t-test",
+      "definition": "Compares the means of two populations using samples from normally distributed data.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.11-one-two-tailed",
+      "term": "One- and two-tailed tests",
+      "definition": "One-tailed H₁ uses < or >; two-tailed H₁ uses ≠.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-4.11-1",
+      "title": "χ² tests",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-4.11-1-q01",
+          "type": "fill",
+          "text": "In a χ² test for independence, H₀ states that the two variables are ___.",
+          "answer": "independent",
+          "bank": [
+            "independent",
+            "dependent",
+            "equal",
+            "correlated"
+          ],
+          "explanation": "H₀ is always the “no association” claim.",
+          "terms": [
+            "math-ai-4.11-null-hypothesis",
+            "math-ai-4.11-chi-squared-independence"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q02",
+          "type": "tf",
+          "statement": "H₀ is rejected when the p-value is less than the significance level.",
+          "answer": true,
+          "explanation": "A small p-value means the data would be unlikely if H₀ were true.",
+          "terms": [
+            "math-ai-4.11-p-value",
+            "math-ai-4.11-significance-level"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q03",
+          "type": "mcq",
+          "prompt": "A contingency table has 3 rows and 4 columns. Find the degrees of freedom.",
+          "options": [
+            "12",
+            "7",
+            "6",
+            "5"
+          ],
+          "answer": 2,
+          "explanation": "(3 − 1)(4 − 1) = 6.",
+          "terms": [
+            "math-ai-4.11-degrees-of-freedom"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q04",
+          "type": "mcq",
+          "prompt": "A cell has row total 60 and column total 50, with grand total 200. Find its expected frequency.",
+          "options": [
+            "55",
+            "15",
+            "30",
+            "25"
+          ],
+          "answer": 1,
+          "explanation": "60 × 50 / 200 = 15.",
+          "terms": [
+            "math-ai-4.11-expected-frequency"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q05",
+          "type": "mcq",
+          "prompt": "A goodness of fit test has 5 categories and no parameters estimated. Find the degrees of freedom.",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "3"
+          ],
+          "answer": 0,
+          "explanation": "Number of categories − 1 = 4.",
+          "terms": [
+            "math-ai-4.11-degrees-of-freedom",
+            "math-ai-4.11-goodness-of-fit"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q06",
+          "type": "tf",
+          "statement": "If an expected frequency is less than 5, categories should be combined before a χ² test.",
+          "answer": true,
+          "explanation": "Small expected values make the χ² statistic unreliable.",
+          "terms": [
+            "math-ai-4.11-expected-frequency"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q07",
+          "type": "mcq",
+          "prompt": "χ²calc = 12.4 and the 5% critical value is 9.488. The conclusion is:",
+          "options": [
+            "do not reject H₀",
+            "accept H₁ with certainty",
+            "reject H₀: evidence the variables are not independent",
+            "the test is invalid"
+          ],
+          "answer": 2,
+          "explanation": "The statistic exceeds the critical value, so it lies in the rejection region.",
+          "terms": [
+            "math-ai-4.11-critical-value",
+            "math-ai-4.11-chi-squared-independence"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q08",
+          "type": "match",
+          "prompt": "Match each term to its meaning.",
+          "pairs": [
+            {
+              "left": "p-value",
+              "right": "probability of a result this extreme if H₀ is true"
+            },
+            {
+              "left": "Significance level",
+              "right": "threshold for rejecting H₀"
+            },
+            {
+              "left": "Critical value",
+              "right": "boundary of the rejection region"
+            },
+            {
+              "left": "H₁",
+              "right": "the alternative hypothesis"
+            }
+          ],
+          "explanation": "Use either the p-value or the critical value to decide.",
+          "terms": [
+            "math-ai-4.11-p-value",
+            "math-ai-4.11-significance-level",
+            "math-ai-4.11-critical-value",
+            "math-ai-4.11-alternative-hypothesis"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q09",
+          "type": "order",
+          "prompt": "Put the steps of a χ² test in order.",
+          "items": [
+            "State H₀ and H₁",
+            "Find the expected frequencies",
+            "Calculate χ² and the p-value with the GDC",
+            "Compare the p-value with the significance level",
+            "Conclude in context"
+          ],
+          "explanation": "Always finish with a sentence about the real variables.",
+          "terms": [
+            "math-ai-4.11-chi-squared-independence"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-1-q10",
+          "type": "mcq",
+          "prompt": "A die is rolled 60 times to test whether it is fair. The expected frequency for each face is:",
+          "options": [
+            "6",
+            "60",
+            "1/6",
+            "10"
+          ],
+          "answer": 3,
+          "explanation": "60 × 1/6 = 10.",
+          "terms": [
+            "math-ai-4.11-goodness-of-fit",
+            "math-ai-4.11-expected-frequency"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-4.11-2",
+      "title": "t-tests and interpreting results",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-4.11-2-q01",
+          "type": "mcq",
+          "prompt": "A t-test is used to:",
+          "options": [
+            "test independence of categories",
+            "test the fit of a distribution",
+            "measure correlation",
+            "compare the means of two populations"
+          ],
+          "answer": 3,
+          "explanation": "It compares sample means from normally distributed data.",
+          "terms": [
+            "math-ai-4.11-t-test"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q02",
+          "type": "tf",
+          "statement": "The t-test assumes that the data come from normally distributed populations.",
+          "answer": true,
+          "explanation": "State this assumption when you use the test.",
+          "terms": [
+            "math-ai-4.11-t-test"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q03",
+          "type": "fill",
+          "text": "If you suspect group 1 has the higher mean, H₁ is μ₁ ___ μ₂.",
+          "answer": ">",
+          "bank": [
+            "<",
+            "=",
+            "≠",
+            ">"
+          ],
+          "explanation": "A one-tailed test points in the suspected direction.",
+          "terms": [
+            "math-ai-4.11-one-two-tailed",
+            "math-ai-4.11-alternative-hypothesis"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q04",
+          "type": "mcq",
+          "prompt": "To test whether two means are different (in either direction), H₁ is:",
+          "options": [
+            "μ₁ ≠ μ₂",
+            "μ₁ > μ₂",
+            "μ₁ < μ₂",
+            "μ₁ = μ₂"
+          ],
+          "answer": 0,
+          "explanation": "“Different” means a two-tailed test.",
+          "terms": [
+            "math-ai-4.11-one-two-tailed"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q05",
+          "type": "mcq",
+          "prompt": "A test gives p = 0.032. At the 1% significance level you should:",
+          "options": [
+            "reject H₀",
+            "accept H₁",
+            "repeat the test until p < 0.01",
+            "not reject H₀"
+          ],
+          "answer": 3,
+          "explanation": "0.032 > 0.01, so there is not enough evidence at 1% (it would be significant at 5%).",
+          "terms": [
+            "math-ai-4.11-p-value",
+            "math-ai-4.11-significance-level"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q06",
+          "type": "tf",
+          "statement": "Not rejecting H₀ proves that H₀ is true.",
+          "answer": false,
+          "explanation": "It only means there is insufficient evidence against H₀.",
+          "terms": [
+            "math-ai-4.11-null-hypothesis"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q07",
+          "type": "mcq",
+          "prompt": "Which test checks whether a spinner lands on each colour equally often?",
+          "options": [
+            "χ² test for independence",
+            "χ² goodness of fit",
+            "t-test",
+            "Spearman’s rank"
+          ],
+          "answer": 1,
+          "explanation": "Compare observed counts with the expected equal counts.",
+          "terms": [
+            "math-ai-4.11-goodness-of-fit"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q08",
+          "type": "match",
+          "prompt": "Match each question to the test.",
+          "pairs": [
+            {
+              "left": "Are gender and sport choice related?",
+              "right": "χ² test for independence"
+            },
+            {
+              "left": "Do the data fit a stated distribution?",
+              "right": "χ² goodness of fit"
+            },
+            {
+              "left": "Do two groups differ in mean time?",
+              "right": "t-test"
+            },
+            {
+              "left": "Is the relationship monotonic?",
+              "right": "Spearman’s rank"
+            }
+          ],
+          "explanation": "Choosing the right test is often worth marks on its own.",
+          "terms": [
+            "math-ai-4.11-chi-squared-independence",
+            "math-ai-4.11-goodness-of-fit",
+            "math-ai-4.11-t-test"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q09",
+          "type": "order",
+          "prompt": "Put the steps of a hypothesis test in order.",
+          "items": [
+            "State H₀ and H₁",
+            "Choose the significance level",
+            "Calculate the p-value",
+            "Compare the p-value with the significance level",
+            "Write a conclusion in context"
+          ],
+          "explanation": "The significance level should be decided before looking at the result.",
+          "terms": [
+            "math-ai-4.11-null-hypothesis",
+            "math-ai-4.11-significance-level"
+          ]
+        },
+        {
+          "id": "math-ai-4.11-2-q10",
+          "type": "mcq",
+          "prompt": "A 5% significance level means:",
+          "options": [
+            "H₀ is 95% likely to be true",
+            "the result is 5% wrong",
+            "there is a 5% chance of rejecting H₀ when it is actually true",
+            "5% of the data are outliers"
+          ],
+          "answer": 2,
+          "explanation": "It is the risk accepted of a false rejection.",
+          "terms": [
+            "math-ai-4.11-significance-level"
+          ]
+        }
+      ]
+    }
+  ]
+}

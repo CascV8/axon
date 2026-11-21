@@ -1,0 +1,282 @@
+[
+  {
+    "id": "math-ai-X-4-01",
+    "unit": "4",
+    "topics": [
+      "math-ai-4.11"
+    ],
+    "paper": "P2",
+    "level": "SL",
+    "title": "Travel to school by grade",
+    "stem": "A student asks 150 randomly chosen students how they usually travel to school. A χ² test for independence is carried out at the 5% significance level.",
+    "data": {
+      "caption": "Observed frequencies",
+      "columns": [
+        "",
+        "Walk",
+        "Bus",
+        "Car",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Grade 11",
+          "30",
+          "25",
+          "15",
+          "70"
+        ],
+        [
+          "Grade 12",
+          "20",
+          "35",
+          "25",
+          "80"
+        ],
+        [
+          "Total",
+          "50",
+          "60",
+          "40",
+          "150"
+        ]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "State",
+        "prompt": "State the null and alternative hypotheses.",
+        "marks": 2,
+        "markscheme": [
+          "H₀: method of travel is independent of grade",
+          "H₁: method of travel is not independent of grade / depends on grade"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Show that",
+        "prompt": "Show that the expected frequency of Grade 11 students who walk is 23.3, correct to 3 significant figures.",
+        "marks": 2,
+        "markscheme": [
+          "70 × 50 / 150",
+          "= 23.33… = 23.3"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Write",
+        "prompt": "Write down the number of degrees of freedom.",
+        "marks": 1,
+        "numeric": {
+          "value": 2,
+          "tolerance": 0,
+          "unit": ""
+        },
+        "markscheme": [
+          "(2 − 1)(3 − 1) = 2"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Calculate",
+        "prompt": "Calculate the χ² statistic and the p-value.",
+        "marks": 2,
+        "markscheme": [
+          "χ² = 5.52 (5.5245…)",
+          "p = 0.0631"
+        ]
+      },
+      {
+        "label": "e",
+        "command": "State",
+        "prompt": "State the conclusion of the test, giving a reason.",
+        "marks": 2,
+        "markscheme": [
+          "0.0631 > 0.05 / 5.52 < 5.991 (critical value)",
+          "do not reject H₀: insufficient evidence that travel method depends on grade"
+        ],
+        "notes": "Reason required for the conclusion mark. Do not accept “H₀ is proved true”."
+      }
+    ]
+  },
+  {
+    "id": "math-ai-X-4-02",
+    "unit": "4",
+    "topics": [
+      "math-ai-4.1"
+    ],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Revision time and test score",
+    "stem": "Eight students recorded the number of hours, x, they revised for a test and their score, y, out of 100.",
+    "data": {
+      "caption": "Hours revised and test score",
+      "columns": [
+        "Student",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rows": [
+        [
+          "x (hours)",
+          "2",
+          "3",
+          "5",
+          "6",
+          "8",
+          "9",
+          "11",
+          "12"
+        ],
+        [
+          "y (score)",
+          "41",
+          "48",
+          "52",
+          "60",
+          "66",
+          "65",
+          "78",
+          "80"
+        ]
+      ]
+    },
+    "parts": [
+      {
+        "label": "a",
+        "command": "Find",
+        "prompt": "Find Pearson’s product-moment correlation coefficient, r.",
+        "marks": 2,
+        "numeric": {
+          "value": 0.988,
+          "tolerance": 0.001,
+          "unit": ""
+        },
+        "markscheme": [
+          "use of GDC with correct data",
+          "r = 0.988 (0.98773…)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Write",
+        "prompt": "Write down the equation of the regression line of y on x.",
+        "marks": 2,
+        "markscheme": [
+          "y = 3.77x + 34.8",
+          "(3.77173…, 34.8478…) both values correct"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Calculate",
+        "prompt": "Use your equation to estimate the score of a student who revised for 7 hours.",
+        "marks": 2,
+        "numeric": {
+          "value": 61.3,
+          "tolerance": 0.1,
+          "unit": "marks"
+        },
+        "markscheme": [
+          "3.77 × 7 + 34.8",
+          "61.3 (61.25)"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Explain",
+        "prompt": "Explain why the equation should not be used to estimate the score of a student who revised for 30 hours.",
+        "marks": 1,
+        "markscheme": [
+          "30 hours is outside the data range (2–12) / extrapolation; the model would predict over 100"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-ai-X-4-03",
+    "unit": "4",
+    "topics": [
+      "math-ai-4.12"
+    ],
+    "paper": "P2",
+    "level": "HL",
+    "title": "Calls to a help desk",
+    "stem": "The number of calls arriving at a help desk is modelled by a Poisson distribution with a mean of 4.5 calls per hour.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Find",
+        "prompt": "Find the probability that exactly 3 calls arrive in a given hour.",
+        "marks": 2,
+        "numeric": {
+          "value": 0.169,
+          "tolerance": 0.001,
+          "unit": ""
+        },
+        "markscheme": [
+          "X ~ Po(4.5) recognised",
+          "0.169 (0.16871…)"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Find",
+        "prompt": "Find the probability that at least 6 calls arrive in a given hour.",
+        "marks": 2,
+        "numeric": {
+          "value": 0.297,
+          "tolerance": 0.001,
+          "unit": ""
+        },
+        "markscheme": [
+          "1 − P(X ≤ 5)",
+          "0.297 (0.29706…)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Find",
+        "prompt": "Find the probability that at most 7 calls arrive in a 2-hour period.",
+        "marks": 2,
+        "numeric": {
+          "value": 0.324,
+          "tolerance": 0.001,
+          "unit": ""
+        },
+        "markscheme": [
+          "Y ~ Po(9)",
+          "0.324 (0.32389…)"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Determine",
+        "prompt": "After a website change, a manager records 9 calls in one hour and claims the mean rate has increased. Test this claim at the 5% significance level, stating your hypotheses.",
+        "marks": 4,
+        "markscheme": [
+          "H₀: m = 4.5, H₁: m > 4.5",
+          "p-value = P(X ≥ 9 | m = 4.5)",
+          "= 0.0403 (0.040257…)",
+          "0.0403 < 0.05 so reject H₀: evidence the rate has increased"
+        ]
+      },
+      {
+        "label": "e",
+        "command": "State",
+        "prompt": "State what a Type I error would mean in this context.",
+        "marks": 1,
+        "markscheme": [
+          "concluding the call rate has increased when it is actually still 4.5 per hour"
+        ]
+      }
+    ]
+  }
+]

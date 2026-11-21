@@ -1,0 +1,407 @@
+{
+  "id": "math-ai-1.4",
+  "code": "SL 1.4, 1.7",
+  "unit": "1",
+  "title": "Financial mathematics",
+  "level": "SL",
+  "summary": "Compound interest, depreciation and inflation, then loans and annuities solved with the GDC finance (TVM) solver.",
+  "keyterms": [
+    {
+      "id": "math-ai-1.4-compound-interest",
+      "term": "Compound interest",
+      "definition": "Interest added to the balance so that later interest is earned on earlier interest: FV = PV(1 + r/(100k))ᵏⁿ.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-present-value",
+      "term": "Present value (PV)",
+      "definition": "The amount of money now, e.g. the amount invested or borrowed.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-future-value",
+      "term": "Future value (FV)",
+      "definition": "The value of an investment or loan balance at the end of a time period.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-compounding-period",
+      "term": "Compounding period",
+      "definition": "How often interest is added, e.g. yearly (k = 1), quarterly (k = 4) or monthly (k = 12).",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-nominal-rate",
+      "term": "Nominal annual rate",
+      "definition": "The quoted yearly interest rate r%, divided between the compounding periods.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-depreciation",
+      "term": "Depreciation",
+      "definition": "A fall in value over time; with a fixed annual percentage, the value is multiplied by (1 − r/100) each year.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-inflation",
+      "term": "Inflation",
+      "definition": "A general rise in prices over time, reducing the real value (purchasing power) of money.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-tvm-solver",
+      "term": "TVM solver",
+      "definition": "The GDC finance app that finds one unknown from N, I%, PV, PMT, FV, P/Y and C/Y.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-annuity",
+      "term": "Annuity",
+      "definition": "A series of equal payments or deposits made at regular time intervals.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.4-amortization",
+      "term": "Amortization",
+      "definition": "Repaying a loan with regular payments, each covering the interest due and reducing the principal.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-1.4-1",
+      "title": "Compound interest, depreciation and inflation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-1.4-1-q01",
+          "type": "mcq",
+          "prompt": "$5000 is invested at 4% per year compounded annually. Find its value after 6 years.",
+          "options": [
+            "$6200.00",
+            "$6083.26",
+            "$6579.66",
+            "$6326.60"
+          ],
+          "answer": 3,
+          "explanation": "FV = 5000 × 1.04⁶ = 6326.60. $6200 is the simple-interest value.",
+          "terms": [
+            "math-ai-1.4-compound-interest",
+            "math-ai-1.4-future-value"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q02",
+          "type": "fill",
+          "text": "In FV = PV(1 + r/(100k))ᵏⁿ, k is the number of compounding periods per ___.",
+          "answer": "year",
+          "bank": [
+            "month",
+            "loan",
+            "year",
+            "payment"
+          ],
+          "explanation": "k = 12 for monthly compounding, 4 for quarterly, 1 for yearly.",
+          "terms": [
+            "math-ai-1.4-compounding-period"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q03",
+          "type": "mcq",
+          "prompt": "$3000 is invested at a nominal 6% per year compounded monthly. Find the value after 2 years.",
+          "options": [
+            "$3370.80",
+            "$3381.48",
+            "$3360.00",
+            "$3382.49"
+          ],
+          "answer": 1,
+          "explanation": "FV = 3000(1 + 0.06/12)²⁴ = 3000 × 1.005²⁴ = 3381.48.",
+          "terms": [
+            "math-ai-1.4-compound-interest",
+            "math-ai-1.4-nominal-rate"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q04",
+          "type": "tf",
+          "statement": "For the same nominal annual rate, compounding monthly gives a larger final value than compounding annually.",
+          "answer": true,
+          "explanation": "Interest added more often starts earning interest sooner.",
+          "terms": [
+            "math-ai-1.4-compounding-period"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q05",
+          "type": "mcq",
+          "prompt": "A car costing $28 000 depreciates by 15% per year. Find its value after 4 years.",
+          "options": [
+            "$11 200.00",
+            "$12 423.75",
+            "$23 800.00",
+            "$14 616.18"
+          ],
+          "answer": 3,
+          "explanation": "Multiply by 0.85 each year: 28 000 × 0.85⁴ = 14 616.18.",
+          "terms": [
+            "math-ai-1.4-depreciation"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q06",
+          "type": "tf",
+          "statement": "Depreciation of 15% per year means the value falls by the same dollar amount each year.",
+          "answer": false,
+          "explanation": "A percentage depreciation falls by less each year in dollars because it is 15% of a shrinking value.",
+          "terms": [
+            "math-ai-1.4-depreciation"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q07",
+          "type": "mcq",
+          "prompt": "An item costs $50 today. With 3% annual inflation, what will it cost in 10 years?",
+          "options": [
+            "$65.00",
+            "$67.20",
+            "$65.24",
+            "$63.81"
+          ],
+          "answer": 1,
+          "explanation": "50 × 1.03¹⁰ = 67.20. Inflation compounds like interest.",
+          "terms": [
+            "math-ai-1.4-inflation"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q08",
+          "type": "match",
+          "prompt": "Match each TVM solver variable to its meaning.",
+          "pairs": [
+            {
+              "left": "N",
+              "right": "total number of payment periods"
+            },
+            {
+              "left": "I%",
+              "right": "nominal annual interest rate"
+            },
+            {
+              "left": "PV",
+              "right": "present value"
+            },
+            {
+              "left": "P/Y",
+              "right": "number of payments per year"
+            }
+          ],
+          "explanation": "Entering the right values for each variable is the main skill with the finance app.",
+          "terms": [
+            "math-ai-1.4-tvm-solver"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q09",
+          "type": "fill",
+          "text": "A simple estimate of the real interest rate is the nominal rate minus the ___ rate.",
+          "answer": "inflation",
+          "bank": [
+            "depreciation",
+            "compound",
+            "tax",
+            "inflation"
+          ],
+          "explanation": "If savings grow 5% but prices rise 3%, purchasing power grows by about 2%.",
+          "terms": [
+            "math-ai-1.4-inflation"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-1-q10",
+          "type": "order",
+          "prompt": "Order the value of $1000 after 1 year at 6% nominal, from smallest to largest, by compounding frequency.",
+          "items": [
+            "Annually",
+            "Half-yearly",
+            "Quarterly",
+            "Monthly"
+          ],
+          "explanation": "The values are 1060, 1060.90, 1061.36 and 1061.68: more frequent compounding gives slightly more.",
+          "terms": [
+            "math-ai-1.4-compounding-period"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-1.4-2",
+      "title": "Loans and annuities",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-1.4-2-q01",
+          "type": "tf",
+          "statement": "In an amortized loan, each payment first pays the interest due and the rest reduces the principal.",
+          "answer": true,
+          "explanation": "That is why the balance falls slowly at first and faster later.",
+          "terms": [
+            "math-ai-1.4-amortization"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q02",
+          "type": "mcq",
+          "prompt": "A $200 000 mortgage at 5% nominal compounded monthly is repaid monthly over 25 years. Find the monthly payment.",
+          "options": [
+            "$666.67",
+            "$1169.18",
+            "$833.33",
+            "$1402.59"
+          ],
+          "answer": 1,
+          "explanation": "TVM: N = 300, I% = 5, PV = 200 000, FV = 0, P/Y = C/Y = 12 gives PMT ≈ −1169.18.",
+          "terms": [
+            "math-ai-1.4-tvm-solver",
+            "math-ai-1.4-amortization"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q03",
+          "type": "mcq",
+          "prompt": "For the mortgage above (payments $1169.18), find the total interest paid.",
+          "options": [
+            "$150 754",
+            "$50 754",
+            "$350 754",
+            "$250 000"
+          ],
+          "answer": 0,
+          "explanation": "Total paid = 300 × 1169.18 ≈ 350 754, minus the 200 000 borrowed gives about 150 754.",
+          "terms": [
+            "math-ai-1.4-amortization"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q04",
+          "type": "fill",
+          "text": "An ___ is a sequence of equal payments made at regular intervals.",
+          "answer": "annuity",
+          "bank": [
+            "amortization",
+            "annuity",
+            "principal",
+            "dividend"
+          ],
+          "explanation": "Savings plans and pensions paid out monthly are annuities.",
+          "terms": [
+            "math-ai-1.4-annuity"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q05",
+          "type": "tf",
+          "statement": "Early in a long mortgage, most of each payment goes towards interest.",
+          "answer": true,
+          "explanation": "Interest is charged on the large outstanding balance, so it takes most of the early payments.",
+          "terms": [
+            "math-ai-1.4-amortization"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q06",
+          "type": "mcq",
+          "prompt": "Sam saves $200 at the end of each month for 10 years at 3% nominal compounded monthly. Find the final value.",
+          "options": [
+            "$24 000.00",
+            "$27 948.28",
+            "$32 254.00",
+            "$26 400.00"
+          ],
+          "answer": 1,
+          "explanation": "TVM: N = 120, I% = 3, PV = 0, PMT = −200 gives FV ≈ 27 948.28; $24 000 is just the deposits.",
+          "terms": [
+            "math-ai-1.4-annuity",
+            "math-ai-1.4-tvm-solver"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q07",
+          "type": "mcq",
+          "prompt": "In the TVM solver, money you pay out (such as deposits or loan repayments) is entered as:",
+          "options": [
+            "a negative value",
+            "a positive value",
+            "zero",
+            "a percentage"
+          ],
+          "answer": 0,
+          "explanation": "The sign shows the direction of cash flow: money out is negative, money in is positive.",
+          "terms": [
+            "math-ai-1.4-tvm-solver"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q08",
+          "type": "match",
+          "prompt": "Match each question to the TVM variable you solve for.",
+          "pairs": [
+            {
+              "left": "How much do I repay each month?",
+              "right": "PMT"
+            },
+            {
+              "left": "How long until savings reach my target?",
+              "right": "N"
+            },
+            {
+              "left": "What rate doubles money in 10 years?",
+              "right": "I%"
+            },
+            {
+              "left": "How much must I invest today?",
+              "right": "PV"
+            }
+          ],
+          "explanation": "Enter every known value, then solve for the unknown.",
+          "terms": [
+            "math-ai-1.4-tvm-solver"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q09",
+          "type": "order",
+          "prompt": "Put one row of an amortization table in order.",
+          "items": [
+            "Opening balance",
+            "Add the interest for the period",
+            "Subtract the payment",
+            "Closing balance, which becomes the next opening balance"
+          ],
+          "explanation": "Interest is charged on the opening balance before the payment is subtracted.",
+          "terms": [
+            "math-ai-1.4-amortization"
+          ]
+        },
+        {
+          "id": "math-ai-1.4-2-q10",
+          "type": "fill",
+          "text": "A loan of $10 000 is charged 1% interest per month. The interest in the first month is $___.",
+          "answer": "100",
+          "bank": [
+            "1000",
+            "10",
+            "120",
+            "100"
+          ],
+          "explanation": "1% of 10 000 = 100.",
+          "terms": [
+            "math-ai-1.4-compound-interest",
+            "math-ai-1.4-amortization"
+          ]
+        }
+      ]
+    }
+  ]
+}

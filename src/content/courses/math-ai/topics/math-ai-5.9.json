@@ -1,0 +1,590 @@
+{
+  "id": "math-ai-5.9",
+  "code": "AHL 5.9–5.18",
+  "unit": "5",
+  "title": "Further calculus and differential equations",
+  "level": "HL",
+  "summary": "Derivatives of trigonometric, exponential and log functions with the chain, product and quotient rules, second derivatives, volumes of revolution, kinematics, and differential equations solved exactly, with slope fields and with Euler’s method.",
+  "keyterms": [
+    {
+      "id": "math-ai-5.9-chain-rule",
+      "term": "Chain rule",
+      "definition": "dy/dx = dy/du × du/dx for composite functions.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-product-rule",
+      "term": "Product rule",
+      "definition": "d/dx(uv) = u dv/dx + v du/dx.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-quotient-rule",
+      "term": "Quotient rule",
+      "definition": "d/dx(u/v) = (v du/dx − u dv/dx)/v².",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-related-rates",
+      "term": "Related rates",
+      "definition": "Linking rates of change with the chain rule, e.g. dA/dt = dA/dr × dr/dt.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-second-derivative",
+      "term": "Second derivative",
+      "definition": "f″(x): f″ > 0 means concave up, f″ < 0 concave down.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-point-of-inflection",
+      "term": "Point of inflection",
+      "definition": "A point where f″(x) = 0 and changes sign, so the concavity changes.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-volume-of-revolution",
+      "term": "Volume of revolution",
+      "definition": "V = ∫ₐᵇ πy² dx about the x-axis (or ∫ πx² dy about the y-axis).",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-kinematics",
+      "term": "Kinematics",
+      "definition": "Displacement s, velocity v = ds/dt and acceleration a = dv/dt; distance = ∫|v| dt.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-differential-equation",
+      "term": "Differential equation",
+      "definition": "An equation involving a derivative, e.g. dy/dx = ky.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-separation-of-variables",
+      "term": "Separation of variables",
+      "definition": "Rewriting dy/dx = f(x)g(y) as ∫1/g(y) dy = ∫f(x) dx.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-slope-field",
+      "term": "Slope field",
+      "definition": "A diagram of short line segments showing the gradient of a differential equation at many points.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-euler-method",
+      "term": "Euler’s method",
+      "definition": "yₙ₊₁ = yₙ + h × f(xₙ, yₙ): a step-by-step numerical solution of dy/dx = f(x, y).",
+      "hl": true
+    },
+    {
+      "id": "math-ai-5.9-phase-portrait",
+      "term": "Phase portrait",
+      "definition": "A diagram of trajectories for a coupled system; its shape depends on the eigenvalues.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-5.9-1",
+      "title": "Further differentiation",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-5.9-1-q01",
+          "type": "mcq",
+          "prompt": "Differentiate sin(3x).",
+          "options": [
+            "3cos(3x)",
+            "cos(3x)",
+            "−3cos(3x)",
+            "3sin(3x)"
+          ],
+          "answer": 0,
+          "explanation": "Chain rule: differentiate the outside, then multiply by the derivative of 3x.",
+          "terms": [
+            "math-ai-5.9-chain-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q02",
+          "type": "mcq",
+          "prompt": "Differentiate e^(2x).",
+          "options": [
+            "e^(2x)",
+            "2xe^(2x − 1)",
+            "e^(2x)/2",
+            "2e^(2x)"
+          ],
+          "answer": 3,
+          "explanation": "d/dx e^(kx) = ke^(kx).",
+          "terms": [
+            "math-ai-5.9-chain-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q03",
+          "type": "fill",
+          "text": "d/dx (ln x) = ___",
+          "answer": "1/x",
+          "bank": [
+            "ln x",
+            "x",
+            "1/x",
+            "eˣ"
+          ],
+          "explanation": "This holds for x > 0.",
+          "terms": [
+            "math-ai-5.9-chain-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q04",
+          "type": "mcq",
+          "prompt": "Differentiate x²eˣ.",
+          "options": [
+            "2xeˣ",
+            "eˣ(x² + 2x)",
+            "x²eˣ",
+            "eˣ(2x + 1)"
+          ],
+          "answer": 1,
+          "explanation": "Product rule: 2x × eˣ + x² × eˣ.",
+          "terms": [
+            "math-ai-5.9-product-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q05",
+          "type": "mcq",
+          "prompt": "Differentiate x/(x + 1).",
+          "options": [
+            "1/(x + 1)²",
+            "−1/(x + 1)²",
+            "1/(x + 1)",
+            "2x/(x + 1)²"
+          ],
+          "answer": 0,
+          "explanation": "Quotient rule: ((x + 1)(1) − x(1))/(x + 1)².",
+          "terms": [
+            "math-ai-5.9-quotient-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q06",
+          "type": "tf",
+          "statement": "If f″(x) > 0 on an interval, the graph is concave up there.",
+          "answer": true,
+          "explanation": "The gradient is increasing.",
+          "terms": [
+            "math-ai-5.9-second-derivative"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q07",
+          "type": "mcq",
+          "prompt": "A point of inflection occurs where:",
+          "options": [
+            "f′(x) = 0",
+            "f(x) = 0",
+            "f″(x) = 0 and f″ changes sign",
+            "f″(x) > 0"
+          ],
+          "answer": 2,
+          "explanation": "f″ = 0 alone is not enough; the concavity must change.",
+          "terms": [
+            "math-ai-5.9-point-of-inflection"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q08",
+          "type": "mcq",
+          "prompt": "A circle’s radius grows at 0.5 cm s⁻¹. Find the rate of increase of its area when r = 4 cm.",
+          "options": [
+            "25.1 cm² s⁻¹",
+            "12.6 cm² s⁻¹",
+            "6.28 cm² s⁻¹",
+            "50.3 cm² s⁻¹"
+          ],
+          "answer": 1,
+          "explanation": "dA/dt = 2πr × dr/dt = 2π(4)(0.5) = 4π ≈ 12.6.",
+          "terms": [
+            "math-ai-5.9-related-rates"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q09",
+          "type": "match",
+          "prompt": "Match each function to its derivative.",
+          "pairs": [
+            {
+              "left": "tan x",
+              "right": "1/cos²x"
+            },
+            {
+              "left": "cos x",
+              "right": "−sin x"
+            },
+            {
+              "left": "eˣ",
+              "right": "eˣ"
+            },
+            {
+              "left": "ln(5x)",
+              "right": "1/x"
+            }
+          ],
+          "explanation": "ln(5x) = ln 5 + ln x, so its derivative is 1/x.",
+          "terms": [
+            "math-ai-5.9-chain-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-1-q10",
+          "type": "order",
+          "prompt": "Put the steps of the chain rule in order.",
+          "items": [
+            "Identify the inner function u",
+            "Differentiate the outer function with respect to u",
+            "Multiply by du/dx",
+            "Substitute u back in terms of x"
+          ],
+          "explanation": "dy/dx = dy/du × du/dx.",
+          "terms": [
+            "math-ai-5.9-chain-rule"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-5.9-2",
+      "title": "Further integration, volumes and kinematics",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-5.9-2-q01",
+          "type": "mcq",
+          "prompt": "Find ∫ cos x dx.",
+          "options": [
+            "−sin x + C",
+            "cos x + C",
+            "−cos x + C",
+            "sin x + C"
+          ],
+          "answer": 3,
+          "explanation": "d/dx sin x = cos x.",
+          "terms": []
+        },
+        {
+          "id": "math-ai-5.9-2-q02",
+          "type": "mcq",
+          "prompt": "Find ∫ 1/x dx.",
+          "options": [
+            "x⁰/0 + C",
+            "−1/x² + C",
+            "ln|x| + C",
+            "eˣ + C"
+          ],
+          "answer": 2,
+          "explanation": "This is the n = −1 case the power rule cannot handle.",
+          "terms": []
+        },
+        {
+          "id": "math-ai-5.9-2-q03",
+          "type": "fill",
+          "text": "∫ e^(3x) dx = ___",
+          "answer": "⅓e^(3x) + C",
+          "bank": [
+            "3e^(3x) + C",
+            "e^(3x) + C",
+            "e^(3x + 1) + C",
+            "⅓e^(3x) + C"
+          ],
+          "explanation": "Divide by the coefficient of x when integrating e^(kx).",
+          "terms": [
+            "math-ai-5.9-chain-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-2-q04",
+          "type": "mcq",
+          "prompt": "The line y = x for 0 ≤ x ≤ 3 is rotated 360° about the x-axis. Find the volume.",
+          "options": [
+            "28.3",
+            "9",
+            "14.1",
+            "84.8"
+          ],
+          "answer": 0,
+          "explanation": "V = π∫₀³ x² dx = 9π ≈ 28.3 (a cone).",
+          "terms": [
+            "math-ai-5.9-volume-of-revolution"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-2-q05",
+          "type": "tf",
+          "statement": "Velocity is the derivative of displacement with respect to time.",
+          "answer": true,
+          "explanation": "v = ds/dt and a = dv/dt.",
+          "terms": [
+            "math-ai-5.9-kinematics"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-2-q06",
+          "type": "mcq",
+          "prompt": "v(t) = 6 − 2t. Find the acceleration.",
+          "options": [
+            "6",
+            "6 − 2t",
+            "−2",
+            "0"
+          ],
+          "answer": 2,
+          "explanation": "a = dv/dt = −2.",
+          "terms": [
+            "math-ai-5.9-kinematics"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-2-q07",
+          "type": "mcq",
+          "prompt": "v(t) = 6 − 2t m s⁻¹. Find the distance travelled for 0 ≤ t ≤ 5.",
+          "options": [
+            "5 m",
+            "13 m",
+            "9 m",
+            "4 m"
+          ],
+          "answer": 1,
+          "explanation": "The particle turns at t = 3: ∫|v| dt = 9 + 4 = 13 m. The displacement is only 5 m.",
+          "terms": [
+            "math-ai-5.9-kinematics"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-2-q08",
+          "type": "match",
+          "prompt": "Match each quantity to its meaning.",
+          "pairs": [
+            {
+              "left": "s",
+              "right": "displacement"
+            },
+            {
+              "left": "ds/dt",
+              "right": "velocity"
+            },
+            {
+              "left": "dv/dt",
+              "right": "acceleration"
+            },
+            {
+              "left": "∫|v| dt",
+              "right": "distance travelled"
+            }
+          ],
+          "explanation": "Distance uses |v| so that backward motion still counts.",
+          "terms": [
+            "math-ai-5.9-kinematics"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-2-q09",
+          "type": "tf",
+          "statement": "The area between a curve and the y-axis can be found with ∫ x dy.",
+          "answer": true,
+          "explanation": "Rewrite x in terms of y and use y-limits.",
+          "terms": [
+            "math-ai-5.9-volume-of-revolution"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for a volume of revolution about the x-axis in order.",
+          "items": [
+            "Square the function y",
+            "Multiply by π",
+            "Integrate between the x-limits",
+            "Evaluate, e.g. with the GDC"
+          ],
+          "explanation": "V = π∫ₐᵇ y² dx.",
+          "terms": [
+            "math-ai-5.9-volume-of-revolution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-5.9-3",
+      "title": "Differential equations",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-5.9-3-q01",
+          "type": "mcq",
+          "prompt": "The general solution of dy/dx = ky is:",
+          "options": [
+            "y = kx + c",
+            "y = kx²/2",
+            "y = Ae^(kx)",
+            "y = A ln(kx)"
+          ],
+          "answer": 2,
+          "explanation": "Separate: ∫dy/y = ∫k dx gives ln|y| = kx + c.",
+          "terms": [
+            "math-ai-5.9-differential-equation",
+            "math-ai-5.9-separation-of-variables"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q02",
+          "type": "fill",
+          "text": "Separating dy/dx = xy gives ln|y| = x²/2 + ___.",
+          "answer": "C",
+          "bank": [
+            "x",
+            "C",
+            "y",
+            "1"
+          ],
+          "explanation": "One constant of integration is enough.",
+          "terms": [
+            "math-ai-5.9-separation-of-variables"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q03",
+          "type": "mcq",
+          "prompt": "Use Euler’s method with h = 0.1 on dy/dx = x + y, starting at (0, 1). Find y after two steps.",
+          "options": [
+            "1.22",
+            "1.2",
+            "1.1",
+            "1.32"
+          ],
+          "answer": 0,
+          "explanation": "y₁ = 1 + 0.1(1) = 1.1; y₂ = 1.1 + 0.1(0.1 + 1.1) = 1.22.",
+          "terms": [
+            "math-ai-5.9-euler-method"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q04",
+          "type": "tf",
+          "statement": "Using a smaller step size in Euler’s method usually improves accuracy.",
+          "answer": true,
+          "explanation": "Each step follows the tangent for a shorter distance.",
+          "terms": [
+            "math-ai-5.9-euler-method"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q05",
+          "type": "mcq",
+          "prompt": "A slope field shows:",
+          "options": [
+            "the exact solution",
+            "the area under the curve",
+            "the gradient of solution curves at many points",
+            "the eigenvalues"
+          ],
+          "answer": 2,
+          "explanation": "Solution curves follow the direction of the segments.",
+          "terms": [
+            "math-ai-5.9-slope-field"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q06",
+          "type": "mcq",
+          "prompt": "A coupled system has complex eigenvalues with negative real part. Its phase portrait shows:",
+          "options": [
+            "trajectories moving straight away from the origin",
+            "trajectories spiralling into the origin",
+            "a saddle point",
+            "closed circles"
+          ],
+          "answer": 1,
+          "explanation": "The imaginary part causes rotation; the negative real part causes decay.",
+          "terms": [
+            "math-ai-5.9-phase-portrait"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q07",
+          "type": "tf",
+          "statement": "Real eigenvalues of opposite signs give a saddle point.",
+          "answer": true,
+          "explanation": "Trajectories approach along one eigenvector and leave along the other.",
+          "terms": [
+            "math-ai-5.9-phase-portrait"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q08",
+          "type": "match",
+          "prompt": "Match each eigenvalue type to its phase portrait.",
+          "pairs": [
+            {
+              "left": "Both real and positive",
+              "right": "unstable: moving away from the origin"
+            },
+            {
+              "left": "Both real and negative",
+              "right": "stable: moving towards the origin"
+            },
+            {
+              "left": "Real, opposite signs",
+              "right": "saddle point"
+            },
+            {
+              "left": "Purely imaginary",
+              "right": "closed loops around the origin"
+            }
+          ],
+          "explanation": "The eigenvalues of the system’s matrix decide the long-term behaviour.",
+          "terms": [
+            "math-ai-5.9-phase-portrait"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q09",
+          "type": "mcq",
+          "prompt": "A second-order equation such as d²x/dt² = f(x, dx/dt, t) is solved with Euler’s method by:",
+          "options": [
+            "integrating twice exactly",
+            "using a slope field only",
+            "writing it as a coupled pair of first-order equations using y = dx/dt",
+            "ignoring the second derivative"
+          ],
+          "answer": 2,
+          "explanation": "Then step x and y forward together.",
+          "terms": [
+            "math-ai-5.9-euler-method",
+            "math-ai-5.9-differential-equation"
+          ]
+        },
+        {
+          "id": "math-ai-5.9-3-q10",
+          "type": "order",
+          "prompt": "Put the steps of Euler’s method in order.",
+          "items": [
+            "Start at (x₀, y₀)",
+            "Calculate the gradient f(xₙ, yₙ)",
+            "Set yₙ₊₁ = yₙ + h × f(xₙ, yₙ)",
+            "Set xₙ₊₁ = xₙ + h",
+            "Repeat until the required x"
+          ],
+          "explanation": "A GDC or spreadsheet makes repeated steps quick.",
+          "terms": [
+            "math-ai-5.9-euler-method"
+          ]
+        }
+      ]
+    }
+  ]
+}

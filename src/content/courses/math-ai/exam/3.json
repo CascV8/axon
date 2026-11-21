@@ -1,0 +1,71 @@
+[
+  {
+    "id": "math-ai-X-3-01",
+    "unit": "3",
+    "topics": [
+      "math-ai-3.1"
+    ],
+    "paper": "P1",
+    "level": "SL",
+    "title": "Two hikers leave camp",
+    "stem": "Two hikers leave a camp C. Hiker A walks 5 km on a bearing of 040°. Hiker B walks 7 km on a bearing of 160°. The ground is flat.",
+    "parts": [
+      {
+        "label": "a",
+        "command": "Show that",
+        "prompt": "Show that angle ACB is 120°.",
+        "marks": 1,
+        "markscheme": [
+          "160° − 40° = 120°"
+        ]
+      },
+      {
+        "label": "b",
+        "command": "Find",
+        "prompt": "Find the distance AB between the hikers.",
+        "marks": 3,
+        "numeric": {
+          "value": 10.4,
+          "tolerance": 0.05,
+          "unit": "km"
+        },
+        "markscheme": [
+          "attempt to use cosine rule",
+          "AB² = 5² + 7² − 2(5)(7) cos 120° (= 109)",
+          "AB = 10.4 km (10.4403…)"
+        ]
+      },
+      {
+        "label": "c",
+        "command": "Find",
+        "prompt": "Find the area of triangle ABC.",
+        "marks": 2,
+        "numeric": {
+          "value": 15.2,
+          "tolerance": 0.05,
+          "unit": "km²"
+        },
+        "markscheme": [
+          "½ × 5 × 7 × sin 120°",
+          "15.2 km² (15.1554…)"
+        ]
+      },
+      {
+        "label": "d",
+        "command": "Find",
+        "prompt": "Find angle CAB.",
+        "marks": 2,
+        "numeric": {
+          "value": 35.5,
+          "tolerance": 0.1,
+          "unit": "°"
+        },
+        "markscheme": [
+          "sin A / 7 = sin 120° / 10.44 (or cosine rule)",
+          "35.5°"
+        ],
+        "notes": "Follow through from their AB."
+      }
+    ]
+  }
+]

@@ -1,0 +1,415 @@
+{
+  "id": "math-ai-2.5",
+  "code": "SL 2.5–2.6",
+  "unit": "2",
+  "title": "Modelling with functions",
+  "level": "SL",
+  "summary": "Choosing and using linear, quadratic, exponential, direct and inverse variation, cubic and sinusoidal models, and the cycle of developing, testing and refining a model.",
+  "keyterms": [
+    {
+      "id": "math-ai-2.5-linear-model",
+      "term": "Linear model",
+      "definition": "f(x) = mx + c: a constant rate of change.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-quadratic-model",
+      "term": "Quadratic model",
+      "definition": "f(x) = ax² + bx + c: one maximum or minimum, e.g. projectile height.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-exponential-model",
+      "term": "Exponential model",
+      "definition": "f(x) = kaˣ + c or ke^(rx) + c: growth or decay by a constant factor.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-direct-variation",
+      "term": "Direct variation",
+      "definition": "y = kxⁿ with n > 0: y increases as x increases, passing through the origin.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-inverse-variation",
+      "term": "Inverse variation",
+      "definition": "y = kx⁻ⁿ, e.g. y = k/x: y decreases as x increases.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-cubic-model",
+      "term": "Cubic model",
+      "definition": "f(x) = ax³ + bx² + cx + d: up to two turning points.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-sinusoidal-model",
+      "term": "Sinusoidal model",
+      "definition": "f(x) = a sin(bx) + d or a cos(bx) + d: periodic behaviour.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-amplitude",
+      "term": "Amplitude",
+      "definition": "|a|: half the distance between the maximum and minimum of a sinusoidal model.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-period",
+      "term": "Period",
+      "definition": "The horizontal length of one full cycle; 360°/b for a sin(bx) + d.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-principal-axis",
+      "term": "Principal axis",
+      "definition": "The horizontal line y = d midway between the maximum and minimum.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-2.5-modelling-cycle",
+      "term": "Modelling cycle",
+      "definition": "Pose a problem, develop a model, test it, reflect on it and refine or extend it.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-2.5-1",
+      "title": "Linear, quadratic and exponential models",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-2.5-1-q01",
+          "type": "mcq",
+          "prompt": "A phone plan costs C = 15 + 0.1m dollars for m minutes. Find the cost of 200 minutes.",
+          "options": [
+            "$35",
+            "$215",
+            "$20",
+            "$30"
+          ],
+          "answer": 0,
+          "explanation": "15 + 0.1 × 200 = 35.",
+          "terms": [
+            "math-ai-2.5-linear-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q02",
+          "type": "tf",
+          "statement": "The graph of y = ax² + bx + c with a < 0 has a maximum point.",
+          "answer": true,
+          "explanation": "A negative leading coefficient gives a parabola that opens downwards.",
+          "terms": [
+            "math-ai-2.5-quadratic-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q03",
+          "type": "mcq",
+          "prompt": "A ball’s height is h(t) = −4.9t² + 14.7t + 2 metres. Find its maximum height.",
+          "options": [
+            "1.5 m",
+            "2.0 m",
+            "13.0 m",
+            "24.1 m"
+          ],
+          "answer": 2,
+          "explanation": "The vertex is at t = 14.7/9.8 = 1.5 s, where h = 13.025 ≈ 13.0 m.",
+          "terms": [
+            "math-ai-2.5-quadratic-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q04",
+          "type": "fill",
+          "text": "f(x) = kaˣ + c with 0 < a < 1 and k > 0 models exponential ___.",
+          "answer": "decay",
+          "bank": [
+            "growth",
+            "decay",
+            "variation",
+            "inflation"
+          ],
+          "explanation": "A multiplier between 0 and 1 makes values shrink by a constant factor.",
+          "terms": [
+            "math-ai-2.5-exponential-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q05",
+          "type": "mcq",
+          "prompt": "Coffee cools according to T = 20 + 70e^(−0.05t) °C. What temperature does it approach in the long run?",
+          "options": [
+            "20 °C",
+            "90 °C",
+            "70 °C",
+            "0 °C"
+          ],
+          "answer": 0,
+          "explanation": "e^(−0.05t) → 0, so T → 20: the room temperature, a horizontal asymptote.",
+          "terms": [
+            "math-ai-2.5-exponential-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q06",
+          "type": "mcq",
+          "prompt": "For the same model, find the temperature after 10 minutes.",
+          "options": [
+            "55.0 °C",
+            "84.6 °C",
+            "45.7 °C",
+            "62.5 °C"
+          ],
+          "answer": 3,
+          "explanation": "20 + 70e^(−0.5) = 20 + 42.46 ≈ 62.5 °C.",
+          "terms": [
+            "math-ai-2.5-exponential-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q07",
+          "type": "tf",
+          "statement": "y = 500(1.08)ᵗ models 8% growth per time period.",
+          "answer": true,
+          "explanation": "Multiplying by 1.08 each period is an 8% increase.",
+          "terms": [
+            "math-ai-2.5-exponential-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q08",
+          "type": "match",
+          "prompt": "Match each context to the most suitable model.",
+          "pairs": [
+            {
+              "left": "Distance at constant speed",
+              "right": "linear"
+            },
+            {
+              "left": "Height of a thrown ball",
+              "right": "quadratic"
+            },
+            {
+              "left": "Bacteria doubling every hour",
+              "right": "exponential"
+            },
+            {
+              "left": "Daylight hours over a year",
+              "right": "sinusoidal"
+            }
+          ],
+          "explanation": "Think about the shape: constant rate, one turning point, constant factor or repeating cycle.",
+          "terms": [
+            "math-ai-2.5-linear-model",
+            "math-ai-2.5-quadratic-model",
+            "math-ai-2.5-exponential-model",
+            "math-ai-2.5-sinusoidal-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q09",
+          "type": "fill",
+          "text": "A 200 mg dose decreases by 20% each hour. After 3 hours, ___ mg remains.",
+          "answer": "102.4",
+          "bank": [
+            "102.4",
+            "80",
+            "140",
+            "81.92"
+          ],
+          "explanation": "200 × 0.8³ = 102.4 mg. Subtracting 40 mg each hour would wrongly treat it as linear.",
+          "terms": [
+            "math-ai-2.5-exponential-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-1-q10",
+          "type": "order",
+          "prompt": "Put the stages of the modelling cycle in order.",
+          "items": [
+            "Pose a real-world problem",
+            "Develop a model",
+            "Test the model against data",
+            "Reflect on the model and refine it"
+          ],
+          "explanation": "Modelling is iterative: testing and reflection lead to a better model.",
+          "terms": [
+            "math-ai-2.5-modelling-cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-2.5-2",
+      "title": "Variation, cubic and sinusoidal models",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-2.5-2-q01",
+          "type": "mcq",
+          "prompt": "y varies directly with x, and y = 12 when x = 3. Find y when x = 7.",
+          "options": [
+            "21",
+            "16",
+            "84",
+            "28"
+          ],
+          "answer": 3,
+          "explanation": "y = kx with k = 4, so y = 28.",
+          "terms": [
+            "math-ai-2.5-direct-variation"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q02",
+          "type": "mcq",
+          "prompt": "y = k/x and y = 6 when x = 4. Find y when x = 8.",
+          "options": [
+            "12",
+            "24",
+            "3",
+            "1.5"
+          ],
+          "answer": 2,
+          "explanation": "k = 24, so y = 24/8 = 3.",
+          "terms": [
+            "math-ai-2.5-inverse-variation"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q03",
+          "type": "tf",
+          "statement": "In the inverse variation y = k/x, doubling x halves y.",
+          "answer": true,
+          "explanation": "y = k/(2x) = ½ × k/x.",
+          "terms": [
+            "math-ai-2.5-inverse-variation"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q04",
+          "type": "fill",
+          "text": "For f(x) = a sin(bx) + d, the principal axis is y = ___.",
+          "answer": "d",
+          "bank": [
+            "a",
+            "b",
+            "d",
+            "0"
+          ],
+          "explanation": "d shifts the graph vertically and sets the middle line.",
+          "terms": [
+            "math-ai-2.5-principal-axis"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q05",
+          "type": "mcq",
+          "prompt": "Find the period of y = 3 sin(30x) + 5, with x in degrees.",
+          "options": [
+            "30",
+            "3",
+            "5",
+            "12"
+          ],
+          "answer": 3,
+          "explanation": "Period = 360°/b = 360/30 = 12.",
+          "terms": [
+            "math-ai-2.5-period"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q06",
+          "type": "mcq",
+          "prompt": "Water depth is D(t) = 2.5 cos(30t) + 4 metres (t in hours, angles in degrees). Find the maximum depth.",
+          "options": [
+            "4 m",
+            "2.5 m",
+            "6.5 m",
+            "1.5 m"
+          ],
+          "answer": 2,
+          "explanation": "Maximum = principal axis + amplitude = 4 + 2.5.",
+          "terms": [
+            "math-ai-2.5-amplitude",
+            "math-ai-2.5-principal-axis"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q07",
+          "type": "tf",
+          "statement": "The minimum value of 2.5 cos(30t) + 4 is 1.5.",
+          "answer": true,
+          "explanation": "4 − 2.5 = 1.5.",
+          "terms": [
+            "math-ai-2.5-amplitude"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q08",
+          "type": "match",
+          "prompt": "For f(x) = 4 sin(45x) + 1 (degrees), match each feature to its value.",
+          "pairs": [
+            {
+              "left": "Amplitude",
+              "right": "4"
+            },
+            {
+              "left": "Period",
+              "right": "8"
+            },
+            {
+              "left": "Principal axis",
+              "right": "y = 1"
+            },
+            {
+              "left": "Maximum value",
+              "right": "5"
+            }
+          ],
+          "explanation": "Period = 360/45 = 8; maximum = 1 + 4.",
+          "terms": [
+            "math-ai-2.5-amplitude",
+            "math-ai-2.5-period",
+            "math-ai-2.5-principal-axis"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q09",
+          "type": "fill",
+          "text": "Squares of side x cm are cut from a 30 cm × 20 cm sheet to make an open box with V = x(30 − 2x)(20 − 2x). When x = 5, V = ___ cm³.",
+          "answer": "1000",
+          "bank": [
+            "3000",
+            "1000",
+            "750",
+            "1500"
+          ],
+          "explanation": "5 × 20 × 10 = 1000 cm³.",
+          "terms": [
+            "math-ai-2.5-cubic-model"
+          ]
+        },
+        {
+          "id": "math-ai-2.5-2-q10",
+          "type": "mcq",
+          "prompt": "Which of these models can have two turning points?",
+          "options": [
+            "Quadratic",
+            "Exponential",
+            "Cubic",
+            "Linear"
+          ],
+          "answer": 2,
+          "explanation": "A cubic can have up to two turning points; a quadratic has exactly one.",
+          "terms": [
+            "math-ai-2.5-cubic-model"
+          ]
+        }
+      ]
+    }
+  ]
+}

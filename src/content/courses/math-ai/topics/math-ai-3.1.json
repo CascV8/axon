@@ -1,0 +1,604 @@
+{
+  "id": "math-ai-3.1",
+  "code": "SL 3.1–3.4, AHL 3.7–3.8",
+  "unit": "3",
+  "title": "3D geometry and trigonometry",
+  "level": "SL",
+  "summary": "Volumes, surface areas and distances in 3D, arcs and sectors, and solving triangles with the sine and cosine rules, bearings and elevation. HL adds radians, the unit circle and trigonometric equations.",
+  "keyterms": [
+    {
+      "id": "math-ai-3.1-volume",
+      "term": "Volume",
+      "definition": "The space a 3D solid occupies, e.g. cone ⅓πr²h, sphere ⁴⁄₃πr³.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-surface-area",
+      "term": "Surface area",
+      "definition": "The total area of all faces or curved surfaces of a solid, e.g. sphere 4πr².",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-distance-3d",
+      "term": "Distance in 3D",
+      "definition": "√((x₁ − x₂)² + (y₁ − y₂)² + (z₁ − z₂)²) between two points.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-line-plane-angle",
+      "term": "Angle between a line and a plane",
+      "definition": "The angle between the line and its projection onto the plane.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-sine-rule",
+      "term": "Sine rule",
+      "definition": "a/sin A = b/sin B = c/sin C, used with two angles and a side.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-cosine-rule",
+      "term": "Cosine rule",
+      "definition": "c² = a² + b² − 2ab cos C, used with two sides and the included angle, or three sides.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-triangle-area",
+      "term": "Area of a triangle",
+      "definition": "A = ½ab sin C, using two sides and the angle between them.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-angle-of-elevation",
+      "term": "Angle of elevation",
+      "definition": "The angle measured upward from the horizontal to a line of sight.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-angle-of-depression",
+      "term": "Angle of depression",
+      "definition": "The angle measured downward from the horizontal to a line of sight.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-bearing",
+      "term": "Bearing",
+      "definition": "A direction given as a three-figure angle measured clockwise from north.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-arc-length",
+      "term": "Arc length",
+      "definition": "The length of part of a circle: (θ/360°) × 2πr, or rθ with θ in radians.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-sector-area",
+      "term": "Area of a sector",
+      "definition": "(θ/360°) × πr², or ½r²θ with θ in radians.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-3.1-radian",
+      "term": "Radian",
+      "definition": "The angle subtended by an arc equal in length to the radius; π rad = 180°.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.1-unit-circle",
+      "term": "Unit circle",
+      "definition": "A circle of radius 1 centred at the origin; the point at angle θ is (cos θ, sin θ).",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.1-pythagorean-identity",
+      "term": "Pythagorean identity",
+      "definition": "sin²θ + cos²θ = 1 for every angle θ.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-3.1-1",
+      "title": "Solids, distances, arcs and sectors",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-3.1-1-q01",
+          "type": "mcq",
+          "prompt": "Find the volume of a cone with radius 3 cm and height 4 cm.",
+          "options": [
+            "113 cm³",
+            "50.3 cm³",
+            "37.7 cm³",
+            "28.3 cm³"
+          ],
+          "answer": 2,
+          "explanation": "V = ⅓π(3²)(4) = 12π ≈ 37.7 cm³. 113 cm³ forgets the ⅓.",
+          "terms": [
+            "math-ai-3.1-volume"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q02",
+          "type": "fill",
+          "text": "The distance between (1, 2, 3) and (4, 6, 3) is ___.",
+          "answer": "5",
+          "bank": [
+            "7",
+            "5",
+            "25",
+            "12"
+          ],
+          "explanation": "√(3² + 4² + 0²) = √25 = 5.",
+          "terms": [
+            "math-ai-3.1-distance-3d"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q03",
+          "type": "tf",
+          "statement": "The surface area of a sphere of radius r is 4πr².",
+          "answer": true,
+          "explanation": "This is in the formula booklet; volume is ⁴⁄₃πr³.",
+          "terms": [
+            "math-ai-3.1-surface-area"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q04",
+          "type": "mcq",
+          "prompt": "Find the midpoint of (2, −1, 4) and (6, 3, 0).",
+          "options": [
+            "(8, 2, 4)",
+            "(2, 2, −2)",
+            "(4, 2, 2)",
+            "(4, 1, 2)"
+          ],
+          "answer": 3,
+          "explanation": "Average each coordinate: ((2 + 6)/2, (−1 + 3)/2, (4 + 0)/2).",
+          "terms": [
+            "math-ai-3.1-distance-3d"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q05",
+          "type": "mcq",
+          "prompt": "A cuboid is 6 cm × 4 cm × 3 cm. Find the angle between a space diagonal and the base.",
+          "options": [
+            "26.6°",
+            "30.0°",
+            "22.6°",
+            "36.9°"
+          ],
+          "answer": 2,
+          "explanation": "Base diagonal = √(6² + 4²) = √52; tan θ = 3/√52, θ ≈ 22.6°.",
+          "terms": [
+            "math-ai-3.1-line-plane-angle"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q06",
+          "type": "mcq",
+          "prompt": "Find the length of an arc of radius 10 cm subtending 72° at the centre.",
+          "options": [
+            "62.8 cm",
+            "12.6 cm",
+            "25.1 cm",
+            "7.2 cm"
+          ],
+          "answer": 1,
+          "explanation": "(72/360) × 2π × 10 ≈ 12.6 cm.",
+          "terms": [
+            "math-ai-3.1-arc-length"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q07",
+          "type": "mcq",
+          "prompt": "Find the area of a sector of radius 6 cm with angle 50°.",
+          "options": [
+            "15.7 cm²",
+            "31.4 cm²",
+            "5.24 cm²",
+            "18.0 cm²"
+          ],
+          "answer": 0,
+          "explanation": "(50/360) × π × 6² ≈ 15.7 cm².",
+          "terms": [
+            "math-ai-3.1-sector-area"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q08",
+          "type": "tf",
+          "statement": "A sphere of radius 3 cm has volume 36π cm³.",
+          "answer": true,
+          "explanation": "⁴⁄₃π × 27 = 36π.",
+          "terms": [
+            "math-ai-3.1-volume"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q09",
+          "type": "match",
+          "prompt": "Match each solid to its volume formula.",
+          "pairs": [
+            {
+              "left": "Cylinder",
+              "right": "πr²h"
+            },
+            {
+              "left": "Cone",
+              "right": "⅓πr²h"
+            },
+            {
+              "left": "Sphere",
+              "right": "⁴⁄₃πr³"
+            },
+            {
+              "left": "Square-based pyramid, side a",
+              "right": "⅓a²h"
+            }
+          ],
+          "explanation": "Cones and pyramids hold one third of the matching prism or cylinder.",
+          "terms": [
+            "math-ai-3.1-volume"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-1-q10",
+          "type": "order",
+          "prompt": "Order these solids by volume, smallest first.",
+          "items": [
+            "Cone, r = 3, h = 3",
+            "Sphere, r = 2",
+            "Cylinder, r = 2, h = 3",
+            "Cube, side 4"
+          ],
+          "explanation": "Volumes: 9π ≈ 28.3, 32π/3 ≈ 33.5, 12π ≈ 37.7, 64.",
+          "terms": [
+            "math-ai-3.1-volume"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-3.1-2",
+      "title": "Solving triangles, bearings and elevation",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-3.1-2-q01",
+          "type": "mcq",
+          "prompt": "In triangle ABC, A = 40°, B = 65° and a = 8 cm. Find b.",
+          "options": [
+            "5.67 cm",
+            "11.3 cm",
+            "7.53 cm",
+            "13.0 cm"
+          ],
+          "answer": 1,
+          "explanation": "Sine rule: b = 8 sin 65° / sin 40° ≈ 11.3 cm.",
+          "terms": [
+            "math-ai-3.1-sine-rule"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q02",
+          "type": "mcq",
+          "prompt": "a = 7, b = 9 and C = 60°. Find c.",
+          "options": [
+            "8.19",
+            "11.4",
+            "4.47",
+            "67"
+          ],
+          "answer": 0,
+          "explanation": "c² = 49 + 81 − 2(7)(9) cos 60° = 67, so c ≈ 8.19.",
+          "terms": [
+            "math-ai-3.1-cosine-rule"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q03",
+          "type": "fill",
+          "text": "A triangle has sides 5 cm and 8 cm with 30° between them. Its area is ___ cm².",
+          "answer": "10",
+          "bank": [
+            "20",
+            "10",
+            "17.3",
+            "40"
+          ],
+          "explanation": "½ × 5 × 8 × sin 30° = 10.",
+          "terms": [
+            "math-ai-3.1-triangle-area"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q04",
+          "type": "tf",
+          "statement": "The cosine rule can find an angle when all three sides are known.",
+          "answer": true,
+          "explanation": "Rearrange to cos C = (a² + b² − c²)/(2ab).",
+          "terms": [
+            "math-ai-3.1-cosine-rule"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q05",
+          "type": "mcq",
+          "prompt": "From 15 m away on level ground, the angle of elevation of a treetop is 32°. Find the tree’s height.",
+          "options": [
+            "7.95 m",
+            "9.37 m",
+            "24.0 m",
+            "12.7 m"
+          ],
+          "answer": 1,
+          "explanation": "h = 15 tan 32° ≈ 9.37 m.",
+          "terms": [
+            "math-ai-3.1-angle-of-elevation"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q06",
+          "type": "tf",
+          "statement": "A bearing of 120° is measured anticlockwise from north.",
+          "answer": false,
+          "explanation": "Bearings are measured clockwise from north.",
+          "terms": [
+            "math-ai-3.1-bearing"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q07",
+          "type": "mcq",
+          "prompt": "The bearing of A from B is 070°. Find the bearing of B from A.",
+          "options": [
+            "110°",
+            "290°",
+            "070°",
+            "250°"
+          ],
+          "answer": 3,
+          "explanation": "Back bearings differ by 180°: 070° + 180° = 250°.",
+          "terms": [
+            "math-ai-3.1-bearing"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q08",
+          "type": "match",
+          "prompt": "Match the information given to the best method.",
+          "pairs": [
+            {
+              "left": "Two angles and a side",
+              "right": "sine rule"
+            },
+            {
+              "left": "Two sides and the included angle",
+              "right": "cosine rule for the third side"
+            },
+            {
+              "left": "Three sides",
+              "right": "cosine rule for an angle"
+            },
+            {
+              "left": "A right-angled triangle",
+              "right": "SOH CAH TOA"
+            }
+          ],
+          "explanation": "Choose the rule that uses exactly what you know.",
+          "terms": [
+            "math-ai-3.1-sine-rule",
+            "math-ai-3.1-cosine-rule"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q09",
+          "type": "fill",
+          "text": "The angle of depression from a cliff top to a boat equals the angle of ___ from the boat to the cliff top.",
+          "answer": "elevation",
+          "bank": [
+            "depression",
+            "bearing",
+            "incidence",
+            "elevation"
+          ],
+          "explanation": "They are alternate angles between parallel horizontal lines.",
+          "terms": [
+            "math-ai-3.1-angle-of-depression",
+            "math-ai-3.1-angle-of-elevation"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for finding an angle from three sides in order.",
+          "items": [
+            "Label the sides so the angle C is opposite side c",
+            "Write cos C = (a² + b² − c²)/(2ab)",
+            "Substitute the side lengths",
+            "Apply inverse cosine"
+          ],
+          "explanation": "The angle you want must be opposite the side c.",
+          "terms": [
+            "math-ai-3.1-cosine-rule"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-3.1-3",
+      "title": "Radians, the unit circle and trigonometric equations",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-3.1-3-q01",
+          "type": "mcq",
+          "prompt": "Convert 135° to radians.",
+          "options": [
+            "3π/4",
+            "2π/3",
+            "5π/6",
+            "3π/8"
+          ],
+          "answer": 0,
+          "explanation": "135 × π/180 = 3π/4.",
+          "terms": [
+            "math-ai-3.1-radian"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q02",
+          "type": "fill",
+          "text": "With θ in radians, arc length l = r___.",
+          "answer": "θ",
+          "bank": [
+            "θ²",
+            "2θ",
+            "½θ",
+            "θ"
+          ],
+          "explanation": "Radians make the formula simple: l = rθ.",
+          "terms": [
+            "math-ai-3.1-radian",
+            "math-ai-3.1-arc-length"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q03",
+          "type": "tf",
+          "statement": "sin²θ + cos²θ = 1 for every angle θ.",
+          "answer": true,
+          "explanation": "It follows from Pythagoras on the unit circle.",
+          "terms": [
+            "math-ai-3.1-pythagorean-identity"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q04",
+          "type": "mcq",
+          "prompt": "sin θ = 0.6 and θ is obtuse. Find cos θ.",
+          "options": [
+            "0.8",
+            "−0.8",
+            "−0.4",
+            "0.4"
+          ],
+          "answer": 1,
+          "explanation": "cos²θ = 1 − 0.36 = 0.64; obtuse angles have negative cosine.",
+          "terms": [
+            "math-ai-3.1-pythagorean-identity",
+            "math-ai-3.1-unit-circle"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q05",
+          "type": "mcq",
+          "prompt": "Find the area of a sector with radius 4 cm and angle 1.5 radians.",
+          "options": [
+            "12 cm²",
+            "6 cm²",
+            "24 cm²",
+            "3 cm²"
+          ],
+          "answer": 0,
+          "explanation": "½r²θ = ½ × 16 × 1.5 = 12 cm².",
+          "terms": [
+            "math-ai-3.1-radian",
+            "math-ai-3.1-sector-area"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q06",
+          "type": "tf",
+          "statement": "cos θ is the x-coordinate of the point at angle θ on the unit circle.",
+          "answer": true,
+          "explanation": "The point is (cos θ, sin θ).",
+          "terms": [
+            "math-ai-3.1-unit-circle"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q07",
+          "type": "mcq",
+          "prompt": "Solve sin x = 0.5 for 0 ≤ x ≤ 2π.",
+          "options": [
+            "x = π/3, 2π/3",
+            "x = π/6 only",
+            "x = π/6, 5π/6",
+            "x = π/6, 7π/6"
+          ],
+          "answer": 2,
+          "explanation": "Sine is positive in the first and second quadrants: π/6 and π − π/6.",
+          "terms": [
+            "math-ai-3.1-unit-circle"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q08",
+          "type": "match",
+          "prompt": "Match each expression to its exact value.",
+          "pairs": [
+            {
+              "left": "sin(π/6)",
+              "right": "1/2"
+            },
+            {
+              "left": "cos(π/6)",
+              "right": "√3/2"
+            },
+            {
+              "left": "tan(π/4)",
+              "right": "1"
+            },
+            {
+              "left": "cos π",
+              "right": "−1"
+            }
+          ],
+          "explanation": "These come from the unit circle and special triangles.",
+          "terms": [
+            "math-ai-3.1-unit-circle",
+            "math-ai-3.1-radian"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q09",
+          "type": "fill",
+          "text": "tan θ = sin θ / ___",
+          "answer": "cos θ",
+          "bank": [
+            "cos θ",
+            "sin θ",
+            "1",
+            "θ"
+          ],
+          "explanation": "On the unit circle, tan θ is y/x.",
+          "terms": [
+            "math-ai-3.1-unit-circle"
+          ]
+        },
+        {
+          "id": "math-ai-3.1-3-q10",
+          "type": "mcq",
+          "prompt": "How many solutions does cos x = 0.3 have for 0 ≤ x ≤ 4π?",
+          "options": [
+            "2",
+            "3",
+            "8",
+            "4"
+          ],
+          "answer": 3,
+          "explanation": "Two solutions per cycle of 2π, and there are two cycles.",
+          "terms": [
+            "math-ai-3.1-unit-circle"
+          ]
+        }
+      ]
+    }
+  ]
+}

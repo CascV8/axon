@@ -1,0 +1,598 @@
+{
+  "id": "math-ai-4.1",
+  "code": "SL 4.1–4.4, 4.10",
+  "unit": "4",
+  "title": "Data, summary statistics and regression",
+  "level": "SL",
+  "summary": "Sampling and presenting data, measures of centre and spread, outliers, and describing bivariate data with Pearson’s and Spearman’s correlation and a regression line.",
+  "keyterms": [
+    {
+      "id": "math-ai-4.1-population-sample",
+      "term": "Population and sample",
+      "definition": "The population is the whole group of interest; a sample is the subset actually studied.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-discrete-continuous",
+      "term": "Discrete and continuous data",
+      "definition": "Discrete data take separate countable values; continuous data can take any value in a range.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-simple-random",
+      "term": "Simple random sampling",
+      "definition": "Every member of the population has an equal chance of being chosen.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-stratified",
+      "term": "Stratified sampling",
+      "definition": "Sampling at random from each subgroup in proportion to its size.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-bias",
+      "term": "Bias",
+      "definition": "A systematic tendency of a sampling method or measurement to misrepresent the population.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-outlier",
+      "term": "Outlier",
+      "definition": "A value more than 1.5 × IQR below Q1 or above Q3.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-box-plot",
+      "term": "Box and whisker plot",
+      "definition": "A diagram of the five-number summary: minimum, Q1, median, Q3, maximum.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-mean-median-mode",
+      "term": "Mean, median and mode",
+      "definition": "Measures of central tendency: the average, the middle value and the most frequent value.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-iqr",
+      "term": "Interquartile range",
+      "definition": "IQR = Q3 − Q1, the spread of the middle 50% of the data.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-standard-deviation",
+      "term": "Standard deviation",
+      "definition": "σ, a measure of the typical distance of data from the mean (found with a GDC).",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-pearson-r",
+      "term": "Pearson’s correlation coefficient",
+      "definition": "r, between −1 and 1, measuring the strength and direction of linear correlation.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-regression-line",
+      "term": "Regression line of y on x",
+      "definition": "The least-squares line y = ax + b used to predict y from x within the data range.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-extrapolation",
+      "term": "Extrapolation",
+      "definition": "Predicting outside the range of the data; usually unreliable.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-4.1-spearman",
+      "term": "Spearman’s rank correlation",
+      "definition": "rₛ: Pearson’s r applied to the ranks; measures how monotonic a relationship is.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-4.1-1",
+      "title": "Sampling and presenting data",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-4.1-1-q01",
+          "type": "mcq",
+          "prompt": "Which of these is discrete data?",
+          "options": [
+            "Height of a student",
+            "Time to run 100 m",
+            "Number of siblings",
+            "Mass of an apple"
+          ],
+          "answer": 2,
+          "explanation": "Counts take separate values; measurements are continuous.",
+          "terms": [
+            "math-ai-4.1-discrete-continuous"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q02",
+          "type": "fill",
+          "text": "In ___ random sampling every member of the population has an equal chance of selection.",
+          "answer": "simple",
+          "bank": [
+            "stratified",
+            "simple",
+            "quota",
+            "convenience"
+          ],
+          "explanation": "Simple random sampling needs a full list of the population.",
+          "terms": [
+            "math-ai-4.1-simple-random"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q03",
+          "type": "tf",
+          "statement": "Convenience sampling is likely to be biased.",
+          "answer": true,
+          "explanation": "Choosing whoever is easy to reach rarely represents the whole population.",
+          "terms": [
+            "math-ai-4.1-bias"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q04",
+          "type": "mcq",
+          "prompt": "A school has 600 students, 240 of them in Grade 11. A stratified sample of 50 is taken. How many Grade 11 students are chosen?",
+          "options": [
+            "24",
+            "25",
+            "40",
+            "20"
+          ],
+          "answer": 3,
+          "explanation": "240/600 × 50 = 20.",
+          "terms": [
+            "math-ai-4.1-stratified"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q05",
+          "type": "mcq",
+          "prompt": "Q1 = 20 and Q3 = 32. Which value is an outlier?",
+          "options": [
+            "48",
+            "45",
+            "52",
+            "15"
+          ],
+          "answer": 2,
+          "explanation": "IQR = 12, so the fences are 20 − 18 = 2 and 32 + 18 = 50. Only 52 lies outside.",
+          "terms": [
+            "math-ai-4.1-outlier",
+            "math-ai-4.1-iqr"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q06",
+          "type": "tf",
+          "statement": "The median can be estimated from a cumulative frequency graph by reading across at half the total frequency.",
+          "answer": true,
+          "explanation": "Reading at n/4 and 3n/4 gives the quartiles.",
+          "terms": [
+            "math-ai-4.1-mean-median-mode"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q07",
+          "type": "match",
+          "prompt": "Match each sampling method to its description.",
+          "pairs": [
+            {
+              "left": "Systematic",
+              "right": "every kth item from a list"
+            },
+            {
+              "left": "Quota",
+              "right": "fixed numbers from groups, chosen non-randomly"
+            },
+            {
+              "left": "Cluster",
+              "right": "whole groups chosen at random"
+            },
+            {
+              "left": "Stratified",
+              "right": "random sample from each subgroup in proportion"
+            }
+          ],
+          "explanation": "Knowing the difference lets you criticise a method’s bias.",
+          "terms": [
+            "math-ai-4.1-stratified",
+            "math-ai-4.1-bias"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q08",
+          "type": "mcq",
+          "prompt": "A box and whisker plot displays:",
+          "options": [
+            "the mean and standard deviation",
+            "every data value",
+            "the frequency of each class",
+            "the five-number summary"
+          ],
+          "answer": 3,
+          "explanation": "Minimum, Q1, median, Q3 and maximum (with outliers marked separately).",
+          "terms": [
+            "math-ai-4.1-box-plot"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q09",
+          "type": "order",
+          "prompt": "Put the five-number summary in order.",
+          "items": [
+            "Minimum",
+            "Lower quartile Q1",
+            "Median",
+            "Upper quartile Q3",
+            "Maximum"
+          ],
+          "explanation": "These are the points shown on a box plot.",
+          "terms": [
+            "math-ai-4.1-box-plot"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-1-q10",
+          "type": "fill",
+          "text": "Data that can take any value in a range, such as height, are ___.",
+          "answer": "continuous",
+          "bank": [
+            "discrete",
+            "continuous",
+            "qualitative",
+            "categorical"
+          ],
+          "explanation": "Continuous data come from measuring rather than counting.",
+          "terms": [
+            "math-ai-4.1-discrete-continuous"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-4.1-2",
+      "title": "Measures of centre and spread",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-4.1-2-q01",
+          "type": "mcq",
+          "prompt": "Find the mean of 4, 7, 7, 9, 13.",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "40"
+          ],
+          "answer": 1,
+          "explanation": "(4 + 7 + 7 + 9 + 13)/5 = 40/5 = 8.",
+          "terms": [
+            "math-ai-4.1-mean-median-mode"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q02",
+          "type": "mcq",
+          "prompt": "Find the median of 4, 7, 7, 9, 13.",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "7.5"
+          ],
+          "answer": 0,
+          "explanation": "The middle (3rd) value of the ordered list is 7.",
+          "terms": [
+            "math-ai-4.1-mean-median-mode"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q03",
+          "type": "fill",
+          "text": "The population standard deviation σ of 4, 7, 7, 9, 13 is about ___.",
+          "answer": "2.97",
+          "bank": [
+            "8.8",
+            "2.97",
+            "3.32",
+            "9"
+          ],
+          "explanation": "σ² = 44/5 = 8.8 and σ = √8.8 ≈ 2.97. 3.32 is the sample value sₙ₋₁.",
+          "terms": [
+            "math-ai-4.1-standard-deviation"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q04",
+          "type": "tf",
+          "statement": "Adding 5 to every value increases the mean by 5 but leaves the standard deviation unchanged.",
+          "answer": true,
+          "explanation": "Shifting the data does not change how spread out it is.",
+          "terms": [
+            "math-ai-4.1-standard-deviation",
+            "math-ai-4.1-mean-median-mode"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q05",
+          "type": "mcq",
+          "prompt": "Every value in a data set is doubled. What happens to the standard deviation?",
+          "options": [
+            "It stays the same",
+            "It doubles",
+            "It is multiplied by 4",
+            "It increases by 2"
+          ],
+          "answer": 1,
+          "explanation": "Scaling the data by 2 scales every distance from the mean by 2.",
+          "terms": [
+            "math-ai-4.1-standard-deviation"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q06",
+          "type": "mcq",
+          "prompt": "Values 1, 2, 3 have frequencies 4, 5, 1. Find the mean.",
+          "options": [
+            "1.7",
+            "2",
+            "2.3",
+            "3.3"
+          ],
+          "answer": 0,
+          "explanation": "(1 × 4 + 2 × 5 + 3 × 1)/10 = 17/10 = 1.7.",
+          "terms": [
+            "math-ai-4.1-mean-median-mode"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q07",
+          "type": "tf",
+          "statement": "The median is more affected by outliers than the mean.",
+          "answer": false,
+          "explanation": "The mean uses every value’s size; the median depends only on position, so it is resistant to outliers.",
+          "terms": [
+            "math-ai-4.1-mean-median-mode",
+            "math-ai-4.1-outlier"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q08",
+          "type": "match",
+          "prompt": "Match each measure to its definition.",
+          "pairs": [
+            {
+              "left": "Mean",
+              "right": "sum of values ÷ number of values"
+            },
+            {
+              "left": "Median",
+              "right": "middle value when ordered"
+            },
+            {
+              "left": "Mode",
+              "right": "most frequent value"
+            },
+            {
+              "left": "IQR",
+              "right": "Q3 − Q1"
+            }
+          ],
+          "explanation": "The first three measure centre; IQR measures spread.",
+          "terms": [
+            "math-ai-4.1-mean-median-mode",
+            "math-ai-4.1-iqr"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q09",
+          "type": "mcq",
+          "prompt": "For grouped data, the class 10 ≤ x < 20 is represented in calculations by its mid-interval value:",
+          "options": [
+            "10",
+            "15",
+            "20",
+            "14.5"
+          ],
+          "answer": 1,
+          "explanation": "The mid-interval value is (10 + 20)/2 = 15, so the mean is an estimate.",
+          "terms": [
+            "math-ai-4.1-mean-median-mode"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for finding a median in order.",
+          "items": [
+            "Count the number of values n",
+            "Arrange the values in order",
+            "Find the position (n + 1)/2",
+            "Read the value, averaging two if the position is between them"
+          ],
+          "explanation": "Ordering first is essential.",
+          "terms": [
+            "math-ai-4.1-mean-median-mode"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-4.1-3",
+      "title": "Correlation and regression",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-4.1-3-q01",
+          "type": "mcq",
+          "prompt": "r = −0.92 describes:",
+          "options": [
+            "strong negative linear correlation",
+            "weak negative linear correlation",
+            "strong positive linear correlation",
+            "no correlation"
+          ],
+          "answer": 0,
+          "explanation": "r close to −1 means points lie close to a line with negative gradient.",
+          "terms": [
+            "math-ai-4.1-pearson-r"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q02",
+          "type": "tf",
+          "statement": "A strong correlation proves that one variable causes the other.",
+          "answer": false,
+          "explanation": "Correlation does not imply causation; a third variable may affect both.",
+          "terms": [
+            "math-ai-4.1-pearson-r"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q03",
+          "type": "fill",
+          "text": "The regression line of y on x is used to predict ___ from a given x.",
+          "answer": "y",
+          "bank": [
+            "x",
+            "r",
+            "y",
+            "the mean"
+          ],
+          "explanation": "Use the y on x line only to predict y.",
+          "terms": [
+            "math-ai-4.1-regression-line"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q04",
+          "type": "mcq",
+          "prompt": "The regression line is y = 2.4x + 15. Predict y when x = 10.",
+          "options": [
+            "17.4",
+            "39",
+            "25",
+            "24"
+          ],
+          "answer": 1,
+          "explanation": "2.4 × 10 + 15 = 39.",
+          "terms": [
+            "math-ai-4.1-regression-line"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q05",
+          "type": "mcq",
+          "prompt": "Exam score y and hours studied x fit y = 2.4x + 15. The gradient means:",
+          "options": [
+            "each extra hour is associated with 2.4 more marks",
+            "a student who studies 0 hours scores 2.4",
+            "students study 2.4 hours on average",
+            "2.4% of the variation is explained"
+          ],
+          "answer": 0,
+          "explanation": "The gradient is the change in y per unit increase in x.",
+          "terms": [
+            "math-ai-4.1-regression-line"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q06",
+          "type": "tf",
+          "statement": "Using a regression line from data with 0 ≤ x ≤ 12 to predict y at x = 50 is unreliable.",
+          "answer": true,
+          "explanation": "This is extrapolation: the pattern may not continue outside the data.",
+          "terms": [
+            "math-ai-4.1-extrapolation"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q07",
+          "type": "mcq",
+          "prompt": "rₛ = 1 means:",
+          "options": [
+            "the points lie on a straight line",
+            "there is no relationship",
+            "the ranks of x and y agree exactly",
+            "x causes y"
+          ],
+          "answer": 2,
+          "explanation": "A perfect monotonic increasing relationship gives rₛ = 1 even if it is curved.",
+          "terms": [
+            "math-ai-4.1-spearman"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q08",
+          "type": "match",
+          "prompt": "Match each value of r to its description.",
+          "pairs": [
+            {
+              "left": "0.95",
+              "right": "strong positive"
+            },
+            {
+              "left": "−0.2",
+              "right": "weak negative"
+            },
+            {
+              "left": "0",
+              "right": "no linear correlation"
+            },
+            {
+              "left": "−0.85",
+              "right": "strong negative"
+            }
+          ],
+          "explanation": "The sign gives direction; the size gives strength.",
+          "terms": [
+            "math-ai-4.1-pearson-r"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q09",
+          "type": "order",
+          "prompt": "Put the steps for Spearman’s rank correlation in order.",
+          "items": [
+            "Rank the x-values",
+            "Rank the y-values, averaging tied ranks",
+            "Find the correlation coefficient of the ranks with the GDC",
+            "Interpret rₛ in context"
+          ],
+          "explanation": "rₛ is Pearson’s r calculated on ranks.",
+          "terms": [
+            "math-ai-4.1-spearman"
+          ]
+        },
+        {
+          "id": "math-ai-4.1-3-q10",
+          "type": "mcq",
+          "prompt": "When is Spearman’s rank preferred to Pearson’s r?",
+          "options": [
+            "When the data lie exactly on a line",
+            "When there are no outliers",
+            "When x and y have the same units",
+            "When the relationship is monotonic but not linear"
+          ],
+          "answer": 3,
+          "explanation": "Spearman measures monotonic relationships and is less affected by outliers.",
+          "terms": [
+            "math-ai-4.1-spearman",
+            "math-ai-4.1-pearson-r"
+          ]
+        }
+      ]
+    }
+  ]
+}

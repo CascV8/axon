@@ -1,0 +1,416 @@
+{
+  "id": "math-ai-3.14",
+  "code": "AHL 3.14–3.16",
+  "unit": "3",
+  "title": "Graph theory",
+  "level": "HL",
+  "summary": "Graphs, adjacency matrices and walks, Eulerian and Hamiltonian routes, minimum spanning trees, the Chinese postman problem and bounds for the travelling salesman problem.",
+  "keyterms": [
+    {
+      "id": "math-ai-3.14-graph",
+      "term": "Graph",
+      "definition": "A set of vertices (nodes) joined by edges.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-degree",
+      "term": "Degree",
+      "definition": "The number of edges meeting at a vertex; the sum of degrees is twice the number of edges.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-simple-graph",
+      "term": "Simple graph",
+      "definition": "A graph with no loops and no multiple edges between the same pair of vertices.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-complete-graph",
+      "term": "Complete graph",
+      "definition": "Every pair of vertices is joined by exactly one edge; Kₙ has n(n − 1)/2 edges.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-adjacency-matrix",
+      "term": "Adjacency matrix",
+      "definition": "A matrix whose (i, j) entry is the number of edges from vertex i to vertex j.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-walk",
+      "term": "Walk",
+      "definition": "A sequence of linked vertices; Aⁿ gives the number of walks of length n.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-eulerian-circuit",
+      "term": "Eulerian circuit",
+      "definition": "A closed route using every edge exactly once; exists when all degrees are even.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-hamiltonian-cycle",
+      "term": "Hamiltonian cycle",
+      "definition": "A closed route visiting every vertex exactly once.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-spanning-tree",
+      "term": "Minimum spanning tree",
+      "definition": "A tree connecting all n vertices with n − 1 edges and the least total weight (Kruskal or Prim).",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-chinese-postman",
+      "term": "Chinese postman problem",
+      "definition": "Finding the shortest closed route that travels every edge at least once.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.14-travelling-salesman",
+      "term": "Travelling salesman problem",
+      "definition": "Finding the shortest Hamiltonian cycle; bounded above by nearest neighbour and below by deleted vertex.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-3.14-1",
+      "title": "Graphs, adjacency matrices and walks",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-3.14-1-q01",
+          "type": "fill",
+          "text": "A graph has 7 edges. The sum of the degrees of its vertices is ___.",
+          "answer": "14",
+          "bank": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ],
+          "explanation": "Each edge adds 1 to the degree at each end, so the sum is 2 × 7.",
+          "terms": [
+            "math-ai-3.14-degree"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q02",
+          "type": "tf",
+          "statement": "A connected graph has an Eulerian circuit exactly when every vertex has even degree.",
+          "answer": true,
+          "explanation": "Each visit enters and leaves a vertex, using edges in pairs.",
+          "terms": [
+            "math-ai-3.14-eulerian-circuit",
+            "math-ai-3.14-degree"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q03",
+          "type": "mcq",
+          "prompt": "How many edges does the complete graph K₅ have?",
+          "options": [
+            "5",
+            "20",
+            "25",
+            "10"
+          ],
+          "answer": 3,
+          "explanation": "5 × 4 / 2 = 10.",
+          "terms": [
+            "math-ai-3.14-complete-graph"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q04",
+          "type": "mcq",
+          "prompt": "A connected graph has exactly two odd vertices, P and Q. Which is true?",
+          "options": [
+            "It has an Eulerian circuit",
+            "It has no Eulerian trail",
+            "It has an Eulerian trail from P to Q but no Eulerian circuit",
+            "It has a Hamiltonian cycle"
+          ],
+          "answer": 2,
+          "explanation": "A trail can start and end at the two odd vertices.",
+          "terms": [
+            "math-ai-3.14-eulerian-circuit",
+            "math-ai-3.14-degree"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q05",
+          "type": "mcq",
+          "prompt": "For adjacency matrix A, the (i, j) entry of A³ gives:",
+          "options": [
+            "the shortest distance from i to j",
+            "the number of walks of length 3 from i to j",
+            "the degree of vertex i",
+            "the number of edges in the graph"
+          ],
+          "answer": 1,
+          "explanation": "Matrix powers count walks of that length.",
+          "terms": [
+            "math-ai-3.14-adjacency-matrix",
+            "math-ai-3.14-walk"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q06",
+          "type": "tf",
+          "statement": "A Hamiltonian cycle uses every edge exactly once.",
+          "answer": false,
+          "explanation": "That describes an Eulerian circuit; a Hamiltonian cycle visits every vertex once.",
+          "terms": [
+            "math-ai-3.14-hamiltonian-cycle",
+            "math-ai-3.14-eulerian-circuit"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q07",
+          "type": "match",
+          "prompt": "Match each route type to its rule.",
+          "pairs": [
+            {
+              "left": "Walk",
+              "right": "vertices and edges may repeat"
+            },
+            {
+              "left": "Trail",
+              "right": "no edge repeated"
+            },
+            {
+              "left": "Path",
+              "right": "no vertex repeated"
+            },
+            {
+              "left": "Cycle",
+              "right": "closed path returning to its start"
+            }
+          ],
+          "explanation": "Each type is more restrictive than a walk.",
+          "terms": [
+            "math-ai-3.14-walk"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q08",
+          "type": "mcq",
+          "prompt": "Which describes a simple graph?",
+          "options": [
+            "Every vertex has even degree",
+            "Every pair of vertices is joined",
+            "No loops and no multiple edges",
+            "It contains no cycles"
+          ],
+          "answer": 2,
+          "explanation": "Simple graphs have at most one edge between any pair and no loops.",
+          "terms": [
+            "math-ai-3.14-simple-graph"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q09",
+          "type": "fill",
+          "text": "A graph in which every pair of vertices is joined by exactly one edge is called ___.",
+          "answer": "complete",
+          "bank": [
+            "connected",
+            "complete",
+            "simple",
+            "directed"
+          ],
+          "explanation": "Complete graphs are written Kₙ.",
+          "terms": [
+            "math-ai-3.14-complete-graph"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-1-q10",
+          "type": "mcq",
+          "prompt": "The adjacency matrix of an undirected graph is always:",
+          "options": [
+            "symmetric",
+            "diagonal",
+            "the identity",
+            "singular"
+          ],
+          "answer": 0,
+          "explanation": "An edge from i to j is also an edge from j to i.",
+          "terms": [
+            "math-ai-3.14-adjacency-matrix"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-3.14-2",
+      "title": "Trees and route algorithms",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-3.14-2-q01",
+          "type": "mcq",
+          "prompt": "Kruskal’s algorithm starts by:",
+          "options": [
+            "choosing the shortest edge in the whole graph",
+            "choosing any vertex",
+            "choosing the longest edge",
+            "pairing the odd vertices"
+          ],
+          "answer": 0,
+          "explanation": "Kruskal adds edges in order of weight; Prim grows from a chosen vertex.",
+          "terms": [
+            "math-ai-3.14-spanning-tree"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q02",
+          "type": "order",
+          "prompt": "Put the steps of Kruskal’s algorithm in order.",
+          "items": [
+            "List the edges in increasing order of weight",
+            "Add the shortest edge",
+            "Add the next shortest edge that does not form a cycle",
+            "Stop when n − 1 edges are included"
+          ],
+          "explanation": "Rejecting cycle-forming edges keeps the result a tree.",
+          "terms": [
+            "math-ai-3.14-spanning-tree"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q03",
+          "type": "fill",
+          "text": "A spanning tree on n vertices has ___ edges.",
+          "answer": "n − 1",
+          "bank": [
+            "n − 1",
+            "n",
+            "n + 1",
+            "2n"
+          ],
+          "explanation": "Any tree on n vertices has exactly n − 1 edges.",
+          "terms": [
+            "math-ai-3.14-spanning-tree"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q04",
+          "type": "tf",
+          "statement": "If every vertex has even degree, the Chinese postman route length equals the total weight of the edges.",
+          "answer": true,
+          "explanation": "An Eulerian circuit exists, so no edge needs repeating.",
+          "terms": [
+            "math-ai-3.14-chinese-postman",
+            "math-ai-3.14-eulerian-circuit"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q05",
+          "type": "mcq",
+          "prompt": "A network has total edge weight 52 and two odd vertices A and D. The shortest path from A to D has weight 7. Find the shortest Chinese postman route.",
+          "options": [
+            "59",
+            "52",
+            "45",
+            "66"
+          ],
+          "answer": 0,
+          "explanation": "Repeat the shortest A–D path: 52 + 7 = 59.",
+          "terms": [
+            "math-ai-3.14-chinese-postman"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q06",
+          "type": "mcq",
+          "prompt": "In the travelling salesman problem, the nearest neighbour algorithm gives:",
+          "options": [
+            "a lower bound",
+            "the exact optimum",
+            "a minimum spanning tree",
+            "an upper bound"
+          ],
+          "answer": 3,
+          "explanation": "It gives a real cycle, so the optimum cannot be longer.",
+          "terms": [
+            "math-ai-3.14-travelling-salesman"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q07",
+          "type": "tf",
+          "statement": "The deleted vertex algorithm gives an upper bound for the travelling salesman problem.",
+          "answer": false,
+          "explanation": "It gives a lower bound: residual MST weight plus the two shortest edges from the deleted vertex.",
+          "terms": [
+            "math-ai-3.14-travelling-salesman"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q08",
+          "type": "match",
+          "prompt": "Match each problem to its method.",
+          "pairs": [
+            {
+              "left": "Connect all towns with least cable",
+              "right": "minimum spanning tree"
+            },
+            {
+              "left": "Travel along every street and return",
+              "right": "Chinese postman"
+            },
+            {
+              "left": "Visit every city once and return",
+              "right": "travelling salesman"
+            },
+            {
+              "left": "Quick upper bound for the shortest tour",
+              "right": "nearest neighbour algorithm"
+            }
+          ],
+          "explanation": "Edges matter for the postman; vertices matter for the salesman.",
+          "terms": [
+            "math-ai-3.14-spanning-tree",
+            "math-ai-3.14-chinese-postman",
+            "math-ai-3.14-travelling-salesman"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q09",
+          "type": "mcq",
+          "prompt": "A network has total weight 80 and odd vertices A, B, C, D. Pairings: AB + CD = 9, AC + BD = 7, AD + BC = 11. Find the shortest Chinese postman route.",
+          "options": [
+            "87",
+            "89",
+            "91",
+            "80"
+          ],
+          "answer": 0,
+          "explanation": "Choose the smallest pairing total, 7: 80 + 7 = 87.",
+          "terms": [
+            "math-ai-3.14-chinese-postman"
+          ]
+        },
+        {
+          "id": "math-ai-3.14-2-q10",
+          "type": "mcq",
+          "prompt": "Deleted vertex gives a lower bound of 40 and nearest neighbour a tour of 46. The optimal tour length T satisfies:",
+          "options": [
+            "T = 43",
+            "T ≤ 40",
+            "T ≥ 46",
+            "40 ≤ T ≤ 46"
+          ],
+          "answer": 3,
+          "explanation": "The optimum lies between the lower and upper bounds.",
+          "terms": [
+            "math-ai-3.14-travelling-salesman"
+          ]
+        }
+      ]
+    }
+  ]
+}

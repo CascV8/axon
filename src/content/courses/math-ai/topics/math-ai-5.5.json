@@ -1,0 +1,400 @@
+{
+  "id": "math-ai-5.5",
+  "code": "SL 5.5, 5.8",
+  "unit": "5",
+  "title": "Integration and the trapezoidal rule",
+  "level": "SL",
+  "summary": "Integration as anti-differentiation, finding constants from boundary conditions, definite integrals for areas, and estimating areas with the trapezoidal rule.",
+  "keyterms": [
+    {
+      "id": "math-ai-5.5-antiderivative",
+      "term": "Antiderivative",
+      "definition": "A function whose derivative is f(x); the indefinite integral ∫f(x) dx.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.5-constant-of-integration",
+      "term": "Constant of integration",
+      "definition": "C in ∫f(x) dx = F(x) + C, needed because constants differentiate to 0.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.5-boundary-condition",
+      "term": "Boundary condition",
+      "definition": "A known point on the curve, used to find C.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.5-definite-integral",
+      "term": "Definite integral",
+      "definition": "∫ₐᵇ f(x) dx: a number, equal to the area under y = f(x) from a to b when f(x) ≥ 0.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.5-area-under-curve",
+      "term": "Area under a curve",
+      "definition": "The region between the curve, the x-axis and the lines x = a and x = b.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.5-trapezoidal-rule",
+      "term": "Trapezoidal rule",
+      "definition": "∫ₐᵇ y dx ≈ (h/2)[y₀ + yₙ + 2(y₁ + … + yₙ₋₁)].",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.5-strip-width",
+      "term": "Strip width",
+      "definition": "h = (b − a)/n, the width of each trapezium.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-5.5-overestimate",
+      "term": "Over/underestimate",
+      "definition": "The trapezoidal rule overestimates for curves that are concave up and underestimates for concave down.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-5.5-1",
+      "title": "Anti-differentiation and definite integrals",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-5.5-1-q01",
+          "type": "mcq",
+          "prompt": "Find ∫ 6x² dx.",
+          "options": [
+            "12x + C",
+            "6x³ + C",
+            "3x³ + C",
+            "2x³ + C"
+          ],
+          "answer": 3,
+          "explanation": "Raise the power by 1 and divide by the new power: 6x³/3.",
+          "terms": [
+            "math-ai-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q02",
+          "type": "fill",
+          "text": "∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C for n ≠ ___.",
+          "answer": "−1",
+          "bank": [
+            "0",
+            "1",
+            "−1",
+            "2"
+          ],
+          "explanation": "n = −1 would mean dividing by zero.",
+          "terms": [
+            "math-ai-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q03",
+          "type": "tf",
+          "statement": "An indefinite integral must include a constant of integration.",
+          "answer": true,
+          "explanation": "Many functions share the same derivative, differing by a constant.",
+          "terms": [
+            "math-ai-5.5-constant-of-integration"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q04",
+          "type": "mcq",
+          "prompt": "f′(x) = 4x + 3 and f(1) = 10. Find f(x).",
+          "options": [
+            "2x² + 3x + 5",
+            "2x² + 3x + 10",
+            "4x² + 3x + 3",
+            "2x² + 3x"
+          ],
+          "answer": 0,
+          "explanation": "f(x) = 2x² + 3x + C; 2 + 3 + C = 10 gives C = 5.",
+          "terms": [
+            "math-ai-5.5-boundary-condition",
+            "math-ai-5.5-constant-of-integration"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q05",
+          "type": "mcq",
+          "prompt": "Evaluate ∫₀² 3x² dx.",
+          "options": [
+            "12",
+            "6",
+            "24",
+            "8"
+          ],
+          "answer": 3,
+          "explanation": "[x³] from 0 to 2 = 8.",
+          "terms": [
+            "math-ai-5.5-definite-integral"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q06",
+          "type": "mcq",
+          "prompt": "Find the area under y = x² + 1 from x = 0 to x = 3.",
+          "options": [
+            "10",
+            "9",
+            "12",
+            "28"
+          ],
+          "answer": 2,
+          "explanation": "[x³/3 + x] from 0 to 3 = 9 + 3 = 12.",
+          "terms": [
+            "math-ai-5.5-area-under-curve"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q07",
+          "type": "tf",
+          "statement": "Integration is the reverse process of differentiation.",
+          "answer": true,
+          "explanation": "Differentiating the answer should give back the integrand.",
+          "terms": [
+            "math-ai-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q08",
+          "type": "match",
+          "prompt": "Match each function to an antiderivative.",
+          "pairs": [
+            {
+              "left": "5",
+              "right": "5x + C"
+            },
+            {
+              "left": "x",
+              "right": "x²/2 + C"
+            },
+            {
+              "left": "x⁻²",
+              "right": "−x⁻¹ + C"
+            },
+            {
+              "left": "3x²",
+              "right": "x³ + C"
+            }
+          ],
+          "explanation": "Check each by differentiating.",
+          "terms": [
+            "math-ai-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q09",
+          "type": "mcq",
+          "prompt": "Find ∫ (x³ − 2x) dx.",
+          "options": [
+            "3x² − 2 + C",
+            "x⁴ − x² + C",
+            "x⁴/4 − 2x² + C",
+            "x⁴/4 − x² + C"
+          ],
+          "answer": 3,
+          "explanation": "Integrate term by term.",
+          "terms": [
+            "math-ai-5.5-antiderivative"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-1-q10",
+          "type": "order",
+          "prompt": "Put the steps for finding an area under a curve in order.",
+          "items": [
+            "Sketch the curve",
+            "Identify the limits a and b",
+            "Write the definite integral",
+            "Evaluate it, e.g. with the GDC"
+          ],
+          "explanation": "The sketch shows whether the region is above the x-axis.",
+          "terms": [
+            "math-ai-5.5-area-under-curve"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-5.5-2",
+      "title": "The trapezoidal rule and applications",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-5.5-2-q01",
+          "type": "fill",
+          "text": "For a = 0, b = 6 and n = 3 intervals, the strip width h = ___.",
+          "answer": "2",
+          "bank": [
+            "2",
+            "3",
+            "6",
+            "18"
+          ],
+          "explanation": "h = (6 − 0)/3.",
+          "terms": [
+            "math-ai-5.5-strip-width"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q02",
+          "type": "mcq",
+          "prompt": "Which is the trapezoidal rule?",
+          "options": [
+            "h[y₀ + y₁ + … + yₙ]",
+            "(h/2)[y₀ + yₙ + 2(y₁ + … + yₙ₋₁)]",
+            "(h/2)[y₀ + y₁ + … + yₙ]",
+            "2h[y₀ + yₙ]"
+          ],
+          "answer": 1,
+          "explanation": "Inner heights are shared by two trapezia, so they are doubled.",
+          "terms": [
+            "math-ai-5.5-trapezoidal-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q03",
+          "type": "mcq",
+          "prompt": "Estimate ∫₀⁴ x² dx with 4 intervals.",
+          "options": [
+            "22",
+            "21.3",
+            "30",
+            "44"
+          ],
+          "answer": 0,
+          "explanation": "h = 1, y = 0, 1, 4, 9, 16: ½[0 + 16 + 2(14)] = 22.",
+          "terms": [
+            "math-ai-5.5-trapezoidal-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q04",
+          "type": "tf",
+          "statement": "For a curve that is concave up, the trapezoidal rule gives an overestimate.",
+          "answer": true,
+          "explanation": "The straight tops of the trapezia lie above the curve.",
+          "terms": [
+            "math-ai-5.5-overestimate"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q05",
+          "type": "mcq",
+          "prompt": "The exact value of ∫₀⁴ x² dx is 64/3. Find the percentage error of the estimate 22.",
+          "options": [
+            "0.67%",
+            "3.03%",
+            "3.13%",
+            "6.25%"
+          ],
+          "answer": 2,
+          "explanation": "|22 − 21.333|/21.333 × 100% ≈ 3.13%.",
+          "terms": [
+            "math-ai-5.5-trapezoidal-rule",
+            "math-ai-5.5-overestimate"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q06",
+          "type": "mcq",
+          "prompt": "A river is 8 m wide. Depths at 0, 2, 4, 6, 8 m from the bank are 0, 1.2, 1.8, 1.4, 0 m. Estimate the cross-sectional area.",
+          "options": [
+            "4.4 m²",
+            "8.8 m²",
+            "17.6 m²",
+            "8.0 m²"
+          ],
+          "answer": 1,
+          "explanation": "h = 2: (2/2)[0 + 0 + 2(1.2 + 1.8 + 1.4)] = 8.8 m².",
+          "terms": [
+            "math-ai-5.5-trapezoidal-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q07",
+          "type": "mcq",
+          "prompt": "How can the accuracy of a trapezoidal estimate usually be improved?",
+          "options": [
+            "Use more, narrower intervals",
+            "Use fewer intervals",
+            "Ignore the end heights",
+            "Double every height"
+          ],
+          "answer": 0,
+          "explanation": "Narrower strips follow the curve more closely.",
+          "terms": [
+            "math-ai-5.5-trapezoidal-rule",
+            "math-ai-5.5-strip-width"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q08",
+          "type": "match",
+          "prompt": "Match each symbol to its meaning.",
+          "pairs": [
+            {
+              "left": "h",
+              "right": "width of each strip"
+            },
+            {
+              "left": "n",
+              "right": "number of intervals"
+            },
+            {
+              "left": "y₀",
+              "right": "first height"
+            },
+            {
+              "left": "a and b",
+              "right": "limits of integration"
+            }
+          ],
+          "explanation": "There are n + 1 heights for n intervals.",
+          "terms": [
+            "math-ai-5.5-strip-width",
+            "math-ai-5.5-trapezoidal-rule"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q09",
+          "type": "mcq",
+          "prompt": "A car has velocity v = 3t² m s⁻¹. Find the distance travelled in the first 2 seconds.",
+          "options": [
+            "12 m",
+            "6 m",
+            "8 m",
+            "24 m"
+          ],
+          "answer": 2,
+          "explanation": "Distance = ∫₀² 3t² dt = [t³] = 8 m.",
+          "terms": [
+            "math-ai-5.5-definite-integral"
+          ]
+        },
+        {
+          "id": "math-ai-5.5-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for applying the trapezoidal rule in order.",
+          "items": [
+            "Find h = (b − a)/n",
+            "Make a table of y-values",
+            "Substitute into the formula",
+            "Interpret the estimate in context"
+          ],
+          "explanation": "The GDC table feature speeds up the y-values.",
+          "terms": [
+            "math-ai-5.5-trapezoidal-rule"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "id": "math-ai-1.14",
+  "code": "AHL 1.14–1.15",
+  "unit": "1",
+  "title": "Matrices, eigenvalues and eigenvectors",
+  "level": "HL",
+  "summary": "Matrix algebra, determinants and inverses for solving linear systems, then eigenvalues, eigenvectors and diagonalisation to find powers of matrices.",
+  "keyterms": [
+    {
+      "id": "math-ai-1.14-matrix",
+      "term": "Matrix",
+      "definition": "A rectangular array of numbers arranged in rows and columns.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-order",
+      "term": "Order (of a matrix)",
+      "definition": "Its size, m × n: m rows and n columns.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-identity-matrix",
+      "term": "Identity matrix",
+      "definition": "I: a square matrix with 1s on the leading diagonal and 0s elsewhere, so AI = IA = A.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-determinant",
+      "term": "Determinant",
+      "definition": "A number computed from a square matrix; for [a b; c d] it is ad − bc.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-inverse-matrix",
+      "term": "Inverse matrix",
+      "definition": "A⁻¹ with AA⁻¹ = A⁻¹A = I; exists only if det A ≠ 0.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-singular",
+      "term": "Singular matrix",
+      "definition": "A square matrix with determinant 0, which has no inverse.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-matrix-equation",
+      "term": "Matrix equation",
+      "definition": "A linear system written as AX = B, solved by X = A⁻¹B.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-eigenvalue",
+      "term": "Eigenvalue",
+      "definition": "A scalar λ such that Av = λv for some non-zero vector v.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-eigenvector",
+      "term": "Eigenvector",
+      "definition": "A non-zero vector v whose direction is unchanged by A: Av = λv.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-characteristic-equation",
+      "term": "Characteristic equation",
+      "definition": "det(A − λI) = 0, whose solutions are the eigenvalues of A.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-1.14-diagonalisation",
+      "term": "Diagonalisation",
+      "definition": "Writing A = PDP⁻¹ with eigenvectors in P and eigenvalues in diagonal D, so Aⁿ = PDⁿP⁻¹.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-1.14-1",
+      "title": "Matrix algebra and inverses",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-1.14-1-q01",
+          "type": "fill",
+          "text": "A matrix with 2 rows and 3 columns has order ___.",
+          "answer": "2 × 3",
+          "bank": [
+            "3 × 2",
+            "6",
+            "2 × 3",
+            "5"
+          ],
+          "explanation": "Order is rows × columns.",
+          "terms": [
+            "math-ai-1.14-order"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q02",
+          "type": "tf",
+          "statement": "Matrix multiplication is commutative: AB = BA for all square matrices.",
+          "answer": false,
+          "explanation": "In general AB ≠ BA, so the order of multiplication matters.",
+          "terms": [
+            "math-ai-1.14-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q03",
+          "type": "mcq",
+          "prompt": "A is 2 × 3 and B is 3 × 4. What is the order of AB?",
+          "options": [
+            "2 × 4",
+            "3 × 3",
+            "4 × 2",
+            "AB is not defined"
+          ],
+          "answer": 0,
+          "explanation": "The inner numbers (3 and 3) match; the outer numbers give the order 2 × 4.",
+          "terms": [
+            "math-ai-1.14-order"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q04",
+          "type": "mcq",
+          "prompt": "Find the determinant of [3 2; 5 4] (rows separated by ;).",
+          "options": [
+            "22",
+            "−2",
+            "7",
+            "2"
+          ],
+          "answer": 3,
+          "explanation": "ad − bc = 3 × 4 − 2 × 5 = 2.",
+          "terms": [
+            "math-ai-1.14-determinant"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q05",
+          "type": "mcq",
+          "prompt": "Find the inverse of [3 2; 5 4] (rows separated by ;).",
+          "options": [
+            "[4 −2; −5 3]",
+            "[−2 1; 2.5 −1.5]",
+            "[2 −1; −2.5 1.5]",
+            "[1.5 −1; −2.5 2]"
+          ],
+          "answer": 2,
+          "explanation": "A⁻¹ = (1/det)[d −b; −c a] = ½[4 −2; −5 3].",
+          "terms": [
+            "math-ai-1.14-inverse-matrix",
+            "math-ai-1.14-determinant"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q06",
+          "type": "tf",
+          "statement": "A square matrix with determinant 0 has no inverse.",
+          "answer": true,
+          "explanation": "The inverse formula divides by det A, so a singular matrix has no inverse.",
+          "terms": [
+            "math-ai-1.14-singular",
+            "math-ai-1.14-inverse-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q07",
+          "type": "match",
+          "prompt": "Match each matrix type to its description.",
+          "pairs": [
+            {
+              "left": "Identity matrix",
+              "right": "1s on the leading diagonal, 0s elsewhere"
+            },
+            {
+              "left": "Zero matrix",
+              "right": "every entry is 0"
+            },
+            {
+              "left": "Square matrix",
+              "right": "same number of rows and columns"
+            },
+            {
+              "left": "Singular matrix",
+              "right": "determinant equal to zero"
+            }
+          ],
+          "explanation": "These names come up constantly in matrix questions.",
+          "terms": [
+            "math-ai-1.14-identity-matrix",
+            "math-ai-1.14-singular"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q08",
+          "type": "mcq",
+          "prompt": "If AX = B and A is non-singular, then X equals:",
+          "options": [
+            "BA⁻¹",
+            "AB⁻¹",
+            "B − A",
+            "A⁻¹B"
+          ],
+          "answer": 3,
+          "explanation": "Pre-multiply both sides by A⁻¹: A⁻¹AX = A⁻¹B, so X = A⁻¹B. Order matters.",
+          "terms": [
+            "math-ai-1.14-matrix-equation",
+            "math-ai-1.14-inverse-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q09",
+          "type": "fill",
+          "text": "[1 2; 3 4] × [2; 1] = [4; ___]",
+          "answer": "10",
+          "bank": [
+            "7",
+            "11",
+            "10",
+            "8"
+          ],
+          "explanation": "Second row: 3 × 2 + 4 × 1 = 10.",
+          "terms": [
+            "math-ai-1.14-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-1-q10",
+          "type": "order",
+          "prompt": "Put the steps for solving a linear system with matrices in order.",
+          "items": [
+            "Write the system as AX = B",
+            "Check that det A ≠ 0",
+            "Find A⁻¹ with the GDC",
+            "Calculate X = A⁻¹B"
+          ],
+          "explanation": "A unique solution exists only when A is non-singular.",
+          "terms": [
+            "math-ai-1.14-matrix-equation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-1.14-2",
+      "title": "Eigenvalues, eigenvectors and diagonalisation",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-1.14-2-q01",
+          "type": "fill",
+          "text": "If Av = λv for a non-zero vector v, then λ is an ___ of A.",
+          "answer": "eigenvalue",
+          "bank": [
+            "eigenvector",
+            "determinant",
+            "inverse",
+            "eigenvalue"
+          ],
+          "explanation": "λ is the eigenvalue and v the eigenvector.",
+          "terms": [
+            "math-ai-1.14-eigenvalue"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q02",
+          "type": "mcq",
+          "prompt": "Find the eigenvalues of [4 1; 2 3].",
+          "options": [
+            "2 and 5",
+            "4 and 3",
+            "−2 and −5",
+            "1 and 10"
+          ],
+          "answer": 0,
+          "explanation": "det(A − λI) = (4 − λ)(3 − λ) − 2 = λ² − 7λ + 10 = (λ − 2)(λ − 5).",
+          "terms": [
+            "math-ai-1.14-eigenvalue",
+            "math-ai-1.14-characteristic-equation"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q03",
+          "type": "mcq",
+          "prompt": "Which vector is an eigenvector of [4 1; 2 3] for λ = 5?",
+          "options": [
+            "(1, −2)",
+            "(1, −1)",
+            "(2, 1)",
+            "(1, 1)"
+          ],
+          "answer": 3,
+          "explanation": "A(1, 1) = (5, 5) = 5(1, 1). (1, −2) is an eigenvector for λ = 2.",
+          "terms": [
+            "math-ai-1.14-eigenvector"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q04",
+          "type": "tf",
+          "statement": "The characteristic equation of A is det(A − λI) = 0.",
+          "answer": true,
+          "explanation": "Solving it gives the eigenvalues.",
+          "terms": [
+            "math-ai-1.14-characteristic-equation"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q05",
+          "type": "tf",
+          "statement": "Any non-zero multiple of an eigenvector is an eigenvector for the same eigenvalue.",
+          "answer": true,
+          "explanation": "If Av = λv then A(kv) = λ(kv).",
+          "terms": [
+            "math-ai-1.14-eigenvector"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q06",
+          "type": "mcq",
+          "prompt": "If A = PDP⁻¹, then Aⁿ equals:",
+          "options": [
+            "PDⁿP⁻¹",
+            "PⁿDⁿ(P⁻¹)ⁿ",
+            "nPDP⁻¹",
+            "Dⁿ"
+          ],
+          "answer": 0,
+          "explanation": "The inner P⁻¹P pairs cancel, leaving PDⁿP⁻¹.",
+          "terms": [
+            "math-ai-1.14-diagonalisation"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q07",
+          "type": "match",
+          "prompt": "In A = PDP⁻¹, match each part to its description.",
+          "pairs": [
+            {
+              "left": "P",
+              "right": "columns are eigenvectors"
+            },
+            {
+              "left": "D",
+              "right": "diagonal matrix of eigenvalues"
+            },
+            {
+              "left": "Dⁿ",
+              "right": "each diagonal entry raised to the power n"
+            },
+            {
+              "left": "P⁻¹",
+              "right": "inverse of the eigenvector matrix"
+            }
+          ],
+          "explanation": "The eigenvalues in D must be in the same order as their eigenvectors in P.",
+          "terms": [
+            "math-ai-1.14-diagonalisation",
+            "math-ai-1.14-eigenvalue",
+            "math-ai-1.14-eigenvector"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q08",
+          "type": "mcq",
+          "prompt": "The long-term (steady) state of a regular transition matrix is an eigenvector with eigenvalue:",
+          "options": [
+            "0",
+            "−1",
+            "1",
+            "2"
+          ],
+          "answer": 2,
+          "explanation": "A steady state s satisfies Ts = s, so the eigenvalue is 1.",
+          "terms": [
+            "math-ai-1.14-eigenvalue",
+            "math-ai-1.14-eigenvector"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q09",
+          "type": "fill",
+          "text": "The diagonal matrix [2 0; 0 7] has eigenvalues 2 and ___.",
+          "answer": "7",
+          "bank": [
+            "0",
+            "14",
+            "9",
+            "7"
+          ],
+          "explanation": "The eigenvalues of a diagonal matrix are its diagonal entries.",
+          "terms": [
+            "math-ai-1.14-eigenvalue"
+          ]
+        },
+        {
+          "id": "math-ai-1.14-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for finding Aⁿ by diagonalisation in order.",
+          "items": [
+            "Solve det(A − λI) = 0 for the eigenvalues",
+            "Find an eigenvector for each eigenvalue",
+            "Form P and D",
+            "Calculate PDⁿP⁻¹"
+          ],
+          "explanation": "Diagonalisation turns a matrix power into powers of numbers.",
+          "terms": [
+            "math-ai-1.14-diagonalisation",
+            "math-ai-1.14-characteristic-equation"
+          ]
+        }
+      ]
+    }
+  ]
+}

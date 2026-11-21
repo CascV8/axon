@@ -1,0 +1,409 @@
+{
+  "id": "math-ai-1.1",
+  "code": "SL 1.1, 1.6",
+  "unit": "1",
+  "title": "Standard form, approximation and error",
+  "level": "SL",
+  "summary": "Writing very large and very small numbers in standard form, rounding sensibly, finding upper and lower bounds and measuring how far an estimate is from the exact value.",
+  "keyterms": [
+    {
+      "id": "math-ai-1.1-standard-form",
+      "term": "Standard form",
+      "definition": "A number written as a × 10ᵏ, where 1 ≤ a < 10 and k is an integer.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-significant-figures",
+      "term": "Significant figures",
+      "definition": "Digits that carry meaning about a value’s precision, counted from the first non-zero digit.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-decimal-places",
+      "term": "Decimal places",
+      "definition": "The number of digits written after the decimal point.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-upper-bound",
+      "term": "Upper bound",
+      "definition": "The smallest value that a rounded measurement could not reach or exceed; half a unit above the rounded value.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-lower-bound",
+      "term": "Lower bound",
+      "definition": "The smallest value that rounds to the given measurement; half a unit below the rounded value.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-exact-value",
+      "term": "Exact value",
+      "definition": "The true or accepted value of a quantity, written vₑ in the percentage error formula.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-approximate-value",
+      "term": "Approximate value",
+      "definition": "An estimated, rounded or measured value, written vₐ in the percentage error formula.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-percentage-error",
+      "term": "Percentage error",
+      "definition": "ε = |vₐ − vₑ| / |vₑ| × 100%: the size of the error as a percentage of the exact value.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-estimation",
+      "term": "Estimation",
+      "definition": "Rounding values to make a quick mental calculation used to check whether an answer is reasonable.",
+      "hl": false
+    },
+    {
+      "id": "math-ai-1.1-rounding",
+      "term": "Rounding",
+      "definition": "Replacing a number with a nearby simpler value to a given accuracy, such as 3 s.f. or 2 d.p.",
+      "hl": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-1.1-1",
+      "title": "Standard form",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-1.1-1-q01",
+          "type": "mcq",
+          "prompt": "Write 0.000 482 in standard form.",
+          "options": [
+            "4.82 × 10⁴",
+            "4.82 × 10⁻⁴",
+            "48.2 × 10⁻⁵",
+            "4.82 × 10⁻³"
+          ],
+          "answer": 1,
+          "explanation": "Move the decimal point 4 places right to get 4.82, so the power is −4.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q02",
+          "type": "tf",
+          "statement": "25 × 10³ is written in standard form.",
+          "answer": false,
+          "explanation": "The front number must satisfy 1 ≤ a < 10; the standard form is 2.5 × 10⁴.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q03",
+          "type": "fill",
+          "text": "In standard form a × 10ᵏ, the number a must satisfy 1 ≤ a < ___.",
+          "answer": "10",
+          "bank": [
+            "1",
+            "100",
+            "9",
+            "10"
+          ],
+          "explanation": "a can be any number from 1 up to but not including 10.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q04",
+          "type": "mcq",
+          "prompt": "Calculate (3 × 10⁵) × (4 × 10⁻²), giving your answer in standard form.",
+          "options": [
+            "1.2 × 10³",
+            "1.2 × 10⁵",
+            "1.2 × 10⁴",
+            "7 × 10³"
+          ],
+          "answer": 2,
+          "explanation": "3 × 4 = 12 and 10⁵ × 10⁻² = 10³, so 12 × 10³ = 1.2 × 10⁴.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q05",
+          "type": "mcq",
+          "prompt": "Calculate (6.4 × 10⁸) ÷ (1.6 × 10³).",
+          "options": [
+            "4 × 10¹¹",
+            "4 × 10⁵",
+            "4 × 10⁻⁵",
+            "4 × 10⁶"
+          ],
+          "answer": 1,
+          "explanation": "Divide the numbers (6.4 ÷ 1.6 = 4) and subtract the powers (8 − 3 = 5).",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q06",
+          "type": "tf",
+          "statement": "6.1 × 10⁻³ is less than 1.",
+          "answer": true,
+          "explanation": "A negative power of 10 makes the value smaller than 1: 6.1 × 10⁻³ = 0.0061.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q07",
+          "type": "mcq",
+          "prompt": "The mean Earth–Sun distance is about 150 000 000 km. In standard form this is:",
+          "options": [
+            "1.5 × 10⁷ km",
+            "15 × 10⁷ km",
+            "1.5 × 10⁹ km",
+            "1.5 × 10⁸ km"
+          ],
+          "answer": 3,
+          "explanation": "The decimal point moves 8 places to give 1.5, so the power is 8.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q08",
+          "type": "match",
+          "prompt": "Match each number to its ordinary form.",
+          "pairs": [
+            {
+              "left": "3.2 × 10⁴",
+              "right": "32 000"
+            },
+            {
+              "left": "3.2 × 10⁻²",
+              "right": "0.032"
+            },
+            {
+              "left": "3.2 × 10⁰",
+              "right": "3.2"
+            },
+            {
+              "left": "3.2 × 10²",
+              "right": "320"
+            }
+          ],
+          "explanation": "A positive power moves the point right; a negative power moves it left.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q09",
+          "type": "order",
+          "prompt": "Put these numbers in order from smallest to largest.",
+          "items": [
+            "7.1 × 10⁻³",
+            "2.4 × 10⁻²",
+            "9.9 × 10⁻²",
+            "1.05 × 10⁻¹",
+            "3 × 10⁰"
+          ],
+          "explanation": "Compare powers first, then the front numbers: 0.0071 < 0.024 < 0.099 < 0.105 < 3.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-1-q10",
+          "type": "fill",
+          "text": "When 52 000 000 is written in standard form, the power of 10 is ___.",
+          "answer": "7",
+          "bank": [
+            "7",
+            "6",
+            "8",
+            "5"
+          ],
+          "explanation": "52 000 000 = 5.2 × 10⁷.",
+          "terms": [
+            "math-ai-1.1-standard-form"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-1.1-2",
+      "title": "Rounding, bounds and percentage error",
+      "hl": false,
+      "questions": [
+        {
+          "id": "math-ai-1.1-2-q01",
+          "type": "mcq",
+          "prompt": "Round 0.004 0785 to 3 significant figures.",
+          "options": [
+            "0.00408",
+            "0.004",
+            "0.0041",
+            "0.00407"
+          ],
+          "answer": 0,
+          "explanation": "Count from the first non-zero digit: 4, 0, 7, and the next digit 8 rounds 7 up to 8.",
+          "terms": [
+            "math-ai-1.1-significant-figures",
+            "math-ai-1.1-rounding"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q02",
+          "type": "mcq",
+          "prompt": "A length is 12 cm, correct to the nearest cm. What are its lower and upper bounds?",
+          "options": [
+            "11 cm and 13 cm",
+            "11.9 cm and 12.1 cm",
+            "11.5 cm and 12.4 cm",
+            "11.5 cm and 12.5 cm"
+          ],
+          "answer": 3,
+          "explanation": "The bounds are half a unit (0.5 cm) either side: 11.5 ≤ L < 12.5.",
+          "terms": [
+            "math-ai-1.1-upper-bound",
+            "math-ai-1.1-lower-bound"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q03",
+          "type": "fill",
+          "text": "In ε = |vₐ − vₑ| / |vₑ| × 100%, vₑ is the ___ value.",
+          "answer": "exact",
+          "bank": [
+            "exact",
+            "approximate",
+            "rounded",
+            "mean"
+          ],
+          "explanation": "Percentage error always compares the error with the exact value.",
+          "terms": [
+            "math-ai-1.1-percentage-error",
+            "math-ai-1.1-exact-value"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q04",
+          "type": "mcq",
+          "prompt": "g = 9.8 m s⁻² is approximated as 10 m s⁻². Find the percentage error.",
+          "options": [
+            "2.00%",
+            "2.04%",
+            "1.96%",
+            "0.2%"
+          ],
+          "answer": 1,
+          "explanation": "ε = |10 − 9.8| / 9.8 × 100% = 2.04%. Divide by the exact value, not the approximation.",
+          "terms": [
+            "math-ai-1.1-percentage-error",
+            "math-ai-1.1-approximate-value"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q05",
+          "type": "tf",
+          "statement": "A percentage error can be negative.",
+          "answer": false,
+          "explanation": "The formula uses the absolute value of the difference, so ε is never negative.",
+          "terms": [
+            "math-ai-1.1-percentage-error"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q06",
+          "type": "mcq",
+          "prompt": "A rectangle measures 8 cm by 5 cm, each to the nearest cm. Find the upper bound of its area.",
+          "options": [
+            "40 cm²",
+            "33.75 cm²",
+            "45.5 cm²",
+            "46.75 cm²"
+          ],
+          "answer": 3,
+          "explanation": "Use both upper bounds: 8.5 × 5.5 = 46.75 cm².",
+          "terms": [
+            "math-ai-1.1-upper-bound"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q07",
+          "type": "tf",
+          "statement": "Rounding 0.0503 to 2 significant figures gives 0.05.",
+          "answer": false,
+          "explanation": "Two significant figures are 5 and 0, so the answer is 0.050; the final zero shows the precision.",
+          "terms": [
+            "math-ai-1.1-significant-figures"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q08",
+          "type": "match",
+          "prompt": "Match each rounding to its result.",
+          "pairs": [
+            {
+              "left": "26 471 to 3 s.f.",
+              "right": "26 500"
+            },
+            {
+              "left": "26 471 to the nearest thousand",
+              "right": "26 000"
+            },
+            {
+              "left": "2.649 to 1 d.p.",
+              "right": "2.6"
+            },
+            {
+              "left": "0.0866 to 2 s.f.",
+              "right": "0.087"
+            }
+          ],
+          "explanation": "Significant figures count from the first non-zero digit; decimal places count after the point.",
+          "terms": [
+            "math-ai-1.1-significant-figures",
+            "math-ai-1.1-decimal-places",
+            "math-ai-1.1-rounding"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q09",
+          "type": "fill",
+          "text": "To check 48 × 21, a student estimates 50 × 20 = ___.",
+          "answer": "1000",
+          "bank": [
+            "1008",
+            "960",
+            "1000",
+            "1050"
+          ],
+          "explanation": "Rounding each factor to 1 s.f. gives a quick check: the exact answer 1008 is close to 1000.",
+          "terms": [
+            "math-ai-1.1-estimation"
+          ]
+        },
+        {
+          "id": "math-ai-1.1-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for finding a percentage error in order.",
+          "items": [
+            "Identify the exact value",
+            "Subtract to find the difference between approximate and exact values",
+            "Take the absolute value and divide by the exact value",
+            "Multiply by 100%"
+          ],
+          "explanation": "This follows ε = |vₐ − vₑ| / |vₑ| × 100%.",
+          "terms": [
+            "math-ai-1.1-percentage-error"
+          ]
+        }
+      ]
+    }
+  ]
+}

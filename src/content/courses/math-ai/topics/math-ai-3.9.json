@@ -1,0 +1,410 @@
+{
+  "id": "math-ai-3.9",
+  "code": "AHL 3.9–3.13",
+  "unit": "3",
+  "title": "Vectors and matrix transformations",
+  "level": "HL",
+  "summary": "Vectors in 2D and 3D, equations of lines, kinematics with vectors, scalar and vector products, and matrices as geometric transformations.",
+  "keyterms": [
+    {
+      "id": "math-ai-3.9-vector",
+      "term": "Vector",
+      "definition": "A quantity with magnitude and direction, written as a column or as xi + yj + zk.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-magnitude",
+      "term": "Magnitude",
+      "definition": "|v| = √(x² + y² + z²), the length of a vector.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-unit-vector",
+      "term": "Unit vector",
+      "definition": "A vector of magnitude 1: v/|v|.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-direction-vector",
+      "term": "Direction vector",
+      "definition": "b in r = a + λb, giving the direction of a line.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-vector-equation-line",
+      "term": "Vector equation of a line",
+      "definition": "r = a + λb, where a is a position vector of a point on the line.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-velocity-vector",
+      "term": "Velocity vector",
+      "definition": "In r = r₀ + tv, v gives the velocity; its magnitude is the speed.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-scalar-product",
+      "term": "Scalar product",
+      "definition": "v·w = v₁w₁ + v₂w₂ + v₃w₃ = |v||w| cos θ; zero for perpendicular vectors.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-vector-product",
+      "term": "Vector product",
+      "definition": "v × w, perpendicular to both; |v × w| = |v||w| sin θ is the parallelogram area.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-transformation-matrix",
+      "term": "Transformation matrix",
+      "definition": "A 2 × 2 matrix that maps each point (as a column vector) to its image.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-area-scale-factor",
+      "term": "Area scale factor",
+      "definition": "|det T|: image area = |det T| × object area.",
+      "hl": true
+    },
+    {
+      "id": "math-ai-3.9-composite-transformation",
+      "term": "Composite transformation",
+      "definition": "Doing A then B is represented by the matrix BA.",
+      "hl": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "math-ai-3.9-1",
+      "title": "Vectors, lines and products",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-3.9-1-q01",
+          "type": "mcq",
+          "prompt": "Find the magnitude of (3, −4, 12).",
+          "options": [
+            "13",
+            "11",
+            "19",
+            "169"
+          ],
+          "answer": 0,
+          "explanation": "√(9 + 16 + 144) = √169 = 13.",
+          "terms": [
+            "math-ai-3.9-magnitude"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q02",
+          "type": "fill",
+          "text": "The unit vector in the direction of (0, 3, 4) is ___.",
+          "answer": "(0, 0.6, 0.8)",
+          "bank": [
+            "(0, 3, 4)",
+            "(0, 0.75, 1)",
+            "(0, 1, 1)",
+            "(0, 0.6, 0.8)"
+          ],
+          "explanation": "Divide by the magnitude 5.",
+          "terms": [
+            "math-ai-3.9-unit-vector"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q03",
+          "type": "mcq",
+          "prompt": "Find (1, 2, 3)·(4, −5, 6).",
+          "options": [
+            "(4, −10, 18)",
+            "32",
+            "12",
+            "−12"
+          ],
+          "answer": 2,
+          "explanation": "4 − 10 + 18 = 12. The scalar product is a number.",
+          "terms": [
+            "math-ai-3.9-scalar-product"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q04",
+          "type": "tf",
+          "statement": "If two non-zero vectors have scalar product 0, they are perpendicular.",
+          "answer": true,
+          "explanation": "cos θ = 0 means θ = 90°.",
+          "terms": [
+            "math-ai-3.9-scalar-product"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q05",
+          "type": "mcq",
+          "prompt": "Find the angle between (1, 0, 0) and (1, 1, 0).",
+          "options": [
+            "45°",
+            "90°",
+            "60°",
+            "30°"
+          ],
+          "answer": 0,
+          "explanation": "cos θ = 1/(1 × √2), so θ = 45°.",
+          "terms": [
+            "math-ai-3.9-scalar-product"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q06",
+          "type": "mcq",
+          "prompt": "Find (1, 0, 0) × (0, 1, 0).",
+          "options": [
+            "(0, 0, −1)",
+            "0",
+            "(1, 1, 0)",
+            "(0, 0, 1)"
+          ],
+          "answer": 3,
+          "explanation": "i × j = k, perpendicular to both.",
+          "terms": [
+            "math-ai-3.9-vector-product"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q07",
+          "type": "tf",
+          "statement": "|a × b| equals the area of the parallelogram formed by a and b.",
+          "answer": true,
+          "explanation": "|a × b| = |a||b| sin θ = base × height.",
+          "terms": [
+            "math-ai-3.9-vector-product"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q08",
+          "type": "mcq",
+          "prompt": "A line is r = (1, 2) + t(3, −1). Find the point where t = 2.",
+          "options": [
+            "(4, 1)",
+            "(7, 0)",
+            "(6, −2)",
+            "(5, 4)"
+          ],
+          "answer": 1,
+          "explanation": "(1 + 6, 2 − 2) = (7, 0).",
+          "terms": [
+            "math-ai-3.9-vector-equation-line"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q09",
+          "type": "match",
+          "prompt": "A boat has position r = (2, 1) + t(3, 4) km after t hours. Match each quantity.",
+          "pairs": [
+            {
+              "left": "Position at t = 0",
+              "right": "(2, 1)"
+            },
+            {
+              "left": "Velocity",
+              "right": "(3, 4) km/h"
+            },
+            {
+              "left": "Speed",
+              "right": "5 km/h"
+            },
+            {
+              "left": "Position at t = 1",
+              "right": "(5, 5)"
+            }
+          ],
+          "explanation": "Speed is the magnitude of the velocity: √(9 + 16) = 5.",
+          "terms": [
+            "math-ai-3.9-velocity-vector",
+            "math-ai-3.9-magnitude"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-1-q10",
+          "type": "fill",
+          "text": "In r = a + λb, b is the ___ vector of the line.",
+          "answer": "direction",
+          "bank": [
+            "position",
+            "unit",
+            "normal",
+            "direction"
+          ],
+          "explanation": "a fixes a point; b fixes the direction.",
+          "terms": [
+            "math-ai-3.9-direction-vector"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-ai-3.9-2",
+      "title": "Matrix transformations",
+      "hl": true,
+      "questions": [
+        {
+          "id": "math-ai-3.9-2-q01",
+          "type": "mcq",
+          "prompt": "Which matrix reflects points in the x-axis? (rows separated by ;)",
+          "options": [
+            "[−1 0; 0 1]",
+            "[0 1; 1 0]",
+            "[0 −1; 1 0]",
+            "[1 0; 0 −1]"
+          ],
+          "answer": 3,
+          "explanation": "x stays the same and y changes sign.",
+          "terms": [
+            "math-ai-3.9-transformation-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q02",
+          "type": "mcq",
+          "prompt": "Which matrix rotates points 90° anticlockwise about the origin?",
+          "options": [
+            "[0 1; −1 0]",
+            "[1 0; 0 −1]",
+            "[0 −1; 1 0]",
+            "[−1 0; 0 −1]"
+          ],
+          "answer": 2,
+          "explanation": "The columns are the images of (1, 0) → (0, 1) and (0, 1) → (−1, 0).",
+          "terms": [
+            "math-ai-3.9-transformation-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q03",
+          "type": "tf",
+          "statement": "Image area = |det T| × object area.",
+          "answer": true,
+          "explanation": "The determinant is the area scale factor.",
+          "terms": [
+            "math-ai-3.9-area-scale-factor"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q04",
+          "type": "fill",
+          "text": "An enlargement with scale factor 3 about the origin has determinant ___.",
+          "answer": "9",
+          "bank": [
+            "3",
+            "6",
+            "9",
+            "27"
+          ],
+          "explanation": "[3 0; 0 3] has determinant 9: areas scale by 3².",
+          "terms": [
+            "math-ai-3.9-area-scale-factor"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q05",
+          "type": "mcq",
+          "prompt": "Find the image of (2, 1) under [0 −1; 1 0].",
+          "options": [
+            "(1, −2)",
+            "(2, −1)",
+            "(−2, 1)",
+            "(−1, 2)"
+          ],
+          "answer": 3,
+          "explanation": "(0 × 2 − 1 × 1, 1 × 2 + 0 × 1) = (−1, 2).",
+          "terms": [
+            "math-ai-3.9-transformation-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q06",
+          "type": "mcq",
+          "prompt": "Transformation A is applied, then transformation B. The single matrix is:",
+          "options": [
+            "AB",
+            "A + B",
+            "BA",
+            "A⁻¹B"
+          ],
+          "answer": 2,
+          "explanation": "The matrix applied first sits next to the point: B(AX) = (BA)X.",
+          "terms": [
+            "math-ai-3.9-composite-transformation"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q07",
+          "type": "tf",
+          "statement": "A transformation with a negative determinant reverses orientation, like a reflection.",
+          "answer": true,
+          "explanation": "The sign of the determinant shows whether orientation is kept.",
+          "terms": [
+            "math-ai-3.9-area-scale-factor"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q08",
+          "type": "match",
+          "prompt": "Match each matrix to its transformation.",
+          "pairs": [
+            {
+              "left": "[k 0; 0 k]",
+              "right": "enlargement, scale factor k, centre O"
+            },
+            {
+              "left": "[1 0; 0 −1]",
+              "right": "reflection in the x-axis"
+            },
+            {
+              "left": "[0 1; 1 0]",
+              "right": "reflection in y = x"
+            },
+            {
+              "left": "[1 k; 0 1]",
+              "right": "horizontal shear, factor k"
+            }
+          ],
+          "explanation": "Check where (1, 0) and (0, 1) go: they are the columns.",
+          "terms": [
+            "math-ai-3.9-transformation-matrix"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q09",
+          "type": "mcq",
+          "prompt": "A triangle of area 5 cm² is transformed by [3 1; 2 4]. Find the image area.",
+          "options": [
+            "10 cm²",
+            "14 cm²",
+            "70 cm²",
+            "50 cm²"
+          ],
+          "answer": 3,
+          "explanation": "det = 12 − 2 = 10, so the area becomes 10 × 5 = 50 cm².",
+          "terms": [
+            "math-ai-3.9-area-scale-factor"
+          ]
+        },
+        {
+          "id": "math-ai-3.9-2-q10",
+          "type": "order",
+          "prompt": "Put the steps for transforming a shape with a matrix in order.",
+          "items": [
+            "Write the vertices as column vectors",
+            "Multiply each by the transformation matrix",
+            "Read off the image coordinates",
+            "Plot and join the image vertices"
+          ],
+          "explanation": "Putting the vertices side by side as one matrix does all at once.",
+          "terms": [
+            "math-ai-3.9-transformation-matrix"
+          ]
+        }
+      ]
+    }
+  ]
+}
